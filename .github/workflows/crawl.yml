@@ -1,0 +1,60 @@
+name: Daily crawl
+
+# Finds new candidate sites, scores and tags them, and adds at least `min_new`
+# never-before-suggested sites to the admin review queue in Firestore.
+on:
+  schedule:
+    - cron: "17 13 * * *"   # every day at 13:17 UTC
+  workflow_dispatch:
+    inputs:
+      min_new:
+        description: "Minimum new sites to propose"
+        default: "10"
+      max_fetch:
+        description: "Maximum pages to fetch"
+        default: "300"
+
+permissions:
+  contents: write   # commits crawl bookkeeping in data/
+
+concurrency:
+  group: crawler
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: crawler/requirements.txt
+      - run: pip install -r crawler/requirements.txt
+      - name: Check Firebase secret
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "::error::Add the FIREBASE_SERVICE_ACCOUNT repository secret (see SETUP.md)."
+            exit 1
+          fi
+      - name: Crawl
+        working-directory: crawler
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: >
+          python -m wander crawl
+          --min-new "${{ inputs.min_new || '10' }}"
+          --max-fetch "${{ inputs.max_fetch || '300' }}"
+          --max-minutes 45
+      - name: Commit crawl bookkeeping
+        run: |
+          git config user.name "webwander-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "crawl: $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

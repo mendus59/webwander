@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebWander Admin</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+  <header class="bar">
+    <a class="logo" href="./"><span class="logo-mark">🧭</span><span>WebWander</span></a>
+    <span class="badge">Admin</span>
+    <div class="spacer"></div>
+    <a id="crawl-link" class="ghost-btn" target="_blank" rel="noopener">Run crawler ↗</a>
+    <button id="auth-btn" class="ghost-btn">Sign in</button>
+  </header>
+
+  <main class="admin">
+    <section id="gate" class="welcome">
+      <h1>Admin</h1>
+      <p id="gate-msg">Sign in with an admin account to review proposed sites.</p>
+    </section>
+
+    <section id="panel" hidden>
+      <div class="stats" id="stats"></div>
+
+      <details class="add-box">
+        <summary>Add a site by hand</summary>
+        <form id="add-form" class="row">
+          <input type="url" id="add-url" placeholder="https://..." required>
+          <label class="check"><input type="checkbox" id="add-approve" checked> approve once scored</label>
+          <button class="wander-btn" type="submit">Queue</button>
+        </form>
+        <p class="muted small">The crawler scores and tags it on its next run (daily, or press "Run crawler").</p>
+      </details>
+
+      <nav class="tabs" id="tabs">
+        <button data-status="proposed" class="on">Proposed</button>
+        <button data-status="approved">Approved</button>
+        <button data-status="rejected">Rejected</button>
+      </nav>
+
+      <div class="toolbar">
+        <label class="check"><input type="checkbox" id="select-all"> select all</label>
+        <span class="muted small" id="selected-count"></span>
+        <div class="spacer"></div>
+        <label class="small">Approve all scoring ≥ <input type="number" id="bulk-min" value="70" min="0" max="100" class="num"></label>
+        <button class="ghost-btn" id="bulk-score">Approve</button>
+        <button class="ghost-btn" id="bulk-approve" disabled>Approve selected</button>
+        <button class="ghost-btn danger" id="bulk-reject" disabled>Reject selected</button>
+      </div>
+
+      <div id="list" class="review-list"></div>
+      <div class="row center"><button class="ghost-btn" id="more" hidden>Load more</button></div>
+    </section>
+  </main>
+
+  <dialog id="preview-dlg" class="panel preview">
+    <div class="row"><strong id="preview-title"></strong><div class="spacer"></div>
+      <a id="preview-open" class="ghost-btn" target="_blank" rel="noopener">Open ↗</a>
+      <button class="ghost-btn" id="preview-close">Close</button></div>
+    <iframe id="preview-frame" title="Preview" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

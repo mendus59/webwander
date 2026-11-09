@@ -1,0 +1,180 @@
+"""Turn raw HTML into a flat dictionary of features. Pure function, no network."""
+
+from __future__ import annotations
+
+import re
+from urllib.parse import urljoin, urlsplit
+
+from bs4 import BeautifulSoup
+
+from .urls import domain_of, normalize, registrable_domain
+
+AD_NETWORKS = [
+    "googlesyndication", "doubleclick.net", "adsbygoogle", "amazon-adsystem", "taboola",
+    "outbrain", "criteo", "adnxs", "media.net", "pubmatic", "rubiconproject", "adthrive",
+    "mediavine", "ezoic", "propellerads", "popads", "carbonads",
+]
+TRACKERS = [
+    "google-analytics.com", "googletagmanager", "gtag(", "fbq(", "connect.facebook.net",
+    "hotjar", "segment.com/analytics", "mixpanel", "hs-scripts", "hubspot", "intercom",
+    "clarity.ms", "fullstory", "heap-", "amplitude", "tiktok.com/i18n/pixel", "linkedin.com/px",
+]
+COOKIE_BANNERS = ["onetrust", "cookiebot", "cookieconsent", "cookie-consent", "cookielaw",
+                  "quantcast", "trustarc", "didomi", "usercentrics", "we use cookies"]
+COMMERCE_PHRASES = [
+    "add to cart", "add to bag", "checkout", "free trial", "start your free", "pricing",
+    "buy now", "shop now", "limited time", "% off", "per month", "/mo", "book a demo",
+    "request a demo", "get started for free", "enterprise", "subscribe now", "sign up free",
+    "our customers", "trusted by", "case studies", "affiliate", "sponsored", "coupon",
+]
+PARKED_PHRASES = [
+    "domain is for sale", "buy this domain", "this domain may be for sale", "domain for sale",
+    "parked free", "parkingcrew", "sedo.com", "hugedomains", "dan.com", "afternic",
+    "domain has expired", "is parked", "godaddy.com/domainsearch",
+]
+ERROR_PHRASES = ["404 not found", "page not found", "403 forbidden", "access denied",
+                 "site can't be reached", "account suspended", "coming soon", "under maintenance",
+                 "just a moment...", "attention required! | cloudflare", "enable javascript and cookies"]
+LOGIN_WALL_PHRASES = ["log in to continue", "sign in to continue", "login required",
+                      "you must be logged in", "create an account to"]
+ADULT_WORDS = ["porn", "xxx", "nsfw", "sex cam", "escort", "onlyfans", "hentai", "casino",
+               "betting", "gambling", "slots", "viagra", "cbd oil", "payday loan", "crypto presale"]
+DELIGHT_WORDS = [
+    "fun", "toy", "experiment", "experiments", "playful", "made with", "handmade", "hand-made",
+    "weird", "delightful", "a little", "tiny", "silly", "explore", "interactive", "try",
+    "click", "wander", "curious", "whimsical", "strange", "beautiful", "procedural", "generative",
+    "for fun", "side project", "just for fun", "made this", "i made", "labor of love",
+]
+PERSONAL_HOSTS = ["neocities.org", "github.io", "tilde.", "sdf.org", "glitch.me", "itch.io",
+                  "carrd.co", "nekoweb.org", "bearblog.dev", "omg.lol", "envs.net", "w3.org/People"]
+
+WORD_RE = re.compile(r"[a-z0-9][a-z0-9'\-]*")
+
+
+def _text(el) -> str:
+    return re.sub(r"\s+", " ", el.get_text(" ", strip=True)) if el else ""
+
+
+def _count_any(haystack: str, needles: list[str]) -> int:
+    return sum(1 for n in needles if n in haystack)
+
+
+def frameable(headers: dict, url: str) -> bool:
+    """Can this page be shown inside an iframe on an https page?"""
+    if not url.startswith("https://"):
+        return False
+    xfo = headers.get("x-frame-options", "").lower()
+    if "deny" in xfo or "sameorigin" in xfo:
+        return False
+    csp = headers.get("content-security-policy", "").lower()
+    m = re.search(r"frame-ancestors([^;]*)", csp)
+    if m:
+        sources = m.group(1).split()
+        if "*" not in sources and not any("github.io" in s for s in sources):
+            return False
+    return True
+
+
+def extract(url: str, html: str, headers: dict | None = None, scripts: list[str] | None = None) -> dict:
+    headers = headers or {}
+    scripts = scripts or []
+    soup = BeautifulSoup(html, "lxml")
+    raw_lower = html.lower()
+
+    inline_js = "\n".join(s.get_text() for s in soup.find_all("script") if not s.get("src"))
+    script_srcs = [s["src"] for s in soup.find_all("script", src=True)]
+    all_js = (inline_js + "\n" + "\n".join(scripts)).lower()
+    code_lower = raw_lower + "\n" + all_js
+
+    title = _text(soup.title)[:200]
+    og = soup.find("meta", property="og:title")
+    og_title = og.get("content", "") if og else ""
+    desc_tag = soup.find("meta", attrs={"name": re.compile("^description$", re.I)}) or soup.find("meta", property="og:description")
+    description = (desc_tag.get("content", "") if desc_tag else "").strip()[:400]
+    icon = any("icon" in " ".join(link.get("rel", [])).lower() for link in soup.find_all("link"))
+    og_image = soup.find("meta", property="og:image")
+
+    headings = " ".join(_text(h) for h in soup.find_all(["h1", "h2", "h3"])[:30])[:2000]
+
+    for tag in soup(["script", "style", "noscript", "template", "svg"]):
+        tag.decompose()
+    body_text = _text(soup.body or soup)[:60000]
+    words = WORD_RE.findall(body_text.lower())
+
+    # Re-parse for element counts (we removed svg/script above).
+    full = BeautifulSoup(html, "lxml")
+    count = lambda name: len(full.find_all(name))  # noqa: E731
+
+    page_domain = domain_of(url)
+    own = registrable_domain(url)
+    external_links, internal_links = set(), 0
+    for a in full.find_all("a", href=True):
+        href = urljoin(url, a["href"])
+        if not href.startswith("http"):
+            continue
+        n = normalize(href)
+        if not n:
+            continue
+        if registrable_domain(n) == own:
+            internal_links += 1
+        else:
+            external_links.add(n)
+
+    pointer_events = len(re.findall(r"mousemove|pointermove|touchstart|pointerdown|mousedown|ondrag|draggable", code_lower))
+    keyboard_events = len(re.findall(r"keydown|keyup|keypress|arrowleft|arrowright|keycode", code_lower))
+
+    features = {
+        "url": url,
+        "domain": page_domain,
+        "registrable_domain": own,
+        "status": None,
+        "title": title or og_title,
+        "description": description,
+        "headings": headings,
+        "text": body_text,
+        "word_count": len(words),
+        "unique_word_ratio": (len(set(words)) / len(words)) if words else 0.0,
+        "html_bytes": len(html),
+        "lang": (full.html.get("lang", "") if full.html else "")[:10].lower(),
+        "has_icon": icon,
+        "image": og_image.get("content", "") if og_image else "",
+        # element counts
+        "n_canvas": count("canvas") + (1 if "getcontext(" in all_js else 0),
+        "n_svg": count("svg"),
+        "n_img": count("img"),
+        "n_video": count("video"),
+        "n_audio": count("audio"),
+        "n_iframe": count("iframe"),
+        "n_forms": count("form"),
+        "n_inputs": count("input") + count("textarea") + count("select") + count("button"),
+        "n_tables": count("table"),
+        "n_scripts_external": len(script_srcs),
+        "n_scripts_third_party": sum(1 for s in script_srcs if s.startswith("http") and registrable_domain(s) != own),
+        "n_internal_links": internal_links,
+        "n_external_links": len(external_links),
+        "external_links": sorted(external_links)[:200],
+        # structural signals
+        "webgl": bool(re.search(r"webgl|three(\.min)?\.js|threejs|pixi|babylon|regl|getcontext\(['\"]webgl", code_lower)),
+        "web_audio": bool(re.search(r"audiocontext|webkitaudiocontext|tone(\.min)?\.js|howler|createoscillator", code_lower)),
+        "pointer_events": pointer_events,
+        "keyboard_events": keyboard_events,
+        "map_library": bool(re.search(r"leaflet|mapbox|openlayers|maps\.googleapis|maplibre|cesium", code_lower)),
+        "chart_library": bool(re.search(r"\bd3(\.v\d)?(\.min)?\.js|d3js|chart\.js|plotly|vega|highcharts|echarts|observablehq", code_lower)),
+        "marquee_or_blink": bool(full.find(["marquee", "blink"])) or "bgcolor=" in raw_lower,
+        "personal_host": any(h in page_domain for h in PERSONAL_HOSTS) or "/~" in url,
+        # commercial / quality signals
+        "ad_networks": _count_any(code_lower, AD_NETWORKS),
+        "trackers": _count_any(code_lower, TRACKERS),
+        "cookie_banner": _count_any(code_lower, COOKIE_BANNERS) > 0,
+        "commerce_hits": _count_any((body_text + " " + title).lower(), COMMERCE_PHRASES),
+        "parked": _count_any(raw_lower, PARKED_PHRASES) > 0,
+        "error_page": _count_any((title + " " + body_text[:600]).lower(), ERROR_PHRASES) > 0,
+        "login_wall": _count_any(body_text[:3000].lower(), LOGIN_WALL_PHRASES) > 0,
+        "adult_hits": _count_any((title + " " + description + " " + body_text[:5000]).lower(), ADULT_WORDS),
+        "delight_hits": _count_any((title + " " + description + " " + headings + " " + body_text[:4000]).lower(), DELIGHT_WORDS),
+        "lorem": "lorem ipsum" in body_text.lower(),
+        "frameable": frameable(headers, url),
+        "https": url.startswith("https://"),
+        "path_depth": len([p for p in urlsplit(url).path.split("/") if p]),
+    }
+    return features

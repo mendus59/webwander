@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.local.json
+service-account*.json
+.firebase/
+node_modules/
