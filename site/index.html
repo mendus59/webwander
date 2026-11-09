@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebWander</title>
+  <meta name="description" content="Wander the fun, weird and creative corners of the web, one click at a time.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wander-page">
+  <header class="bar">
+    <a class="logo" href="./"><span class="logo-mark">🧭</span><span>WebWander</span></a>
+    <button id="wander" class="wander-btn" title="Wander (space)">Wander <span aria-hidden="true">➜</span></button>
+    <div class="current" id="current" hidden>
+      <img id="cur-icon" alt="" width="18" height="18" onerror="this.style.visibility='hidden'">
+      <div class="cur-text">
+        <a id="cur-title" target="_blank" rel="noopener"></a>
+        <span id="cur-cats" class="cur-cats"></span>
+      </div>
+      <div class="cur-actions">
+        <button id="like" class="icon-btn" title="More like this (↑)">👍</button>
+        <button id="dislike" class="icon-btn" title="Less like this (↓)">👎</button>
+        <button id="save" class="icon-btn" title="Save (s)">☆</button>
+        <a id="open" class="icon-btn" target="_blank" rel="noopener" title="Open in new tab">↗</a>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button id="filter-btn" class="ghost-btn">Topics</button>
+    <button id="saved-btn" class="ghost-btn" hidden>Saved</button>
+    <a id="admin-link" class="ghost-btn" href="admin.html" hidden>Admin</a>
+    <button id="auth-btn" class="ghost-btn">Sign in</button>
+  </header>
+
+  <main id="stage">
+    <section id="welcome" class="welcome">
+      <h1>Find something delightful.</h1>
+      <p>WebWander shows you hand-reviewed fun, weird, creative corners of the web, one at a time.
+        Hit <kbd>Wander</kbd> or press <kbd>space</kbd>.</p>
+      <p class="muted" id="stats-line"></p>
+      <button class="wander-btn big" id="wander-big">Start wandering ➜</button>
+      <p class="muted small">No feeds, no followers, no comments. Sign in only if you want WebWander to remember what you've seen and liked.</p>
+    </section>
+    <iframe id="frame" title="Current site" hidden
+      sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-pointer-lock allow-modals allow-downloads"
+      allow="autoplay; fullscreen; gamepad; accelerometer; gyroscope; clipboard-write" referrerpolicy="no-referrer"></iframe>
+    <section id="card" class="site-card" hidden>
+      <img id="card-img" alt="">
+      <h2 id="card-title"></h2>
+      <p id="card-desc"></p>
+      <p class="muted small">This site doesn't allow being shown inside WebWander, so it opens in a new tab.</p>
+      <a id="card-open" class="wander-btn" target="_blank" rel="noopener">Open site ↗</a>
+    </section>
+    <section id="empty" class="welcome" hidden>
+      <h1>You've seen it all! 🎉</h1>
+      <p id="empty-msg">There's nothing new in these topics right now. New sites are approved every day.</p>
+      <button class="ghost-btn" id="reset-seen">Start over and allow repeats</button>
+    </section>
+  </main>
+
+  <dialog id="filter-dlg" class="panel">
+    <h2>Topics</h2>
+    <p class="muted small">Pick what you want to wander through. None selected means everything.</p>
+    <div id="chips" class="chips"></div>
+    <div class="row"><button class="ghost-btn" id="chips-clear">Clear</button><button class="wander-btn" id="chips-done">Done</button></div>
+  </dialog>
+
+  <dialog id="saved-dlg" class="panel wide">
+    <h2>Saved sites</h2>
+    <ul id="saved-list" class="saved-list"></ul>
+    <h3>Suggest a site</h3>
+    <form id="suggest-form" class="row">
+      <input type="url" id="suggest-url" placeholder="https://something-wonderful.example" required>
+      <button class="wander-btn" type="submit">Suggest</button>
+    </form>
+    <p class="muted small" id="suggest-msg"></p>
+    <div class="row"><button class="ghost-btn" id="saved-close">Close</button></div>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="js/wander.js"></script>
+</body>
+</html>

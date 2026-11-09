@@ -1,0 +1,138 @@
+{
+  "_comment": "Single source of truth for categories. The crawler's tagger reads keywords/signals from here; the site reads labels/emoji. Keywords are matched as whole words (case-insensitive) against title, meta description, headings and body text. Signals are structural features detected in the HTML.",
+  "categories": [
+    {
+      "id": "games",
+      "label": "Games",
+      "emoji": "🎮",
+      "keywords": ["game", "games", "play", "player", "level", "levels", "score", "high score", "highscore", "arcade", "puzzle game", "platformer", "multiplayer", "lives", "game over", "itch.io"],
+      "signals": {"canvas": 1, "keyboard_controls": 2}
+    },
+    {
+      "id": "toys",
+      "label": "Interactive Toys",
+      "emoji": "🪀",
+      "keywords": ["toy", "click", "drag", "draw", "interactive", "move your mouse", "tap", "fidget", "satisfying", "playground", "sandbox", "try it"],
+      "signals": {"canvas": 2, "webgl": 1, "pointer_handlers": 2}
+    },
+    {
+      "id": "art",
+      "label": "Art & Design",
+      "emoji": "🎨",
+      "keywords": ["art", "artist", "artwork", "design", "illustration", "painting", "gallery", "typography", "color", "colour", "palette", "pixel art", "generative", "creative coding", "exhibition", "sketch"],
+      "signals": {"svg_heavy": 1}
+    },
+    {
+      "id": "music",
+      "label": "Music & Sound",
+      "emoji": "🎵",
+      "keywords": ["music", "sound", "audio", "synth", "synthesizer", "beat", "drum", "song", "songs", "piano", "melody", "sequencer", "noise", "ambient", "radio", "chord", "instrument"],
+      "signals": {"web_audio": 3, "audio_tag": 2}
+    },
+    {
+      "id": "science",
+      "label": "Science & Space",
+      "emoji": "🔭",
+      "keywords": ["science", "physics", "chemistry", "biology", "space", "planet", "planets", "universe", "galaxy", "star", "stars", "nasa", "atom", "molecule", "experiment", "orbit", "telescope", "solar system", "quantum", "cell"],
+      "signals": {}
+    },
+    {
+      "id": "maps",
+      "label": "Maps & Places",
+      "emoji": "🗺️",
+      "keywords": ["map", "maps", "geography", "country", "countries", "city", "cities", "world", "globe", "travel", "explore", "street", "atlas", "satellite", "coordinates", "earth"],
+      "signals": {"map_library": 3}
+    },
+    {
+      "id": "history",
+      "label": "History & Archives",
+      "emoji": "🏛️",
+      "keywords": ["history", "historical", "archive", "archives", "ancient", "museum", "century", "timeline", "vintage", "old", "war", "empire", "artifact", "collection"],
+      "signals": {}
+    },
+    {
+      "id": "dataviz",
+      "label": "Data & Visualization",
+      "emoji": "📊",
+      "keywords": ["data", "visualization", "visualisation", "chart", "charts", "graph", "statistics", "infographic", "dataset", "scale", "compare", "population", "visualize"],
+      "signals": {"chart_library": 3, "svg_heavy": 1}
+    },
+    {
+      "id": "generators",
+      "label": "Generators & Tools",
+      "emoji": "🛠️",
+      "keywords": ["generator", "generate", "random", "tool", "maker", "create your own", "converter", "calculator", "make your own", "randomizer", "builder", "editor"],
+      "signals": {"forms": 1}
+    },
+    {
+      "id": "weird",
+      "label": "Weird & Absurd",
+      "emoji": "🤪",
+      "keywords": ["weird", "strange", "absurd", "pointless", "useless", "bizarre", "silly", "nonsense", "odd", "surreal", "mystery", "infinite", "endless", "why", "cursed"],
+      "signals": {}
+    },
+    {
+      "id": "learning",
+      "label": "Learn Something",
+      "emoji": "📚",
+      "keywords": ["learn", "learning", "explained", "explainer", "how", "tutorial", "guide", "understand", "lesson", "course", "introduction", "explorable", "interactive essay", "why does"],
+      "signals": {}
+    },
+    {
+      "id": "retro",
+      "label": "Retro & Nostalgia",
+      "emoji": "📼",
+      "keywords": ["retro", "nostalgia", "nostalgic", "90s", "80s", "1990s", "1980s", "geocities", "pixel", "8-bit", "16-bit", "oldschool", "old school", "windows 95", "y2k", "webring", "guestbook", "under construction", "neocities"],
+      "signals": {"marquee_or_blink": 3, "table_layout": 1}
+    },
+    {
+      "id": "stories",
+      "label": "Writing & Stories",
+      "emoji": "✍️",
+      "keywords": ["story", "stories", "fiction", "poem", "poems", "poetry", "writing", "essay", "essays", "novel", "tale", "zine", "comic", "comics", "chapter", "words"],
+      "signals": {"long_text": 2}
+    },
+    {
+      "id": "nature",
+      "label": "Nature & Animals",
+      "emoji": "🌿",
+      "keywords": ["nature", "animal", "animals", "bird", "birds", "plant", "plants", "tree", "trees", "ocean", "sea", "forest", "wildlife", "fish", "insect", "bug", "bugs", "cat", "cats", "dog", "dogs", "weather"],
+      "signals": {}
+    },
+    {
+      "id": "food",
+      "label": "Food & Drink",
+      "emoji": "🍜",
+      "keywords": ["food", "recipe", "recipes", "cooking", "cook", "kitchen", "coffee", "tea", "beer", "wine", "bake", "baking", "flavor", "flavour", "cuisine", "eat"],
+      "signals": {}
+    },
+    {
+      "id": "math",
+      "label": "Math & Puzzles",
+      "emoji": "🧩",
+      "keywords": ["math", "maths", "mathematics", "puzzle", "puzzles", "riddle", "logic", "geometry", "fractal", "fractals", "number", "numbers", "prime", "equation", "algorithm", "sudoku", "crossword"],
+      "signals": {}
+    },
+    {
+      "id": "simulation",
+      "label": "Simulations",
+      "emoji": "🧪",
+      "keywords": ["simulation", "simulator", "simulate", "model", "emergent", "cellular automata", "particles", "evolution", "ecosystem", "life", "physics engine", "sandbox"],
+      "signals": {"canvas": 1, "webgl": 2}
+    },
+    {
+      "id": "photo",
+      "label": "Photo & Video",
+      "emoji": "📷",
+      "keywords": ["photo", "photos", "photography", "photograph", "camera", "film", "video", "videos", "webcam", "live cam", "timelapse", "footage"],
+      "signals": {"many_images": 2, "video_tag": 2}
+    },
+    {
+      "id": "indieweb",
+      "label": "Personal Web",
+      "emoji": "🏡",
+      "keywords": ["homepage", "my site", "personal", "blog", "webring", "about me", "garden", "digital garden", "now page", "hobby", "handmade", "small web", "indie web", "indieweb"],
+      "signals": {"personal_host": 3}
+    }
+  ]
+}
