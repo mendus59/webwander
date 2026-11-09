@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><title>Tiny Lisp in 100 lines of JavaScript</title>
+<meta name="description" content="Write your own Lisp interpreter: a hands-on programming walkthrough with a live REPL.">
+<link rel="stylesheet" href="/prism.css"><script src="/prism.min.js"></script></head>
+<body><h1>Tiny Lisp</h1><h2>The tokenizer</h2>
+<p>Let's write a small interpreter. First we split source code into tokens.</p>
+<pre><code class="language-js">function tokenize(src) { return src.replace(/\(/g, ' ( ').replace(/\)/g, ' ) ').trim().split(/\s+/); }</code></pre>
+<h2>The parser</h2><pre><code class="language-js">function parse(tokens) { const t = tokens.shift(); if (t === '(') { const list = []; while (tokens[0] !== ')') list.push(parse(tokens)); tokens.shift(); return list; } return isNaN(t) ? t : Number(t); }</code></pre>
+<h2>Try it</h2><pre><code class="language-lisp">(define square (lambda (x) (* x x)))
+(square 12)</code></pre>
+<div class="repl"><textarea></textarea><button>Run</button></div>
+<script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.js"></script></body></html>

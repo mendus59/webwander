@@ -49,6 +49,9 @@ def signal_values(f: dict) -> dict[str, bool]:
         "long_text": f["word_count"] >= 1500,
         "many_images": f["n_img"] >= 20,
         "personal_host": f["personal_host"],
+        "code_blocks": f["n_code_blocks"] >= 3,
+        "code_highlighter": f["code_highlighter"],
+        "code_editor": f["code_editor"],
     }
 
 

@@ -99,3 +99,15 @@ def test_frameable():
     assert not frameable({"x-frame-options": "DENY"}, "https://x.com/")
     assert not frameable({"content-security-policy": "frame-ancestors 'self'"}, "https://x.com/")
     assert frameable({"content-security-policy": "frame-ancestors *"}, "https://x.com/")
+
+
+def test_programming_tag():
+    f, res, tags = run("code.html", "https://lisp.example.dev/")
+    assert tags[0] == "programming"
+    assert f["n_code_blocks"] >= 3 and f["code_highlighter"] and f["code_editor"]
+
+
+@pytest.mark.parametrize("name", ["toy.html", "saas.html", "retro.html", "synth.html"])
+def test_programming_not_overtagged(name):
+    _, _, tags = run(name, "https://x.example.org/")
+    assert "programming" not in tags

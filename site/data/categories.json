@@ -128,6 +128,13 @@
       "signals": {"many_images": 2, "video_tag": 2}
     },
     {
+      "id": "programming",
+      "label": "Programming",
+      "emoji": "💻",
+      "keywords": ["programming", "code", "coding", "coder", "developer", "developers", "javascript", "typescript", "python", "rust", "golang", "haskell", "lisp", "c++", "compiler", "interpreter", "algorithm", "algorithms", "api", "open source", "github", "source code", "syntax", "debugger", "terminal", "command line", "shell", "regex", "css", "html", "webassembly", "wasm", "sql", "git", "repl", "esolang", "demoscene", "shader", "shaders", "assembly", "emulator", "hacking", "software", "bash"],
+      "signals": {"code_blocks": 3, "code_highlighter": 2, "code_editor": 3}
+    },
+    {
       "id": "indieweb",
       "label": "Personal Web",
       "emoji": "🏡",
