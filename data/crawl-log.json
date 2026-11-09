@@ -31,5 +31,38 @@
    "https://routeup.dev/",
    "http://cbladey.com/"
   ]
+ },
+ {
+  "at": "2026-11-09T23:03:15+00:00",
+  "fetched": 33,
+  "new": 25,
+  "minutes": 1.1,
+  "sites": [
+   "https://radio.garden/",
+   "https://surge-synthesizer.github.io/",
+   "https://oriwiki.com/",
+   "https://solarsystemscope.com/",
+   "https://creativecommons.org/publicdomain/zero/1.0",
+   "http://zztosh.de/",
+   "https://ifarchive.org/",
+   "https://projectlumen.app/",
+   "https://godotengine.org/article/rendering-cpu-optimizations",
+   "https://enroncorp.com/corp",
+   "https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html",
+   "https://art42.net/",
+   "https://vale.rocks/posts/dvd-menus",
+   "http://scirocco.org/",
+   "https://pcjs.org/",
+   "https://eightcolors.net/",
+   "https://char.lt/blog/2026/09/non24swd",
+   "https://videogameobsession.com/neogeo/sound",
+   "https://zoomquilt.org/",
+   "https://hackage-content.haskell.org/package/diagrams-lib-1.5.1/docs/Diagrams-CubicSpline.html",
+   "https://lindylearn.io/",
+   "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1",
+   "https://gwern.net/",
+   "https://pikuma.com/blog/comanche-maps-reverse-engineering",
+   "https://telvanniwizard.neocities.org/"
+  ]
  }
 ]
