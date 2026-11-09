@@ -2,12 +2,13 @@
 // Your apps > Web app > SDK setup and configuration > "Config").
 // These values are public by design; Firestore security rules protect the data.
 export const firebaseConfig = {
-  apiKey: "REPLACE_ME",
-  authDomain: "REPLACE_ME.firebaseapp.com",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME.appspot.com",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME",
+  apiKey: "AIzaSyDFqW0_AEUsgooZWc5fAxHbCC7FnaxgfYY",
+  authDomain: "webwander-32091.firebaseapp.com",
+  projectId: "webwander-32091",
+  storageBucket: "webwander-32091.firebasestorage.app",
+  messagingSenderId: "256287646414",
+  appId: "1:256287646414:web:5fdb7adff011658518669f",
+  measurementId: "G-H7955XQZY4",
 };
 
 // Link shown on the admin page for running the crawler by hand.

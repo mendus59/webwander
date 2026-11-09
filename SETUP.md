@@ -9,9 +9,9 @@ Firebase's free Spark plan. Setup takes about 15 minutes, all in web consoles.
    Google Analytics is optional; you can turn it off.
 2. On the project overview, click the **</>** (Web) icon to add a web app. Name it `webwander`,
    skip Firebase Hosting, and click **Register app**.
-3. Copy the `firebaseConfig` object it shows into [`site/js/firebase-config.js`](site/js/firebase-config.js),
-   replacing the `REPLACE_ME` values, and commit. (These values are meant to be public. The
-   Firestore rules are what protect the data.)
+3. Copy the `firebaseConfig` object it shows into [`site/js/firebase-config.js`](site/js/firebase-config.js)
+   and commit. (Already done for project `webwander-32091`. These values are meant to be
+   public. The Firestore rules are what protect the data.)
 
 ## 2. Turn on Google sign-in
 
@@ -28,7 +28,6 @@ Firebase's free Spark plan. Setup takes about 15 minutes, all in web consoles.
    ```sh
    npm install -g firebase-tools
    firebase login
-   firebase use --add          # pick your project
    firebase deploy --only firestore
    ```
    This deploys both the rules and [`firebase/firestore.indexes.json`](firebase/firestore.indexes.json).
