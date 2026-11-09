@@ -148,6 +148,7 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
         "n_forms": count("form"),
         "n_inputs": count("input") + count("textarea") + count("select") + count("button"),
         "n_tables": count("table"),
+        "n_code_blocks": len(full.find_all("pre")) + len([c for c in full.find_all("code") if len(c.get_text()) > 40]),
         "n_scripts_external": len(script_srcs),
         "n_scripts_third_party": sum(1 for s in script_srcs if s.startswith("http") and registrable_domain(s) != own),
         "n_internal_links": internal_links,
@@ -160,6 +161,8 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
         "keyboard_events": keyboard_events,
         "map_library": bool(re.search(r"leaflet|mapbox|openlayers|maps\.googleapis|maplibre|cesium", code_lower)),
         "chart_library": bool(re.search(r"\bd3(\.v\d)?(\.min)?\.js|d3js|chart\.js|plotly|vega|highcharts|echarts|observablehq", code_lower)),
+        "code_highlighter": bool(re.search(r"prism(\.min)?\.(js|css)|highlight(\.min)?\.js|hljs|shiki|pygments|language-[a-z]+", code_lower)),
+        "code_editor": bool(re.search(r"codemirror|monaco-editor|ace\.js|ace-builds|class=\"[^\"]*\brepl\b", code_lower)),
         "marquee_or_blink": bool(full.find(["marquee", "blink"])) or "bgcolor=" in raw_lower,
         "personal_host": any(h in page_domain for h in PERSONAL_HOSTS) or "/~" in url,
         # commercial / quality signals
