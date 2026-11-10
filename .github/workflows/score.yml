@@ -1,0 +1,49 @@
+name: Score submissions
+
+# Scores sites added by hand in the admin panel (and visitor suggestions) right away and
+# puts them in Proposed, instead of waiting for the daily crawl. Started from the admin
+# panel; takes a minute or two.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commits crawl bookkeeping in data/
+
+concurrency:
+  group: crawler
+  cancel-in-progress: false
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: crawler/requirements.txt
+      - run: pip install -r crawler/requirements.txt
+      - name: Check Firebase secret
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "::error::Add the FIREBASE_SERVICE_ACCOUNT repository secret (see SETUP.md)."
+            exit 1
+          fi
+      - name: Score submissions
+        working-directory: crawler
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: python -m wander submissions
+      - name: Commit bookkeeping
+        run: |
+          git config user.name "webwander-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          VERSION=$(cd crawler && python -c "from wander import __version__; print(__version__)")
+          git commit -m "score submissions: $(date -u +%F) (crawler v$VERSION, ${GITHUB_SHA::7})"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

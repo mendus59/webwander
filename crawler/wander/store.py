@@ -1,7 +1,8 @@
 """Storage backends: Firestore (production) and a local JSON file (dry runs / tests).
 
 Firestore layout (see firebase/firestore.rules):
-  sites/{id}         every scored site; status = proposed | approved | rejected
+  sites/{id}         every scored site; status = proposed | approved | rejected | backlog
+                     (backlog = good and scored, held back to keep a run's categories balanced)
   submissions/{id}   URLs added by users or the admin, waiting for the crawler to score
   meta/stats         counters shown on the site
 Crawl bookkeeping that doesn't need to be in Firestore (seen URLs, crawl frontier)
@@ -38,6 +39,9 @@ class LocalStore:
             existing.update(discoveredAt=time.time(), rand=random.random())
         existing.update(doc)
 
+    def delete_site(self, doc_id: str) -> None:
+        self.data["sites"].pop(doc_id, None)
+
     def load_submissions(self) -> list[dict]:
         return [dict(v, id=k) for k, v in self.data["submissions"].items()]
 
@@ -73,7 +77,7 @@ class FirestoreStore:
         self.db = firestore.client()
 
     def load_sites(self) -> list[dict]:
-        fields = ["url", "domain", "registrableDomain", "simhash", "status", "categories"]
+        fields = ["url", "domain", "registrableDomain", "simhash", "status", "categories", "score", "backlogAt"]
         return [dict(d.to_dict(), id=d.id) for d in self.db.collection("sites").select(fields).stream()]
 
     def upsert_site(self, doc: dict) -> None:
@@ -84,6 +88,9 @@ class FirestoreStore:
             doc["discoveredAt"] = self.fs.SERVER_TIMESTAMP
             doc["rand"] = random.random()
         ref.set(doc, merge=True)
+
+    def delete_site(self, doc_id: str) -> None:
+        self.db.collection("sites").document(doc_id).delete()
 
     def load_submissions(self) -> list[dict]:
         return [dict(d.to_dict(), id=d.id) for d in self.db.collection("submissions").stream()]
@@ -113,7 +120,7 @@ class FirestoreStore:
 SEEN_PATH = DATA_DIR / "seen-urls.txt"
 FRONTIER_PATH = DATA_DIR / "frontier.json"
 LOG_PATH = DATA_DIR / "crawl-log.json"
-BACKLOG_PATH = DATA_DIR / "backlog.json"
+BACKLOG_PATH = DATA_DIR / "backlog.json"  # legacy: the backlog now lives in sites/ (status "backlog")
 BACKLOG_MAX = 500
 BACKLOG_DAYS = 30
 FRONTIER_MAX = 3000
@@ -148,19 +155,13 @@ def append_log(entry: dict, keep: int = 60) -> None:
     LOG_PATH.write_text(json.dumps(log[-keep:], indent=1))
 
 
-def load_backlog() -> list[dict]:
-    """Good, already-scored sites that didn't fit an earlier run's category balance.
-    They are offered first in later runs instead of being re-crawled; entries older
-    than BACKLOG_DAYS are dropped (the page may have changed)."""
+def take_legacy_backlog() -> list[dict]:
+    """Entries of the old data/backlog.json (if any) as site docs; the file is removed.
+    Used once to move the backlog into the database."""
     if not BACKLOG_PATH.exists():
         return []
     cutoff = time.time() - BACKLOG_DAYS * 86400
-    return [d for d in json.loads(BACKLOG_PATH.read_text()) if d.get("_backlogAt", 0) >= cutoff]
-
-
-def save_backlog(docs: list[dict]) -> None:
-    now = time.time()
-    docs = [dict(d, _backlogAt=d.get("_backlogAt", now)) for d in docs]
-    docs = sorted(docs, key=lambda d: d.get("score", 0), reverse=True)[:BACKLOG_MAX]
-    BACKLOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    BACKLOG_PATH.write_text(json.dumps(docs, indent=0))
+    items = [d for d in json.loads(BACKLOG_PATH.read_text()) if d.get("_backlogAt", 0) >= cutoff]
+    BACKLOG_PATH.unlink()
+    return [dict({k: v for k, v in d.items() if not k.startswith("_")}, backlogAt=d["_backlogAt"])
+            for d in items]

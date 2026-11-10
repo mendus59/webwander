@@ -272,3 +272,5 @@ dialog.preview iframe { flex: 1; border: 1px solid var(--line); border-radius: 1
 #crawl-token { width: 100%; }
 #crawl-status a { color: inherit; }
 @media (max-width: 640px) { #crawl-status { display: none; } }
+.pending-head { align-items: center; gap: 10px; margin: 4px 0 8px; flex-wrap: wrap; }
+.review.queued { opacity: .75; }

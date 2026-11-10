@@ -42,12 +42,14 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
   at one commit) and the Pages deploy copies them into `site/shots/`.
 - **Admin** (`site/admin.html`): review queue sorted by score, with the score breakdown,
   reasons, auto-detected categories (editable), preview, approve/reject, bulk actions and
-  hand-adding URLs. Tabs cover every place a site can be: Proposed, Approved, Rejected (with
-  the auto-check reason), Queued (submissions waiting to be scored) and Backlog (good sites
-  held back for balance, which you can queue or approve). **Propose a balanced batch** on the
-Backlog tab moves the next N backlog sites (category-balanced, already scored) straight into
-Proposed, with no crawl run needed (`python -m wander backlog --count N` does the same). A hand-added URL that can't be
-  fetched shows up under Rejected with the reason instead of disappearing.
+  hand-adding URLs. **Every site has exactly one status, so it shows in exactly one tab:**
+  Proposed, Approved, Rejected (with the auto-check reason) or Backlog (good sites held back
+  for balance). **Propose a balanced batch** on the Backlog tab moves the next N backlog sites
+  (category-balanced, already scored) to Proposed with no crawl (`python -m wander backlog
+  --count N` does the same). Sites added by hand or suggested by visitors show at the top of
+  Proposed while they're scored; with the Run crawler token set up, the **Score submissions**
+  workflow scores them within a minute or two (`python -m wander submissions`), otherwise
+  the next daily crawl does. A URL that can't be fetched lands in Rejected with the reason.
 - **Run crawler** in the admin bar starts the daily-crawl workflow straight from the panel and
   shows its live status. It needs a one-time GitHub fine-grained token (this repo only,
   Actions: read and write), which is kept in that browser's localStorage and only sent to
@@ -59,12 +61,12 @@ Proposed, with no crawl run needed (`python -m wander backlog --count N` does th
   than it needs, then picks so every category gets roughly the same number
   (`crawler/wander/balance.py`), preferring categories the database has fewest of. Discovery
   searches are steered toward those rarest categories too. Good sites that didn't fit a run
-  are kept, already scored, in `data/backlog.json` and offered first in later runs (no
+  are kept, already scored, as `status: "backlog"` sites and offered first in later runs (no
   re-crawl needed; entries expire after 30 days, max 500).
 
 **Crawler version:** `crawler/wander/__init__.py` holds `__version__` (bump it whenever the
 crawler's behaviour changes). Every run prints it with the commit id, shows it in the Actions
-run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.11.0, 325a51d)`),
+run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.12.0, 325a51d)`),
 saves it in `data/crawl-log.json` and `meta/stats`, and stamps it on each site it scores. The
 admin panel shows the last run's version and each site's. `python -m wander --version` prints it.
 
@@ -118,6 +120,6 @@ crawler/wander/       fetch.py, extract.py, tagger.py, score.py, simhash.py, sou
 crawler/seeds.txt     starter list of hand-picked sites
 crawler/tests/        pytest suite with HTML fixtures
 firebase/             Firestore security rules and indexes
-data/                 crawl bookkeeping committed by the bot (seen URLs, link frontier, backlog, run log)
+data/                 crawl bookkeeping committed by the bot (seen URLs, link frontier, run log)
 .github/workflows/    pages.yml, crawl.yml (daily), recheck.yml (weekly), seed.yml (once), test.yml
 ```

@@ -1,14 +1,11 @@
 import {
   collection, query, where, orderBy, limit, startAfter, getDocs, getDoc, doc, writeBatch,
-  updateDoc, addDoc, deleteDoc, setDoc, serverTimestamp, getCountFromServer,
+  updateDoc, addDoc, deleteDoc, serverTimestamp, getCountFromServer,
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 import {
   configured, db, signIn, logOut, watchUser, isAdmin, loadCategories, faviconFor, el,
 } from "./firebase.js";
 import { repoUrl } from "./firebase-config.js";
-
-// data/backlog.json is committed by the crawler; read it straight from the public repo.
-const BACKLOG_URL = repoUrl.replace("https://github.com/", "https://raw.githubusercontent.com/") + "/main/data/backlog.json";
 
 const $ = (id) => document.getElementById(id);
 const PAGE = 50;
@@ -136,7 +133,7 @@ async function loadStats() {
 }
 
 async function loadStatsInner() {
-  const counts = await Promise.all(["proposed", "approved", "rejected"].map(async (s) =>
+  const counts = await Promise.all(["proposed", "approved", "rejected", "backlog"].map(async (s) =>
     (await getCountFromServer(query(collection(db, "sites"), where("status", "==", s)))).data().count));
   const meta = (await getDoc(doc(db, "meta", "stats"))).data() || {};
   const subs = (await getCountFromServer(collection(db, "submissions"))).data().count;
@@ -144,7 +141,8 @@ async function loadStatsInner() {
     stat("Waiting for review", counts[0]),
     stat("Approved", counts[1]),
     stat("Rejected", counts[2]),
-    stat("Queued for scoring", subs),
+    stat("Backlog", counts[3]),
+    ...(subs ? [stat("Being scored", subs)] : []),
     stat("Last crawl", meta.lastRun ? `${new Date(meta.lastRun).toLocaleString([], { dateStyle: "medium", timeStyle: "short" })}, +${meta.lastRunNew} new` : "never"),
     stat("Crawler version", meta.crawlerVersion ? `v${meta.crawlerVersion}` : "unknown",
       meta.crawlerBuild ? `${repoUrl}/commit/${meta.crawlerBuild}` : null),
@@ -175,10 +173,9 @@ function showError(e) {
 }
 
 async function loadMore() {
-  $("toolbar").hidden = state.status === "queued" || state.status === "backlog";
   try {
-    if (state.status === "queued") return await loadQueued();
-    if (state.status === "backlog") return await loadBacklog();
+    if (!state.cursor && state.status === "proposed") await loadPending();
+    if (!state.cursor && state.status === "backlog") await backlogHeader();
     await loadSites();
   } catch (e) {
     $("more").hidden = true;
@@ -196,66 +193,91 @@ async function loadSites() {
     state.rows.set(d.id, { data: d.data(), node: row });
     $("list").append(row);
   }
-  if (!state.rows.size) $("list").append(el("p", { class: "muted center" }, "Nothing here. 🎉"));
+  if (!state.rows.size && !$("list").querySelector(".review")) $("list").append(el("p", { class: "muted center" }, "Nothing here. 🎉"));
   $("more").hidden = snap.docs.length < PAGE;
   updateSelection();
 }
 
-// Submissions waiting for the next crawler run to fetch and score them.
-async function loadQueued() {
+// Sites added by hand or suggested by visitors that haven't been scored yet. They are shown
+// at the top of Proposed (where they will land) and are scored right away when the
+// "Run crawler" token is set up, otherwise by the next daily crawl.
+async function loadPending() {
   const snap = await getDocs(collection(db, "submissions"));
-  const docs = snap.docs.map((d) => ({ id: d.id, ...d.data() }))
-    .sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+  if (snap.empty) return;
+  const docs = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+  const token = !!getToken();
+  $("list").append(el("div", { class: "row pending-head" },
+    el("strong", { class: "small" }, `⏳ ${docs.length} site${docs.length === 1 ? "" : "s"} being scored`),
+    el("span", { class: "muted small" }, token ? "They move into this list when scoring finishes (a minute or two)."
+      : "They're scored by the next daily crawl, or now if you set up Run crawler."),
+    el("div", { class: "spacer" }),
+    el("button", { class: "ghost-btn small", onclick: () => scoreNow(true) }, "Score now")));
   for (const sub of docs) {
-    const when = sub.createdAt?.toDate ? sub.createdAt.toDate().toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "";
     const who = sub.uid === state.user?.uid ? "you" : "a visitor";
     const node = el("article", { class: "review queued" },
+      el("input", { type: "checkbox", style: "visibility:hidden" }),
       el("div", { class: "score" }, "…"),
       el("div", { class: "body" },
         el("div", { class: "title-row" },
           el("a", { href: sub.url, target: "_blank", rel: "noopener", class: "title" }, sub.url)),
-        el("p", { class: "muted small" }, `Added by ${who}${when ? ` · ${when}` : ""}`,
-          sub.autoApprove ? " · will be approved once scored" : " · goes to Proposed once scored")),
+        el("p", { class: "muted small" }, `Added by ${who} · being scored`,
+          sub.autoApprove ? " · will be approved once scored" : "")),
       el("div", { class: "actions" },
         el("button", { class: "ghost-btn danger", onclick: async () => {
           await deleteDoc(doc(db, "submissions", sub.id));
           node.remove();
-          toast("Removed from the queue.");
+          toast("Removed.");
           loadStats();
         } }, "Remove")));
     $("list").append(node);
   }
-  if (!docs.length) $("list").append(el("p", { class: "muted center" }, "Nothing queued. Added sites show up here until the next crawler run scores them."));
-  $("more").hidden = true;
+  watchPending(docs.length);
 }
 
-// Good sites the crawler scored but held back to keep categories balanced.
-async function loadBacklog() {
-  const r = await fetch(BACKLOG_URL, { cache: "no-store" });
-  const items = r.status === 404 ? [] : await r.json();
-  if (!r.ok && r.status !== 404) throw new Error(`backlog.json: HTTP ${r.status}`);
-  items.sort((a, b) => (b.score || 0) - (a.score || 0));
-  state.backlog = items;
-  $("list").append(el("p", { class: "muted small" },
-    `${items.length} scored site${items.length === 1 ? "" : "s"} held back to keep each run's categories balanced. ` +
-    "The crawler offers these first in later runs. Queue one to have it scored again and sent to Proposed now."));
-  if (items.length) {
-    const count = el("input", { type: "number", value: "10", min: "1", max: "100", class: "num", "aria-label": "how many" });
-    $("list").append(el("div", { class: "row backlog-batch" },
-      el("button", { class: "wander-btn", onclick: (e) => proposeFromBacklog(Number(count.value) || 10, e.currentTarget) },
-        "Propose a balanced batch"),
-      count,
-      el("span", { class: "muted small" }, "sites go straight to Proposed, already scored. No crawl needed.")));
+// Start the "Score submissions" workflow (needs the Run crawler token).
+async function scoreNow(ask = false) {
+  if (!getToken()) {
+    if (ask) { openCrawlDialog(); toast("Set up the token once, then Score now works instantly."); }
+    return false;
   }
-  for (const s of items) {
-    const node = renderRow(s.id, { ...s, status: "backlog" }, [
-      el("button", { class: "ghost-btn", onclick: () => preview(s) }, "Preview"),
-      el("button", { class: "wander-btn", onclick: () => queueUrl(s.url, true, node) }, "Approve"),
-      el("button", { class: "ghost-btn", onclick: () => queueUrl(s.url, false, node) }, "Queue for review"),
-    ]);
-    $("list").append(node);
+  try {
+    await gh(`https://api.github.com/repos/${REPO}/actions/workflows/score.yml/dispatches`,
+      { method: "POST", body: JSON.stringify({ ref: "main" }) });
+    if (ask) toast("Scoring started. The sites move into Proposed in a minute or two.");
+    return true;
+  } catch (err) {
+    toast(`Couldn't start scoring: ${err.message}`);
+    return false;
   }
-  $("more").hidden = true;
+}
+
+// While submissions are pending, check every 20 s and refresh Proposed when they're done.
+let pendingTimer;
+function watchPending(n) {
+  clearTimeout(pendingTimer);
+  pendingTimer = setTimeout(async () => {
+    try {
+      const left = (await getCountFromServer(collection(db, "submissions"))).data().count;
+      if (left < n && state.status === "proposed") { loadStats(); reload(); }
+      else if (left) watchPending(n);
+    } catch (e) { console.warn(e); }
+  }, 20_000);
+}
+
+// Good sites the crawler scored but held back to keep categories balanced. They are
+// ordinary sites with status "backlog", so each site is only ever in one tab.
+async function backlogHeader() {
+  const n = (await getCountFromServer(query(collection(db, "sites"), where("status", "==", "backlog")))).data().count;
+  $("list").append(el("p", { class: "muted small backlog-count" },
+    `${n} scored site${n === 1 ? "" : "s"} held back to keep each run's categories balanced. ` +
+    "The crawler offers these first in later runs, or propose some now."));
+  if (!n) return;
+  const count = el("input", { type: "number", value: "10", min: "1", max: "100", class: "num", "aria-label": "how many" });
+  $("list").append(el("div", { class: "row backlog-batch" },
+    el("button", { class: "wander-btn", onclick: (e) => proposeFromBacklog(Number(count.value) || 10, e.currentTarget) },
+      "Propose a balanced batch"),
+    count,
+    el("span", { class: "muted small" }, "sites move to Proposed, already scored. No crawl needed.")));
 }
 
 // ---- propose a batch straight from the backlog (same idea as crawler/wander/balance.py)
@@ -300,43 +322,19 @@ async function proposeFromBacklog(k, btn) {
   btn.disabled = true;
   try {
     const meta = (await getDoc(doc(db, "meta", "stats"))).data() || {};
-    let pool = [...(state.backlog || [])];
-    const added = [];
-    // Sites already in the database (proposed earlier, or approved/rejected) are skipped;
-    // the crawler drops them from backlog.json on its next run.
-    while (added.length < k && pool.length) {
-      const batch = pickBalanced(pool, k - added.length, meta.categories || {});
-      if (!batch.length) break;
-      const ids = new Set(batch.map((d) => d.id));
-      pool = pool.filter((d) => !ids.has(d.id));
-      for (const d of batch) {
-        if ((await getDoc(doc(db, "sites", d.id))).exists()) continue;
-        const site = Object.fromEntries(Object.entries(d).filter(([key]) => !key.startsWith("_") && key !== "id"));
-        await setDoc(doc(db, "sites", d.id), {
-          ...site, status: "proposed", fromBacklog: true, discoveredAt: serverTimestamp(), rand: Math.random(),
-        });
-        added.push(d);
-      }
-    }
-    const shown = new Set(added.map((d) => d.id));
-    state.backlog = (state.backlog || []).filter((d) => !shown.has(d.id));
-    toast(added.length ? `${added.length} site${added.length === 1 ? "" : "s"} added to Proposed from the backlog.`
-      : "Nothing new to propose: every backlog site is already in the database.");
-    loadStats();
-    if (added.length) document.querySelector('#tabs button[data-status="proposed"]').click();
+    const snap = await getDocs(query(collection(db, "sites"), where("status", "==", "backlog")));
+    const pool = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    const batch = pickBalanced(pool, k, meta.categories || {});
+    if (!batch.length) return toast("The backlog is empty.");
+    for (const d of batch) if (!state.rows.has(d.id)) state.rows.set(d.id, { data: d, node: { remove() {} } });
+    await setStatus(batch.map((d) => d.id), "proposed", `${batch.length} site${batch.length === 1 ? "" : "s"} moved from the backlog to Proposed.`);
+    document.querySelector('#tabs button[data-status="proposed"]').click();
   } catch (e) {
     toast(`Couldn't propose from the backlog: ${e.message}`);
     console.error(e);
   } finally {
     btn.disabled = false;
   }
-}
-
-async function queueUrl(url, autoApprove, node) {
-  await addDoc(collection(db, "submissions"), { url, uid: state.user.uid, createdAt: serverTimestamp(), autoApprove });
-  node?.remove();
-  toast(autoApprove ? "Queued to be approved on the next crawler run." : "Queued. It'll be in Proposed after the next crawler run.");
-  loadStats();
 }
 
 function scoreClass(s) {
@@ -346,7 +344,7 @@ function scoreClass(s) {
 function renderRow(id, s, actions = null) {
   const b = s.scoreBreakdown || {};
   const chosen = new Set(s.categories || []);
-  const editable = s.status !== "backlog";
+  const editable = true;
   // Show tags the site has even if categories.json no longer lists them.
   const cats = [...state.cats, ...[...chosen].filter((c) => !state.catById[c]).map((c) => ({ id: c, emoji: "❔", label: c }))];
   const catChips = cats.map((c) => el("button", {
@@ -395,15 +393,17 @@ function renderRow(id, s, actions = null) {
       el("button", { class: "ghost-btn", onclick: () => preview(s) }, "Preview"),
       s.status !== "approved" ? el("button", { class: "wander-btn", onclick: () => setStatus([id], "approved") }, "Approve") : null,
       s.status !== "rejected" ? el("button", { class: "ghost-btn danger", onclick: () => setStatus([id], "rejected") }, "Reject") : null,
-      s.status !== "proposed" ? el("button", { class: "ghost-btn", onclick: () => setStatus([id], "proposed") }, "Back to queue") : null])));
+      s.status !== "proposed" ? el("button", { class: "ghost-btn", onclick: () => setStatus([id], "proposed") },
+        s.status === "backlog" ? "Propose" : "Back to queue") : null])));
 }
 
-async function setStatus(ids, status) {
+async function setStatus(ids, status, message = null) {
   for (let i = 0; i < ids.length; i += 400) {
     const batch = writeBatch(db);
     for (const id of ids.slice(i, i + 400)) {
       const row = state.rows.get(id);
-      const update = { status, reviewedAt: serverTimestamp(), categories: row?.data.categories || [] };
+      const update = { status, reviewedAt: serverTimestamp() };
+      if (row?.data.categories) update.categories = row.data.categories;
       if (status === "approved") Object.assign(update, { approvedAt: serverTimestamp(), approvedBy: state.user.uid });
       batch.update(doc(db, "sites", id), update);
     }
@@ -413,7 +413,7 @@ async function setStatus(ids, status) {
     state.rows.get(id)?.node.remove();
     state.rows.delete(id);
   }
-  toast(`${ids.length} site${ids.length === 1 ? "" : "s"} ${status === "proposed" ? "sent back to the queue" : status}.`);
+  toast(message || `${ids.length} site${ids.length === 1 ? "" : "s"} ${status === "proposed" ? "moved to Proposed" : status}.`);
   updateSelection();
   loadStats();
 }
@@ -478,8 +478,11 @@ $("add-form").onsubmit = async (e) => {
     autoApprove: $("add-approve").checked,
   });
   $("add-url").value = "";
-  toast("Queued. It'll be scored on the next crawler run.");
+  const now = await scoreNow();
+  toast(now ? "Scoring now. It'll be in Proposed in a minute or two."
+    : "Added. It's scored by the next daily crawl (set up Run crawler to score instantly).");
   loadStats();
+  if (state.status === "proposed") reload();
 };
 $("crawl-btn").onclick = openCrawlDialog;
 $("crawl-form").onsubmit = startCrawl;
