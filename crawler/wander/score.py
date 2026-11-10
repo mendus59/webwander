@@ -6,9 +6,11 @@ The score (0-100) is the sum of five parts:
   independence   0-20  no ads, few trackers, no cookie walls, personal hosting
   craft          0-15  has a title/description/icon, https, playful wording
   novelty        0-35  text fingerprint far from everything in the DB, new domain
+  security       -21-5 HSTS/CSP headers, mixed content, password forms, obfuscated JS
   penalties      <=0   commercial language, empty pages, deep article paths
 
-Some pages are rejected outright (parked domains, error pages, big platforms...).
+Some pages are rejected outright (parked domains, error pages, big platforms, spam,
+no https / invalid or expired certificates / outdated TLS, crypto-miners...).
 """
 
 from __future__ import annotations
@@ -69,6 +71,16 @@ def reject_reason(f: dict) -> str | None:
         return "login wall"
     if f["word_count"] < 3 and f["n_canvas"] == 0 and f["n_scripts_external"] == 0:
         return "empty page"
+    if f["spam_score"] >= 2:
+        return "spam"
+    if not f["https"]:
+        return "insecure: not https"
+    if f["crypto_miner"]:
+        return "insecure: crypto-miner script"
+    if f["tls_version"] in ("SSLv3", "TLSv1", "TLSv1.1"):
+        return f"insecure: outdated {f['tls_version']}"
+    if f["cert_days_left"] is not None and f["cert_days_left"] < 0:
+        return "insecure: expired certificate"
     if f["lang"] and not f["lang"].startswith("en") and f["word_count"] > 80:
         return "not English"
     return None
@@ -137,6 +149,23 @@ def score(f: dict, simhash: int, corpus: Corpus) -> Result:
         reasons.append("new domain")
     novelty = text_novelty + domain_novelty
 
+    # --- security (on top of the hard rejects for no https / bad certs / miners)
+    sec = 0
+    if f["hsts"]:
+        sec += 2
+    if f["csp"]:
+        sec += 1
+    if f["mixed_content"]:
+        sec -= 5; reasons.append(f"mixed content x{f['mixed_content']}")
+    else:
+        sec += 2
+    if f["password_inputs"]:
+        sec -= 5; reasons.append("asks for a password")
+    if f["obfuscated_js"]:
+        sec -= 8; reasons.append("obfuscated script")
+    if f["cert_days_left"] is not None and f["cert_days_left"] < 7:
+        sec -= 3; reasons.append("certificate about to expire")
+
     # --- penalties
     pen = 0
     if f["commerce_hits"]:
@@ -144,13 +173,13 @@ def score(f: dict, simhash: int, corpus: Corpus) -> Result:
     if f["word_count"] < 20 and not (f["n_canvas"] or f["webgl"]):
         pen -= 15; reasons.append("very little content")
     if f["spam_hits"]:
-        pen -= min(30, 10 * f["spam_hits"]); reasons.append("gambling/spam terms")
+        pen -= 10; reasons.append("a spam/gambling term")
     if f["path_depth"] > 2:
         pen -= 2 * (f["path_depth"] - 2)
     if f["word_count"] > 6000 and inter < 5:
         pen -= 5  # long article / docs page
 
-    total = max(0, min(100, inter + indep + craft + novelty + pen))
+    total = max(0, min(100, inter + indep + craft + novelty + sec + pen))
     breakdown = {"interactivity": inter, "independence": indep, "craft": craft,
-                 "novelty": novelty, "penalties": pen}
+                 "novelty": novelty, "security": sec, "penalties": pen}
     return Result(int(total), breakdown, reasons, rej, round(nearest, 3))

@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import socket
+import ssl
 import time
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from urllib import robotparser
 from urllib.parse import urljoin, urlsplit
 
@@ -25,6 +28,7 @@ class Page:
     scripts: list[str] = field(default_factory=list)  # bodies of a few same-origin scripts
     elapsed: float = 0.0
     error: str | None = None
+    tls: dict = field(default_factory=dict)  # {"version": "TLSv1.3", "days_left": 80}
 
     @property
     def ok(self) -> bool:
@@ -74,10 +78,16 @@ class Fetcher:
         if not self.allowed(url):
             return Page(url, 0, {}, "", error="blocked by robots.txt")
         start = time.time()
+        if not url.startswith("https://"):
+            return Page(url, 0, {}, "", error="insecure: not https")
         try:
-            r = self._get_limited(url, MAX_PAGE_BYTES)
+            r = self._get_limited(url, MAX_PAGE_BYTES)  # requests verifies certificates by default
+        except requests.exceptions.SSLError:
+            return Page(url, 0, {}, "", error="insecure: invalid certificate")
         except requests.RequestException as e:
             return Page(url, 0, {}, "", error=f"{type(e).__name__}")
+        if not r.url.startswith("https://") or any(not h.url.startswith("https://") for h in r.history[1:]):
+            return Page(r.url, r.status_code, {}, "", error="insecure: redirects to http")
         headers = {k.lower(): v for k, v in r.headers.items()}
         ctype = headers.get("content-type", "")
         if "html" not in ctype and "xml" not in ctype:
@@ -86,6 +96,8 @@ class Fetcher:
         page = Page(r.url, r.status_code, headers, r.text, elapsed=time.time() - start)
         if with_scripts and page.ok:
             page.scripts = self._same_origin_scripts(page)
+        if page.ok:
+            page.tls = tls_info(urlsplit(page.url).hostname or "")
         time.sleep(self.delay)
         return page
 
@@ -110,3 +122,18 @@ class Fetcher:
             if len(bodies) >= MAX_SCRIPTS:
                 break
         return bodies
+
+
+def tls_info(host: str, port: int = 443) -> dict:
+    """Negotiated TLS version and days until the certificate expires.
+    Best effort: returns {} when a direct socket isn't possible (e.g. behind a proxy)."""
+    try:
+        ctx = ssl.create_default_context()
+        with socket.create_connection((host, port), timeout=6) as sock:
+            with ctx.wrap_socket(sock, server_hostname=host) as tls:
+                cert = tls.getpeercert()
+                version = tls.version()
+        expires = datetime.fromtimestamp(ssl.cert_time_to_seconds(cert["notAfter"]), timezone.utc)
+        return {"version": version, "days_left": (expires - datetime.now(timezone.utc)).days}
+    except (OSError, ssl.SSLError, KeyError, ValueError):
+        return {}

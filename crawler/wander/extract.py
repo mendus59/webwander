@@ -46,7 +46,14 @@ EXPLICIT_STRONG = ["porn", "porno", "pornography", "pornographic", "xxx", "nsfw"
                    "18 years or older", "adults only", "adult content", "sexually explicit"]
 EXPLICIT_WEAK = ["nude", "nudes", "nudity", "naked", "erotic", "explicit", "sexy", "hardcore", "18+",
                  "uncensored", "lingerie", "sex"]
-SPAM_WORDS = ["casino", "betting", "gambling", "slots", "viagra", "cbd oil", "payday loan", "crypto presale"]
+SPAM_WORDS = ["casino", "betting", "gambling", "slots", "viagra", "cialis", "cbd oil", "payday loan",
+              "crypto presale", "airdrop", "forex signals", "binary options", "essay writing service",
+              "buy followers", "seo services", "backlinks", "replica watches", "weight loss pills",
+              "make money online", "get rich quick", "work from home", "loan approval", "bonus code"]
+MINER_RE = re.compile(r"coinhive|coin-hive|cryptonight|crypto-loot|cryptoloot|webminer|jsecoin|coinimp|minero\.cc|webmine\.pro")
+OBFUSCATED_JS_RE = re.compile(r"eval\(\s*(unescape|atob|function\(p,a,c,k,e)|document\.write\(\s*unescape")
+STOPWORDS = set("""the a an and or of to in is it for on with as at by be this that are was from you your we our
+i my me he she they them his her its not but if so do can all will has have had were been more one""".split())
 EXPLICIT_LABEL_RE = re.compile(r"rta-5042-1996-1400-1577-rta|<meta[^>]+name=[\"']?rating[\"']?[^>]+content=[\"']?(adult|mature|rta)", re.I)
 
 
@@ -99,8 +106,36 @@ def frameable(headers: dict, url: str) -> bool:
     return True
 
 
-def extract(url: str, html: str, headers: dict | None = None, scripts: list[str] | None = None) -> dict:
+def spam_score(words: list[str], spam_term_hits: int, n_external_links: int) -> int:
+    """Spam terms + keyword stuffing + link farms. 2 or more means spam."""
+    score = spam_term_hits
+    content = [w for w in words if w not in STOPWORDS and len(w) > 2]
+    if len(content) >= 150:
+        top = max(content.count(w) for w in set(content[:3000]))
+        if top / len(content) > 0.06:
+            score += 2  # one word is over 6% of the page: keyword stuffing
+    if n_external_links > 150 or (n_external_links > 60 and len(words) < 300):
+        score += 2  # page is mostly outbound links: link farm
+    return score
+
+
+def mixed_content(soup, page_url: str) -> int:
+    """Insecure http:// subresources on an https page."""
+    if not page_url.startswith("https://"):
+        return 0
+    n = 0
+    for tag in soup.find_all(["script", "img", "iframe", "audio", "video", "source", "embed"], src=True):
+        n += tag["src"].strip().lower().startswith("http://")
+    for tag in soup.find_all("link", href=True):
+        if "stylesheet" in " ".join(tag.get("rel", [])).lower():
+            n += tag["href"].strip().lower().startswith("http://")
+    return n
+
+
+def extract(url: str, html: str, headers: dict | None = None, scripts: list[str] | None = None,
+            tls: dict | None = None) -> dict:
     headers = headers or {}
+    tls = tls or {}
     scripts = scripts or []
     soup = BeautifulSoup(html, "lxml")
     raw_lower = html.lower()
@@ -198,7 +233,17 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
         "error_page": _count_any((title + " " + body_text[:600]).lower(), ERROR_PHRASES) > 0,
         "login_wall": _count_any(body_text[:3000].lower(), LOGIN_WALL_PHRASES) > 0,
         "explicit_score": explicit_score(title or og_title, description, body_text, html[:20000]),
-        "spam_hits": _count_any((title + " " + description + " " + body_text[:5000]).lower(), SPAM_WORDS),
+        "spam_hits": (spam_hits := _count_any((title + " " + description + " " + body_text[:5000]).lower(), SPAM_WORDS)),
+        "spam_score": spam_score(words, spam_hits, len(external_links)),
+        # security
+        "hsts": "strict-transport-security" in headers,
+        "csp": "content-security-policy" in headers,
+        "mixed_content": mixed_content(full, url),
+        "password_inputs": len(full.find_all("input", attrs={"type": re.compile("^password$", re.I)})),
+        "crypto_miner": bool(MINER_RE.search(code_lower)),
+        "obfuscated_js": bool(OBFUSCATED_JS_RE.search(all_js)),
+        "tls_version": tls.get("version", ""),
+        "cert_days_left": tls.get("days_left"),
         "delight_hits": _count_any((title + " " + description + " " + headings + " " + body_text[:4000]).lower(), DELIGHT_WORDS),
         "lorem": "lorem ipsum" in body_text.lower(),
         "frameable": frameable(headers, url),

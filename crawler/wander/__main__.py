@@ -3,6 +3,7 @@
   python -m wander crawl  [--min-new 10] [--local db.json]   daily discovery run
   python -m wander seed   [--approve] [--local db.json]      import crawler/seeds.txt
   python -m wander score  URL [URL ...]                      explain one URL's score/tags
+  python -m wander recheck [--local db.json]                 reject live sites that became spam/insecure
 """
 
 from __future__ import annotations
@@ -221,6 +222,34 @@ def cmd_seed(args) -> int:
     return 0
 
 
+# ---------------------------------------------------------------- recheck
+
+RECHECK_REASONS = ("spam", "insecure")
+
+
+def cmd_recheck(args) -> int:
+    """Re-fetch approved/proposed sites and reject any that are now spam or insecure
+    (no https, bad/expired certificate, downgrade redirect, miner...)."""
+    store = open_store(args)
+    fetcher = Fetcher(delay=args.delay)
+    sites = [s for s in store.load_sites() if s.get("status") in ("approved", "proposed")]
+    removed = []
+    for s in sites:
+        ev = evaluate(s["url"], fetcher, Corpus())
+        reason = ev.error if ev.error and ev.error.startswith("insecure") else (ev.result.reject if ev.result else None)
+        if ev.error and not reason and s["url"].startswith("http://"):
+            reason = "insecure: not https"  # stored as http and no working https version
+        if reason and reason.startswith(RECHECK_REASONS):
+            store.upsert_site({"id": s["id"], "status": "rejected", "autoReject": reason, "previousStatus": s["status"]})
+            removed.append((s["url"], reason))
+            log(f"  [removed] {s['url']}: {reason}")
+        elif ev.error:
+            log(f"  [unreachable, kept] {s['url']}: {ev.error}")
+    store.save()
+    log(f"Rechecked {len(sites)} sites, removed {len(removed)}")
+    return 0
+
+
 # ---------------------------------------------------------------- score
 
 def cmd_score(args) -> int:
@@ -257,15 +286,17 @@ def main(argv=None) -> int:
     s.add_argument("--approve", action="store_true", help="mark seeds approved immediately")
     s.add_argument("--force", action="store_true", help="add even if auto-rejected")
 
+    sub.add_parser("recheck", help="re-fetch live sites and reject spam/insecure ones")
+
     sc = sub.add_parser("score", help="explain the score for URLs")
     sc.add_argument("urls", nargs="+")
 
-    for sp in (c, s, sc):
+    for sp in (c, s, sc, sub.choices["recheck"]):
         sp.add_argument("--local", help="use a local JSON file instead of Firestore")
         sp.add_argument("--delay", type=float, default=0.5)
 
     args = p.parse_args(argv)
-    return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score}[args.cmd](args)
+    return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score, "recheck": cmd_recheck}[args.cmd](args)
 
 
 if __name__ == "__main__":
