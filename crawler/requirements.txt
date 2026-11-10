@@ -3,3 +3,4 @@ beautifulsoup4>=4.12
 lxml>=5.0
 firebase-admin>=6.5
 pytest>=8.0
+pillow>=10.0

@@ -23,6 +23,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Add page screenshots
+        run: |
+          # Screenshots for the saved-sites card view live on their own branch
+          # (see screenshots.yml). Without them the site falls back to preview cards.
+          if git ls-remote --exit-code --heads origin screenshots; then
+            git fetch --depth 1 origin screenshots
+            mkdir -p site/shots
+            git archive FETCH_HEAD | tar -x -C site/shots
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

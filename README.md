@@ -29,7 +29,17 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
 - **Site** (`site/`): plain HTML/CSS/JS on GitHub Pages. Firebase Auth (Google sign-in)
   and Firestore. Anyone can wander. Signing in remembers what you've seen, what you
   liked or disliked (which nudges what you're shown), and your saved sites. Signed-in users
-  can suggest a site for review.
+  can suggest a site for review. **Saved sites** can be shown as a list or as cards with a
+  picture of each page, and filtered by tag and by date added (today, past 7/30/365 days or a
+  custom range), newest or oldest first. Mature saves stay hidden unless the mature setting is on.
+- **Screenshots** (`crawler/wander/shots.py`, `.github/workflows/screenshots.yml`, daily): a
+  headless browser photographs approved sites for the card view, saved sites first. Pages that
+  draw their content with JavaScript are given time: it waits for the network, fonts and images,
+  then checks the picture and keeps waiting (and nudges lazy content with a scroll) while it is
+  still one flat colour. A page that stays blank gets no screenshot; the card shows the page's
+  own preview image or a generated card with its icon, name and topics instead, so a card is
+  never empty. Mature sites are never captured. Pictures live on the `screenshots` branch (kept
+  at one commit) and the Pages deploy copies them into `site/shots/`.
 - **Admin** (`site/admin.html`): review queue sorted by score, with the score breakdown,
   reasons, auto-detected categories (editable), preview, approve/reject, bulk actions and
   hand-adding URLs. Tabs cover every place a site can be: Proposed, Approved, Rejected (with

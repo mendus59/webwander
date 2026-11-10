@@ -5,6 +5,7 @@ import {
 import {
   configured, db, signIn, logOut, watchUser, isAdmin, loadCategories, faviconFor, el, safeStorage,
 } from "./firebase.js";
+import { createSavedPanel } from "./saved.js";
 
 const $ = (id) => document.getElementById(id);
 const local = {
@@ -265,34 +266,27 @@ async function toggleSave() {
   } else {
     state.saved.add(site.id);
     await setDoc(ref, {
-      url: site.url, title: site.title || site.domain, categories: site.categories || [], savedAt: serverTimestamp(),
+      url: site.url, title: site.title || site.domain, categories: site.categories || [],
+      image: site.image || null, savedAt: serverTimestamp(),
     });
     toast("Saved.");
   }
   updateSaveBtn();
 }
 
-async function openSaved() {
-  const snap = await getDocs(query(collection(db, "users", state.user.uid, "saved"), orderBy("savedAt", "desc")));
-  $("saved-list").replaceChildren(...(snap.empty
-    ? [el("li", { class: "muted" }, "Nothing saved yet. Hit ☆ on a site you love.")]
-    : snap.docs.map((d) => {
-      const s = d.data();
-      return el("li", {},
-        el("img", { src: faviconFor(s.url), width: 16, height: 16, alt: "" }),
-        el("a", { href: s.url, target: "_blank", rel: "noopener" }, s.title),
-        el("button", {
-          class: "icon-btn small", title: "Remove",
-          onclick: async (e) => {
-            await deleteDoc(d.ref);
-            state.saved.delete(d.id);
-            e.currentTarget.closest("li").remove();
-            updateSaveBtn();
-          },
-        }, "✕"));
-    })));
+const savedPanel = createSavedPanel({
+  user: () => state.user,
+  settings: () => state.settings,
+  catById: () => state.catById,
+  forget: (id) => { state.saved.delete(id); updateSaveBtn(); },
+});
+
+function openSaved() {
   $("suggest-msg").textContent = "";
-  $("saved-dlg").showModal();
+  savedPanel.open().catch((e) => {
+    console.error(e);
+    toast("Couldn't load your saved sites.");
+  });
 }
 
 async function suggest(e) {

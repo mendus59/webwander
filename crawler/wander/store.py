@@ -41,6 +41,12 @@ class LocalStore:
     def load_submissions(self) -> list[dict]:
         return [dict(v, id=k) for k, v in self.data["submissions"].items()]
 
+    def load_shot_targets(self) -> list[dict]:
+        return [s for s in self.load_sites() if s.get("status") == "approved"]
+
+    def load_saved_ids(self) -> set[str]:
+        return set(self.data.get("saved", []))
+
     def delete_submission(self, sub_id: str) -> None:
         self.data["submissions"].pop(sub_id, None)
 
@@ -81,6 +87,15 @@ class FirestoreStore:
 
     def load_submissions(self) -> list[dict]:
         return [dict(d.to_dict(), id=d.id) for d in self.db.collection("submissions").stream()]
+
+    def load_shot_targets(self) -> list[dict]:
+        fields = ["url", "status", "categories", "approvedAt"]
+        q = self.db.collection("sites").where("status", "==", "approved").select(fields)
+        return [dict(d.to_dict(), id=d.id) for d in q.stream()]
+
+    def load_saved_ids(self) -> set[str]:
+        """Ids of sites anyone has saved (users/{uid}/saved/{siteId})."""
+        return {d.id for d in self.db.collection_group("saved").select([]).stream()}
 
     def delete_submission(self, sub_id: str) -> None:
         self.db.collection("submissions").document(sub_id).delete()

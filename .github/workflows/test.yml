@@ -15,7 +15,8 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: crawler/requirements.txt
-      - run: pip install -r crawler/requirements.txt
+          cache-dependency-path: crawler/requirements-shots.txt
+      - run: pip install -r crawler/requirements-shots.txt
+      - run: python -m playwright install --with-deps chromium   # screenshot tests use a real browser
       - run: python -m pytest -q
         working-directory: crawler
