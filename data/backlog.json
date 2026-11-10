@@ -51,6 +51,56 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "f9ed573ce926829c77cc",
+"url": "https://revealjs.com/course",
+"domain": "revealjs.com",
+"registrableDomain": "revealjs.com",
+"title": "Mastering reveal.js | reveal.js",
+"description": "An upcoming video course covering the reveal.js basics all the way up to advanced customization and features.",
+"image": "https://revealjs.com/images/meta/reveal-og-card-1200-630.png",
+"categories": [
+"programming",
+"toys",
+"learning"
+],
+"categoryScores": {
+"programming": 8.28,
+"toys": 5.33,
+"learning": 4.82,
+"photo": 4.15,
+"games": 3.0,
+"simulation": 3.0,
+"generators": 1.66,
+"dataviz": 1.33,
+"art": 1.0,
+"math": 0.99,
+"maps": 0.66,
+"weird": 0.33
+},
+"score": 94,
+"scoreBreakdown": {
+"interactivity": 29,
+"independence": 16,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "29592b12484d5141",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "be8c580f8254a1b379d1",
 "url": "https://webppl.readthedocs.io/en/master",
 "domain": "webppl.readthedocs.io",
@@ -430,6 +480,141 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "3690a95be65545302b20",
+"url": "https://chimakes.vercel.app/",
+"domain": "chimakes.vercel.app",
+"registrableDomain": "chimakes.vercel.app",
+"title": "Chimakes",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 5.0,
+"games": 3.0,
+"music": 3.0,
+"simulation": 3.0
+},
+"score": 89,
+"scoreBreakdown": {
+"interactivity": 30,
+"independence": 20,
+"craft": 5,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "021bc5263a6953c8",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "203ce0316e14a68366e9",
+"url": "https://patatap.com/",
+"domain": "patatap.com",
+"registrableDomain": "patatap.com",
+"title": "Patatap",
+"description": "Patatap is a portable animation and sound kit. With the touch of a finger create melodies charged with moving shapes. Warning: contains flashing images.",
+"image": "http://www.patatap.com/images/thumbnail.png",
+"categories": [
+"music",
+"toys"
+],
+"categoryScores": {
+"music": 7.6,
+"toys": 5.0,
+"games": 3.0,
+"simulation": 3.0,
+"programming": 0.6
+},
+"score": 89,
+"scoreBreakdown": {
+"interactivity": 30,
+"independence": 16,
+"craft": 11,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "092f2771415a6590",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "74a7bbd6f06be16773f4",
+"url": "https://maplibre.org/maplibre-gl-js/docs",
+"domain": "maplibre.org",
+"registrableDomain": "maplibre.org",
+"title": "Introduction - MapLibre GL JS",
+"description": "MapLibre GL JS is a TypeScript library that uses WebGL to render interactive maps from vector tiles in a browser.",
+"image": "https://www.maplibre.org/maplibre-gl-js/docs/assets/images/social/index.png",
+"categories": [
+"programming",
+"maps",
+"toys"
+],
+"categoryScores": {
+"programming": 15.03,
+"maps": 9.04,
+"toys": 7.27,
+"learning": 7.02,
+"games": 2.76,
+"simulation": 2.51,
+"dataviz": 2.26,
+"stories": 2.0,
+"art": 1.76,
+"generators": 1.25,
+"photo": 1.01,
+"science": 0.25,
+"math": 0.25
+},
+"score": 88,
+"scoreBreakdown": {
+"interactivity": 24,
+"independence": 18,
+"craft": 15,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "aa6b449e67e5b508",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "73be88ea617a6bd9dc30",
 "url": "https://codeberg.org/veqq/deforester",
 "domain": "codeberg.org",
@@ -567,6 +752,140 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "88c5ca40662372df3af1",
+"url": "https://geography.games/europe-quiz",
+"domain": "geography.games",
+"registrableDomain": "geography.games",
+"title": "Europe Geography Quiz \u2014 Geography Games",
+"description": "Play this fun geography quiz to find out how many European countries you can name. Choose a difficulty level to learn, improve, and challenge your geography skills. Expand your knowledge and discover the countries of Europe in a fun way!",
+"image": "https://geography.games/static/europe-quiz-og-image-325675b3bc9cb9f9333238102ed9da3b.png",
+"categories": [
+"maps",
+"games",
+"learning"
+],
+"categoryScores": {
+"maps": 14.23,
+"games": 13.99,
+"learning": 9.11,
+"music": 3.0,
+"toys": 2.37,
+"generators": 1.0,
+"programming": 0.75
+},
+"score": 86,
+"scoreBreakdown": {
+"interactivity": 18,
+"independence": 18,
+"craft": 15,
+"novelty": 31,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "b083c1ee0b449ee9",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "b11f2ff16c482970d4f6",
+"url": "https://madbox.io/",
+"domain": "madbox.io",
+"registrableDomain": "madbox.io",
+"title": "Madbox - Home",
+"description": "We are game makers who create experience for millions of players",
+"image": "",
+"categories": [
+"games",
+"maps",
+"toys"
+],
+"categoryScores": {
+"games": 11.93,
+"maps": 5.4,
+"toys": 4.0,
+"dataviz": 3.19,
+"photo": 2.0,
+"stories": 1.03,
+"art": 1.0,
+"generators": 1.0,
+"simulation": 1.0,
+"weird": 0.34,
+"learning": 0.34
+},
+"score": 86,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 16,
+"craft": 15,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "ed6f85df509d9ca0",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "2a048076d3b5e5c4643c",
+"url": "https://markon.com/update-green-leaf-iceberg-and-romaine-143",
+"domain": "markon.com",
+"registrableDomain": "markon.com",
+"title": "UPDATE: GREEN LEAF, ICEBERG, AND ROMAINE - Markon",
+"description": "Iceberg and romaine supplies have increased; yields from Huron, Oxnard, Las Cruces, and Yuma are covering the shortages in Salinas...",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"dataviz": 1.99,
+"art": 1.0,
+"generators": 1.0,
+"simulation": 1.0,
+"food": 0.66,
+"nature": 0.33
+},
+"score": 86,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 18,
+"craft": 11,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "b1a1fe16f29162b0",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "46c7ed1193b445049a7f",
@@ -709,6 +1028,49 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "0f831e57fc8a4539581c",
+"url": "https://thewikigame.com/",
+"domain": "thewikigame.com",
+"registrableDomain": "thewikigame.com",
+"title": "The Wiki Game - Wikipedia Game - Explore Wikipedia!",
+"description": "A game of exploring and racing through Wikipedia articles! Fun and surprise await as you go down the \"Wikipedia rabbit hole\" and find the \"degrees of separation\" of sometimes wildly different topics in this addictive and educational game.",
+"image": "",
+"categories": [
+"games",
+"toys",
+"maps"
+],
+"categoryScores": {
+"games": 9.5,
+"toys": 5.0,
+"maps": 4.0,
+"simulation": 3.0,
+"programming": 2.0
+},
+"score": 84,
+"scoreBreakdown": {
+"interactivity": 24,
+"independence": 16,
+"craft": 11,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "6a281617a190fec1",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "5c672bb6190b584a3872",
 "url": "https://hakim.se/",
 "domain": "hakim.se",
@@ -763,6 +1125,99 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "3812c2d4be6f123489c9",
+"url": "https://asteroidos.org/news/2-0-release",
+"domain": "asteroidos.org",
+"registrableDomain": "asteroidos.org",
+"title": "AsteroidOS 2.0 Released - AsteroidOS",
+"description": "AsteroidOS is an open-source operating system for smartwatches.",
+"image": "",
+"categories": [
+"games",
+"toys"
+],
+"categoryScores": {
+"games": 4.05,
+"toys": 4.0,
+"art": 3.6,
+"science": 2.29,
+"stories": 2.0,
+"photo": 2.0,
+"programming": 1.83,
+"simulation": 1.79,
+"nature": 1.31,
+"generators": 0.79,
+"learning": 0.79,
+"music": 0.52,
+"maps": 0.52,
+"history": 0.52,
+"dataviz": 0.52,
+"weird": 0.26,
+"food": 0.26,
+"indieweb": 0.26
+},
+"score": 83,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 14,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "5e431fe8e6281dc4",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "bd53332bdbc6dd0d60cc",
+"url": "https://oldweb.today/",
+"domain": "oldweb.today",
+"registrableDomain": "oldweb.today",
+"title": "oldweb.today",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"music": 3.0,
+"simulation": 1.0
+},
+"score": 83,
+"scoreBreakdown": {
+"interactivity": 23,
+"independence": 18,
+"craft": 3,
+"novelty": 35,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.5,
+"simhash": "0000000000000000",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "4897c01d3eba30b54330",
 "url": "https://noiselang.com/play",
 "domain": "noiselang.com",
@@ -806,6 +1261,99 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "bb6b1c4083708357ab3a",
+"url": "https://copy.sh/life",
+"domain": "copy.sh",
+"registrableDomain": "copy.sh",
+"title": "Conway's Game of Life",
+"description": "A JavaScript version of Conway's Game of Life, based on the Hashlife-algorithm.",
+"image": "",
+"categories": [
+"games",
+"simulation",
+"programming"
+],
+"categoryScores": {
+"games": 11.85,
+"simulation": 10.7,
+"programming": 9.06,
+"toys": 4.43,
+"generators": 2.93,
+"math": 2.93,
+"science": 0.43,
+"nature": 0.43
+},
+"score": 82,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 20,
+"craft": 10,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "318e2cbaaec4d289",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "dbf6105a0d4b83e5665a",
+"url": "https://breq.dev/",
+"domain": "breq.dev",
+"registrableDomain": "breq.dev",
+"title": "Hey, I'm Brooke Chalmers.",
+"description": "Welcome to my little patch of internet. View my projects, posts, and experiments here.",
+"image": "",
+"categories": [
+"photo",
+"toys",
+"programming"
+],
+"categoryScores": {
+"photo": 5.87,
+"toys": 4.87,
+"programming": 4.79,
+"dataviz": 4.73,
+"games": 3.73,
+"nature": 3.73,
+"generators": 2.87,
+"music": 2.6,
+"simulation": 2.0,
+"art": 1.0,
+"learning": 0.37,
+"indieweb": 0.37
+},
+"score": 82,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "06ade894007de6bb",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "62319fb4e2cf20ae6805",
@@ -1026,6 +1574,107 @@
 "frameable": true,
 "source": "seed",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "58e483f759d6213e0a49",
+"url": "https://plugins.qgis.org/plugins/vgridtools",
+"domain": "plugins.qgis.org",
+"registrableDomain": "qgis.org",
+"title": "Vgrid \u2014 QGIS Python Plugins Repository",
+"description": "",
+"image": "https://plugins.qgis.org/media/packages/2026/vgrid_YcAD5bV.svg",
+"categories": [
+"programming",
+"maps",
+"dataviz"
+],
+"categoryScores": {
+"programming": 9.42,
+"maps": 8.18,
+"dataviz": 6.94,
+"toys": 3.74,
+"generators": 3.71,
+"simulation": 3.48,
+"science": 2.46,
+"nature": 2.46,
+"games": 2.25,
+"stories": 2.0,
+"history": 1.97,
+"art": 1.73,
+"math": 0.99,
+"photo": 0.99,
+"learning": 0.74,
+"music": 0.49,
+"retro": 0.25,
+"food": 0.25
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 14,
+"craft": 15,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"cookie banner",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "384ce22889f39643",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "e5d88d4092f8db6e49da",
+"url": "https://markon.com/update-avocados-32",
+"domain": "markon.com",
+"registrableDomain": "markon.com",
+"title": "UPDATE: AVOCADOS - Markon",
+"description": "Disruptions to harvesting activity in Michoac\u00e1n, Mexico over the past two weeks have significantly tightened U.S. avocado supplies and driven...",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.98,
+"dataviz": 1.98,
+"art": 1.0,
+"generators": 1.0,
+"simulation": 1.0,
+"food": 0.65
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 18,
+"craft": 13,
+"novelty": 27,
+"security": 5,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "abb426ac7795e2fd",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "839443518c839bff0ac9",
@@ -1333,6 +1982,179 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "e391f386f691bb3d9254",
+"url": "https://monad-bayes.netlify.app/",
+"domain": "monad-bayes.netlify.app",
+"registrableDomain": "monad-bayes.netlify.app",
+"title": "Probabilistic Programming in Haskell",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 11.31,
+"games": 2.0,
+"toys": 2.0,
+"art": 1.47,
+"simulation": 1.42,
+"dataviz": 1.0,
+"generators": 1.0,
+"learning": 0.95
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 9,
+"novelty": 33,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.609,
+"simhash": "a3a7b639ebbdd510",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "206ad538d3afc9fb142b",
+"url": "https://cssgridgenerator.io/",
+"domain": "cssgridgenerator.io",
+"registrableDomain": "cssgridgenerator.io",
+"title": "CSS Grid Generator (Drag & Drop)",
+"description": "CSS Grid Generator - a user-friendly tool designed for web developers to effortlessly create customizable CSS grids for seamless web development.",
+"image": "https://cssgridgenerator.io/thumbnail.png",
+"categories": [
+"programming",
+"generators",
+"toys"
+],
+"categoryScores": {
+"programming": 14.17,
+"generators": 14.12,
+"toys": 7.05,
+"art": 2.1,
+"learning": 2.02,
+"games": 2.0,
+"math": 1.05
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 12,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "06ad110b79813016",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "9cea4ef3b44eaf23e49b",
+"url": "https://john.fun/elevators",
+"domain": "john.fun",
+"registrableDomain": "john.fun",
+"title": "Elevators",
+"description": "How elevators push your buttons",
+"image": "https://john.fun/metadata/elevator/twitter-card.png",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 3.66,
+"games": 3.16,
+"toys": 2.0,
+"dataviz": 1.29,
+"programming": 1.16,
+"art": 1.0,
+"generators": 1.0,
+"retro": 0.87,
+"math": 0.87,
+"weird": 0.58,
+"maps": 0.29,
+"simulation": 0.29
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 20,
+"craft": 14,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "4ae0283d7bc57784",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "d9ee8acd754e67bed361",
+"url": "https://semantle.com/",
+"domain": "semantle.com",
+"registrableDomain": "semantle.com",
+"title": "Semantle | Daily Word Guessing Game",
+"description": "Semantle is an engaging word-guessing game that challenges you to find the hidden word through semantic clues. Sharpen your linguistic skills!",
+"image": "./assets/cover.png",
+"categories": [
+"games",
+"toys"
+],
+"categoryScores": {
+"games": 9.5,
+"toys": 5.0,
+"dataviz": 3.0,
+"simulation": 3.0
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 27,
+"independence": 16,
+"craft": 7,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "699c2236185818f2",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "24d6a2c38e7ade405524",
 "url": "https://mafs.dev/",
 "domain": "mafs.dev",
@@ -1371,6 +2193,254 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794295147.315128
+},
+{
+"id": "d81e553985c15fd8541d",
+"url": "https://sublime.app/",
+"domain": "sublime.app",
+"registrableDomain": "sublime.app",
+"title": "Sublime \u2014 A second brain with a soul",
+"description": "Sublime is a personal knowledge management tool designed to help you save, organize, and create with everything that inspires you. Trusted by leading thinkers and creatives worldwide.",
+"image": "/images/landing.jpg",
+"categories": [
+"photo",
+"toys"
+],
+"categoryScores": {
+"photo": 4.76,
+"toys": 4.0,
+"generators": 3.88,
+"games": 3.38,
+"indieweb": 2.5,
+"simulation": 1.0,
+"art": 0.76,
+"music": 0.76,
+"learning": 0.76,
+"science": 0.38,
+"history": 0.38,
+"weird": 0.38,
+"stories": 0.38
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 18,
+"craft": 14,
+"novelty": 26,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "b14dafd061975b15",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "f5cd333a9819ec204d4b",
+"url": "https://regex.ai/",
+"domain": "regex.ai",
+"registrableDomain": "regex.ai",
+"title": "Regex.ai - Artificial Intelligence Regular Expression Generator",
+"description": "AI-Powered Regex Regular Expression Generator and Solver. Discover how this powerful tool can help you automate your data extraction tasks and streamline your workflow.",
+"image": "/img/og.png",
+"categories": [
+"generators",
+"programming"
+],
+"categoryScores": {
+"generators": 10.0,
+"programming": 7.94,
+"dataviz": 3.5,
+"learning": 2.98,
+"toys": 2.96,
+"games": 2.0,
+"art": 1.0
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 15,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "f1ae54954648ebd8",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "3e3407b9ce56301622fa",
+"url": "https://threejs-journey.com/?c=p1",
+"domain": "threejs-journey.com",
+"registrableDomain": "threejs-journey.com",
+"title": "Three.js Journey \u2014 Learn WebGL with Three.js",
+"description": "Learn 3D on the web with Three.js Journey: 87 lessons and 116 hours of video on Three.js, WebGL, WebGPU and TSL, from absolute beginner to advanced.",
+"image": "https://threejs-journey.com/assets/social/share-image.png?cb=b",
+"categories": [
+"learning",
+"programming",
+"photo"
+],
+"categoryScores": {
+"learning": 15.41,
+"programming": 7.73,
+"photo": 7.21,
+"simulation": 5.36,
+"toys": 5.24,
+"games": 4.65,
+"stories": 2.47,
+"generators": 2.18,
+"art": 1.71,
+"dataviz": 1.47,
+"science": 1.42,
+"maps": 1.42,
+"food": 1.42,
+"indieweb": 1.18,
+"nature": 0.95,
+"weird": 0.71,
+"math": 0.71,
+"history": 0.24
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 29,
+"independence": 16,
+"craft": 13,
+"novelty": 27,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.672,
+"simhash": "26b5e438b51b95e7",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "731fc3f86283367f2a0a",
+"url": "https://k.sosnierz.me/08-11-24",
+"domain": "k.sosnierz.me",
+"registrableDomain": "sosnierz.me",
+"title": "88x31 button book using ImageMagick",
+"description": "Making an 88x31 book-button using ImageMagick",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.11,
+"music": 3.0,
+"learning": 2.41,
+"simulation": 2.0,
+"stories": 1.82,
+"toys": 1.3,
+"science": 0.91,
+"nature": 0.91,
+"generators": 0.61,
+"weird": 0.61,
+"math": 0.61,
+"indieweb": 0.61,
+"games": 0.3
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 13,
+"independence": 20,
+"craft": 12,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"makes sound",
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "7025e0a95a5dcb77",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "f544602997cc588fd247",
+"url": "https://revealjs.com/",
+"domain": "revealjs.com",
+"registrableDomain": "revealjs.com",
+"title": "The HTML presentation framework | reveal.js",
+"description": "Documentation and demos for the open source reveal.js HTML presentation framework.",
+"image": "https://revealjs.com/images/meta/reveal-og-card-1200-630.png",
+"categories": [
+"programming",
+"toys",
+"games"
+],
+"categoryScores": {
+"programming": 22.64,
+"toys": 7.08,
+"games": 5.39,
+"simulation": 3.0,
+"generators": 2.49,
+"photo": 2.39,
+"dataviz": 1.89,
+"art": 1.59,
+"learning": 1.49,
+"math": 0.59,
+"science": 0.3
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 29,
+"independence": 8,
+"craft": 15,
+"novelty": 26,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"1 ad network(s)",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "571502729ebd77a3",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "6913e1d76a89789ddca4",
@@ -1510,6 +2580,95 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "00e3d4c0dccc6aa0593e",
+"url": "https://a5geo.org/",
+"domain": "a5geo.org",
+"registrableDomain": "a5geo.org",
+"title": "Home | A5",
+"description": "A5 divides the Earth into pentagonal cells of exactly equal area, at 31 resolutions down to millimeters, each identified by a 64-bit integer.",
+"image": "https://a5geo.org/images/a5-globe.jpg",
+"categories": [
+"maps",
+"programming"
+],
+"categoryScores": {
+"maps": 10.07,
+"programming": 8.98,
+"science": 3.46,
+"dataviz": 3.07,
+"toys": 2.78,
+"games": 2.39,
+"learning": 1.89,
+"simulation": 1.89,
+"generators": 1.0,
+"weird": 0.39,
+"indieweb": 0.39
+},
+"score": 75,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 18,
+"craft": 15,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"playful wording"
+],
+"nearestSimilarity": 0.641,
+"simhash": "d85d3c88530632be",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "240dfe16452dd2e08d1f",
+"url": "https://playgameoflife.com/",
+"domain": "playgameoflife.com",
+"registrableDomain": "playgameoflife.com",
+"title": "Play John Conway\u2019s Game of Life",
+"description": "Play the Game of Life online, a single player game invented in 1970 by Cambridge mathematician John Conway.",
+"image": "https://playgameoflife.com/pix/gol-image.png",
+"categories": [
+"games",
+"simulation",
+"toys"
+],
+"categoryScores": {
+"games": 19.26,
+"simulation": 10.26,
+"toys": 4.0,
+"science": 2.11,
+"learning": 0.84,
+"maps": 0.42,
+"photo": 0.42
+},
+"score": 75,
+"scoreBreakdown": {
+"interactivity": 13,
+"independence": 18,
+"craft": 13,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "b774c77047a56169",
+"frameable": false,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "567ca4e0919efdcbf56b",
@@ -1688,6 +2847,45 @@
 "frameable": false,
 "source": "lobsters",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "45f2684e427ba877de66",
+"url": "https://manaflow.com/",
+"domain": "manaflow.com",
+"registrableDomain": "manaflow.com",
+"title": "Manaflow - Open Source Applied AI Lab",
+"description": "Open source applied AI lab building next-gen devtools",
+"image": "",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 10.1,
+"toys": 4.0,
+"games": 3.0,
+"simulation": 1.0
+},
+"score": 74,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 16,
+"craft": 7,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "7ff931a541dc8700",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "fa8b1a2cbfb97ba76495",
@@ -1951,6 +3149,129 @@
 "frameable": true,
 "source": "seed",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "e112eb855b0f1a81ae89",
+"url": "https://untrustedgame.com/",
+"domain": "untrustedgame.com",
+"registrableDomain": "untrustedgame.com",
+"title": "Untrusted - a user javascript adventure game",
+"description": "",
+"image": "",
+"categories": [
+"games",
+"programming",
+"toys"
+],
+"categoryScores": {
+"games": 8.8,
+"programming": 8.2,
+"toys": 4.0,
+"generators": 1.6,
+"simulation": 1.0,
+"food": 0.6
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 16,
+"craft": 5,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "150c02c8b4ef88da",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "daac42cec6853973cfe2",
+"url": "https://status.neocitiesops.net/",
+"domain": "status.neocitiesops.net",
+"registrableDomain": "neocitiesops.net",
+"title": "Neocities Status",
+"description": "",
+"image": "",
+"categories": [
+"retro",
+"toys"
+],
+"categoryScores": {
+"retro": 4.6,
+"toys": 4.0,
+"games": 3.0,
+"music": 2.6,
+"dataviz": 2.1,
+"history": 1.2,
+"generators": 1.0,
+"simulation": 1.0
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 14,
+"craft": 7,
+"novelty": 27,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"cookie banner",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "b2e2222245dd1605",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "618006c4c385576be7da",
+"url": "https://calathea-kohl.vercel.app/",
+"domain": "calathea-kohl.vercel.app",
+"registrableDomain": "calathea-kohl.vercel.app",
+"title": "Cigar Calathea \u2014 Realtime Render",
+"description": "",
+"image": "",
+"categories": [
+"simulation"
+],
+"categoryScores": {
+"simulation": 3.6,
+"toys": 3.0,
+"games": 1.0
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 20,
+"craft": 4,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "b96d585f440ba1d4",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "b51e029ff4fd04588631",
@@ -2232,6 +3553,122 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "df37e88f5b9f13dbe2ff",
+"url": "https://resumefilter.vercel.app/",
+"domain": "resumefilter.vercel.app",
+"registrableDomain": "resumefilter.vercel.app",
+"title": "ResumeFilter",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 2.52,
+"learning": 2.02,
+"games": 2.0,
+"photo": 2.0,
+"art": 1.0,
+"dataviz": 1.0
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 11,
+"independence": 20,
+"craft": 8,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "ac9e1236f1a5e43b",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "a2854cc969cf5632da23",
+"url": "https://treblekey.com/",
+"domain": "treblekey.com",
+"registrableDomain": "treblekey.com",
+"title": "Treblekey",
+"description": "Tools and exercises for musical excellence",
+"image": "",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 2.8,
+"games": 2.0,
+"toys": 2.0,
+"learning": 0.6,
+"nature": 0.6
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 9,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "0133d25eb4995581",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "b1a1ac0042d712d0aff8",
+"url": "https://pglite.dev/",
+"domain": "pglite.dev",
+"registrableDomain": "pglite.dev",
+"title": "PGlite",
+"description": "Lightweight WASM Postgres",
+"image": "/img/brand/og-image.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.49,
+"toys": 2.6,
+"games": 2.0,
+"generators": 1.0,
+"dataviz": 0.6
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 11,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "cde614f7580ff1ff",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "c8c9f5a36ed7462b3578",
 "url": "https://cloudlord.management/",
 "domain": "cloudlord.management",
@@ -2404,6 +3841,152 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "fe42e38d62526cf8ad46",
+"url": "https://a5geo.org/docs/api-reference/indexing",
+"domain": "a5geo.org",
+"registrableDomain": "a5geo.org",
+"title": "Indexing | A5",
+"description": "Convert between coordinates and A5 cells: lonLatToCell, cellToLonLat, cellToBoundary, polygonToCells, lineStringToCells and hex conversion.",
+"image": "https://a5geo.org/images/a5-globe.jpg",
+"categories": [
+"programming",
+"maps"
+],
+"categoryScores": {
+"programming": 9.01,
+"maps": 6.64,
+"science": 2.36,
+"games": 2.29,
+"toys": 2.0,
+"math": 1.72,
+"art": 1.0,
+"dataviz": 1.0,
+"generators": 1.0,
+"learning": 0.29,
+"food": 0.29,
+"simulation": 0.29,
+"indieweb": 0.29
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 14,
+"novelty": 20,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"playful wording",
+"long-form writing"
+],
+"nearestSimilarity": 0.703,
+"simhash": "dd5a405893950608",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "a7f77aee10b0aada266f",
+"url": "https://belian-earth.github.io/a5R/dev",
+"domain": "belian-earth.github.io",
+"registrableDomain": "belian-earth.github.io",
+"title": "A5 Discrete Global Grid System \u2022 a5R",
+"description": "Bindings for the \"A5 geospatial index\" <https://a5geo.org/>. A5 partitions the Earths surface into pentagonal cells across 31 resolution levels using an equal-area projection onto a dodecahedron. Provides functions for indexing coordinates to cells, traversing the cell hierarchy, computing cell boundaries, and compacting/uncompacting cell sets. Powered by the A5 Rust crate via extendr'.",
+"image": "https://belian-earth.github.io/a5R/logo.png",
+"categories": [
+"programming",
+"games"
+],
+"categoryScores": {
+"programming": 9.97,
+"games": 4.83,
+"maps": 3.82,
+"science": 3.49,
+"indieweb": 3.0,
+"toys": 2.0,
+"math": 1.32,
+"generators": 1.0,
+"learning": 0.33,
+"nature": 0.33
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 13,
+"novelty": 22,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.734,
+"simhash": "eac3319ca1e58a62",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "9b4b2b2895f4801156e6",
+"url": "https://jeremykun.com/2014/09/29/hybrid-images",
+"domain": "jeremykun.com",
+"registrableDomain": "jeremykun.com",
+"title": "Making Hybrid Images || Math \u2229 Programming",
+"description": "The Mona Lisa Leonardo da Vinci\u2019s Mona Lisa is one of the most famous paintings of all time. And there has always been a discussion around her enigmatic smile. He used a trademark Renaissance technique called sfumato, which involves many thin layers of glaze mixed with subtle pigments. The striking result is that when you look directly at Mona Lisa\u2019s smile, it seems to disappear. But when you look",
+"image": "",
+"categories": [
+"programming",
+"math"
+],
+"categoryScores": {
+"programming": 12.0,
+"math": 6.25,
+"games": 2.0,
+"stories": 2.0,
+"art": 1.75,
+"learning": 1.75,
+"science": 1.25,
+"music": 1.0,
+"weird": 1.0,
+"nature": 1.0,
+"photo": 1.0,
+"indieweb": 0.75,
+"maps": 0.25,
+"history": 0.25,
+"dataviz": 0.25,
+"simulation": 0.25
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 4,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "764e9415bcb2ccb3",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "1d775e345a3012e90fbd",
 "url": "https://decomp.dev/",
 "domain": "decomp.dev",
@@ -2489,6 +4072,89 @@
 "_backlogAt": 1794295147.315128
 },
 {
+"id": "1a0f0dc7518028a5e0ee",
+"url": "https://metalsmith.io/",
+"domain": "metalsmith.io",
+"registrableDomain": "metalsmith.io",
+"title": "Metalsmith | Home",
+"description": "An extremely simple, pluggable static site generator for NodeJS.",
+"image": "/img/facebook-image.png",
+"categories": [
+"programming",
+"generators"
+],
+"categoryScores": {
+"programming": 12.41,
+"generators": 8.57,
+"maps": 3.89,
+"indieweb": 2.68,
+"photo": 2.0,
+"learning": 0.89,
+"nature": 0.89,
+"art": 0.59,
+"history": 0.3,
+"dataviz": 0.3,
+"stories": 0.3
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 6,
+"independence": 16,
+"craft": 14,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"maps/charts",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "4e29d9ba9e8cea73",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "520d7e21d9f1fa37278f",
+"url": "https://jacksonpollock.org/",
+"domain": "jacksonpollock.org",
+"registrableDomain": "jacksonpollock.org",
+"title": "http://www.jacksonpollock.org/ by Miltos Manetas!",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"simulation": 1.0
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 20,
+"craft": 4,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "430d0738530c035b",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "ee84aea5db0c1a2514fb",
 "url": "https://fna-xna.github.io/",
 "domain": "fna-xna.github.io",
@@ -2530,51 +4196,162 @@
 "_backlogAt": 1794295147.315128
 },
 {
-"id": "c92a970824af9d29bbeb",
-"url": "https://blog.glyph.im/2026/10/programming-isnt-special.html",
-"domain": "blog.glyph.im",
-"registrableDomain": "glyph.im",
-"title": "Deciphering Glyph :: Programming Isn\u2019t Special",
-"description": "Deciphering Glyph, the blog of Glyph Lefkowitz.",
+"id": "ecc0d00a2062ecb5a003",
+"url": "https://starboard.gg/",
+"domain": "starboard.gg",
+"registrableDomain": "starboard.gg",
+"title": "Starboard",
+"description": "",
 "image": "",
 "categories": [
-"programming",
-"stories"
+"games"
 ],
 "categoryScores": {
-"programming": 13.92,
-"stories": 4.9,
-"art": 3.61,
-"indieweb": 2.76,
-"learning": 2.11,
-"music": 0.79,
-"history": 0.79,
-"weird": 0.79,
-"games": 0.53,
-"photo": 0.53,
-"generators": 0.26,
-"simulation": 0.26
+"games": 3.0,
+"dataviz": 3.0,
+"toys": 2.0,
+"programming": 2.0,
+"simulation": 1.0
 },
 "score": 69,
 "scoreBreakdown": {
-"interactivity": 0,
-"independence": 20,
-"craft": 15,
-"novelty": 30,
+"interactivity": 15,
+"independence": 18,
+"craft": 5,
+"novelty": 27,
 "security": 4,
 "penalties": 0
 },
 "reasons": [
-"lightweight small-web page",
-"playful wording",
-"long-form writing",
+"uses canvas",
+"keyboard controls",
+"maps/charts",
 "new domain"
 ],
-"nearestSimilarity": 0.641,
-"simhash": "ab71fd2d62298a97",
+"nearestSimilarity": 0.672,
+"simhash": "854b50d7939204e2",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "8ebf32cb0b6d62276d5d",
+"url": "https://scastiel.dev/3dbook",
+"domain": "scastiel.dev",
+"registrableDomain": "scastiel.dev",
+"title": "3D Book Image CSS Generator \u00b7 Sebastien Castiel",
+"description": "Generate an animated 3D image from a book cover and export to HTML/CSS to embed on your website.",
+"image": "https://scastiel.dev/icon.png",
+"categories": [
+"programming",
+"generators"
+],
+"categoryScores": {
+"programming": 16.1,
+"generators": 10.17,
+"games": 2.0,
+"art": 0.59,
+"learning": 0.59,
+"indieweb": 0.59
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 11,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "df974064007fdd3f",
 "frameable": true,
-"source": "lobsters",
-"_backlogAt": 1794296933.7764215
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "fc51a653ce27254d035e",
+"url": "https://bytevitae.com/",
+"domain": "bytevitae.com",
+"registrableDomain": "bytevitae.com",
+"title": "Byte Vitae \u2014 Your high quality developer resume in less than 5 minutes",
+"description": "Sync your account. Choose a great looking design and download your resume!",
+"image": "https://bytevitae.com/images/global/opengraph.jpg",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 7.7,
+"art": 2.94,
+"toys": 2.44,
+"games": 2.0,
+"dataviz": 0.88,
+"generators": 0.44,
+"weird": 0.44
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 16,
+"craft": 13,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "66b5600c7bbacad1",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "c73a16972633804c1a24",
+"url": "https://silentshark.app/alpha",
+"domain": "silentshark.app",
+"registrableDomain": "silentshark.app",
+"title": "Silent Shark",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 3.0,
+"dataviz": 3.0,
+"games": 2.0,
+"simulation": 2.0
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 19,
+"independence": 18,
+"craft": 5,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "0a2286001408c518",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "cc119fade1840299a219",
@@ -2712,51 +4489,50 @@
 "_backlogAt": 1794296933.7764215
 },
 {
-"id": "4168ece5c042cdcb41cf",
-"url": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html",
-"domain": "raphlinus.github.io",
-"registrableDomain": "raphlinus.github.io",
-"title": "Cleaner parallel curves with Euler spirals | Raph Levien\u2019s blog",
-"description": "Blog of Raph Levien.",
-"image": "",
+"id": "1028fe60258e640dcd92",
+"url": "https://slides.com/",
+"domain": "slides.com",
+"registrableDomain": "slides.com",
+"title": "Slides \u2013 Professional presentations. From draft to delivery.",
+"description": "Create, share, and present exceptional decks. Design by hand or with AI, refine with your team, and present anywhere.",
+"image": "https://static.slid.es/logo/v3/slides-symbol.png",
 "categories": [
-"indieweb"
+"programming",
+"art"
 ],
 "categoryScores": {
-"indieweb": 11.72,
-"programming": 3.92,
-"math": 3.85,
-"stories": 2.24,
-"generators": 1.2,
-"learning": 0.96,
-"dataviz": 0.72,
-"weird": 0.72,
-"toys": 0.48,
-"art": 0.48,
-"music": 0.48,
-"retro": 0.48,
-"maps": 0.24
+"programming": 7.37,
+"art": 6.09,
+"toys": 2.36,
+"learning": 2.23,
+"photo": 2.0,
+"generators": 1.73,
+"maps": 1.09,
+"games": 1.0,
+"dataviz": 1.0,
+"simulation": 1.0,
+"stories": 0.36
 },
 "score": 68,
 "scoreBreakdown": {
-"interactivity": 0,
-"independence": 20,
+"interactivity": 13,
+"independence": 16,
 "craft": 15,
-"novelty": 31,
+"novelty": 27,
 "security": 2,
-"penalties": 0
+"penalties": -5
 },
 "reasons": [
-"personal/indie host",
+"uses canvas",
 "playful wording",
-"long-form writing",
-"new domain"
+"new domain",
+"commercial language x1"
 ],
-"nearestSimilarity": 0.625,
-"simhash": "17bb9703e3d4025d",
-"frameable": true,
+"nearestSimilarity": 0.672,
+"simhash": "023d99b972a8f1d4",
+"frameable": false,
 "source": "link",
-"_backlogAt": 1794296933.7764215
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "291f7060c85477f1f2de",
@@ -3035,6 +4811,173 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "3149f8a4a117368422ec",
+"url": "https://eev.ee/blog/2016/09/15/music-theory-for-nerds",
+"domain": "eev.ee",
+"registrableDomain": "eev.ee",
+"title": "Music theory for nerds / fuzzy notepad",
+"description": "",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 12.77,
+"programming": 3.22,
+"stories": 2.44,
+"photo": 2.0,
+"dataviz": 1.77,
+"learning": 1.55,
+"math": 1.33,
+"weird": 1.11,
+"art": 0.67,
+"indieweb": 0.67,
+"games": 0.44,
+"toys": 0.44,
+"science": 0.44,
+"generators": 0.44,
+"maps": 0.22,
+"history": 0.22
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 14,
+"novelty": 33,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.609,
+"simhash": "1b0cd6a332f3b0fa",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "1c8af6131d00deca5cfc",
+"url": "https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html",
+"domain": "cs.stanford.edu",
+"registrableDomain": "stanford.edu",
+"title": "Robotics: A Brief History",
+"description": "",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 7.07,
+"retro": 3.0,
+"stories": 1.25,
+"science": 0.63,
+"games": 0.31,
+"maps": 0.31,
+"food": 0.31,
+"programming": 0.31
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": -2
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "8e7dc7f03045c8b6",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "758aa2e25e521eb344cf",
+"url": "https://twitchinstalls.com/",
+"domain": "twitchinstalls.com",
+"registrableDomain": "twitchinstalls.com",
+"title": "Twitch Installs Arch Linux",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 4.31,
+"programming": 3.12,
+"toys": 2.0,
+"learning": 0.81,
+"science": 0.41,
+"maps": 0.41
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "6a986bf07d395500",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "b2e6006f5b59b8349ee6",
+"url": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/firms-catalog/catalog.json",
+"domain": "browser.portolan-sdi.org",
+"registrableDomain": "portolan-sdi.org",
+"title": "Portolan Browser",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"simulation": 1.0
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 5,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "8302045009110001",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "2d7f0481ae911cec65da",
 "url": "https://joelgonewild.com/",
 "domain": "joelgonewild.com",
@@ -3204,50 +5147,78 @@
 "_backlogAt": 1794296933.7764215
 },
 {
-"id": "a34646ce828c4166fc4b",
-"url": "https://cmyr.net/blog/hyperbezier.html",
-"domain": "cmyr.net",
-"registrableDomain": "cmyr.net",
-"title": "The hyperbezier pen tool",
-"description": "Introduction",
-"image": "",
+"id": "912ee35862df027c306c",
+"url": "https://daringfireball.net/linked/2024/05/24/daylight-computer",
+"domain": "daringfireball.net",
+"registrableDomain": "daringfireball.net",
+"title": "Daring Fireball: Daylight Computer's DC-1 Tablet",
+"description": "Link to: https://daylightcomputer.com",
+"image": "https://daringfireball.net/graphics/df-wide-card.png",
 "categories": [
-"generators",
-"learning",
-"toys"
+"games"
 ],
 "categoryScores": {
-"generators": 6.61,
-"learning": 4.83,
-"toys": 4.27,
-"programming": 3.11,
-"art": 0.83,
-"math": 0.83,
-"simulation": 0.83,
-"maps": 0.55,
-"indieweb": 0.55,
-"games": 0.28,
-"science": 0.28
+"games": 2.0,
+"history": 0.46,
+"stories": 0.46
 },
 "score": 66,
 "scoreBreakdown": {
-"interactivity": 0,
+"interactivity": 4,
 "independence": 18,
-"craft": 15,
-"novelty": 31,
+"craft": 13,
+"novelty": 29,
 "security": 2,
 "penalties": 0
 },
 "reasons": [
+"keyboard controls",
 "playful wording",
-"long-form writing",
 "new domain"
 ],
-"nearestSimilarity": 0.625,
-"simhash": "712cacc5fe58a079",
+"nearestSimilarity": 0.656,
+"simhash": "79146f3098be83ba",
 "frameable": true,
 "source": "link",
-"_backlogAt": 1794296933.7764215
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "9759fbb61c662a70712b",
+"url": "https://kenney.nl/",
+"domain": "kenney.nl",
+"registrableDomain": "kenney.nl",
+"title": "Home \u00b7 Kenney",
+"description": "",
+"image": "https://kenney.nl/data/img/kenney-promo.png",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 5.92,
+"toys": 2.0,
+"programming": 0.97,
+"learning": 0.48
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 10,
+"novelty": 26,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "6a1672eab2724854",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "f724e2c31d227921dcdd",
@@ -3404,6 +5375,136 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "3cb9151ddc2e0347a041",
+"url": "https://cryonceaweek.com/",
+"domain": "cryonceaweek.com",
+"registrableDomain": "cryonceaweek.com",
+"title": "Cry Once a Week",
+"description": "Experience the benefits of crying. Let your tears out to relieve emotional stress and improve your mental health.",
+"image": "https://cdn.prod.website-files.com/639d4a44800592ed16ea55ce/642ce366e2d90c25ed567d59_Screenshot%202023-04-04%20at%207.52.47%20PM.png",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.03,
+"simulation": 2.51,
+"games": 2.0,
+"photo": 1.03,
+"generators": 1.0
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 19,
+"independence": 0,
+"craft": 13,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"2 ad network(s)",
+"cookie banner",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "ea57208e789a122d",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "066b034fcfb7c50e187a",
+"url": "https://allyratworld.com/",
+"domain": "allyratworld.com",
+"registrableDomain": "allyratworld.com",
+"title": "AllyRat World",
+"description": "Official homepage of artist and creative AllyRat on the net.",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 4.0,
+"indieweb": 3.62,
+"art": 2.5,
+"simulation": 0.56,
+"programming": 0.56
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 10,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "7a9674b84a0aee3a",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "adf79514a4b32e6a2f0e",
+"url": "https://store.dftba.com/collections/3blue1brown",
+"domain": "store.dftba.com",
+"registrableDomain": "dftba.com",
+"title": "3Blue1Brown \u2013 DFTBA",
+"description": "3Blue1Brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition. The goal is for explanations to be driven by animations and for difficult problems to be made simple with changes in perspective.",
+"image": "http://store.dftba.com/cdn/shop/collections/3blue1brown_logo.jpg?v=1528987740",
+"categories": [
+"math"
+],
+"categoryScores": {
+"math": 5.69,
+"maps": 3.85,
+"games": 2.0,
+"toys": 2.0,
+"photo": 2.0,
+"art": 1.56,
+"dataviz": 1.0,
+"generators": 1.0,
+"science": 0.56,
+"history": 0.56,
+"weird": 0.56,
+"stories": 0.56,
+"programming": 0.56,
+"nature": 0.28,
+"food": 0.28
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 11,
+"novelty": 29,
+"security": 0,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain",
+"asks for a password",
+"commercial language x2"
+],
+"nearestSimilarity": 0.656,
+"simhash": "572373b0b94f5500",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "6e16d0e6ea0974be2c1f",
@@ -3754,6 +5855,90 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "5b478977b0dd699c2f2d",
+"url": "https://meyerweb.com/eric/comment/chech.html",
+"domain": "meyerweb.com",
+"registrableDomain": "meyerweb.com",
+"title": "\u201cConsidered Harmful\u201d Essays Considered Harmful",
+"description": "",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 8.6,
+"learning": 2.91,
+"weird": 1.78,
+"toys": 0.85,
+"games": 0.56,
+"science": 0.28,
+"maps": 0.28,
+"dataviz": 0.28,
+"generators": 0.28,
+"nature": 0.28,
+"math": 0.28,
+"programming": 0.28
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 13,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "cbbabfd6ed2fe916",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "d99c884964f4c4422620",
+"url": "https://tanck.nl/wallpaper",
+"domain": "tanck.nl",
+"registrableDomain": "tanck.nl",
+"title": "4K Desktop wallpaper generator",
+"description": "",
+"image": "",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 4.0,
+"toys": 2.0,
+"programming": 1.2,
+"games": 1.0,
+"simulation": 1.0
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 20,
+"craft": 5,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "3810236963f76102",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "e01d9b1704b3a76c064e",
@@ -4196,6 +6381,89 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "b346283972d512377453",
+"url": "https://woxi.ad-si.com/",
+"domain": "woxi.ad-si.com",
+"registrableDomain": "ad-si.com",
+"title": "Woxi Playground",
+"description": "Woxi is a Wolfram Language interpreter implemented in Rust.\n          Run code in the browser playground, on the CLI,\n          in Jupyter, or in the Woxi Studio notebook editor.",
+"image": "https://woxi.ad-si.com/images/social-preview.png",
+"categories": [
+"programming",
+"toys",
+"generators"
+],
+"categoryScores": {
+"programming": 12.4,
+"toys": 9.42,
+"generators": 7.37,
+"maps": 0.95,
+"learning": 0.95,
+"science": 0.47,
+"dataviz": 0.47
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 13,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "a2dc28ef415c6adc",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "8702bfc8219df651e71e",
+"url": "https://festival.peter.stream/",
+"domain": "festival.peter.stream",
+"registrableDomain": "peter.stream",
+"title": "Beckmans Visual Communication Festival \u2014 NEW FONTS 2026",
+"description": "NEW FONTS \u2014 a one day design festival at Beckmans College of Design in Stockholm, 9 October 2026. Speakers from Dinamo, Jung-Lee Type, Studio Akakir and Beckmans Type.",
+"image": "https://d2w9rnfcy7mm78.cloudfront.net/51998982/original_80dd5839548ad428b9e3279a73b2538b.jpg",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 5.69,
+"learning": 1.92,
+"photo": 1.69,
+"toys": 0.42,
+"music": 0.42,
+"maps": 0.42,
+"dataviz": 0.42,
+"food": 0.42
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 12,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "76d0a36beb5c553d",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "c99b3d9152649da5c6be",
 "url": "https://blog.jse.li/posts/smith9street",
 "domain": "blog.jse.li",
@@ -4234,6 +6502,82 @@
 "frameable": true,
 "source": "lobsters",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "dc1b1a039569cf960418",
+"url": "https://iridesce.xyz/",
+"domain": "iridesce.xyz",
+"registrableDomain": "iridesce.xyz",
+"title": "iridesce",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 1.2,
+"art": 0.6,
+"history": 0.6,
+"weird": 0.6,
+"indieweb": 0.6
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 29,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "42196c6a38c0cace",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "4b5509c3ed1d23b3fd63",
+"url": "https://bmh.neocities.org/",
+"domain": "bmh.neocities.org",
+"registrableDomain": "bmh.neocities.org",
+"title": "BMH Online",
+"description": "BMH Online, one man's contribution to the Weeeeerly Wild World!",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"indieweb": 3.0,
+"maps": 2.5,
+"photo": 2.0,
+"math": 0.6
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 7,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "3603e15e8ff686c8",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "269819a9cc47fd82482e",
@@ -4649,6 +6993,88 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "8db758f53a5f3596e049",
+"url": "https://about.readthedocs.com/",
+"domain": "about.readthedocs.com",
+"registrableDomain": "readthedocs.com",
+"title": "Full featured documentation deployment platform - Read the Docs",
+"description": "Read the Docs is a documentation building and hosting platform aimed at helping developers creating documentation from code with versioned documentation, integrated search, pull request previews and more.",
+"image": "https://about.readthedocs.com/images/logo-opengraph.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 12.63,
+"games": 2.97,
+"toys": 2.97,
+"generators": 2.47,
+"dataviz": 0.97,
+"indieweb": 0.97,
+"science": 0.65,
+"maps": 0.65,
+"learning": 0.65,
+"simulation": 0.32
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 15,
+"novelty": 31,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.625,
+"simhash": "b18067b70b38e2d8",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "03937b4d8b9c4b46bcea",
+"url": "https://axayacatl.neocities.org/",
+"domain": "axayacatl.neocities.org",
+"registrableDomain": "axayacatl.neocities.org",
+"title": "Axayacatl",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 3.0,
+"music": 0.6,
+"photo": 0.6,
+"programming": 0.6
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 5,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "d0f023c52175214a",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "5b4e9184a503ccc62530",
 "url": "https://jetcafe.org/~dave/usenet/phil.html",
 "domain": "jetcafe.org",
@@ -4682,44 +7108,6 @@
 "simhash": "01385be4f07f8c49",
 "frameable": false,
 "source": "wiby",
-"_backlogAt": 1794295147.315128
-},
-{
-"id": "212fa52a84b4eb6bcb01",
-"url": "https://32bit.cafe/",
-"domain": "32bit.cafe",
-"registrableDomain": "32bit.cafe",
-"title": "32-Bit Cafe",
-"description": "A web space community that focuses on building websites for self-expression and creativity, made up of professionals, hobbyists, and enthusiasts of the personal web.",
-"image": "",
-"categories": [
-"science"
-],
-"categoryScores": {
-"science": 2.98,
-"indieweb": 2.98,
-"learning": 0.96,
-"nature": 0.96,
-"weird": 0.48,
-"programming": 0.48
-},
-"score": 59,
-"scoreBreakdown": {
-"interactivity": 0,
-"independence": 20,
-"craft": 11,
-"novelty": 26,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"lightweight small-web page",
-"new domain"
-],
-"nearestSimilarity": 0.688,
-"simhash": "b68f2cb86e24d5ae",
-"frameable": true,
-"source": "seed",
 "_backlogAt": 1794295147.315128
 },
 {
@@ -4867,6 +7255,75 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "48a78064748744ee8794",
+"url": "https://creativecommons.org/licenses/by/3.0/deed.en",
+"domain": "creativecommons.org",
+"registrableDomain": "creativecommons.org",
+"title": "Deed - Attribution 3.0 Unported - Creative Commons",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.33,
+"learning": 1.31,
+"generators": 1.0,
+"indieweb": 0.65,
+"history": 0.33
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 9,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page"
+],
+"nearestSimilarity": 0.641,
+"simhash": "5942fd9208ad68b3",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "8ee79d6998b148a3a289",
+"url": "https://openorb.idiot.sh/search",
+"domain": "openorb.idiot.sh",
+"registrableDomain": "idiot.sh",
+"title": "OpenOrb",
+"description": "A curated search engine for Atom and RSS feeds.",
+"image": "",
+"categories": [
+"science"
+],
+"categoryScores": {
+"science": 2.5,
+"generators": 1.0
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 7,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "db474d42f39aae5e",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "062c44e988521d713845",
@@ -5021,6 +7478,88 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "00e8bfc73eabcc327299",
+"url": "https://itsevergreen.rip/manifesto",
+"domain": "itsevergreen.rip",
+"registrableDomain": "itsevergreen.rip",
+"title": "manifesto - evergreen",
+"description": "",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 2.42,
+"learning": 0.84,
+"food": 0.42
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "303debf0ee70b947",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "acdacb666e4919c6e6a7",
+"url": "https://circuit-zone.com/",
+"domain": "circuit-zone.com",
+"registrableDomain": "circuit-zone.com",
+"title": "Circuit-Zone.com - Electronic Kits, Electronic Projects, Electronic Schematics, DIY Electronics",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"music": 3.06,
+"games": 2.0,
+"toys": 2.0,
+"art": 0.56,
+"photo": 0.56,
+"indieweb": 0.56,
+"dataviz": 0.28,
+"generators": 0.28,
+"food": 0.28,
+"simulation": 0.28,
+"programming": 0.28
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 10,
+"novelty": 26,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain",
+"mixed content x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "6c6096c8d199e0b3",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "21ee84d5f1421fd60434",
 "url": "https://sp4comm.org/",
 "domain": "sp4comm.org",
@@ -5056,6 +7595,46 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794295147.315128
+},
+{
+"id": "83bc8ab3d961f5704d91",
+"url": "https://cranelift.dev/",
+"domain": "cranelift.dev",
+"registrableDomain": "cranelift.dev",
+"title": "Cranelift",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 7.72,
+"learning": 0.9,
+"nature": 0.9,
+"art": 0.6,
+"games": 0.3,
+"toys": 0.3,
+"generators": 0.3,
+"simulation": 0.3
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 11,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "8b6ac38eb6aad988",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "69bc6555f9291aadc474",
@@ -5453,6 +8032,168 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "4613c7005e54bb3f6cb7",
+"url": "https://oneleet.com/",
+"domain": "oneleet.com",
+"registrableDomain": "oneleet.com",
+"title": "Oneleet | Security-First Compliance (SOC 2, ISO 27001 & More)",
+"description": "Oneleet combines compliance automation, human pentests, code scanning, device management and a dedicated vCISO for SOC 2, ISO 27001 and more.",
+"image": "https://www.oneleet.com/images/social/oneleet-og-2026.jpg",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 5.7,
+"toys": 4.0,
+"stories": 2.24,
+"photo": 2.0,
+"maps": 1.7,
+"generators": 1.49,
+"simulation": 1.49,
+"art": 1.24,
+"dataviz": 1.24,
+"games": 1.0,
+"learning": 0.73,
+"indieweb": 0.49,
+"history": 0.24
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 18,
+"independence": 12,
+"craft": 11,
+"novelty": 30,
+"security": 4,
+"penalties": -20
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"cookie banner",
+"playful wording",
+"new domain",
+"commercial language x4"
+],
+"nearestSimilarity": 0.641,
+"simhash": "4c245cdd277856c8",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "d889ecdb1522e10207fd",
+"url": "https://armchair.com/escape/bike.html",
+"domain": "armchair.com",
+"registrableDomain": "armchair.com",
+"title": "Armchair World: Cycle across America",
+"description": "",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 5.58,
+"nature": 3.08,
+"retro": 3.0,
+"dataviz": 1.9,
+"generators": 0.4,
+"math": 0.4,
+"photo": 0.4,
+"indieweb": 0.4
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 8,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "0abec63a392b9b03",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "a6aa02ecf7f11d5123e7",
+"url": "https://jim-yates.com/",
+"domain": "jim-yates.com",
+"registrableDomain": "jim-yates.com",
+"title": "The Web-Site of Jim Yates",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 1.2,
+"photo": 1.2,
+"music": 0.6
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "960831388a319637",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "206b5e392ba0750c078a",
+"url": "https://emoji.build/deal-with-it-generator",
+"domain": "emoji.build",
+"registrableDomain": "emoji.build",
+"title": "Deal With It GIF emoji generator",
+"description": "Most over-engineered Deal With It emoji generator - all done securely in your browser for free.",
+"image": "/deal-with-it-generator/favicon.ico",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 6.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 7,
+"novelty": 30,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.641,
+"simhash": "453e3c587323d964",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "8c0a13ddf7ff5b1804d5",
 "url": "https://evanmiller.org/dont-kill-math.html",
 "domain": "evanmiller.org",
@@ -5550,6 +8291,51 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "2bb1e209c2728d22be16",
+"url": "https://supportbee.com/tools/what-browser",
+"domain": "supportbee.com",
+"registrableDomain": "supportbee.com",
+"title": "What Browser Am I Using? | SupportBee",
+"description": "Instantly detect your browser, operating system, screen resolution, and more. Get a shareable link with your browser details for support agents.",
+"image": "https://sbeecdn.com/img/og.png",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 7.16,
+"programming": 3.5,
+"indieweb": 2.5,
+"toys": 2.33,
+"weird": 1.83,
+"learning": 1.83,
+"games": 1.33,
+"art": 0.67,
+"retro": 0.67,
+"nature": 0.33,
+"photo": 0.33
+},
+"score": 54,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 18,
+"craft": 13,
+"novelty": 23,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"playful wording",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.719,
+"simhash": "52e66f568e8d3065",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "4bd5cdec76a76dd0e8b7",
 "url": "https://themagicofcode.com/sample",
 "domain": "themagicofcode.com",
@@ -5619,6 +8405,47 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "c77fb30914d44f0881e8",
+"url": "https://clayhound.us/sites/maricopa.htm",
+"domain": "clayhound.us",
+"registrableDomain": "clayhound.us",
+"title": "Maricopa Pottery Collection",
+"description": "",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 4.65,
+"retro": 3.0,
+"art": 0.97,
+"maps": 0.65,
+"nature": 0.65,
+"food": 0.65,
+"programming": 0.65
+},
+"score": 53,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 12,
+"novelty": 29,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"a spam/gambling term"
+],
+"nearestSimilarity": 0.656,
+"simhash": "4bb3a1a72d0475d5",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "c04296c65f2750ed2215",
@@ -5734,6 +8561,86 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "51202e0088de6d7a7d7e",
+"url": "https://candybox2.github.io/",
+"domain": "candybox2.github.io",
+"registrableDomain": "candybox2.github.io",
+"title": "Candy Box 2",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 4.2,
+"indieweb": 3.6,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 5,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "e71a1c32a9bc9ff3",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "bf7a9f5d8ec9d6451fc9",
+"url": "https://sketchtoy.com/",
+"domain": "sketchtoy.com",
+"registrableDomain": "sketchtoy.com",
+"title": "Sketch Toy: Draw sketches and share replays with friends!",
+"description": "A drawing application that lets you save and share replays of your work with friends.",
+"image": "/images/icon-200.png",
+"categories": [
+"toys",
+"art"
+],
+"categoryScores": {
+"toys": 13.75,
+"art": 4.58,
+"games": 3.0,
+"simulation": 1.0
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 4,
+"craft": 11,
+"novelty": 18,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"1 ad network(s)",
+"new domain"
+],
+"nearestSimilarity": 0.781,
+"simhash": "33fb16021c8301bd",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "fdc3ec86079b010d9028",
@@ -5896,47 +8803,161 @@
 "_backlogAt": 1794296933.7764215
 },
 {
-"id": "3f5d08be16a17ae09204",
-"url": "https://getrecut.com/",
-"domain": "getrecut.com",
-"registrableDomain": "getrecut.com",
-"title": "Recut \u2014 Automatic Video Editor",
-"description": "Remove silence from your videos automatically. The fastest way to edit video on Mac, Windows, and Linux.",
-"image": "https://getrecut.com/images/recut_social_image.png",
+"id": "5c1e3e081479e04b901f",
+"url": "https://plotnotes.ai/login?redirect_url=https%3A%2F%2Fwww.plotnotes.ai%2Flogin",
+"domain": "plotnotes.ai",
+"registrableDomain": "plotnotes.ai",
+"title": "Plotnotes",
+"description": "The AI-powered writing assistant for modern teams",
+"image": "",
 "categories": [
-"photo",
+"stories"
+],
+"categoryScores": {
+"stories": 2.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 8,
+"novelty": 27,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.672,
+"simhash": "0d5185420006f58a",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "a900723040bd9d4173c0",
+"url": "https://isitchristmas.com/",
+"domain": "isitchristmas.com",
+"registrableDomain": "isitchristmas.com",
+"title": "Is it Christmas?",
+"description": "",
+"image": "https://isitchristmas.com/icons/large-wide.png",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"toys": 2.0
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 5,
+"novelty": 30,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.641,
+"simhash": "3100c8fae62837d0",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "dffe24ee545fc92f6ed0",
+"url": "https://trypap.com/",
+"domain": "trypap.com",
+"registrableDomain": "trypap.com",
+"title": "Passive Aggressive Passwords",
+"description": "PaP - The passive aggressive password machine.",
+"image": "https://trypap.com/PAPshare.jpg",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 0.6,
+"maps": 0.6
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 16,
+"craft": 10,
+"novelty": 26,
+"security": -1,
+"penalties": 0
+},
+"reasons": [
+"new domain",
+"asks for a password"
+],
+"nearestSimilarity": 0.688,
+"simhash": "09cf3209b0502dea",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "38183da0465fca7efc41",
+"url": "https://builder.io/",
+"domain": "builder.io",
+"registrableDomain": "builder.io",
+"title": "Builder.io: Collaborative Platform to Build With AI Agents",
+"description": "One codebase for engineers, designers, PMs, and marketers. Everyone works from one source of truth, on brand and in code, with no handoffs to clean up.",
+"image": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F59eed212865745c5a0bf0cfc28c38173?width=1200",
+"categories": [
+"programming",
 "generators"
 ],
 "categoryScores": {
-"photo": 14.87,
-"generators": 8.06,
-"history": 1.81,
-"art": 1.0,
-"dataviz": 1.0,
-"music": 0.94,
-"games": 0.31,
-"learning": 0.31,
-"stories": 0.31
+"programming": 9.62,
+"generators": 7.04,
+"dataviz": 3.66,
+"art": 3.37,
+"history": 2.08,
+"toys": 2.0,
+"photo": 2.0,
+"learning": 1.16,
+"stories": 0.87,
+"maps": 0.58,
+"indieweb": 0.58,
+"science": 0.29,
+"food": 0.29,
+"simulation": 0.29
 },
 "score": 50,
 "scoreBreakdown": {
-"interactivity": 5,
-"independence": 16,
+"interactivity": 10,
+"independence": 14,
 "craft": 15,
-"novelty": 30,
-"security": 4,
+"novelty": 29,
+"security": 2,
 "penalties": -20
 },
 "reasons": [
+"reacts to mouse/touch",
+"cookie banner",
 "playful wording",
 "new domain",
 "commercial language x4"
 ],
-"nearestSimilarity": 0.641,
-"simhash": "fa9094aa3b791535",
-"frameable": true,
-"source": "hn",
-"_backlogAt": 1794296933.7764215
+"nearestSimilarity": 0.656,
+"simhash": "0cb505c112bdf25d",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "c39c20a419bea07216e6",
@@ -6090,6 +9111,43 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "cc7e3458c8822aa60eb9",
+"url": "https://infocom.tambo.co/",
+"domain": "infocom.tambo.co",
+"registrableDomain": "tambo.co",
+"title": "Infocom Chat",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"toys": 2.0
+},
+"score": 49,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 5,
+"novelty": 26,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.688,
+"simhash": "0020050c0080b420",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "9743a93bc21c842d2882",
 "url": "https://shoutout.io/",
 "domain": "shoutout.io",
@@ -6214,6 +9272,82 @@
 "_backlogAt": 1794295147.315128
 },
 {
+"id": "6dbdd4545e934a63c78e",
+"url": "https://louisabraham.github.io/load-bearing",
+"domain": "louisabraham.github.io",
+"registrableDomain": "louisabraham.github.io",
+"title": "The load-bearing vocabulary of Claude",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 3.0,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 47,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 4,
+"novelty": 27,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.672,
+"simhash": "88a900205d664080",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794297998.5802603
+},
+{
+"id": "85b41569cef1849147f2",
+"url": "https://latex.to/",
+"domain": "latex.to",
+"registrableDomain": "latex.to",
+"title": "LaTeX.to: Free LaTeX to PDF and Image Converter, Online LaTeX Editor",
+"description": "Convert LaTeX to PDF or images in your browser with a free online LaTeX editor. No login, no compile timeout. Best free Overleaf alternative.",
+"image": "https://latex.to/og-image.png",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 10.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 47,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 26,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.688,
+"simhash": "d1a03bc4be9fa04c",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794297998.5802603
+},
+{
 "id": "e8c44f81f66c54df1540",
 "url": "https://global-change-data-lab.org/",
 "domain": "global-change-data-lab.org",
@@ -6292,6 +9426,44 @@
 "frameable": true,
 "source": "wiby",
 "_backlogAt": 1794295147.315128
+},
+{
+"id": "668fece8466e459f19d8",
+"url": "https://desmos.com/calculator/qca9hs1dyx",
+"domain": "desmos.com",
+"registrableDomain": "desmos.com",
+"title": "S9 Curve | Desmos",
+"description": "Explore math with our beautiful, free online graphing calculator. Graph functions, plot points, visualize algebraic equations, add sliders, animate graphs, and more.",
+"image": "https://www.desmos.com/calc_thumbs/production/version/qca9hs1dyx/8a30e1e0-dc80-11f1-975b-970dac94f506.png",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 5.0,
+"maps": 2.5,
+"generators": 2.5,
+"math": 2.5
+},
+"score": 46,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 13,
+"novelty": 26,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.688,
+"simhash": "bc98d9e4a67c2519",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794297998.5802603
 },
 {
 "id": "7e9ffe6827301a64241b",
