@@ -68,8 +68,44 @@
     <div class="row"><button class="ghost-btn" id="chips-clear">Clear</button><button class="wander-btn" id="chips-done">Done</button></div>
   </dialog>
 
-  <dialog id="saved-dlg" class="panel wide">
-    <h2>Saved sites</h2>
+  <dialog id="saved-dlg" class="panel saved-panel">
+    <div class="saved-head">
+      <h2>Saved sites</h2>
+      <div class="spacer"></div>
+      <div class="seg" role="group" aria-label="View">
+        <button type="button" data-view="list" title="List view">☰ List</button>
+        <button type="button" data-view="cards" title="Card view with page previews">▦ Cards</button>
+      </div>
+    </div>
+    <div class="saved-filters" id="saved-filters">
+      <div id="saved-tags" class="chips" aria-label="Filter by tag"></div>
+      <div class="filter-row">
+        <label class="field">Added
+          <select id="saved-date">
+            <option value="any">Any time</option>
+            <option value="today">Today</option>
+            <option value="7">Past 7 days</option>
+            <option value="30">Past 30 days</option>
+            <option value="365">Past year</option>
+            <option value="custom">Custom range…</option>
+          </select>
+        </label>
+        <span id="saved-range" class="field" hidden>
+          <input type="date" id="saved-from" aria-label="Added on or after">
+          <span class="muted">to</span>
+          <input type="date" id="saved-to" aria-label="Added on or before">
+        </span>
+        <label class="field">Sort
+          <select id="saved-sort">
+            <option value="new">Newest first</option>
+            <option value="old">Oldest first</option>
+          </select>
+        </label>
+        <div class="spacer"></div>
+        <button type="button" class="ghost-btn" id="saved-clear" hidden>Clear filters</button>
+      </div>
+    </div>
+    <p class="muted small" id="saved-count"></p>
     <ul id="saved-list" class="saved-list"></ul>
     <h3>Suggest a site</h3>
     <form id="suggest-form" class="row">
@@ -77,7 +113,7 @@
       <button class="wander-btn" type="submit">Suggest</button>
     </form>
     <p class="muted small" id="suggest-msg"></p>
-    <div class="row"><button class="ghost-btn" id="saved-close">Close</button></div>
+    <div class="row"><div class="spacer"></div><button class="ghost-btn" id="saved-close">Close</button></div>
   </dialog>
 
   <dialog id="settings-dlg" class="panel">

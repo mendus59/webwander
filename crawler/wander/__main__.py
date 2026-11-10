@@ -309,6 +309,23 @@ def cmd_recheck(args) -> int:
     return 0
 
 
+# ---------------------------------------------------------------- screenshots
+
+def cmd_shots(args) -> int:
+    """Screenshot approved sites for the saved-sites card view (see wander/shots.py)."""
+    from . import shots
+
+    store = open_store(args)
+    sites = store.load_shot_targets()
+    saved = store.load_saved_ids()
+    stats = shots.run(sites, saved, Path(args.out), limit=args.limit,
+                      max_minutes=args.max_minutes, force=args.force, log=log)
+    log(f"Screenshots done: {stats}")
+    write_summary(f"### Screenshots\n\n{stats['ok']} captured, {stats['blank']} stayed blank "
+                  f"(fallback preview used), {stats['error']} failed, {stats['removed']} removed.\n")
+    return 0
+
+
 # ---------------------------------------------------------------- score
 
 def cmd_score(args) -> int:
@@ -350,16 +367,23 @@ def main(argv=None) -> int:
 
     sub.add_parser("recheck", help="re-fetch live sites and reject spam/insecure ones")
 
+    sh = sub.add_parser("shots", help="screenshot approved sites for the saved-sites card view")
+    sh.add_argument("--out", required=True, help="folder holding the screenshots + manifest.json")
+    sh.add_argument("--limit", type=int, default=120)
+    sh.add_argument("--max-minutes", type=float, default=40)
+    sh.add_argument("--force", action="store_true", help="recapture sites that already have one")
+
     sc = sub.add_parser("score", help="explain the score for URLs")
     sc.add_argument("urls", nargs="+")
 
-    for sp in (c, s, sc, sub.choices["recheck"]):
+    for sp in (c, s, sc, sh, sub.choices["recheck"]):
         sp.add_argument("--local", help="use a local JSON file instead of Firestore")
         sp.add_argument("--delay", type=float, default=0.5)
 
     args = p.parse_args(argv)
     log(f"WebWander crawler {version_string()}")
-    return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score, "recheck": cmd_recheck}[args.cmd](args)
+    return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score, "recheck": cmd_recheck,
+            "shots": cmd_shots}[args.cmd](args)
 
 
 if __name__ == "__main__":

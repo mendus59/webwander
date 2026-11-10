@@ -1,0 +1,14 @@
+<!doctype html><html><head><title>Late toy</title><style>body{margin:0;background:#fff}</style></head>
+<body><div id="app"></div>
+<script>
+// Renders nothing for 2.5 s, like a toy that fetches its assets before drawing.
+setTimeout(() => {
+  const c = document.createElement("canvas"); c.width = innerWidth; c.height = innerHeight;
+  document.body.append(c);
+  const g = c.getContext("2d");
+  for (let i = 0; i < 60; i++) {
+    g.fillStyle = `hsl(${i * 6}, 80%, 55%)`;
+    g.beginPath(); g.arc((i * 97) % c.width, (i * 53) % c.height, 30 + i, 0, 7); g.fill();
+  }
+}, 2500);
+</script></body></html>

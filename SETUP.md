@@ -67,6 +67,11 @@ The **Daily crawl** workflow runs every day at 13:17 UTC and adds at least 10 ne
 your review queue. You can also run it by hand from the Actions tab (or the "Run crawler"
 button on the admin page).
 
+The **Screenshots** workflow runs every day at 15:05 UTC and photographs approved sites for
+the card view of saved sites (up to 120 per run, saved sites first), then redeploys the site.
+Run it by hand from the Actions tab to fill in pictures right away; tick "force" to retake
+every picture.
+
 ### Good to know
 
 - **Free-tier limits.** Firestore's free tier allows 50k reads and 20k writes per day, far
