@@ -48,6 +48,10 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
 Backlog tab moves the next N backlog sites (category-balanced, already scored) straight into
 Proposed, with no crawl run needed (`python -m wander backlog --count N` does the same). A hand-added URL that can't be
   fetched shows up under Rejected with the reason instead of disappearing.
+- **Run crawler** in the admin bar starts the daily-crawl workflow straight from the panel and
+  shows its live status. It needs a one-time GitHub fine-grained token (this repo only,
+  Actions: read and write), which is kept in that browser's localStorage and only sent to
+  api.github.com. The ↗ button next to it still opens the workflow on GitHub.
 - **Crawler** (`crawler/`): Python, run by `.github/workflows/crawl.yml` every day. It
   always proposes at least 10 never-before-suggested sites (`--min-new`). If too few clear
   the score threshold it fills up with the best of the rest and marks them "below threshold".
