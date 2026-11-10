@@ -33,10 +33,30 @@ def seeds(path: Path) -> list[tuple[str, str]]:
     return [(l, "seed") for l in lines if l]
 
 
-def hacker_news(limit_per_query: int = 30) -> list[tuple[str, str]]:
+def rarest_categories(counts, n: int = 4) -> list[str]:
+    """Category ids the database holds the fewest of (Mature is never targeted)."""
+    from .tagger import load_categories
+    ids = [c["id"] for c in load_categories() if c["id"] != "mature"]
+    return sorted(ids, key=lambda c: (counts.get(c, 0), random.random()))[:n]
+
+
+def search_terms_for(category_ids: list[str], per_category: int = 2) -> list[str]:
+    """A few keywords per category, used as extra discovery searches."""
+    from .tagger import load_categories
+    by_id = {c["id"]: c for c in load_categories()}
+    terms = []
+    for cid in category_ids:
+        kws = by_id[cid]["keywords"]
+        if kws:
+            terms += [kws[0]] + random.sample(kws[1:], k=min(per_category - 1, len(kws) - 1))
+    return terms
+
+
+def hacker_news(limit_per_query: int = 30, extra_queries: list[str] | None = None) -> list[tuple[str, str]]:
     """Show HN posts with some community traction, via the free Algolia API."""
     out = []
-    for q in random.sample(HN_QUERIES, k=min(6, len(HN_QUERIES))):
+    queries = list(extra_queries or []) + random.sample(HN_QUERIES, k=min(4, len(HN_QUERIES)))
+    for q in queries:
         try:
             r = requests.get(
                 "https://hn.algolia.com/api/v1/search",
@@ -98,10 +118,11 @@ def frontier(items: list[dict], n: int = 150) -> list[tuple[str, str]]:
     return [(i["url"], "link") for i in items[:n]]
 
 
-def gather(seed_path: Path, frontier_items: list[dict], use_network: bool = True) -> list[tuple[str, str]]:
+def gather(seed_path: Path, frontier_items: list[dict], use_network: bool = True,
+           extra_queries: list[str] | None = None) -> list[tuple[str, str]]:
     groups = [seeds(seed_path), frontier(frontier_items)]
     if use_network:
-        groups += [hacker_news(), reddit(), lobsters(), wiby()]
+        groups += [hacker_news(extra_queries=extra_queries), reddit(), lobsters(), wiby()]
     for g in groups:
         random.shuffle(g)
     # Interleave so no single source dominates a run.

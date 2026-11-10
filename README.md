@@ -34,6 +34,11 @@ walkthrough must all clear the proposal threshold, and an ad-heavy listicle must
 - **Crawler** (`crawler/`): Python, run by `.github/workflows/crawl.yml` every day. It
   always proposes at least 10 never-before-suggested sites (`--min-new`). If too few clear
   the score threshold it fills up with the best of the rest and marks them "below threshold".
+  **Each run is category-balanced:** it evaluates a pool of up to 4× more good candidates
+  than it needs, then picks so every category gets roughly the same number
+  (`crawler/wander/balance.py`), preferring categories the database has fewest of. Discovery
+  searches are steered toward those rarest categories too, and good candidates that didn't
+  fit are queued for the next run instead of being dropped.
 
 ## Scoring without AI
 
