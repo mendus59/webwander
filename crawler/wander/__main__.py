@@ -243,6 +243,31 @@ def cmd_crawl(args) -> int:
 
 # ---------------------------------------------------------------- seed
 
+def cmd_backlog(args) -> int:
+    """Propose a category-balanced batch straight from data/backlog.json, without crawling."""
+    store = open_store(args)
+    sites = store.load_sites()
+    known_ids = {s["id"] for s in sites}
+    backlog = [d for d in st.load_backlog() if d["id"] not in known_ids]
+    db_counts = Counter(c for s in sites if s.get("status") in ("approved", "proposed")
+                        for c in topics(s))
+    chosen = select_balanced(backlog, args.count, db_counts)
+    for d in chosen:
+        doc = {k: v for k, v in d.items() if not k.startswith("_")}
+        doc.update(status="proposed", fromBacklog=True)
+        store.upsert_site(doc)
+        log(f"  [proposed {doc['score']:3d}] {doc['url']}  {doc['categories']}")
+    chosen_ids = {d["id"] for d in chosen}
+    st.save_backlog([d for d in backlog if d["id"] not in chosen_ids])
+    store.write_stats(compute_stats(sites + chosen))
+    store.save()
+    st.append_log({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "version": __version__,
+                   "build": build(), "fromBacklog": True, "new": len(chosen),
+                   "categories": category_counts(chosen), "sites": [d["url"] for d in chosen]})
+    log(f"Proposed {len(chosen)} sites from the backlog; {len(backlog) - len(chosen)} left")
+    return 0
+
+
 def cmd_seed(args) -> int:
     store = open_store(args)
     fetcher = Fetcher(delay=args.delay)
@@ -373,17 +398,20 @@ def main(argv=None) -> int:
     sh.add_argument("--max-minutes", type=float, default=40)
     sh.add_argument("--force", action="store_true", help="recapture sites that already have one")
 
+    b = sub.add_parser("backlog", help="propose a balanced batch from the backlog, no crawling")
+    b.add_argument("--count", type=int, default=10)
+
     sc = sub.add_parser("score", help="explain the score for URLs")
     sc.add_argument("urls", nargs="+")
 
-    for sp in (c, s, sc, sh, sub.choices["recheck"]):
+    for sp in (c, s, sc, sh, b, sub.choices["recheck"]):
         sp.add_argument("--local", help="use a local JSON file instead of Firestore")
         sp.add_argument("--delay", type=float, default=0.5)
 
     args = p.parse_args(argv)
     log(f"WebWander crawler {version_string()}")
     return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score, "recheck": cmd_recheck,
-            "shots": cmd_shots}[args.cmd](args)
+            "shots": cmd_shots, "backlog": cmd_backlog}[args.cmd](args)
 
 
 if __name__ == "__main__":

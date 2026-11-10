@@ -15,6 +15,9 @@ service cloud.firestore {
 
     match /sites/{id} {
       allow get, list: if resource.data.status == 'approved' || isAdmin();
+      // Admins can move an already-scored backlog site straight into the review queue.
+      allow create: if isAdmin() && request.resource.data.status == 'proposed'
+        && request.resource.data.url is string;
       allow update: if isAdmin() && request.resource.data.diff(resource.data).affectedKeys()
         .hasOnly(['status', 'categories', 'title', 'description', 'frameable',
                   'approvedAt', 'approvedBy', 'reviewedAt', 'rand']);

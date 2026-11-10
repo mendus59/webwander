@@ -68,7 +68,8 @@ def test_crawl_run_is_balanced_and_keeps_leftovers(tmp_path, monkeypatch):
     monkeypatch.setattr(cli, "SEEDS_PATH", seeds)
     db = tmp_path / "db.json"
     assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0",
-                     "--min-new", "10", "--max-new", "12", "--min-score", "0"]) == 0
+                     "--min-new", "10", "--max-new", "12", "--min-score", "0",
+                     "--pool-factor", "10"]) == 0  # evaluate every seed, so the pool isn't random
     new = [dict(s, id=k) for k, s in json.loads(db.read_text())["sites"].items() if s["status"] == "proposed"]
     counts = Counter(c for s in new for c in s["categories"] if c in ("toys", "music", "retro", "programming"))
     assert counts["music"] >= 3 and counts["retro"] >= 3 and counts["programming"] >= 3
@@ -86,9 +87,40 @@ def test_crawl_run_is_balanced_and_keeps_leftovers(tmp_path, monkeypatch):
     monkeypatch.setattr(cli.Fetcher, "fetch", lambda self, url, with_scripts=True: fetched.append(url) or
                         Page(url, 404, {}, "", error="http 404"))
     assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0",
-                     "--min-new", "10", "--max-new", "12", "--min-score", "0"]) == 0
+                     "--min-new", "10", "--max-new", "12", "--min-score", "0",
+                     "--pool-factor", "10"]) == 0  # evaluate every seed, so the pool isn't random
     sites = [dict(s, id=k) for k, s in json.loads(db.read_text())["sites"].items()]
     second = [s for s in sites if s["status"] == "proposed" and s["id"] not in first_ids]
     assert len(second) >= 10
     assert {s["id"] for s in second} <= {b["id"] for b in backlog}
     assert not any(k.startswith("_") for s in second for k in s)
+
+
+def test_backlog_command_proposes_without_crawling(tmp_path, monkeypatch):
+    import json
+    import time
+    import wander.__main__ as cli
+    import wander.store as st
+
+    def no_fetch(self, url, with_scripts=True):
+        raise AssertionError("backlog command must not fetch anything")
+
+    monkeypatch.setattr(cli.Fetcher, "fetch", no_fetch)
+    for name in ("SEEN_PATH", "FRONTIER_PATH", "LOG_PATH", "BACKLOG_PATH"):
+        monkeypatch.setattr(st, name, tmp_path / name)
+    cats = ["games", "music", "art", "philosophy"]
+    items = [{"id": f"b{i}", "url": f"https://b{i}.example.org/", "registrableDomain": f"b{i}.example.org",
+              "categories": [cats[i % 4]], "score": 50 + i, "_backlogAt": time.time()} for i in range(20)]
+    st.BACKLOG_PATH.write_text(json.dumps(items))
+    db = tmp_path / "db.json"
+    db.write_text(json.dumps({"sites": {"b0": {"url": "https://b0.example.org/", "status": "approved",
+                                                 "categories": ["games"]}}}))
+    assert cli.main(["backlog", "--local", str(db), "--count", "8"]) == 0
+    sites = json.loads(db.read_text())["sites"]
+    new = [s for k, s in sites.items() if k != "b0"]
+    assert len(new) == 8 and all(s["status"] == "proposed" and s["fromBacklog"] for s in new)
+    assert not any(k.startswith("_") for s in new for k in s)
+    per_cat = {c: sum(c in s["categories"] for s in new) for c in cats}
+    assert max(per_cat.values()) - min(per_cat.values()) <= 1, per_cat
+    left = json.loads(st.BACKLOG_PATH.read_text())
+    assert len(left) == 11 and not {d["id"] for d in left} & set(sites)
