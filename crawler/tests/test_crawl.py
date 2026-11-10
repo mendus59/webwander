@@ -106,3 +106,22 @@ def test_failed_and_resubmitted_submissions_stay_visible(tmp_path, monkeypatch):
     data = json.loads(db.read_text())
     assert data["sites"][toy_id]["status"] == "proposed" and data["sites"][toy_id]["resubmitted"]
     assert sum(1 for s in data["sites"].values() if "dead" in s["url"]) == 1
+
+
+def test_runs_record_crawler_version(tmp_path, monkeypatch):
+    import wander
+    monkeypatch.setattr(cli.Fetcher, "fetch", fake_fetch)
+    for name in ("SEEN_PATH", "FRONTIER_PATH", "LOG_PATH", "BACKLOG_PATH"):
+        monkeypatch.setattr(st, name, tmp_path / name)
+    seeds = tmp_path / "seeds.txt"
+    seeds.write_text("\n".join(f"https://v{i}.example{i}.org/" for i in range(15)))
+    monkeypatch.setattr(cli, "SEEDS_PATH", seeds)
+    summary = tmp_path / "summary.md"
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(summary))
+    db = tmp_path / "db.json"
+    assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0", "--min-new", "3"]) == 0
+    data = json.loads(db.read_text())
+    assert data["meta"]["stats"]["crawlerVersion"] == wander.__version__
+    assert all(s["crawlerVersion"] == wander.__version__ for s in data["sites"].values())
+    assert json.loads(st.LOG_PATH.read_text())[-1]["version"] == wander.__version__
+    assert f"v{wander.__version__}" in summary.read_text()

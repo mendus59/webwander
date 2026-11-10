@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import hashlib
 import json
 import sys
@@ -17,7 +18,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import ROOT
+from . import ROOT, __version__, build, version_string
 from . import store as st
 from .balance import category_counts, select_balanced, topics
 from .fetch import Fetcher
@@ -55,6 +56,14 @@ def compute_stats(sites: list[dict]) -> dict:
     by_cat = Counter(c for s in sites if s.get("status") == "approved" for c in s.get("categories", []))
     return {"approved": by_status["approved"], "proposed": by_status["proposed"],
             "rejected": by_status["rejected"], "categories": dict(by_cat)}
+
+
+def write_summary(markdown: str) -> None:
+    """Show a short report on the GitHub Actions run page (no-op elsewhere)."""
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if path:
+        with open(path, "a") as f:
+            f.write(markdown + "\n")
 
 
 def failed_submission_doc(sub: dict, ev) -> dict | None:
@@ -214,15 +223,18 @@ def cmd_crawl(args) -> int:
     all_sites = sites + new_docs
     stats = compute_stats(all_sites)
     stats.update(lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs),
-                 lastRunCategories=run_categories)
+                 lastRunCategories=run_categories, crawlerVersion=__version__, crawlerBuild=build())
     store.write_stats(stats)
     store.save()
     st.save_seen(seen)
     st.save_frontier(frontier)
-    st.append_log({"at": stats["lastRun"], "fetched": fetched, "new": len(new_docs),
+    st.append_log({"at": stats["lastRun"], "version": __version__, "build": build(), "fetched": fetched, "new": len(new_docs),
                    "minutes": round((time.time() - started) / 60, 1), "categories": run_categories,
                    "sites": [d["url"] for d in new_docs]})
     log(f"Done: fetched {fetched}, proposed {len(new_docs)} new sites, frontier {len(frontier)}")
+    write_summary(f"## Daily crawl {version_string()}\n\n"
+                  f"Proposed **{len(new_docs)}** new sites (fetched {fetched}).\n\n"
+                  + "".join(f"- {c}: {n}\n" for c, n in sorted(run_categories.items())))
     if len(new_docs) < args.min_new:
         log(f"WARNING: only {len(new_docs)} new sites (wanted {args.min_new}). Add more seeds or raise --max-fetch.")
         return 2 if args.strict else 0
@@ -317,6 +329,7 @@ def cmd_score(args) -> int:
 
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="wander")
+    p.add_argument("--version", action="version", version=f"wander {version_string()}")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     c = sub.add_parser("crawl", help="daily discovery run")
@@ -345,6 +358,7 @@ def main(argv=None) -> int:
         sp.add_argument("--delay", type=float, default=0.5)
 
     args = p.parse_args(argv)
+    log(f"WebWander crawler {version_string()}")
     return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score, "recheck": cmd_recheck}[args.cmd](args)
 
 
