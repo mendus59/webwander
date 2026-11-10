@@ -30,12 +30,42 @@
 "from": "https://ourworldindata.org/"
 },
 {
-"url": "https://choosealicense.com/licenses/cc0-1.0",
-"parentScore": 89,
-"from": "https://bruno-simon.com/"
+"url": "https://codeberg.page/",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
 },
 {
-"url": "https://choosealicense.com/licenses/mit",
+"url": "https://forgejo.org/",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
+},
+{
+"url": "https://matrix.to/#/#codeberg-space:matrix.org",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
+},
+{
+"url": "https://pubs.opengroup.org/onlinepubs/9799919799",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
+},
+{
+"url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
+},
+{
+"url": "https://social.anoxinon.de/@Codeberg",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
+},
+{
+"url": "https://status.codeberg.eu/",
+"parentScore": 92,
+"from": "https://codeberg.org/sstephenson/brut-pack"
+},
+{
+"url": "https://choosealicense.com/licenses/cc0-1.0",
 "parentScore": 89,
 "from": "https://bruno-simon.com/"
 },
@@ -115,9 +145,89 @@
 "from": "https://solarsystemscope.com/"
 },
 {
+"url": "http://alex.nisnevich.com/",
+"parentScore": 84,
+"from": "https://alexnisnevich.github.io/synthi-js"
+},
+{
+"url": "http://flockingjs.org/",
+"parentScore": 84,
+"from": "https://alexnisnevich.github.io/synthi-js"
+},
+{
+"url": "http://phutney.com/EMSDK2.html",
+"parentScore": 84,
+"from": "https://alexnisnevich.github.io/synthi-js"
+},
+{
 "url": "https://maptiler.com/google-maps-platform-alternative",
 "parentScore": 83,
 "from": "https://oldmapsonline.org/en"
+},
+{
+"url": "https://cmyr.net/blog/hyperbezier.html",
+"parentScore": 82,
+"from": "https://linebender.org/blog/hyperbezier"
+},
+{
+"url": "https://levien.com/phd/thesis.pdf",
+"parentScore": 82,
+"from": "https://linebender.org/blog/hyperbezier"
+},
+{
+"url": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html",
+"parentScore": 82,
+"from": "https://linebender.org/blog/hyperbezier"
+},
+{
+"url": "https://alpinelinux.org/",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://castle-engine.io/modern_pascal",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://docs.mesa3d.org/drivers/virgl.html",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://docs.oasis-open.org/virtio/virtio/v1.3/virtio-v1.3.html",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://docs.riscv.org/reference/rva23/v1.0",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://docs.u-boot.org/en/stable",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://gitlab.freedesktop.org/slirp/libslirp",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://gnu.org/software/gdb",
+"parentScore": 82,
+"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
+},
+{
+"url": "https://daringfireball.net/linked/2024/05/24/daylight-computer",
+"parentScore": 80,
+"from": "https://daylightcomputer.com/"
+},
+{
+"url": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated",
+"parentScore": 80,
+"from": "https://daylightcomputer.com/"
 },
 {
 "url": "http://art.teleportacia.org/olia.html",
@@ -225,9 +335,59 @@
 "from": "https://inaturalist.org/"
 },
 {
-"url": "https://daylightcomputer.com/",
-"parentScore": 77,
-"from": "https://lindylearn.io/"
+"url": "https://belian-earth.github.io/a5R/dev",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://deck.gl/docs/api-reference/geo-layers/a5-layer",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://geoparquet.io/",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://geoparquet.io/concepts/spatial-indices?h=a5",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://h3geo.org/",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://join.slack.com/t/a5-3ap4392/shared_invite/zt-35rpdc904-2vcsoikrJKFRJF7ncN1fmw",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://plugins.qgis.org/plugins/vgridtools",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://portolan-mirrors.github.io/firms-catalog",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://portolan-sdi.org/",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://query.farm/products/extensions/a5",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+},
+{
+"url": "https://s2geometry.io/",
+"parentScore": 78,
+"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
 },
 {
 "url": "https://sublime.app/",
@@ -280,11 +440,6 @@
 "from": "https://jackschaedler.github.io/circles-sines-signals"
 },
 {
-"url": "https://codepen.io/OuterVale",
-"parentScore": 74,
-"from": "https://vale.rocks/posts/dvd-menus"
-},
-{
 "url": "https://disney.go.com/disneyvideos/fastplay/easyfind.html",
 "parentScore": 74,
 "from": "https://vale.rocks/posts/dvd-menus"
@@ -315,11 +470,6 @@
 "from": "https://vale.rocks/posts/dvd-menus"
 },
 {
-"url": "https://tangled.org/did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
-"parentScore": 74,
-"from": "https://vale.rocks/posts/dvd-menus"
-},
-{
 "url": "https://eylulbozan.com/en",
 "parentScore": 74,
 "from": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks"
@@ -328,6 +478,56 @@
 "url": "https://eylulbozan.com/muze?lang=en",
 "parentScore": 74,
 "from": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks"
+},
+{
+"url": "https://fna-xna.github.io/",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://gpu.userbenchmark.com/Compare/Nvidia-GeForce-GT-650M-vs-AMD-RX-Vega-8-Ryzen-iGPU/m7754vsm441833",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://kitsunegames.com/games",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://kitsunegames.com/games/kitsunezero",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://kitsunegames.com/games/midboss",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://kitsunegames.com/games/sbw",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://kitsunegames.com/games/uhd",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://kitsunegames.com/kitsunetails",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://mastodon.gamedev.place/@eniko",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
+},
+{
+"url": "https://mastodon.gamedev.place/@eniko/115853197106622671",
+"parentScore": 73,
+"from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
 },
 {
 "url": "https://chowdsp.com/products.html",
@@ -395,16 +595,6 @@
 "from": "https://kickscondor.com/"
 },
 {
-"url": "http://kickssy42x7pico4mcew4ymlwduh7su5ew3dd46prwar4nmubr4fbrid.onion/",
-"parentScore": 70,
-"from": "https://kickscondor.com/"
-},
-{
-"url": "https://cryptomuseum.bsky.social/",
-"parentScore": 70,
-"from": "https://cryptomuseum.com/"
-},
-{
 "url": "https://enigmamuseum.com/em.htm",
 "parentScore": 70,
 "from": "https://cryptomuseum.com/"
@@ -445,9 +635,64 @@
 "from": "https://zoomquilt.org/"
 },
 {
-"url": "http://mikebradley.me/",
-"parentScore": 68,
-"from": "http://tiffzhang.com/startup"
+"url": "https://cssgradient.io/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://dayofthedead.holiday/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://dixonandmoe.com/rellax",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://fontcraft.com/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://htmlcolorcodes.com/tutorials/html-text-color",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://marcbruederlin.github.io/particles.js",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://namemesh.com/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://trianglify.io/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://tympanus.net/Development/GradientTopographyAnimation",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://unsplash.com/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://visual.app/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
+},
+{
+"url": "https://wordcounter.io/",
+"parentScore": 69,
+"from": "https://coolbackgrounds.io/"
 },
 {
 "url": "http://tumblr.com/share?u=http%3A%2F%2Ftiffzhang.com%2Fstartup&v=3",
@@ -525,11 +770,6 @@
 "from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
 },
 {
-"url": "https://docs.gtk.org/gtk4/class.ListBox.html",
-"parentScore": 68,
-"from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
-},
-{
 "url": "https://docs.gtk.org/gtk4/class.ScrolledWindow.html",
 "parentScore": 68,
 "from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
@@ -585,11 +825,6 @@
 "from": "https://electronicosfantasticos.com/"
 },
 {
-"url": "https://deuxfleurs.fr/",
-"parentScore": 68,
-"from": "https://guerilla.studio/"
-},
-{
 "url": "https://flora.pm/",
 "parentScore": 68,
 "from": "https://guerilla.studio/"
@@ -606,16 +841,6 @@
 },
 {
 "url": "https://placehold.in/",
-"parentScore": 68,
-"from": "https://guerilla.studio/"
-},
-{
-"url": "https://radio.eldritch.cafe/",
-"parentScore": 68,
-"from": "https://guerilla.studio/"
-},
-{
-"url": "https://souvenir.cam/",
 "parentScore": 68,
 "from": "https://guerilla.studio/"
 },
@@ -720,11 +945,6 @@
 "from": "https://brut.sh/60d2b6"
 },
 {
-"url": "https://codeberg.org/sstephenson/brut-pack",
-"parentScore": 66,
-"from": "https://brut.sh/60d2b6"
-},
-{
 "url": "https://pandoc.org/",
 "parentScore": 66,
 "from": "https://brut.sh/60d2b6"
@@ -736,11 +956,6 @@
 },
 {
 "url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/contents.html",
-"parentScore": 66,
-"from": "https://brut.sh/60d2b6"
-},
-{
-"url": "https://sls.name/",
 "parentScore": 66,
 "from": "https://brut.sh/60d2b6"
 },
@@ -810,6 +1025,66 @@
 "from": "https://ifarchive.org/"
 },
 {
+"url": "http://actiondonation.org/articles/complete-guide-to-knots.html",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://animatedknots.com/",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://asiteaboutnothing.net/cr_knots.html",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://earlham.edu/~peters/knotlink.html",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://folsoms.net/knots",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/sm",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/sm?PHPSESSID=eb7a68c0dee1989afc0c673c640eb45c&topic=722.0",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/sm?PHPSESSID=eb7a68c0dee1989afc0c673c640eb45c&topic=787.0",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/sm?PHPSESSID=eb7a68c0dee1989afc0c673c640eb45c&topic=849.0",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/sm?topic=1616.0",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
+"url": "http://igkt.net/sm?topic=1636.0",
+"parentScore": 65,
+"from": "https://daveroot.neocities.org/knots"
+},
+{
 "url": "http://creativecommons.org/licenses/by/4.0",
 "parentScore": 64,
 "from": "https://ifcomp.org/"
@@ -823,6 +1098,26 @@
 "url": "https://mastodon.gamedev.place/@IFComp",
 "parentScore": 64,
 "from": "https://ifcomp.org/"
+},
+{
+"url": "https://codeberg.org/sstephenson",
+"parentScore": 64,
+"from": "https://sls.name/"
+},
+{
+"url": "https://indieweb.social/@sstephenson",
+"parentScore": 64,
+"from": "https://sls.name/"
+},
+{
+"url": "https://n10.app/",
+"parentScore": 64,
+"from": "https://sls.name/"
+},
+{
+"url": "https://spinel.coop/",
+"parentScore": 64,
+"from": "https://sls.name/"
 },
 {
 "url": "https://enronarchive.org/",
@@ -853,6 +1148,16 @@
 "url": "https://zkm.de/en/person/daniel-temkin",
 "parentScore": 63,
 "from": "https://esoteric.codes/"
+},
+{
+"url": "https://fedi.vale.rocks/vale",
+"parentScore": 63,
+"from": "https://tangled.org/vale.rocks"
+},
+{
+"url": "https://vale.rocks/",
+"parentScore": 63,
+"from": "https://tangled.org/vale.rocks"
 },
 {
 "url": "http://imdkim.blogspot.com/",
@@ -903,6 +1208,11 @@
 "url": "http://svlug.org/events/tea-party-199811.shtml",
 "parentScore": 62,
 "from": "https://marc.merlins.org/linux/teaparty"
+},
+{
+"url": "http://omniture.com/",
+"parentScore": 62,
+"from": "https://onlineonly.christies.com/s/fine-printed-books-manuscripts-science/carrier-pigeon-internet-protocol-150/325216"
 },
 {
 "url": "https://creative-commons-shop.fourthwall.com/",
