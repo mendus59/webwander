@@ -71,3 +71,38 @@ def test_recheck_removes_spam_and_insecure(tmp_path, monkeypatch):
     assert out["badcert"]["status"] == "rejected" and out["badcert"]["autoReject"] == "insecure: invalid certificate"
     assert out["spammy"]["status"] == "rejected" and out["spammy"]["autoReject"] == "spam"
     assert out["oldhttp"]["status"] == "rejected" and out["oldhttp"]["autoReject"] == "insecure: not https"
+
+
+def test_failed_and_resubmitted_submissions_stay_visible(tmp_path, monkeypatch):
+    """A hand-added site that can't be fetched lands in 'rejected' with the reason, and
+    an admin re-adding a rejected site puts it back in the review queue."""
+    def fetch(self, url, with_scripts=True):
+        if "dead" in url:
+            return Page(url, 0, {}, "", error="ConnectTimeout")
+        return Page(url, 200, {"content-type": "text/html"}, (FIX / "toy.html").read_text())
+
+    monkeypatch.setattr(cli.Fetcher, "fetch", fetch)
+    for name in ("SEEN_PATH", "FRONTIER_PATH", "LOG_PATH", "BACKLOG_PATH"):
+        monkeypatch.setattr(st, name, tmp_path / name)
+    monkeypatch.setattr(cli, "SEEDS_PATH", tmp_path / "none.txt")
+    db = tmp_path / "db.json"
+    db.write_text(json.dumps({"submissions": {
+        "a": {"url": "https://dead.example.org", "uid": "admin", "autoApprove": True},
+        "b": {"url": "https://toy.example.org", "uid": "admin", "autoApprove": False}}}))
+    args = ["crawl", "--offline", "--local", str(db), "--delay", "0", "--min-new", "0"]
+    assert cli.main(args) == 0
+    data = json.loads(db.read_text())
+    by_url = {s["url"]: s for s in data["sites"].values()}
+    dead = by_url["https://dead.example.org/"]
+    assert dead["status"] == "rejected" and dead["autoReject"] == "couldn't fetch: ConnectTimeout"
+    assert data["submissions"] == {}
+
+    toy_id = next(k for k, s in data["sites"].items() if "toy" in s["url"])
+    data["sites"][toy_id]["status"] = "rejected"
+    data["submissions"] = {"c": {"url": "https://toy.example.org", "uid": "admin", "autoApprove": False},
+                           "d": {"url": "https://dead.example.org", "uid": "admin", "autoApprove": False}}
+    db.write_text(json.dumps(data))
+    assert cli.main(args) == 0
+    data = json.loads(db.read_text())
+    assert data["sites"][toy_id]["status"] == "proposed" and data["sites"][toy_id]["resubmitted"]
+    assert sum(1 for s in data["sites"].values() if "dead" in s["url"]) == 1

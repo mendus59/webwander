@@ -1,11 +1,14 @@
 import {
   collection, query, where, orderBy, limit, startAfter, getDocs, getDoc, doc, writeBatch,
-  updateDoc, addDoc, serverTimestamp, getCountFromServer,
+  updateDoc, addDoc, deleteDoc, serverTimestamp, getCountFromServer,
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 import {
   configured, db, signIn, logOut, watchUser, isAdmin, loadCategories, faviconFor, el,
 } from "./firebase.js";
 import { repoUrl } from "./firebase-config.js";
+
+// data/backlog.json is committed by the crawler; read it straight from the public repo.
+const BACKLOG_URL = repoUrl.replace("https://github.com/", "https://raw.githubusercontent.com/") + "/main/data/backlog.json";
 
 const $ = (id) => document.getElementById(id);
 const PAGE = 50;
@@ -45,6 +48,10 @@ async function onUser(user) {
 }
 
 async function loadStats() {
+  try { await loadStatsInner(); } catch (e) { console.error(e); }
+}
+
+async function loadStatsInner() {
   const counts = await Promise.all(["proposed", "approved", "rejected"].map(async (s) =>
     (await getCountFromServer(query(collection(db, "sites"), where("status", "==", s)))).data().count));
   const meta = (await getDoc(doc(db, "meta", "stats"))).data() || {};
@@ -71,7 +78,27 @@ async function reload() {
   await loadMore();
 }
 
+function showError(e) {
+  console.error(e);
+  const link = String(e?.message || "").match(/https:\/\/console\.firebase\.google\.com\S+/)?.[0];
+  $("list").append(el("p", { class: "warn center" },
+    "⚠ Couldn't load this list: ", e?.message || String(e),
+    link ? el("span", {}, " ", el("a", { href: link, target: "_blank", rel: "noopener" }, "Create the missing index ↗")) : null));
+}
+
 async function loadMore() {
+  $("toolbar").hidden = state.status === "queued" || state.status === "backlog";
+  try {
+    if (state.status === "queued") return await loadQueued();
+    if (state.status === "backlog") return await loadBacklog();
+    await loadSites();
+  } catch (e) {
+    $("more").hidden = true;
+    showError(e);
+  }
+}
+
+async function loadSites() {
   const parts = [where("status", "==", state.status), orderBy("score", "desc"), limit(PAGE)];
   if (state.cursor) parts.push(startAfter(state.cursor));
   const snap = await getDocs(query(collection(db, "sites"), ...parts));
@@ -86,17 +113,77 @@ async function loadMore() {
   updateSelection();
 }
 
+// Submissions waiting for the next crawler run to fetch and score them.
+async function loadQueued() {
+  const snap = await getDocs(collection(db, "submissions"));
+  const docs = snap.docs.map((d) => ({ id: d.id, ...d.data() }))
+    .sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+  for (const sub of docs) {
+    const when = sub.createdAt?.toDate ? sub.createdAt.toDate().toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "";
+    const who = sub.uid === state.user?.uid ? "you" : "a visitor";
+    const node = el("article", { class: "review queued" },
+      el("div", { class: "score" }, "…"),
+      el("div", { class: "body" },
+        el("div", { class: "title-row" },
+          el("a", { href: sub.url, target: "_blank", rel: "noopener", class: "title" }, sub.url)),
+        el("p", { class: "muted small" }, `Added by ${who}${when ? ` · ${when}` : ""}`,
+          sub.autoApprove ? " · will be approved once scored" : " · goes to Proposed once scored")),
+      el("div", { class: "actions" },
+        el("button", { class: "ghost-btn danger", onclick: async () => {
+          await deleteDoc(doc(db, "submissions", sub.id));
+          node.remove();
+          toast("Removed from the queue.");
+          loadStats();
+        } }, "Remove")));
+    $("list").append(node);
+  }
+  if (!docs.length) $("list").append(el("p", { class: "muted center" }, "Nothing queued. Added sites show up here until the next crawler run scores them."));
+  $("more").hidden = true;
+}
+
+// Good sites the crawler scored but held back to keep categories balanced.
+async function loadBacklog() {
+  const r = await fetch(BACKLOG_URL, { cache: "no-store" });
+  const items = r.status === 404 ? [] : await r.json();
+  if (!r.ok && r.status !== 404) throw new Error(`backlog.json: HTTP ${r.status}`);
+  items.sort((a, b) => (b.score || 0) - (a.score || 0));
+  $("list").append(el("p", { class: "muted small" },
+    `${items.length} scored site${items.length === 1 ? "" : "s"} held back to keep each run's categories balanced. ` +
+    "The crawler offers these first in later runs. Queue one to have it scored again and sent to Proposed now."));
+  for (const s of items) {
+    const node = renderRow(s.id, { ...s, status: "backlog" }, [
+      el("button", { class: "ghost-btn", onclick: () => preview(s) }, "Preview"),
+      el("button", { class: "wander-btn", onclick: () => queueUrl(s.url, true, node) }, "Approve"),
+      el("button", { class: "ghost-btn", onclick: () => queueUrl(s.url, false, node) }, "Queue for review"),
+    ]);
+    $("list").append(node);
+  }
+  $("more").hidden = true;
+}
+
+async function queueUrl(url, autoApprove, node) {
+  await addDoc(collection(db, "submissions"), { url, uid: state.user.uid, createdAt: serverTimestamp(), autoApprove });
+  node?.remove();
+  toast(autoApprove ? "Queued to be approved on the next crawler run." : "Queued. It'll be in Proposed after the next crawler run.");
+  loadStats();
+}
+
 function scoreClass(s) {
   return s >= 70 ? "good" : s >= 45 ? "ok" : "low";
 }
 
-function renderRow(id, s) {
+function renderRow(id, s, actions = null) {
   const b = s.scoreBreakdown || {};
   const chosen = new Set(s.categories || []);
-  const catChips = state.cats.map((c) => el("button", {
+  const editable = s.status !== "backlog";
+  // Show tags the site has even if categories.json no longer lists them.
+  const cats = [...state.cats, ...[...chosen].filter((c) => !state.catById[c]).map((c) => ({ id: c, emoji: "❔", label: c }))];
+  const catChips = cats.map((c) => el("button", {
+    disabled: !editable,
     class: `chip small ${chosen.has(c.id) ? "on" : ""}`,
     title: s.categoryScores?.[c.id] ? `tagger score ${s.categoryScores[c.id]}` : "",
     onclick: (e) => {
+      if (!editable) return;
       chosen.has(c.id) ? chosen.delete(c.id) : chosen.add(c.id);
       e.currentTarget.classList.toggle("on");
       state.rows.get(id).data.categories = [...chosen];
@@ -107,10 +194,12 @@ function renderRow(id, s) {
   const warnings = [];
   if (s.belowThreshold) warnings.push("below threshold (filled to reach daily minimum)");
   if (s.autoReject) warnings.push(`auto-check flagged: ${s.autoReject}`);
+  if (s.resubmitted) warnings.push("rejected before, re-added by an admin");
+  if (s.status === "rejected" && s.previousStatus) warnings.push(`was ${s.previousStatus} before the weekly recheck`);
   if (s.nearestSimilarity >= 0.85) warnings.push(`very similar to an existing site (${Math.round(s.nearestSimilarity * 100)}%)`);
 
   return el("article", { class: "review", "data-id": id },
-    el("input", { type: "checkbox", class: "pick", onchange: updateSelection }),
+    el("input", { type: "checkbox", class: "pick", onchange: updateSelection, style: editable ? null : "visibility:hidden" }),
     el("div", { class: `score ${scoreClass(s.score)}`, title: JSON.stringify(b) }, String(s.score ?? "?")),
     el("div", { class: "body" },
       el("div", { class: "title-row" },
@@ -118,6 +207,7 @@ function renderRow(id, s) {
         el("a", { href: s.url, target: "_blank", rel: "noopener", class: "title" }, s.title || s.domain),
         el("span", { class: "muted small" }, s.domain),
         s.source ? el("span", { class: "tag" }, s.source) : null,
+        chosen.has("mature") ? el("span", { class: "tag mature" }, "🔞 Mature") : null,
         s.frameable === false ? el("span", { class: "tag" }, "opens in new tab") : null),
       s.description ? el("p", { class: "desc" }, s.description) : null,
       el("div", { class: "bars" }, ...["interactivity", "independence", "craft", "novelty", "security", "penalties"].map((k) =>
@@ -125,15 +215,15 @@ function renderRow(id, s) {
       (s.reasons || []).length ? el("p", { class: "muted small" }, s.reasons.join(" · ")) : null,
       warnings.length ? el("p", { class: "warn small" }, "⚠ " + warnings.join(" · ")) : null,
       el("div", { class: "chips tag-editor collapsed" }, ...catChips,
-        el("button", {
+        editable && el("button", {
           class: "chip small edit-tags",
           onclick: (e) => e.currentTarget.parentElement.classList.toggle("collapsed"),
         }, "✎ edit tags"))),
-    el("div", { class: "actions" },
+    el("div", { class: "actions" }, ...(actions || [
       el("button", { class: "ghost-btn", onclick: () => preview(s) }, "Preview"),
       s.status !== "approved" ? el("button", { class: "wander-btn", onclick: () => setStatus([id], "approved") }, "Approve") : null,
       s.status !== "rejected" ? el("button", { class: "ghost-btn danger", onclick: () => setStatus([id], "rejected") }, "Reject") : null,
-      s.status !== "proposed" ? el("button", { class: "ghost-btn", onclick: () => setStatus([id], "proposed") }, "Back to queue") : null));
+      s.status !== "proposed" ? el("button", { class: "ghost-btn", onclick: () => setStatus([id], "proposed") }, "Back to queue") : null])));
 }
 
 async function setStatus(ids, status) {
@@ -171,6 +261,7 @@ function preview(s) {
   $("preview-title").textContent = s.title || s.domain;
   $("preview-open").href = s.url;
   $("preview-frame").src = s.frameable === false ? "about:blank" : s.url;
+  $("preview-note").hidden = s.frameable !== false;
   $("preview-dlg").showModal();
 }
 

@@ -57,6 +57,19 @@ def compute_stats(sites: list[dict]) -> dict:
             "rejected": by_status["rejected"], "categories": dict(by_cat)}
 
 
+def failed_submission_doc(sub: dict, ev) -> dict | None:
+    norm = normalize(sub.get("url", ""))
+    if not norm or not norm.startswith(("http://", "https://")):
+        return None
+    norm = ev.norm if ev.norm.startswith("https://") else norm
+    domain = norm.split("/")[2]
+    return {"id": site_id(norm), "url": norm, "domain": domain,
+            "registrableDomain": registrable_domain(norm), "title": domain, "description": "",
+            "categories": [], "score": 0, "scoreBreakdown": {}, "reasons": [],
+            "source": "submission", "submittedBy": sub.get("uid", ""), "status": "rejected",
+            "autoReject": f"couldn't fetch: {ev.error or 'unknown error'}"}
+
+
 # ---------------------------------------------------------------- crawl
 
 def cmd_crawl(args) -> int:
@@ -65,6 +78,7 @@ def cmd_crawl(args) -> int:
     fetcher = Fetcher(delay=args.delay)
     sites = store.load_sites()
     known_ids = {s["id"] for s in sites}
+    by_id = {s["id"]: s for s in sites}
     corpus = build_corpus(sites)
     seen = st.load_seen()
     frontier = st.load_frontier()
@@ -98,8 +112,21 @@ def cmd_crawl(args) -> int:
             known_ids.add(doc["id"])
             corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
             log(f"  submission {ev.norm} -> {ev.result.score}")
-        elif ev.error:
+        elif ev.doc:
+            # Already in the database. An admin re-adding a rejected site wants another look.
+            prev = by_id.get(ev.doc["id"], {})
+            if "autoApprove" in sub and prev.get("status") == "rejected":
+                store.upsert_site(dict(ev.doc, status="proposed", resubmitted=True,
+                                       autoReject=ev.result.reject, submittedBy=sub.get("uid", "")))
+                log(f"  submission {ev.norm}: rejected before, back in the review queue")
+        else:
+            # Couldn't be fetched (insecure, unreachable, bad URL). Keep a record in
+            # "rejected" so whoever added it can see why, instead of it vanishing.
             log(f"  submission {sub['url']} failed: {ev.error}")
+            failed = failed_submission_doc(sub, ev)
+            if failed and failed["id"] not in known_ids:
+                store.upsert_site(failed)
+                known_ids.add(failed["id"])
         store.delete_submission(sub["id"])
         seen.add(url_key(ev.norm))
         remember_links(ev)

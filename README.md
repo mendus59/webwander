@@ -30,7 +30,10 @@ walkthrough must all clear the proposal threshold, and an ad-heavy listicle must
   can suggest a site for review.
 - **Admin** (`site/admin.html`): review queue sorted by score, with the score breakdown,
   reasons, auto-detected categories (editable), preview, approve/reject, bulk actions and
-  hand-adding URLs.
+  hand-adding URLs. Tabs cover every place a site can be: Proposed, Approved, Rejected (with
+  the auto-check reason), Queued (submissions waiting to be scored) and Backlog (good sites
+  held back for balance, which you can queue or approve). A hand-added URL that can't be
+  fetched shows up under Rejected with the reason instead of disappearing.
 - **Crawler** (`crawler/`): Python, run by `.github/workflows/crawl.yml` every day. It
   always proposes at least 10 never-before-suggested sites (`--min-new`). If too few clear
   the score threshold it fills up with the best of the rest and marks them "below threshold".
