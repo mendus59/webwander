@@ -1,5 +1,65 @@
 [
 {
+"url": "https://arxiv.org/html/2508.08568v1",
+"parentScore": 94,
+"from": "https://trisolarchaos.com/?at=1.0e-8&bs=0.15&cm=free&cp=2.5208%2C1.5125%2C2.5208&ct=0.0000%2C0.0000%2C0.1670&dt=1.00e-4&im=rk4&kt=1&n=3&pr=O_8%280.6%29&rt=1.0e-6&sf=0&so=0.00&st=1&sv=0&tl=1500"
+},
+{
+"url": "https://global-change-data-lab.org/",
+"parentScore": 92,
+"from": "https://ourworldindata.org/"
+},
+{
+"url": "https://mailchi.mp/ourworldindata/owid-brief-2025-11-14",
+"parentScore": 92,
+"from": "https://ourworldindata.org/"
+},
+{
+"url": "https://ox.ac.uk/",
+"parentScore": 92,
+"from": "https://ourworldindata.org/"
+},
+{
+"url": "https://oxfordmartin.ox.ac.uk/global-development",
+"parentScore": 92,
+"from": "https://ourworldindata.org/"
+},
+{
+"url": "https://us8.campaign-archive.com/?id=fdf16136e1&u=18058af086319ba6afad752ec",
+"parentScore": 92,
+"from": "https://ourworldindata.org/"
+},
+{
+"url": "https://choosealicense.com/licenses/cc0-1.0",
+"parentScore": 89,
+"from": "https://bruno-simon.com/"
+},
+{
+"url": "https://choosealicense.com/licenses/mit",
+"parentScore": 89,
+"from": "https://bruno-simon.com/"
+},
+{
+"url": "https://howlerjs.com/",
+"parentScore": 89,
+"from": "https://bruno-simon.com/"
+},
+{
+"url": "https://linktr.ee/Kounine",
+"parentScore": 89,
+"from": "https://bruno-simon.com/"
+},
+{
+"url": "https://rapier.rs/",
+"parentScore": 89,
+"from": "https://bruno-simon.com/"
+},
+{
+"url": "https://threejs-journey.com/",
+"parentScore": 89,
+"from": "https://bruno-simon.com/"
+},
+{
 "url": "http://inove.eu.com/",
 "parentScore": 88,
 "from": "https://solarsystemscope.com/"
@@ -55,6 +115,86 @@
 "from": "https://solarsystemscope.com/"
 },
 {
+"url": "https://maptiler.com/google-maps-platform-alternative",
+"parentScore": 83,
+"from": "https://oldmapsonline.org/en"
+},
+{
+"url": "http://art.teleportacia.org/olia.html",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://abcdinamo.com/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://are.na/internet-phone-book",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://are.na/internet-phone-book/our-internet-phone-books",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://artez.nl/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://bfi.org.uk/bfi-national-archive",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://birdcall.online/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://buttondown.email/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://cloudlord.management/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://core.servus.at/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://dla-marbach.de/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://elliott.computer/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://extrapractice.space/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://festival.peter.stream/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
+"url": "https://garden3d.net/",
+"parentScore": 79,
+"from": "https://internetphonebook.net/"
+},
+{
 "url": "https://zensical.org/",
 "parentScore": 78,
 "from": "https://delightql.org/latest"
@@ -93,6 +233,51 @@
 "url": "https://sublime.app/",
 "parentScore": 77,
 "from": "https://lindylearn.io/"
+},
+{
+"url": "http://bl.ocks.org/mbostock",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://books.google.de/books/about/Mindstorms.html?id=AP8WBQAAQBAJ&redir_esc=y",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://d3js.org/",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://ee.columbia.edu/~dpwe",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://evanmiller.org/dont-kill-math.html",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://setosa.io/ev",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://sp4comm.org/",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://tonmeister.ca/main/textbook",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
+},
+{
+"url": "http://worrydream.com/#!/MagicInk",
+"parentScore": 76,
+"from": "https://jackschaedler.github.io/circles-sines-signals"
 },
 {
 "url": "https://codepen.io/OuterVale",
@@ -135,6 +320,16 @@
 "from": "https://vale.rocks/posts/dvd-menus"
 },
 {
+"url": "https://eylulbozan.com/en",
+"parentScore": 74,
+"from": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks"
+},
+{
+"url": "https://eylulbozan.com/muze?lang=en",
+"parentScore": 74,
+"from": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks"
+},
+{
 "url": "https://chowdsp.com/products.html",
 "parentScore": 71,
 "from": "https://surge-synthesizer.github.io/"
@@ -148,11 +343,6 @@
 "url": "https://thiswaifudoesnotexist.net/",
 "parentScore": 71,
 "from": "https://gwern.net/"
-},
-{
-"url": "http://24hoursofhappy.com/",
-"parentScore": 70,
-"from": "https://kickscondor.com/"
 },
 {
 "url": "http://41j.com/blog",
@@ -186,16 +376,6 @@
 },
 {
 "url": "http://dailymail.co.uk/sciencetech/article-2226988/The-mixtape-took-Apollo-astronauts-moon-goes-auction.html",
-"parentScore": 70,
-"from": "https://kickscondor.com/"
-},
-{
-"url": "http://electronicosfantasticos.com/",
-"parentScore": 70,
-"from": "https://kickscondor.com/"
-},
-{
-"url": "http://esoteric.codes/",
 "parentScore": 70,
 "from": "https://kickscondor.com/"
 },
@@ -380,11 +560,6 @@
 "from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
 },
 {
-"url": "https://guerilla.studio/",
-"parentScore": 68,
-"from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
-},
-{
 "url": "https://guide.elm-lang.org/architecture",
 "parentScore": 68,
 "from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
@@ -400,6 +575,61 @@
 "from": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1"
 },
 {
+"url": "http://eepurl.com/cNVaiD",
+"parentScore": 68,
+"from": "https://electronicosfantasticos.com/"
+},
+{
+"url": "http://electronicosfantasticos.tumblr.com/",
+"parentScore": 68,
+"from": "https://electronicosfantasticos.com/"
+},
+{
+"url": "https://deuxfleurs.fr/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://flora.pm/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://git.deuxfleurs.fr/GuerillaStudio",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://milia.page/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://placehold.in/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://radio.eldritch.cafe/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://souvenir.cam/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://tixie.name/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
+"url": "https://vanillalist.top/",
+"parentScore": 68,
+"from": "https://guerilla.studio/"
+},
+{
 "url": "https://indieweb.printful.me/",
 "parentScore": 67,
 "from": "https://indieweb.org/"
@@ -411,11 +641,6 @@
 },
 {
 "url": "https://opencollective.com/indieweb",
-"parentScore": 67,
-"from": "https://indieweb.org/"
-},
-{
-"url": "https://xn--sr8hvo.ws/random",
 "parentScore": 67,
 "from": "https://indieweb.org/"
 },
@@ -445,6 +670,21 @@
 "from": "https://godotengine.org/article/rendering-cpu-optimizations"
 },
 {
+"url": "https://buttondown.email/entropicthoughts",
+"parentScore": 67,
+"from": "https://entropicthoughts.com/fft"
+},
+{
+"url": "https://buymeacoff.ee/kqr",
+"parentScore": 67,
+"from": "https://entropicthoughts.com/fft"
+},
+{
+"url": "https://xkqr.org/",
+"parentScore": 67,
+"from": "https://entropicthoughts.com/fft"
+},
+{
 "url": "https://api.whatsapp.com/send?text=Haskell+diagrams%3A+Tessellations%3A+https%3A%2F%2Fmgarletmilani.com%2Fblog%2F2026-06-03-tessellations%2F",
 "parentScore": 66,
 "from": "https://mgarletmilani.com/blog/2026-06-03-tessellations"
@@ -463,6 +703,46 @@
 "url": "https://mcescher.com/gallery/symmetry",
 "parentScore": 66,
 "from": "https://mgarletmilani.com/blog/2026-06-03-tessellations"
+},
+{
+"url": "https://brutal-unix.com/",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://codeberg.org/sstephenson/brat",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://codeberg.org/sstephenson/brut",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://codeberg.org/sstephenson/brut-pack",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://pandoc.org/",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/awk.html",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/contents.html",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
+},
+{
+"url": "https://sls.name/",
+"parentScore": 66,
+"from": "https://brut.sh/60d2b6"
 },
 {
 "url": "http://zzounds.com/a--303730/cat--Keyboards-and-MIDI--2666",
@@ -485,22 +765,12 @@
 "from": "https://synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear"
 },
 {
-"url": "https://m-vave.com/download",
-"parentScore": 65,
-"from": "https://synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear"
-},
-{
 "url": "https://muzines.co.uk/articles/midi-sequencer-project/3845",
 "parentScore": 65,
 "from": "https://synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear"
 },
 {
 "url": "https://vcvrack.com/",
-"parentScore": 65,
-"from": "https://synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear"
-},
-{
-"url": "https://waldorfmusic.com/faq-kyra",
 "parentScore": 65,
 "from": "https://synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear"
 },
@@ -530,11 +800,6 @@
 "from": "https://ifarchive.org/"
 },
 {
-"url": "https://ifcomp.org/",
-"parentScore": 65,
-"from": "https://ifarchive.org/"
-},
-{
 "url": "https://ifdb.org/",
 "parentScore": 65,
 "from": "https://ifarchive.org/"
@@ -545,9 +810,49 @@
 "from": "https://ifarchive.org/"
 },
 {
+"url": "http://creativecommons.org/licenses/by/4.0",
+"parentScore": 64,
+"from": "https://ifcomp.org/"
+},
+{
+"url": "https://lite.ip2location.com/",
+"parentScore": 64,
+"from": "https://ifcomp.org/"
+},
+{
+"url": "https://mastodon.gamedev.place/@IFComp",
+"parentScore": 64,
+"from": "https://ifcomp.org/"
+},
+{
 "url": "https://enronarchive.org/",
 "parentScore": 63,
 "from": "https://enroncorp.com/corp"
+},
+{
+"url": "http://artswriters.org/grant/grantees/grantee/daniel_temkin",
+"parentScore": 63,
+"from": "https://esoteric.codes/"
+},
+{
+"url": "http://danieltemkin.com/",
+"parentScore": 63,
+"from": "https://esoteric.codes/"
+},
+{
+"url": "http://signalculture.org/dtemkin.html",
+"parentScore": 63,
+"from": "https://esoteric.codes/"
+},
+{
+"url": "https://creativecommons.org/licenses/by/4.0",
+"parentScore": 63,
+"from": "https://esoteric.codes/"
+},
+{
+"url": "https://zkm.de/en/person/daniel-temkin",
+"parentScore": 63,
+"from": "https://esoteric.codes/"
 },
 {
 "url": "http://imdkim.blogspot.com/",
@@ -573,6 +878,31 @@
 "url": "http://mathworld.wolfram.com/CubicSpline.html",
 "parentScore": 62,
 "from": "https://hackage-content.haskell.org/package/diagrams-lib-1.5.1/docs/Diagrams-CubicSpline.html"
+},
+{
+"url": "http://linuxmafia.com/~rick/faq",
+"parentScore": 62,
+"from": "https://marc.merlins.org/linux/teaparty"
+},
+{
+"url": "http://linuxmall.com/",
+"parentScore": 62,
+"from": "https://marc.merlins.org/linux/teaparty"
+},
+{
+"url": "http://linuxtoday.com/stories/758.html",
+"parentScore": 62,
+"from": "https://marc.merlins.org/linux/teaparty"
+},
+{
+"url": "http://svlug.org/events/tea-party-199811-kluft.shtml",
+"parentScore": 62,
+"from": "https://marc.merlins.org/linux/teaparty"
+},
+{
+"url": "http://svlug.org/events/tea-party-199811.shtml",
+"parentScore": 62,
+"from": "https://marc.merlins.org/linux/teaparty"
 },
 {
 "url": "https://creative-commons-shop.fourthwall.com/",
@@ -608,6 +938,31 @@
 "url": "https://link.springer.com/chapter/10.1007/978-3-030-72116-9_17",
 "parentScore": 60,
 "from": "https://nathanho.me/posts/evograin"
+},
+{
+"url": "http://best.com/~serafica",
+"parentScore": 60,
+"from": "https://anterras.net/CDRR/gadget_archive.html"
+},
+{
+"url": "http://disney.com/",
+"parentScore": 60,
+"from": "https://anterras.net/CDRR/gadget_archive.html"
+},
+{
+"url": "http://disney.com/DisneyChannel/shows/ChipNDale/info1.html",
+"parentScore": 60,
+"from": "https://anterras.net/CDRR/gadget_archive.html"
+},
+{
+"url": "http://furnation.com/chipmunk",
+"parentScore": 60,
+"from": "https://anterras.net/CDRR/gadget_archive.html"
+},
+{
+"url": "http://yerf.com/telgamar/readme.htm",
+"parentScore": 60,
+"from": "https://anterras.net/CDRR/gadget_archive.html"
 },
 {
 "url": "http://a1.mzstatic.com/us/r1000/013/Music/90/2a/b7/mzm.ojhmmnlb.aac.p.m4a",
@@ -735,14 +1090,39 @@
 "from": "http://zztosh.de/"
 },
 {
-"url": "http://v1.nedstatbasic.net/stats",
+"url": "https://un.org/en/about-us/un-charter/full-text",
 "parentScore": 57,
 "from": "http://zztosh.de/"
 },
 {
-"url": "https://un.org/en/about-us/un-charter/full-text",
+"url": "http://argentdata.com/products/aprs.html",
 "parentScore": 57,
-"from": "http://zztosh.de/"
+"from": "https://n1vg.net/balloon"
+},
+{
+"url": "http://argentdata.com/products/tracker2.html",
+"parentScore": 57,
+"from": "https://n1vg.net/balloon"
+},
+{
+"url": "http://calpoly.edu/",
+"parentScore": 57,
+"from": "https://n1vg.net/balloon"
+},
+{
+"url": "http://parks.ca.gov/?page_id=631",
+"parentScore": 57,
+"from": "https://n1vg.net/balloon"
+},
+{
+"url": "http://r2508.edwards.af.mil/",
+"parentScore": 57,
+"from": "https://n1vg.net/balloon"
+},
+{
+"url": "http://uline.com/ProductDetail.asp?model=S-9903",
+"parentScore": 57,
+"from": "https://n1vg.net/balloon"
 },
 {
 "url": "http://bladey.weebly.com/",
@@ -810,9 +1190,44 @@
 "from": "https://char.lt/blog/2026/09/non24swd"
 },
 {
+"url": "https://cnet.com/news/make-your-home-sound-like-a-real-office-during-coronavirus-quarantine",
+"parentScore": 53,
+"from": "https://mynoise.net/"
+},
+{
+"url": "https://mynoise.be/",
+"parentScore": 53,
+"from": "https://mynoise.net/"
+},
+{
+"url": "https://sanfrancisco.cbslocal.com/2020/08/11/free-noise-app-makes-working-at-home-easier",
+"parentScore": 53,
+"from": "https://mynoise.net/"
+},
+{
+"url": "https://slate.com/podcasts/decoder-ring/2025/07/white-noise-is-more-than-a-sonic-balm-its-also-a-business",
+"parentScore": 53,
+"from": "https://mynoise.net/"
+},
+{
+"url": "https://stephanepigeon.com/",
+"parentScore": 53,
+"from": "https://mynoise.net/"
+},
+{
+"url": "https://theatlantic.com/magazine/archive/2019/11/the-end-of-silence/598366",
+"parentScore": 53,
+"from": "https://mynoise.net/"
+},
+{
 "url": "http://main.wgbh.org/",
 "parentScore": 51,
 "from": "https://pbs.org/wgbh/nova/monitor/battle.html"
+},
+{
+"url": "https://terk.com/indoor-antennas?sku=LOGTVAZ",
+"parentScore": 50,
+"from": "https://brander.ca/cordcut"
 },
 {
 "url": "https://perstenius.com/",
