@@ -15,7 +15,9 @@
     <a class="logo" href="./"><span class="logo-mark">🧭</span><span>WebWander</span></a>
     <span class="badge">Admin</span>
     <div class="spacer"></div>
-    <a id="crawl-link" class="ghost-btn" target="_blank" rel="noopener">Run crawler ↗</a>
+    <span id="crawl-status" class="muted small"></span>
+    <button id="crawl-btn" class="ghost-btn" hidden>Run crawler</button>
+    <a id="crawl-link" class="ghost-btn" target="_blank" rel="noopener" title="Crawler runs on GitHub">↗</a>
     <button id="auth-btn" class="ghost-btn">Sign in</button>
   </header>
 
@@ -60,6 +62,36 @@
       <div class="row center"><button class="ghost-btn" id="more" hidden>Load more</button></div>
     </section>
   </main>
+
+  <dialog id="crawl-dlg" class="panel">
+    <h2>Run the crawler</h2>
+    <form id="crawl-form" method="dialog">
+      <div class="row">
+        <label class="small">Propose at least <input type="number" id="crawl-min" value="10" min="1" max="100" class="num"> sites</label>
+        <label class="small">fetch up to <input type="number" id="crawl-max" value="300" min="10" max="2000" class="num"> pages</label>
+      </div>
+      <div id="token-setup" hidden>
+        <h3>One-time setup</h3>
+        <p class="small">The crawler runs on GitHub, so starting it needs a GitHub token that can only
+          start this repository's workflows. It's saved in this browser only and is never sent
+          anywhere except GitHub.</p>
+        <ol class="small">
+          <li><a id="token-new" target="_blank" rel="noopener">Create a fine-grained token ↗</a>:
+            Repository access → <em>Only select repositories</em> → <strong id="token-repo"></strong>;
+            Repository permissions → <strong>Actions: Read and write</strong>. Nothing else.</li>
+          <li>Paste it here:</li>
+        </ol>
+        <input type="password" id="crawl-token" placeholder="github_pat_..." autocomplete="off" spellcheck="false">
+      </div>
+      <p class="warn small" id="crawl-error" hidden></p>
+      <div class="row">
+        <button type="button" class="ghost-btn small" id="token-forget" hidden>Forget saved token</button>
+        <div class="spacer"></div>
+        <button type="button" class="ghost-btn" id="crawl-cancel">Cancel</button>
+        <button type="submit" class="wander-btn" id="crawl-go">Start crawl</button>
+      </div>
+    </form>
+  </dialog>
 
   <dialog id="preview-dlg" class="panel preview">
     <div class="row"><strong id="preview-title"></strong><div class="spacer"></div>

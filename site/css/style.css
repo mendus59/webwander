@@ -131,7 +131,7 @@ dialog h3 { font: 600 18px Fredoka, sans-serif; margin: 20px 0 4px; }
 }
 .chip.small { padding: 2px 9px; font-size: 12px; }
 .chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); }
-input[type=url], input[type=number] {
+input[type=url], input[type=number], input[type=password] {
   font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
   border-radius: 10px; padding: 8px 12px; flex: 1; min-width: 200px;
 }
@@ -269,3 +269,6 @@ dialog.preview iframe { flex: 1; border: 1px solid var(--line); border-radius: 1
   .saved-list.cards { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
   .saved-list { max-height: 52vh; }
 }
+#crawl-token { width: 100%; }
+#crawl-status a { color: inherit; }
+@media (max-width: 640px) { #crawl-status { display: none; } }

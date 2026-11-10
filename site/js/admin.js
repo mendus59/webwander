@@ -16,6 +16,88 @@ const state = { user: null, status: "proposed", cursor: null, cats: [], catById:
 
 $("crawl-link").href = `${repoUrl}/actions/workflows/crawl.yml`;
 
+// ------------------------------------------------------------------ run the crawler
+// GitHub Pages is static, so the browser calls the GitHub API itself with a narrowly
+// scoped token the admin pastes once (Actions read/write on this repo only). It is kept
+// in this browser's localStorage and only ever sent to api.github.com.
+
+const REPO = repoUrl.replace("https://github.com/", "");
+const API = `https://api.github.com/repos/${REPO}/actions/workflows/crawl.yml`;
+const TOKEN_KEY = "webwander.githubToken";
+const getToken = () => { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch { return ""; } };
+const setToken = (t) => { try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch {} };
+
+async function gh(url, opts = {}, token = getToken()) {
+  const r = await fetch(url, {
+    ...opts,
+    headers: { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(opts.headers || {}) },
+  });
+  if (!r.ok) {
+    const msg = (await r.json().catch(() => ({}))).message || `HTTP ${r.status}`;
+    throw Object.assign(new Error(msg), { status: r.status });
+  }
+  return r.status === 204 ? null : r.json();
+}
+
+function openCrawlDialog() {
+  const has = !!getToken();
+  $("token-setup").hidden = has;
+  $("token-forget").hidden = !has;
+  $("crawl-error").hidden = true;
+  $("token-repo").textContent = REPO;
+  $("token-new").href = "https://github.com/settings/personal-access-tokens/new";
+  $("crawl-dlg").showModal();
+}
+
+async function startCrawl(e) {
+  e.preventDefault();
+  const token = getToken() || $("crawl-token").value.trim();
+  if (!token) { $("crawl-error").textContent = "Paste a token first."; $("crawl-error").hidden = false; return; }
+  $("crawl-go").disabled = true;
+  try {
+    await gh(`${API}/dispatches`, { method: "POST", body: JSON.stringify({
+      ref: "main", inputs: { min_new: String($("crawl-min").value || 10), max_fetch: String($("crawl-max").value || 300) },
+    }) }, token);
+    setToken(token);
+    $("crawl-token").value = "";
+    $("crawl-dlg").close();
+    toast("Crawl started. New sites appear in Proposed when it finishes (usually 10-40 minutes).");
+    watchCrawl(true);
+  } catch (err) {
+    const hint = err.status === 401 ? " The token is invalid or expired; paste a new one."
+      : err.status === 403 || err.status === 404 ? " The token needs Actions: Read and write on this repository." : "";
+    if (err.status === 401 || err.status === 403 || err.status === 404) { setToken(""); $("token-setup").hidden = false; $("token-forget").hidden = true; }
+    $("crawl-error").textContent = `GitHub said: ${err.message}.${hint}`;
+    $("crawl-error").hidden = false;
+  } finally {
+    $("crawl-go").disabled = false;
+  }
+}
+
+// Shows the latest run's state next to the button, polling while one is queued or running.
+let crawlTimer;
+async function watchCrawl(justStarted = false) {
+  clearTimeout(crawlTimer);
+  try {
+    const { workflow_runs: [run] = [] } = await gh(`${API}/runs?per_page=1`);
+    const fresh = run && Date.now() - new Date(run.created_at) < 2 * 60_000;
+    if (justStarted && !fresh) { crawlTimer = setTimeout(() => watchCrawl(true), 4000); return; }
+    if (!run) { $("crawl-status").textContent = ""; return; }
+    const active = run.status !== "completed";
+    const when = new Date(run.updated_at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
+    $("crawl-status").replaceChildren(el("a", { href: run.html_url, target: "_blank", rel: "noopener" },
+      active ? `⏳ crawl ${run.status.replace("_", " ")}…`
+        : `${run.conclusion === "success" ? "✓" : "⚠"} last crawl ${run.conclusion}, ${when}`));
+    $("crawl-btn").disabled = active;
+    if (active) crawlTimer = setTimeout(watchCrawl, 15_000);
+    else if (justStarted === false && $("crawl-status").dataset.wasActive) { loadStats(); reload(); }
+    $("crawl-status").dataset.wasActive = active ? "1" : "";
+  } catch (err) {
+    console.warn("crawl status:", err.message);
+  }
+}
+
 async function init() {
   state.cats = await loadCategories();
   state.catById = Object.fromEntries(state.cats.map((c) => [c.id, c]));
@@ -44,6 +126,8 @@ async function onUser(user) {
   } else {
     loadStats();
     reload();
+    $("crawl-btn").hidden = false;
+    watchCrawl();
   }
 }
 
@@ -397,6 +481,10 @@ $("add-form").onsubmit = async (e) => {
   toast("Queued. It'll be scored on the next crawler run.");
   loadStats();
 };
+$("crawl-btn").onclick = openCrawlDialog;
+$("crawl-form").onsubmit = startCrawl;
+$("crawl-cancel").onclick = () => $("crawl-dlg").close();
+$("token-forget").onclick = () => { setToken(""); $("token-setup").hidden = false; $("token-forget").hidden = true; toast("Token removed from this browser."); };
 $("preview-close").onclick = () => $("preview-dlg").close();
 $("preview-dlg").addEventListener("close", () => { $("preview-frame").src = "about:blank"; });
 
