@@ -18,6 +18,8 @@ WEIGHTS = {"title": 4.0, "description": 2.5, "headings": 1.5, "body": 0.6}
 BODY_CAP = 3  # max counted body occurrences per keyword
 THRESHOLD = 4.0
 MAX_TAGS = 3
+MATURE_ID = "mature"
+MATURE_THRESHOLD = 6  # explicit_score needed for the Mature tag (see extract.explicit_score)
 
 
 @lru_cache(maxsize=1)
@@ -67,6 +69,8 @@ def category_scores(f: dict) -> dict[str, float]:
     body_norm = 1.0 / max(1.0, math.log10(max(10, f["word_count"])) - 1.0)
     scores = {}
     for cat in load_categories():
+        if cat["id"] == MATURE_ID:
+            continue  # decided by is_mature(), not keywords
         s = 0.0
         for pat in cat["_patterns"]:
             for field, text in fields.items():
@@ -84,10 +88,16 @@ def category_scores(f: dict) -> dict[str, float]:
     return scores
 
 
+def is_mature(f: dict) -> bool:
+    return f.get("explicit_score", 0) >= MATURE_THRESHOLD
+
+
 def tag(f: dict) -> tuple[list[str], dict[str, float]]:
     scores = category_scores(f)
     ranked = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
     tags = [cid for cid, s in ranked if s >= THRESHOLD][:MAX_TAGS]
     if not tags and ranked and ranked[0][1] > 0:
         tags = [ranked[0][0]]
+    if is_mature(f):
+        tags.append(MATURE_ID)  # on top of the normal tags, never instead of them
     return tags, {k: v for k, v in ranked if v > 0}

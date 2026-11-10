@@ -65,8 +65,6 @@ def reject_reason(f: dict) -> str | None:
         return "parked domain"
     if f["error_page"]:
         return "error page"
-    if f["adult_hits"] >= 2:
-        return "adult/spam terms"
     if f["login_wall"]:
         return "login wall"
     if f["word_count"] < 3 and f["n_canvas"] == 0 and f["n_scripts_external"] == 0:
@@ -145,6 +143,8 @@ def score(f: dict, simhash: int, corpus: Corpus) -> Result:
         pen -= min(30, 5 * f["commerce_hits"]); reasons.append(f"commercial language x{f['commerce_hits']}")
     if f["word_count"] < 20 and not (f["n_canvas"] or f["webgl"]):
         pen -= 15; reasons.append("very little content")
+    if f["spam_hits"]:
+        pen -= min(30, 10 * f["spam_hits"]); reasons.append("gambling/spam terms")
     if f["path_depth"] > 2:
         pen -= 2 * (f["path_depth"] - 2)
     if f["word_count"] > 6000 and inter < 5:

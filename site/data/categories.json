@@ -135,6 +135,14 @@
       "signals": {"code_blocks": 3, "code_highlighter": 2, "code_editor": 3}
     },
     {
+      "id": "mature",
+      "label": "Mature",
+      "emoji": "🔞",
+      "_comment": "Not keyword-based: added by the crawler when a page is obviously explicit (see crawler/wander/extract.py explicit_score). Hidden on the site unless the viewer turns on mature content.",
+      "keywords": [],
+      "signals": {}
+    },
+    {
       "id": "indieweb",
       "label": "Personal Web",
       "emoji": "🏡",

@@ -37,8 +37,32 @@ ERROR_PHRASES = ["404 not found", "page not found", "403 forbidden", "access den
                  "just a moment...", "attention required! | cloudflare", "enable javascript and cookies"]
 LOGIN_WALL_PHRASES = ["log in to continue", "sign in to continue", "login required",
                       "you must be logged in", "create an account to"]
-ADULT_WORDS = ["porn", "xxx", "nsfw", "sex cam", "escort", "onlyfans", "hentai", "casino",
-               "betting", "gambling", "slots", "viagra", "cbd oil", "payday loan", "crypto presale"]
+# Explicit-content detection. Nothing is filtered: these only decide the "Mature" tag.
+# Strong terms are unambiguous; weak ones ("naked", "explicit") also appear in innocent
+# pages, so they need company. Hits in the title/description count double.
+EXPLICIT_STRONG = ["porn", "porno", "pornography", "pornographic", "xxx", "nsfw", "hentai", "onlyfans",
+                   "sex cam", "sex cams", "camgirl", "camgirls", "bdsm", "fetish", "erotica", "escort",
+                   "escorts", "milf", "you must be 18", "are you over 18", "18 years of age or older",
+                   "18 years or older", "adults only", "adult content", "sexually explicit"]
+EXPLICIT_WEAK = ["nude", "nudes", "nudity", "naked", "erotic", "explicit", "sexy", "hardcore", "18+",
+                 "uncensored", "lingerie", "sex"]
+SPAM_WORDS = ["casino", "betting", "gambling", "slots", "viagra", "cbd oil", "payday loan", "crypto presale"]
+EXPLICIT_LABEL_RE = re.compile(r"rta-5042-1996-1400-1577-rta|<meta[^>]+name=[\"']?rating[\"']?[^>]+content=[\"']?(adult|mature|rta)", re.I)
+
+
+def _term_hits(text: str, terms: list[str]) -> int:
+    return sum(len(re.findall(r"(?<![a-z0-9])" + re.escape(t) + r"(?![a-z0-9])", text)) for t in terms)
+
+
+def explicit_score(title: str, description: str, body: str, raw_html: str) -> int:
+    head = (title + " " + description).lower()
+    body = body[:8000].lower()
+    strong = 4 * _term_hits(head, EXPLICIT_STRONG) + 2 * min(5, _term_hits(body, EXPLICIT_STRONG))
+    if EXPLICIT_LABEL_RE.search(raw_html):
+        strong += 10
+    if not strong:
+        return 0  # weak words alone ("naked mole rat") are never enough
+    return strong + 2 * _term_hits(head, EXPLICIT_WEAK) + min(3, _term_hits(body, EXPLICIT_WEAK))
 DELIGHT_WORDS = [
     "fun", "toy", "experiment", "experiments", "playful", "made with", "handmade", "hand-made",
     "weird", "delightful", "a little", "tiny", "silly", "explore", "interactive", "try",
@@ -173,7 +197,8 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
         "parked": _count_any(raw_lower, PARKED_PHRASES) > 0,
         "error_page": _count_any((title + " " + body_text[:600]).lower(), ERROR_PHRASES) > 0,
         "login_wall": _count_any(body_text[:3000].lower(), LOGIN_WALL_PHRASES) > 0,
-        "adult_hits": _count_any((title + " " + description + " " + body_text[:5000]).lower(), ADULT_WORDS),
+        "explicit_score": explicit_score(title or og_title, description, body_text, html[:20000]),
+        "spam_hits": _count_any((title + " " + description + " " + body_text[:5000]).lower(), SPAM_WORDS),
         "delight_hits": _count_any((title + " " + description + " " + headings + " " + body_text[:4000]).lower(), DELIGHT_WORDS),
         "lorem": "lorem ipsum" in body_text.lower(),
         "frameable": frameable(headers, url),
