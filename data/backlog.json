@@ -1,0 +1,3203 @@
+[
+{
+"id": "73be88ea617a6bd9dc30",
+"url": "https://codeberg.org/veqq/deforester",
+"domain": "codeberg.org",
+"registrableDomain": "codeberg.org",
+"title": "veqq/deforester: Logging for Janet - Codeberg.org",
+"description": "deforester - Logging for Janet",
+"image": "https://codeberg.org/veqq/deforester/-/summary-card",
+"categories": [
+"programming",
+"games",
+"toys"
+],
+"categoryScores": {
+"programming": 9.63,
+"games": 4.63,
+"toys": 4.0,
+"stories": 2.54,
+"learning": 2.32,
+"generators": 2.09,
+"indieweb": 1.36,
+"art": 1.27,
+"dataviz": 1.27,
+"simulation": 1.27,
+"math": 1.09,
+"nature": 0.82,
+"music": 0.54,
+"science": 0.54,
+"weird": 0.54,
+"maps": 0.27,
+"history": 0.27
+},
+"score": 87,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 20,
+"craft": 15,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "542facdc8bb6739b",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "02140284a90e5e20e2ae",
+"url": "https://lend-me-your-ears.specr.net/",
+"domain": "lend-me-your-ears.specr.net",
+"registrableDomain": "specr.net",
+"title": "Lend Me Your Ears",
+"description": "A Simon-style musical ear training game. Listen to melodies and play them back on piano. Practice mode with sheet music notation or play-by-ear mode. MIDI keyboard support.",
+"image": "https://lend-me-your-ears.specr.net/assets/opengraph-banner-image.jpg",
+"categories": [
+"games",
+"music",
+"toys"
+],
+"categoryScores": {
+"games": 8.0,
+"music": 8.0,
+"toys": 5.0,
+"simulation": 3.0
+},
+"score": 86,
+"scoreBreakdown": {
+"interactivity": 30,
+"independence": 18,
+"craft": 7,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "485068bd22c881c0",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "46c7ed1193b445049a7f",
+"url": "https://runjs.app/blog/music-theory-for-programmers",
+"domain": "runjs.app",
+"registrableDomain": "runjs.app",
+"title": "Music theory for programmers",
+"description": "I can't play an instrument, so I worked out music theory in JavaScript instead. Twelve notes, scales and chords, derived from scratch with code you can hear.",
+"image": "https://runjs.app/static/blog/og/music-theory-for-programmers.png",
+"categories": [
+"music",
+"programming",
+"games"
+],
+"categoryScores": {
+"music": 18.76,
+"programming": 10.63,
+"games": 6.34,
+"toys": 4.84,
+"math": 3.38,
+"weird": 2.55,
+"stories": 2.42,
+"learning": 2.34,
+"nature": 1.71,
+"dataviz": 1.63,
+"art": 1.21,
+"science": 1.05,
+"generators": 1.0,
+"simulation": 1.0,
+"food": 0.63,
+"maps": 0.42,
+"history": 0.21,
+"indieweb": 0.21
+},
+"score": 85,
+"scoreBreakdown": {
+"interactivity": 28,
+"independence": 18,
+"craft": 13,
+"novelty": 27,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "8eccbf12f2d25134",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "abd71645b4eaad9e3033",
+"url": "https://gasiulis.name/new-spline",
+"domain": "gasiulis.name",
+"registrableDomain": "gasiulis.name",
+"title": "Slightly better interpolating spline - Aurimas Gasiulis",
+"description": "A new interpolating spline with decent fairness.",
+"image": "https://gasiulis.name/new-spline/card.png",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 5.12,
+"games": 3.28,
+"learning": 2.62,
+"weird": 1.78,
+"math": 1.12,
+"indieweb": 1.12,
+"simulation": 1.0,
+"art": 0.56,
+"generators": 0.56,
+"music": 0.28,
+"history": 0.28,
+"stories": 0.28
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 20,
+"craft": 15,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "f89acdd690174070",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "839443518c839bff0ac9",
+"url": "https://maptiler.com/google-maps-platform-alternative",
+"domain": "maptiler.com",
+"registrableDomain": "maptiler.com",
+"title": "Top alternative for Google Maps API | MapTiler",
+"description": "MapTiler Cloud is an affordable alternative to Google Maps API. Free detailed maps of the entire world. Map hosting for your websites and products.",
+"image": "https://media.maptiler.com/img/share_google_f3c3c6df62.png",
+"categories": [
+"maps",
+"programming",
+"toys"
+],
+"categoryScores": {
+"maps": 21.61,
+"programming": 9.93,
+"toys": 4.93,
+"dataviz": 3.8,
+"games": 3.31,
+"photo": 2.31,
+"art": 2.25,
+"simulation": 1.93,
+"generators": 1.62,
+"nature": 0.93,
+"weird": 0.31,
+"stories": 0.31
+},
+"score": 79,
+"scoreBreakdown": {
+"interactivity": 25,
+"independence": 18,
+"craft": 15,
+"novelty": 31,
+"security": 5,
+"penalties": -15
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"playful wording",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.625,
+"simhash": "486880a703035f6a",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "5d25b921cdacb0d5b102",
+"url": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim",
+"domain": "blog.alexbeals.com",
+"registrableDomain": "alexbeals.com",
+"title": "Explaining the Magelight XP glitch in Skyrim - Vox Silva",
+"description": "Explaining why casting Magelight outside Solitude grants so much XP in Skyrim",
+"image": "https://blog.alexbeals.com/images/explaining-the-magelight-xp-glitch-in-skyrim/21.jpg",
+"categories": [
+"games",
+"learning"
+],
+"categoryScores": {
+"games": 5.72,
+"learning": 4.48,
+"programming": 3.98,
+"weird": 3.24,
+"nature": 2.49,
+"toys": 2.25,
+"photo": 2.25,
+"stories": 2.0,
+"generators": 1.25,
+"art": 0.99,
+"math": 0.99,
+"maps": 0.49,
+"history": 0.49
+},
+"score": 79,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 12,
+"novelty": 33,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.609,
+"simhash": "a4b5e3c6e7677d69",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "5cb26241baed80238b06",
+"url": "https://nohope.io/",
+"domain": "nohope.io",
+"registrableDomain": "nohope.io",
+"title": "swarm",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"music": 3.0,
+"programming": 2.0,
+"simulation": 1.0
+},
+"score": 79,
+"scoreBreakdown": {
+"interactivity": 23,
+"independence": 20,
+"craft": 4,
+"novelty": 27,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "038233a20138a663",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "d5ad1e20521813a6443f",
+"url": "https://castle-engine.io/modern_pascal",
+"domain": "castle-engine.io",
+"registrableDomain": "castle-engine.io",
+"title": "Modern Object Pascal Introduction for Programmers | Castle Game Engine",
+"description": "Modern Object Pascal Introduction: units, classes, generics, memory management, exceptions and more.",
+"image": "https://castle-engine.io/images/original_size/pascal_code_sample.png",
+"categories": [
+"learning",
+"programming",
+"games"
+],
+"categoryScores": {
+"learning": 9.82,
+"programming": 8.74,
+"games": 7.41,
+"toys": 3.0,
+"simulation": 2.4,
+"stories": 2.2,
+"maps": 2.11,
+"weird": 2.11,
+"generators": 1.2,
+"dataviz": 1.01,
+"retro": 1.0,
+"nature": 0.61,
+"math": 0.61,
+"art": 0.2,
+"music": 0.2,
+"science": 0.2,
+"history": 0.2,
+"photo": 0.2
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 19,
+"independence": 14,
+"craft": 15,
+"novelty": 25,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"cookie banner",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "c5ba6aadbb7a46f1",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "24d6a2c38e7ade405524",
+"url": "https://mafs.dev/",
+"domain": "mafs.dev",
+"registrableDomain": "mafs.dev",
+"title": "Mafs: React components for interactive math",
+"description": "React components for interactive math",
+"image": "",
+"categories": [
+"toys",
+"math"
+],
+"categoryScores": {
+"toys": 11.2,
+"math": 8.6,
+"games": 2.0,
+"programming": 1.8
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 13,
+"novelty": 31,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "243b6e398f28d50b",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "f196fb64f110e58def4c",
+"url": "https://1667.ai/",
+"domain": "1667.ai",
+"registrableDomain": "1667.ai",
+"title": "1667 \u00b7 write your novel in the terminal",
+"description": "A full-screen terminal environment for writing fiction with language models. Keep every take in a story tree. Plain-text files and no tracking of any kind.",
+"image": "https://1667.ai/og-1200x630.png",
+"categories": [
+"stories",
+"programming"
+],
+"categoryScores": {
+"stories": 20.33,
+"programming": 13.87,
+"nature": 3.46,
+"toys": 2.72,
+"games": 2.48,
+"dataviz": 2.46,
+"photo": 2.24,
+"generators": 1.48,
+"maps": 1.44,
+"learning": 1.44,
+"art": 1.2,
+"science": 0.72,
+"simulation": 0.72,
+"indieweb": 0.48,
+"history": 0.24,
+"weird": 0.24
+},
+"score": 76,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 14,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "104c69948aa7942c",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "6913e1d76a89789ddca4",
+"url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+"domain": "nicholas.carlini.com",
+"registrableDomain": "carlini.com",
+"title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+"description": "A fun experiment where I back-port all the improvements we've made to chess engines over the last 30 years and run it on a 1996 Pentium Pro to see what we could have done if only we knew more at the time.",
+"image": "https://nicholas.carlini.com/writing/2026/chess/ppro-screen.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.57,
+"games": 3.59,
+"music": 3.48,
+"dataviz": 3.48,
+"science": 3.22,
+"learning": 2.7,
+"stories": 2.48,
+"toys": 2.24,
+"history": 1.44,
+"math": 1.2,
+"generators": 1.0,
+"art": 0.24,
+"maps": 0.24,
+"weird": 0.24,
+"nature": 0.24,
+"simulation": 0.24
+},
+"score": 76,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 13,
+"novelty": 31,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"makes sound",
+"reacts to mouse/touch",
+"maps/charts",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.625,
+"simhash": "50eec874319d4a36",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "1c5de6d86a69d019460f",
+"url": "https://musiclab.chromeexperiments.com/",
+"domain": "musiclab.chromeexperiments.com",
+"registrableDomain": "chromeexperiments.com",
+"title": "Chrome Music Lab",
+"description": "Music is for everyone. Play with simple experiments that let anyone, of any age, explore how music works.",
+"image": "https://musiclab.chromeexperiments.com/static/share.jpg",
+"categories": [
+"music",
+"learning"
+],
+"categoryScores": {
+"music": 15.43,
+"learning": 4.84,
+"games": 2.92,
+"maps": 2.92,
+"programming": 1.67,
+"science": 1.25,
+"generators": 0.84,
+"toys": 0.42,
+"art": 0.42,
+"math": 0.42
+},
+"score": 75,
+"scoreBreakdown": {
+"interactivity": 6,
+"independence": 18,
+"craft": 15,
+"novelty": 33,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"makes sound",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.609,
+"simhash": "dd9bef2101e21f7f",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "17e1bd104e59b74905f3",
+"url": "https://fallingfalling.com/",
+"domain": "fallingfalling.com",
+"registrableDomain": "fallingfalling.com",
+"title": "collection of hampus lindwall, falling falling .com by rafa\u00ebl rozendaal, 2011. sound by gloumouth1",
+"description": "FALLING FALLING .COM BY RAFAEL ROZENDAAL - 2011 - WWW.NEWRAFAEL.COM, CODE BY REINIER FEIJEN - WWW.BOXOFCHOCOLATES.NL, COLLECTION OF HAMPUS LINDWALL, SOUND BY GLOUMOTH - HTTP://GLOUMOUTH1.FREE.FR",
+"image": "https://fallingfalling.com/2011-falling-falling.png",
+"categories": [
+"music",
+"history",
+"toys"
+],
+"categoryScores": {
+"music": 6.5,
+"history": 6.5,
+"toys": 4.0,
+"games": 3.0,
+"programming": 2.5,
+"simulation": 1.0
+},
+"score": 74,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 7,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "092e4e50f0e8d232",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "567ca4e0919efdcbf56b",
+"url": "https://visualnoise.ca/",
+"domain": "visualnoise.ca",
+"registrableDomain": "visualnoise.ca",
+"title": "Vite + React",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"music": 3.0,
+"dataviz": 3.0,
+"simulation": 1.0
+},
+"score": 74,
+"scoreBreakdown": {
+"interactivity": 26,
+"independence": 18,
+"craft": 5,
+"novelty": 23,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.719,
+"simhash": "00040240ed90b810",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "227a82b51e67ec42be54",
+"url": "https://declarative-dragging.github.io/",
+"domain": "declarative-dragging.github.io",
+"registrableDomain": "declarative-dragging.github.io",
+"title": "Declarative Dragging",
+"description": "Declarative dragging: an interface author makes an element draggable by specifying which future model states should be accessible by dragging it. Horowitz, Blinn & Heer, UIST 2026 Best Paper.",
+"image": "https://declarative-dragging.github.io/link-preview.png",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 3.59,
+"simulation": 3.46,
+"indieweb": 3.0,
+"photo": 2.64,
+"programming": 2.23,
+"learning": 2.14,
+"nature": 1.59,
+"math": 1.28,
+"games": 0.96,
+"maps": 0.96,
+"art": 0.32,
+"generators": 0.32
+},
+"score": 74,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 20,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"personal/indie host",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "8c674d6fc5480a1f",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "fa8b1a2cbfb97ba76495",
+"url": "https://eylulbozan.com/en",
+"domain": "eylulbozan.com",
+"registrableDomain": "eylulbozan.com",
+"title": "Eyl\u00fcl Bozan",
+"description": "Eyl\u00fcl Bozan",
+"image": "https://eylulbozan.com/assets/img/og.jpg?v=e71ea921",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 3.66,
+"photo": 2.66,
+"games": 2.0,
+"toys": 2.0,
+"dataviz": 1.0,
+"history": 0.58,
+"indieweb": 0.58
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 11,
+"independence": 18,
+"craft": 11,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "64bde5666155b835",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "b51e029ff4fd04588631",
+"url": "https://interactivetextbooks.tudelft.nl/showthephysics/intro.html",
+"domain": "interactivetextbooks.tudelft.nl",
+"registrableDomain": "tudelft.nl",
+"title": "\u2014 ShowingPhysics",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.32,
+"simulation": 2.97,
+"science": 2.92,
+"games": 2.0,
+"generators": 1.32,
+"learning": 1.3,
+"toys": 1.0,
+"nature": 0.97,
+"weird": 0.65,
+"food": 0.65,
+"music": 0.32,
+"maps": 0.32,
+"history": 0.32,
+"stories": 0.32,
+"math": 0.32
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 14,
+"craft": 11,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "aba2640c05c91649",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "9dce56bafdac471842eb",
+"url": "https://fractal.parts/",
+"domain": "fractal.parts",
+"registrableDomain": "fractal.parts",
+"title": "fractal.parts",
+"description": "",
+"image": "",
+"categories": [
+"toys",
+"math"
+],
+"categoryScores": {
+"toys": 4.0,
+"math": 4.0,
+"games": 3.0,
+"simulation": 1.0
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 20,
+"craft": 4,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a982610700104000",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "b8a0d80af2b9fbe28f56",
+"url": "https://buttondown.com/",
+"domain": "buttondown.com",
+"registrableDomain": "buttondown.com",
+"title": "Buttondown \u2014 Newsletter software for people like you",
+"description": "Buttondown is the last email platform you'll migrate to. We're focused on your success, not on bleeding you dry.",
+"image": "https://marketing.buttondown.com/opengraph-image",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 4.95,
+"toys": 2.32,
+"games": 2.0,
+"generators": 1.32,
+"art": 1.0,
+"dataviz": 1.0,
+"weird": 0.95,
+"learning": 0.95,
+"indieweb": 0.63,
+"nature": 0.32,
+"simulation": 0.32
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 15,
+"novelty": 31,
+"security": 4,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.625,
+"simhash": "7c12b3cb5ea31686",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "c8c9f5a36ed7462b3578",
+"url": "https://cloudlord.management/",
+"domain": "cloudlord.management",
+"registrableDomain": "cloudlord.management",
+"title": "Cloudlord.management",
+"description": "Cloudlord.management is Kristoffer Tjalve\u2019s collection of independent websites, publications, gatherings and experiments exploring the creative web.",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 2.92,
+"games": 2.0,
+"generators": 1.0,
+"photo": 0.84,
+"art": 0.42,
+"maps": 0.42,
+"weird": 0.42
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 14,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "813c5625c5964b33",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "1fec52e8aa6db85d5bf4",
+"url": "https://explordle.com/map/wor",
+"domain": "explordle.com",
+"registrableDomain": "explordle.com",
+"title": "World Challenge | Explordle",
+"description": "Play Explordle's world theme. Watch a short video and guess the location.",
+"image": "",
+"categories": [
+"maps",
+"games",
+"photo"
+],
+"categoryScores": {
+"maps": 7.7,
+"games": 4.5,
+"photo": 4.5,
+"toys": 2.0
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 16,
+"craft": 13,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "9d8f4dda8c245170",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "1d775e345a3012e90fbd",
+"url": "https://decomp.dev/",
+"domain": "decomp.dev",
+"registrableDomain": "decomp.dev",
+"title": "Sunsetting decomp.dev",
+"description": "An update on the future of decomp.dev.",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.46,
+"games": 2.15,
+"toys": 2.0,
+"weird": 1.81,
+"learning": 1.23,
+"math": 0.92,
+"dataviz": 0.61,
+"history": 0.31,
+"stories": 0.31
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 20,
+"craft": 15,
+"novelty": 27,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "f3c7fee5dd4749b5",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "7db68a03c1480c6d7bfc",
+"url": "https://kittensgame.com/web",
+"domain": "kittensgame.com",
+"registrableDomain": "kittensgame.com",
+"title": "Kittens Game - a Dark Souls of incremental gaming",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 7.23,
+"toys": 2.82,
+"programming": 1.23,
+"generators": 1.0,
+"dataviz": 0.82,
+"art": 0.41,
+"nature": 0.41
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 16,
+"craft": 11,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "880174e82463225e",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "0accdfa822ed56ce9ec1",
+"url": "https://calbryant.uk/blog/3d-printing-giant-things-with-a-python-jigsaw-generator",
+"domain": "calbryant.uk",
+"registrableDomain": "calbryant.uk",
+"title": "3D printing giant things with a python jigsaw generator - Cal Bryant",
+"description": "Automating the process of splitting up large 3D prints into smaller parts with dovetail joins",
+"image": "https://calbryant.uk/m/603b952c96c85e9e.jpg",
+"categories": [
+"programming",
+"generators"
+],
+"categoryScores": {
+"programming": 12.2,
+"generators": 5.75,
+"photo": 2.74,
+"math": 2.73,
+"toys": 2.25,
+"stories": 2.0,
+"learning": 0.99,
+"games": 0.74,
+"art": 0.74,
+"simulation": 0.74,
+"indieweb": 0.74,
+"dataviz": 0.49,
+"nature": 0.25
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 18,
+"craft": 11,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "3b9200a4bc9d3075",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "ee84aea5db0c1a2514fb",
+"url": "https://fna-xna.github.io/",
+"domain": "fna-xna.github.io",
+"registrableDomain": "fna-xna.github.io",
+"title": "FNA",
+"description": "FNA is a reimplementation of the Microsoft XNA Game Studio 4.0 Refresh libraries.",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 7.15,
+"programming": 3.79,
+"indieweb": 3.0,
+"toys": 2.0,
+"simulation": 0.38,
+"photo": 0.38
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 11,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "1997f901650677dd",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "cc119fade1840299a219",
+"url": "https://ukrockfestivals.com/",
+"domain": "ukrockfestivals.com",
+"registrableDomain": "ukrockfestivals.com",
+"title": "the archive ,a history of Uk rock festivals -1960-92: November 2018",
+"description": "July 2010 : History of the Glastonbury Festival 1970-1990 ,Reading festival 1961-1990. UK Free festivals 1967-1990, UK commercical festivals 1960-1990,womadelaide 1992-2008, History of UK rock festivals, GLC free concerts, Rock Against Racism , Monsters of Rock Donington, Bickershaw Festival,Bath Festival 1969-1970, Womadelaide ,Grateful dead in Egypt, Australian Deadheads ,Hawkwind, Here and Now,",
+"image": "",
+"categories": [
+"history",
+"retro"
+],
+"categoryScores": {
+"history": 12.53,
+"retro": 6.29,
+"stories": 2.76,
+"music": 1.27,
+"maps": 0.76,
+"nature": 0.76,
+"photo": 0.76,
+"toys": 0.51,
+"art": 0.51,
+"weird": 0.51,
+"math": 0.51,
+"indieweb": 0.51,
+"games": 0.25,
+"learning": 0.25
+},
+"score": 68,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 15,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "1edcc7b239085d17",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "291f7060c85477f1f2de",
+"url": "https://extrapractice.space/",
+"domain": "extrapractice.space",
+"registrableDomain": "extrapractice.space",
+"title": "Extra Practice",
+"description": "Extra Practice is a space for working and learning in the North of Rotterdam, shared by six friends who are active in the field of art and design.",
+"image": "",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 5.82,
+"science": 3.74,
+"learning": 3.32,
+"music": 1.24,
+"generators": 1.0,
+"history": 0.41,
+"food": 0.41
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 13,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "30c5ef68158aa16d",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "2d7f0481ae911cec65da",
+"url": "https://joelgonewild.com/",
+"domain": "joelgonewild.com",
+"registrableDomain": "joelgonewild.com",
+"title": "Joel Gone Wild | Joel Vardy",
+"description": "I really enjoy exploring new places, so in 2014 I started writing down the things I had done both for others to read, and so future me can read too!",
+"image": "https://www.joelgonewild.com/assets/joel-vardy.jpg",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 2.83,
+"photo": 2.0,
+"maps": 1.65,
+"food": 0.66,
+"history": 0.33,
+"programming": 0.33
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 15,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "2b21729775d3761d",
+"frameable": false,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "620d293c33c2ab9176fb",
+"url": "https://tagyerit.com/",
+"domain": "tagyerit.com",
+"registrableDomain": "tagyerit.com",
+"title": "TagYerit: Music and Web Culture - Rock, Pop, AAA, Alternative, Guitar, Art",
+"description": "TagYerit: Where to find music,art,theatre,film,Wabbit Wecordings and a rabbit guitar on the internet",
+"image": "",
+"categories": [
+"music",
+"art",
+"photo"
+],
+"categoryScores": {
+"music": 10.5,
+"art": 8.32,
+"photo": 6.32,
+"retro": 3.0,
+"maps": 2.96,
+"history": 1.46,
+"nature": 1.09,
+"learning": 0.73,
+"stories": 0.73,
+"weird": 0.36,
+"indieweb": 0.36
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 14,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "4404cc0d1eab3ff4",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "138a22c3b8839f1bb463",
+"url": "https://renderling.xyz/articles/wgsl-rs-beta-release.html",
+"domain": "renderling.xyz",
+"registrableDomain": "renderling.xyz",
+"title": "Beta wgsl-rs on crates.io",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 4.62,
+"simulation": 1.81,
+"dataviz": 0.92,
+"nature": 0.92,
+"stories": 0.62,
+"games": 0.31,
+"art": 0.31,
+"science": 0.31,
+"maps": 0.31,
+"generators": 0.31,
+"learning": 0.31,
+"retro": 0.31
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 14,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "fc85d42ab60f0af4",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "f724e2c31d227921dcdd",
+"url": "https://are.na/internet-phone-book/our-internet-phone-books",
+"domain": "are.na",
+"registrableDomain": "are.na",
+"title": "\ud83d\udcd2 Our Internet Phone Books | Are.na",
+"description": "Add a photo of your Internet Phone Book in-situ. Could be in your hand, on your shelf, in motion...",
+"image": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0OTY3NjU5My9vcmlnaW5hbF8yYjY1ODNmOWVkZGVjNDhiZmNjOTg5ZGY5Y2ExMThhMy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjYzMCwiZml0IjoiY292ZXIiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjgwfSwianBlZyI6eyJxdWFsaXR5Ijo4MH0sInJvdGF0ZSI6bnVsbH19",
+"categories": [
+"photo"
+],
+"categoryScores": {
+"photo": 2.5,
+"games": 2.0,
+"toys": 2.0,
+"programming": 2.0,
+"generators": 1.0
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 0,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a1f9f06dcad2469f",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "1ff7e72daf98c3a2329e",
+"url": "https://theboard.stavros.io/",
+"domain": "theboard.stavros.io",
+"registrableDomain": "stavros.io",
+"title": "Reckon",
+"description": "",
+"image": "",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 3.0,
+"toys": 2.0,
+"games": 1.0,
+"generators": 1.0,
+"simulation": 1.0
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 7,
+"novelty": 27,
+"security": -1,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"maps/charts",
+"new domain",
+"asks for a password"
+],
+"nearestSimilarity": 0.672,
+"simhash": "e98a114938a8f6af",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "017ba373adddc0fb86eb",
+"url": "https://falstad.com/ripple",
+"domain": "falstad.com",
+"registrableDomain": "falstad.com",
+"title": "Ripple Tank Simulation",
+"description": "",
+"image": "",
+"categories": [
+"simulation"
+],
+"categoryScores": {
+"simulation": 6.53,
+"toys": 2.06,
+"programming": 1.06,
+"history": 0.53
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 9,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "9812ef167727cb4f",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "6e16d0e6ea0974be2c1f",
+"url": "https://benoitessiambre.com/macro.html",
+"domain": "benoitessiambre.com",
+"registrableDomain": "benoitessiambre.com",
+"title": "Benoit Essiambre",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 2.0,
+"games": 1.0,
+"simulation": 1.0
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 20,
+"craft": 4,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "43300a0b06510840",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "924e63da7947ef988e1d",
+"url": "https://app.radiooooo.com/",
+"domain": "app.radiooooo.com",
+"registrableDomain": "radiooooo.com",
+"title": "Radiooooo",
+"description": "Radiooooo - The Musical Time Machine",
+"image": "https://asset.radiooooo.com/radiooooo.png",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 3.0,
+"programming": 2.7,
+"art": 0.6,
+"nature": 0.6
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 9,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "65b48ba95acebbc6",
+"frameable": false,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "40a11e4a8c91fb62ae8f",
+"url": "https://dillo-browser.github.io/",
+"domain": "dillo-browser.github.io",
+"registrableDomain": "dillo-browser.github.io",
+"title": "Dillo Website",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.6,
+"indieweb": 3.35,
+"learning": 1.75,
+"nature": 1.05,
+"art": 0.7,
+"history": 0.7,
+"maps": 0.35,
+"dataviz": 0.35
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 31,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "4a3409c7dda65e4e",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "fad3c3fef2eb4ea13208",
+"url": "https://codeberg.page/",
+"domain": "codeberg.page",
+"registrableDomain": "codeberg.page",
+"title": "Codeberg Pages - static pages for your projects",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.28,
+"toys": 0.76,
+"generators": 0.76,
+"learning": 0.76,
+"indieweb": 0.76,
+"science": 0.38,
+"history": 0.38
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 13,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "ae5869d0ecf5274b",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "e01d9b1704b3a76c064e",
+"url": "https://streamhpc.com/blog/2026-10-28/making-simd-code-scale-to-any-vector-width",
+"domain": "streamhpc.com",
+"registrableDomain": "streamhpc.com",
+"title": "Making SIMD Code Scale to Any Vector Width - Stream HPC",
+"description": "I will be using x86 naming throughout this post, but the concepts apply to other architectures too. Basic familiarity with SIMD and x86 assembly is assumed; uops.info and Intel\u2019s intrinsics guide explain any instruction you don\u2019t recognize. A lot of SIMD code, particularly in the graphics programming space, use vec3/vec4 types all over the place. [\u2026]",
+"image": "https://streamhpc.com/wp-content/uploads/2026/10/3.png",
+"categories": [
+"programming",
+"dataviz",
+"toys"
+],
+"categoryScores": {
+"programming": 21.98,
+"dataviz": 10.85,
+"toys": 4.0,
+"stories": 3.5,
+"learning": 3.18,
+"games": 3.0,
+"maps": 3.0,
+"science": 2.73,
+"math": 1.58,
+"generators": 1.23,
+"art": 1.0,
+"simulation": 1.0,
+"weird": 0.68,
+"photo": 0.23,
+"indieweb": 0.23
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 25,
+"independence": 0,
+"craft": 9,
+"novelty": 30,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"14 ad network(s)",
+"cookie banner",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "fa1c370f2d2907ba",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "5c8eb34550223996473d",
+"url": "https://ncase.me/",
+"domain": "ncase.me",
+"registrableDomain": "ncase.me",
+"title": "It's Nicky Case!",
+"description": "i make shtuff for curious & playful peeps",
+"image": "https://ncase.me/sharing/thumb.png",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 4.41,
+"learning": 2.91,
+"simulation": 1.66,
+"indieweb": 1.25,
+"toys": 0.83,
+"generators": 0.83,
+"weird": 0.83,
+"science": 0.42,
+"history": 0.42,
+"stories": 0.42,
+"programming": 0.42
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 15,
+"novelty": 31,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.625,
+"simhash": "42007391222d6ad8",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "cce758252feeeee05af2",
+"url": "https://cs.uwaterloo.ca/~csk/hat",
+"domain": "cs.uwaterloo.ca",
+"registrableDomain": "uwaterloo.ca",
+"title": "An aperiodic monotile",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 3.0,
+"programming": 1.71,
+"toys": 0.68,
+"art": 0.34,
+"science": 0.34,
+"history": 0.34,
+"generators": 0.34,
+"math": 0.34
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 12,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "b2fced5e3d834f2b",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "10d10e36e01a56ed70b0",
+"url": "https://informationisbeautiful.net/",
+"domain": "informationisbeautiful.net",
+"registrableDomain": "informationisbeautiful.net",
+"title": "Information is Beautiful",
+"description": "Distilling the world's data, information & knowledge into beautiful infographics & visualizations",
+"image": "https://infobeautiful4.s3.amazonaws.com/2020/06/splash.png",
+"categories": [
+"dataviz",
+"maps"
+],
+"categoryScores": {
+"dataviz": 5.55,
+"maps": 5.04,
+"toys": 2.54,
+"stories": 2.54,
+"indieweb": 1.04,
+"generators": 1.0,
+"art": 0.52,
+"science": 0.52,
+"nature": 0.52,
+"food": 0.52
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 14,
+"craft": 15,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "1911f1f0e656389f",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "f558a411a281b1fc3a1f",
+"url": "https://joelthelion.github.io/life_web/demo",
+"domain": "joelthelion.github.io",
+"registrableDomain": "joelthelion.github.io",
+"title": "Life",
+"description": "",
+"image": "",
+"categories": [
+"simulation"
+],
+"categoryScores": {
+"simulation": 5.0,
+"indieweb": 3.0,
+"toys": 2.0,
+"games": 1.0
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 20,
+"craft": 4,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"personal/indie host",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a5ccbf6430d51570",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "269819a9cc47fd82482e",
+"url": "https://thiswaifudoesnotexist.net/",
+"domain": "thiswaifudoesnotexist.net",
+"registrableDomain": "thiswaifudoesnotexist.net",
+"title": "This Waifu Does Not Exist v3.5 (TWDNEv3.5) - Gwern",
+"description": "TWDNEv3.5: A site demonstrating anime faces generated by StyleGAN 2 neural networks and text snippets generated by GPT-3-",
+"image": "https://www.thiswaifudoesnotexist.net/example-36571.jpg",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 0.88,
+"learning": 0.88,
+"simulation": 0.88,
+"toys": 0.44,
+"art": 0.44,
+"programming": 0.44
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 16,
+"craft": 13,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "7e445b5d52fc889f",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "1da28712642aabe40652",
+"url": "https://lichess.org/",
+"domain": "lichess.org",
+"registrableDomain": "lichess.org",
+"title": "lichess.org \u2022 Free Online Chess",
+"description": "Free online chess server. Play chess in a clean interface. No registration, no ads, no plugin required. Play chess with the computer, friends or random opponents.",
+"image": "https://lichess.org//assets/_FrNQ1W/logo/lichess-tile-wide.png",
+"categories": [
+"games",
+"learning"
+],
+"categoryScores": {
+"games": 8.6,
+"learning": 4.03,
+"generators": 3.84,
+"math": 1.72,
+"programming": 1.38,
+"maps": 0.69,
+"indieweb": 0.69,
+"dataviz": 0.34,
+"photo": 0.34
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 11,
+"novelty": 23,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.719,
+"simhash": "49c1789dad1d02f7",
+"frameable": false,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "f127be88d896e2877013",
+"url": "https://jefferson.nygenweb.net/",
+"domain": "jefferson.nygenweb.net",
+"registrableDomain": "nygenweb.net",
+"title": "JCNYGW",
+"description": "Searchable genealogy information about early history of Jefferson County NY.",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 3.54,
+"maps": 1.38,
+"generators": 1.0,
+"retro": 1.0,
+"dataviz": 0.69,
+"programming": 0.69
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 10,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "9a832c4c8fea2102",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "dfa2be5a0efd69b84e0f",
+"url": "https://rayer.g6.cz/hry/hry.htm",
+"domain": "rayer.g6.cz",
+"registrableDomain": "g6.cz",
+"title": "RayeR's homepage/Hry",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 4.0,
+"retro": 3.0,
+"photo": 2.0,
+"simulation": 0.85
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "d98c650b89babe95",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "77d696d7b44d9ec39674",
+"url": "https://hea-www.harvard.edu/~fine/Observatory",
+"domain": "hea-www.harvard.edu",
+"registrableDomain": "harvard.edu",
+"title": "Harvard College Observatory History in Images",
+"description": "",
+"image": "",
+"categories": [
+"history",
+"retro"
+],
+"categoryScores": {
+"history": 7.4,
+"retro": 4.0,
+"indieweb": 3.32,
+"photo": 1.58,
+"learning": 0.63,
+"stories": 0.32
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 27,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "1d2992830e014048",
+"frameable": false,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "14c06a0f09d7d56c6986",
+"url": "https://blog.tymscar.com/posts/crinklecranklewalls",
+"domain": "blog.tymscar.com",
+"registrableDomain": "tymscar.com",
+"title": "Do Wavy Walls Really Use Fewer Bricks? I Tested It in Blender :: The Tymscar Blog",
+"description": "Do crinkle crankle walls actually save bricks? Geometry nodes, rigid body sims, and some answers.",
+"image": "https://blog.tymscar.com/crinkle-crankle/render.png",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 4.0,
+"math": 3.9,
+"photo": 3.12,
+"simulation": 1.12,
+"generators": 0.84,
+"learning": 0.84,
+"music": 0.56,
+"toys": 0.28,
+"science": 0.28,
+"maps": 0.28,
+"dataviz": 0.28,
+"weird": 0.28,
+"stories": 0.28,
+"programming": 0.28
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 15,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "946ab39b5c94da4b",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "0d770f1c7f5eb80cdfb4",
+"url": "https://aras-p.info/blog/2026/10/05/Unroll-a-loop-make-shader-10x-faster",
+"domain": "aras-p.info",
+"registrableDomain": "aras-p.info",
+"title": "Unroll a loop, make shader 10x faster \u00b7 Aras' website",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 16.13,
+"learning": 2.52,
+"stories": 2.0,
+"dataviz": 1.79,
+"math": 1.79,
+"art": 0.77,
+"weird": 0.77,
+"retro": 0.77,
+"toys": 0.51,
+"maps": 0.51,
+"photo": 0.51,
+"indieweb": 0.51,
+"games": 0.26,
+"music": 0.26,
+"history": 0.26,
+"generators": 0.26,
+"nature": 0.26
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 14,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "628096616a2b4b1e",
+"frameable": true,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "ab06b3484740eb754232",
+"url": "https://theshadowlands.net/bf.htm",
+"domain": "theshadowlands.net",
+"registrableDomain": "theshadowlands.net",
+"title": "The Shadowlands Bigfoot Page",
+"description": "",
+"image": "",
+"categories": [
+"photo",
+"retro"
+],
+"categoryScores": {
+"photo": 7.2,
+"retro": 4.0,
+"nature": 3.31,
+"stories": 2.71,
+"music": 1.42,
+"history": 1.42,
+"learning": 1.42,
+"maps": 0.95,
+"weird": 0.95,
+"food": 0.95,
+"science": 0.71,
+"games": 0.24,
+"simulation": 0.24
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 13,
+"novelty": 31,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain",
+"mixed content x20"
+],
+"nearestSimilarity": 0.625,
+"simhash": "7e87977dcee0ea84",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "5b4e9184a503ccc62530",
+"url": "https://jetcafe.org/~dave/usenet/phil.html",
+"domain": "jetcafe.org",
+"registrableDomain": "jetcafe.org",
+"title": "The Philosophy of the Freedom Knight",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"indieweb": 3.0,
+"simulation": 0.6
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "01385be4f07f8c49",
+"frameable": false,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "212fa52a84b4eb6bcb01",
+"url": "https://32bit.cafe/",
+"domain": "32bit.cafe",
+"registrableDomain": "32bit.cafe",
+"title": "32-Bit Cafe",
+"description": "A web space community that focuses on building websites for self-expression and creativity, made up of professionals, hobbyists, and enthusiasts of the personal web.",
+"image": "",
+"categories": [
+"science"
+],
+"categoryScores": {
+"science": 2.98,
+"indieweb": 2.98,
+"learning": 0.96,
+"nature": 0.96,
+"weird": 0.48,
+"programming": 0.48
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "b68f2cb86e24d5ae",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "4a9564ae9fbd9c3be6cb",
+"url": "https://art.teleportacia.org/olia.html",
+"domain": "art.teleportacia.org",
+"registrableDomain": "teleportacia.org",
+"title": "olia lialina cv",
+"description": "",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 3.69,
+"art": 3.45,
+"stories": 2.98,
+"photo": 1.72,
+"maps": 1.48,
+"simulation": 0.98,
+"learning": 0.74,
+"food": 0.74,
+"programming": 0.74,
+"retro": 0.49,
+"indieweb": 0.49,
+"games": 0.25,
+"science": 0.25,
+"dataviz": 0.25,
+"nature": 0.25
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 12,
+"novelty": 30,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "076cba2857a21b8f",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "062c44e988521d713845",
+"url": "https://cs.stanford.edu/people/karpathy/advice.html",
+"domain": "cs.stanford.edu",
+"registrableDomain": "stanford.edu",
+"title": "Andrej's advice for success",
+"description": "",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 2.79,
+"learning": 2.36,
+"food": 1.31,
+"weird": 0.79,
+"math": 0.79,
+"programming": 0.53,
+"games": 0.26,
+"music": 0.26,
+"science": 0.26,
+"maps": 0.26,
+"simulation": 0.26,
+"indieweb": 0.26
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 30,
+"security": -3,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain",
+"mixed content x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "5d1427452f7be3c2",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "417af5f300aa4b8e22ce",
+"url": "https://zombo.com/",
+"domain": "zombo.com",
+"registrableDomain": "zombo.com",
+"title": "Zombo.com - No Limits - You Can Do Anything",
+"description": "Zombo.com where you can do anything. Zombocom has no limits. Zombo is unlimited.",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 2.0,
+"history": 0.6,
+"weird": 0.6
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 8,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "bdf2ad8840b69260",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "21ee84d5f1421fd60434",
+"url": "https://sp4comm.org/",
+"domain": "sp4comm.org",
+"registrableDomain": "sp4comm.org",
+"title": "Signal Processing for Communications",
+"description": "Signal Processing for Communications",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 1.08,
+"toys": 0.54,
+"maps": 0.54,
+"math": 0.54
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 13,
+"novelty": 30,
+"security": -4,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain",
+"obfuscated script"
+],
+"nearestSimilarity": 0.641,
+"simhash": "1013c10b18cab948",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "69bc6555f9291aadc474",
+"url": "https://oldbaileyonline.org/",
+"domain": "oldbaileyonline.org",
+"registrableDomain": "oldbaileyonline.org",
+"title": "The Proceedings of the Old Bailey",
+"description": "",
+"image": "",
+"categories": [
+"toys",
+"history"
+],
+"categoryScores": {
+"toys": 4.0,
+"history": 4.0,
+"games": 3.0,
+"dataviz": 3.0,
+"simulation": 1.0
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 0,
+"craft": 5,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"2 ad network(s)",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "59d2c5662c52a611",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "7ce3a3d9b4131b259a67",
+"url": "https://chicago-l.org/fares/fares.html",
+"domain": "chicago-l.org",
+"registrableDomain": "chicago-l.org",
+"title": "Chicago ''L''.org: Fares",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"maps": 2.67,
+"stories": 2.0,
+"history": 1.45,
+"learning": 1.21,
+"math": 0.73,
+"toys": 0.48,
+"art": 0.24,
+"dataviz": 0.24,
+"photo": 0.24
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 7,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "15f0ee86ef588b02",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "838fe41abd11f898b0b8",
+"url": "https://marsfacts.neocities.org/",
+"domain": "marsfacts.neocities.org",
+"registrableDomain": "marsfacts.neocities.org",
+"title": "Cool Awesome MARS FACTS!",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 3.0,
+"learning": 2.38,
+"science": 2.19,
+"maps": 1.31,
+"history": 0.88
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 23,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.719,
+"simhash": "c7ba02412362ebfd",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "2ab26ec790d7bfd0a4dc",
+"url": "https://birdcall.online/",
+"domain": "birdcall.online",
+"registrableDomain": "birdcall.online",
+"title": "Birdcall",
+"description": "Welcome to Birdcall dot online",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 0.6
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 27,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "ce21136e8a289302",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "40b385348e797c8d0076",
+"url": "https://flexboxfroggy.com/",
+"domain": "flexboxfroggy.com",
+"registrableDomain": "flexboxfroggy.com",
+"title": "Flexbox Froggy - A game for learning CSS flexbox",
+"description": "A game for learning CSS flexbox",
+"image": "https://flexboxfroggy.com/images/screenshot.png",
+"categories": [
+"games",
+"programming",
+"learning"
+],
+"categoryScores": {
+"games": 10.3,
+"programming": 7.7,
+"learning": 7.1,
+"dataviz": 3.0,
+"toys": 2.0,
+"generators": 1.6,
+"indieweb": 0.6
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 2,
+"craft": 8,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"2 ad network(s)",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "36e8238318860ebf",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "21cdb24ff324c3afcdb7",
+"url": "https://moonwater.com/",
+"domain": "moonwater.com",
+"registrableDomain": "moonwater.com",
+"title": "Moonwater Home",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"photo": 1.2
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 4,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "c2e82da48a724a50",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "783b3667dd4b4cd32e96",
+"url": "https://inove.eu.com/",
+"domain": "inove.eu.com",
+"registrableDomain": "eu.com",
+"title": "INOVE: Digital Development",
+"description": "",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 4.11,
+"art": 2.68,
+"games": 0.59,
+"science": 0.59,
+"learning": 0.59,
+"programming": 0.59,
+"indieweb": 0.59
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 11,
+"novelty": 31,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain",
+"mixed content x3"
+],
+"nearestSimilarity": 0.625,
+"simhash": "ae33b76125f41d1b",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "8c0a13ddf7ff5b1804d5",
+"url": "https://evanmiller.org/dont-kill-math.html",
+"domain": "evanmiller.org",
+"registrableDomain": "evanmiller.org",
+"title": "Don\u2019t Kill Math: Comments on Bret Victor\u2019s Scientific Agenda \u2013 Evan Miller",
+"description": "",
+"image": "",
+"categories": [
+"math",
+"programming"
+],
+"categoryScores": {
+"math": 8.93,
+"programming": 4.96,
+"stories": 3.96,
+"science": 1.96,
+"learning": 1.96,
+"toys": 1.47,
+"simulation": 1.47,
+"games": 1.23,
+"maps": 1.23,
+"art": 0.98,
+"dataviz": 0.98,
+"generators": 0.98,
+"weird": 0.98,
+"history": 0.49,
+"photo": 0.25,
+"indieweb": 0.25
+},
+"score": 54,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 12,
+"novelty": 27,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "9663e71c2c0e7157",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "c04296c65f2750ed2215",
+"url": "https://theshadowlands.net/",
+"domain": "theshadowlands.net",
+"registrableDomain": "theshadowlands.net",
+"title": "The Shadowlands",
+"description": "Dedicated to the world's mysteries such as ghosts and haunted places, UFOs, Bigfoot and Nessie, Crytozoology and many other mysteries.",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"maps": 2.5,
+"nature": 0.85,
+"history": 0.42,
+"photo": 0.42
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 10,
+"novelty": 29,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"new domain",
+"mixed content x1"
+],
+"nearestSimilarity": 0.656,
+"simhash": "08c3c5b16f7809bc",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "899d3fa05f0b74818606",
+"url": "https://littlealchemy2.com/",
+"domain": "littlealchemy2.com",
+"registrableDomain": "littlealchemy2.com",
+"title": "Little Alchemy 2",
+"description": "Mix items and create the world from scratch! Discover interesting items accompanied by funny descriptions and lose yourself exploring the huge, exciting library!",
+"image": "https://littlealchemy2.com/static/img/little-alchemy-2-fb-thumbnail.jpg",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 3.0,
+"games": 2.6,
+"maps": 2.5,
+"toys": 2.0
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 18,
+"craft": 9,
+"novelty": 23,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.719,
+"simhash": "b32074ebf28959a8",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "fdc3ec86079b010d9028",
+"url": "https://wordcounter.io/",
+"domain": "wordcounter.io",
+"registrableDomain": "wordcounter.io",
+"title": "Word Counter \u2014 Count Words and Check Grammar",
+"description": "Quickly check word count and writing mistakes by pasting your text into our free online word counter. Great for essays, papers, Google meta tags and more.",
+"image": "https://cdn.prod.website-files.com/62aa7b9549f2fd23ac54ea78/62b0f4b32bf5561753742fd6_word-counter.jpg",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 16.77,
+"learning": 3.46,
+"indieweb": 2.48,
+"toys": 2.33,
+"generators": 1.98,
+"art": 1.0,
+"dataviz": 1.0,
+"games": 0.33,
+"maps": 0.33,
+"weird": 0.33,
+"math": 0.33
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 10,
+"independence": 8,
+"craft": 5,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"1 ad network(s)",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "23c42bcac0b1a31d",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "f56b40927714b7743f3a",
+"url": "https://asmbots.io/",
+"domain": "asmbots.io",
+"registrableDomain": "asmbots.io",
+"title": "ASM BOTS // HOME",
+"description": "A Core War arena for 8086 assembly: up to 16 bots share one 64 KB core, with an editor, a debugger, tournaments, and hills.",
+"image": "https://asmbots.io/api/pages/og.png?path=%2F",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.0,
+"history": 2.5,
+"generators": 2.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 27,
+"security": 5,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.672,
+"simhash": "22e0826230294554",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "c12a8771360edbc4f5ad",
+"url": "https://nandgame.com/",
+"domain": "nandgame.com",
+"registrableDomain": "nandgame.com",
+"title": "NandGame - Build a computer from scratch.",
+"description": "An educational puzzle game. Solve a series of tasks where you build increasingly powerful components. Starts with the simplest logical components and ends up with a programmable computer.",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 7.0,
+"math": 2.5,
+"toys": 2.0,
+"programming": 2.0
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 16,
+"craft": 7,
+"novelty": 30,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.641,
+"simhash": "f41c3b2e56e9de53",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "c39c20a419bea07216e6",
+"url": "https://breezepdf.com/",
+"domain": "breezepdf.com",
+"registrableDomain": "breezepdf.com",
+"title": "BreezePDF \u2014 Edit PDFs Easily and Securely",
+"description": "A powerful, privacy-first PDF editor that runs in your browser or locally on your computer. Add text, signatures, merge, split, export to DOCX \u2014 39+ features, completely free and offline. Files never touch our servers.",
+"image": "https://breezepdf.com/og-image.png",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 4.5,
+"programming": 1.0,
+"toys": 0.67,
+"dataviz": 0.67,
+"music": 0.33,
+"learning": 0.33,
+"math": 0.33,
+"indieweb": 0.33
+},
+"score": 49,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 11,
+"novelty": 23,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.719,
+"simhash": "7f7442940bb56c1f",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "f644b4986a496838288b",
+"url": "https://commercetxt.org/",
+"domain": "commercetxt.org",
+"registrableDomain": "commercetxt.org",
+"title": "CommerceTXT Protocol - AI-Ready Commerce Standard",
+"description": "The CommerceTXT Protocol \u2014 transaction-ready context for AI agents. Like llms.txt, but for e-commerce.",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 6.06,
+"games": 3.17,
+"learning": 2.89,
+"dataviz": 2.33,
+"weird": 2.33,
+"maps": 2.06,
+"art": 0.56,
+"math": 0.28,
+"simulation": 0.28,
+"indieweb": 0.28
+},
+"score": 47,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 12,
+"novelty": 30,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.641,
+"simhash": "d77adbcac05bc314",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "3dc5dd2f8bbe3cf0c09d",
+"url": "https://tonmeister.ca/main/textbook",
+"domain": "tonmeister.ca",
+"registrableDomain": "tonmeister.ca",
+"title": "Introduction to Sound Recording",
+"description": "",
+"image": "",
+"categories": [
+"music",
+"learning"
+],
+"categoryScores": {
+"music": 8.52,
+"learning": 7.18,
+"toys": 1.84,
+"math": 1.34,
+"dataviz": 1.01,
+"programming": 0.67,
+"games": 0.34,
+"art": 0.34,
+"weird": 0.34
+},
+"score": 47,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 10,
+"craft": 12,
+"novelty": 30,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"1 ad network(s)",
+"playful wording",
+"new domain",
+"mixed content x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "554e33f2982e57aa",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "e8c44f81f66c54df1540",
+"url": "https://global-change-data-lab.org/",
+"domain": "global-change-data-lab.org",
+"registrableDomain": "global-change-data-lab.org",
+"title": "Global Change Data Lab",
+"description": "The Global Change Data Lab is a non-profit research organization in the education sector. Our purpose is to advance education in how global living conditions and the earth\u2019s environment are changing, through the production and maintenance of public online resources and related products.",
+"image": "",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 9.38,
+"maps": 3.61,
+"learning": 3.05,
+"math": 1.11,
+"music": 0.55,
+"science": 0.55,
+"games": 0.28,
+"art": 0.28,
+"history": 0.28,
+"weird": 0.28,
+"programming": 0.28
+},
+"score": 46,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 6,
+"novelty": 25,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.703,
+"simhash": "048583414aaa1309",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "3b0799b87ae8d24cc3ab",
+"url": "https://pingeek.com/",
+"domain": "pingeek.com",
+"registrableDomain": "pingeek.com",
+"title": "PINGEEK.COM For all your coin op needs",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 1.2,
+"retro": 1.0,
+"stories": 0.6,
+"photo": 0.6
+},
+"score": 46,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 25,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"mixed content x10"
+],
+"nearestSimilarity": 0.703,
+"simhash": "6a85b4cc50b6245f",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794295147.315128
+},
+{
+"id": "7e9ffe6827301a64241b",
+"url": "https://openstax.org/details/books/college-physics-2e",
+"domain": "openstax.org",
+"registrableDomain": "openstax.org",
+"title": "OpenStax",
+"description": "OpenStax offers free college textbooks for all types of students, making education accessible & affordable for everyone. Browse our list of available subjects!",
+"image": "https://images.openstax.org/apps/image-cdn/v1/assets.openstax.org/f=webp,w=640,h=480/oscms-prodcms/media/images/240919_OpenStax_Students_Martin_272.original.webp",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0
+},
+"score": 45,
+"scoreBreakdown": {
+"interactivity": 4,
+"independence": 16,
+"craft": 7,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "9eb8894443c1ae97",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794295147.315128
+}
+]
