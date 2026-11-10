@@ -45,3 +45,28 @@ def test_crawl_meets_minimum(tmp_path, monkeypatch):
     assert set(data2["sites"]) >= set(data["sites"])
     urls = [s["url"] for s in data2["sites"].values()]
     assert len(urls) == len(set(urls))
+
+
+def test_recheck_removes_spam_and_insecure(tmp_path, monkeypatch):
+    def fetch(self, url, with_scripts=True):
+        if "badcert" in url:
+            return Page(url, 0, {}, "", error="insecure: invalid certificate")
+        if "spammy" in url:
+            html = "<html><title>Casino</title><body>casino betting slots payday loan</body></html>"
+            return Page(url, 200, {"content-type": "text/html"}, html)
+        if "down" in url:
+            return Page(url, 0, {}, "", error="ConnectTimeout")
+        return Page(url, 200, {"content-type": "text/html"}, (FIX / "toy.html").read_text())
+
+    monkeypatch.setattr(cli.Fetcher, "fetch", fetch)
+    db = tmp_path / "db.json"
+    sites = {n: {"url": f"https://{n}.example.org/", "status": "approved"} for n in ("good", "badcert", "spammy", "down")}
+    sites["oldhttp"] = {"url": "http://down-plain.example.org/", "status": "approved"}
+    db.write_text(json.dumps({"sites": sites}))
+    assert cli.main(["recheck", "--local", str(db), "--delay", "0"]) == 0
+    out = json.loads(db.read_text())["sites"]
+    assert out["good"]["status"] == "approved"
+    assert out["down"]["status"] == "approved"  # temporarily unreachable is not removed
+    assert out["badcert"]["status"] == "rejected" and out["badcert"]["autoReject"] == "insecure: invalid certificate"
+    assert out["spammy"]["status"] == "rejected" and out["spammy"]["autoReject"] == "spam"
+    assert out["oldhttp"]["status"] == "rejected" and out["oldhttp"]["autoReject"] == "insecure: not https"

@@ -39,10 +39,15 @@ followers, no comments.
 | Independence | 0-20 | ad networks, trackers, cookie banners, third-party script count, personal hosts (neocities, github.io, tilde) |
 | Craft | 0-15 | title, description, icon, https, playful wording, healthy vocabulary |
 | Novelty | -10 to 35 | 64-bit SimHash of the page text vs. every site already in the DB, and how many sites share the domain |
+| Security | -21 to 5 | HSTS and CSP headers; mixed http content, password forms and obfuscated scripts count against |
 | Penalties | ≤ 0 | commercial language ("free trial", "pricing"...), empty pages, deep article paths |
 
-Pages are rejected outright if they're parked domains, error pages, login walls,
-non-English, or big platforms (YouTube, Reddit, news sites...). There is no content filter:
+Pages are rejected outright if they're parked domains, error pages, login walls, spam
+(spam terms, keyword stuffing, link farms), non-English, or big platforms (YouTube, Reddit,
+news sites...). **Security is required:** only https pages with a valid, unexpired certificate
+and TLS 1.2+ are accepted (no http fallback, no redirects down to http), and pages loading
+crypto-miners are rejected. A weekly **Recheck sites** workflow re-fetches every live site and
+moves any that have become spam or insecure to "rejected". There is no content filter:
 obviously explicit pages get the 🔞 **Mature** tag instead (unambiguous terms, age gates or
 `rating=adult` labels; ambiguous words like "naked" alone never trigger it). Mature sites are
 hidden on the site unless a viewer turns on "Show mature content" in Settings, which is off by
@@ -73,5 +78,5 @@ crawler/seeds.txt     starter list of hand-picked sites
 crawler/tests/        pytest suite with HTML fixtures
 firebase/             Firestore security rules and indexes
 data/                 crawl bookkeeping committed by the bot (seen URLs, link frontier, run log)
-.github/workflows/    pages.yml, crawl.yml (daily), seed.yml (once), test.yml
+.github/workflows/    pages.yml, crawl.yml (daily), recheck.yml (weekly), seed.yml (once), test.yml
 ```

@@ -120,7 +120,7 @@ function renderRow(id, s) {
         s.source ? el("span", { class: "tag" }, s.source) : null,
         s.frameable === false ? el("span", { class: "tag" }, "opens in new tab") : null),
       s.description ? el("p", { class: "desc" }, s.description) : null,
-      el("div", { class: "bars" }, ...["interactivity", "independence", "craft", "novelty", "penalties"].map((k) =>
+      el("div", { class: "bars" }, ...["interactivity", "independence", "craft", "novelty", "security", "penalties"].map((k) =>
         el("span", { class: `sbar ${k}`, title: k }, `${k} ${b[k] ?? 0}`))),
       (s.reasons || []).length ? el("p", { class: "muted small" }, s.reasons.join(" · ")) : null,
       warnings.length ? el("p", { class: "warn small" }, "⚠ " + warnings.join(" · ")) : null,

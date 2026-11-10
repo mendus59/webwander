@@ -133,9 +133,54 @@ def test_mature_keeps_normal_tags():
     assert tags[0] == "music" and tags[-1] == "mature"
 
 
-def test_spam_terms_penalised_not_rejected():
-    f = extract("https://x.example.org/", (FIX / "toy.html").read_text().replace(
-        "Made with love", "Best online casino and betting slots"))
-    res = score(f, simhash(f["text"]), Corpus())
-    assert res.reject is None
-    assert res.breakdown["penalties"] <= -20
+def _toy(url="https://x.example.org/", swap=("", ""), headers=None, tls=None):
+    html = (FIX / "toy.html").read_text().replace(*swap) if swap[0] else (FIX / "toy.html").read_text()
+    f = extract(url, html, headers or {}, tls=tls)
+    return f, score(f, simhash(f["text"]), Corpus())
+
+
+def test_spam_terms_rejected():
+    _, res = _toy(swap=("Made with love", "Best online casino, betting slots and payday loan deals"))
+    assert res.reject == "spam"
+
+
+def test_single_spam_term_only_penalised():
+    _, res = _toy(swap=("Made with love", "Not a casino"))
+    assert res.reject is None and res.breakdown["penalties"] <= -10
+
+
+def test_keyword_stuffing_is_spam():
+    stuffed = " ".join(["cheap shoes best cheap shoes online cheap shoes deals"] * 40)
+    f, res = _toy(swap=("Made with love", stuffed))
+    assert res.reject == "spam"
+
+
+def test_link_farm_is_spam():
+    links = "".join(f'<a href="https://site{i}.example.com/">s{i}</a>' for i in range(160))
+    _, res = _toy(swap=("</body>", links + "</body>"))
+    assert res.reject == "spam"
+
+
+def test_http_page_rejected():
+    _, res = _toy(url="http://x.example.org/")
+    assert res.reject == "insecure: not https"
+
+
+def test_crypto_miner_rejected():
+    _, res = _toy(swap=("</body>", '<script src="https://coinhive.com/lib/coinhive.min.js"></script></body>'))
+    assert res.reject == "insecure: crypto-miner script"
+
+
+def test_outdated_tls_and_expired_cert_rejected():
+    assert _toy(tls={"version": "TLSv1", "days_left": 90})[1].reject == "insecure: outdated TLSv1"
+    assert _toy(tls={"version": "TLSv1.3", "days_left": -2})[1].reject == "insecure: expired certificate"
+
+
+def test_security_signals():
+    _, good = _toy(headers={"strict-transport-security": "max-age=1", "content-security-policy": "default-src 'self'"})
+    _, mixed = _toy(swap=("</body>", '<img src="http://cdn.example.org/a.png"></body>'))
+    _, pw = _toy(swap=("</body>", '<input type="password"></body>'))
+    assert good.breakdown["security"] == 5
+    assert mixed.breakdown["security"] < 0 and "mixed content x1" in mixed.reasons
+    assert "asks for a password" in pw.reasons
+    assert good.score > mixed.score

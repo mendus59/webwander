@@ -26,13 +26,13 @@ def evaluate(url: str, fetcher: Fetcher, corpus: Corpus, source: str = "") -> Ev
     norm = normalize(url)
     if not norm:
         return Evaluation(url, url, None, None, None, "bad url")
+    if norm.startswith("http://"):
+        norm = "https://" + norm[len("http://"):]  # only secure sites are suggested
     page = fetcher.fetch(norm)
-    if not page.ok and page.status == 0 and norm.startswith("https://"):
-        page = fetcher.fetch("http://" + norm[len("https://"):])  # http-only sites
     if not page.ok:
         return Evaluation(url, norm, None, None, None, page.error or f"http {page.status}")
     final = normalize(page.url) or norm
-    f = extract(final, page.html, page.headers, page.scripts)
+    f = extract(final, page.html, page.headers, page.scripts, tls=page.tls)
     fp = simhash(" ".join([f["title"], f["description"], f["headings"], f["text"]]))
     categories, cat_scores = tag(f)
     res = score(f, fp, corpus)
