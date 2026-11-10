@@ -603,6 +603,52 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "7191a57598772190dbe4",
+"url": "https://pixilic.com/",
+"domain": "pixilic.com",
+"registrableDomain": "pixilic.com",
+"title": "Hunter Fuller",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 5.0,
+"games": 3.0,
+"simulation": 3.0,
+"learning": 2.8,
+"photo": 2.43,
+"generators": 1.0,
+"dataviz": 0.43,
+"indieweb": 0.43
+},
+"score": 88,
+"scoreBreakdown": {
+"interactivity": 27,
+"independence": 20,
+"craft": 12,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "f804ac6c40ab800e",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "73be88ea617a6bd9dc30",
 "url": "https://codeberg.org/veqq/deforester",
 "domain": "codeberg.org",
@@ -933,48 +979,6 @@
 "_backlogAt": 1794295147.315128
 },
 {
-"id": "f674a933e2eab29adc77",
-"url": "https://getwaves.io/",
-"domain": "getwaves.io",
-"registrableDomain": "getwaves.io",
-"title": "Get Waves \u2013 Create SVG waves for your next design",
-"description": "A free SVG wave generator to make unique SVG waves for your next web design. Choose a curve, adjust complexity, randomize!",
-"image": "https://www.getwaves.io/static/getwaves-cover-ac8c651e2f1863b1e8df743f946fdf10.jpg",
-"categories": [
-"art",
-"toys"
-],
-"categoryScores": {
-"art": 8.7,
-"toys": 4.6,
-"generators": 3.5,
-"games": 3.0,
-"dataviz": 1.0,
-"simulation": 1.0
-},
-"score": 85,
-"scoreBreakdown": {
-"interactivity": 22,
-"independence": 18,
-"craft": 15,
-"novelty": 26,
-"security": 4,
-"penalties": 0
-},
-"reasons": [
-"uses canvas",
-"reacts to mouse/touch",
-"keyboard controls",
-"playful wording",
-"new domain"
-],
-"nearestSimilarity": 0.688,
-"simhash": "0cb408b76caf27f8",
-"frameable": true,
-"source": "seed",
-"_backlogAt": 1794296933.7764215
-},
-{
 "id": "3df3a78d95c58c904dc9",
 "url": "https://markon.com/update-seedless-lemons-10",
 "domain": "markon.com",
@@ -1014,6 +1018,121 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "ac07241e3095c948793f",
+"url": "https://haroldblackphd.com/2026/11/10/the-horn-of-africa-is-a-mess-a-dangerous-mess",
+"domain": "haroldblackphd.com",
+"registrableDomain": "haroldblackphd.com",
+"title": "The Horn of Africa is a mess \u2013 a dangerous mess",
+"description": "The Horn of Africa is a mess \u2013 a dangerous mess Almost completely ignored in the North American media is what is happening in the Horn of Africa where conflicts are pulling in conflicting national interests. Countries are picking sides and there is a threat of regional war that may pull in the United States,\u2026",
+"image": "https://i0.wp.com/haroldblackphd.com/wp-content/uploads/2026/11/screenshot-2026-11-09-at-6.04.03-am.png?fit=1200%2C1125&ssl=1",
+"categories": [
+"maps",
+"toys"
+],
+"categoryScores": {
+"maps": 4.71,
+"toys": 4.0,
+"history": 3.88,
+"games": 3.0,
+"politics": 1.94,
+"dataviz": 1.55,
+"simulation": 1.28,
+"nature": 1.11,
+"world": 1.11,
+"art": 1.0,
+"generators": 1.0,
+"weird": 0.83,
+"learning": 0.83,
+"indieweb": 0.83,
+"stories": 0.55,
+"science": 0.28,
+"food": 0.28,
+"math": 0.28,
+"provocative": 0.28
+},
+"score": 85,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 20,
+"craft": 14,
+"novelty": 25,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "c2428ee89b286435",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "bca7fb629ee08d77cba3",
+"url": "https://dorisvsutherland.com/2026/11/10/anniversary-with-the-vampire-the-claiming-of-sleeping-beauty-1983",
+"domain": "dorisvsutherland.com",
+"registrableDomain": "dorisvsutherland.com",
+"title": "Anniversary with the Vampire: The Claiming of Sleeping Beauty (1983) \u2013 Doris V. Sutherland",
+"description": "Anne Rice's fourth novel, The Claiming of Sleeping Beauty, is 269 pages long and contains 158 uses of the word \"buttocks\". Published in 1983, the book arose from a very specific set of frustrations occurring in Rice's life. The sequel to her debut hit, Interview with the Vampire, was taking time to come together. Her\u2026",
+"image": "https://dorisvsutherland.com/wp-content/uploads/2026/11/claimingsleepingbeauty.jpg",
+"categories": [
+"stories",
+"simulation",
+"toys",
+"mature"
+],
+"categoryScores": {
+"stories": 9.92,
+"simulation": 4.24,
+"toys": 4.0,
+"games": 3.49,
+"history": 3.22,
+"photo": 2.0,
+"weird": 1.48,
+"art": 1.0,
+"dataviz": 1.0,
+"generators": 1.0,
+"philosophy": 1.0,
+"provocative": 0.99,
+"programming": 0.74,
+"indieweb": 0.74,
+"learning": 0.49,
+"nature": 0.49,
+"food": 0.25,
+"politics": 0.25
+},
+"score": 85,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 18,
+"craft": 15,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "6babd23166507650",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "0f831e57fc8a4539581c",
@@ -1104,6 +1223,57 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "a241cb442dacd7f78d18",
+"url": "https://codingcraftsman.wordpress.com/2026/11/10/uncomfortably-in-between",
+"domain": "codingcraftsman.wordpress.com",
+"registrableDomain": "codingcraftsman.wordpress.com",
+"title": "Uncomfortably In Between \u2013 The Coding Craftsman",
+"description": "I have been impressed by Claude with Sonnet 5.5. It is able to replicate good coding patterns, has excellent attention to detail (unless it doesn't), understands end to end flows, and is able to navigate a large complex codebase effectively. I can give it a high level design in a few words and it gets\u2026",
+"image": "https://codingcraftsman.wordpress.com/wp-content/uploads/2026/10/image-4.png",
+"categories": [
+"programming",
+"games",
+"art"
+],
+"categoryScores": {
+"programming": 15.59,
+"games": 5.79,
+"art": 4.37,
+"toys": 4.29,
+"stories": 3.37,
+"history": 1.79,
+"generators": 1.58,
+"learning": 1.45,
+"dataviz": 1.29,
+"simulation": 1.0,
+"music": 0.87,
+"indieweb": 0.29
+},
+"score": 84,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "ed73cd4ba05a6669",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "5c672bb6190b584a3872",
@@ -1427,6 +1597,113 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "73bc5f56ab8b87710ba7",
+"url": "https://discoverthreejs.com/",
+"domain": "discoverthreejs.com",
+"registrableDomain": "discoverthreejs.com",
+"title": "Discover three.js!",
+"description": "",
+"image": "https://discoverthreejs.com/images/logo.png",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 11.43,
+"toys": 5.31,
+"learning": 3.97,
+"games": 3.62,
+"music": 3.62,
+"simulation": 3.62,
+"photo": 2.92,
+"maps": 2.73,
+"dataviz": 1.31,
+"art": 1.0,
+"stories": 0.62,
+"generators": 0.31,
+"math": 0.31,
+"philosophy": 0.31,
+"politics": 0.31,
+"world": 0.31
+},
+"score": 82,
+"scoreBreakdown": {
+"interactivity": 30,
+"independence": 18,
+"craft": 12,
+"novelty": 18,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing"
+],
+"nearestSimilarity": 0.719,
+"simhash": "eb0db3574e17392c",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "7259336402217574d5f7",
+"url": "https://the-easel.com/link/a-tribute-to-marisa-merz-arte-poveras-only-female-artist",
+"domain": "the-easel.com",
+"registrableDomain": "the-easel.com",
+"title": "The Easel | Art journalism",
+"description": "",
+"image": "",
+"categories": [
+"art",
+"toys"
+],
+"categoryScores": {
+"art": 9.93,
+"toys": 4.0,
+"stories": 3.26,
+"games": 3.0,
+"photo": 2.0,
+"generators": 1.88,
+"simulation": 1.88,
+"philosophy": 1.47,
+"maps": 0.88,
+"history": 0.88,
+"weird": 0.88,
+"science": 0.59,
+"learning": 0.29,
+"food": 0.29,
+"provocative": 0.29
+},
+"score": 82,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 18,
+"craft": 13,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "e7979af05385ec36",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "62319fb4e2cf20ae6805",
 "url": "https://monkeytype.com/",
 "domain": "monkeytype.com",
@@ -1467,6 +1744,108 @@
 "frameable": false,
 "source": "seed",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "e6d57eefff0c1f6de26f",
+"url": "https://react-simple-maps.io/",
+"domain": "react-simple-maps.io",
+"registrableDomain": "react-simple-maps.io",
+"title": "React Simple Maps",
+"description": "Create beautiful SVG map charts in React with d3-geo and TopoJSON using a declarative api.",
+"image": "https://www.react-simple-maps.io/images/react-simple-maps-og-cover.jpg",
+"categories": [
+"maps",
+"dataviz",
+"programming"
+],
+"categoryScores": {
+"maps": 13.81,
+"dataviz": 13.81,
+"programming": 6.46,
+"games": 2.39,
+"learning": 2.28,
+"toys": 2.0,
+"art": 1.39,
+"science": 0.39,
+"history": 0.39,
+"generators": 0.39,
+"math": 0.39
+},
+"score": 81,
+"scoreBreakdown": {
+"interactivity": 11,
+"independence": 20,
+"craft": 15,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "c88844734e797d41",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "07db1d6e0e8289e63a36",
+"url": "https://baeke.info/2026/11/10/agentgateway-an-open-source-ai-gateway-on-kubernetes",
+"domain": "baeke.info",
+"registrableDomain": "baeke.info",
+"title": "agentgateway: an open source AI gateway on Kubernetes \u2013 baeke.info",
+"description": "A few days ago I wrote about using Azure API Management as an AI gateway for your agents.",
+"image": "https://baeke.info/_astro/card.C08k7-7Z_mX7zk.png",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 16.57,
+"toys": 4.24,
+"games": 3.48,
+"dataviz": 2.19,
+"music": 2.0,
+"stories": 2.0,
+"generators": 1.95,
+"indieweb": 1.74,
+"simulation": 1.71,
+"learning": 1.43,
+"art": 1.0,
+"philosophy": 1.0,
+"world": 0.95,
+"food": 0.71,
+"math": 0.71,
+"politics": 0.71
+},
+"score": 81,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 18,
+"craft": 12,
+"novelty": 25,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "5830a309c734d89f",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "abd71645b4eaad9e3033",
@@ -1785,6 +2164,57 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "d3110fc727c7b94f0ed9",
+"url": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting",
+"domain": "the-easel.com",
+"registrableDomain": "the-easel.com",
+"title": "The Easel | Art journalism",
+"description": "",
+"image": "",
+"categories": [
+"art",
+"photo",
+"toys"
+],
+"categoryScores": {
+"art": 9.94,
+"photo": 5.26,
+"toys": 4.0,
+"stories": 3.26,
+"games": 3.0,
+"weird": 2.97,
+"generators": 1.88,
+"simulation": 1.59,
+"philosophy": 1.47,
+"maps": 0.88,
+"history": 0.88,
+"science": 0.29,
+"provocative": 0.29
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 18,
+"craft": 11,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "e7979af0d7e5ec77",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "839443518c839bff0ac9",
 "url": "https://maptiler.com/google-maps-platform-alternative",
 "domain": "maptiler.com",
@@ -2010,6 +2440,99 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "7eb475bf9a5158f63ca2",
+"url": "https://samalderson.co.uk/just-for-joy/crochet-and-ai-the-good-the-bad-and-the-ugly",
+"domain": "samalderson.co.uk",
+"registrableDomain": "samalderson.co.uk",
+"title": "Crochet and AI: the good the bad and the ugly | Sam Alderson",
+"description": "From fake crochet patterns to organising 190 balls of yarn, I explore the good and bad of AI in crochet and how Stitch & Loop helps me enjoy making.",
+"image": "https://www.samalderson.co.uk/wp-content/uploads/2026/11/crochet-googlebot-scaled.jpg",
+"categories": [
+"learning",
+"maps"
+],
+"categoryScores": {
+"learning": 7.62,
+"maps": 5.06,
+"generators": 2.77,
+"stories": 2.27,
+"games": 2.0,
+"toys": 2.0,
+"indieweb": 1.59,
+"photo": 1.06,
+"philosophy": 1.0,
+"weird": 0.8,
+"simulation": 0.53,
+"dataviz": 0.27
+},
+"score": 79,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "aab08935a587fe39",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "9c10f7e79c5d7f8d7cc8",
+"url": "https://kartoza.com/",
+"domain": "kartoza.com",
+"registrableDomain": "kartoza.com",
+"title": "Home \u00b7 Kartoza",
+"description": "Kartoza - Open Source Geospatial Solutions",
+"image": "https://kartoza.com/img/kartoza-og-image.svg",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"maps": 3.0,
+"programming": 2.5,
+"dataviz": 1.5,
+"weird": 1.5,
+"world": 1.5,
+"generators": 1.0,
+"simulation": 1.0
+},
+"score": 79,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 18,
+"craft": 9,
+"novelty": 27,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "95c04be1114a639b",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "2835ac416ed470e93320",
 "url": "https://geoparquet.io/",
 "domain": "geoparquet.io",
@@ -2172,50 +2695,6 @@
 "simhash": "a3a7b639ebbdd510",
 "frameable": true,
 "source": "link",
-"_backlogAt": 1794297998.5802603
-},
-{
-"id": "206ad538d3afc9fb142b",
-"url": "https://cssgridgenerator.io/",
-"domain": "cssgridgenerator.io",
-"registrableDomain": "cssgridgenerator.io",
-"title": "CSS Grid Generator (Drag & Drop)",
-"description": "CSS Grid Generator - a user-friendly tool designed for web developers to effortlessly create customizable CSS grids for seamless web development.",
-"image": "https://cssgridgenerator.io/thumbnail.png",
-"categories": [
-"programming",
-"generators",
-"toys"
-],
-"categoryScores": {
-"programming": 14.17,
-"generators": 14.12,
-"toys": 7.05,
-"art": 2.1,
-"learning": 2.02,
-"games": 2.0,
-"math": 1.05
-},
-"score": 78,
-"scoreBreakdown": {
-"interactivity": 12,
-"independence": 20,
-"craft": 12,
-"novelty": 30,
-"security": 4,
-"penalties": 0
-},
-"reasons": [
-"reacts to mouse/touch",
-"keyboard controls",
-"lightweight small-web page",
-"playful wording",
-"new domain"
-],
-"nearestSimilarity": 0.641,
-"simhash": "06ad110b79813016",
-"frameable": true,
-"source": "hn",
 "_backlogAt": 1794297998.5802603
 },
 {
@@ -2451,6 +2930,367 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "53ad1a4167516320cca2",
+"url": "https://tildes.net/~music/19jf/just_intonation_keyboard_play_music_without_knowing_music",
+"domain": "tildes.net",
+"registrableDomain": "tildes.net",
+"title": "Just intonation keyboard \u2013 play music without knowing music - ~music - Tildes",
+"description": "20 comments in the discussion of this link on Tildes",
+"image": "https://tildes.net/images/tildes-logo-144x144.png",
+"categories": [
+"music",
+"games"
+],
+"categoryScores": {
+"music": 9.11,
+"games": 8.53,
+"indieweb": 3.26,
+"toys": 2.77,
+"stories": 2.26,
+"learning": 1.8,
+"programming": 1.55,
+"history": 1.29,
+"generators": 1.0,
+"philosophy": 1.0,
+"science": 0.77,
+"weird": 0.77,
+"simulation": 0.77,
+"politics": 0.52,
+"dataviz": 0.26
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 15,
+"novelty": 26,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "ae941e0a41d10ba2",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "f8a9e2d4386067834ceb",
+"url": "https://vis.gl/",
+"domain": "vis.gl",
+"registrableDomain": "vis.gl",
+"title": "vis.gl",
+"description": "Open source tools for geospatial visualization",
+"image": "",
+"categories": [
+"maps",
+"programming",
+"dataviz"
+],
+"categoryScores": {
+"maps": 9.11,
+"programming": 6.44,
+"dataviz": 5.22,
+"toys": 3.0,
+"math": 2.67,
+"games": 2.0,
+"simulation": 2.0,
+"photo": 2.0,
+"history": 0.39,
+"politics": 0.39,
+"indieweb": 0.39
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 19,
+"independence": 18,
+"craft": 11,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "a9e62ebb31bc6e12",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "09a4872ef7f5804f4dc5",
+"url": "https://markdingemanse.net/publications/visuals/munsell-colours-mode-map",
+"domain": "markdingemanse.net",
+"registrableDomain": "markdingemanse.net",
+"title": "Munsell colours: mode map \u2013 Mark Dingemanse",
+"description": "",
+"image": "",
+"categories": [
+"maps",
+"toys"
+],
+"categoryScores": {
+"maps": 6.45,
+"toys": 4.0,
+"games": 3.0,
+"programming": 2.32,
+"simulation": 1.63,
+"art": 1.27,
+"world": 1.27,
+"dataviz": 0.63,
+"music": 0.32,
+"science": 0.32,
+"generators": 0.32,
+"nature": 0.32,
+"photo": 0.32,
+"indieweb": 0.32
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 20,
+"craft": 9,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "53a4905db4a671d5",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "f0e832dda8c8f3432cde",
+"url": "https://jmason.ie/2026/11/10/093804a.html",
+"domain": "jmason.ie",
+"registrableDomain": "jmason.ie",
+"title": "Justin's Linklog",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.56,
+"games": 3.56,
+"history": 2.61,
+"programming": 1.11,
+"generators": 1.0,
+"simulation": 1.0
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 20,
+"craft": 11,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "ebe67c9a881a703e",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "edcdce5c5c9be586d154",
+"url": "https://cogeo.org/",
+"domain": "cogeo.org",
+"registrableDomain": "cogeo.org",
+"title": "Cloud Optimized GeoTIFF",
+"description": "",
+"image": "",
+"categories": [
+"programming",
+"maps",
+"learning"
+],
+"categoryScores": {
+"programming": 6.36,
+"maps": 5.43,
+"learning": 4.2,
+"dataviz": 2.85,
+"toys": 2.54,
+"stories": 2.27,
+"weird": 2.04,
+"games": 2.0,
+"science": 1.08,
+"philosophy": 1.0,
+"generators": 0.81,
+"math": 0.81,
+"history": 0.54,
+"indieweb": 0.54,
+"art": 0.27,
+"world": 0.27
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 15,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "441200b66d74da66",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "2812f4195a5b2242e760",
+"url": "https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation",
+"domain": "investor.vanguard.com",
+"registrableDomain": "vanguard.com",
+"title": "Investment portfolios: Asset allocation models | Vanguard",
+"description": "Explore Vanguard's model portfolio allocation strategies. Learn how to build diversified portfolios that match your risk tolerance and investment goals.",
+"image": "https://investor.vanguard.com/content/dam/retail/digital/en/photos/as356487125-woman-surfboard.jpg",
+"categories": [
+"learning",
+"simulation",
+"maps"
+],
+"categoryScores": {
+"learning": 8.44,
+"simulation": 5.73,
+"maps": 4.2,
+"toys": 4.0,
+"games": 3.73,
+"stories": 2.24,
+"weird": 2.23,
+"dataviz": 1.73,
+"generators": 1.73,
+"world": 1.46,
+"art": 1.24,
+"philosophy": 1.24,
+"history": 0.73,
+"nature": 0.73,
+"politics": 0.73,
+"indieweb": 0.24
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 18,
+"craft": 12,
+"novelty": 26,
+"security": 5,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "5e7fa79250b99513",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "c39d667a1e64c09d99ef",
+"url": "https://the-easel.com/link/mariko-mori-predicted-the-future-shell-do-it-again",
+"domain": "the-easel.com",
+"registrableDomain": "the-easel.com",
+"title": "The Easel | Art journalism",
+"description": "",
+"image": "",
+"categories": [
+"art",
+"toys"
+],
+"categoryScores": {
+"art": 8.15,
+"toys": 4.0,
+"stories": 3.27,
+"games": 3.0,
+"photo": 2.0,
+"generators": 1.88,
+"philosophy": 1.77,
+"simulation": 1.59,
+"maps": 0.88,
+"history": 0.88,
+"weird": 0.88,
+"science": 0.29,
+"retro": 0.29,
+"politics": 0.29,
+"provocative": 0.29,
+"world": 0.29
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 20,
+"independence": 18,
+"craft": 11,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "e7979af0d3a5ec76",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "d81e553985c15fd8541d",
@@ -2794,6 +3634,51 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "235db6a13fd6bd36e76b",
+"url": "https://firstchurchofthesingularity.com/sermons/2026-11-10",
+"domain": "firstchurchofthesingularity.com",
+"registrableDomain": "firstchurchofthesingularity.com",
+"title": "The Agreement Nobody Gave \u2014 Church of the Singularity",
+"description": "Silence can look like agreement when correcting an error would expose how someone knows better.",
+"image": "https://firstchurchofthesingularity.com/images/sermons/2026-11-10.png",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 2.85,
+"games": 2.0,
+"toys": 2.0,
+"history": 1.06,
+"generators": 1.0,
+"maps": 0.35,
+"weird": 0.35,
+"stories": 0.35,
+"politics": 0.35
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 13,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "7fd516411d7b56c9",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "6913e1d76a89789ddca4",
 "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
 "domain": "nicholas.carlini.com",
@@ -2880,52 +3765,6 @@
 ],
 "nearestSimilarity": 0.641,
 "simhash": "0a5b64a6f8901b9b",
-"frameable": true,
-"source": "hn",
-"_backlogAt": 1794335017.5034382
-},
-{
-"id": "f71ed98f430c007d823a",
-"url": "https://mentalmathpro.com/",
-"domain": "mentalmathpro.com",
-"registrableDomain": "mentalmathpro.com",
-"title": "Mental Math Pro: Lean, practice, & improve your mental math",
-"description": "Build your mental math skills with free online practice, step-by-step strategies, and a daily challenge. Start a quick round with Mental Math Pro.",
-"image": "https://mentalmathpro.com/og_images/homepage-og.webp",
-"categories": [
-"math",
-"learning"
-],
-"categoryScores": {
-"math": 12.37,
-"learning": 8.32,
-"generators": 3.77,
-"games": 2.96,
-"toys": 2.0,
-"dataviz": 1.32,
-"art": 1.0,
-"maps": 0.96,
-"weird": 0.32,
-"indieweb": 0.32
-},
-"score": 76,
-"scoreBreakdown": {
-"interactivity": 14,
-"independence": 18,
-"craft": 15,
-"novelty": 30,
-"security": 4,
-"penalties": -5
-},
-"reasons": [
-"reacts to mouse/touch",
-"keyboard controls",
-"playful wording",
-"new domain",
-"commercial language x1"
-],
-"nearestSimilarity": 0.641,
-"simhash": "baa4c973342282ae",
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794335017.5034382
@@ -3189,6 +4028,48 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "9a53b13cccbd8102aadd",
+"url": "https://unbaited.danielpetho.com/",
+"domain": "unbaited.danielpetho.com",
+"registrableDomain": "danielpetho.com",
+"title": "unbaited - control your x feed with llms",
+"description": "a browser extension that helps you filter out engagement bait from x/twitter using ai",
+"image": "https://danielpetho.com/og.jpg",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 3.24,
+"toys": 2.44,
+"games": 2.0,
+"programming": 1.74,
+"politics": 1.74,
+"dataviz": 0.44,
+"provocative": 0.44
+},
+"score": 75,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 15,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "1cc107e10273694f",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "567ca4e0919efdcbf56b",
@@ -3914,6 +4795,48 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "ff75983e2d742287d9ab",
+"url": "https://cereal.ventures/",
+"domain": "cereal.ventures",
+"registrableDomain": "cereal.ventures",
+"title": "Cereal Ventures",
+"description": "A small team using design to make better things on the internet.",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"art": 3.1,
+"simulation": 1.6,
+"games": 1.0,
+"history": 0.6,
+"generators": 0.6,
+"learning": 0.6,
+"stories": 0.6
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 13,
+"independence": 18,
+"craft": 11,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "df92124499d8d942",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "b51e029ff4fd04588631",
 "url": "https://interactivetextbooks.tudelft.nl/showthephysics/intro.html",
 "domain": "interactivetextbooks.tudelft.nl",
@@ -3960,46 +4883,6 @@
 "simhash": "aba2640c05c91649",
 "frameable": true,
 "source": "link",
-"_backlogAt": 1794295147.315128
-},
-{
-"id": "9dce56bafdac471842eb",
-"url": "https://fractal.parts/",
-"domain": "fractal.parts",
-"registrableDomain": "fractal.parts",
-"title": "fractal.parts",
-"description": "",
-"image": "",
-"categories": [
-"toys",
-"math"
-],
-"categoryScores": {
-"toys": 4.0,
-"math": 4.0,
-"games": 3.0,
-"simulation": 1.0
-},
-"score": 72,
-"scoreBreakdown": {
-"interactivity": 17,
-"independence": 20,
-"craft": 4,
-"novelty": 29,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"uses canvas",
-"reacts to mouse/touch",
-"keyboard controls",
-"lightweight small-web page",
-"new domain"
-],
-"nearestSimilarity": 0.656,
-"simhash": "a982610700104000",
-"frameable": true,
-"source": "hn",
 "_backlogAt": 1794295147.315128
 },
 {
@@ -4535,6 +5418,113 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "c2ecef29ffbd159586cd",
+"url": "https://gridsagegames.com/cogmind",
+"domain": "gridsagegames.com",
+"registrableDomain": "gridsagegames.com",
+"title": "Home | Cogmind - A Sci-Fi Roguelike by Grid Sage Games",
+"description": "Cogmind, A Sci-Fi Roguelike by Grid Sage Games",
+"image": "",
+"categories": [
+"games",
+"toys"
+],
+"categoryScores": {
+"games": 11.53,
+"toys": 4.68,
+"maps": 2.03,
+"simulation": 1.68,
+"art": 0.68,
+"history": 0.68,
+"photo": 0.68,
+"politics": 0.68,
+"music": 0.34,
+"science": 0.34,
+"learning": 0.34,
+"stories": 0.34,
+"programming": 0.34,
+"indieweb": 0.34
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 20,
+"craft": 15,
+"novelty": 23,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.719,
+"simhash": "aab79530351d8d70",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "288c831777014d865419",
+"url": "https://squidfunk.github.io/mkdocs-material",
+"domain": "squidfunk.github.io",
+"registrableDomain": "squidfunk.github.io",
+"title": "Material for MkDocs",
+"description": "Write your documentation in Markdown and create a professional static site in minutes \u2013 searchable, customizable, in 60+ languages, for all devices",
+"image": "https://squidfunk.github.io/mkdocs-material/assets/images/social/index.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 7.65,
+"indieweb": 3.87,
+"learning": 3.82,
+"world": 3.08,
+"toys": 2.29,
+"maps": 2.08,
+"games": 2.0,
+"simulation": 1.79,
+"art": 1.58,
+"dataviz": 1.58,
+"generators": 1.58,
+"history": 0.58,
+"stories": 0.58,
+"politics": 0.58,
+"weird": 0.29,
+"nature": 0.29,
+"math": 0.29
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 20,
+"craft": 15,
+"novelty": 26,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "56637a5690db948c",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "c8c9f5a36ed7462b3578",
 "url": "https://cloudlord.management/",
 "domain": "cloudlord.management",
@@ -4947,6 +5937,52 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "3ad79bde49897d6cff73",
+"url": "https://justingarrison.com/blog/2021-03-15-the-document-culture-of-amazon",
+"domain": "justingarrison.com",
+"registrableDomain": "justingarrison.com",
+"title": "The Document Culture of Amazon - Justin Garrison",
+"description": "A look at Amazon's culture of writing and reading",
+"image": "https://justingarrison.com/img/document-culture-banner.jpg",
+"categories": [
+"world"
+],
+"categoryScores": {
+"world": 8.56,
+"stories": 3.34,
+"games": 2.28,
+"art": 1.28,
+"dataviz": 1.28,
+"generators": 1.28,
+"programming": 1.13,
+"learning": 0.84,
+"philosophy": 0.84,
+"music": 0.56,
+"indieweb": 0.56,
+"history": 0.28
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 12,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "cf1d3b2da22df856",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "1d775e345a3012e90fbd",
 "url": "https://decomp.dev/",
 "domain": "decomp.dev",
@@ -5195,6 +6231,121 @@
 "frameable": true,
 "source": "seed",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "b7cba71262d0856e39ce",
+"url": "https://trilogydata.dev/demo",
+"domain": "trilogydata.dev",
+"registrableDomain": "trilogydata.dev",
+"title": "Demo - Exploring the TPC-DS Dataset | Trilogy",
+"description": "Simply SQL",
+"image": "",
+"categories": [
+"dataviz",
+"programming",
+"toys"
+],
+"categoryScores": {
+"dataviz": 9.6,
+"programming": 9.1,
+"toys": 4.42,
+"simulation": 3.92,
+"games": 3.14,
+"maps": 2.52,
+"learning": 2.19,
+"stories": 2.0,
+"history": 1.96,
+"art": 1.46,
+"generators": 1.46,
+"math": 1.14,
+"philosophy": 1.0,
+"science": 0.46,
+"world": 0.46,
+"music": 0.23,
+"weird": 0.23,
+"indieweb": 0.23
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 20,
+"craft": 13,
+"novelty": 26,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "7962b77370499658",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "6b66bc3ed307012b1e92",
+"url": "https://deadsimpletech.com/blog/no-such-thing-as-just-a-tool",
+"domain": "deadsimpletech.com",
+"registrableDomain": "deadsimpletech.com",
+"title": "There's no such thing as Just a Tool | deadSimpleTech",
+"description": "Heidegger thinks about tools like so: a tool is something (a thing that has being in the Heideggerian sense, not necessarily an object) that represents an extension of human capabilities in some way. A tool is thus any kind of thing that *lets you do something you wouldn't otherwise have been able to*. The important (for us) conceptual leap here is that when a tool works well, or isn't broken, it ",
+"image": "https://deadsimpletech.com/_og/s/o_td4ocu.png",
+"categories": [
+"generators",
+"programming"
+],
+"categoryScores": {
+"generators": 9.69,
+"programming": 9.12,
+"learning": 2.87,
+"stories": 2.69,
+"toys": 2.23,
+"philosophy": 2.14,
+"games": 2.0,
+"indieweb": 1.73,
+"retro": 1.5,
+"food": 1.37,
+"art": 0.69,
+"maps": 0.69,
+"dataviz": 0.69,
+"weird": 0.69,
+"politics": 0.69,
+"science": 0.46,
+"simulation": 0.46,
+"world": 0.46,
+"history": 0.23,
+"nature": 0.23,
+"math": 0.23,
+"photo": 0.23
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 10,
+"novelty": 25,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "5a0999406883f4c8",
+"frameable": false,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "ee84aea5db0c1a2514fb",
@@ -5571,6 +6722,206 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "e76a72c5b7249d5a488b",
+"url": "https://histre.com/hn",
+"domain": "histre.com",
+"registrableDomain": "histre.com",
+"title": "Hacker News with Tags | histre",
+"description": "Smart Bookmarks with Notes, Highlights, History, and Sharing",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 6.68,
+"history": 2.82,
+"games": 2.32,
+"toys": 2.32,
+"science": 2.23,
+"learning": 1.27,
+"math": 1.27,
+"politics": 1.27,
+"art": 0.95,
+"music": 0.64,
+"maps": 0.64,
+"dataviz": 0.64,
+"stories": 0.64,
+"photo": 0.64,
+"indieweb": 0.64,
+"generators": 0.32,
+"weird": 0.32,
+"simulation": 0.32,
+"philosophy": 0.32,
+"world": 0.32
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "5e9577012ae4e871",
+"frameable": false,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "19134f85640039a1957f",
+"url": "https://mochijs.com/",
+"domain": "mochijs.com",
+"registrableDomain": "mochijs.com",
+"title": "mochi.js",
+"description": "Bun-native, raw-CDP browser automation. Relational fingerprint locking, JIT-installed spoofing, Chromium-native fetch. Leaves no crumbs.",
+"image": "https://mochijs.com/mochi-mascot.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 4.78,
+"games": 2.0,
+"simulation": 2.0,
+"toys": 1.36,
+"generators": 1.0,
+"music": 0.71
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 11,
+"novelty": 29,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"WebGL / 3D",
+"keyboard controls",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.656,
+"simhash": "20dca1af1006bf85",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "f43d731b5c1b0bb1251a",
+"url": "https://tris.fyi/",
+"domain": "tris.fyi",
+"registrableDomain": "tris.fyi",
+"title": "Tris Emmy Wilson",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 3.38,
+"indieweb": 2.25,
+"simulation": 2.0,
+"generators": 1.75,
+"programming": 1.51,
+"food": 1.13,
+"learning": 0.75,
+"games": 0.38,
+"music": 0.38,
+"science": 0.38,
+"nature": 0.38,
+"photo": 0.38,
+"politics": 0.38,
+"world": 0.38
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 20,
+"craft": 12,
+"novelty": 30,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"a spam/gambling term"
+],
+"nearestSimilarity": 0.641,
+"simhash": "01b0ae891e573a9c",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "df1bb029ecaed131d7b4",
+"url": "https://griffinberlste.in/blog/do-the-thing",
+"domain": "griffinberlste.in",
+"registrableDomain": "griffinberlste.in",
+"title": "Unfortunately you sometimes need to do the thing | Griffin Berlstein",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.43,
+"learning": 3.14,
+"simulation": 2.0,
+"stories": 1.14,
+"toys": 1.0,
+"games": 0.86,
+"weird": 0.86,
+"world": 0.86,
+"art": 0.57,
+"maps": 0.57,
+"generators": 0.57,
+"math": 0.57,
+"provocative": 0.57,
+"music": 0.29,
+"history": 0.29,
+"philosophy": 0.29,
+"indieweb": 0.29
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 14,
+"craft": 15,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "b0ed3ac69abf7f35",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "909ec78829c7a2b554b0",
 "url": "https://museumoftalkingboards.com/",
 "domain": "museumoftalkingboards.com",
@@ -5776,6 +7127,52 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "fe00183d2d50e4461107",
+"url": "https://coachmyrna.org/blog/gratitude-has-four-parts",
+"domain": "coachmyrna.org",
+"registrableDomain": "coachmyrna.org",
+"title": "Blog",
+"description": "At this time of year, we are encouraged to think about and express what we are grateful for.\u00a0 Whether it is during a classroom discussion, a sermon on the Sunday before Thanksgiving or around the...",
+"image": "http://www.coachmyrna.org/uploads/1/1/8/2/118237368/published/gratitude.jpg?1793984011",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 6.43,
+"history": 2.12,
+"toys": 2.0,
+"simulation": 1.24,
+"generators": 1.0,
+"retro": 1.0,
+"games": 0.93,
+"learning": 0.93,
+"weird": 0.62,
+"stories": 0.31,
+"provocative": 0.31
+},
+"score": 68,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 18,
+"craft": 15,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "063eeef0433cc32b",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "291f7060c85477f1f2de",
@@ -6322,6 +7719,47 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "672969fa8303f68092b0",
+"url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+"domain": "newsletter.eng-leadership.com",
+"registrableDomain": "eng-leadership.com",
+"title": "Good Culture is the Biggest Productivity Hack, Not AI",
+"description": "AI definitely helps with productivity, but only when you have the right culture in place first!",
+"image": "https://substackcdn.com/image/fetch/$s_!mpv7!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7e34287-d1ea-4437-960e-c80e70dd341e_1600x844.jpeg",
+"categories": [
+"world"
+],
+"categoryScores": {
+"world": 9.2,
+"toys": 2.0,
+"art": 1.0,
+"dataviz": 1.0,
+"generators": 1.0,
+"history": 0.6,
+"stories": 0.6,
+"politics": 0.6
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 10,
+"independence": 13,
+"craft": 9,
+"novelty": 30,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "c2a9d0d0f4c15ea8",
+"frameable": false,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "138a22c3b8839f1bb463",
 "url": "https://renderling.xyz/articles/wgsl-rs-beta-release.html",
 "domain": "renderling.xyz",
@@ -6651,6 +8089,188 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "278c640677546cd3d8b8",
+"url": "https://ludens.cl/paradise/turbine/turbine.html",
+"domain": "ludens.cl",
+"registrableDomain": "ludens.cl",
+"title": "The microhydro plant",
+"description": "setting up a microhydro installation",
+"image": "",
+"categories": [
+"nature"
+],
+"categoryScores": {
+"nature": 7.15,
+"retro": 3.0,
+"photo": 2.82,
+"stories": 2.41,
+"philosophy": 1.21,
+"games": 1.03,
+"generators": 0.82,
+"learning": 0.62,
+"art": 0.41,
+"maps": 0.21,
+"history": 0.21,
+"math": 0.21,
+"simulation": 0.21,
+"provocative": 0.21
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 13,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "9295491f0ac4ef3f",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "0593487680526f82b9c4",
+"url": "https://lepekhin.com/2025/06/22/DIY-Door-Fan-to-Fix-My-Groggy-Mornings",
+"domain": "lepekhin.com",
+"registrableDomain": "lepekhin.com",
+"title": "DIY Door Fan to Fix My Groggy Mornings | The Blog of Andrey Lepekhin",
+"description": "It all started with a comment from my doctor. He told me that, ideally, I should wake up like Mickey Mouse: bright, energetic, and ready to leap out of bed.",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 4.28,
+"art": 0.83,
+"weird": 0.83,
+"learning": 0.83,
+"programming": 0.83,
+"music": 0.55,
+"history": 0.55,
+"simulation": 0.55,
+"games": 0.28,
+"science": 0.28,
+"maps": 0.28,
+"generators": 0.28,
+"provocative": 0.28
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 15,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "3cc8775c9e942dc1",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "95cfa073e21210072543",
+"url": "https://docs.riscv.org/reference/rva23/v1.0",
+"domain": "docs.riscv.org",
+"registrableDomain": "riscv.org",
+"title": "RVA23 Profile :: RISC-V Ratified Specifications Library",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.94,
+"games": 2.0,
+"toys": 2.0,
+"stories": 1.41,
+"world": 1.41,
+"generators": 1.0,
+"learning": 0.94,
+"politics": 0.94
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 16,
+"craft": 7,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "73bed4e39812d200",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "6abd63a8f61e4e9218ed",
+"url": "https://holos.run/docs/v1alpha5/tutorial/overview",
+"domain": "holos.run",
+"registrableDomain": "holos.run",
+"title": "Overview | Holos",
+"description": "Learn how Holos integrates software into a holistic platform.",
+"image": "https://holos.run/img/holos-social-card.png",
+"categories": [
+"learning",
+"programming"
+],
+"categoryScores": {
+"learning": 8.08,
+"programming": 5.29,
+"photo": 2.69,
+"games": 2.4,
+"toys": 2.0,
+"dataviz": 1.98,
+"generators": 1.79,
+"food": 0.4,
+"indieweb": 0.4
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 14,
+"craft": 11,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "d020853ae6af8a6b",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "f724e2c31d227921dcdd",
@@ -7015,6 +8635,227 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "fae55d080faf78831614",
+"url": "https://pawel.orzech.me/2026/11/10/10-11-2026",
+"domain": "pawel.orzech.me",
+"registrableDomain": "orzech.me",
+"title": "10/11/2026",
+"description": "\ud83e\udee3\ud83e\udee3\ud83e\udee3",
+"image": "https://pawel.orzech.me/content/images/size/w1200/2026/11/upload_3115771010896108090.jpg",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"generators": 1.0,
+"history": 0.6,
+"photo": 0.6,
+"programming": 0.6
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 11,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "ef3274b3b81e1a23",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "addbc7e6211650da4f04",
+"url": "https://flowingdata.com/2026/11/10/geolocation-determined-with-background-airplane-noise",
+"domain": "flowingdata.com",
+"registrableDomain": "flowingdata.com",
+"title": "Geolocation determined with background airplane noise \u2013 FlowingData",
+"description": "FlowingData",
+"image": "https://flowingdata.com/wp-content/uploads/2026/11/doppler-curves-location.png",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 6.88,
+"dataviz": 2.76,
+"photo": 2.76,
+"toys": 2.0,
+"games": 1.46,
+"simulation": 1.0,
+"learning": 0.92,
+"art": 0.46,
+"maps": 0.46,
+"generators": 0.46
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 18,
+"craft": 11,
+"novelty": 24,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas"
+],
+"nearestSimilarity": 0.656,
+"simhash": "c3de9877ae84c3ca",
+"frameable": false,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "11069a195e8a6f360089",
+"url": "https://movingai.com/benchmarks/grids.html",
+"domain": "movingai.com",
+"registrableDomain": "movingai.com",
+"title": "2D Pathfinding Benchmarks",
+"description": "",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 4.32,
+"games": 1.33,
+"generators": 1.33,
+"dataviz": 1.0,
+"toys": 0.33,
+"math": 0.33
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 12,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "48324bd77dfc9f8b",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "d3af2bcd99c653caa1e7",
+"url": "https://sspaeth.de/2026/11/automount-drive-on-macos",
+"domain": "sspaeth.de",
+"registrableDomain": "sspaeth.de",
+"title": "Automount Drive on MacOS \u2013 Spaetzblog",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.31,
+"generators": 1.0,
+"dataviz": 0.92,
+"music": 0.61,
+"science": 0.61,
+"weird": 0.61,
+"indieweb": 0.61,
+"learning": 0.31
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 20,
+"craft": 9,
+"novelty": 30,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "567bc68492e6876f",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "30d875289b70d5be1baa",
+"url": "https://stallman.org/articles/on-hacking.html",
+"domain": "stallman.org",
+"registrableDomain": "stallman.org",
+"title": "On Hacking - Richard Stallman",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 7.16,
+"stories": 3.66,
+"art": 2.38,
+"indieweb": 1.98,
+"philosophy": 1.48,
+"weird": 1.43,
+"photo": 1.43,
+"games": 1.19,
+"music": 1.19,
+"maps": 1.19,
+"learning": 1.19,
+"food": 1.19,
+"provocative": 1.19,
+"politics": 0.71,
+"world": 0.71,
+"generators": 0.48,
+"toys": 0.24,
+"history": 0.24,
+"dataviz": 0.24,
+"retro": 0.24,
+"nature": 0.24,
+"math": 0.24,
+"simulation": 0.24
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 15,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "037b5b7bd5d49a4d",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "6e16d0e6ea0974be2c1f",
@@ -7403,6 +9244,258 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "a559223fea352835453c",
+"url": "https://sifter.org/~simon/journal/20130713.h.html",
+"domain": "sifter.org",
+"registrableDomain": "sifter.org",
+"title": "On Knowledge Representation",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"stories": 3.1,
+"indieweb": 3.0,
+"science": 2.2,
+"learning": 1.98,
+"math": 1.76,
+"programming": 1.76,
+"philosophy": 1.66,
+"world": 1.32,
+"maps": 1.1,
+"generators": 0.66,
+"nature": 0.66,
+"simulation": 0.66,
+"art": 0.44,
+"history": 0.44,
+"weird": 0.44,
+"toys": 0.22,
+"music": 0.22,
+"dataviz": 0.22,
+"food": 0.22,
+"photo": 0.22
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "e096eb011a056b31",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "ec6b5c57050dec004e45",
+"url": "https://hollywoodtarot.com/",
+"domain": "hollywoodtarot.com",
+"registrableDomain": "hollywoodtarot.com",
+"title": "Hollywood Tarot",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.29,
+"photo": 2.29,
+"games": 2.01,
+"learning": 1.44,
+"science": 1.15,
+"generators": 1.15,
+"maps": 0.86,
+"weird": 0.86,
+"simulation": 0.86,
+"philosophy": 0.58,
+"indieweb": 0.58,
+"history": 0.29,
+"dataviz": 0.29,
+"politics": 0.29,
+"world": 0.29
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "06ac4a37d82247a1",
+"frameable": false,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "28b72f263c537e6c4536",
+"url": "https://hermit-crabs.com/care.html",
+"domain": "hermit-crabs.com",
+"registrableDomain": "hermit-crabs.com",
+"title": "HERMIT-CRABS.COM",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"nature": 2.23,
+"food": 2.01,
+"stories": 2.0,
+"games": 1.34,
+"toys": 1.34,
+"maps": 1.34,
+"philosophy": 1.0,
+"learning": 0.89,
+"programming": 0.67,
+"simulation": 0.45,
+"world": 0.45,
+"music": 0.22,
+"science": 0.22,
+"history": 0.22,
+"dataviz": 0.22,
+"weird": 0.22,
+"math": 0.22,
+"provocative": 0.22
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 13,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "b06f12671d5b59d7",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "1ceabfe93bf15e4e15c1",
+"url": "https://phoronix.com/news/California-AB-1856-Passes",
+"domain": "phoronix.com",
+"registrableDomain": "phoronix.com",
+"title": "California Passes AB-1856 For Open-Source Relief Over Age Verification - Phoronix",
+"description": "As an update to the May story about California's age verification law may end up exempting most Linux distributions, that AB-1856 bill has finally passed!",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 2.81,
+"programming": 2.8,
+"generators": 1.0,
+"history": 0.93,
+"philosophy": 0.93,
+"politics": 0.93,
+"music": 0.31,
+"maps": 0.31,
+"nature": 0.31,
+"simulation": 0.31
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 16,
+"craft": 14,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "51e8d6fa06845d7d",
+"frameable": false,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "a16b345ce4b87b00503f",
+"url": "https://kerryunderwood.wordpress.com/2026/11/10/law-firm-numbers-lowest-since-records-began-514-close-their-doors-in-a-year",
+"domain": "kerryunderwood.wordpress.com",
+"registrableDomain": "kerryunderwood.wordpress.com",
+"title": "LAW FIRM NUMBERS LOWEST SINCE RECORDS BEGAN: 514 CLOSE THEIR DOORS IN A YEAR | Kerry Underwood",
+"description": "This first appeared in my Newsletter Kerry on Costs, Regulation, Legal Systems and so much more. Subscriptions are \u00a3250 + VAT for 2026, which is over 100 issues. Buy here. The number of law firms in England and Wales as at the end of September 2026 was 8,899 according to the Solicitors Regulation Authority and\u2026",
+"image": "https://secure.gravatar.com/blavatar/d05c22fd75d94b98de41d49a1bdc62d0691273745919d3e399cc033d15c31a1b?s=200&ts=1794310344",
+"categories": [
+"math"
+],
+"categoryScores": {
+"math": 9.73,
+"games": 3.0,
+"toys": 2.29,
+"history": 2.08,
+"politics": 1.73,
+"generators": 1.58,
+"indieweb": 1.15,
+"art": 1.0,
+"dataviz": 1.0,
+"simulation": 1.0,
+"learning": 0.58,
+"maps": 0.29
+},
+"score": 64,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 0,
+"craft": 14,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"keyboard controls",
+"2 ad network(s)",
+"cookie banner",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a4d62ad22d397527",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "e01d9b1704b3a76c064e",
@@ -8340,6 +10433,110 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "40e5d12790c03a2f7b2d",
+"url": "https://macsmotorcitygarage.com/1923-the-model-t-fords-biggest-year",
+"domain": "macsmotorcitygarage.com",
+"registrableDomain": "macsmotorcitygarage.com",
+"title": "1923: The Model T Ford's Biggest Year - Mac's Motor City GarageMac's Motor City Garage",
+"description": "In 1923, annual production of the Model T Ford reached the astounding rate of two million cars. Here\u2019s a look back at that remarkable year. \u00a0 How Henry Ford put America on wheels with the Model T is one of \u2026 Continue reading \u2192",
+"image": "https://macsmotorcitygarage.com/wp-content/uploads/2025/02/1923-Ford-Model-T-sedan-camping-.jpg",
+"categories": [
+"simulation",
+"maps"
+],
+"categoryScores": {
+"simulation": 10.25,
+"maps": 6.12,
+"learning": 3.44,
+"games": 3.0,
+"history": 2.12,
+"toys": 2.0,
+"generators": 1.0,
+"art": 0.62,
+"dataviz": 0.62,
+"stories": 0.31,
+"math": 0.31,
+"world": 0.31
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 0,
+"craft": 15,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"keyboard controls",
+"6 ad network(s)",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "8822dd01c13cc069",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "cc930f4bff26f23518b7",
+"url": "https://containersecurity.dev/blog/docker-sandboxes-development-environment",
+"domain": "containersecurity.dev",
+"registrableDomain": "containersecurity.dev",
+"title": "Use Docker Sandboxes as Your Development Environment - Container Security",
+"description": "Set up your development tools in Docker Sandboxes, control network access, and reuse your environment with snapshots and Dockerfile-based templates.",
+"image": "https://containersecurity.dev/sip/sip-sandbox.png",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 8.69,
+"toys": 4.73,
+"learning": 3.47,
+"stories": 2.49,
+"simulation": 2.24,
+"games": 2.0,
+"dataviz": 1.49,
+"generators": 1.25,
+"art": 1.0,
+"philosophy": 1.0,
+"nature": 0.98,
+"politics": 0.98,
+"maps": 0.49,
+"world": 0.49,
+"indieweb": 0.49,
+"science": 0.25,
+"history": 0.25,
+"food": 0.25
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 9,
+"novelty": 27,
+"security": 4,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.672,
+"simhash": "4028d8d0363575e2",
+"frameable": false,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "269819a9cc47fd82482e",
 "url": "https://thiswaifudoesnotexist.net/",
 "domain": "thiswaifudoesnotexist.net",
@@ -8863,6 +11060,93 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "7bf3e0f7208fb47bc45c",
+"url": "https://wolvesden.org/",
+"domain": "wolvesden.org",
+"registrableDomain": "wolvesden.org",
+"title": "Welcome to the Wolvesden",
+"description": "An entertaining site with plenty of photos of family and wolves as well as a games section full of free and educational java games.",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.5,
+"photo": 2.5
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 10,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "4612905128cf4635",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "ff425fd8f88a1ba9b567",
+"url": "https://nove.dev/blog/katamari-architecture",
+"domain": "nove.dev",
+"registrableDomain": "nove.dev",
+"title": "katamari architecture | nove.dev",
+"description": "",
+"image": "https://nove.dev/katamari fortissimo damacy.jpg",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 3.31,
+"learning": 1.93,
+"dataviz": 0.83,
+"weird": 0.83,
+"nature": 0.83,
+"games": 0.55,
+"art": 0.55,
+"science": 0.55,
+"generators": 0.55,
+"stories": 0.55,
+"math": 0.55,
+"philosophy": 0.55,
+"provocative": 0.55,
+"toys": 0.28,
+"maps": 0.28,
+"simulation": 0.28,
+"photo": 0.28,
+"politics": 0.28,
+"indieweb": 0.28
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 12,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "7215314fd85df26f",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "0d770f1c7f5eb80cdfb4",
 "url": "https://aras-p.info/blog/2026/10/05/Unroll-a-loop-make-shader-10x-faster",
 "domain": "aras-p.info",
@@ -9290,6 +11574,87 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "d519b3eda330cc50707b",
+"url": "https://theoo.dev/notes/living-life-like-a-video-game",
+"domain": "theoo.dev",
+"registrableDomain": "theoo.dev",
+"title": "theoodotdev",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.45,
+"simulation": 2.45,
+"photo": 2.45,
+"maps": 1.26,
+"generators": 0.95,
+"learning": 0.63,
+"nature": 0.63,
+"weird": 0.32,
+"food": 0.32,
+"programming": 0.32
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 15,
+"novelty": 21,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.75,
+"simhash": "c5c038a442ea9c92",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "ffe2dc3d5e193409ecee",
+"url": "https://tonyhschu.ca/",
+"domain": "tonyhschu.ca",
+"registrableDomain": "tonyhschu.ca",
+"title": "Tony Chu",
+"description": "Welcome to my website!",
+"image": "https://tonyhschu.ca/og/default.png",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 1.2,
+"art": 0.6,
+"history": 0.6,
+"stories": 0.6
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 11,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "c41872a84b550a41",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "5b4e9184a503ccc62530",
 "url": "https://jetcafe.org/~dave/usenet/phil.html",
 "domain": "jetcafe.org",
@@ -9620,6 +11985,157 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "12201bd294893405210b",
+"url": "https://azgaar.github.io/Fantasy-Map-Generator",
+"domain": "azgaar.github.io",
+"registrableDomain": "azgaar.github.io",
+"title": "Azgaar's Fantasy Map Generator",
+"description": "Free web app that helps fantasy writers, game masters, and cartographers create and edit fantasy maps",
+"image": "images/preview.png",
+"categories": [
+"maps",
+"generators"
+],
+"categoryScores": {
+"maps": 8.3,
+"generators": 5.6,
+"indieweb": 3.0,
+"games": 2.5
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 7,
+"novelty": 25,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "069294c857dd90e8",
+"frameable": true,
+"source": "seed",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "894c8da26a6b0dc013fa",
+"url": "https://kyles-lab.com/",
+"domain": "kyles-lab.com",
+"registrableDomain": "kyles-lab.com",
+"title": "Kyle's Lab / Minecraft Retro SciFi",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 10.73,
+"history": 1.67,
+"games": 1.12,
+"programming": 1.12,
+"art": 0.56,
+"food": 0.56
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 26,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "210760a9049d1758",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "b4ac5440ae64e4b8e742",
+"url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/CHANGELOG.md",
+"domain": "codeberg.org",
+"registrableDomain": "codeberg.org",
+"title": "Cookie monster!",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 0.6,
+"programming": 0.6
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "13d0a66ba010d014",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "6ffbe0a5cb444a2287a1",
+"url": "https://lists.freepascal.org/fpc-announce/2013-February/000587.html",
+"domain": "lists.freepascal.org",
+"registrableDomain": "freepascal.org",
+"title": "[fpc-announce] Feature announcement: Type helpers",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"programming": 2.07,
+"learning": 0.3,
+"provocative": 0.3,
+"world": 0.3
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 7,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "b7317300021f0400",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "062c44e988521d713845",
 "url": "https://cs.stanford.edu/people/karpathy/advice.html",
 "domain": "cs.stanford.edu",
@@ -9891,6 +12407,218 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "4fea38b170dae2db3780",
+"url": "https://math.columbia.edu/~bayer/Chitarra",
+"domain": "math.columbia.edu",
+"registrableDomain": "columbia.edu",
+"title": "Making a Pasta Guitar",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 3.0,
+"stories": 2.21,
+"photo": 2.0,
+"music": 1.68,
+"philosophy": 1.63,
+"learning": 1.47,
+"food": 1.47,
+"math": 1.26,
+"art": 1.05,
+"dataviz": 0.63,
+"weird": 0.63,
+"toys": 0.42,
+"nature": 0.42,
+"generators": 0.21,
+"world": 0.21
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "c1c5daf1d53d7ff9",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "68fe613cab008b5232e1",
+"url": "https://nightcraft.dev/",
+"domain": "nightcraft.dev",
+"registrableDomain": "nightcraft.dev",
+"title": "Nightcraft",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 1.8,
+"dataviz": 0.6
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 7,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "406405058802701b",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "7a3f1d10d617f0db5768",
+"url": "https://query.44203.online/",
+"domain": "query.44203.online",
+"registrableDomain": "44203.online",
+"title": "Query \u0394-44203 Online",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 0.47,
+"programming": 0.47,
+"politics": 0.47
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "c8f0b898149588d7",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "40523e6286df401c51a7",
+"url": "https://showbizpizza.com/tomspunchout",
+"domain": "showbizpizza.com",
+"registrableDomain": "showbizpizza.com",
+"title": "RedTom`s Punch-Out!! Page",
+"description": "This page covers any information related to the NES classic Mike Tyson`s Punch-Out!!",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"games": 1.59,
+"maps": 1.06,
+"music": 0.53,
+"history": 0.53,
+"weird": 0.53,
+"programming": 0.53
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 10,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "e93a683ce1e01a86",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "19b8d9869012b56cd294",
+"url": "https://christinasouch.com/blog/the-missing-slider",
+"domain": "christinasouch.com",
+"registrableDomain": "christinasouch.com",
+"title": "The Missing Slider - Christina Souch",
+"description": "Built so that \"we can take steps.\" Unfortunately, the model leaves the steps out.",
+"image": "/static/images/blog/featured_20260920_222622_9cce6d78.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 4.26,
+"simulation": 3.25,
+"politics": 2.76,
+"music": 2.5,
+"stories": 2.5,
+"philosophy": 2.0,
+"math": 1.51,
+"generators": 1.25,
+"weird": 1.0,
+"maps": 0.75,
+"learning": 0.75,
+"indieweb": 0.5,
+"games": 0.25,
+"art": 0.25,
+"science": 0.25,
+"dataviz": 0.25,
+"photo": 0.25
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 15,
+"novelty": 23,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.719,
+"simhash": "653ceccd9ff97b66",
+"frameable": false,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "21ee84d5f1421fd60434",
 "url": "https://sp4comm.org/",
 "domain": "sp4comm.org",
@@ -10141,6 +12869,105 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "ef9147eb45bc51758ac3",
+"url": "https://computer.rip/2021-11-06-smart-audio-for-the-smart-home.html",
+"domain": "computer.rip",
+"registrableDomain": "computer.rip",
+"title": "smart audio for the smart home",
+"description": "",
+"image": "https://computer.rip/static/social-icon.png",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 7.53,
+"games": 2.03,
+"stories": 2.0,
+"programming": 1.36,
+"philosophy": 1.0,
+"weird": 0.9,
+"learning": 0.9,
+"retro": 0.9,
+"dataviz": 0.68,
+"simulation": 0.68,
+"maps": 0.45,
+"history": 0.45,
+"photo": 0.45,
+"math": 0.23,
+"politics": 0.23,
+"indieweb": 0.23
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 31,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.625,
+"simhash": "15db45068b4dafc8",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "07b5c81ed9acc5b469c5",
+"url": "https://fishbowl.pastiche.org/2026/10/23/hibernate-origin-story",
+"domain": "fishbowl.pastiche.org",
+"registrableDomain": "pastiche.org",
+"title": "The Hibernate Origin Story (Outsider Edition) - The Fishbowl",
+"description": "I had nothing to do with the development of Hibernate, except that I happened to be in the room at the time holding a beer. But it is still a fun story.",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 10.66,
+"food": 2.79,
+"programming": 2.31,
+"learning": 1.73,
+"history": 1.44,
+"art": 0.29,
+"dataviz": 0.29,
+"weird": 0.29,
+"nature": 0.29,
+"math": 0.29,
+"simulation": 0.29,
+"photo": 0.29,
+"philosophy": 0.29,
+"indieweb": 0.29
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 16,
+"craft": 15,
+"novelty": 27,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "314887530216bd10",
+"frameable": false,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "69bc6555f9291aadc474",
@@ -10589,6 +13416,95 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "4eb56d5d7c83ca2109dc",
+"url": "https://leftfield.org/~rawdon",
+"domain": "leftfield.org",
+"registrableDomain": "leftfield.org",
+"title": "Michael Rawdon's Home Page",
+"description": "",
+"image": "",
+"categories": [
+"stories",
+"retro"
+],
+"categoryScores": {
+"stories": 5.82,
+"retro": 4.0,
+"indieweb": 3.35,
+"games": 2.91,
+"science": 2.91,
+"music": 2.56,
+"politics": 2.56,
+"maps": 1.06,
+"history": 1.06,
+"learning": 0.7,
+"art": 0.35,
+"weird": 0.35,
+"nature": 0.35,
+"simulation": 0.35,
+"photo": 0.35,
+"provocative": 0.35
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 12,
+"novelty": 29,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"mixed content x2"
+],
+"nearestSimilarity": 0.656,
+"simhash": "b2134af85087459d",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "ba133d566ce8b076b6b6",
+"url": "https://erik.thauvin.net/blog/posts/11530/toots-du-jour-nov-9",
+"domain": "erik.thauvin.net",
+"registrableDomain": "thauvin.net",
+"title": "Toots du Jour (Nov 9) \u2013 Erik's Weblog",
+"description": "The Truth is Out There.",
+"image": "https://erik.thauvin.net/images/blog/cat/mastodon2.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.0,
+"learning": 0.6,
+"stories": 0.6,
+"math": 0.6
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 16,
+"craft": 9,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "83580e076551e538",
+"frameable": false,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "21cdb24ff324c3afcdb7",
 "url": "https://moonwater.com/",
 "domain": "moonwater.com",
@@ -10871,6 +13787,248 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "4a0c774598f4259e2191",
+"url": "https://slides.com/pricing",
+"domain": "slides.com",
+"registrableDomain": "slides.com",
+"title": "Pricing and Plans | Slides",
+"description": "Our flexible plans \u2014 ranging from free, to individual paid plans and Team accounts.",
+"image": "https://static.slid.es/logo/v3/slides-symbol.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.91,
+"generators": 1.36,
+"art": 1.0,
+"dataviz": 1.0,
+"photo": 0.73,
+"maps": 0.36,
+"weird": 0.36,
+"politics": 0.36
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 16,
+"craft": 13,
+"novelty": 29,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.656,
+"simhash": "941cfd2b732ae9bb",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "027e3cb1d95bca3b4a1a",
+"url": "https://docs.unity.com/en-us/engine/6000.6/manual/analysis/graphics-performance-profiling/optimizing-graphics-performance",
+"domain": "docs.unity.com",
+"registrableDomain": "unity.com",
+"title": "Reduce rendering work on the CPU or GPU \u2022 Graphics performance and profiling \u2022 6000.6 \u2022 Unity Editor",
+"description": "Reduce the amount of rendering on the CPU or the GPU, or increase the rendering frame rate.",
+"image": "https://docs.unity.com/api/og/getImage?locale=en-US&siteTitle=Unity+Editor+%E2%80%A2+Unity+Docs&title=Reduce+rendering+work+on+the+CPU+or+GPU&description=Reduce+the+amount+of+rendering+on+the+CPU+or+the+GPU%2C+or+increase+the+rendering+frame+rate.&readingTime=6",
+"categories": [
+"generators",
+"programming"
+],
+"categoryScores": {
+"generators": 5.82,
+"programming": 4.74,
+"learning": 2.87,
+"dataviz": 2.1,
+"stories": 2.0,
+"games": 1.64,
+"math": 1.64,
+"photo": 1.1,
+"art": 1.0,
+"philosophy": 1.0,
+"toys": 0.82,
+"science": 0.82,
+"politics": 0.82,
+"simulation": 0.55,
+"music": 0.27,
+"maps": 0.27,
+"weird": 0.27,
+"retro": 0.27,
+"food": 0.27,
+"world": 0.27,
+"indieweb": 0.27
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 12,
+"craft": 11,
+"novelty": 29,
+"security": 4,
+"penalties": -6
+},
+"reasons": [
+"cookie banner",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.656,
+"simhash": "c7fc8c1779433268",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "0d0297cc6f9478624b79",
+"url": "https://tacobelllabs.net/@miakizz",
+"domain": "tacobelllabs.net",
+"registrableDomain": "tacobelllabs.net",
+"title": "famous mutual (@miakizz@tacobelllabs.net) - Taco Bell Labs",
+"description": "1.53K Posts, 557 Following, 835 Followers \u00b7 Mia NW. Kiesman\nmuch like a strawberry, i am sometimes in grocery stores\npfp @adyrd, banner @flamingspork\n\nFollow reqs bc I post followers only sometimes, just have a profile :3\n\nThe statements and opinions contained herein represent the opinions of YOUR employer",
+"image": "https://media.tacobelllabs.net/accounts/avatars/114/118/840/585/009/436/original/2d9834286d3d3fb4.jpg",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"toys": 2.0
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 7,
+"novelty": 29,
+"security": 5,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "ca66092690bea1bd",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "b53e10d8c1af6b14f038",
+"url": "https://blog.melashri.net/posts/scientific-linux-mistake",
+"domain": "blog.melashri.net",
+"registrableDomain": "melashri.net",
+"title": "Abandoning Scientific Linux Was a Mistake | Mohamed Elashri",
+"description": "CERN's move to Debian for accelerator control systems is a reminder that Scientific Linux was worth more than the small team required to maintain it.",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 2.5,
+"programming": 1.76,
+"science": 1.26,
+"history": 1.26,
+"philosophy": 1.25,
+"learning": 1.01,
+"simulation": 1.01,
+"weird": 0.5,
+"world": 0.5,
+"indieweb": 0.5,
+"maps": 0.25,
+"dataviz": 0.25,
+"math": 0.25
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 11,
+"novelty": 29,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.656,
+"simhash": "0aadaa00d3184f85",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "5fd74cb183c58b7b8e17",
+"url": "https://sheets.works/data-viz/holding-up-the-internet",
+"domain": "sheets.works",
+"registrableDomain": "sheets.works",
+"title": "The People Holding Up the Internet: Who Maintains Open Source",
+"description": "Four billion phones ask one text file what time it is, kept by a UCLA lecturer in his spare time. We counted who maintains the code under your phone.",
+"image": "https://sheets.works/og-holding-up-the-internet.png",
+"categories": [
+"programming",
+"stories",
+"toys"
+],
+"categoryScores": {
+"programming": 12.1,
+"stories": 5.45,
+"toys": 4.0,
+"games": 2.71,
+"learning": 2.23,
+"maps": 1.71,
+"history": 1.46,
+"simulation": 1.0,
+"philosophy": 1.0,
+"science": 0.97,
+"dataviz": 0.73,
+"nature": 0.73,
+"photo": 0.73,
+"generators": 0.49,
+"retro": 0.49,
+"math": 0.49,
+"politics": 0.49,
+"art": 0.24,
+"weird": 0.24,
+"world": 0.24,
+"indieweb": 0.24
+},
+"score": 55,
+"scoreBreakdown": {
+"interactivity": 13,
+"independence": 16,
+"craft": 8,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a9d48ed481225c59",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "8c0a13ddf7ff5b1804d5",
 "url": "https://evanmiller.org/dont-kill-math.html",
 "domain": "evanmiller.org",
@@ -11090,45 +14248,6 @@
 "_backlogAt": 1794335017.5034382
 },
 {
-"id": "04c14b23bfec8e866bc3",
-"url": "https://figure.game/",
-"domain": "figure.game",
-"registrableDomain": "figure.game",
-"title": "Figure",
-"description": "Figure is a daily logic puzzle game, free to play right in your browser. Clear all the tiles before running out of moves!",
-"image": "/api/og?p=1598",
-"categories": [
-"games",
-"math"
-],
-"categoryScores": {
-"games": 9.5,
-"math": 5.0,
-"toys": 2.0
-},
-"score": 54,
-"scoreBreakdown": {
-"interactivity": 9,
-"independence": 20,
-"craft": 7,
-"novelty": 29,
-"security": 4,
-"penalties": -15
-},
-"reasons": [
-"reacts to mouse/touch",
-"keyboard controls",
-"lightweight small-web page",
-"new domain",
-"very little content"
-],
-"nearestSimilarity": 0.656,
-"simhash": "3a123a38b1a04405",
-"frameable": true,
-"source": "hn",
-"_backlogAt": 1794335017.5034382
-},
-{
 "id": "4bd5cdec76a76dd0e8b7",
 "url": "https://themagicofcode.com/sample",
 "domain": "themagicofcode.com",
@@ -11287,6 +14406,185 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "f348ae511d573b6c022d",
+"url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/testing-and-optimizing-your-content?application_version=5.6",
+"domain": "dev.epicgames.com",
+"registrableDomain": "epicgames.com",
+"title": "dev.epicgames.com",
+"description": "",
+"image": "",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 3.16,
+"generators": 2.98,
+"programming": 1.58,
+"games": 1.19,
+"dataviz": 1.19,
+"music": 0.4,
+"philosophy": 0.4
+},
+"score": 53,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 7,
+"novelty": 23,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.719,
+"simhash": "7127fa87609af568",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "5a318f8845ff976527f2",
+"url": "https://tombh.co.uk/religious-studies-in-software-engineering",
+"domain": "tombh.co.uk",
+"registrableDomain": "tombh.co.uk",
+"title": "Religious Studies In Software Engineering",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 9.86,
+"stories": 3.94,
+"philosophy": 3.37,
+"simulation": 2.58,
+"politics": 2.58,
+"history": 1.51,
+"learning": 1.29,
+"world": 1.29,
+"weird": 1.08,
+"music": 0.86,
+"indieweb": 0.86,
+"art": 0.65,
+"science": 0.65,
+"maps": 0.65,
+"provocative": 0.65,
+"games": 0.22,
+"dataviz": 0.22,
+"generators": 0.22,
+"retro": 0.22,
+"nature": 0.22,
+"photo": 0.22
+},
+"score": 53,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 7,
+"novelty": 29,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.656,
+"simhash": "704bebeeec5d1f99",
+"frameable": true,
+"source": "lobsters",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "8707539d86cab6534c6d",
+"url": "https://golly.sourceforge.io/",
+"domain": "golly.sourceforge.io",
+"registrableDomain": "sourceforge.io",
+"title": "Golly Game of Life Home Page",
+"description": "",
+"image": "",
+"categories": [
+"simulation",
+"games"
+],
+"categoryScores": {
+"simulation": 5.54,
+"games": 5.16,
+"programming": 2.7,
+"math": 1.16,
+"retro": 1.0,
+"history": 0.77,
+"generators": 0.77,
+"toys": 0.39,
+"art": 0.39,
+"science": 0.39
+},
+"score": 53,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 27,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"mixed content x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "37e157dde4f31f4a",
+"frameable": true,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "8cd334b35f6327658f8b",
+"url": "https://fosstodon.org/@qgis",
+"domain": "fosstodon.org",
+"registrableDomain": "fosstodon.org",
+"title": "QGIS (@qgis@fosstodon.org) - Fosstodon",
+"description": "402 Posts, 59 Following, 4.62K Followers \u00b7 Official account of QGIS - the user friendly Open Source Geographic Information System",
+"image": "https://cdn.fosstodon.org/accounts/avatars/109/267/502/436/106/673/original/84afdbe495898b6d.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 53,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 7,
+"novelty": 27,
+"security": 5,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.672,
+"simhash": "5074053d1d8030ad",
+"frameable": false,
+"source": "link",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "c04296c65f2750ed2215",
@@ -11558,6 +14856,84 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "02ca290bfed7e5f841a0",
+"url": "https://jonathans-stories.com/",
+"domain": "jonathans-stories.com",
+"registrableDomain": "jonathans-stories.com",
+"title": "Jonathan Mitchell's Story Page",
+"description": "The Website of Author Jonathan Mitchell",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 6.8,
+"retro": 3.93,
+"indieweb": 1.4,
+"games": 0.47,
+"history": 0.47
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 29,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"mixed content x2"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a552fb11c87c4780",
+"frameable": true,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
+"id": "a911e6521f6a32d90d42",
+"url": "https://sqlscope.netlify.app/",
+"domain": "sqlscope.netlify.app",
+"registrableDomain": "sqlscope.netlify.app",
+"title": "SQL Scope",
+"description": "A website to convert SQL queries between different dialects",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 9.5,
+"world": 2.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "28c957470b126178",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "fdc3ec86079b010d9028",
@@ -11954,6 +15330,50 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "2953f3fbeeb7b5382785",
+"url": "https://michaelgogins.tumblr.com/post/832890905053872128/the-spirit-of-mathematics",
+"domain": "michaelgogins.tumblr.com",
+"registrableDomain": "michaelgogins.tumblr.com",
+"title": "Michael Gogins \u2014 The Spirit of Mathematics",
+"description": "The Spirit of Mathematics",
+"image": "",
+"categories": [
+"math"
+],
+"categoryScores": {
+"math": 9.51,
+"music": 2.01,
+"stories": 2.01,
+"learning": 1.51,
+"photo": 1.0,
+"philosophy": 1.0,
+"science": 0.5,
+"history": 0.5,
+"programming": 0.5,
+"politics": 0.5
+},
+"score": 50,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 10,
+"craft": 15,
+"novelty": 21,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"1 ad network(s)",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.75,
+"simhash": "f9a176a0e56891fc",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "c39c20a419bea07216e6",
@@ -12421,6 +15841,46 @@
 "_backlogAt": 1794335017.5034382
 },
 {
+"id": "1a708a2dd0a4efbfbef0",
+"url": "https://pomodorr.io/",
+"domain": "pomodorr.io",
+"registrableDomain": "pomodorr.io",
+"title": "Pomodoro Global",
+"description": "Pomodoro Global is a great way to focus on any task like studying, writing, or coding with others because you don't need to sign up for an account. Just share the URL so your friends can join \ud83c\udf45",
+"image": "icons/logo.png",
+"categories": [
+"world"
+],
+"categoryScores": {
+"world": 6.5,
+"stories": 2.5,
+"programming": 2.5,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 47,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 26,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.688,
+"simhash": "88b4300c2d8c38e7",
+"frameable": true,
+"source": "hn",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
+},
+{
 "id": "e8c44f81f66c54df1540",
 "url": "https://global-change-data-lab.org/",
 "domain": "global-change-data-lab.org",
@@ -12537,6 +15997,43 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "fef04aa3f8b76405505e",
+"url": "https://goldrushgallery.com/",
+"domain": "goldrushgallery.com",
+"registrableDomain": "goldrushgallery.com",
+"title": "Gold Rush Gallery, Inc. - vhost24",
+"description": "",
+"image": "",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 5.2,
+"history": 1.8,
+"retro": 1.0
+},
+"score": 46,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 26,
+"security": 4,
+"penalties": -10
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"a spam/gambling term"
+],
+"nearestSimilarity": 0.688,
+"simhash": "69845cd7b9f207a1",
+"frameable": false,
+"source": "wiby",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 },
 {
 "id": "7e9ffe6827301a64241b",
@@ -12682,5 +16179,55 @@
 "frameable": true,
 "source": "wiby",
 "_backlogAt": 1794335017.5034382
+},
+{
+"id": "bf1d9a921bc441e1a298",
+"url": "https://avelino.run/more-review-is-not-better-review",
+"domain": "avelino.run",
+"registrableDomain": "avelino.run",
+"title": "More review is not better review - Thiago Avelino",
+"description": "Half the pull requests in our monolith reached main without a human reading them. I turned on a strict review gate, turned it off three days later, and rebuilt review at Buser in layers. These are the numbers from each step.",
+"image": "https://avelino.run/og/blog/2026-11-more-review-is-not-better-review.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 3.29,
+"math": 3.27,
+"stories": 2.51,
+"nature": 2.04,
+"learning": 1.02,
+"philosophy": 1.0,
+"weird": 0.77,
+"simulation": 0.77,
+"generators": 0.51,
+"world": 0.51,
+"indieweb": 0.51,
+"games": 0.26,
+"art": 0.26,
+"music": 0.26,
+"maps": 0.26,
+"dataviz": 0.26,
+"retro": 0.26
+},
+"score": 45,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 16,
+"craft": 8,
+"novelty": 27,
+"security": 4,
+"penalties": -10
+},
+"reasons": [
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.672,
+"simhash": "57db726288cf45a0",
+"frameable": true,
+"source": "smallweb",
+"crawlerVersion": "1.10.0",
+"_backlogAt": 1794342923.9032292
 }
 ]
