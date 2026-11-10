@@ -42,9 +42,11 @@
         <button data-status="proposed" class="on">Proposed</button>
         <button data-status="approved">Approved</button>
         <button data-status="rejected">Rejected</button>
+        <button data-status="queued" title="Added by hand or suggested by visitors, waiting for the crawler to score them">Queued</button>
+        <button data-status="backlog" title="Good sites held back to keep categories balanced">Backlog</button>
       </nav>
 
-      <div class="toolbar">
+      <div class="toolbar" id="toolbar">
         <label class="check"><input type="checkbox" id="select-all"> select all</label>
         <span class="muted small" id="selected-count"></span>
         <div class="spacer"></div>
@@ -63,6 +65,7 @@
     <div class="row"><strong id="preview-title"></strong><div class="spacer"></div>
       <a id="preview-open" class="ghost-btn" target="_blank" rel="noopener">Open ↗</a>
       <button class="ghost-btn" id="preview-close">Close</button></div>
+    <p id="preview-note" class="muted center" hidden>This site doesn't allow being shown inside another page. Use "Open ↗" to see it.</p>
     <iframe id="preview-frame" title="Preview" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
   </dialog>
 
