@@ -4,7 +4,7 @@ The score (0-100) is the sum of five parts:
 
   interactivity  0-30  canvas, WebGL, WebAudio, pointer/keyboard handlers, inputs
   independence   0-20  no ads, few trackers, no cookie walls, personal hosting
-  craft          0-15  has a title/description/icon, https, playful wording
+  craft          0-15  has a title/description/icon, https, playful wording, long-form writing
   novelty        0-35  text fingerprint far from everything in the DB, new domain
   security       -21-5 HSTS/CSP headers, mixed content, password forms, obfuscated JS
   penalties      <=0   commercial language, empty pages, deep article paths
@@ -86,7 +86,7 @@ def reject_reason(f: dict) -> str | None:
     return None
 
 
-def score(f: dict, simhash: int, corpus: Corpus) -> Result:
+def score(f: dict, simhash: int, corpus: Corpus, categories: list[str] | None = None) -> Result:
     reasons: list[str] = []
     rej = reject_reason(f)
 
@@ -122,6 +122,8 @@ def score(f: dict, simhash: int, corpus: Corpus) -> Result:
         indep -= 3
     if f["personal_host"]:
         indep += 4; reasons.append("personal/indie host")
+    if f["html_bytes"] < 150_000 and not f["n_scripts_third_party"] and not f["trackers"] and not f["ad_networks"]:
+        indep += 3; reasons.append("lightweight small-web page")
     indep = max(0, min(20, indep))
 
     # --- craft
@@ -134,6 +136,8 @@ def score(f: dict, simhash: int, corpus: Corpus) -> Result:
     if f["delight_hits"] >= 2:
         reasons.append("playful wording")
     craft += 2 if 0.35 <= f["unique_word_ratio"] <= 0.9 and f["word_count"] > 30 else 0
+    if f["word_count"] >= 800 and not f["commerce_hits"] and not f["spam_hits"]:
+        craft += 3; reasons.append("long-form writing")
     if f["lorem"]:
         craft -= 10
     craft = max(0, min(15, craft))
@@ -174,10 +178,14 @@ def score(f: dict, simhash: int, corpus: Corpus) -> Result:
         pen -= 15; reasons.append("very little content")
     if f["spam_hits"]:
         pen -= 10; reasons.append("a spam/gambling term")
-    if f["path_depth"] > 2:
-        pen -= 2 * (f["path_depth"] - 2)
-    if f["word_count"] > 6000 and inter < 5:
-        pen -= 5  # long article / docs page
+    # Deep paths are normal for obscure personal projects (/~ann/toys/thing), so only
+    # very deep ones (usually CMS article URLs) cost anything. Long pages are not
+    # penalised: long-form explainers and essays are exactly what we want.
+    if f["path_depth"] > 6:
+        pen -= f["path_depth"] - 6
+
+    if categories is not None and not [c for c in categories if c != "mature"]:
+        pen -= 5; reasons.append("no clear theme")
 
     total = max(0, min(100, inter + indep + craft + novelty + sec + pen))
     breakdown = {"interactivity": inter, "independence": indep, "craft": craft,

@@ -35,7 +35,7 @@ def evaluate(url: str, fetcher: Fetcher, corpus: Corpus, source: str = "") -> Ev
     f = extract(final, page.html, page.headers, page.scripts, tls=page.tls)
     fp = simhash(" ".join([f["title"], f["description"], f["headings"], f["text"]]))
     categories, cat_scores = tag(f)
-    res = score(f, fp, corpus)
+    res = score(f, fp, corpus, categories)
     doc = {
         "id": site_id(final),
         "url": final,

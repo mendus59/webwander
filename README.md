@@ -4,6 +4,12 @@ Wander the fun, weird and creative corners of the web, one click at a time. A sm
 personal take on the old StumbleUpon idea, with no social features: no feeds, no
 followers, no comments.
 
+**The spirit:** discovering the Internet, especially the creative, educational, fun,
+obscure, artistic and weird. Every scoring rule serves that, and
+[`crawler/tests/test_spirit.py`](crawler/tests/test_spirit.py) guards it: a toy, a synth, a
+long explorable essay, an obscure net-art page, a retro homepage and a programming
+walkthrough must all clear the proposal threshold, and an ad-heavy listicle must not.
+
 **Live site:** <https://mendus59.github.io/webwander/> · **Setup:** [SETUP.md](SETUP.md)
 
 ## How it works
