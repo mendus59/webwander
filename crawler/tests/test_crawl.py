@@ -23,6 +23,7 @@ def test_crawl_meets_minimum(tmp_path, monkeypatch):
     monkeypatch.setattr(st, "SEEN_PATH", tmp_path / "seen.txt")
     monkeypatch.setattr(st, "FRONTIER_PATH", tmp_path / "frontier.json")
     monkeypatch.setattr(st, "LOG_PATH", tmp_path / "log.json")
+    monkeypatch.setattr(st, "BACKLOG_PATH", tmp_path / "backlog.json")
     seeds = tmp_path / "seeds.txt"
     seeds.write_text("\n".join(f"https://site{i}.example{i}.org/" for i in range(40)))
     monkeypatch.setattr(cli, "SEEDS_PATH", seeds)

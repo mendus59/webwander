@@ -19,11 +19,12 @@ from pathlib import Path
 
 from . import ROOT
 from . import store as st
+from .balance import category_counts, select_balanced, topics
 from .fetch import Fetcher
 from .pipeline import evaluate
 from .score import BLOCKED_DOMAINS, MIN_SCORE, Corpus
 from .simhash import from_hex
-from .sources import gather
+from .sources import gather, rarest_categories, search_terms_for
 from .urls import identity, normalize, registrable_domain, site_id
 
 SEEDS_PATH = ROOT / "crawler" / "seeds.txt"
@@ -71,8 +72,6 @@ def cmd_crawl(args) -> int:
     log(f"Loaded {len(sites)} sites, {len(seen)} seen URLs, {len(frontier)} frontier links")
 
     new_docs: list[dict] = []
-    runners_up = []  # scored but under threshold, used to guarantee --min-new
-    run_domains: set[str] = set()
 
     def remember_links(ev) -> None:
         if not ev.features or ev.result is None or ev.result.reject or ev.result.score < 40:
@@ -105,13 +104,26 @@ def cmd_crawl(args) -> int:
         seen.add(url_key(ev.norm))
         remember_links(ev)
 
-    # 2. Discovery.
-    candidates = gather(SEEDS_PATH, frontier, use_network=not args.offline)
+    # 2. Discovery: build a pool of good candidates (bigger than we need), steering
+    #    searches toward the categories the database has fewest of.
+    db_counts = Counter(c for s in sites if s.get("status") in ("approved", "proposed")
+                        for c in topics(s))
+    rare = rarest_categories(db_counts, 4)
+    log(f"Rarest categories, searched for first: {', '.join(rare)}")
+    candidates = gather(SEEDS_PATH, frontier, use_network=not args.offline,
+                        extra_queries=search_terms_for(rare))
     log(f"{len(candidates)} candidates gathered")
     used_frontier = set()
     fetched = 0
+    # Start from the backlog: good sites found earlier that didn't fit that run's balance.
+    backlog = [d for d in st.load_backlog() if d["id"] not in known_ids]
+    known_ids.update(d["id"] for d in backlog)
+    pool: list[dict] = list(backlog)  # >= min_score, not rejected
+    log(f"{len(backlog)} sites waiting in the backlog")
+    runners_up: list[dict] = []  # scored but under threshold, used to guarantee --min-new
+    pool_target = len(backlog) + args.max_new * args.pool_factor
     for url, source in candidates:
-        if len(new_docs) >= args.max_new or fetched >= args.max_fetch:
+        if len(pool) >= pool_target or fetched >= args.max_fetch:
             break
         if time.time() - started > args.max_minutes * 60:
             log("time budget reached")
@@ -123,7 +135,7 @@ def cmd_crawl(args) -> int:
             used_frontier.add(url)
         key = url_key(norm)
         dom = registrable_domain(norm)
-        if key in seen or site_id(norm) in known_ids or dom in BLOCKED_DOMAINS or dom in run_domains:
+        if key in seen or site_id(norm) in known_ids or dom in BLOCKED_DOMAINS:
             continue
         seen.add(key)
         fetched += 1
@@ -138,42 +150,50 @@ def cmd_crawl(args) -> int:
         if ev.result.reject:
             log(f"  [reject] {ev.norm}: {ev.result.reject}")
             continue
+        known_ids.add(ev.doc["id"])
         if ev.result.score >= args.min_score:
-            doc = dict(ev.doc, status="proposed")
-            store.upsert_site(doc)
-            new_docs.append(doc)
-            known_ids.add(doc["id"])
-            run_domains.add(doc["registrableDomain"])
-            corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
-            log(f"  [NEW {ev.result.score:3d}] {ev.norm}  {doc['categories']}")
+            pool.append(dict(ev.doc))
+            log(f"  [good {ev.result.score:3d}] {ev.norm}  {ev.doc['categories']}")
         else:
-            runners_up.append(ev)
-            log(f"  [low {ev.result.score:3d}] {ev.norm}")
+            runners_up.append(dict(ev.doc))
+            log(f"  [low  {ev.result.score:3d}] {ev.norm}")
 
-    # 3. Guarantee the daily minimum with the best of the rest.
-    if len(new_docs) < args.min_new and runners_up:
-        runners_up.sort(key=lambda e: e.result.score, reverse=True)
-        for ev in runners_up:
-            if len(new_docs) >= args.min_new:
-                break
-            if ev.doc["registrableDomain"] in run_domains:
-                continue
-            doc = dict(ev.doc, status="proposed", belowThreshold=True)
-            store.upsert_site(doc)
-            new_docs.append(doc)
-            run_domains.add(doc["registrableDomain"])
-            log(f"  [fill {ev.result.score:3d}] {ev.norm}")
-
+    # 3. Choose a category-balanced set from the pool.
+    run_domains = {d["registrableDomain"] for d in new_docs}
+    chosen = select_balanced(pool, max(0, args.max_new - len(new_docs)), db_counts, run_domains)
+    # 4. Guarantee the daily minimum with the best of the rest (still balanced).
+    if len(new_docs) + len(chosen) < args.min_new:
+        taken = run_domains | {d["registrableDomain"] for d in chosen}
+        fill = select_balanced(runners_up, args.min_new - len(new_docs) - len(chosen),
+                               db_counts + Counter(c for d in chosen for c in topics(d)), taken)
+        chosen += [dict(d, belowThreshold=True) for d in fill]
+    for d in chosen:
+        doc = {k: v for k, v in d.items() if not k.startswith("_")}
+        doc["status"] = "proposed"
+        store.upsert_site(doc)
+        new_docs.append(doc)
+        corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
+        log(f"  [NEW {doc['score']:3d}{' fill' if doc.get('belowThreshold') else ''}] {doc['url']}  {doc['categories']}")
     frontier = [f for f in frontier if f["url"] not in used_frontier]
+    frontier_urls = {f["url"] for f in frontier}
+    # Good candidates that didn't fit this run's balance are kept, already scored, for later runs.
+    chosen_ids = {d["id"] for d in chosen}
+    leftovers = [d for d in pool if d["id"] not in chosen_ids]
+    st.save_backlog(leftovers)
+    log(f"{len(leftovers)} good sites kept in the backlog for later runs")
+    run_categories = category_counts([d for d in new_docs])
+    log(f"Categories this run: {run_categories}")
+
     all_sites = sites + new_docs
     stats = compute_stats(all_sites)
-    stats.update(lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs))
+    stats.update(lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs),
+                 lastRunCategories=run_categories)
     store.write_stats(stats)
     store.save()
     st.save_seen(seen)
     st.save_frontier(frontier)
     st.append_log({"at": stats["lastRun"], "fetched": fetched, "new": len(new_docs),
-                   "minutes": round((time.time() - started) / 60, 1),
+                   "minutes": round((time.time() - started) / 60, 1), "categories": run_categories,
                    "sites": [d["url"] for d in new_docs]})
     log(f"Done: fetched {fetched}, proposed {len(new_docs)} new sites, frontier {len(frontier)}")
     if len(new_docs) < args.min_new:
@@ -278,6 +298,8 @@ def main(argv=None) -> int:
     c.add_argument("--max-fetch", type=int, default=300)
     c.add_argument("--max-minutes", type=float, default=45)
     c.add_argument("--min-score", type=int, default=MIN_SCORE)
+    c.add_argument("--pool-factor", type=int, default=4,
+                   help="evaluate up to max-new x this many good candidates, then pick a balanced set")
     c.add_argument("--strict", action="store_true", help="exit non-zero if min-new not met")
     c.add_argument("--offline", action="store_true", help="only seeds + frontier, no external APIs")
 

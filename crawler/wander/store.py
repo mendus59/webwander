@@ -98,6 +98,9 @@ class FirestoreStore:
 SEEN_PATH = DATA_DIR / "seen-urls.txt"
 FRONTIER_PATH = DATA_DIR / "frontier.json"
 LOG_PATH = DATA_DIR / "crawl-log.json"
+BACKLOG_PATH = DATA_DIR / "backlog.json"
+BACKLOG_MAX = 500
+BACKLOG_DAYS = 30
 FRONTIER_MAX = 3000
 
 
@@ -128,3 +131,21 @@ def append_log(entry: dict, keep: int = 60) -> None:
     log = json.loads(LOG_PATH.read_text()) if LOG_PATH.exists() else []
     log.append(entry)
     LOG_PATH.write_text(json.dumps(log[-keep:], indent=1))
+
+
+def load_backlog() -> list[dict]:
+    """Good, already-scored sites that didn't fit an earlier run's category balance.
+    They are offered first in later runs instead of being re-crawled; entries older
+    than BACKLOG_DAYS are dropped (the page may have changed)."""
+    if not BACKLOG_PATH.exists():
+        return []
+    cutoff = time.time() - BACKLOG_DAYS * 86400
+    return [d for d in json.loads(BACKLOG_PATH.read_text()) if d.get("_backlogAt", 0) >= cutoff]
+
+
+def save_backlog(docs: list[dict]) -> None:
+    now = time.time()
+    docs = [dict(d, _backlogAt=d.get("_backlogAt", now)) for d in docs]
+    docs = sorted(docs, key=lambda d: d.get("score", 0), reverse=True)[:BACKLOG_MAX]
+    BACKLOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    BACKLOG_PATH.write_text(json.dumps(docs, indent=0))
