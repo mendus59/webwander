@@ -54,6 +54,7 @@ def signal_values(f: dict) -> dict[str, bool]:
         "code_blocks": f["n_code_blocks"] >= 3,
         "code_highlighter": f["code_highlighter"],
         "code_editor": f["code_editor"],
+        "non_english": bool(f["lang"]) and not f["lang"].startswith("en"),
     }
 
 

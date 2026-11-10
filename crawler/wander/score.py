@@ -9,8 +9,11 @@ The score (0-100) is the sum of five parts:
   security       -21-5 HSTS/CSP headers, mixed content, password forms, obfuscated JS
   penalties      <=0   commercial language, empty pages, deep article paths
 
-Some pages are rejected outright (parked domains, error pages, big platforms, spam,
-no https / invalid or expired certificates / outdated TLS, crypto-miners...).
+Only a few kinds of page are rejected outright: social media and big platforms, pages
+without content (parked domains, error pages, login walls, empty pages), spam, and insecure
+pages (no https / invalid or expired certificates / outdated TLS, crypto-miners). Nothing is
+rejected for its subject, opinions or language: provocative, political, philosophical and
+non-English pages are all welcome, and explicit ones get the Mature tag.
 """
 
 from __future__ import annotations
@@ -81,8 +84,6 @@ def reject_reason(f: dict) -> str | None:
         return f"insecure: outdated {f['tls_version']}"
     if f["cert_days_left"] is not None and f["cert_days_left"] < 0:
         return "insecure: expired certificate"
-    if f["lang"] and not f["lang"].startswith("en") and f["word_count"] > 80:
-        return "not English"
     return None
 
 

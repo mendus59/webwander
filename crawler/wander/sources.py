@@ -19,7 +19,16 @@ HEADERS = {"User-Agent": USER_AGENT}
 TIMEOUT = 15
 
 HN_QUERIES = ["interactive", "toy", "game", "generator", "simulation", "visualization", "synth",
-              "explorable", "made a website", "weird", "art", "map", "puzzle", "browser"]
+              "explorable", "made a website", "weird", "art", "map", "puzzle", "browser",
+              "essay", "manifesto", "philosophy", "zine", "poetry", "archive"]
+# Regular (non "Show HN") stories: essays and ideas pages people found worth discussing.
+HN_STORY_QUERIES = ["essay", "philosophy", "manifesto", "politics", "ethics", "society", "rant",
+                    "controversial", "thought experiment", "personal website", "history of",
+                    "why i", "in defense of", "against", "the case for", "language", "culture"]
+REDDIT_SUBS = ["InternetIsBeautiful", "Foodforthought", "TrueReddit", "philosophy", "DepthHub",
+               "WebGames", "ObscureMedia", "Damnthatsinteresting", "indieweb", "PoliticalPhilosophy"]
+LOBSTERS_TAGS = ["show", "art", "games", "visualization", "graphics", "philosophy", "culture",
+                 "law", "person", "science", "historical", "practices"]
 
 
 def _log(msg: str) -> None:
@@ -68,10 +77,31 @@ def hacker_news(limit_per_query: int = 30, extra_queries: list[str] | None = Non
             out += [(h["url"], "hn") for h in r.json().get("hits", []) if h.get("url")]
         except Exception as e:  # noqa: BLE001
             _log(f"hn '{q}' failed: {e}")
+    for q in random.sample(HN_STORY_QUERIES, k=min(4, len(HN_STORY_QUERIES))):
+        try:
+            r = requests.get(
+                "https://hn.algolia.com/api/v1/search",
+                params={"query": q, "tags": "story", "numericFilters": "points>40",
+                        "hitsPerPage": limit_per_query},
+                headers=HEADERS, timeout=TIMEOUT,
+            )
+            r.raise_for_status()
+            out += [(h["url"], "hn") for h in r.json().get("hits", []) if h.get("url")]
+        except Exception as e:  # noqa: BLE001
+            _log(f"hn story '{q}' failed: {e}")
     return out
 
 
-def reddit(sub: str = "InternetIsBeautiful") -> list[tuple[str, str]]:
+def reddit(subs: list[str] | None = None, n_subs: int = 4) -> list[tuple[str, str]]:
+    """Link posts from a rotating handful of subreddits (always InternetIsBeautiful)."""
+    subs = subs or ["InternetIsBeautiful"] + random.sample(REDDIT_SUBS[1:], k=min(n_subs - 1, len(REDDIT_SUBS) - 1))
+    out = []
+    for sub in subs:
+        out += _reddit_sub(sub)
+    return out
+
+
+def _reddit_sub(sub: str) -> list[tuple[str, str]]:
     out = []
     for listing in ("top.json?t=month&limit=100", "new.json?limit=100"):
         try:
@@ -88,7 +118,7 @@ def reddit(sub: str = "InternetIsBeautiful") -> list[tuple[str, str]]:
 
 def lobsters() -> list[tuple[str, str]]:
     out = []
-    for tag in ("show", "art", "games", "visualization", "graphics"):
+    for tag in LOBSTERS_TAGS:
         try:
             r = requests.get(f"https://lobste.rs/t/{tag}.json", headers=HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
@@ -113,6 +143,19 @@ def wiby(n: int = 25) -> list[tuple[str, str]]:
     return out
 
 
+def kagi_small_web(n: int = 60) -> list[tuple[str, str]]:
+    """Recent posts from Kagi's public Small Web feed: thousands of personal sites and blogs."""
+    try:
+        r = requests.get("https://kagi.com/api/v1/smallweb/feed/", headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        urls = re.findall(r"<link[^>]+href=[\"']([^\"']+)[\"']", r.text)
+        urls = [u for u in urls if u.startswith("http") and "kagi.com" not in u]
+        return [(u, "smallweb") for u in random.sample(urls, k=min(n, len(urls)))]
+    except Exception as e:  # noqa: BLE001
+        _log(f"kagi small web failed: {e}")
+        return []
+
+
 def frontier(items: list[dict], n: int = 150) -> list[tuple[str, str]]:
     """Outbound links found on good pages during earlier crawls."""
     return [(i["url"], "link") for i in items[:n]]
@@ -122,7 +165,7 @@ def gather(seed_path: Path, frontier_items: list[dict], use_network: bool = True
            extra_queries: list[str] | None = None) -> list[tuple[str, str]]:
     groups = [seeds(seed_path), frontier(frontier_items)]
     if use_network:
-        groups += [hacker_news(extra_queries=extra_queries), reddit(), lobsters(), wiby()]
+        groups += [hacker_news(extra_queries=extra_queries), reddit(), lobsters(), wiby(), kagi_small_web()]
     for g in groups:
         random.shuffle(g)
     # Interleave so no single source dominates a run.
