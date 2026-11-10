@@ -10,27 +10,12 @@
 "from": "https://portolan-mirrors.github.io/firms-catalog"
 },
 {
-"url": "https://carto.com/",
-"parentScore": 100,
-"from": "https://portolan-mirrors.github.io/firms-catalog"
-},
-{
-"url": "https://cloudnativegeo.org/",
-"parentScore": 100,
-"from": "https://portolan-mirrors.github.io/firms-catalog"
-},
-{
 "url": "https://deck.gl/",
 "parentScore": 100,
 "from": "https://portolan-mirrors.github.io/firms-catalog"
 },
 {
 "url": "https://docs.protomaps.com/pmtiles",
-"parentScore": 100,
-"from": "https://portolan-mirrors.github.io/firms-catalog"
-},
-{
-"url": "https://earthdata.nasa.gov/about/esdis",
 "parentScore": 100,
 "from": "https://portolan-mirrors.github.io/firms-catalog"
 },
@@ -55,19 +40,54 @@
 "from": "https://portolan-mirrors.github.io/firms-catalog"
 },
 {
+"url": "https://a5geo.org/docs/api-reference/indexing",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://bylaws.openjsf.org/",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://code-of-conduct.openjsf.org/",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://codepen.io/vis-gl",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://linuxfoundation.org/cookies",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://loaders.gl/",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://luma.gl/",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
+"url": "https://openjsf.org/",
+"parentScore": 95,
+"from": "https://deck.gl/docs/api-reference/geo-layers/a5-layer"
+},
+{
 "url": "https://arxiv.org/html/2508.08568v1",
 "parentScore": 94,
 "from": "https://trisolarchaos.com/?at=1.0e-8&bs=0.15&cm=free&cp=2.5208%2C1.5125%2C2.5208&ct=0.0000%2C0.0000%2C0.1670&dt=1.00e-4&im=rk4&kt=1&n=3&pr=O_8%280.6%29&rt=1.0e-6&sf=0&so=0.00&st=1&sv=0&tl=1500"
-},
-{
-"url": "https://forms.gle/vNZkFGTLnqq7HJQB7",
-"parentScore": 93,
-"from": "https://earth.nullschool.net/"
-},
-{
-"url": "https://usa.gov/elected-officials",
-"parentScore": 93,
-"from": "https://earth.nullschool.net/"
 },
 {
 "url": "https://mailchi.mp/ourworldindata/owid-brief-2025-11-14",
@@ -95,24 +115,74 @@
 "from": "https://codeberg.org/sstephenson/brut-pack"
 },
 {
-"url": "https://pubs.opengroup.org/onlinepubs/9799919799",
-"parentScore": 92,
-"from": "https://codeberg.org/sstephenson/brut-pack"
-},
-{
-"url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html",
-"parentScore": 92,
-"from": "https://codeberg.org/sstephenson/brut-pack"
-},
-{
 "url": "https://social.anoxinon.de/@Codeberg",
 "parentScore": 92,
 "from": "https://codeberg.org/sstephenson/brut-pack"
 },
 {
-"url": "https://choosealicense.com/licenses/cc0-1.0",
-"parentScore": 89,
-"from": "https://bruno-simon.com/"
+"url": "http://sphinx-doc.org/",
+"parentScore": 92,
+"from": "https://webppl.readthedocs.io/en/master"
+},
+{
+"url": "https://readthedocs.org/",
+"parentScore": 92,
+"from": "https://webppl.readthedocs.io/en/master"
+},
+{
+"url": "http://largesense.com/index.php/products/4x5-large-format-digital-back-ls45",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://adafruit.com/product/4415",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://adafruit.com/product/4600",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://adafruit.com/product/4692",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://adryd.com/",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://altavision.com.br/Arquivos/Basler/Manual/Manual_Runner_GigE.pdf",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://baslerweb.com/en-us/downloads/software/1932603569?downloadCategory.values.label.data=pylon",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://breq.dev/",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://docs.opencv.org/4.13.0/d7/dfc/group__highgui.html",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://emfcamp.org/",
+"parentScore": 90,
+"from": "https://philo.gay/linecam"
+},
+{
+"url": "https://squidfunk.github.io/mkdocs-material",
+"parentScore": 90,
+"from": "https://zensical.org/"
 },
 {
 "url": "https://linktr.ee/Kounine",
@@ -120,9 +190,14 @@
 "from": "https://bruno-simon.com/"
 },
 {
-"url": "https://rapier.rs/",
+"url": "https://kenney.nl/",
 "parentScore": 89,
-"from": "https://bruno-simon.com/"
+"from": "https://gta-kenny-city.vercel.app/"
+},
+{
+"url": "https://threejs.org/",
+"parentScore": 89,
+"from": "https://gta-kenny-city.vercel.app/"
 },
 {
 "url": "http://solarsystemscope.us7.list-manage2.com/subscribe?id=e3f975e175&u=b8c9b8ab07f03b7d54a8221f6",
@@ -130,22 +205,7 @@
 "from": "https://solarsystemscope.com/"
 },
 {
-"url": "https://appgallery.huawei.com/app/C100848689",
-"parentScore": 88,
-"from": "https://solarsystemscope.com/"
-},
-{
-"url": "https://mozilla.org/en-US/firefox/new",
-"parentScore": 88,
-"from": "https://solarsystemscope.com/"
-},
-{
 "url": "https://shop.spreadshirt.com/solarsystemscope",
-"parentScore": 88,
-"from": "https://solarsystemscope.com/"
-},
-{
-"url": "https://shop.spreadshirt.com/solarsystemscope/solar+system+scope+%3A+have+you+been+to+the+moon?idea=5cab1d08f9376435d774725e",
 "parentScore": 88,
 "from": "https://solarsystemscope.com/"
 },
@@ -180,17 +240,7 @@
 "from": "https://kadoa.com/food-prices"
 },
 {
-"url": "https://markon.com/update-seedless-lemons-10",
-"parentScore": 85,
-"from": "https://kadoa.com/food-prices"
-},
-{
 "url": "https://mymarketnews.ams.usda.gov/viewReport/2279",
-"parentScore": 85,
-"from": "https://kadoa.com/food-prices"
-},
-{
-"url": "https://mymarketnews.ams.usda.gov/viewReport/2320",
 "parentScore": 85,
 "from": "https://kadoa.com/food-prices"
 },
@@ -210,9 +260,24 @@
 "from": "https://runjs.app/blog/music-theory-for-programmers"
 },
 {
-"url": "https://lightnote.co/",
+"url": "https://blobmaker.app/",
 "parentScore": 85,
-"from": "https://runjs.app/blog/music-theory-for-programmers"
+"from": "https://getwaves.io/"
+},
+{
+"url": "https://figma.com/c/plugin/745619465174154496/Get-Waves",
+"parentScore": 85,
+"from": "https://getwaves.io/"
+},
+{
+"url": "https://geography.games/europe-quiz",
+"parentScore": 85,
+"from": "https://getwaves.io/"
+},
+{
+"url": "https://cookiedatabase.org/tcf/purposes",
+"parentScore": 85,
+"from": "https://markon.com/update-seedless-lemons-10"
 },
 {
 "url": "http://alex.nisnevich.com/",
@@ -255,11 +320,6 @@
 "from": "https://manualmeida.dev/articles/noiselang"
 },
 {
-"url": "https://docs.webppl.org/",
-"parentScore": 83,
-"from": "https://manualmeida.dev/articles/noiselang"
-},
-{
 "url": "https://mc-stan.org/",
 "parentScore": 83,
 "from": "https://manualmeida.dev/articles/noiselang"
@@ -270,34 +330,79 @@
 "from": "https://manualmeida.dev/articles/noiselang"
 },
 {
-"url": "https://noiselang.com/",
+"url": "https://20thingsilearned.com/",
 "parentScore": 83,
-"from": "https://manualmeida.dev/articles/noiselang"
+"from": "https://hakim.se/"
 },
 {
-"url": "https://noiselang.com/play",
+"url": "https://codepen.io/hakimel",
 "parentScore": 83,
-"from": "https://manualmeida.dev/articles/noiselang"
+"from": "https://hakim.se/"
 },
 {
-"url": "https://cmyr.net/blog/hyperbezier.html",
-"parentScore": 82,
-"from": "https://linebender.org/blog/hyperbezier"
+"url": "https://codepen.io/hakimel/full/CxliK",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://codepen.io/hakimel/full/aIhkf",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://codepen.io/hakimel/full/fILbu",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://jsfiddle.net/hakim/Ht6Ym",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://kodemo.com/",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://motionscribe.com/",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://resumefilter.vercel.app/",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://revealjs.com/",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://revealjs.com/course",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://sketchtoy.com/",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://slides.com/",
+"parentScore": 83,
+"from": "https://hakim.se/"
+},
+{
+"url": "https://slides.com/news/auto-animate",
+"parentScore": 83,
+"from": "https://hakim.se/"
 },
 {
 "url": "https://levien.com/phd/thesis.pdf",
 "parentScore": 82,
 "from": "https://linebender.org/blog/hyperbezier"
-},
-{
-"url": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html",
-"parentScore": 82,
-"from": "https://linebender.org/blog/hyperbezier"
-},
-{
-"url": "https://alpinelinux.org/",
-"parentScore": 82,
-"from": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv"
 },
 {
 "url": "https://docs.mesa3d.org/drivers/virgl.html",
@@ -335,22 +440,7 @@
 "from": "https://neocities.org/browse"
 },
 {
-"url": "https://alicesdumbstuff.neocities.org/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
 "url": "https://allyratworld.com/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
-"url": "https://altalenae.neocities.org/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
-"url": "https://arkmsworld.neocities.org/",
 "parentScore": 82,
 "from": "https://neocities.org/browse"
 },
@@ -360,42 +450,12 @@
 "from": "https://neocities.org/browse"
 },
 {
-"url": "https://badgraph1csghost.neocities.org/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
 "url": "https://bisha.neocities.org/",
 "parentScore": 82,
 "from": "https://neocities.org/browse"
 },
 {
-"url": "https://blamensir.neocities.org/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
 "url": "https://bmh.neocities.org/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
-"url": "https://caehdus.neocities.org/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
-"url": "https://chicagosoftcore.net/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
-"url": "https://clownfred.zone/",
-"parentScore": 82,
-"from": "https://neocities.org/browse"
-},
-{
-"url": "https://codecreature.neocities.org/",
 "parentScore": 82,
 "from": "https://neocities.org/browse"
 },
@@ -415,12 +475,27 @@
 "from": "https://histography.io/"
 },
 {
-"url": "https://daringfireball.net/linked/2024/05/24/daylight-computer",
-"parentScore": 80,
-"from": "https://daylightcomputer.com/"
+"url": "https://3blue1brown.substack.com/",
+"parentScore": 81,
+"from": "https://3blue1brown.com/"
 },
 {
-"url": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated",
+"url": "https://3blue1brown.substack.com/feed",
+"parentScore": 81,
+"from": "https://3blue1brown.com/"
+},
+{
+"url": "https://space.bilibili.com/88461692",
+"parentScore": 81,
+"from": "https://3blue1brown.com/"
+},
+{
+"url": "https://store.dftba.com/collections/3blue1brown",
+"parentScore": 81,
+"from": "https://3blue1brown.com/"
+},
+{
+"url": "https://daringfireball.net/linked/2024/05/24/daylight-computer",
 "parentScore": 80,
 "from": "https://daylightcomputer.com/"
 },
@@ -430,37 +505,32 @@
 "from": "https://gasiulis.name/new-spline"
 },
 {
-"url": "https://mastodon.online/@aurimas",
-"parentScore": 80,
-"from": "https://gasiulis.name/new-spline"
-},
-{
-"url": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html",
-"parentScore": 80,
-"from": "https://gasiulis.name/new-spline"
-},
-{
 "url": "https://tug.org/TUGboat/tb34-2/tb107jackowski.pdf",
 "parentScore": 80,
 "from": "https://gasiulis.name/new-spline"
 },
 {
-"url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1993/Archive/CSD-93-732.pdf",
+"url": "http://click.linksynergy.com/fs-bin/stat?RD_PARM1=https%253A%252F%252Fitunes.apple.com%252Fus%252Falbum%252Fthe-world-forgotten-single%252Fid579359664%253Fuo%253D4%2526partnerId%253D30&id=1KYVs20MuZw&offerid=146261&subid=0&tmpid=1826&type=3",
 "parentScore": 80,
-"from": "https://gasiulis.name/new-spline"
+"from": "https://weavesilk.com/"
 },
 {
-"url": "https://zhipeiyan.github.io/projects/kCurves/kCurves.pdf",
+"url": "http://creativecommons.org/licenses/by/3.0/deed.en_US",
 "parentScore": 80,
-"from": "https://gasiulis.name/new-spline"
+"from": "https://weavesilk.com/"
+},
+{
+"url": "http://microscopics.co.uk/",
+"parentScore": 80,
+"from": "https://weavesilk.com/"
+},
+{
+"url": "https://forms.gle/Ss9xLHPbcvs25RzQ6",
+"parentScore": 80,
+"from": "https://weavesilk.com/"
 },
 {
 "url": "https://abcdinamo.com/",
-"parentScore": 79,
-"from": "https://internetphonebook.net/"
-},
-{
-"url": "https://are.na/internet-phone-book",
 "parentScore": 79,
 "from": "https://internetphonebook.net/"
 },
@@ -490,27 +560,12 @@
 "from": "https://internetphonebook.net/"
 },
 {
-"url": "https://garden3d.net/",
-"parentScore": 79,
-"from": "https://internetphonebook.net/"
-},
-{
-"url": "https://2019.bruno-simon.com/",
-"parentScore": 79,
-"from": "https://threejs-journey.com/"
-},
-{
 "url": "https://anniversary.bonhommeparis.com/",
 "parentScore": 79,
 "from": "https://threejs-journey.com/"
 },
 {
 "url": "https://calathea-kohl.vercel.app/",
-"parentScore": 79,
-"from": "https://threejs-journey.com/"
-},
-{
-"url": "https://chartogne-taillet.com/",
 "parentScore": 79,
 "from": "https://threejs-journey.com/"
 },
@@ -525,22 +580,7 @@
 "from": "https://threejs-journey.com/"
 },
 {
-"url": "https://gta-kenny-city.vercel.app/",
-"parentScore": 79,
-"from": "https://threejs-journey.com/"
-},
-{
-"url": "https://luni.app/",
-"parentScore": 79,
-"from": "https://threejs-journey.com/"
-},
-{
 "url": "https://madbox.io/",
-"parentScore": 79,
-"from": "https://threejs-journey.com/"
-},
-{
-"url": "https://mux.com/",
 "parentScore": 79,
 "from": "https://threejs-journey.com/"
 },
@@ -548,11 +588,6 @@
 "url": "https://nz.trustpilot.com/review/threejs-journey.com",
 "parentScore": 79,
 "from": "https://threejs-journey.com/"
-},
-{
-"url": "https://cheatengine.org/",
-"parentScore": 79,
-"from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
 },
 {
 "url": "https://elderscrolls.fandom.com/wiki/Slow_Time",
@@ -565,27 +600,12 @@
 "from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
 },
 {
-"url": "https://en.uesp.net/wiki/Skyrim:Candlelight",
-"parentScore": 79,
-"from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
-},
-{
-"url": "https://en.uesp.net/wiki/Skyrim:High_Hrothgar",
-"parentScore": 79,
-"from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
-},
-{
 "url": "https://en.uesp.net/wiki/Skyrim:Irkngthand",
 "parentScore": 79,
 "from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
 },
 {
 "url": "https://en.uesp.net/wiki/Skyrim:Leveling",
-"parentScore": 79,
-"from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
-},
-{
-"url": "https://en.uesp.net/wiki/Skyrim:Reanimate_(spells)",
 "parentScore": 79,
 "from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
 },
@@ -610,17 +630,17 @@
 "from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
 },
 {
-"url": "https://zensical.org/",
-"parentScore": 78,
-"from": "https://delightql.org/latest"
+"url": "https://threejs-journey.com/?c=p1",
+"parentScore": 79,
+"from": "https://2019.bruno-simon.com/"
+},
+{
+"url": "https://builder.io/",
+"parentScore": 79,
+"from": "https://noiselang.com/"
 },
 {
 "url": "https://tr.ee/FYNsVb",
-"parentScore": 78,
-"from": "https://inaturalist.org/"
-},
-{
-"url": "https://tr.ee/MymHMn",
 "parentScore": 78,
 "from": "https://inaturalist.org/"
 },
@@ -640,31 +660,6 @@
 "from": "https://a5geo.org/blog/2026/10/14/a5-v1"
 },
 {
-"url": "https://deck.gl/docs/api-reference/geo-layers/a5-layer",
-"parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
-},
-{
-"url": "https://geoparquet.io/",
-"parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
-},
-{
-"url": "https://geoparquet.io/concepts/spatial-indices?h=a5",
-"parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
-},
-{
-"url": "https://h3geo.org/",
-"parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
-},
-{
-"url": "https://join.slack.com/t/a5-3ap4392/shared_invite/zt-35rpdc904-2vcsoikrJKFRJF7ncN1fmw",
-"parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
-},
-{
 "url": "https://plugins.qgis.org/plugins/vgridtools",
 "parentScore": 78,
 "from": "https://a5geo.org/blog/2026/10/14/a5-v1"
@@ -675,14 +670,49 @@
 "from": "https://a5geo.org/blog/2026/10/14/a5-v1"
 },
 {
-"url": "https://query.farm/products/extensions/a5",
+"url": "https://arrow.apache.org/docs/python",
 "parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+"from": "https://geoparquet.io/"
 },
 {
-"url": "https://s2geometry.io/",
+"url": "https://badge.fury.io/py/geoparquet-io",
 "parentScore": 78,
-"from": "https://a5geo.org/blog/2026/10/14/a5-v1"
+"from": "https://geoparquet.io/"
+},
+{
+"url": "https://codecov.io/gh/geoparquet/geoparquet-io",
+"parentScore": 78,
+"from": "https://geoparquet.io/"
+},
+{
+"url": "https://duckdb.org/",
+"parentScore": 78,
+"from": "https://geoparquet.io/"
+},
+{
+"url": "https://geoparquet.org/",
+"parentScore": 78,
+"from": "https://geoparquet.io/"
+},
+{
+"url": "https://python.org/downloads",
+"parentScore": 78,
+"from": "https://geoparquet.io/"
+},
+{
+"url": "http://astrophoto.fr/new_moon_2010april14.html",
+"parentScore": 78,
+"from": "https://ciechanow.ski/"
+},
+{
+"url": "https://adsabs.harvard.edu/pdf/1976LPI.....7..120C",
+"parentScore": 78,
+"from": "https://ciechanow.ski/"
+},
+{
+"url": "https://arxiv.org/pdf/1802.10223",
+"parentScore": 78,
+"from": "https://ciechanow.ski/"
 },
 {
 "url": "https://sublime.app/",
@@ -700,17 +730,7 @@
 "from": "https://castle-engine.io/modern_pascal"
 },
 {
-"url": "http://lazarus.freepascal.org/",
-"parentScore": 77,
-"from": "https://castle-engine.io/modern_pascal"
-},
-{
 "url": "http://lists.freepascal.org/fpc-announce/2013-February/000587.html",
-"parentScore": 77,
-"from": "https://castle-engine.io/modern_pascal"
-},
-{
-"url": "https://calendar.proton.me/bookings",
 "parentScore": 77,
 "from": "https://castle-engine.io/modern_pascal"
 },
@@ -735,17 +755,7 @@
 "from": "https://castle-engine.io/modern_pascal"
 },
 {
-"url": "https://embarcadero.com/products/Delphi",
-"parentScore": 77,
-"from": "https://castle-engine.io/modern_pascal"
-},
-{
 "url": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html",
-"parentScore": 77,
-"from": "https://castle-engine.io/modern_pascal"
-},
-{
-"url": "https://freepascal.org/docs-html/ref/refsu15.html",
 "parentScore": 77,
 "from": "https://castle-engine.io/modern_pascal"
 },
@@ -843,6 +853,16 @@
 "url": "https://glitch.com/search?activeFilter=project&q=matter-js",
 "parentScore": 75,
 "from": "https://brm.io/matter-js"
+},
+{
+"url": "https://join.slack.com/t/h3-core/shared_invite/zt-g6u5r1hf-W_~uVJmfeiWtMQuBGc1NNg",
+"parentScore": 75,
+"from": "https://h3geo.org/"
+},
+{
+"url": "https://uber.github.io/h3-py",
+"parentScore": 75,
+"from": "https://h3geo.org/"
 },
 {
 "url": "https://disney.go.com/disneyvideos/fastplay/easyfind.html",
@@ -1070,6 +1090,146 @@
 "from": "https://declarative-dragging.github.io/"
 },
 {
+"url": "http://bibsonomy.org/BibtexHandler?description=Large-Language+Models+as+a+Cognitive+Virus&requTask=upload&url=https%3A%2F%2Farxiv.org%2Fabs%2F2609.03344",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "http://gotit.pub/faq",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://alphaxiv.org/",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://api.semanticscholar.org/arXiv:2609.03344",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://catalyzex.com/",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://connectedpapers.com/about",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://core.ac.uk/services/recommender",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://dagshub.com/",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://doi.org/10.48550/arXiv.2609.03344",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://huggingface.co/docs/hub/spaces",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://huggingface.co/huggingface",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://influencemap.cmlab.dev/",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://litmaps.co/",
+"parentScore": 74,
+"from": "https://arxiv.org/abs/2609.03344"
+},
+{
+"url": "https://abc.net.au/news/2026-04-22/critically-endangered-night-parrots-detected-qld-outback/106587514",
+"parentScore": 74,
+"from": "https://xeno-canto.org/"
+},
+{
+"url": "https://creativecommons.org/licenses/by-nc-nd/4.0",
+"parentScore": 74,
+"from": "https://xeno-canto.org/"
+},
+{
+"url": "https://creativecommons.org/licenses/by-nc-sa/4.0",
+"parentScore": 74,
+"from": "https://xeno-canto.org/"
+},
+{
+"url": "https://gbif.org/dataset/search?publishing_org=1f00d75c-f6fc-4224-a595-975e82d7689c",
+"parentScore": 74,
+"from": "https://xeno-canto.org/"
+},
+{
+"url": "https://naturalis.nl/",
+"parentScore": 74,
+"from": "https://xeno-canto.org/"
+},
+{
+"url": "https://ce.naco.org/",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://congress.gov/state-legislature-websites",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://federalregister.gov/documents/2025/03/06/2025-03694/designating-english-as-the-official-language-of-the-united-states",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://gsa.gov/",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://gsa.gov/reference/freedom-of-information-act-foia",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://house.gov/representatives",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://senate.gov/senators/senators-contact.htm",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://usmayors.org/mayors",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://vote.gov/",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
+"url": "https://whitehouse.gov/contact",
+"parentScore": 74,
+"from": "https://usa.gov/elected-officials"
+},
+{
 "url": "https://gpu.userbenchmark.com/Compare/Nvidia-GeForce-GT-650M-vs-AMD-RX-Vega-8-Ryzen-iGPU/m7754vsm441833",
 "parentScore": 73,
 "from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
@@ -1110,6 +1270,156 @@
 "from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
 },
 {
+"url": "https://aclu.org/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://blacksocialists.us/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://brooklynmuseum.org/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://chinatownjs.nyc/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://etsy.com/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://figma.com/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://gagosian.com/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://garden3d.substack.com/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://garden3d.substack.com/archive?sort=new",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://gnosis.io/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://hinge.co/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://index-space.org/",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://index-space.org/irl/bk",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://index-space.org/irl/nyc",
+"parentScore": 73,
+"from": "https://garden3d.net/"
+},
+{
+"url": "https://98.js.org/",
+"parentScore": 73,
+"from": "https://jspaint.app/"
+},
+{
+"url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-keyshortcuts",
+"parentScore": 73,
+"from": "https://jspaint.app/"
+},
+{
+"url": "https://duckduckgo.com/?atb=v232-1&ia=images&iax=images&q=coloring+pages&t=canonical",
+"parentScore": 73,
+"from": "https://jspaint.app/"
+},
+{
+"url": "https://eviacam.crea-si.com/",
+"parentScore": 73,
+"from": "https://jspaint.app/"
+},
+{
+"url": "https://flipanim.com/profile?name=Wolfie-le-Wolf",
+"parentScore": 73,
+"from": "https://jspaint.app/"
+},
+{
+"url": "http://48x12.com/white-mountains-tracing-rules.shtml",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://americantrails.org/resources/trail-terms",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://anish.io/",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://dev.overpass-api.de/",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://elevation.nationalmap.gov/",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://open-meteo.com/en/docs/elevation-api",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://optimal-trace.anish.io/",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://organicmaps.app/",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://parks.ca.gov/pages/468/files/angelislandsplweblayout2013.pdf",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://portal.opentopography.org/raster?opentopoID=OTSDEM.032021.4326.1",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
+"url": "https://strava.com/activities/19516090175",
+"parentScore": 73,
+"from": "https://anishathalye.com/optimal-trace"
+},
+{
 "url": "https://aatishb.com/myriad",
 "parentScore": 72,
 "from": "https://flowingdata.com/"
@@ -1148,6 +1458,106 @@
 "url": "https://marcoshuerta.com/posts/full-moon-myth",
 "parentScore": 72,
 "from": "https://flowingdata.com/"
+},
+{
+"url": "http://aima.cs.berkeley.edu/",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://theory.stanford.edu/~amitp/GameProgramming",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://theory.stanford.edu/~amitp/diagrams/car-blind-spots",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://www-cs-students.stanford.edu/~amitp",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://www-cs-students.stanford.edu/~amitp/diagrams/saturn-hexagon",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://www-cs-students.stanford.edu/~amitp/game-programming/skyrim-maps",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "http://www-cs-students.stanford.edu/~amitp/gameprog.html",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "https://breakintochat.com/blog/2013/02/13/solar-realms-elite-memories",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "https://breakintochat.com/wiki/Solar_Realms_Elite",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "https://fastcompany.com/company/root-1",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "https://gasgame.net/",
+"parentScore": 72,
+"from": "https://redblobgames.com/"
+},
+{
+"url": "https://zcreativelabs.com/",
+"parentScore": 72,
+"from": "https://haikei.app/"
+},
+{
+"url": "https://dimforge.com/",
+"parentScore": 72,
+"from": "https://rapier.rs/"
+},
+{
+"url": "https://dimforge.com/blog",
+"parentScore": 72,
+"from": "https://rapier.rs/"
+},
+{
+"url": "https://gamebanana.com/members/1885816",
+"parentScore": 72,
+"from": "https://isaacmarovitz.com/posts/sonic-06"
+},
+{
+"url": "https://hedgedocs.com/index.php/Sonic_the_Hedgehog_(2006)_Shaders",
+"parentScore": 72,
+"from": "https://isaacmarovitz.com/posts/sonic-06"
+},
+{
+"url": "https://notbyai.fyi/",
+"parentScore": 72,
+"from": "https://isaacmarovitz.com/posts/sonic-06"
+},
+{
+"url": "https://social.treehouse.systems/@isaacmarovitz",
+"parentScore": 72,
+"from": "https://isaacmarovitz.com/posts/sonic-06"
+},
+{
+"url": "https://tcrf.net/Prerelease:Sonic_the_Hedgehog_(2006)",
+"parentScore": 72,
+"from": "https://isaacmarovitz.com/posts/sonic-06"
 },
 {
 "url": "https://chowdsp.com/products.html",
@@ -1223,6 +1633,96 @@
 "url": "https://videos.theconference.se/tag/2022",
 "parentScore": 71,
 "from": "https://cloudlord.management/"
+},
+{
+"url": "https://users3.smartgb.com/g/g.php?a=s&i=g36-41215-d1",
+"parentScore": 71,
+"from": "https://dodgoranio662.neocities.org/"
+},
+{
+"url": "http://simonreynoldsfavesunfaves.blogspot.com/",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "http://simonreynoldsfavesunfaves.blogspot.com/2026/11/3-magazines.html",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "http://smallobservations.net/",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "http://whereweretheynow.blogspot.com/",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "http://whereweretheynow.blogspot.com/2026/11/nintendo-and-sega-japan-edition.html",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://abscond.org/2026/11/08/note-17-bristol-arrival.html",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://abscond.org/posts",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://blog.apaonline.org/",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://blog.apaonline.org/2026/11/05/do-we-have-a-moral-duty-to-make-the-future-go-best",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://buttondown.email/oohdirectory",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://collectionchamber.blogspot.com/",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://collectionchamber.blogspot.com/2026/10/monthly-5-october-2026.html",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://deepcuts.blog/2026/11/07/the-early-fiction-of-farnsworth-wright",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://deepcuts.blog/posts",
+"parentScore": 71,
+"from": "https://ooh.directory/"
+},
+{
+"url": "https://gslc.utah.edu/",
+"parentScore": 71,
+"from": "https://htwins.net/scale2"
+},
+{
+"url": "https://learn.genetics.utah.edu/content/cells/scale",
+"parentScore": 71,
+"from": "https://htwins.net/scale2"
+},
+{
+"url": "https://utah.edu/",
+"parentScore": 71,
+"from": "https://htwins.net/scale2"
 },
 {
 "url": "http://41j.com/blog",
@@ -1405,6 +1905,61 @@
 "from": "https://fna-xna.github.io/"
 },
 {
+"url": "https://thommeret.com/",
+"parentScore": 69,
+"from": "https://mathtocode.com/"
+},
+{
+"url": "http://erights.org/",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://achewood.com/2002/11/08/title.html",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://ailawsuittracker.com/ai-copyright-lawsuits",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://businessinsider.com/developers-are-burned-out-as-ai-coding-reshapes-work-survey-2026-10",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://goodreads.com/quotes/9168-programs-must-be-written-for-people-to-read-and-only",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://macstories.net/author/viticci",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://peps.python.org/pep-0020",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://perl.com/pub/2003/06/25/perl6essentials.html",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
+"url": "https://thatericalper.com/2026/08/13/what-the-beatles-can-teach-you-about-10000-hours-in-hamburg",
+"parentScore": 69,
+"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
+},
+{
 "url": "http://tumblr.com/share?u=http%3A%2F%2Ftiffzhang.com%2Fstartup&v=3",
 "parentScore": 68,
 "from": "http://tiffzhang.com/startup"
@@ -1585,6 +2140,86 @@
 "from": "https://entropicthoughts.com/what-the-fox-say"
 },
 {
+"url": "http://creativecommons.org/licenses/by-nc-sa/4.0",
+"parentScore": 68,
+"from": "https://onirom.fr/wiki/codegolf/x-87"
+},
+{
+"url": "http://sizecoding.org/wiki/Graphics",
+"parentScore": 68,
+"from": "https://onirom.fr/wiki/codegolf/x-87"
+},
+{
+"url": "https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html",
+"parentScore": 68,
+"from": "https://onirom.fr/wiki/codegolf/x-87"
+},
+{
+"url": "https://outlinedemoparty.nl/",
+"parentScore": 68,
+"from": "https://onirom.fr/wiki/codegolf/x-87"
+},
+{
+"url": "https://p5js.org/",
+"parentScore": 68,
+"from": "https://onirom.fr/wiki/codegolf/x-87"
+},
+{
+"url": "https://pouet.net/prod.php?which=96014",
+"parentScore": 68,
+"from": "https://onirom.fr/wiki/codegolf/x-87"
+},
+{
+"url": "http://faculty.cs.tamu.edu/schaefer/research/kcurves.pdf",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html"
+},
+{
+"url": "https://levien.com/phd/phd.html",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html"
+},
+{
+"url": "https://levien.com/spiro",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html"
+},
+{
+"url": "https://mastodon.online/@raph",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html"
+},
+{
+"url": "https://spline.technology/demo",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html"
+},
+{
+"url": "https://spline.technology/paper1.pdf",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2018/12/21/new-spline.html"
+},
+{
+"url": "https://ciechanow.ski/gears",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html"
+},
+{
+"url": "https://desmos.com/calculator/imvqywsb8o",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html"
+},
+{
+"url": "https://desmos.com/calculator/qznzk9xnac",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html"
+},
+{
+"url": "https://docs.rs/kurbo/0.8.0/kurbo/trait.ParamCurve.html",
+"parentScore": 68,
+"from": "https://raphlinus.github.io/curves/2021/02/19/parallel-curves.html"
+},
+{
 "url": "https://indieweb.printful.me/",
 "parentScore": 67,
 "from": "https://indieweb.org/"
@@ -1673,6 +2308,26 @@
 "url": "https://jackbardwell.com/",
 "parentScore": 67,
 "from": "https://extrapractice.space/"
+},
+{
+"url": "https://theuselessweb.com/",
+"parentScore": 67,
+"from": "https://puginarug.com/"
+},
+{
+"url": "http://anniealbagli.com/",
+"parentScore": 67,
+"from": "https://koalastothemax.com/"
+},
+{
+"url": "http://vadim.ogievetsky.com/",
+"parentScore": 67,
+"from": "https://koalastothemax.com/"
+},
+{
+"url": "https://sadgrl.atabook.org/",
+"parentScore": 67,
+"from": "https://sadgrl.online/"
 },
 {
 "url": "https://api.whatsapp.com/send?text=Haskell+diagrams%3A+Tessellations%3A+https%3A%2F%2Fmgarletmilani.com%2Fblog%2F2026-06-03-tessellations%2F",
@@ -1778,6 +2433,46 @@
 "url": "https://crates.io/crates/crabslab",
 "parentScore": 66,
 "from": "https://renderling.xyz/articles/wgsl-rs-beta-release.html"
+},
+{
+"url": "https://creativecommons.org/licenses/by/3.0",
+"parentScore": 66,
+"from": "https://choosealicense.com/licenses/cc0-1.0"
+},
+{
+"url": "https://doc.rust-lang.org/cargo/reference/manifest.html",
+"parentScore": 66,
+"from": "https://choosealicense.com/licenses/cc0-1.0"
+},
+{
+"url": "https://guides.rubygems.org/specification-reference",
+"parentScore": 66,
+"from": "https://choosealicense.com/licenses/cc0-1.0"
+},
+{
+"url": "https://spdx.org/licenses/CC0-1.0.html",
+"parentScore": 66,
+"from": "https://choosealicense.com/licenses/cc0-1.0"
+},
+{
+"url": "https://wiki.creativecommons.org/wiki/CC0_FAQ",
+"parentScore": 66,
+"from": "https://choosealicense.com/licenses/cc0-1.0"
+},
+{
+"url": "https://pomax.github.io/bezierinfo",
+"parentScore": 66,
+"from": "https://cmyr.net/blog/hyperbezier.html"
+},
+{
+"url": "https://raphlinus.github.io/",
+"parentScore": 66,
+"from": "https://cmyr.net/blog/hyperbezier.html"
+},
+{
+"url": "https://xi.zulipchat.com/",
+"parentScore": 66,
+"from": "https://cmyr.net/blog/hyperbezier.html"
 },
 {
 "url": "http://zzounds.com/a--303730/cat--Keyboards-and-MIDI--2666",
@@ -1925,6 +2620,71 @@
 "from": "https://kapiyeya.com/"
 },
 {
+"url": "https://allenai.org/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://asterisk.coop/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://carlboettiger.info/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://clarku.edu/centers/geospatial-analytics",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://cng.kit.com/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://ctrees.org/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://developmentseed.org/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://earthmover.io/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://element84.com/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://esri.com/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://fused.io/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://geonovum.nl/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
+"url": "https://geospatial.yale.edu/",
+"parentScore": 65,
+"from": "https://cloudnativegeo.org/"
+},
+{
 "url": "http://creativecommons.org/licenses/by/4.0",
 "parentScore": 64,
 "from": "https://ifcomp.org/"
@@ -2043,6 +2803,196 @@
 "url": "https://docs.codeberg.org/codeberg-pages/forgejo-actions",
 "parentScore": 64,
 "from": "https://codeberg.page/"
+},
+{
+"url": "https://blog.pixlab.io/",
+"parentScore": 64,
+"from": "https://faceio.net/"
+},
+{
+"url": "https://pixlab.io/",
+"parentScore": 64,
+"from": "https://faceio.net/"
+},
+{
+"url": "https://pixlab.io/id-scan-api",
+"parentScore": 64,
+"from": "https://faceio.net/"
+},
+{
+"url": "https://symisc.net/",
+"parentScore": 64,
+"from": "https://faceio.net/"
+},
+{
+"url": "http://appspy.com/feature/11797/waiting-for-next-years-vmas-wont-be-hard-with-these-5-music-games-on-ios",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "http://digitalehonaward.net/en/sakuhin/8th-en/5060",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://adobe.com/inspire-archive/december2009/articles/article3?trackingid=FBTRS",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://ala.org/aasl/awards/best/historical",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://amazon.fr/So-Far-Good-Incredibox/dp/B07BKZCDHT",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://appadvice.com/appnn/2016/12/todays-apps-gone-free-cribbage-incredibox-bogga-magic-and-more",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://datingnews.com/daters-pulse/incredibox-music-app-turns-date-nights-into-jam-sessions",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://en.softonic.com/articles/what-is-incredibox",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://esadse.fr/fr/actualites/091213-resultats-du-concours-shenzhen",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://gizmodo.com/the-incredibox-remixes-songs-bobby-mcferrin-style-5900482",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://incredibox.threadless.com/",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "https://incredibox.tumblr.com/",
+"parentScore": 64,
+"from": "https://incredibox.com/"
+},
+{
+"url": "http://bajkaotvarech.cz/",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://blackgirlscode.com/",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://bogost.com/books/persuasive_games",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://boingboing.net/2014/12/08/parable-of-the-polygons-segre.html",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://booschie.github.io/polygons-pl",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://ccthing.tumblr.com/post/104764760336/parable-of-the-polygons-vi-hart-and-nicky-case",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://citylab.com/design/2014/12/an-immersive-game-shows-how-easily-segregation-arisesand-how-we-might-fix-it/383586",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://code2040.org/",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://codeliberation.org/",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://gamasutra.com/view/news/232873/Using_systems_to_explain_systemic_problems_in_Parable_of_the_Polygons.php",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://girlswhocode.com/",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://iangent.blogspot.com/2013/10/the-petrie-multiplier-why-attack-on.html",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://jayisgames.com/archives/2014/12/parable_of_the_polygons.php",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://killscreendaily.com/articles/parable-polygons-teaches-us-danger-and-power-individual-bias",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "http://metafilter.com/145147/Parable-of-the-Polygons",
+"parentScore": 64,
+"from": "https://ncase.me/polygons"
+},
+{
+"url": "https://demuxed.com/",
+"parentScore": 64,
+"from": "https://mux.com/"
+},
+{
+"url": "https://docs.astro.build/en/guides/media/mux",
+"parentScore": 64,
+"from": "https://mux.com/"
+},
+{
+"url": "https://howvideo.works/",
+"parentScore": 64,
+"from": "https://mux.com/"
+},
+{
+"url": "https://next-video.dev/",
+"parentScore": 64,
+"from": "https://mux.com/"
+},
+{
+"url": "https://opensourcepledge.com/members/mux",
+"parentScore": 64,
+"from": "https://mux.com/"
+},
+{
+"url": "https://synthesia.io/",
+"parentScore": 64,
+"from": "https://mux.com/"
+},
+{
+"url": "https://vercel.com/marketplace/mux",
+"parentScore": 64,
+"from": "https://mux.com/"
 },
 {
 "url": "https://enronarchive.org/",
@@ -2280,6 +3230,146 @@
 "from": "https://djen.co/"
 },
 {
+"url": "https://code.idtech.space/fn/cstrike",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://code.idtech.space/fn/valve",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://code.idtech.space/vera/nuclide",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://codeberg.org/CYBERDEV/REWise",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://developer.vera-visions.com/",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://fastdl.idtech.space/users/eukara/tacticalretreat-linux-x86-2026-06-03.tar.gz",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://fastdl.idtech.space/users/eukara/tacticalretreat-linux-x86_64-2026-06-03.tar.gz",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://fastdl.idtech.space/users/eukara/tacticalretreat-win-x86-2026-06-03.tar.gz",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://fteqw.org/",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://gamebanana.com/",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://matrix.to/#/#nuclide:matrix.org",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://moddb.com/",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "https://vera-visions.com/",
+"parentScore": 63,
+"from": "https://frag-net.com/project_tacticalretreat.html"
+},
+{
+"url": "http://jquery-steps.com/",
+"parentScore": 63,
+"from": "https://writecodeeveryday.github.io/projects/resumegen"
+},
+{
+"url": "https://clipboardjs.com/",
+"parentScore": 63,
+"from": "https://writecodeeveryday.github.io/projects/resumegen"
+},
+{
+"url": "https://getbootstrap.com/",
+"parentScore": 63,
+"from": "https://writecodeeveryday.github.io/projects/resumegen"
+},
+{
+"url": "https://jquery.com/",
+"parentScore": 63,
+"from": "https://writecodeeveryday.github.io/projects/resumegen"
+},
+{
+"url": "https://overleaf.com/latex/templates/deedy-resume/sqdbztjjghvz",
+"parentScore": 63,
+"from": "https://writecodeeveryday.github.io/projects/resumegen"
+},
+{
+"url": "https://flipboard.com/@TechRadar",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/accessibility-statement",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/careers",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/contact",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/cookies-policy",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/future-member-terms-and-conditions",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/privacy-policy",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://futureplc.com/terms-conditions",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
+"url": "https://go.future-advertising.com/TechRadar-Media-Kit.html",
+"parentScore": 63,
+"from": "https://techradar.com/tablets/a-godzilla-sized-pebble-watch-with-a-decade-of-improvement-daylight-claims-its-tablet-screen-is-better-than-e-ink-but-the-truth-is-far-more-complicated"
+},
+{
 "url": "http://imdkim.blogspot.com/",
 "parentScore": 62,
 "from": "https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html"
@@ -2333,6 +3423,51 @@
 "url": "http://omniture.com/",
 "parentScore": 62,
 "from": "https://onlineonly.christies.com/s/fine-printed-books-manuscripts-science/carrier-pigeon-internet-protocol-150/325216"
+},
+{
+"url": "http://lunaimaging.com/",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "http://secondlife.com/destination/1919",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "http://secondlife.com/destination/19191",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "https://bellerbyandco.com/",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "https://creativecommons.org/licenses/by-nc-sa/3.0",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "https://d1w7ugt075xbik.cloudfront.net/images/advancedsearch.jpg",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "https://davidrumsey.georeferencer.com/random",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "https://davidrumsey.georeferencer.com/random?collection=pilot",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
+},
+{
+"url": "https://davidrumsey.oldmapsonline.org/compare",
+"parentScore": 62,
+"from": "https://davidrumsey.com/"
 },
 {
 "url": "https://creative-commons-shop.fourthwall.com/",
@@ -2470,6 +3605,21 @@
 "from": "https://blog.tymscar.com/posts/crinklecranklewalls"
 },
 {
+"url": "https://hypebot.com/new-music-uploads-jump-66-in-18-months-to-100000-tracks-every-day",
+"parentScore": 61,
+"from": "https://pikuma.com/blog/ease-creation-decrease-quality-value"
+},
+{
+"url": "https://hypebot.com/oops-100000-tracks-a-day-are-not-uploaded-to-spotify-apple-amazon-music",
+"parentScore": 61,
+"from": "https://pikuma.com/blog/ease-creation-decrease-quality-value"
+},
+{
+"url": "https://musicbusinessworldwide.com/quarter-of-a-billion-tracks-now-sit-on-music-streaming-services-where-does-it-end",
+"parentScore": 61,
+"from": "https://pikuma.com/blog/ease-creation-decrease-quality-value"
+},
+{
 "url": "https://buttondown.email/ho",
 "parentScore": 60,
 "from": "https://nathanho.me/posts/evograin"
@@ -2533,6 +3683,11 @@
 "url": "https://projects.blender.org/blender/blender/pulls/164617",
 "parentScore": 60,
 "from": "https://aras-p.info/blog/2026/10/05/Unroll-a-loop-make-shader-10x-faster"
+},
+{
+"url": "https://iubenda.com/terms-and-conditions/19862208",
+"parentScore": 60,
+"from": "https://luni.app/"
 },
 {
 "url": "http://a1.mzstatic.com/us/r1000/013/Music/90/2a/b7/mzm.ojhmmnlb.aac.p.m4a",
@@ -2760,6 +3915,56 @@
 "from": "https://art.teleportacia.org/olia.html"
 },
 {
+"url": "http://barnesvillega.net/",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://eznec.com/index.shtml",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://eznec.com/miscpage.htm",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://fermi.la.asu.edu/w9cf",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://fermi.la.asu.edu/w9cf/tuner/tuner.html",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://ifwtech.co.uk/g3sek",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://intellicast.com/IcastPage/LoadPage.aspx?loc=usa&pid=none&prodgrp=SevereWeather&prodnav=none&product=NationalLightning&seg=LocalWeather",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://lightningstorm.com/tux/jsp/gpg/lex1/mapdisplay_free.jsp;jsessionid=70302813051091055453040",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "http://seed-solutions.com/gregordy/Amateur%20Radio/W8WWV%20Experimentation.htm",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
+"url": "https://ctrengineeringinc.com/",
+"parentScore": 59,
+"from": "https://w8ji.com/"
+},
+{
 "url": "http://benryves.com/",
 "parentScore": 58,
 "from": "https://internalregister.github.io/2019/03/14/Homebrew-Console.html"
@@ -2818,6 +4023,16 @@
 "url": "http://tcd.ie/",
 "parentScore": 58,
 "from": "https://random.org/"
+},
+{
+"url": "http://imagineradio.com/mymusiclisten.asp?name=mnkby",
+"parentScore": 58,
+"from": "https://monkey-boy.com/main.html"
+},
+{
+"url": "https://alexbainter.com/",
+"parentScore": 58,
+"from": "https://generative.fm/"
 },
 {
 "url": "http://silicium.org/",
@@ -2955,9 +4170,24 @@
 "from": "https://flexboxfroggy.com/"
 },
 {
+"url": "https://joinmastodon.org/apps",
+"parentScore": 56,
+"from": "https://mastodon.online/@aurimas"
+},
+{
 "url": "https://origami-shop.com/?affiliate_banner_id=4",
 "parentScore": 55,
 "from": "https://oriwiki.com/"
+},
+{
+"url": "https://discourse.org/",
+"parentScore": 55,
+"from": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120"
+},
+{
+"url": "https://fatrodzianko.github.io/Modular-Trackular",
+"parentScore": 55,
+"from": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120"
 },
 {
 "url": "http://worrydream.com/",
@@ -2983,6 +4213,26 @@
 "url": "https://wizardmac.com/",
 "parentScore": 54,
 "from": "https://evanmiller.org/dont-kill-math.html"
+},
+{
+"url": "https://adgm.us/portal/guide02A.html?v=20260624",
+"parentScore": 54,
+"from": "https://atariprotos.com/"
+},
+{
+"url": "https://atariage.com/",
+"parentScore": 54,
+"from": "https://atariprotos.com/"
+},
+{
+"url": "https://atariage.com/forums/forum/36-prototypes",
+"parentScore": 54,
+"from": "https://atariprotos.com/"
+},
+{
+"url": "https://atarimania.com/game-atari-400-800-xl-xe-cohen-s-towers_1111.html",
+"parentScore": 54,
+"from": "https://atariprotos.com/"
 },
 {
 "url": "http://eol.org/",
@@ -3075,6 +4325,11 @@
 "from": "https://brander.ca/cordcut"
 },
 {
+"url": "https://fixthephoto.com/best-video-silence-removers.html",
+"parentScore": 50,
+"from": "https://getrecut.com/"
+},
+{
 "url": "https://docstrike.com/",
 "parentScore": 49,
 "from": "https://breezepdf.com/"
@@ -3088,6 +4343,26 @@
 "url": "https://viztab.com/",
 "parentScore": 49,
 "from": "https://breezepdf.com/"
+},
+{
+"url": "http://saturniancosmology.org/",
+"parentScore": 49,
+"from": "https://jnocook.net/"
+},
+{
+"url": "http://saturniancosmology.org/othergroup",
+"parentScore": 49,
+"from": "https://jnocook.net/"
+},
+{
+"url": "http://spaces.org/",
+"parentScore": 49,
+"from": "https://jnocook.net/"
+},
+{
+"url": "https://creativecommons.org/licenses/by-sa/3.0/us",
+"parentScore": 48,
+"from": "https://forestwander.com/"
 },
 {
 "url": "http://core-econ.org/",
@@ -3155,6 +4430,16 @@
 "from": "https://global-change-data-lab.org/"
 },
 {
+"url": "https://caehdus.atabook.org/",
+"parentScore": 45,
+"from": "https://caehdus.neocities.org/"
+},
+{
+"url": "https://tamanotchi.world/36388c",
+"parentScore": 45,
+"from": "https://caehdus.neocities.org/"
+},
+{
 "url": "https://perstenius.com/",
 "parentScore": 43,
 "from": "https://eelslap.com/"
@@ -3178,6 +4463,11 @@
 "url": "https://doom.fandom.com/wiki/WAD",
 "parentScore": 43,
 "from": "https://cedardb.com/blog/sqldoom"
+},
+{
+"url": "http://geocities.com/",
+"parentScore": 42,
+"from": "https://nindestruct.com/webarchive/nindestruct98"
 },
 {
 "url": "https://bod.ge/",
