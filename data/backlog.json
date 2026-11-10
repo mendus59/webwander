@@ -194,65 +194,6 @@
 "_backlogAt": 1794296933.7764215
 },
 {
-"id": "71d630d270aaa01bc8e8",
-"url": "https://philo.gay/linecam",
-"domain": "philo.gay",
-"registrableDomain": "philo.gay",
-"title": "Using the railway network as a flatbed scanner",
-"description": "an adventure in image processing and taking very wide photographs (blog post; 4,600 words)",
-"image": "https://philo.gay/linecam/blogpics_1x/cranes-edit.jpg",
-"categories": [
-"photo",
-"art",
-"toys"
-],
-"categoryScores": {
-"photo": 6.65,
-"art": 6.52,
-"toys": 5.45,
-"stories": 5.17,
-"games": 3.0,
-"simulation": 3.0,
-"programming": 2.85,
-"indieweb": 2.5,
-"retro": 1.12,
-"history": 0.9,
-"nature": 0.9,
-"science": 0.67,
-"dataviz": 0.67,
-"weird": 0.67,
-"learning": 0.67,
-"math": 0.67,
-"music": 0.22,
-"maps": 0.22,
-"generators": 0.22
-},
-"score": 90,
-"scoreBreakdown": {
-"interactivity": 24,
-"independence": 20,
-"craft": 13,
-"novelty": 31,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"uses canvas",
-"WebGL / 3D",
-"reacts to mouse/touch",
-"keyboard controls",
-"lightweight small-web page",
-"playful wording",
-"long-form writing",
-"new domain"
-],
-"nearestSimilarity": 0.625,
-"simhash": "80ff3783bd02e9f9",
-"frameable": true,
-"source": "lobsters",
-"_backlogAt": 1794296933.7764215
-},
-{
 "id": "053550865608fdb16827",
 "url": "https://zensical.org/",
 "domain": "zensical.org",
@@ -340,6 +281,53 @@
 "frameable": true,
 "source": "seed",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "86b9890a91b229c9d159",
+"url": "https://developer.puter.com/labs/firefox-wasm",
+"domain": "developer.puter.com",
+"registrableDomain": "puter.com",
+"title": "Firefox in WebAssembly",
+"description": "",
+"image": "",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 7.3,
+"toys": 5.0,
+"games": 3.0,
+"music": 3.0,
+"dataviz": 3.0,
+"simulation": 3.0,
+"generators": 1.0,
+"nature": 0.6
+},
+"score": 90,
+"scoreBreakdown": {
+"interactivity": 30,
+"independence": 20,
+"craft": 9,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "01db0f234b711f3c",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "7490ad08c49d9b64c103",
@@ -1071,6 +1059,53 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "8f87a1839a315ec486f5",
+"url": "https://loaders.gl/",
+"domain": "loaders.gl",
+"registrableDomain": "loaders.gl",
+"title": "Home | loaders.gl",
+"description": "deck.gl",
+"image": "",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 7.4,
+"toys": 4.0,
+"games": 3.0,
+"maps": 3.0,
+"dataviz": 2.2,
+"indieweb": 1.2,
+"art": 1.0,
+"simulation": 1.0,
+"history": 0.6,
+"math": 0.6
+},
+"score": 84,
+"scoreBreakdown": {
+"interactivity": 22,
+"independence": 20,
+"craft": 9,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "546098f9f6e90bd2",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "5c672bb6190b584a3872",
 "url": "https://hakim.se/",
 "domain": "hakim.se",
@@ -1218,6 +1253,48 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "cb331151290523a4eca9",
+"url": "https://hnbooks.pieterma.es/",
+"domain": "hnbooks.pieterma.es",
+"registrableDomain": "pieterma.es",
+"title": "Hacker News Book Map",
+"description": "The 1000 most popular books on Hacker News visualized on an interactive map.",
+"image": "https://hnbooks.pieterma.es/thumbnail.jpg",
+"categories": [
+"maps",
+"toys"
+],
+"categoryScores": {
+"maps": 10.6,
+"toys": 6.5,
+"games": 3.0,
+"simulation": 1.55,
+"generators": 1.0,
+"dataviz": 0.55
+},
+"score": 83,
+"scoreBreakdown": {
+"interactivity": 23,
+"independence": 18,
+"craft": 11,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "3f347de0e17bd798",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "4897c01d3eba30b54330",
 "url": "https://noiselang.com/play",
 "domain": "noiselang.com",
@@ -1261,51 +1338,6 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
-},
-{
-"id": "bb6b1c4083708357ab3a",
-"url": "https://copy.sh/life",
-"domain": "copy.sh",
-"registrableDomain": "copy.sh",
-"title": "Conway's Game of Life",
-"description": "A JavaScript version of Conway's Game of Life, based on the Hashlife-algorithm.",
-"image": "",
-"categories": [
-"games",
-"simulation",
-"programming"
-],
-"categoryScores": {
-"games": 11.85,
-"simulation": 10.7,
-"programming": 9.06,
-"toys": 4.43,
-"generators": 2.93,
-"math": 2.93,
-"science": 0.43,
-"nature": 0.43
-},
-"score": 82,
-"scoreBreakdown": {
-"interactivity": 20,
-"independence": 20,
-"craft": 10,
-"novelty": 30,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"uses canvas",
-"reacts to mouse/touch",
-"keyboard controls",
-"lightweight small-web page",
-"new domain"
-],
-"nearestSimilarity": 0.641,
-"simhash": "318e2cbaaec4d289",
-"frameable": true,
-"source": "seed",
-"_backlogAt": 1794297998.5802603
 },
 {
 "id": "dbf6105a0d4b83e5665a",
@@ -1354,6 +1386,45 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "4254469ad124c90074e9",
+"url": "https://anniversary.bonhommeparis.com/",
+"domain": "anniversary.bonhommeparis.com",
+"registrableDomain": "bonhommeparis.com",
+"title": "Bonhomme | 10 ans",
+"description": "Discover the 10 key values that fueled Bonhomme since 2013.",
+"image": "https://anniversary.bonhommeparis.com/social/share-1200x630.png",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 5.0,
+"games": 3.0,
+"simulation": 3.0
+},
+"score": 82,
+"scoreBreakdown": {
+"interactivity": 24,
+"independence": 20,
+"craft": 7,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "c62cd0a4b81aeb0f",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "62319fb4e2cf20ae6805",
@@ -1487,51 +1558,6 @@
 "_backlogAt": 1794296933.7764215
 },
 {
-"id": "b338dd8b4ffda15bd859",
-"url": "https://learningmusic.ableton.com/",
-"domain": "learningmusic.ableton.com",
-"registrableDomain": "ableton.com",
-"title": "Get started | Learning Music",
-"description": "Explore the fundamentals of music via Ableton's interactive website. Experiment with beats, melody, harmony, basslines, and song structure in your web browser.",
-"image": "https://learningmusic.ableton.com/images/og-image.jpg",
-"categories": [
-"music",
-"toys",
-"learning"
-],
-"categoryScores": {
-"music": 18.37,
-"toys": 5.29,
-"learning": 4.4,
-"maps": 3.29,
-"games": 3.19,
-"science": 2.5,
-"generators": 1.0,
-"simulation": 0.4
-},
-"score": 80,
-"scoreBreakdown": {
-"interactivity": 18,
-"independence": 18,
-"craft": 15,
-"novelty": 25,
-"security": 4,
-"penalties": 0
-},
-"reasons": [
-"makes sound",
-"reacts to mouse/touch",
-"keyboard controls",
-"playful wording",
-"new domain"
-],
-"nearestSimilarity": 0.703,
-"simhash": "48ac2d929de97bac",
-"frameable": false,
-"source": "seed",
-"_backlogAt": 1794296933.7764215
-},
-{
 "id": "4edac31c60682cf5d48a",
 "url": "https://weavesilk.com/",
 "domain": "weavesilk.com",
@@ -1576,64 +1602,6 @@
 "_backlogAt": 1794296933.7764215
 },
 {
-"id": "58e483f759d6213e0a49",
-"url": "https://plugins.qgis.org/plugins/vgridtools",
-"domain": "plugins.qgis.org",
-"registrableDomain": "qgis.org",
-"title": "Vgrid \u2014 QGIS Python Plugins Repository",
-"description": "",
-"image": "https://plugins.qgis.org/media/packages/2026/vgrid_YcAD5bV.svg",
-"categories": [
-"programming",
-"maps",
-"dataviz"
-],
-"categoryScores": {
-"programming": 9.42,
-"maps": 8.18,
-"dataviz": 6.94,
-"toys": 3.74,
-"generators": 3.71,
-"simulation": 3.48,
-"science": 2.46,
-"nature": 2.46,
-"games": 2.25,
-"stories": 2.0,
-"history": 1.97,
-"art": 1.73,
-"math": 0.99,
-"photo": 0.99,
-"learning": 0.74,
-"music": 0.49,
-"retro": 0.25,
-"food": 0.25
-},
-"score": 80,
-"scoreBreakdown": {
-"interactivity": 22,
-"independence": 14,
-"craft": 15,
-"novelty": 27,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"WebGL / 3D",
-"reacts to mouse/touch",
-"keyboard controls",
-"maps/charts",
-"cookie banner",
-"playful wording",
-"long-form writing",
-"new domain"
-],
-"nearestSimilarity": 0.672,
-"simhash": "384ce22889f39643",
-"frameable": true,
-"source": "link",
-"_backlogAt": 1794297998.5802603
-},
-{
 "id": "e5d88d4092f8db6e49da",
 "url": "https://markon.com/update-avocados-32",
 "domain": "markon.com",
@@ -1675,6 +1643,146 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "1766b239c203f4700663",
+"url": "https://miakizz.quest/",
+"domain": "miakizz.quest",
+"registrableDomain": "miakizz.quest",
+"title": "Mia Kiesman",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 3.61,
+"music": 2.73,
+"learning": 2.42,
+"simulation": 2.31,
+"history": 2.11,
+"games": 2.0,
+"nature": 1.81,
+"generators": 1.31,
+"dataviz": 0.92,
+"programming": 0.92,
+"retro": 0.61,
+"math": 0.61,
+"indieweb": 0.61,
+"weird": 0.31,
+"food": 0.31
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 19,
+"independence": 18,
+"craft": 15,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "d2da324d66ac7f97",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "db131864c843027d0cac",
+"url": "https://noamtamir.github.io/morwse",
+"domain": "noamtamir.github.io",
+"registrableDomain": "noamtamir.github.io",
+"title": "-- --- .-. .-- ... .",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"music": 3.0,
+"indieweb": 3.0,
+"simulation": 1.0,
+"science": 0.6
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 23,
+"independence": 20,
+"craft": 4,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a1c822468a8c1bc4",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "40aac7765bb216063e94",
+"url": "https://9eo.org/",
+"domain": "9eo.org",
+"registrableDomain": "9eo.org",
+"title": "Chris Holmes \u2014 9eo.org",
+"description": "Chris Holmes is a geospatial technologist and architect working at the intersection of business, engineering, and open standards.",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.0,
+"stories": 2.84,
+"maps": 2.34,
+"simulation": 2.34,
+"programming": 2.01,
+"dataviz": 1.0,
+"indieweb": 1.0,
+"science": 0.67,
+"learning": 0.67,
+"generators": 0.33
+},
+"score": 80,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 13,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "b07752fab9b3ff18",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "839443518c839bff0ac9",
@@ -1856,6 +1964,50 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "d8b92045313af896a174",
+"url": "https://emfcamp.org/",
+"domain": "emfcamp.org",
+"registrableDomain": "emfcamp.org",
+"title": "Electromagnetic Field",
+"description": "Electromagnetic Field is a non-profit UK camping festival for those with an inquisitive mind or an interest in making things.",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"toys": 2.0,
+"music": 1.3,
+"photo": 1.3,
+"generators": 1.0,
+"programming": 0.87,
+"maps": 0.43,
+"food": 0.43,
+"indieweb": 0.43
+},
+"score": 79,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 13,
+"novelty": 29,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "4d59584b852d54e8",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "2835ac416ed470e93320",
@@ -2155,44 +2307,150 @@
 "_backlogAt": 1794297998.5802603
 },
 {
-"id": "24d6a2c38e7ade405524",
-"url": "https://mafs.dev/",
-"domain": "mafs.dev",
-"registrableDomain": "mafs.dev",
-"title": "Mafs: React components for interactive math",
-"description": "React components for interactive math",
+"id": "3fd25e8da3d7eb52e3bc",
+"url": "https://totalrealreturns.com/",
+"domain": "totalrealreturns.com",
+"registrableDomain": "totalrealreturns.com",
+"title": "Inflation & Dividend-Adjusted Stock Charts | Total Real Returns",
+"description": "Dividend-reinvested, inflation-adjusted stock charts.",
 "image": "",
 "categories": [
-"toys",
-"math"
+"dataviz"
 ],
 "categoryScores": {
-"toys": 11.2,
-"math": 8.6,
+"dataviz": 12.56,
+"toys": 3.0,
 "games": 2.0,
-"programming": 1.8
+"simulation": 2.0,
+"programming": 2.0,
+"learning": 1.02,
+"generators": 1.0,
+"retro": 1.0,
+"weird": 0.68,
+"math": 0.34,
+"indieweb": 0.34
 },
-"score": 77,
+"score": 78,
 "scoreBreakdown": {
-"interactivity": 9,
-"independence": 20,
-"craft": 13,
-"novelty": 31,
+"interactivity": 22,
+"independence": 18,
+"craft": 9,
+"novelty": 25,
 "security": 4,
 "penalties": 0
 },
 "reasons": [
+"WebGL / 3D",
 "reacts to mouse/touch",
 "keyboard controls",
-"lightweight small-web page",
-"playful wording",
+"maps/charts",
 "new domain"
 ],
-"nearestSimilarity": 0.625,
-"simhash": "243b6e398f28d50b",
+"nearestSimilarity": 0.703,
+"simhash": "40fb360f9fa8a0ad",
 "frameable": true,
 "source": "hn",
-"_backlogAt": 1794295147.315128
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "9e33c80994c675540b6d",
+"url": "https://redblobgames.com/pathfinding/heuristics/differential.html",
+"domain": "redblobgames.com",
+"registrableDomain": "redblobgames.com",
+"title": "Improving heuristics for A* search",
+"description": "",
+"image": "",
+"categories": [
+"programming",
+"toys"
+],
+"categoryScores": {
+"programming": 5.16,
+"toys": 4.24,
+"games": 2.92,
+"math": 2.64,
+"maps": 2.4,
+"stories": 2.24,
+"dataviz": 2.2,
+"generators": 2.2,
+"learning": 1.68,
+"art": 1.0,
+"simulation": 1.0,
+"science": 0.48,
+"weird": 0.24,
+"nature": 0.24,
+"photo": 0.24,
+"indieweb": 0.24
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 18,
+"independence": 20,
+"craft": 11,
+"novelty": 26,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"lightweight small-web page",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "101ee05f7fa62c68",
+"frameable": false,
+"source": "lobsters",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "bd66f89eb3168cf1866f",
+"url": "https://scripton.dev/",
+"domain": "scripton.dev",
+"registrableDomain": "scripton.dev",
+"title": "Scripton Python IDE",
+"description": "Scripton is a powerful yet easy to use Python IDE. It includes rich visualization and AI features.",
+"image": "",
+"categories": [
+"programming",
+"dataviz",
+"toys"
+],
+"categoryScores": {
+"programming": 19.58,
+"dataviz": 8.39,
+"toys": 5.89,
+"simulation": 3.0,
+"photo": 2.0,
+"science": 1.85,
+"games": 1.0,
+"generators": 0.35,
+"learning": 0.35
+},
+"score": 78,
+"scoreBreakdown": {
+"interactivity": 18,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"maps/charts",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "6fa2edae81ade7cd",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "d81e553985c15fd8541d",
@@ -2443,6 +2701,99 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "6da5dbda03dec7086a9f",
+"url": "https://juliaviolet.dev/",
+"domain": "juliaviolet.dev",
+"registrableDomain": "juliaviolet.dev",
+"title": "Juliaviolet.dev",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 3.39,
+"photo": 2.46,
+"programming": 2.43,
+"toys": 2.0,
+"indieweb": 1.96,
+"art": 1.93,
+"music": 1.39,
+"dataviz": 1.0,
+"generators": 1.0,
+"science": 0.46,
+"history": 0.46,
+"learning": 0.46
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 20,
+"craft": 12,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "1a00fc376da14ffe",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "62a1c086b2ad6ba31b30",
+"url": "https://explore.org/",
+"domain": "explore.org",
+"registrableDomain": "explore.org",
+"title": "Home | Explore.org",
+"description": "Explore.org is the world's leading philanthropic live nature cam network and documentary film channel. Our mission is to champion the selfless acts of others, create a portal into the soul of humanity and inspire lifelong learning. Watch nature unfold live right now!",
+"image": "https://explore.org/ExploreShareImage.jpg",
+"categories": [
+"maps",
+"nature"
+],
+"categoryScores": {
+"maps": 12.64,
+"nature": 4.64,
+"learning": 3.04,
+"photo": 3.04,
+"games": 2.0,
+"toys": 2.0,
+"art": 1.0,
+"dataviz": 1.0,
+"generators": 1.0,
+"science": 0.54,
+"programming": 0.54
+},
+"score": 77,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 13,
+"novelty": 29,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "99884bc6d22a714b",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "6913e1d76a89789ddca4",
 "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
 "domain": "nicholas.carlini.com",
@@ -2493,6 +2844,91 @@
 "frameable": true,
 "source": "lobsters",
 "_backlogAt": 1794295147.315128
+},
+{
+"id": "026797a95f8126430e47",
+"url": "https://theproblemplatform.com/",
+"domain": "theproblemplatform.com",
+"registrableDomain": "theproblemplatform.com",
+"title": "Problem Platform",
+"description": "A web app where users can share, discuss, and find solutions to various problems. Engage with posts through likes, comments, and discover the most relevant issues based on user interaction and recency.",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 3.05,
+"games": 2.0,
+"toys": 2.0,
+"learning": 0.52
+},
+"score": 76,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 13,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "0a5b64a6f8901b9b",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "f71ed98f430c007d823a",
+"url": "https://mentalmathpro.com/",
+"domain": "mentalmathpro.com",
+"registrableDomain": "mentalmathpro.com",
+"title": "Mental Math Pro: Lean, practice, & improve your mental math",
+"description": "Build your mental math skills with free online practice, step-by-step strategies, and a daily challenge. Start a quick round with Mental Math Pro.",
+"image": "https://mentalmathpro.com/og_images/homepage-og.webp",
+"categories": [
+"math",
+"learning"
+],
+"categoryScores": {
+"math": 12.37,
+"learning": 8.32,
+"generators": 3.77,
+"games": 2.96,
+"toys": 2.0,
+"dataviz": 1.32,
+"art": 1.0,
+"maps": 0.96,
+"weird": 0.32,
+"indieweb": 0.32
+},
+"score": 76,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "baa4c973342282ae",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "1c5de6d86a69d019460f",
@@ -2628,47 +3064,131 @@
 "_backlogAt": 1794297998.5802603
 },
 {
-"id": "240dfe16452dd2e08d1f",
-"url": "https://playgameoflife.com/",
-"domain": "playgameoflife.com",
-"registrableDomain": "playgameoflife.com",
-"title": "Play John Conway\u2019s Game of Life",
-"description": "Play the Game of Life online, a single player game invented in 1970 by Cambridge mathematician John Conway.",
-"image": "https://playgameoflife.com/pix/gol-image.png",
+"id": "e5a1ea36d04d06e67d0d",
+"url": "https://typatone.com/",
+"domain": "typatone.com",
+"registrableDomain": "typatone.com",
+"title": "Typatone",
+"description": "The act of writing has always been an art. Now, it can also be an act of music. Each letter you type corresponds to a specific musical note putting a new spin to your composition. Make music while you write.",
+"image": "https://typatone.com/images/thumbnail-narrow.gif",
 "categories": [
-"games",
-"simulation",
-"toys"
+"music"
 ],
 "categoryScores": {
-"games": 19.26,
-"simulation": 10.26,
-"toys": 4.0,
-"science": 2.11,
-"learning": 0.84,
-"maps": 0.42,
-"photo": 0.42
+"music": 3.7,
+"art": 3.1,
+"stories": 3.1,
+"toys": 3.0,
+"games": 2.0,
+"simulation": 2.0,
+"dataviz": 1.2,
+"programming": 0.6
 },
 "score": 75,
 "scoreBreakdown": {
-"interactivity": 13,
-"independence": 18,
-"craft": 13,
+"interactivity": 16,
+"independence": 16,
+"craft": 11,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "0356725a4a691f00",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "de0e76a46081c8c8d257",
+"url": "https://tobloef.com/text2mindmap",
+"domain": "tobloef.com",
+"registrableDomain": "tobloef.com",
+"title": "Text2MindMap",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.0,
+"games": 3.6,
+"dataviz": 3.0,
+"generators": 1.0,
+"simulation": 1.0,
+"art": 0.6,
+"maps": 0.6
+},
+"score": 75,
+"scoreBreakdown": {
+"interactivity": 23,
+"independence": 16,
+"craft": 7,
 "novelty": 27,
-"security": 4,
+"security": 2,
 "penalties": 0
 },
 "reasons": [
 "uses canvas",
 "reacts to mouse/touch",
-"playful wording",
+"keyboard controls",
+"maps/charts",
 "new domain"
 ],
 "nearestSimilarity": 0.672,
-"simhash": "b774c77047a56169",
-"frameable": false,
-"source": "seed",
-"_backlogAt": 1794297998.5802603
+"simhash": "158a9d3646e7f12a",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "be365cca58612692933c",
+"url": "https://dominofit.isotropic.us/",
+"domain": "dominofit.isotropic.us",
+"registrableDomain": "isotropic.us",
+"title": "Domino Fit",
+"description": "A puzzle about domino dots",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 3.2,
+"math": 3.1,
+"music": 3.0,
+"dataviz": 3.0,
+"games": 2.0,
+"generators": 1.0
+},
+"score": 75,
+"scoreBreakdown": {
+"interactivity": 21,
+"independence": 20,
+"craft": 10,
+"novelty": 27,
+"security": -3,
+"penalties": 0
+},
+"reasons": [
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"lightweight small-web page",
+"new domain",
+"asks for a password"
+],
+"nearestSimilarity": 0.672,
+"simhash": "00725a717812aa6b",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "567ca4e0919efdcbf56b",
@@ -2886,6 +3406,47 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "751b10bddeca2d136c3c",
+"url": "https://keleats.rocks/",
+"domain": "keleats.rocks",
+"registrableDomain": "keleats.rocks",
+"title": "ke.weaver",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 2.56,
+"games": 2.0,
+"programming": 1.12,
+"art": 0.56,
+"weird": 0.56,
+"indieweb": 0.56
+},
+"score": 74,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 11,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "70a5c20636dd0efd",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "fa8b1a2cbfb97ba76495",
@@ -3272,6 +3833,85 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "b2d4f732e7460113b4f3",
+"url": "https://arxiv.org/abs/2004.06278",
+"domain": "arxiv.org",
+"registrableDomain": "arxiv.org",
+"title": "[2004.06278] Squares: A Fast Counter-Based RNG",
+"description": "Abstract page for arXiv paper 2004.06278: Squares: A Fast Counter-Based RNG",
+"image": "/static/browse/0.3.4/images/arxiv-logo-fb.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 8.67,
+"dataviz": 3.5,
+"generators": 2.0,
+"science": 1.83,
+"history": 1.83,
+"art": 1.0,
+"learning": 0.67,
+"music": 0.33,
+"math": 0.33
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 20,
+"craft": 15,
+"novelty": 30,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "72fa6cd932eaaa56",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "4dc9304a801207c84a16",
+"url": "https://pdimagearchive.org/",
+"domain": "pdimagearchive.org",
+"registrableDomain": "pdimagearchive.org",
+"title": "Public Domain Image Archive",
+"description": "Explore our hand-picked collection of out-of-copyright works, free for all to browse, download, and reuse. This is a living database with new images added every week.",
+"image": "https://images.pdimagearchive.org/pdia/main-opengraph.jpg",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 10.4,
+"maps": 3.1,
+"art": 1.2,
+"generators": 1.0,
+"weird": 0.6
+},
+"score": 73,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 15,
+"novelty": 33,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.609,
+"simhash": "8171df4254f68611",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "b51e029ff4fd04588631",
@@ -3669,6 +4309,232 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "7a2cecce082cd88eb405",
+"url": "https://setosa.io/ev",
+"domain": "setosa.io",
+"registrableDomain": "setosa.io",
+"title": "Explained Visually",
+"description": "",
+"image": "",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 7.64,
+"dataviz": 3.0,
+"games": 2.0,
+"toys": 2.0,
+"generators": 1.0,
+"science": 0.53,
+"food": 0.53
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 16,
+"craft": 12,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "75532866c21fdefd",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "e85345341d4b689b5e2c",
+"url": "https://middle-earth-interactive-map.web.app/",
+"domain": "middle-earth-interactive-map.web.app",
+"registrableDomain": "middle-earth-interactive-map.web.app",
+"title": "Interactive Middle-earth Map \u2014 LOTR, Hobbit & Silmarillion",
+"description": "An interactive map of Middle-earth: 128 events from The Lord of the Rings, The Hobbit and The Silmarillion, with journey paths and a satellite view.",
+"image": "https://middle-earth-interactive-map.web.app/og-image.jpg",
+"categories": [
+"maps",
+"toys"
+],
+"categoryScores": {
+"maps": 25.24,
+"toys": 12.67,
+"games": 1.07,
+"art": 1.07,
+"stories": 1.07,
+"generators": 1.0,
+"history": 0.53
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 11,
+"independence": 18,
+"craft": 13,
+"novelty": 26,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"maps/charts",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "42713730126d59d4",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "a72d33f5f2200cb46c5c",
+"url": "https://abcdinamo.com/",
+"domain": "abcdinamo.com",
+"registrableDomain": "abcdinamo.com",
+"title": "Home \u2014 Dinamo Typefaces",
+"description": "Dinamo is a Berlin-based type design studio offering retail and bespoke typefaces, design software, research, and consultancy.",
+"image": "",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 4.48,
+"toys": 2.65,
+"programming": 2.5,
+"games": 2.33,
+"music": 2.15,
+"learning": 2.15,
+"simulation": 1.83,
+"dataviz": 1.33,
+"generators": 1.0,
+"maps": 0.65,
+"history": 0.65,
+"photo": 0.65,
+"indieweb": 0.65,
+"weird": 0.33
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 14,
+"craft": 15,
+"novelty": 30,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"cookie banner",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "b9900d8c7364b92e",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "05828481da41b0809709",
+"url": "https://portolan-sdi.org/",
+"domain": "portolan-sdi.org",
+"registrableDomain": "portolan-sdi.org",
+"title": "Portolan makes geospatial data easy to share and use",
+"description": "Portolan is an open specification for publishing geospatial data as plain files in your own storage. No servers, no databases. Browse the catalog registry.",
+"image": "https://www.portolan-sdi.org/en/opengraph-image?d771d14335e109bd",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 11.95,
+"maps": 3.86,
+"learning": 2.98,
+"weird": 2.09,
+"simulation": 2.09,
+"games": 2.0,
+"toys": 2.0,
+"photo": 2.0,
+"generators": 1.89,
+"programming": 1.77,
+"art": 1.0,
+"indieweb": 0.59,
+"history": 0.3,
+"nature": 0.3,
+"math": 0.3
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 15,
+"novelty": 21,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing"
+],
+"nearestSimilarity": 0.688,
+"simhash": "0086ca7b815992f2",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "e2ed6680436ef5c090ca",
+"url": "https://avasilver.dev/",
+"domain": "avasilver.dev",
+"registrableDomain": "avasilver.dev",
+"title": "Ava Silver",
+"description": "Ava Silver's Personal Website",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 4.49,
+"programming": 2.99,
+"indieweb": 2.87,
+"games": 2.61,
+"photo": 2.0,
+"dataviz": 1.75,
+"art": 1.0,
+"science": 0.75,
+"learning": 0.37
+},
+"score": 72,
+"scoreBreakdown": {
+"interactivity": 8,
+"independence": 20,
+"craft": 13,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"makes sound",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "0e49053651e22b2f",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "c8c9f5a36ed7462b3578",
 "url": "https://cloudlord.management/",
 "domain": "cloudlord.management",
@@ -3987,6 +4853,100 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "5b640fa1749a66fc59b7",
+"url": "https://forgejo.org/",
+"domain": "forgejo.org",
+"registrableDomain": "forgejo.org",
+"title": "Forgejo \u2013 Beyond coding. We forge.",
+"description": "Forgejo is a self-hosted lightweight software forge. Easy to install and low maintenance, it just does the job.",
+"image": "https://forgejo.org/_astro/og-preview.Uy75QWb0_6Lpd2.webp",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 15.9,
+"learning": 1.89,
+"art": 1.38,
+"dataviz": 1.0,
+"generators": 1.0
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 20,
+"craft": 15,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "a63eb894e5557443",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "982082562532f3dec765",
+"url": "https://poki.com/en/g/stickman-hook",
+"domain": "poki.com",
+"registrableDomain": "poki.com",
+"title": "Stickman Hook - Play Online for Free! | Poki",
+"description": "Stickman Hook lets you swing through levels in this arcade game! Use your hook to grab anchor points. The goal is to navigate obstacles with physics-based swinging. Master the momentum! Play skillfully.",
+"image": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/99e090d154caf30f3625df7e456d5984/stickman-hook-logo.png",
+"categories": [
+"games",
+"toys"
+],
+"categoryScores": {
+"games": 25.43,
+"toys": 6.41,
+"dataviz": 3.0,
+"simulation": 3.0,
+"programming": 2.91,
+"science": 2.78,
+"learning": 2.35,
+"photo": 2.28,
+"math": 1.13,
+"generators": 1.0,
+"maps": 0.85,
+"art": 0.57,
+"history": 0.57,
+"weird": 0.57,
+"nature": 0.57,
+"retro": 0.28,
+"indieweb": 0.28
+},
+"score": 71,
+"scoreBreakdown": {
+"interactivity": 26,
+"independence": 0,
+"craft": 15,
+"novelty": 25,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"uses canvas",
+"WebGL / 3D",
+"reacts to mouse/touch",
+"maps/charts",
+"2 ad network(s)",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "a45a765f65ea404a",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "1d775e345a3012e90fbd",
 "url": "https://decomp.dev/",
 "domain": "decomp.dev",
@@ -4153,6 +5113,88 @@
 "frameable": true,
 "source": "seed",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "e5e660e766f2505de1c8",
+"url": "https://jono.fyi/",
+"domain": "jono.fyi",
+"registrableDomain": "jono.fyi",
+"title": "Artistic & Studio Work of Jono",
+"description": "I use graphic design and computer programming to explore the expressive qualities of technology. This is my digital portfolio. Thanks for stopping by.",
+"image": "https://freight.cargo.site/i/1367b3a7af37ab24d32c7ec3b4c7c30e01b549dd1f4b402f2a8bc40f953ef51f/6.png",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 4.29,
+"programming": 3.69,
+"maps": 3.1,
+"toys": 3.0,
+"simulation": 2.0,
+"history": 0.6
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 14,
+"craft": 15,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"reacts to mouse/touch",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "b6c534309748a5b9",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "7b19b60696b0f7cff580",
+"url": "https://hackertyper.net/",
+"domain": "hackertyper.net",
+"registrableDomain": "hackertyper.net",
+"title": "Hacker Typer",
+"description": "The original HackerTyper. Turning all your hacker dreams into pseudo reality since 2011.",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 2.02,
+"games": 2.0,
+"generators": 1.0,
+"indieweb": 0.81,
+"toys": 0.4,
+"art": 0.4,
+"science": 0.4,
+"maps": 0.4,
+"photo": 0.4
+},
+"score": 70,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 13,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "5c1d96e30e72c35a",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "ee84aea5db0c1a2514fb",
@@ -4354,53 +5396,179 @@
 "_backlogAt": 1794297998.5802603
 },
 {
-"id": "cc119fade1840299a219",
-"url": "https://ukrockfestivals.com/",
-"domain": "ukrockfestivals.com",
-"registrableDomain": "ukrockfestivals.com",
-"title": "the archive ,a history of Uk rock festivals -1960-92: November 2018",
-"description": "July 2010 : History of the Glastonbury Festival 1970-1990 ,Reading festival 1961-1990. UK Free festivals 1967-1990, UK commercical festivals 1960-1990,womadelaide 1992-2008, History of UK rock festivals, GLC free concerts, Rock Against Racism , Monsters of Rock Donington, Bickershaw Festival,Bath Festival 1969-1970, Womadelaide ,Grateful dead in Egypt, Australian Deadheads ,Hawkwind, Here and Now,",
+"id": "741d5a571c37f8b261b4",
+"url": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html",
+"domain": "forum.lazarus.freepascal.org",
+"registrableDomain": "freepascal.org",
+"title": "Feature announcement: Function References and Anonymous Functions",
+"description": "Feature announcement: Function References and Anonymous Functions",
 "image": "",
 "categories": [
-"history",
-"retro"
+"programming"
 ],
 "categoryScores": {
-"history": 12.53,
-"retro": 6.29,
-"stories": 2.76,
-"music": 1.27,
-"maps": 0.76,
-"nature": 0.76,
-"photo": 0.76,
-"toys": 0.51,
-"art": 0.51,
-"weird": 0.51,
-"math": 0.51,
-"indieweb": 0.51,
-"games": 0.25,
-"learning": 0.25
+"programming": 2.79,
+"games": 2.46,
+"toys": 2.23,
+"stories": 2.0,
+"photo": 2.0,
+"nature": 0.7,
+"maps": 0.46,
+"learning": 0.46,
+"art": 0.23,
+"history": 0.23,
+"generators": 0.23,
+"weird": 0.23,
+"math": 0.23,
+"indieweb": 0.23
 },
-"score": 68,
+"score": 69,
 "scoreBreakdown": {
-"interactivity": 0,
-"independence": 20,
-"craft": 15,
-"novelty": 31,
+"interactivity": 9,
+"independence": 18,
+"craft": 14,
+"novelty": 26,
 "security": 2,
 "penalties": 0
 },
 "reasons": [
-"lightweight small-web page",
+"reacts to mouse/touch",
+"keyboard controls",
 "playful wording",
 "long-form writing",
 "new domain"
 ],
-"nearestSimilarity": 0.625,
-"simhash": "1edcc7b239085d17",
+"nearestSimilarity": 0.688,
+"simhash": "b085fd8536a9f9a8",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "edaa2c8978c4c0fa7487",
+"url": "https://pagescms.org/",
+"domain": "pagescms.org",
+"registrableDomain": "pagescms.org",
+"title": "Pages CMS",
+"description": "Manage content and media right in your GitHub repository. No database, no API, no extra backend.",
+"image": "https://pagescms.org/assets/social-card.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 11.54,
+"toys": 2.35,
+"learning": 2.21,
+"games": 2.0,
+"generators": 1.85,
+"weird": 1.85,
+"art": 1.35,
+"dataviz": 1.0,
+"science": 0.35,
+"stories": 0.35
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 11,
+"independence": 18,
+"craft": 9,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "9a4a23d87678e6d6",
 "frameable": true,
-"source": "wiby",
-"_backlogAt": 1794295147.315128
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "3b2a5e7a7e3f7cfe4955",
+"url": "https://highlightjs.org/",
+"domain": "highlightjs.org",
+"registrableDomain": "highlightjs.org",
+"title": "highlight.js",
+"description": "The Internet's favorite JavaScript syntax highlighter supporting Node.js and the web.",
+"image": "https://highlightjs.org/opengraph-image.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 17.96,
+"games": 2.0,
+"toys": 2.0,
+"generators": 1.0,
+"maps": 0.36,
+"learning": 0.36
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 11,
+"novelty": 27,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "153cebeeeac37f8b",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "d375efb718f8633f70ec",
+"url": "https://izzy.horse/",
+"domain": "izzy.horse",
+"registrableDomain": "izzy.horse",
+"title": "index",
+"description": "",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 3.21,
+"food": 2.36,
+"simulation": 2.0,
+"learning": 1.71,
+"toys": 1.0,
+"maps": 0.43,
+"weird": 0.43,
+"photo": 0.43
+},
+"score": 69,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 20,
+"craft": 10,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"WebGL / 3D",
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "bb470e10815c23ee",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "909ec78829c7a2b554b0",
@@ -4533,6 +5701,81 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "0f873481106036248525",
+"url": "https://opennutrition.app/search",
+"domain": "opennutrition.app",
+"registrableDomain": "opennutrition.app",
+"title": "OpenNutrition \u2014 Search",
+"description": "OpenNutrition is a mobile app designed to help you track your macros, receive personalized diet recommendations, and monitor your fitness goals.",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"toys": 2.0,
+"generators": 1.0,
+"food": 0.6
+},
+"score": 68,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 18,
+"craft": 7,
+"novelty": 27,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "f072ab5bf7a922b5",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "188c3a29339be99e09d7",
+"url": "https://knightride.rakhim.org/",
+"domain": "knightride.rakhim.org",
+"registrableDomain": "rakhim.org",
+"title": "Knight Ride",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 11.37,
+"music": 3.0,
+"toys": 2.0,
+"generators": 1.0,
+"math": 0.49
+},
+"score": 68,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 18,
+"craft": 7,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"makes sound",
+"reacts to mouse/touch",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "0988a301d8d5fcf2",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "291f7060c85477f1f2de",
@@ -4978,89 +6221,105 @@
 "_backlogAt": 1794297998.5802603
 },
 {
-"id": "2d7f0481ae911cec65da",
-"url": "https://joelgonewild.com/",
-"domain": "joelgonewild.com",
-"registrableDomain": "joelgonewild.com",
-"title": "Joel Gone Wild | Joel Vardy",
-"description": "I really enjoy exploring new places, so in 2014 I started writing down the things I had done both for others to read, and so future me can read too!",
-"image": "https://www.joelgonewild.com/assets/joel-vardy.jpg",
+"id": "f3e3a6ceb09c55cccfd4",
+"url": "https://gnu.org/software/gdb",
+"domain": "gnu.org",
+"registrableDomain": "gnu.org",
+"title": "GDB: The GNU Project Debugger",
+"description": "",
+"image": "",
 "categories": [
-"stories"
+"programming"
 ],
 "categoryScores": {
-"stories": 2.83,
-"photo": 2.0,
-"maps": 1.65,
-"food": 0.66,
-"history": 0.33,
-"programming": 0.33
+"programming": 11.35,
+"retro": 3.0,
+"nature": 1.39,
+"games": 0.84,
+"toys": 0.84,
+"music": 0.56,
+"history": 0.56,
+"learning": 0.56,
+"math": 0.56,
+"science": 0.28,
+"dataviz": 0.28,
+"simulation": 0.28
 },
-"score": 66,
+"score": 67,
 "scoreBreakdown": {
 "interactivity": 0,
-"independence": 20,
+"independence": 18,
 "craft": 15,
-"novelty": 27,
+"novelty": 30,
 "security": 4,
 "penalties": 0
 },
 "reasons": [
-"lightweight small-web page",
 "playful wording",
-"new domain"
-],
-"nearestSimilarity": 0.672,
-"simhash": "2b21729775d3761d",
-"frameable": false,
-"source": "wiby",
-"_backlogAt": 1794295147.315128
-},
-{
-"id": "620d293c33c2ab9176fb",
-"url": "https://tagyerit.com/",
-"domain": "tagyerit.com",
-"registrableDomain": "tagyerit.com",
-"title": "TagYerit: Music and Web Culture - Rock, Pop, AAA, Alternative, Guitar, Art",
-"description": "TagYerit: Where to find music,art,theatre,film,Wabbit Wecordings and a rabbit guitar on the internet",
-"image": "",
-"categories": [
-"music",
-"art",
-"photo"
-],
-"categoryScores": {
-"music": 10.5,
-"art": 8.32,
-"photo": 6.32,
-"retro": 3.0,
-"maps": 2.96,
-"history": 1.46,
-"nature": 1.09,
-"learning": 0.73,
-"stories": 0.73,
-"weird": 0.36,
-"indieweb": 0.36
-},
-"score": 66,
-"scoreBreakdown": {
-"interactivity": 0,
-"independence": 20,
-"craft": 14,
-"novelty": 30,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"lightweight small-web page",
-"playful wording",
+"long-form writing",
 "new domain"
 ],
 "nearestSimilarity": 0.641,
-"simhash": "4404cc0d1eab3ff4",
-"frameable": true,
-"source": "wiby",
-"_backlogAt": 1794295147.315128
+"simhash": "8c7033af19adf582",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "cb53cc9f7e77829626cd",
+"url": "https://kqed.org/science/2000015/how-did-the-newt-cross-the-road-with-help-from-these-volunteers-carefully",
+"domain": "kqed.org",
+"registrableDomain": "kqed.org",
+"title": "How Did the Newt Cross the Road? With Help From These Volunteers, Carefully | KQED",
+"description": "Every winter, California newts risk their lives crossing Bay Area roads to breed. Now, volunteers \u2014 and land planners \u2014 are stepping in to save them.",
+"image": "https://cdn.kqed.org/wp-content/uploads/sites/35/2026/02/LEDE_Newt-Patrol-Newt_resized.jpg",
+"categories": [
+"learning",
+"games",
+"toys"
+],
+"categoryScores": {
+"learning": 8.24,
+"games": 6.33,
+"toys": 4.0,
+"maps": 3.62,
+"music": 3.24,
+"photo": 3.15,
+"stories": 2.62,
+"nature": 1.65,
+"generators": 1.62,
+"science": 1.44,
+"simulation": 1.41,
+"dataviz": 1.21,
+"art": 1.0,
+"programming": 0.62,
+"food": 0.41,
+"math": 0.41
+},
+"score": 67,
+"scoreBreakdown": {
+"interactivity": 25,
+"independence": 14,
+"craft": 11,
+"novelty": 29,
+"security": 3,
+"penalties": -15
+},
+"reasons": [
+"uses canvas",
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"playful wording",
+"new domain",
+"commercial language x1",
+"a spam/gambling term"
+],
+"nearestSimilarity": 0.656,
+"simhash": "aedef98a3157a306",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "138a22c3b8839f1bb463",
@@ -5219,6 +6478,179 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "970d5834d4371b365166",
+"url": "https://decocms.com/",
+"domain": "decocms.com",
+"registrableDomain": "decocms.com",
+"title": "deco | Operamos sua experi\u00eancia digital e cobramos pelo resultado",
+"description": "Agentes de IA e engenheiros seniores operam o site, o app e o storefront das maiores marcas \u2014 software pr\u00f3prio e open source, sob sua governan\u00e7a. Comece gr\u00e1tis.",
+"image": "https://decoims.com/decocms/007d7862-d5d4-4f52-9a46-9ed19f37e58b/og-image-home.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 9.94,
+"generators": 2.06,
+"games": 2.0,
+"toys": 2.0,
+"stories": 2.0,
+"photo": 2.0,
+"art": 1.53,
+"nature": 1.06,
+"indieweb": 1.06,
+"dataviz": 1.0,
+"history": 0.53
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 16,
+"craft": 11,
+"novelty": 30,
+"security": 5,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.641,
+"simhash": "e1505e4196a46f5b",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "9242c09849efcb7b29f3",
+"url": "https://penger.city/",
+"domain": "penger.city",
+"registrableDomain": "penger.city",
+"title": "Penger City",
+"description": "",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 7.3,
+"music": 3.2,
+"retro": 3.0,
+"games": 2.6,
+"toys": 2.0,
+"photo": 2.0,
+"art": 0.6
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 9,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "bc082c31ac00a5c0",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "ff06851b1e9e9bcc7521",
+"url": "https://cartosvg.com/",
+"domain": "cartosvg.com",
+"registrableDomain": "cartosvg.com",
+"title": "CartoSVG",
+"description": "",
+"image": "",
+"categories": [
+"toys"
+],
+"categoryScores": {
+"toys": 4.9,
+"dataviz": 3.44,
+"maps": 3.37,
+"art": 2.97,
+"learning": 0.47,
+"nature": 0.47,
+"programming": 0.47
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 10,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "f0043f8d0e8b6025",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "4eb0f1c13f2436e3b7bf",
+"url": "https://docs.opencv.org/4.13.0/d7/dfc/group__highgui.html",
+"domain": "docs.opencv.org",
+"registrableDomain": "opencv.org",
+"title": "OpenCV: High-level GUI",
+"description": "",
+"image": "",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 6.23,
+"retro": 2.41,
+"toys": 2.23,
+"stories": 2.0,
+"programming": 1.41,
+"dataviz": 1.17,
+"science": 0.47,
+"music": 0.23,
+"maps": 0.23,
+"history": 0.23,
+"generators": 0.23,
+"photo": 0.23
+},
+"score": 66,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 12,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "c9c9183524c50648",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "f724e2c31d227921dcdd",
@@ -5505,6 +6937,84 @@
 "frameable": false,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "52a8a7a41e93b00955d4",
+"url": "https://docs.mesa3d.org/drivers/virgl.html",
+"domain": "docs.mesa3d.org",
+"registrableDomain": "mesa3d.org",
+"title": "VirGL \u2014 The Mesa 3D Graphics Library latest documentation",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 6.02,
+"games": 2.34,
+"nature": 1.01,
+"generators": 1.0,
+"art": 0.34,
+"history": 0.34,
+"learning": 0.34,
+"stories": 0.34,
+"math": 0.34
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 7,
+"independence": 18,
+"craft": 7,
+"novelty": 29,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "0bf2bd4554e63dfa",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "416e822a81c5976219df",
+"url": "https://sitinshade.com/",
+"domain": "sitinshade.com",
+"registrableDomain": "sitinshade.com",
+"title": "Find Best Seat to Minimize Sun Exposure While Traveling - Sit In Shade",
+"description": "Sit in Shade - Discover the optimal seat to stay in the shade during your journey. Sit In Shade provides real-time sun exposure data and route visualization.",
+"image": "",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 5.0,
+"maps": 3.0,
+"toys": 2.0,
+"generators": 1.0
+},
+"score": 65,
+"scoreBreakdown": {
+"interactivity": 11,
+"independence": 14,
+"craft": 9,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"reacts to mouse/touch",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "5be891fb606c3552",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "6e16d0e6ea0974be2c1f",
@@ -5855,52 +7365,6 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
-},
-{
-"id": "5b478977b0dd699c2f2d",
-"url": "https://meyerweb.com/eric/comment/chech.html",
-"domain": "meyerweb.com",
-"registrableDomain": "meyerweb.com",
-"title": "\u201cConsidered Harmful\u201d Essays Considered Harmful",
-"description": "",
-"image": "",
-"categories": [
-"stories"
-],
-"categoryScores": {
-"stories": 8.6,
-"learning": 2.91,
-"weird": 1.78,
-"toys": 0.85,
-"games": 0.56,
-"science": 0.28,
-"maps": 0.28,
-"dataviz": 0.28,
-"generators": 0.28,
-"nature": 0.28,
-"math": 0.28,
-"programming": 0.28
-},
-"score": 64,
-"scoreBreakdown": {
-"interactivity": 0,
-"independence": 20,
-"craft": 13,
-"novelty": 29,
-"security": 2,
-"penalties": 0
-},
-"reasons": [
-"lightweight small-web page",
-"playful wording",
-"long-form writing",
-"new domain"
-],
-"nearestSimilarity": 0.656,
-"simhash": "cbbabfd6ed2fe916",
-"frameable": true,
-"source": "wiby",
-"_backlogAt": 1794297998.5802603
 },
 {
 "id": "d99c884964f4c4422620",
@@ -6464,6 +7928,141 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "94d630e23b9d3743f60b",
+"url": "https://inetres.com/gp/military",
+"domain": "inetres.com",
+"registrableDomain": "inetres.com",
+"title": "Gary's Olive Drab Page",
+"description": "A collection of military images and information.",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"history": 2.5,
+"learning": 1.42,
+"art": 0.95,
+"dataviz": 0.95,
+"science": 0.47,
+"stories": 0.47
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 11,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "9ee09040f2fa7fc5",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "b9d6379753869882d4ff",
+"url": "https://adafruit.com/product/4692",
+"domain": "adafruit.com",
+"registrableDomain": "adafruit.com",
+"title": "Adafruit LSM6DSO32 6-DoF Accelerometer and Gyroscope [STEMMA QT / Qwiic] : Adafruit Industries, Unique & fun DIY electronics and kits",
+"description": "Behold, the ST LSM6DSO32: The latest in a long line of&nbsp;quality Accelerometer+Gyroscope 6-DOF IMUs from ST. This IMU is like a big sister to the LSM6DSOX;&nbsp;it has the same pinout and ...",
+"image": "https://www.adafruit.com/images/480x360/4692-10.jpg",
+"categories": [
+"photo"
+],
+"categoryScores": {
+"photo": 4.39,
+"games": 3.19,
+"toys": 2.89,
+"generators": 1.89,
+"nature": 1.8,
+"weird": 0.89,
+"learning": 0.89,
+"programming": 0.6,
+"history": 0.3,
+"dataviz": 0.3,
+"math": 0.3,
+"indieweb": 0.3
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 8,
+"craft": 13,
+"novelty": 31,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"1 ad network(s)",
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.625,
+"simhash": "37007b2d0b13a16f",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "c8549924ceee490789b6",
+"url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+"domain": "developer.mozilla.org",
+"registrableDomain": "mozilla.org",
+"title": "Content Security Policy (CSP) - HTTP | MDN",
+"description": "Content Security Policy (CSP) is a feature that helps to prevent or minimize the risk of certain types of security threats. It consists of a series of instructions from a website to a browser, which instruct the browser to place restrictions on the things that the code comprising the site is allowed to do.",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 14.01,
+"generators": 2.53,
+"stories": 2.0,
+"learning": 1.96,
+"art": 1.44,
+"dataviz": 1.22,
+"toys": 0.44,
+"maps": 0.44,
+"indieweb": 0.44,
+"games": 0.22,
+"science": 0.22,
+"history": 0.22,
+"math": 0.22,
+"simulation": 0.22,
+"photo": 0.22
+},
+"score": 63,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 18,
+"craft": 13,
+"novelty": 27,
+"security": 5,
+"penalties": -5
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "fb384d1a45954f24",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "c99b3d9152649da5c6be",
 "url": "https://blog.jse.li/posts/smith9street",
 "domain": "blog.jse.li",
@@ -6578,6 +8177,167 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "f3f3b42a424a8ce087ea",
+"url": "https://web.stanford.edu/group/virus/1999/arthic/replication.html",
+"domain": "web.stanford.edu",
+"registrableDomain": "stanford.edu",
+"title": "web.stanford.edu",
+"description": "Robert Siegel virus human\nviral",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 3.0,
+"science": 1.4,
+"programming": 0.7,
+"nature": 0.35,
+"math": 0.35,
+"simulation": 0.35
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 30,
+"security": 4,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "0c426b3dade4ae4f",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "e3f476e155cd986d432c",
+"url": "https://enroll.sh/",
+"domain": "enroll.sh",
+"registrableDomain": "enroll.sh",
+"title": "Enroll - Reverse-engineering Linux hosts into Ansible",
+"description": "Enroll inspects Debian-like and RedHat-like Linux hosts and generates Ansible configuration-management code from what it finds. Harvest \u2192 Manifest \u2192 Manage.",
+"image": "https://enroll.sh/assets/img/enroll-og.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.83,
+"simulation": 1.83,
+"history": 1.31,
+"generators": 1.0,
+"nature": 0.98,
+"art": 0.65,
+"science": 0.65,
+"dataviz": 0.65,
+"food": 0.65,
+"weird": 0.33,
+"stories": 0.33,
+"math": 0.33
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 9,
+"novelty": 27,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "dde5e8cb3f1ff46f",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "58542797946127d44d2b",
+"url": "https://webdesigninspiration.io/",
+"domain": "webdesigninspiration.io",
+"registrableDomain": "webdesigninspiration.io",
+"title": "Web Design Inspiration | Unique, Simple designs",
+"description": "Web design inspiration: a curated collection of unique websites and UI sections. Fresh design ideas for designers and developers, updated regularly",
+"image": "/thumbnail.png",
+"categories": [
+"art"
+],
+"categoryScores": {
+"art": 9.8,
+"history": 2.5,
+"programming": 2.5,
+"games": 2.0,
+"toys": 2.0,
+"photo": 2.0,
+"generators": 1.8
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 29,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.656,
+"simhash": "777c11223b0d5e55",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "f111cbf0ddd626049d30",
+"url": "https://mines.fyi/",
+"domain": "mines.fyi",
+"registrableDomain": "mines.fyi",
+"title": "mines.fyi \u2014 Free US Mine Search | MSHA Mine Data for 91,000+ Mines",
+"description": "Free search across 91,000+ US mines from the MSHA open dataset. Filter by state, commodity, mine type, and operator. Mine locations, production history, and employee data \u2014 updated weekly.",
+"image": "",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 10.2,
+"maps": 3.6,
+"history": 2.5,
+"games": 2.0,
+"programming": 1.2,
+"generators": 1.0
+},
+"score": 62,
+"scoreBreakdown": {
+"interactivity": 10,
+"independence": 16,
+"craft": 8,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"keyboard controls",
+"maps/charts",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "e52c3b9f6311008e",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "269819a9cc47fd82482e",
@@ -6907,6 +8667,202 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "694617d5d40e859ccb62",
+"url": "https://zimmers.net/",
+"domain": "zimmers.net",
+"registrableDomain": "zimmers.net",
+"title": "Zimmers.Net by Bo Zimmerman",
+"description": "",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 2.24,
+"art": 0.9,
+"music": 0.45,
+"indieweb": 0.45
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 30,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.641,
+"simhash": "95c1128737432925",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "1bffc6dbb4eeacad932d",
+"url": "https://instances.vantage.sh/aws/ec2/m5a.2xlarge",
+"domain": "instances.vantage.sh",
+"registrableDomain": "vantage.sh",
+"title": "m5a.2xlarge pricing and specs - Vantage",
+"description": "The m5a.2xlarge instance is in the General purpose family with 8 vCPUs, 32 GiB of memory and up to 10 Gibps of bandwidth starting at $0.344 per hour.",
+"image": "https://instances.vantage.sh/aws/ec2/m5a.2xlarge.png",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 6.41,
+"games": 2.3,
+"toys": 2.0,
+"programming": 1.52,
+"generators": 1.3,
+"art": 1.0,
+"retro": 1.0,
+"maps": 0.91,
+"science": 0.61,
+"photo": 0.3
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 17,
+"independence": 18,
+"craft": 9,
+"novelty": 25,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.703,
+"simhash": "e00e5b43046fc19b",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "fe21566e13ac4ec94969",
+"url": "https://potomac-airfield.com/",
+"domain": "potomac-airfield.com",
+"registrableDomain": "potomac-airfield.com",
+"title": "Potomac Airfield (VKX)",
+"description": "",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 0.57,
+"history": 0.57,
+"learning": 0.57
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 31,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.625,
+"simhash": "0dc2938e30c240af",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "6c92ff3baec85518c214",
+"url": "https://doctormacro.com/",
+"domain": "doctormacro.com",
+"registrableDomain": "doctormacro.com",
+"title": "Home",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"photo": 3.24,
+"music": 1.65,
+"science": 1.24,
+"art": 0.41
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 10,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "581e8b645be13e49",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "869cd1e01b60c66f99c1",
+"url": "https://gutenberg.org/ebooks/2701",
+"domain": "gutenberg.org",
+"registrableDomain": "gutenberg.org",
+"title": "Moby Dick; Or, The Whale by Herman Melville | Project Gutenberg",
+"description": "Moby Dick; Or, The Whale by Herman Melville. Free eBook digitized and proofread by volunteers.",
+"image": "https://www.gutenberg.org/cache/epub/2701/pg2701.cover.medium.jpg",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 2.08,
+"programming": 1.04,
+"generators": 1.0,
+"games": 0.69,
+"toys": 0.69,
+"music": 0.69,
+"history": 0.69,
+"nature": 0.69,
+"maps": 0.35
+},
+"score": 61,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 9,
+"novelty": 30,
+"security": 4,
+"penalties": -5
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.641,
+"simhash": "0c3714a8754977f4",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "0d770f1c7f5eb80cdfb4",
 "url": "https://aras-p.info/blog/2026/10/05/Unroll-a-loop-make-shader-10x-faster",
 "domain": "aras-p.info",
@@ -7073,6 +9029,265 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "293543c9f60b0bd9cf50",
+"url": "https://thenounproject.com/",
+"domain": "thenounproject.com",
+"registrableDomain": "thenounproject.com",
+"title": "10M Free Icons & Stock Photos | SVG & PNG | Download Today",
+"description": "\ud83c\udfa8 Discover 10M high-quality SVG & PNG icons & stock photos for your next project. \ud83d\udd0d Find the perfect icon or photo in seconds!",
+"image": "",
+"categories": [
+"photo",
+"art"
+],
+"categoryScores": {
+"photo": 15.63,
+"art": 4.79,
+"toys": 2.98,
+"maps": 2.48,
+"history": 2.48,
+"games": 2.0,
+"programming": 1.63,
+"dataviz": 1.0,
+"generators": 1.0,
+"indieweb": 0.98,
+"learning": 0.65,
+"science": 0.33
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 14,
+"craft": 15,
+"novelty": 25,
+"security": 2,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"cookie banner",
+"playful wording",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.703,
+"simhash": "1f8440585ca0d748",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "d511e351da5977eee97f",
+"url": "https://aliceinavocadoland.neocities.org/",
+"domain": "aliceinavocadoland.neocities.org",
+"registrableDomain": "aliceinavocadoland.neocities.org",
+"title": "welcome to alice in avocadoland",
+"description": "",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 4.55,
+"toys": 1.55,
+"retro": 1.55,
+"music": 1.03,
+"photo": 1.03
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 8,
+"novelty": 27,
+"security": 5,
+"penalties": 0
+},
+"reasons": [
+"personal/indie host",
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "37a65c63d780819b",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "3c1319991f885f1eda17",
+"url": "https://xkcd.com/",
+"domain": "xkcd.com",
+"registrableDomain": "xkcd.com",
+"title": "xkcd: Dragonfly",
+"description": "",
+"image": "https://imgs.xkcd.com/comics/dragonfly_2x.png",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 1.89,
+"generators": 0.95,
+"science": 0.47,
+"maps": 0.47,
+"history": 0.47,
+"math": 0.47,
+"programming": 0.47
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "808ac7fe68ba93d8",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "07537679fd9c2599a35a",
+"url": "https://adafruit.com/product/4415",
+"domain": "adafruit.com",
+"registrableDomain": "adafruit.com",
+"title": "Adafruit Mini GPS PA1010D - UART and I2C - STEMMA QT : Adafruit Industries, Unique & fun DIY electronics and kits",
+"description": "This miniature GPS breakout is only 1&quot; x 1&quot; (~ 25mm x 25mm) but houses a complete GPS/GNSS solution with both I2C and UART interfaces. There&#39;s even an antenna on top, so  ...",
+"image": "https://www.adafruit.com/images/480x360/4415-05.jpg",
+"categories": [
+"photo"
+],
+"categoryScores": {
+"photo": 4.37,
+"games": 3.16,
+"learning": 2.95,
+"toys": 2.87,
+"science": 2.66,
+"generators": 1.87,
+"retro": 1.0,
+"programming": 0.58,
+"art": 0.29,
+"history": 0.29,
+"dataviz": 0.29,
+"indieweb": 0.29
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 8,
+"craft": 15,
+"novelty": 31,
+"security": 4,
+"penalties": -10
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"1 ad network(s)",
+"playful wording",
+"new domain",
+"commercial language x2"
+],
+"nearestSimilarity": 0.625,
+"simhash": "4d87bda5b76f197e",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "6785efaa989e5ff719ae",
+"url": "https://henryn.xyz/",
+"domain": "henryn.xyz",
+"registrableDomain": "henryn.xyz",
+"title": "Henryn Xyz",
+"description": "Discover more about Henryn Xyz.",
+"image": "https://henryn.xyz/static/ogimages/henryn.xyz.png",
+"categories": [
+"math"
+],
+"categoryScores": {
+"math": 3.29,
+"games": 2.19,
+"learning": 2.05,
+"programming": 2.0,
+"simulation": 1.65,
+"generators": 1.0,
+"maps": 0.55
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 13,
+"novelty": 23,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"playful wording",
+"new domain"
+],
+"nearestSimilarity": 0.719,
+"simhash": "63fd24d4f0042bc5",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "4e4bbc306c78c5154004",
+"url": "https://arxiv.org/html/2508.08568v1",
+"domain": "arxiv.org",
+"registrableDomain": "arxiv.org",
+"title": "1Introduction",
+"description": "",
+"image": "",
+"categories": [
+"stories"
+],
+"categoryScores": {
+"stories": 2.21,
+"learning": 2.14,
+"programming": 1.71,
+"science": 1.5,
+"art": 1.21,
+"dataviz": 1.21,
+"generators": 1.21,
+"music": 1.07,
+"retro": 1.0,
+"weird": 0.64,
+"math": 0.64,
+"games": 0.43,
+"nature": 0.21,
+"simulation": 0.21
+},
+"score": 60,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 18,
+"craft": 10,
+"novelty": 25,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"long-form writing",
+"new domain"
+],
+"nearestSimilarity": 0.703,
+"simhash": "06ab15af23108207",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "5b4e9184a503ccc62530",
@@ -7293,37 +9508,116 @@
 "_backlogAt": 1794297998.5802603
 },
 {
-"id": "8ee79d6998b148a3a289",
-"url": "https://openorb.idiot.sh/search",
-"domain": "openorb.idiot.sh",
-"registrableDomain": "idiot.sh",
-"title": "OpenOrb",
-"description": "A curated search engine for Atom and RSS feeds.",
-"image": "",
+"id": "1792e551067634bd2d2c",
+"url": "https://fosstodon.org/@MagneFire/107105850296484856",
+"domain": "fosstodon.org",
+"registrableDomain": "fosstodon.org",
+"title": "MagneFire: \"#SuperTuxKart on #AsteroidOS! Pretty much impossi\u2026\" - Fosstodon",
+"description": "Attached: 1 video\n\n#SuperTuxKart on #AsteroidOS!\nPretty much impossible to play but still fun \ud83d\ude07",
+"image": "https://cdn.fosstodon.org/media_attachments/files/107/105/847/176/626/997/small/d7191bf28cdbee8a.png",
 "categories": [
-"science"
+"games"
 ],
 "categoryScores": {
-"science": 2.5,
+"games": 4.5,
+"photo": 2.5,
+"toys": 2.0
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 9,
+"novelty": 31,
+"security": 5,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.625,
+"simhash": "55fef2d1a1611294",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "0e9051643ada8a66d2d9",
+"url": "https://yerf.metafur.org/",
+"domain": "yerf.metafur.org",
+"registrableDomain": "metafur.org",
+"title": "Yerf Historical Archive",
+"description": "Archive of artwork from former furry/anthro art community Yerf.",
+"image": "",
+"categories": [
+"history",
+"art"
+],
+"categoryScores": {
+"history": 11.7,
+"art": 5.6,
+"photo": 2.0,
 "generators": 1.0
 },
 "score": 59,
 "scoreBreakdown": {
 "interactivity": 3,
-"independence": 18,
-"craft": 7,
+"independence": 14,
+"craft": 11,
 "novelty": 29,
 "security": 2,
 "penalties": 0
 },
 "reasons": [
+"playful wording",
 "new domain"
 ],
 "nearestSimilarity": 0.656,
-"simhash": "db474d42f39aae5e",
+"simhash": "450d81208c41a8cb",
 "frameable": true,
-"source": "hn",
-"_backlogAt": 1794297998.5802603
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "281f73cc7f01d9ce6f15",
+"url": "https://git.dodorad.io/dodoradio/asteroid-health",
+"domain": "git.dodorad.io",
+"registrableDomain": "dodorad.io",
+"title": "dodoradio/asteroid-health - A health app for AsteroidOS based on sensorlogd.",
+"description": "",
+"image": "",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 1.0,
+"retro": 1.0,
+"programming": 0.95,
+"art": 0.48,
+"nature": 0.48
+},
+"score": 59,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 7,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "cc829d30a84e7f31",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "062c44e988521d713845",
@@ -7560,6 +9854,43 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "efbf6f3aa21e8a91395c",
+"url": "https://git.dodorad.io/dodoradio/asteroid-map/about",
+"domain": "git.dodorad.io",
+"registrableDomain": "dodorad.io",
+"title": "dodoradio/asteroid-map - A map app for AsteroidOS written in QML. Allows setting waypoints.",
+"description": "",
+"image": "",
+"categories": [
+"maps"
+],
+"categoryScores": {
+"maps": 6.88,
+"generators": 1.0,
+"toys": 0.92,
+"nature": 0.46,
+"programming": 0.46
+},
+"score": 58,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 20,
+"craft": 7,
+"novelty": 26,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.688,
+"simhash": "de48de6597bcec10",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "21ee84d5f1421fd60434",
 "url": "https://sp4comm.org/",
 "domain": "sp4comm.org",
@@ -7635,6 +9966,181 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "1bcc2e80e167716da4fa",
+"url": "https://freepascal.org/docs-html/ref/refse47.html",
+"domain": "freepascal.org",
+"registrableDomain": "freepascal.org",
+"title": "Interface inheritance",
+"description": "",
+"image": "",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 0.82
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "5f2be8ab1c18ea36",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "7b7013ee771c379b5025",
+"url": "https://docs.oracle.com/javase/tutorial/java/concepts/interface.html",
+"domain": "docs.oracle.com",
+"registrableDomain": "oracle.com",
+"title": "What Is an Interface? (The Java\u2122 Tutorials > Learning the Java Language > Object-Oriented Programming Concepts)",
+"description": "This beginner Java tutorial describes fundamentals of programming in the Java programming language",
+"image": "",
+"categories": [
+"programming",
+"learning"
+],
+"categoryScores": {
+"programming": 8.97,
+"learning": 7.91,
+"maps": 1.06,
+"generators": 1.0
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 18,
+"craft": 12,
+"novelty": 27,
+"security": 2,
+"penalties": -5
+},
+"reasons": [
+"playful wording",
+"new domain",
+"commercial language x1"
+],
+"nearestSimilarity": 0.672,
+"simhash": "e7ef880b184e492c",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "ef7e176be1ff8344a15b",
+"url": "https://aoi.com.au/bcw/neanderbasque.htm",
+"domain": "aoi.com.au",
+"registrableDomain": "aoi.com.au",
+"title": "How the Neanderthals became the Basques",
+"description": "",
+"image": "",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 6.1,
+"retro": 3.0
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 6,
+"novelty": 29,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.656,
+"simhash": "cd578e3484eea74c",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "d8b3a7d80cd71afb3a99",
+"url": "https://ndr.sn/",
+"domain": "ndr.sn",
+"registrableDomain": "ndr.sn",
+"title": "Home \u2014 Maeve Andersen",
+"description": "I'm Maeve. This is my personal site. Feel free to explore my site!",
+"image": "",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 5.6,
+"maps": 3.1
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 18,
+"craft": 10,
+"novelty": 27,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "2d69e235c06d5c57",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "cd7300df4cd016c7f79b",
+"url": "https://fosstodon.org/@AsteroidOS",
+"domain": "fosstodon.org",
+"registrableDomain": "fosstodon.org",
+"title": "AsteroidOS (@AsteroidOS@fosstodon.org) - Fosstodon",
+"description": "109 Posts, 55 Following, 1.94K Followers \u00b7 Open-source operating system for smartwatches.\n\n#AsteroidOS #FreeYourWrist #linux #foss #smartwatch",
+"image": "https://cdn.fosstodon.org/accounts/avatars/000/171/312/original/0b63dd74908fcf5b.png",
+"categories": [
+"games"
+],
+"categoryScores": {
+"games": 2.0,
+"toys": 2.0
+},
+"score": 57,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 7,
+"novelty": 31,
+"security": 5,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.625,
+"simhash": "89a18e9b2c032608",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "69bc6555f9291aadc474",
@@ -7910,6 +10416,177 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "ce5af4faff3484d67ef2",
+"url": "https://romanmilitary.net/",
+"domain": "romanmilitary.net",
+"registrableDomain": "romanmilitary.net",
+"title": "The Roman Military",
+"description": "A resource for information on the Roman military, Roman history, strategy, and equipment.",
+"image": "",
+"categories": [
+"history"
+],
+"categoryScores": {
+"history": 5.41,
+"maps": 0.49,
+"stories": 0.49,
+"simulation": 0.49
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 16,
+"craft": 10,
+"novelty": 27,
+"security": 3,
+"penalties": 0
+},
+"reasons": [
+"new domain"
+],
+"nearestSimilarity": 0.672,
+"simhash": "355eae08557bd35d",
+"frameable": false,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "df2f36be81097831602b",
+"url": "https://oblivus.com/",
+"domain": "oblivus.com",
+"registrableDomain": "oblivus.com",
+"title": "Oblivus | The next generation GPU Cloud",
+"description": "Revolutionize your cloud bill with Oblivus Cloud - up to 80% cheaper! Utilize 18,000+ GPUs on a fast, cost-effective, and reliable infrastructure!",
+"image": "",
+"categories": [
+"learning"
+],
+"categoryScores": {
+"learning": 3.33,
+"programming": 3.03,
+"indieweb": 3.03,
+"games": 2.92,
+"toys": 2.0,
+"photo": 2.0,
+"dataviz": 1.83,
+"generators": 1.0,
+"art": 0.31
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 16,
+"craft": 15,
+"novelty": 26,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"playful wording",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.688,
+"simhash": "72190d2a80b8b053",
+"frameable": false,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "bf745c54e406f247f112",
+"url": "https://framer.com/developers",
+"domain": "framer.com",
+"registrableDomain": "framer.com",
+"title": "Framer Developers: APIs, React, plugins, and Fetch",
+"description": "Explore Framer developer documentation for plugins, Fetch, React code components, code overrides, and the Server API, with guides, examples, and references.",
+"image": "https://framerusercontent.com/images/vt65Mbfi3w8ymfTyRfbmgM4Tyo.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 20.64,
+"generators": 3.32,
+"games": 2.99,
+"art": 2.99,
+"maps": 2.5,
+"toys": 2.0,
+"dataviz": 1.99,
+"learning": 0.99,
+"stories": 0.99,
+"indieweb": 0.99
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 14,
+"independence": 14,
+"craft": 9,
+"novelty": 30,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"cookie banner",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.641,
+"simhash": "bfd852b66e8a2f40",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "94b9c7e6cf0a8045e858",
+"url": "https://withcapsule.app/",
+"domain": "withcapsule.app",
+"registrableDomain": "withcapsule.app",
+"title": "Capsule \u2014 Documents that run like apps",
+"description": "Capsule keeps your tools and data inside a single .capsule file, with no servers to manage and no monthly fees.",
+"image": "https://withcapsule.app/og-image.png",
+"categories": [
+"dataviz",
+"programming"
+],
+"categoryScores": {
+"dataviz": 4.39,
+"programming": 4.17,
+"generators": 1.89,
+"toys": 1.49,
+"art": 1.3,
+"weird": 0.89,
+"learning": 0.89,
+"food": 0.89,
+"games": 0.6,
+"maps": 0.3,
+"simulation": 0.3
+},
+"score": 56,
+"scoreBreakdown": {
+"interactivity": 5,
+"independence": 20,
+"craft": 15,
+"novelty": 27,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"lightweight small-web page",
+"playful wording",
+"new domain",
+"commercial language x1",
+"a spam/gambling term"
+],
+"nearestSimilarity": 0.672,
+"simhash": "9250fe441bba248d",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "21cdb24ff324c3afcdb7",
@@ -8336,6 +11013,122 @@
 "_backlogAt": 1794297998.5802603
 },
 {
+"id": "a947bd530b54561df8c9",
+"url": "https://leets.it/feed",
+"domain": "leets.it",
+"registrableDomain": "leets.it",
+"title": "Leets - Discover the next big hits in music",
+"description": "Share and discover the best new emerging music daily",
+"image": "https://www.leets.it/api/og-home",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 8.6,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 54,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 9,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "1ac254b03b7245ed",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "c0cc245af90614c92525",
+"url": "https://zzickle.com/",
+"domain": "zzickle.com",
+"registrableDomain": "zzickle.com",
+"title": "The Grand Duchess of Mai'jik",
+"description": "",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"photo": 1.8,
+"nature": 1.2,
+"indieweb": 1.2,
+"art": 0.6,
+"history": 0.6,
+"generators": 0.6,
+"learning": 0.6
+},
+"score": 54,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 23,
+"security": 2,
+"penalties": 0
+},
+"reasons": [
+"lightweight small-web page",
+"new domain"
+],
+"nearestSimilarity": 0.719,
+"simhash": "f73467c09814c96c",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "04c14b23bfec8e866bc3",
+"url": "https://figure.game/",
+"domain": "figure.game",
+"registrableDomain": "figure.game",
+"title": "Figure",
+"description": "Figure is a daily logic puzzle game, free to play right in your browser. Clear all the tiles before running out of moves!",
+"image": "/api/og?p=1598",
+"categories": [
+"games",
+"math"
+],
+"categoryScores": {
+"games": 9.5,
+"math": 5.0,
+"toys": 2.0
+},
+"score": 54,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 7,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "3a123a38b1a04405",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "4bd5cdec76a76dd0e8b7",
 "url": "https://themagicofcode.com/sample",
 "domain": "themagicofcode.com",
@@ -8446,6 +11239,54 @@
 "frameable": true,
 "source": "wiby",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "6f92da3c0ee0e914da7a",
+"url": "https://adafruit.com/product/4600",
+"domain": "adafruit.com",
+"registrableDomain": "adafruit.com",
+"title": "Adafruit QT Py - SAMD21 Dev Board with STEMMA QT : Adafruit Industries, Unique & fun DIY electronics and kits",
+"description": "What a cutie pie! Or is it... a QT Py? This diminutive dev board comes with our favorite lil chip, the SAMD21 (as made famous in our GEMMA M0 and Trinket M0 boards).This time it comes with  ...",
+"image": "https://www.adafruit.com/images/480x360/4600-07",
+"categories": [
+"photo"
+],
+"categoryScores": {
+"photo": 6.35,
+"games": 2.85,
+"toys": 2.57,
+"learning": 2.35,
+"generators": 1.85,
+"science": 1.78,
+"nature": 1.78,
+"music": 1.13,
+"programming": 0.85,
+"art": 0.57,
+"indieweb": 0.57,
+"history": 0.28
+},
+"score": 53,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 8,
+"craft": 15,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"1 ad network(s)",
+"playful wording",
+"new domain",
+"commercial language x3"
+],
+"nearestSimilarity": 0.656,
+"simhash": "3d443ebc8b3b2975",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "c04296c65f2750ed2215",
@@ -8641,6 +11482,82 @@
 "frameable": true,
 "source": "link",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "fb3811547cdc96fea76c",
+"url": "https://numpad.io/",
+"domain": "numpad.io",
+"registrableDomain": "numpad.io",
+"title": "NumPad",
+"description": "A powerful calculator and text editor rolled into one",
+"image": "",
+"categories": [
+"generators"
+],
+"categoryScores": {
+"generators": 5.0,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 18,
+"craft": 7,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "c6785070387e4937",
+"frameable": true,
+"source": "hn",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "ba336501869b2661e5c3",
+"url": "https://dillydally414.github.io/",
+"domain": "dillydally414.github.io",
+"registrableDomain": "dillydally414.github.io",
+"title": "Dillon Scott",
+"description": "",
+"image": "https://dillydally414.github.io/icon.png",
+"categories": [
+"indieweb"
+],
+"categoryScores": {
+"indieweb": 3.0,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 52,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 5,
+"novelty": 29,
+"security": 4,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"personal/indie host",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.656,
+"simhash": "07911025140a4882",
+"frameable": true,
+"source": "link",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "fdc3ec86079b010d9028",
@@ -8908,6 +11825,85 @@
 "frameable": true,
 "source": "seed",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "462f839ee5fb52612722",
+"url": "https://98.js.org/",
+"domain": "98.js.org",
+"registrableDomain": "js.org",
+"title": "98.js - Windows 98 Online",
+"description": "",
+"image": "",
+"categories": [
+"dataviz"
+],
+"categoryScores": {
+"dataviz": 3.0,
+"games": 2.0,
+"toys": 2.0,
+"programming": 2.0
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 12,
+"independence": 20,
+"craft": 5,
+"novelty": 27,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"maps/charts",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.672,
+"simhash": "b014e1130829fecc",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794335017.5034382
+},
+{
+"id": "8b7fc1fccb550e082ab9",
+"url": "https://windows93.net/",
+"domain": "windows93.net",
+"registrableDomain": "windows93.net",
+"title": "WINDOWS93",
+"description": "",
+"image": "",
+"categories": [
+"music"
+],
+"categoryScores": {
+"music": 3.0,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 51,
+"scoreBreakdown": {
+"interactivity": 15,
+"independence": 20,
+"craft": 4,
+"novelty": 25,
+"security": 2,
+"penalties": -15
+},
+"reasons": [
+"makes sound",
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"very little content"
+],
+"nearestSimilarity": 0.703,
+"simhash": "cef2c81e3ae9c867",
+"frameable": true,
+"source": "seed",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "38183da0465fca7efc41",
@@ -9185,6 +12181,45 @@
 "_backlogAt": 1794296933.7764215
 },
 {
+"id": "32102d738063c8637be6",
+"url": "https://social.anoxinon.de/@Codeberg",
+"domain": "social.anoxinon.de",
+"registrableDomain": "anoxinon.de",
+"title": "Codeberg (@Codeberg@social.anoxinon.de) - social.anoxinon.de - Mastodon",
+"description": "616 Posts, 421 Following, 28.9K Followers \u00b7 We are a non-profit, community-led organization that helps free and open source projects prosper. Our services include Git hosting (https://codeberg.org, using @forgejo@floss.social), Weblate, Woodpecker CI and Pages.\n\nTo receive assistance (faster), request features or report problems, see: https://docs.codeberg.org/contact\n\nThis account is volunteer-ru",
+"image": "https://social.anoxinon.de/system/accounts/avatars/109/202/640/476/784/483/original/31b22459c9f5e3d2.png",
+"categories": [
+"programming"
+],
+"categoryScores": {
+"programming": 5.0,
+"games": 2.0,
+"toys": 2.0
+},
+"score": 48,
+"scoreBreakdown": {
+"interactivity": 9,
+"independence": 20,
+"craft": 7,
+"novelty": 27,
+"security": 0,
+"penalties": -15
+},
+"reasons": [
+"reacts to mouse/touch",
+"keyboard controls",
+"lightweight small-web page",
+"new domain",
+"certificate about to expire",
+"very little content"
+],
+"nearestSimilarity": 0.672,
+"simhash": "124e34802d007fa3",
+"frameable": false,
+"source": "link",
+"_backlogAt": 1794335017.5034382
+},
+{
 "id": "f644b4986a496838288b",
 "url": "https://commercetxt.org/",
 "domain": "commercetxt.org",
@@ -9346,6 +12381,44 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794297998.5802603
+},
+{
+"id": "ce1173b9758761d1cbf6",
+"url": "https://paulnoll.com/Oregon/Fly",
+"domain": "paulnoll.com",
+"registrableDomain": "paulnoll.com",
+"title": "Private Pilots Paul and Bernice Noll",
+"description": "Paul and Bernice Career as Pilots",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"nature": 1.09,
+"generators": 1.0,
+"toys": 0.55,
+"maps": 0.55
+},
+"score": 47,
+"scoreBreakdown": {
+"interactivity": 3,
+"independence": 8,
+"craft": 11,
+"novelty": 30,
+"security": -5,
+"penalties": 0
+},
+"reasons": [
+"1 ad network(s)",
+"new domain",
+"mixed content x4"
+],
+"nearestSimilarity": 0.641,
+"simhash": "7779f28f16e455f6",
+"frameable": false,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
 },
 {
 "id": "e8c44f81f66c54df1540",
@@ -9572,5 +12645,42 @@
 "frameable": true,
 "source": "hn",
 "_backlogAt": 1794296933.7764215
+},
+{
+"id": "da74b3d0bc47a19ec129",
+"url": "https://detritus.org/",
+"domain": "detritus.org",
+"registrableDomain": "detritus.org",
+"title": "www.detritus.org",
+"description": "Detritus is organized debris; fragments of ideas...snippets of imagination...the cyber-equivalent of musical 'B'-sides.  On it you'll find features like the American Online Kiddie Porn Page, the Cobalt Blue, the PFFT Shoo ting Range, and a HomePage Builder.",
+"image": "",
+"categories": [
+"retro"
+],
+"categoryScores": {
+"retro": 4.0,
+"generators": 3.1,
+"indieweb": 2.5
+},
+"score": 45,
+"scoreBreakdown": {
+"interactivity": 0,
+"independence": 20,
+"craft": 9,
+"novelty": 26,
+"security": -5,
+"penalties": -5
+},
+"reasons": [
+"lightweight small-web page",
+"new domain",
+"mixed content x1",
+"commercial language x1"
+],
+"nearestSimilarity": 0.688,
+"simhash": "09082f7414eddf71",
+"frameable": true,
+"source": "wiby",
+"_backlogAt": 1794335017.5034382
 }
 ]
