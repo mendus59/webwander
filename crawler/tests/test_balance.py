@@ -62,18 +62,33 @@ def test_crawl_run_is_balanced_and_keeps_leftovers(tmp_path, monkeypatch):
     monkeypatch.setattr(st, "SEEN_PATH", tmp_path / "seen.txt")
     monkeypatch.setattr(st, "FRONTIER_PATH", tmp_path / "frontier.json")
     monkeypatch.setattr(st, "LOG_PATH", tmp_path / "log.json")
+    monkeypatch.setattr(st, "BACKLOG_PATH", tmp_path / "backlog.json")
     seeds = tmp_path / "seeds.txt"
     seeds.write_text("\n".join(f"https://site{i}.example{i}.org/" for i in range(60)))
     monkeypatch.setattr(cli, "SEEDS_PATH", seeds)
     db = tmp_path / "db.json"
     assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0",
                      "--min-new", "10", "--max-new", "12", "--min-score", "0"]) == 0
-    new = [s for s in json.loads(db.read_text())["sites"].values() if s["status"] == "proposed"]
+    new = [dict(s, id=k) for k, s in json.loads(db.read_text())["sites"].items() if s["status"] == "proposed"]
     counts = Counter(c for s in new for c in s["categories"] if c in ("toys", "music", "retro", "programming"))
     assert counts["music"] >= 3 and counts["retro"] >= 3 and counts["programming"] >= 3
     assert counts["toys"] <= 4
     log = json.loads((tmp_path / "log.json").read_text())[-1]
     assert log["categories"]
-    # Unpicked good candidates are queued for the next run, not forgotten.
-    backlog = [f for f in json.loads((tmp_path / "frontier.json").read_text()) if f["from"] == "backlog"]
-    assert backlog
+    # Unpicked good candidates are kept, already scored, in the backlog...
+    backlog = json.loads((tmp_path / "backlog.json").read_text())
+    assert backlog and all(b["score"] >= 0 and b["categories"] for b in backlog)
+    first_ids = {s["id"] for s in new}
+    assert not first_ids & {b["id"] for b in backlog}
+
+    # ...and the next run presents them without fetching them again.
+    fetched = []
+    monkeypatch.setattr(cli.Fetcher, "fetch", lambda self, url, with_scripts=True: fetched.append(url) or
+                        Page(url, 404, {}, "", error="http 404"))
+    assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0",
+                     "--min-new", "10", "--max-new", "12", "--min-score", "0"]) == 0
+    sites = [dict(s, id=k) for k, s in json.loads(db.read_text())["sites"].items()]
+    second = [s for s in sites if s["status"] == "proposed" and s["id"] not in first_ids]
+    assert len(second) >= 10
+    assert {s["id"] for s in second} <= {b["id"] for b in backlog}
+    assert not any(k.startswith("_") for s in second for k in s)

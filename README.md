@@ -37,8 +37,9 @@ walkthrough must all clear the proposal threshold, and an ad-heavy listicle must
   **Each run is category-balanced:** it evaluates a pool of up to 4× more good candidates
   than it needs, then picks so every category gets roughly the same number
   (`crawler/wander/balance.py`), preferring categories the database has fewest of. Discovery
-  searches are steered toward those rarest categories too, and good candidates that didn't
-  fit are queued for the next run instead of being dropped.
+  searches are steered toward those rarest categories too. Good sites that didn't fit a run
+  are kept, already scored, in `data/backlog.json` and offered first in later runs (no
+  re-crawl needed; entries expire after 30 days, max 500).
 
 ## Scoring without AI
 
@@ -88,6 +89,6 @@ crawler/wander/       fetch.py, extract.py, tagger.py, score.py, simhash.py, sou
 crawler/seeds.txt     starter list of hand-picked sites
 crawler/tests/        pytest suite with HTML fixtures
 firebase/             Firestore security rules and indexes
-data/                 crawl bookkeeping committed by the bot (seen URLs, link frontier, run log)
+data/                 crawl bookkeeping committed by the bot (seen URLs, link frontier, backlog, run log)
 .github/workflows/    pages.yml, crawl.yml (daily), recheck.yml (weekly), seed.yml (once), test.yml
 ```

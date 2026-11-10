@@ -115,9 +115,13 @@ def cmd_crawl(args) -> int:
     log(f"{len(candidates)} candidates gathered")
     used_frontier = set()
     fetched = 0
-    pool: list[dict] = []        # >= min_score, not rejected
+    # Start from the backlog: good sites found earlier that didn't fit that run's balance.
+    backlog = [d for d in st.load_backlog() if d["id"] not in known_ids]
+    known_ids.update(d["id"] for d in backlog)
+    pool: list[dict] = list(backlog)  # >= min_score, not rejected
+    log(f"{len(backlog)} sites waiting in the backlog")
     runners_up: list[dict] = []  # scored but under threshold, used to guarantee --min-new
-    pool_target = args.max_new * args.pool_factor
+    pool_target = len(backlog) + args.max_new * args.pool_factor
     for url, source in candidates:
         if len(pool) >= pool_target or fetched >= args.max_fetch:
             break
@@ -148,10 +152,10 @@ def cmd_crawl(args) -> int:
             continue
         known_ids.add(ev.doc["id"])
         if ev.result.score >= args.min_score:
-            pool.append(dict(ev.doc, _norm=ev.norm))
+            pool.append(dict(ev.doc))
             log(f"  [good {ev.result.score:3d}] {ev.norm}  {ev.doc['categories']}")
         else:
-            runners_up.append(dict(ev.doc, _norm=ev.norm))
+            runners_up.append(dict(ev.doc))
             log(f"  [low  {ev.result.score:3d}] {ev.norm}")
 
     # 3. Choose a category-balanced set from the pool.
@@ -164,7 +168,7 @@ def cmd_crawl(args) -> int:
                                db_counts + Counter(c for d in chosen for c in topics(d)), taken)
         chosen += [dict(d, belowThreshold=True) for d in fill]
     for d in chosen:
-        doc = {k: v for k, v in d.items() if k != "_norm"}
+        doc = {k: v for k, v in d.items() if not k.startswith("_")}
         doc["status"] = "proposed"
         store.upsert_site(doc)
         new_docs.append(doc)
@@ -172,15 +176,11 @@ def cmd_crawl(args) -> int:
         log(f"  [NEW {doc['score']:3d}{' fill' if doc.get('belowThreshold') else ''}] {doc['url']}  {doc['categories']}")
     frontier = [f for f in frontier if f["url"] not in used_frontier]
     frontier_urls = {f["url"] for f in frontier}
-    # Good candidates that didn't fit this run's balance go back in the queue for next time.
+    # Good candidates that didn't fit this run's balance are kept, already scored, for later runs.
     chosen_ids = {d["id"] for d in chosen}
-    for d in pool:
-        if d["id"] not in chosen_ids:
-            seen.discard(url_key(d["_norm"]))
-            seen.discard(url_key(d["url"]))
-            if d["url"] not in frontier_urls:
-                frontier.append({"url": d["url"], "parentScore": 100 + d["score"], "from": "backlog"})
-                frontier_urls.add(d["url"])
+    leftovers = [d for d in pool if d["id"] not in chosen_ids]
+    st.save_backlog(leftovers)
+    log(f"{len(leftovers)} good sites kept in the backlog for later runs")
     run_categories = category_counts([d for d in new_docs])
     log(f"Categories this run: {run_categories}")
 
