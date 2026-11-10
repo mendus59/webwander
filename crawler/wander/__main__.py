@@ -55,7 +55,87 @@ def compute_stats(sites: list[dict]) -> dict:
     by_status = Counter(s.get("status") for s in sites)
     by_cat = Counter(c for s in sites if s.get("status") == "approved" for c in s.get("categories", []))
     return {"approved": by_status["approved"], "proposed": by_status["proposed"],
-            "rejected": by_status["rejected"], "categories": dict(by_cat)}
+            "rejected": by_status["rejected"], "backlog": by_status["backlog"], "categories": dict(by_cat)}
+
+
+def merge_sites(sites: list[dict], changed: list[dict], removed: set[str] = frozenset()) -> list[dict]:
+    """The site list after this run's writes, for stats."""
+    merged = {s["id"]: s for s in sites}
+    for d in changed:
+        merged[d["id"]] = {**merged.get(d["id"], {}), **d}
+    return [s for i, s in merged.items() if i not in removed]
+
+
+def load_backlog(store, sites: list[dict], known_ids: set[str]) -> list[dict]:
+    """Backlog sites (status "backlog"), minus expired ones, which are deleted. Moves the
+    old data/backlog.json into the database the first time it runs."""
+    for d in st.take_legacy_backlog():
+        if d["id"] not in known_ids:
+            store.upsert_site(dict(d, status="backlog"))
+            sites.append(dict(d, status="backlog"))
+            known_ids.add(d["id"])
+    cutoff = time.time() - st.BACKLOG_DAYS * 86400
+    backlog = []
+    for s in sites:
+        if s.get("status") != "backlog":
+            continue
+        if (s.get("backlogAt") or 0) < cutoff:
+            store.delete_site(s["id"])  # stale: the page may have changed
+            s["status"] = None
+        else:
+            backlog.append(s)
+    return backlog
+
+
+def trim_backlog(store, backlog: list[dict]) -> set[str]:
+    """Keep only the BACKLOG_MAX best-scoring backlog sites; returns the removed ids."""
+    extra = sorted(backlog, key=lambda d: d.get("score", 0), reverse=True)[st.BACKLOG_MAX:]
+    for d in extra:
+        store.delete_site(d["id"])
+    return {d["id"] for d in extra}
+
+
+def process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember_links=None) -> list[dict]:
+    """Score every pending submission and put it in Proposed (or Approved when the admin
+    asked). Every submission is removed afterwards, so nothing waits in a queue."""
+    new_docs = []
+    for sub in store.load_submissions():
+        ev = evaluate(sub["url"], fetcher, corpus, source="submission")
+        approve = bool(sub.get("autoApprove"))
+        if ev.doc and ev.doc["id"] not in known_ids:
+            doc = dict(ev.doc, status="approved" if approve else "proposed",
+                       submittedBy=sub.get("uid", ""), autoReject=ev.result.reject)
+            if approve:
+                doc["approvedBy"] = sub.get("uid", "")
+            store.upsert_site(doc)
+            new_docs.append(doc)
+            known_ids.add(doc["id"])
+            by_id[doc["id"]] = doc
+            corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
+            log(f"  submission {ev.norm} -> {ev.result.score}")
+        elif ev.doc:
+            # Already known. A backlog site goes to the queue (or straight to approved);
+            # an admin re-adding a rejected site wants another look.
+            prev = by_id.get(ev.doc["id"], {})
+            if prev.get("status") == "backlog" or ("autoApprove" in sub and prev.get("status") == "rejected"):
+                status = "approved" if approve else "proposed"
+                store.upsert_site(dict(ev.doc, status=status, resubmitted=prev.get("status") == "rejected",
+                                       autoReject=ev.result.reject, submittedBy=sub.get("uid", "")))
+                log(f"  submission {ev.norm}: was {prev.get('status')}, now {status}")
+                prev["status"] = status
+        else:
+            # Couldn't be fetched (insecure, unreachable, bad URL). Keep a record in
+            # "rejected" so whoever added it can see why, instead of it vanishing.
+            log(f"  submission {sub['url']} failed: {ev.error}")
+            failed = failed_submission_doc(sub, ev)
+            if failed and failed["id"] not in known_ids:
+                store.upsert_site(failed)
+                known_ids.add(failed["id"])
+        store.delete_submission(sub["id"])
+        seen.add(url_key(ev.norm))
+        if remember_links:
+            remember_links(ev)
+    return new_docs
 
 
 def write_summary(markdown: str) -> None:
@@ -107,38 +187,8 @@ def cmd_crawl(args) -> int:
             frontier.append({"url": link, "parentScore": ev.result.score, "from": ev.norm})
             frontier_urls.add(link)
 
-    # 1. User/admin submissions always get scored and queued for review.
-    for sub in store.load_submissions():
-        ev = evaluate(sub["url"], fetcher, corpus, source="submission")
-        if ev.doc and ev.doc["id"] not in known_ids:
-            approve = bool(sub.get("autoApprove"))
-            doc = dict(ev.doc, status="approved" if approve else "proposed",
-                       submittedBy=sub.get("uid", ""), autoReject=ev.result.reject)
-            if approve:
-                doc["approvedBy"] = sub.get("uid", "")
-            store.upsert_site(doc)
-            new_docs.append(doc)
-            known_ids.add(doc["id"])
-            corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
-            log(f"  submission {ev.norm} -> {ev.result.score}")
-        elif ev.doc:
-            # Already in the database. An admin re-adding a rejected site wants another look.
-            prev = by_id.get(ev.doc["id"], {})
-            if "autoApprove" in sub and prev.get("status") == "rejected":
-                store.upsert_site(dict(ev.doc, status="proposed", resubmitted=True,
-                                       autoReject=ev.result.reject, submittedBy=sub.get("uid", "")))
-                log(f"  submission {ev.norm}: rejected before, back in the review queue")
-        else:
-            # Couldn't be fetched (insecure, unreachable, bad URL). Keep a record in
-            # "rejected" so whoever added it can see why, instead of it vanishing.
-            log(f"  submission {sub['url']} failed: {ev.error}")
-            failed = failed_submission_doc(sub, ev)
-            if failed and failed["id"] not in known_ids:
-                store.upsert_site(failed)
-                known_ids.add(failed["id"])
-        store.delete_submission(sub["id"])
-        seen.add(url_key(ev.norm))
-        remember_links(ev)
+    # 1. User/admin submissions always get scored and put in the review queue.
+    new_docs += process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember_links)
 
     # 2. Discovery: build a pool of good candidates (bigger than we need), steering
     #    searches toward the categories the database has fewest of.
@@ -152,8 +202,7 @@ def cmd_crawl(args) -> int:
     used_frontier = set()
     fetched = 0
     # Start from the backlog: good sites found earlier that didn't fit that run's balance.
-    backlog = [d for d in st.load_backlog() if d["id"] not in known_ids]
-    known_ids.update(d["id"] for d in backlog)
+    backlog = load_backlog(store, sites, known_ids)
     pool: list[dict] = list(backlog)  # >= min_score, not rejected
     log(f"{len(backlog)} sites waiting in the backlog")
     runners_up: list[dict] = []  # scored but under threshold, used to guarantee --min-new
@@ -212,16 +261,20 @@ def cmd_crawl(args) -> int:
         log(f"  [NEW {doc['score']:3d}{' fill' if doc.get('belowThreshold') else ''}] {doc['url']}  {doc['categories']}")
     frontier = [f for f in frontier if f["url"] not in used_frontier]
     frontier_urls = {f["url"] for f in frontier}
-    # Good candidates that didn't fit this run's balance are kept, already scored, for later runs.
+    # Good candidates that didn't fit this run's balance are kept, already scored, for later
+    # runs: they go in the database with status "backlog" (one place per site).
     chosen_ids = {d["id"] for d in chosen}
+    old_ids = {d["id"] for d in backlog}
     leftovers = [d for d in pool if d["id"] not in chosen_ids]
-    st.save_backlog(leftovers)
-    log(f"{len(leftovers)} good sites kept in the backlog for later runs")
+    added_backlog = [dict(d, status="backlog", backlogAt=time.time()) for d in leftovers if d["id"] not in old_ids]
+    for d in added_backlog:
+        store.upsert_site({k: v for k, v in d.items() if not k.startswith("_")})
+    trimmed = trim_backlog(store, leftovers)
+    log(f"{len(leftovers) - len(trimmed)} good sites kept in the backlog for later runs")
     run_categories = category_counts([d for d in new_docs])
     log(f"Categories this run: {run_categories}")
 
-    all_sites = sites + new_docs
-    stats = compute_stats(all_sites)
+    stats = compute_stats(merge_sites(sites, new_docs + added_backlog, trimmed))
     stats.update(lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs),
                  lastRunCategories=run_categories, crawlerVersion=__version__, crawlerBuild=build())
     store.write_stats(stats)
@@ -244,27 +297,41 @@ def cmd_crawl(args) -> int:
 # ---------------------------------------------------------------- seed
 
 def cmd_backlog(args) -> int:
-    """Propose a category-balanced batch straight from data/backlog.json, without crawling."""
+    """Propose a category-balanced batch straight from the backlog, without crawling."""
     store = open_store(args)
     sites = store.load_sites()
-    known_ids = {s["id"] for s in sites}
-    backlog = [d for d in st.load_backlog() if d["id"] not in known_ids]
+    backlog = load_backlog(store, sites, {s["id"] for s in sites})
     db_counts = Counter(c for s in sites if s.get("status") in ("approved", "proposed")
                         for c in topics(s))
     chosen = select_balanced(backlog, args.count, db_counts)
     for d in chosen:
-        doc = {k: v for k, v in d.items() if not k.startswith("_")}
-        doc.update(status="proposed", fromBacklog=True)
-        store.upsert_site(doc)
-        log(f"  [proposed {doc['score']:3d}] {doc['url']}  {doc['categories']}")
-    chosen_ids = {d["id"] for d in chosen}
-    st.save_backlog([d for d in backlog if d["id"] not in chosen_ids])
-    store.write_stats(compute_stats(sites + chosen))
+        store.upsert_site({"id": d["id"], "status": "proposed"})
+        log(f"  [proposed {d['score']:3d}] {d['url']}  {d['categories']}")
+    moved = [dict(d, status="proposed") for d in chosen]
+    store.write_stats(compute_stats(merge_sites(sites, moved)))
     store.save()
     st.append_log({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "version": __version__,
                    "build": build(), "fromBacklog": True, "new": len(chosen),
                    "categories": category_counts(chosen), "sites": [d["url"] for d in chosen]})
     log(f"Proposed {len(chosen)} sites from the backlog; {len(backlog) - len(chosen)} left")
+    return 0
+
+
+def cmd_submissions(args) -> int:
+    """Score pending submissions only (hand-added URLs and visitor suggestions)."""
+    store = open_store(args)
+    fetcher = Fetcher(delay=args.delay)
+    sites = store.load_sites()
+    known_ids = {s["id"] for s in sites}
+    load_backlog(store, sites, known_ids)  # moves an old data/backlog.json into the database
+    by_id = {s["id"]: s for s in sites}
+    seen = st.load_seen()
+    new_docs = process_submissions(store, fetcher, build_corpus(sites), known_ids, by_id, seen)
+    store.write_stats(compute_stats(merge_sites(sites, new_docs)))
+    store.save()
+    st.save_seen(seen)
+    write_summary(f"## Scored submissions {version_string()}\n\n{len(new_docs)} new site(s) added.\n")
+    log(f"Scored submissions: {len(new_docs)} new site(s)")
     return 0
 
 
@@ -401,17 +468,19 @@ def main(argv=None) -> int:
     b = sub.add_parser("backlog", help="propose a balanced batch from the backlog, no crawling")
     b.add_argument("--count", type=int, default=10)
 
+    su = sub.add_parser("submissions", help="score pending submissions now (no discovery)")
+
     sc = sub.add_parser("score", help="explain the score for URLs")
     sc.add_argument("urls", nargs="+")
 
-    for sp in (c, s, sc, sh, b, sub.choices["recheck"]):
+    for sp in (c, s, sc, sh, b, su, sub.choices["recheck"]):
         sp.add_argument("--local", help="use a local JSON file instead of Firestore")
         sp.add_argument("--delay", type=float, default=0.5)
 
     args = p.parse_args(argv)
     log(f"WebWander crawler {version_string()}")
     return {"crawl": cmd_crawl, "seed": cmd_seed, "score": cmd_score, "recheck": cmd_recheck,
-            "shots": cmd_shots, "backlog": cmd_backlog}[args.cmd](args)
+            "shots": cmd_shots, "backlog": cmd_backlog, "submissions": cmd_submissions}[args.cmd](args)
 
 
 if __name__ == "__main__":

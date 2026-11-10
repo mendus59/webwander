@@ -76,11 +76,14 @@ def test_crawl_run_is_balanced_and_keeps_leftovers(tmp_path, monkeypatch):
     assert counts["toys"] <= 4
     log = json.loads((tmp_path / "log.json").read_text())[-1]
     assert log["categories"]
-    # Unpicked good candidates are kept, already scored, in the backlog...
-    backlog = json.loads((tmp_path / "backlog.json").read_text())
-    assert backlog and all(b["score"] >= 0 and b["categories"] for b in backlog)
+    # Unpicked good candidates are kept, already scored, in the database as "backlog"
+    # (each site has exactly one status, so it shows in exactly one admin tab)...
+    stored = json.loads(db.read_text())
+    backlog = [dict(s, id=k) for k, s in stored["sites"].items() if s["status"] == "backlog"]
+    assert backlog and all(b["score"] >= 0 and b["categories"] and b["backlogAt"] for b in backlog)
+    assert stored["meta"]["stats"]["backlog"] == len(backlog)
+    assert not (tmp_path / "backlog.json").exists()
     first_ids = {s["id"] for s in new}
-    assert not first_ids & {b["id"] for b in backlog}
 
     # ...and the next run presents them without fetching them again.
     fetched = []
@@ -94,6 +97,8 @@ def test_crawl_run_is_balanced_and_keeps_leftovers(tmp_path, monkeypatch):
     assert len(second) >= 10
     assert {s["id"] for s in second} <= {b["id"] for b in backlog}
     assert not any(k.startswith("_") for s in second for k in s)
+    after = json.loads(db.read_text())
+    assert after["meta"]["stats"]["backlog"] == len(backlog) - len(second)
 
 
 def test_backlog_command_proposes_without_crawling(tmp_path, monkeypatch):
@@ -111,16 +116,19 @@ def test_backlog_command_proposes_without_crawling(tmp_path, monkeypatch):
     cats = ["games", "music", "art", "philosophy"]
     items = [{"id": f"b{i}", "url": f"https://b{i}.example.org/", "registrableDomain": f"b{i}.example.org",
               "categories": [cats[i % 4]], "score": 50 + i, "_backlogAt": time.time()} for i in range(20)]
+    # An old-style data/backlog.json is moved into the database on first use.
     st.BACKLOG_PATH.write_text(json.dumps(items))
     db = tmp_path / "db.json"
     db.write_text(json.dumps({"sites": {"b0": {"url": "https://b0.example.org/", "status": "approved",
                                                  "categories": ["games"]}}}))
     assert cli.main(["backlog", "--local", str(db), "--count", "8"]) == 0
     sites = json.loads(db.read_text())["sites"]
-    new = [s for k, s in sites.items() if k != "b0"]
-    assert len(new) == 8 and all(s["status"] == "proposed" and s["fromBacklog"] for s in new)
-    assert not any(k.startswith("_") for s in new for k in s)
+    assert not st.BACKLOG_PATH.exists()
+    assert sites["b0"]["status"] == "approved"  # already known: not duplicated into the backlog
+    new = [s for s in sites.values() if s["status"] == "proposed"]
+    assert len(new) == 8
+    assert not any(k.startswith("_") for s in sites.values() for k in s)
     per_cat = {c: sum(c in s["categories"] for s in new) for c in cats}
     assert max(per_cat.values()) - min(per_cat.values()) <= 1, per_cat
-    left = json.loads(st.BACKLOG_PATH.read_text())
-    assert len(left) == 11 and not {d["id"] for d in left} & set(sites)
+    assert sum(s["status"] == "backlog" for s in sites.values()) == 11
+    assert json.loads(db.read_text())["meta"]["stats"]["backlog"] == 11

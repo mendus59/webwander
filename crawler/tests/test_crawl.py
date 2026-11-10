@@ -125,3 +125,26 @@ def test_runs_record_crawler_version(tmp_path, monkeypatch):
     assert all(s["crawlerVersion"] == wander.__version__ for s in data["sites"].values())
     assert json.loads(st.LOG_PATH.read_text())[-1]["version"] == wander.__version__
     assert f"v{wander.__version__}" in summary.read_text()
+
+
+def test_submissions_command_scores_queue_now(tmp_path, monkeypatch):
+    """Nothing waits in a queue: the submissions command scores every pending URL into
+    Proposed, and a URL that's already in the backlog moves to Proposed instead."""
+    monkeypatch.setattr(cli.Fetcher, "fetch", fake_fetch)
+    for name in ("SEEN_PATH", "FRONTIER_PATH", "LOG_PATH", "BACKLOG_PATH"):
+        monkeypatch.setattr(st, name, tmp_path / name)
+    from wander.urls import site_id
+    held = "https://held.example.org/"
+    db = tmp_path / "db.json"
+    db.write_text(json.dumps({
+        "sites": {site_id(held): {"url": held, "status": "backlog", "categories": ["toys"], "score": 70,
+                                 "backlogAt": __import__("time").time()}},
+        "submissions": {"a": {"url": "https://fresh.example.org", "uid": "u1"},
+                        "b": {"url": held, "uid": "admin", "autoApprove": False}}}))
+    assert cli.main(["submissions", "--local", str(db), "--delay", "0"]) == 0
+    data = json.loads(db.read_text())
+    assert data["submissions"] == {}
+    by_url = {s["url"]: s for s in data["sites"].values()}
+    assert by_url["https://fresh.example.org/"]["status"] == "proposed"
+    assert by_url[held]["status"] == "proposed"
+    assert len(data["sites"]) == 2
