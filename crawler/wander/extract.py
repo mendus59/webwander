@@ -75,6 +75,13 @@ DELIGHT_WORDS = [
     "weird", "delightful", "a little", "tiny", "silly", "explore", "interactive", "try",
     "click", "wander", "curious", "whimsical", "strange", "beautiful", "procedural", "generative",
     "for fun", "side project", "just for fun", "made this", "i made", "labor of love",
+    # creative / artistic
+    "art project", "net art", "artist", "zine", "handcrafted", "hand-drawn", "web toy",
+    # educational
+    "learn", "explained", "explorable", "interactive essay", "how it works", "visual introduction",
+    # obscure / weird
+    "oddities", "obscure", "curiosities", "cabinet of curiosities", "archive", "museum",
+    "forgotten", "mysterious", "bizarre", "absurd", "uncanny",
 ]
 PERSONAL_HOSTS = ["neocities.org", "github.io", "tilde.", "sdf.org", "glitch.me", "itch.io",
                   "carrd.co", "nekoweb.org", "bearblog.dev", "omg.lol", "envs.net", "w3.org/People"]
