@@ -135,6 +135,34 @@
       "signals": {"code_blocks": 3, "code_highlighter": 2, "code_editor": 3}
     },
     {
+      "id": "philosophy",
+      "label": "Philosophy & Ideas",
+      "emoji": "🤔",
+      "keywords": ["philosophy", "philosopher", "philosophers", "philosophical", "ethics", "ethical", "metaphysics", "existential", "existentialism", "consciousness", "free will", "meaning of life", "stoic", "stoicism", "epistemology", "morality", "moral", "thought experiment", "essay", "essays", "ideas", "nietzsche", "socrates", "plato", "kant", "camus", "zen", "buddhism", "taoism", "absurdism", "nihilism", "utopia", "dystopia", "the human condition", "big questions"],
+      "signals": {"long_text": 1}
+    },
+    {
+      "id": "politics",
+      "label": "Politics & Society",
+      "emoji": "🏛️",
+      "keywords": ["politics", "political", "democracy", "government", "election", "elections", "policy", "society", "social justice", "activism", "activist", "protest", "human rights", "civil rights", "capitalism", "socialism", "communism", "anarchism", "anarchist", "libertarian", "ideology", "propaganda", "censorship", "surveillance", "privacy", "labor", "labour", "inequality", "economics", "revolution", "class struggle", "colonialism", "freedom of speech", "power structures"],
+      "signals": {}
+    },
+    {
+      "id": "provocative",
+      "label": "Provocative & Edgy",
+      "emoji": "🌶️",
+      "keywords": ["provocative", "controversial", "taboo", "forbidden", "radical", "manifesto", "heresy", "heretic", "heretical", "contrarian", "unpopular opinion", "rant", "uncomfortable", "subversive", "transgressive", "banned", "dangerous ideas", "conspiracy", "counterculture", "underground", "shocking", "edgy", "challenging", "seductive", "sensual", "temptation", "desire", "confession", "confessions", "obsession", "outrageous", "irreverent", "dark humor", "dark humour", "polemic"],
+      "signals": {}
+    },
+    {
+      "id": "world",
+      "label": "Around the World",
+      "emoji": "🌍",
+      "keywords": ["around the world", "global", "international", "translation", "translated", "language", "languages", "culture", "cultures", "folklore", "travel", "abroad", "diaspora", "dialect", "dialects", "local customs"],
+      "signals": {"non_english": 5}
+    },
+    {
       "id": "mature",
       "label": "Mature",
       "emoji": "🔞",

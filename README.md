@@ -4,11 +4,13 @@ Wander the fun, weird and creative corners of the web, one click at a time. A sm
 personal take on the old StumbleUpon idea, with no social features: no feeds, no
 followers, no comments.
 
-**The spirit:** discovering the Internet, especially the creative, educational, fun,
-obscure, artistic and weird. Every scoring rule serves that, and
+**The spirit:** discovering every part of the Internet, especially the creative, educational,
+fun, obscure, artistic and weird, and also the provocative, philosophical, political, edgy,
+suggestive and challenging. Every scoring rule serves that, and
 [`crawler/tests/test_spirit.py`](crawler/tests/test_spirit.py) guards it: a toy, a synth, a
-long explorable essay, an obscure net-art page, a retro homepage and a programming
-walkthrough must all clear the proposal threshold, and an ad-heavy listicle must not.
+long explorable essay, an obscure net-art page, a retro homepage, a programming walkthrough,
+a philosophy essay, a political manifesto, a contrarian rant and a French-language collection
+must all clear the proposal threshold, and an ad-heavy listicle must not.
 
 **Live site:** <https://mendus59.github.io/webwander/> · **Setup:** [SETUP.md](SETUP.md)
 
@@ -16,9 +18,9 @@ walkthrough must all clear the proposal threshold, and an ad-heavy listicle must
 
 ```
  discovery sources ──► crawler (GitHub Actions, daily) ──► Firestore "proposed"
- (HN, Reddit, Lobsters,      fetch → extract → tag → score        │
-  wiby, links found on                                     admin.html review
-  good pages, seeds)                                              │
+ (HN, 10 subreddits,         fetch → extract → tag → score        │
+  Lobsters, wiby, Kagi                                     admin.html review
+  small web, links, seeds)                                       │
                                                        Firestore "approved"
                                                                   │
                                               index.html: Wander ➜ (GitHub Pages)
@@ -57,9 +59,11 @@ walkthrough must all clear the proposal threshold, and an ad-heavy listicle must
 | Security | -21 to 5 | HSTS and CSP headers; mixed http content, password forms and obfuscated scripts count against |
 | Penalties | ≤ 0 | commercial language ("free trial", "pricing"...), empty pages, deep article paths |
 
-Pages are rejected outright if they're parked domains, error pages, login walls, spam
-(spam terms, keyword stuffing, link farms), non-English, or big platforms (YouTube, Reddit,
-news sites...). **Security is required:** only https pages with a valid, unexpired certificate
+Only five kinds of page are rejected outright: social media and big platforms (YouTube,
+Reddit, news sites...), pages without content (parked domains, error pages, login walls,
+empty pages), spam (spam terms, keyword stuffing, link farms), and insecure pages. Nothing is
+rejected for its subject, opinions or language; non-English pages get the 🌍 Around the World
+tag. **Security is required:** only https pages with a valid, unexpired certificate
 and TLS 1.2+ are accepted (no http fallback, no redirects down to http), and pages loading
 crypto-miners are rejected. A weekly **Recheck sites** workflow re-fetches every live site and
 moves any that have become spam or insecure to "rejected". There is no content filter:

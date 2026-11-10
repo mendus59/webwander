@@ -54,6 +54,12 @@ MINER_RE = re.compile(r"coinhive|coin-hive|cryptonight|crypto-loot|cryptoloot|we
 OBFUSCATED_JS_RE = re.compile(r"eval\(\s*(unescape|atob|function\(p,a,c,k,e)|document\.write\(\s*unescape")
 STOPWORDS = set("""the a an and or of to in is it for on with as at by be this that are was from you your we our
 i my me he she they them his her its not but if so do can all will has have had were been more one""".split())
+# Common function words of other big web languages, so ordinary non-English prose isn't
+# mistaken for keyword stuffing (non-English pages are welcome).
+STOPWORDS |= set("""les des une que qui est pas dans pour par sur avec plus mais son ses aux ont été cette
+chaque comme tout elle nous vous ils leur del los las una por con para como pero sus más este esta
+der die das und ist nicht ein eine mit den dem für auf sich auch als von zu im che non per una sono della
+gli nel dei não uma com para os as dos das mais seu sua""".split())
 EXPLICIT_LABEL_RE = re.compile(r"rta-5042-1996-1400-1577-rta|<meta[^>]+name=[\"']?rating[\"']?[^>]+content=[\"']?(adult|mature|rta)", re.I)
 
 
