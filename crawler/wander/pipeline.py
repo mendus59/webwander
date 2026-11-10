@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from . import __version__
 from .extract import extract
 from .fetch import Fetcher
 from .score import Corpus, Result, score
@@ -53,5 +54,6 @@ def evaluate(url: str, fetcher: Fetcher, corpus: Corpus, source: str = "") -> Ev
         "simhash": to_hex(fp),
         "frameable": f["frameable"],
         "source": source,
+        "crawlerVersion": __version__,
     }
     return Evaluation(url, final, res, doc, f)

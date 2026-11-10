@@ -46,6 +46,12 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
   are kept, already scored, in `data/backlog.json` and offered first in later runs (no
   re-crawl needed; entries expire after 30 days, max 500).
 
+**Crawler version:** `crawler/wander/__init__.py` holds `__version__` (bump it whenever the
+crawler's behaviour changes). Every run prints it with the commit id, shows it in the Actions
+run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.9.0, 325a51d)`),
+saves it in `data/crawl-log.json` and `meta/stats`, and stamps it on each site it scores. The
+admin panel shows the last run's version and each site's. `python -m wander --version` prints it.
+
 ## Scoring without AI
 
 `crawler/wander/score.py` gives every page a 0-100 score from plain heuristics:

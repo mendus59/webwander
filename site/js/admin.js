@@ -62,11 +62,15 @@ async function loadStatsInner() {
     stat("Rejected", counts[2]),
     stat("Queued for scoring", subs),
     stat("Last crawl", meta.lastRun ? `${new Date(meta.lastRun).toLocaleString([], { dateStyle: "medium", timeStyle: "short" })}, +${meta.lastRunNew} new` : "never"),
+    stat("Crawler version", meta.crawlerVersion ? `v${meta.crawlerVersion}` : "unknown",
+      meta.crawlerBuild ? `${repoUrl}/commit/${meta.crawlerBuild}` : null),
   );
 }
 
-const stat = (label, value) => el("div", { class: "stat" },
-  el("strong", { class: String(value).length > 8 ? "long" : "" }, String(value)), el("span", {}, label));
+const stat = (label, value, href = null) => el("div", { class: "stat" },
+  el("strong", { class: String(value).length > 8 ? "long" : "" },
+    href ? el("a", { href, target: "_blank", rel: "noopener", title: "the code that ran" }, String(value)) : String(value)),
+  el("span", {}, label));
 
 // ------------------------------------------------------------------ list
 
@@ -208,7 +212,8 @@ function renderRow(id, s, actions = null) {
         el("span", { class: "muted small" }, s.domain),
         s.source ? el("span", { class: "tag" }, s.source) : null,
         chosen.has("mature") ? el("span", { class: "tag mature" }, "🔞 Mature") : null,
-        s.frameable === false ? el("span", { class: "tag" }, "opens in new tab") : null),
+        s.frameable === false ? el("span", { class: "tag" }, "opens in new tab") : null,
+        s.crawlerVersion ? el("span", { class: "tag", title: "crawler version that scored this site" }, `v${s.crawlerVersion}`) : null),
       s.description ? el("p", { class: "desc" }, s.description) : null,
       el("div", { class: "bars" }, ...["interactivity", "independence", "craft", "novelty", "security", "penalties"].map((k) =>
         el("span", { class: `sbar ${k}`, title: k }, `${k} ${b[k] ?? 0}`))),
