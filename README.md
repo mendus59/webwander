@@ -44,7 +44,9 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
   reasons, auto-detected categories (editable), preview, approve/reject, bulk actions and
   hand-adding URLs. Tabs cover every place a site can be: Proposed, Approved, Rejected (with
   the auto-check reason), Queued (submissions waiting to be scored) and Backlog (good sites
-  held back for balance, which you can queue or approve). A hand-added URL that can't be
+  held back for balance, which you can queue or approve). **Propose a balanced batch** on the
+Backlog tab moves the next N backlog sites (category-balanced, already scored) straight into
+Proposed, with no crawl run needed (`python -m wander backlog --count N` does the same). A hand-added URL that can't be
   fetched shows up under Rejected with the reason instead of disappearing.
 - **Crawler** (`crawler/`): Python, run by `.github/workflows/crawl.yml` every day. It
   always proposes at least 10 never-before-suggested sites (`--min-new`). If too few clear
@@ -58,7 +60,7 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
 
 **Crawler version:** `crawler/wander/__init__.py` holds `__version__` (bump it whenever the
 crawler's behaviour changes). Every run prints it with the commit id, shows it in the Actions
-run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.9.0, 325a51d)`),
+run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.11.0, 325a51d)`),
 saves it in `data/crawl-log.json` and `meta/stats`, and stamps it on each site it scores. The
 admin panel shows the last run's version and each site's. `python -m wander --version` prints it.
 

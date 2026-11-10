@@ -1,6 +1,6 @@
 import {
   collection, query, where, orderBy, limit, startAfter, getDocs, getDoc, doc, writeBatch,
-  updateDoc, addDoc, deleteDoc, serverTimestamp, getCountFromServer,
+  updateDoc, addDoc, deleteDoc, setDoc, serverTimestamp, getCountFromServer,
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 import {
   configured, db, signIn, logOut, watchUser, isAdmin, loadCategories, faviconFor, el,
@@ -151,9 +151,18 @@ async function loadBacklog() {
   const items = r.status === 404 ? [] : await r.json();
   if (!r.ok && r.status !== 404) throw new Error(`backlog.json: HTTP ${r.status}`);
   items.sort((a, b) => (b.score || 0) - (a.score || 0));
+  state.backlog = items;
   $("list").append(el("p", { class: "muted small" },
     `${items.length} scored site${items.length === 1 ? "" : "s"} held back to keep each run's categories balanced. ` +
     "The crawler offers these first in later runs. Queue one to have it scored again and sent to Proposed now."));
+  if (items.length) {
+    const count = el("input", { type: "number", value: "10", min: "1", max: "100", class: "num", "aria-label": "how many" });
+    $("list").append(el("div", { class: "row backlog-batch" },
+      el("button", { class: "wander-btn", onclick: (e) => proposeFromBacklog(Number(count.value) || 10, e.currentTarget) },
+        "Propose a balanced batch"),
+      count,
+      el("span", { class: "muted small" }, "sites go straight to Proposed, already scored. No crawl needed.")));
+  }
   for (const s of items) {
     const node = renderRow(s.id, { ...s, status: "backlog" }, [
       el("button", { class: "ghost-btn", onclick: () => preview(s) }, "Preview"),
@@ -163,6 +172,80 @@ async function loadBacklog() {
     $("list").append(node);
   }
   $("more").hidden = true;
+}
+
+// ---- propose a batch straight from the backlog (same idea as crawler/wander/balance.py)
+
+const IGNORED_TOPICS = new Set(["mature"]);
+const topicsOf = (d) => {
+  const t = (d.categories || []).filter((c) => !IGNORED_TOPICS.has(c));
+  return t.length ? t : ["_uncategorised"];
+};
+
+function simhashSimilarity(a, b) {
+  if (!a || !b) return 0;
+  let x = BigInt("0x" + a) ^ BigInt("0x" + b), bits = 0;
+  while (x) { bits += Number(x & 1n); x >>= 1n; }
+  return 1 - bits / 64;
+}
+
+// Greedy: always take the candidate whose least-covered category has the fewest picks so
+// far, nudged toward categories the database holds fewest of, then by score.
+export function pickBalanced(pool, k, dbCounts = {}) {
+  const dbTotal = Object.values(dbCounts).reduce((a, b) => a + b, 0) || 1;
+  const run = {}, domains = new Set(), chosen = [];
+  const need = (d) => {
+    const t = topicsOf(d);
+    return [Math.min(...t.map((c) => run[c] || 0)), Math.min(...t.map((c) => dbCounts[c] || 0)) / dbTotal, -(d.score || 0)];
+  };
+  const cmp = (a, b) => { const x = need(a), y = need(b); return x[0] - y[0] || x[1] - y[1] || x[2] - y[2]; };
+  const remaining = [...pool];
+  while (remaining.length && chosen.length < k) {
+    remaining.sort(cmp);
+    const d = remaining.shift();
+    if (domains.has(d.registrableDomain || d.domain)) continue;
+    if (chosen.some((c) => simhashSimilarity(c.simhash, d.simhash) >= 0.9)) continue;
+    chosen.push(d);
+    domains.add(d.registrableDomain || d.domain);
+    for (const c of topicsOf(d)) run[c] = (run[c] || 0) + 1;
+  }
+  return chosen;
+}
+
+async function proposeFromBacklog(k, btn) {
+  btn.disabled = true;
+  try {
+    const meta = (await getDoc(doc(db, "meta", "stats"))).data() || {};
+    let pool = [...(state.backlog || [])];
+    const added = [];
+    // Sites already in the database (proposed earlier, or approved/rejected) are skipped;
+    // the crawler drops them from backlog.json on its next run.
+    while (added.length < k && pool.length) {
+      const batch = pickBalanced(pool, k - added.length, meta.categories || {});
+      if (!batch.length) break;
+      const ids = new Set(batch.map((d) => d.id));
+      pool = pool.filter((d) => !ids.has(d.id));
+      for (const d of batch) {
+        if ((await getDoc(doc(db, "sites", d.id))).exists()) continue;
+        const site = Object.fromEntries(Object.entries(d).filter(([key]) => !key.startsWith("_") && key !== "id"));
+        await setDoc(doc(db, "sites", d.id), {
+          ...site, status: "proposed", fromBacklog: true, discoveredAt: serverTimestamp(), rand: Math.random(),
+        });
+        added.push(d);
+      }
+    }
+    const shown = new Set(added.map((d) => d.id));
+    state.backlog = (state.backlog || []).filter((d) => !shown.has(d.id));
+    toast(added.length ? `${added.length} site${added.length === 1 ? "" : "s"} added to Proposed from the backlog.`
+      : "Nothing new to propose: every backlog site is already in the database.");
+    loadStats();
+    if (added.length) document.querySelector('#tabs button[data-status="proposed"]').click();
+  } catch (e) {
+    toast(`Couldn't propose from the backlog: ${e.message}`);
+    console.error(e);
+  } finally {
+    btn.disabled = false;
+  }
 }
 
 async function queueUrl(url, autoApprove, node) {
