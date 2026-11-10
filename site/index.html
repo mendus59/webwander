@@ -29,6 +29,7 @@
     </div>
     <div class="spacer"></div>
     <button id="filter-btn" class="ghost-btn">Topics</button>
+    <button id="settings-btn" class="ghost-btn">Settings</button>
     <button id="saved-btn" class="ghost-btn" hidden>Saved</button>
     <a id="admin-link" class="ghost-btn" href="admin.html" hidden>Admin</a>
     <button id="auth-btn" class="ghost-btn">Sign in</button>
@@ -77,6 +78,26 @@
     </form>
     <p class="muted small" id="suggest-msg"></p>
     <div class="row"><button class="ghost-btn" id="saved-close">Close</button></div>
+  </dialog>
+
+  <dialog id="settings-dlg" class="panel">
+    <h2>Settings</h2>
+    <label class="setting">
+      <span><strong>Show mature content</strong><br>
+        <span class="muted small">Include sites tagged 🔞 Mature (explicit material). Off by default.</span></span>
+      <input type="checkbox" id="mature-toggle" role="switch" class="switch">
+    </label>
+    <p class="muted small" id="settings-note"></p>
+    <div class="row"><div class="spacer"></div><button class="wander-btn" id="settings-done">Done</button></div>
+  </dialog>
+
+  <dialog id="age-dlg" class="panel">
+    <h2>Confirm your age</h2>
+    <p>Mature content includes sexually explicit material. You must be 18 or older, or the age of majority where you live, to turn this on.</p>
+    <label class="check"><input type="checkbox" id="age-check"> I confirm I am 18 or older and I want to see explicit content.</label>
+    <div class="row"><div class="spacer"></div>
+      <button class="ghost-btn" id="age-cancel">Cancel</button>
+      <button class="wander-btn" id="age-confirm" disabled>Turn on</button></div>
   </dialog>
 
   <div id="toast" class="toast" hidden></div>

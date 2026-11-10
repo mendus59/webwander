@@ -11,7 +11,9 @@ const local = {
   seen: safeStorage("ww.seen", []),
   cats: safeStorage("ww.cats", []),
   affinity: safeStorage("ww.affinity", {}),
+  settings: safeStorage("ww.settings", { mature: false }),
 };
+const MATURE = "mature";
 
 const state = {
   user: null,
@@ -20,6 +22,7 @@ const state = {
   selected: new Set(local.cats.get()),
   seen: new Set(local.seen.get()),
   affinity: local.affinity.get(),
+  settings: local.settings.get(),
   saved: new Set(),
   buffer: [],
   current: null,
@@ -61,6 +64,9 @@ async function onUser(user) {
   const data = u.data() || {};
   for (const id of s.data()?.ids || []) state.seen.add(id);
   if (data.categories && !local.cats.get().length) state.selected = new Set(data.categories);
+  // Mature content stays off unless this account (or this browser) opted in with an age confirmation.
+  if (data.settings?.mature && !state.settings.mature) applySettings(data.settings);
+  else if (state.settings.mature && !data.settings?.mature) saveSettings();
   for (const [k, v] of Object.entries(data.affinity || {})) state.affinity[k] = (state.affinity[k] || 0) + v;
   const savedSnap = await getDocs(collection(db, "users", user.uid, "saved"));
   state.saved = new Set(savedSnap.docs.map((d) => d.id));
@@ -90,7 +96,8 @@ async function fetchBatch() {
   const ids = new Set();
   return docs
     .filter((d) => !ids.has(d.id) && ids.add(d.id) && !state.seen.has(d.id))
-    .map((d) => ({ id: d.id, ...d.data() }));
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .filter(allowed);
 }
 
 function weightOf(site) {
@@ -131,7 +138,16 @@ async function next() {
   }
 }
 
+function isMature(site) {
+  return (site.categories || []).includes(MATURE);
+}
+
+function allowed(site) {
+  return state.settings.mature || !isMature(site);
+}
+
 function matchesFilter(site) {
+  if (!allowed(site)) return false;
   return !state.selected.size || (site.categories || []).some((c) => state.selected.has(c));
 }
 
@@ -190,7 +206,9 @@ function updateSaveBtn() {
 }
 
 function renderChips() {
-  $("chips").replaceChildren(...state.categories.map((c) => el("button", {
+  if (!state.settings.mature) state.selected.delete(MATURE);
+  const visible = state.categories.filter((c) => c.id !== MATURE || state.settings.mature);
+  $("chips").replaceChildren(...visible.map((c) => el("button", {
     class: `chip ${state.selected.has(c.id) ? "on" : ""}`,
     onclick: (e) => {
       state.selected.has(c.id) ? state.selected.delete(c.id) : state.selected.add(c.id);
@@ -289,6 +307,53 @@ async function suggest(e) {
     $("suggest-msg").textContent = "Couldn't submit that. Is it a full URL starting with https://?";
   }
 }
+
+// ------------------------------------------------------------------ settings
+
+function applySettings(changes) {
+  state.settings = { ...state.settings, ...changes };
+  local.settings.set(state.settings);
+  $("mature-toggle").checked = !!state.settings.mature;
+  state.buffer = state.buffer.filter(allowed);
+  renderChips();
+  if (state.current && !allowed(state.current)) next();  // move off a mature site when hiding them
+}
+
+function saveSettings() {
+  if (!state.user) return;
+  setDoc(doc(db, "users", state.user.uid), { settings: state.settings }, { merge: true }).catch(console.error);
+}
+
+function openSettings() {
+  $("mature-toggle").checked = !!state.settings.mature;
+  $("settings-note").textContent = state.user
+    ? "Saved to your account."
+    : "Saved in this browser. Sign in to keep it on other devices.";
+  $("settings-dlg").showModal();
+}
+
+$("mature-toggle").onchange = (e) => {
+  if (e.target.checked) {
+    e.target.checked = false;  // only turns on after the age confirmation
+    $("age-check").checked = false;
+    $("age-confirm").disabled = true;
+    $("age-dlg").showModal();
+  } else {
+    applySettings({ mature: false, ageConfirmedAt: null });
+    saveSettings();
+    toast("Mature content hidden.");
+  }
+};
+$("age-check").onchange = (e) => { $("age-confirm").disabled = !e.target.checked; };
+$("age-cancel").onclick = () => $("age-dlg").close();
+$("age-confirm").onclick = () => {
+  applySettings({ mature: true, ageConfirmedAt: new Date().toISOString() });
+  saveSettings();
+  $("age-dlg").close();
+  toast("Mature content is on.");
+};
+$("settings-btn").onclick = openSettings;
+$("settings-done").onclick = () => $("settings-dlg").close();
 
 // ------------------------------------------------------------------ wiring
 

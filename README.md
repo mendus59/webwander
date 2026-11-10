@@ -41,8 +41,12 @@ followers, no comments.
 | Novelty | -10 to 35 | 64-bit SimHash of the page text vs. every site already in the DB, and how many sites share the domain |
 | Penalties | ≤ 0 | commercial language ("free trial", "pricing"...), empty pages, deep article paths |
 
-Pages are rejected outright if they're parked domains, error pages, login walls, spam/adult,
-non-English, or big platforms (YouTube, Reddit, news sites...).
+Pages are rejected outright if they're parked domains, error pages, login walls,
+non-English, or big platforms (YouTube, Reddit, news sites...). There is no content filter:
+obviously explicit pages get the 🔞 **Mature** tag instead (unambiguous terms, age gates or
+`rating=adult` labels; ambiguous words like "naked" alone never trigger it). Mature sites are
+hidden on the site unless a viewer turns on "Show mature content" in Settings, which is off by
+default and asks them to confirm they're 18 or older. Gambling/spam terms lower the score.
 
 **Categories** come from `site/data/categories.json`: each category has keywords (weighted
 by where they appear: title > description > headings > body) plus structural signals

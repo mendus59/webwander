@@ -111,3 +111,31 @@ def test_programming_tag():
 def test_programming_not_overtagged(name):
     _, _, tags = run(name, "https://x.example.org/")
     assert "programming" not in tags
+
+
+def test_explicit_site_tagged_mature_not_rejected():
+    f, res, tags = run("explicit.html", "https://gallery.example.net/")
+    assert res.reject is None
+    assert "mature" in tags
+
+
+def test_innocent_words_not_mature():
+    for name in ["molerat.html", "toy.html", "code.html", "retro.html"]:
+        _, _, tags = run(name, "https://x.example.org/")
+        assert "mature" not in tags, name
+
+
+def test_mature_keeps_normal_tags():
+    from wander.tagger import tag
+    f, _, _ = run("synth.html", "https://synth.example.net/")
+    f["explicit_score"] = 20
+    tags, _ = tag(f)
+    assert tags[0] == "music" and tags[-1] == "mature"
+
+
+def test_spam_terms_penalised_not_rejected():
+    f = extract("https://x.example.org/", (FIX / "toy.html").read_text().replace(
+        "Made with love", "Best online casino and betting slots"))
+    res = score(f, simhash(f["text"]), Corpus())
+    assert res.reject is None
+    assert res.breakdown["penalties"] <= -20
