@@ -29,10 +29,56 @@ class Page:
     elapsed: float = 0.0
     error: str | None = None
     tls: dict = field(default_factory=dict)  # {"version": "TLSv1.3", "days_left": 80}
+    archived_at: str | None = None  # date of the Wayback Machine copy this page came from
+    bot_wall: str | None = None  # "Cloudflare", "DDoS-Guard"...: a bot check stopped us reading the page
 
     @property
     def ok(self) -> bool:
         return self.error is None and 200 <= self.status < 300
+
+
+# Bot checks / web application firewalls that answer a crawler with a challenge page
+# instead of the site: (name, vendor headers, markers unique to the vendor's challenge
+# page, generic markers that only count together with the vendor's header).
+BOT_WALLS = [
+    ("Cloudflare", {"cf-mitigated": "challenge", "server": "cloudflare"},
+     ["cf-chl", "challenge-platform", "cf-browser-verification", "cf-error-details"],
+     ["just a moment", "attention required", "enable javascript and cookies"]),
+    ("Vercel", {"x-vercel-mitigated": "challenge"}, ["vercel security checkpoint"], []),
+    ("DDoS-Guard", {"server": "ddos-guard"}, ["ddos-guard"], ["checking your browser"]),
+    ("Sucuri", {"x-sucuri-id": "", "server": "sucuri"}, ["sucuri website firewall"], ["access denied"]),
+    ("Imperva", {"x-iinfo": ""}, ["_incapsula_resource", "incapsula incident"], []),
+    ("DataDome", {"x-datadome": ""}, ["captcha-delivery.com"], ["datadome"]),
+    ("PerimeterX", {}, ["px-captcha", "perimeterx"], []),
+    ("AWS WAF", {"x-amzn-waf-action": ""}, ["awswaf", "aws-waf-token"], []),
+    ("Akamai", {"server": "akamaighost"}, [], ["access denied", "reference #"]),
+]
+BLOCK_STATUSES = {401, 403, 405, 429, 503}
+
+
+def _vendor_header(headers: dict, wanted: dict) -> bool:
+    return any(k in headers and v in headers[k].lower() for k, v in wanted.items())
+
+
+def detect_bot_wall(status: int, headers: dict, html: str) -> str | None:
+    """Name of the bot check that answered instead of the site, or None.
+
+    A plain 403 from a server, or an ordinary error page served through a CDN, is not
+    a bot wall: that needs the vendor's challenge page (or its "challenge" header).
+    A 200 counts only when the whole page is a short challenge page.
+    """
+    body = html[:30000].lower()
+    blocked = status in BLOCK_STATUSES
+    short = len(html) < 30000
+    for name, wanted, strong, weak in BOT_WALLS:
+        vendor = _vendor_header(headers, wanted)
+        if any(v == "challenge" and headers.get(k, "").lower() == "challenge" for k, v in wanted.items()):
+            return name
+        if any(m in body for m in strong) and (blocked or short):
+            return name
+        if vendor and blocked and any(m in body for m in weak):
+            return name
+    return None
 
 
 class Fetcher:
@@ -94,10 +140,44 @@ class Fetcher:
             return Page(r.url, r.status_code, headers, "", error=f"not html ({ctype[:40]})")
         r.encoding = r.encoding if r.encoding and r.encoding.lower() != "iso-8859-1" else r.apparent_encoding
         page = Page(r.url, r.status_code, headers, r.text, elapsed=time.time() - start)
+        page.bot_wall = detect_bot_wall(r.status_code, headers, r.text)
+        if page.bot_wall:
+            page.error = f"bot protection ({page.bot_wall})"
+            page.tls = tls_info(urlsplit(page.url).hostname or "")
+            time.sleep(self.delay)
+            return page
         if with_scripts and page.ok:
             page.scripts = self._same_origin_scripts(page)
         if page.ok:
             page.tls = tls_info(urlsplit(page.url).hostname or "")
+        time.sleep(self.delay)
+        return page
+
+    def archived(self, url: str, max_age_days: int = 3 * 365) -> Page | None:
+        """The Wayback Machine's latest copy of a page, for sites whose bot check stops us
+        reading the live page. Uses the public availability API and the raw ("id_")
+        snapshot, so it never touches the site itself. None when there's no recent copy."""
+        try:
+            r = self.session.get("https://archive.org/wayback/available", params={"url": url}, timeout=TIMEOUT)
+            snap = (r.json().get("archived_snapshots") or {}).get("closest") or {}
+        except (requests.RequestException, ValueError):
+            return None
+        ts = snap.get("timestamp", "")
+        if not snap.get("available") or not str(snap.get("status", "200")).startswith("2") or len(ts) < 8:
+            return None
+        taken = datetime.strptime(ts[:8], "%Y%m%d").replace(tzinfo=timezone.utc)
+        if (datetime.now(timezone.utc) - taken).days > max_age_days:
+            return None
+        raw = f"https://web.archive.org/web/{ts}id_/{url}"
+        try:
+            a = self._get_limited(raw, MAX_PAGE_BYTES)
+        except requests.RequestException:
+            return None
+        if not a.ok or "html" not in a.headers.get("content-type", ""):
+            return None
+        a.encoding = a.encoding if a.encoding and a.encoding.lower() != "iso-8859-1" else a.apparent_encoding
+        page = Page(url, 200, {}, a.text)
+        page.archived_at = taken.date().isoformat()
         time.sleep(self.delay)
         return page
 

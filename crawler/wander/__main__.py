@@ -255,6 +255,7 @@ def cmd_crawl(args) -> int:
     pool: list[dict] = list(backlog)  # >= min_score, not rejected
     log(f"{len(backlog)} sites waiting in the backlog")
     runners_up: list[dict] = []  # scored but under threshold, used to guarantee --min-new
+    unscanned: list[dict] = []  # behind a bot check and never archived: for review by hand
     pool_target = len(backlog) + args.max_new * args.pool_factor
     for url, source in candidates:
         if len(pool) >= pool_target or fetched >= args.max_fetch:
@@ -285,6 +286,18 @@ def cmd_crawl(args) -> int:
         if ev.result.reject:
             log(f"  [reject] {ev.norm}: {ev.result.reject}")
             continue
+        if ev.doc.get("unscanned"):
+            # Behind a bot check with no archived copy: list it for review by hand, a few
+            # per run. The rest are tried again on a later run.
+            if len(unscanned) < args.max_unscanned:
+                unscanned.append(dict(ev.doc))
+                known_ids.add(ev.doc["id"])
+                log(f"  [unscanned] {ev.norm}: {ev.doc['scanBlocked']} bot check")
+            else:
+                domains.pop(ev.doc["registrableDomain"], None)
+                seen.discard(key)
+                seen.discard(url_key(ev.norm))
+            continue
         known_ids.add(ev.doc["id"])
         if ev.result.score >= args.min_score:
             pool.append(dict(ev.doc))
@@ -309,6 +322,11 @@ def cmd_crawl(args) -> int:
         new_docs.append(doc)
         corpus.add(from_hex(doc.get("simhash", "")), doc["registrableDomain"])
         log(f"  [NEW {doc['score']:3d}{' fill' if doc.get('belowThreshold') else ''}] {doc['url']}  {doc['categories']}")
+    for d in unscanned:
+        doc = dict(d, status="proposed")
+        store.upsert_site(doc)
+        new_docs.append(doc)
+        log(f"  [NEW   ? unscanned] {doc['url']}  ({doc['scanBlocked']})")
     frontier = [f for f in frontier if f["url"] not in used_frontier]
     frontier_urls = {f["url"] for f in frontier}
     # Good candidates that didn't fit this run's balance are kept, already scored, for later
@@ -442,7 +460,7 @@ def cmd_recheck(args) -> int:
     sites = [s for s in store.load_sites() if s.get("status") in ("approved", "proposed")]
     removed = []
     for s in sites:
-        ev = evaluate(s["url"], fetcher, Corpus())
+        ev = evaluate(s["url"], fetcher, Corpus(), use_archive=False)
         reason = ev.error if ev.error and ev.error.startswith("insecure") else (ev.result.reject if ev.result else None)
         if ev.error and not reason and s["url"].startswith("http://"):
             reason = "insecure: not https"  # stored as http and no working https version
@@ -503,6 +521,8 @@ def main(argv=None) -> int:
     c.add_argument("--max-fetch", type=int, default=300)
     c.add_argument("--max-minutes", type=float, default=45)
     c.add_argument("--min-score", type=int, default=MIN_SCORE)
+    c.add_argument("--max-unscanned", type=int, default=5,
+                   help="sites behind a bot check (no archived copy) to list for review per run")
     c.add_argument("--pool-factor", type=int, default=4,
                    help="evaluate up to max-new x this many good candidates, then pick a balanced set")
     c.add_argument("--strict", action="store_true", help="exit non-zero if min-new not met")

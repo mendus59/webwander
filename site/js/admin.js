@@ -362,6 +362,8 @@ function renderRow(id, s, actions = null) {
 
   const warnings = [];
   if (s.belowThreshold) warnings.push("below threshold (filled to reach daily minimum)");
+  if (s.unscanned) warnings.push(`couldn't scan: ${s.scanBlocked || "a"} bot check and no archived copy, so no score or tags. Open it to judge it yourself`);
+  else if (s.scoredFrom === "archive") warnings.push(`${s.scanBlocked || "a"} bot check: scored from the Wayback Machine copy of ${s.archivedAt || "an earlier date"}`);
   if (s.autoReject) warnings.push(`auto-check flagged: ${s.autoReject}`);
   if (s.resubmitted) warnings.push("rejected before, re-added by an admin");
   if (s.status === "rejected" && s.previousStatus) warnings.push(`was ${s.previousStatus} before the weekly recheck`);
@@ -369,7 +371,9 @@ function renderRow(id, s, actions = null) {
 
   return el("article", { class: "review", "data-id": id },
     el("input", { type: "checkbox", class: "pick", onchange: updateSelection, style: editable ? null : "visibility:hidden" }),
-    el("div", { class: `score ${scoreClass(s.score)}`, title: JSON.stringify(b) }, String(s.score ?? "?")),
+    s.unscanned
+      ? el("div", { class: "score unscanned", title: "not scanned: behind a bot check" }, "?")
+      : el("div", { class: `score ${scoreClass(s.score)}`, title: JSON.stringify(b) }, String(s.score ?? "?")),
     el("div", { class: "body" },
       el("div", { class: "title-row" },
         el("img", { src: faviconFor(s.url), width: 16, height: 16, alt: "" }),
@@ -378,11 +382,14 @@ function renderRow(id, s, actions = null) {
         s.source ? el("span", { class: "tag" }, s.source) : null,
         chosen.has("mature") ? el("span", { class: "tag mature" }, "🔞 Mature") : null,
         s.frameable === false ? el("span", { class: "tag" }, "opens in new tab") : null,
+        s.scanBlocked ? el("span", { class: "tag", title: "this site answers crawlers with a bot check" }, `🛡 ${s.scanBlocked}`) : null,
+        s.scoredFrom === "archive" ? el("a", { class: "tag", target: "_blank", rel: "noopener",
+          href: `https://web.archive.org/web/${(s.archivedAt || "").replaceAll("-", "")}/${s.url}` }, "archived copy ↗") : null,
         s.crawlerVersion ? el("span", { class: "tag", title: "crawler version that scored this site" }, `v${s.crawlerVersion}`) : null),
       s.description ? el("p", { class: "desc" }, s.description) : null,
-      el("div", { class: "bars" }, ...["interactivity", "media", "independence", "craft", "novelty", "security", "penalties"].filter((k) => k !== "media" || k in b).map((k) =>
+      s.unscanned ? null : el("div", { class: "bars" }, ...["interactivity", "media", "independence", "craft", "novelty", "security", "penalties"].filter((k) => k !== "media" || k in b).map((k) =>
         el("span", { class: `sbar ${k}`, title: k }, `${k} ${b[k] ?? 0}`))),
-      (s.reasons || []).length ? el("p", { class: "muted small" }, s.reasons.join(" · ")) : null,
+      !s.unscanned && (s.reasons || []).length ? el("p", { class: "muted small" }, s.reasons.join(" · ")) : null,
       warnings.length ? el("p", { class: "warn small" }, "⚠ " + warnings.join(" · ")) : null,
       el("div", { class: "chips tag-editor collapsed" }, ...catChips,
         editable && el("button", {
