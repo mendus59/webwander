@@ -1,753 +1,553 @@
 [
 {
-"url": "https://openstreetmap.org/",
-"parentScore": 100,
-"from": "https://portolan-mirrors.github.io/firms-catalog"
+"url": "https://cosmos.gl/",
+"parentScore": 92,
+"from": "https://openvisualization.org/"
 },
 {
-"url": "https://unblind.tech/",
-"parentScore": 95,
-"from": "https://acko.net/"
+"url": "https://geodaai.github.io/",
+"parentScore": 92,
+"from": "https://openvisualization.org/"
 },
 {
-"url": "https://adafruit.com/category/327",
-"parentScore": 95,
-"from": "https://willybrauner.com/journal/remote-procedure-calls-for-interactive-applications"
+"url": "https://perspective-dev.github.io/",
+"parentScore": 92,
+"from": "https://openvisualization.org/"
 },
 {
-"url": "https://blog.cloudflare.com/capnweb-javascript-rpc-library",
-"parentScore": 95,
-"from": "https://willybrauner.com/journal/remote-procedure-calls-for-interactive-applications"
+"url": "https://fastly.com/",
+"parentScore": 92,
+"from": "https://openstreetmap.org/"
 },
 {
-"url": "https://brainbytesandbinary.substack.com/p/rebuilding-grpc-from-first-principles",
-"parentScore": 95,
-"from": "https://willybrauner.com/journal/remote-procedure-calls-for-interactive-applications"
+"url": "https://osmfoundation.org/wiki/Corporate_Members",
+"parentScore": 92,
+"from": "https://openstreetmap.org/"
 },
 {
-"url": "https://cs.vu.nl/~ast/Publications/Papers/euteco-1988.pdf",
-"parentScore": 95,
-"from": "https://willybrauner.com/journal/remote-procedure-calls-for-interactive-applications"
+"url": "https://osmfoundation.org/wiki/Terms_of_Use",
+"parentScore": 92,
+"from": "https://openstreetmap.org/"
 },
 {
-"url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
-"parentScore": 95,
-"from": "https://willybrauner.com/journal/remote-procedure-calls-for-interactive-applications"
-},
-{
-"url": "https://openvisualization.org/",
-"parentScore": 91,
-"from": "https://deck.gl/"
-},
-{
-"url": "https://slack-invite.openjsf.org/",
-"parentScore": 91,
-"from": "https://deck.gl/"
-},
-{
-"url": "https://trademark-list.openjsf.org/",
-"parentScore": 91,
-"from": "https://deck.gl/"
-},
-{
-"url": "https://adryd.com/",
+"url": "http://crypto.com/papers/eesproto.pdf",
 "parentScore": 90,
-"from": "https://philo.gay/linecam"
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
 },
 {
-"url": "http://midnightstarpress.com/",
+"url": "http://cryptopals.com/",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "http://fitrarahim.blogspot.com/",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "http://springer.com/computer/security+and+cryptology/journal/13389",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "http://windowsitpro.com/security/pgp-allows-use-unauthorized-additional-decryption-keys",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://acrab.isi.jhu.edu/",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://blogger.com/profile/01938161238892649411",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://blogger.com/profile/11583263470081358942",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://blogger.com/profile/13246178564153072493",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://blogger.com/profile/14511072296974464383",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://blogger.com/profile/14519473280837410246",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "https://blogger.com/profile/16290373784404152656",
+"parentScore": 90,
+"from": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors"
+},
+{
+"url": "http://maxviking.wordpress.com/",
 "parentScore": 89,
-"from": "https://blog.jimgrey.net/2026/11/10/single-frame-dog-with-headphones"
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
 },
 {
-"url": "http://tedshideler.com/",
+"url": "http://waywardstrategist.com/",
 "parentScore": 89,
-"from": "https://blog.jimgrey.net/2026/11/10/single-frame-dog-with-headphones"
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
 },
 {
-"url": "http://getfirefox.com/",
+"url": "https://bcasteel.design/",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://bing.com/newtabredir?url=https%3A%2F%2Fwww.patreon.com%2FwaywardRTS",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://bonfire.com/store/wayward-strategy",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://breach74.com/blog/2021/07/27/in-defense-of-hard-counters-in-real-time-strategy-games",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://consumersadvisory.com/gamasutra-brandon-casteels-blog-in-defense-of-hard-counters-in-real-time-strategy-games",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://gamasutra.com/blogs/BrandonCasteel/1001769",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://gameupnews.com/2021/08/02/gamasutra-brandon-casteels-blog-in-defense-of-hard-counters-in-real-time-strategy-games",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://gaminghousenews.com/gamasutra-brandon-casteels-weblog-in-protection-of-arduous-counters-in-actual-time-technique-video-games",
+"parentScore": 89,
+"from": "https://waywardstrategy.com/2021/07/27/hard-counters"
+},
+{
+"url": "https://emfcamp.org/schedule/2026/240-men-in-tech-yesallmen",
 "parentScore": 88,
-"from": "https://pixilic.com/"
+"from": "https://media.ccc.de/v/emf2026-240-1-men-in-tech-yesallmen"
 },
 {
-"url": "http://notoriousled.com/",
+"url": "https://forgejo.c3voc.de/voc/voctoweb/commit/1cef91a",
 "parentScore": 88,
-"from": "https://pixilic.com/"
+"from": "https://media.ccc.de/v/emf2026-240-1-men-in-tech-yesallmen"
 },
 {
-"url": "https://developer.mozilla.org/en-US/docs/Glossary/CSS",
+"url": "https://share.diasporafoundation.org/?title=Men+in+tech+%23YesAllMen&url=https%3A%2F%2Fmedia.ccc.de%2Fv%2Femf2026-240-1-men-in-tech-yesallmen",
 "parentScore": 88,
-"from": "https://pixilic.com/"
+"from": "https://media.ccc.de/v/emf2026-240-1-men-in-tech-yesallmen"
 },
 {
-"url": "https://espi.me/",
-"parentScore": 88,
-"from": "https://pixilic.com/"
-},
-{
-"url": "https://madrasmusings.com/vol-36-no-14/following-fish-in-madras",
-"parentScore": 88,
-"from": "https://sriramv.com/2026/11/10/following-fish-in-madras"
-},
-{
-"url": "https://pmny.in/9roJqt8gwshg",
-"parentScore": 88,
-"from": "https://sriramv.com/2026/11/10/following-fish-in-madras"
-},
-{
-"url": "https://pmny.in/GIZosgXVuUVl",
-"parentScore": 88,
-"from": "https://sriramv.com/2026/11/10/following-fish-in-madras"
-},
-{
-"url": "https://pmny.in/Nr92ZcUyqOEJ",
-"parentScore": 88,
-"from": "https://sriramv.com/2026/11/10/following-fish-in-madras"
-},
-{
-"url": "https://pmny.in/yrZJNtbTEn7w",
-"parentScore": 88,
-"from": "https://sriramv.com/2026/11/10/following-fish-in-madras"
-},
-{
-"url": "http://maggiemcneill.wordpress.com/2011/04/15/house-rules",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "http://maggiemcneill.wordpress.com/2012/04/15/guided-tour",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "http://maggiemcneill.wordpress.com/2013/01/25/spamalanche",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "http://maggiemcneill.wordpress.com/resources/king-of-the-hill",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "https://archive.is/YHDNQ",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "https://archive.is/b25bu",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "https://archive.is/iI9q7",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "https://archive.is/ltnvo",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "https://archive.is/o/YHDNQ/https://www.lmtonline.com/local/article/crime-lpd-police-border-patrol-agent-arrested-dv-21296779.php",
-"parentScore": 88,
-"from": "https://maggiemcneill.com/2026/11/10/in-the-news-1687"
-},
-{
-"url": "https://gamedevsofcolorexpo.com/jobs",
-"parentScore": 87,
-"from": "https://mmofallout.com/2026/11/10/impressions-warhammer-survivors"
-},
-{
-"url": "https://howaboutnot.com/",
-"parentScore": 87,
-"from": "https://mmofallout.com/2026/11/10/impressions-warhammer-survivors"
-},
-{
-"url": "https://vidjamagmaes.work/",
-"parentScore": 87,
-"from": "https://mmofallout.com/2026/11/10/impressions-warhammer-survivors"
-},
-{
-"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fmmofallout.com%2F2026%2F11%2F10%2Fimpressions-warhammer-survivors%2F",
-"parentScore": 87,
-"from": "https://mmofallout.com/2026/11/10/impressions-warhammer-survivors"
-},
-{
-"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fmmofallout.com%252F2026%252F11%252F10%252Fimpressions-warhammer-survivors%252F",
-"parentScore": 87,
-"from": "https://mmofallout.com/2026/11/10/impressions-warhammer-survivors"
-},
-{
-"url": "https://wordpress.com/reader/blogs/8783279/posts/41454",
-"parentScore": 87,
-"from": "https://mmofallout.com/2026/11/10/impressions-warhammer-survivors"
-},
-{
-"url": "http://creativecommons.org/licenses/by/3.0",
-"parentScore": 87,
-"from": "https://openlayers.org/"
-},
-{
-"url": "http://tldrlegal.com/license/bsd-2-clause-license-(freebsd)",
-"parentScore": 87,
-"from": "https://openlayers.org/"
-},
-{
-"url": "https://chunkbase.com/",
-"parentScore": 87,
-"from": "https://openlayers.org/"
-},
-{
-"url": "https://opencollective.com/openlayers",
-"parentScore": 87,
-"from": "https://openlayers.org/"
-},
-{
-"url": "https://chakra-ui.com/",
+"url": "https://zillow.com/homedetails/4985-N-300-W-Anderson-IN-46011/120953542_zpid",
 "parentScore": 86,
-"from": "https://geography.games/europe-quiz"
+"from": "https://tedshideler.com/"
 },
 {
-"url": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge",
-"parentScore": 86,
-"from": "https://codeberg.org/Freeyourgadget/Gadgetbridge"
-},
-{
-"url": "https://blog.freeyourgadget.org/",
-"parentScore": 86,
-"from": "https://codeberg.org/Freeyourgadget/Gadgetbridge"
-},
-{
-"url": "https://gadgetbridge.org/internals/topics/support",
-"parentScore": 86,
-"from": "https://codeberg.org/Freeyourgadget/Gadgetbridge"
-},
-{
-"url": "https://bls.gov/cpi/factsheets/average-prices.htm",
+"url": "https://indieweb.org/Webmention",
 "parentScore": 85,
-"from": "https://kadoa.com/food-prices"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)",
+"url": "https://sidetrack.blog/2026/02/26/brussels-airlines-and-deutsche-bahn-team-up-for-antwerp-brussels-airport-leuven-liege-cologne-ice-codeshare",
 "parentScore": 85,
-"from": "https://robotgirlgang.com/2026/10/08/robot-is-a-social-construct-why-your-dishwasher-is-not-a-robot"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://nappingtoheavymetal.com/post/2026-10-10-anchoring-our-mental-model",
+"url": "https://sidetrack.blog/2026/03/01/another-soft-launch-sidetrack-blog",
 "parentScore": 85,
-"from": "https://robotgirlgang.com/2026/10/08/robot-is-a-social-construct-why-your-dishwasher-is-not-a-robot"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://blog.veritasecc.com/",
+"url": "https://sidetrack.blog/2026/03/02/brussels-airlines-invests-in-improved-on-board-product-for-all-passengers-premium-economy-gets-the-biggest-upgrades-but-enhancements-are-coming-across-cabins-both-on-short-haul-and-long-haul-flights",
 "parentScore": 85,
-"from": "https://haroldblackphd.com/2026/11/10/the-horn-of-africa-is-a-mess-a-dangerous-mess"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://subscribe.wordpress.com/",
+"url": "https://sidetrack.blog/2026/04/02/brussels-airlines-adds-extra-flights-across-europe-this-summer-as-belgian-airline-notes-increasing-demand-for-travel-within-europe",
 "parentScore": 85,
-"from": "https://haroldblackphd.com/2026/11/10/the-horn-of-africa-is-a-mess-a-dangerous-mess"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://wordpress.com/start",
+"url": "https://sidetrack.blog/2026/04/10/brussels-airlines-takes-ice-cream-brand-ralph-roxys-from-leuven-around-the-world-small-scale-ice-cream-maker-finds-its-way-to-hundreds-of-thousands-of-travellers-thanks-to-this-cooperation",
 "parentScore": 85,
-"from": "https://haroldblackphd.com/2026/11/10/the-horn-of-africa-is-a-mess-a-dangerous-mess"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://statcounter.com/",
+"url": "https://sidetrack.blog/2026/04/23/brussels-airlines-and-lufthansa-group-end-free-hand-luggage-on-short-and-medium-haul-flights",
 "parentScore": 85,
-"from": "https://dorisvsutherland.com/2026/11/10/anniversary-with-the-vampire-the-claiming-of-sleeping-beauty-1983"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://wordpress.com/",
+"url": "https://sidetrack.blog/2026/05/07/brussels-airlines-navigates-fuel-crisis-and-financial-pressures-amid-middle-east-and-strait-of-hormuz-tensions",
 "parentScore": 85,
-"from": "https://dorisvsutherland.com/2026/11/10/anniversary-with-the-vampire-the-claiming-of-sleeping-beauty-1983"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://bigfinish.com/releases/v/the-omega-factor-divinity-2214",
+"url": "https://sidetrack.blog/2026/05/19/video-brussels-airlines-unveils-cinematic-new-safety-video-directed-by-adil-el-arbi-and-bilall-fallah-safety-heist-transforms-the-onboard-safety-briefing-into-a-dynamic-story-driven-experience",
 "parentScore": 85,
-"from": "https://dorisvsutherland.com/2026/11/10/anniversary-with-the-vampire-the-claiming-of-sleeping-beauty-1983"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://books2read.com/tarotblades",
+"url": "https://sidetrack.blog/2026/05/28/brussels-airlines-offers-fresh-food-from-belgian-brand-bon-sandwiches-will-be-for-sale-in-economy-class-on-continental-flights",
 "parentScore": 85,
-"from": "https://dorisvsutherland.com/2026/11/10/anniversary-with-the-vampire-the-claiming-of-sleeping-beauty-1983"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "https://books2read.com/u/49dwl0",
+"url": "https://sidetrack.blog/2026/07/13/brussels-airlines-mixologist-manuel-wouters-and-filliers-launch-heritage-a-new-signature-aperitif-a-drink-paying-homage-to-belgian-traditions-served-in-business-class",
 "parentScore": 85,
-"from": "https://dorisvsutherland.com/2026/11/10/anniversary-with-the-vampire-the-claiming-of-sleeping-beauty-1983"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://aeolus13umbra.com/",
+"url": "https://sidetrack.blog/2026/07/15/brussels-airlines-halves-aircraft-noise-pollution-over-twelve-years",
 "parentScore": 85,
-"from": "https://chuckthewriter.blog/2026/11/10/the-cpkc-holiday-train-deadrun"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://alanilagan.com/",
+"url": "https://sidetrack.blog/2026/07/17/brussels-airlines-lorenza-maggio-to-succeed-dorothea-von-boxberg-as-ceo",
 "parentScore": 85,
-"from": "https://chuckthewriter.blog/2026/11/10/the-cpkc-holiday-train-deadrun"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://hoxsie.org/",
+"url": "https://sidetrack.blog/2026/08/04/brussels-airlines-freezes-long-haul-expansion-plans-for-2027-after-difficult-first-half-of-2026",
 "parentScore": 85,
-"from": "https://chuckthewriter.blog/2026/11/10/the-cpkc-holiday-train-deadrun"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://saturdaymorningarchives.blogspot.com/",
+"url": "https://sidetrack.blog/2026/08/18/brussels-airlines-goes-nordic-adds-evenes-kemi-and-kittila-to-its-network",
 "parentScore": 85,
-"from": "https://chuckthewriter.blog/2026/11/10/the-cpkc-holiday-train-deadrun"
+"from": "https://tripbytrip.org/2026/11/10/brussels-airlines-rolls-out-free-starlink-high-speed-wi-fi"
 },
 {
-"url": "http://thelandofwhatever.blogspot.com/",
-"parentScore": 85,
-"from": "https://chuckthewriter.blog/2026/11/10/the-cpkc-holiday-train-deadrun"
-},
-{
-"url": "https://wordpress.com/reader/feeds/162447100",
-"parentScore": 85,
-"from": "https://electricbrooke.com/"
-},
-{
-"url": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info",
-"parentScore": 85,
-"from": "https://the-easel.com/link/yoshitomo-naras-big-headed-girls-are-taking-over-new-york"
-},
-{
-"url": "https://math.gl/",
+"url": "https://go.fzj.de/contact",
 "parentScore": 84,
-"from": "https://loaders.gl/"
+"from": "https://fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved"
 },
 {
-"url": "http://jimbarraud.com/manifest",
+"url": "https://go.fzj.de/rss-feed",
 "parentScore": 84,
-"from": "https://jsomers.net/blog/gettiers"
+"from": "https://fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved"
 },
 {
-"url": "http://wordpress.org/",
+"url": "https://go.fzj.de/wetterdaten",
 "parentScore": 84,
-"from": "https://jsomers.net/blog/gettiers"
+"from": "https://fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved"
 },
 {
-"url": "https://linktr.ee/ashleyfriezetdd",
+"url": "https://helmholtz.de/",
 "parentScore": 84,
-"from": "https://codingcraftsman.wordpress.com/2026/11/10/uncomfortably-in-between"
+"from": "https://fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved"
 },
 {
-"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fcodingcraftsman.wordpress.com%2F2026%2F11%2F10%2Funcomfortably-in-between%2F",
+"url": "https://nature.com/articles/s41560-026-02144-0",
 "parentScore": 84,
-"from": "https://codingcraftsman.wordpress.com/2026/11/10/uncomfortably-in-between"
+"from": "https://fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved"
 },
 {
-"url": "https://codepen.io/hakimel",
-"parentScore": 83,
-"from": "https://hakim.se/"
+"url": "http://allendowney.blogspot.com/",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://slides.com/news/auto-animate",
-"parentScore": 83,
-"from": "https://hakim.se/"
+"url": "http://greenteapress.com/wp",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://hn.algolia.com/",
-"parentScore": 83,
-"from": "https://hnbooks.pieterma.es/"
+"url": "https://allendowney.github.io/CultureWar//blog7-hapgen",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://i0.wp.com/manapop.com/wp-content/uploads/2026/11/vlcsnap-2025-10-29-19h47m03s494.png?ssl=1",
-"parentScore": 83,
-"from": "https://manapop.com/film/quatermass-and-the-pit-1967-review"
+"url": "https://allendowney.github.io/CultureWar//blog8-confidence",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://i0.wp.com/manapop.com/wp-content/uploads/2026/11/vlcsnap-2025-10-29-20h29m22s408.png?ssl=1",
-"parentScore": 83,
-"from": "https://manapop.com/film/quatermass-and-the-pit-1967-review"
+"url": "https://allendowney.github.io/CultureWar/tech-report",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://i0.wp.com/manapop.com/wp-content/uploads/2026/11/vlcsnap-2025-10-29-21h19m56s231.png?ssl=1",
-"parentScore": 83,
-"from": "https://manapop.com/film/quatermass-and-the-pit-1967-review"
+"url": "https://allendowney.github.io/OvertonParadox/appendix",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://i0.wp.com/manapop.com/wp-content/uploads/2026/11/vlcsnap-2025-10-29-21h29m59s676.png?ssl=1",
-"parentScore": 83,
-"from": "https://manapop.com/film/quatermass-and-the-pit-1967-review"
+"url": "https://allendowney.github.io/OvertonParadox/overtron",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://imdb.com/name/nm0232019?ref_=tt_cst_t_1",
-"parentScore": 83,
-"from": "https://manapop.com/film/quatermass-and-the-pit-1967-review"
+"url": "https://allendowney.github.io/ProbablyOverthinkingIt/chile.html",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://imdb.com/name/nm0445139?ref_=tt_cst_t_2",
-"parentScore": 83,
-"from": "https://manapop.com/film/quatermass-and-the-pit-1967-review"
+"url": "https://allendowney.github.io/ProbablyOverthinkingIt/lognormal.html",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "http://chuckthewriter.blog/2022/07/30/whats-up-in-the-neighborhood-july-30-2022",
-"parentScore": 83,
-"from": "https://alcue.wordpress.com/"
+"url": "https://allendowney.github.io/ProbablyOverthinkingIt/progress.html",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://chuckthewriter.blog/2024/06/01/whats-up-in-the-neighborhood-june-1-2024",
-"parentScore": 83,
-"from": "https://alcue.wordpress.com/"
+"url": "https://allendowney.github.io/ThinkBayes2",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Falcue.wordpress.com",
-"parentScore": 83,
-"from": "https://alcue.wordpress.com/"
+"url": "https://allendowney.github.io/ThinkStats",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Falcue.wordpress.com%2F2026%2F08%2F03%2Ffats-mccarthy-the-end-of-the-road-at-the-end-of-the-road%2F&signup_flow=account",
-"parentScore": 83,
-"from": "https://alcue.wordpress.com/"
+"url": "https://allendowney.github.io/YouWouldChooseNow",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "https://wordpress.com/reader/feeds/17720691",
-"parentScore": 83,
-"from": "https://alcue.wordpress.com/"
+"url": "https://allendowney.substack.com/",
+"parentScore": 84,
+"from": "https://allendowney.com/blog"
 },
 {
-"url": "http://conwaylife.com/forums",
+"url": "http://kamalmarhubi.com/",
 "parentScore": 82,
-"from": "https://copy.sh/life"
+"from": "https://sokyokuban.com/"
 },
 {
-"url": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583",
+"url": "https://alexjenter.github.io/cv",
 "parentScore": 82,
-"from": "https://the-easel.com/link/a-tribute-to-marisa-merz-arte-poveras-only-female-artist"
+"from": "https://sokyokuban.com/"
 },
 {
-"url": "https://openvisualization.com/",
+"url": "https://increpare.com/",
 "parentScore": 82,
-"from": "https://luma.gl/"
+"from": "https://sokyokuban.com/"
 },
 {
-"url": "https://investopedia.com/articles/retirement/06/eightreasons401k.asp",
+"url": "https://jvns.ca/",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://metmuseum.org/",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://metmuseum.org/art/collection/search/255946",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://metmuseum.org/art/collection/search/256431",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://metmuseum.org/art/collection/search/370755",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://nbn-resolving.org/urn/resolver.pl",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://purescript.org/",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://steviasphere.bandcamp.com/",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://steviasphere.bandcamp.com/album/pool-water-blue",
+"parentScore": 82,
+"from": "https://sokyokuban.com/"
+},
+{
+"url": "https://sputznik.com/",
 "parentScore": 81,
-"from": "https://investmentcalculator.io/"
+"from": "https://madrasmusings.com/vol-36-no-14/following-fish-in-madras"
 },
 {
-"url": "https://investorjunkie.com/56359/5-advantages-self-directed-solo-401k-plan-self-employed",
-"parentScore": 81,
-"from": "https://investmentcalculator.io/"
-},
-{
-"url": "https://agentgateway.dev/docs/kubernetes",
-"parentScore": 81,
-"from": "https://baeke.info/2026/11/10/agentgateway-an-open-source-ai-gateway-on-kubernetes"
-},
-{
-"url": "https://tekeye.uk/computer_history/powered-by",
-"parentScore": 81,
-"from": "https://eightyeightthirty.one/"
-},
-{
-"url": "https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://claroty.com/team82/research/chilling-discoveries-unpacking-vulnerabilities-in-copeland-xweb-pro-controllers",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://claroty.com/team82/research/freeze-the-controller-defrost-the-food-uncovering-vulnerabilities-in-danfoss-refrigeration-controllers",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/declaration-d-attribution-a-l-iran-de-cyber-attaques-visant-la-france",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://ic3.gov/CSA/2026/260407.pdf",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://ici.radio-canada.ca/nouvelle/2299376/cyberattaque-refrigerateurs-france-accuse-iran",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://ipinfo.io/blog/france-fridges-hack",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://ofac.treasury.gov/recent-actions/20240202",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "https://techniques-ingenieur.fr/actualite/breves-afp/des-chambres-froides-de-letablissement-francais-du-sang-victimes-dune-cyberattaque-dun-prestataire-165616",
-"parentScore": 81,
-"from": "https://flyingpenguin.com/port-502-is-french-for-iran"
-},
-{
-"url": "http://flickr.com/photos/dmmaus",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://darthsanddroids.net/",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://flickr.com/photos/dmmaus/55644398084",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://irregularwebcomic.net/",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://mezzacotta.net/100proofs",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://mezzacotta.net/blockandroll",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://mezzacotta.net/garfield",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://mezzacotta.net/planetofhats",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://nitpicking.com/",
-"parentScore": 81,
-"from": "https://dangermouse.net/wordpresshome/2026/11/10/transferring-travel-photos-and-baking-new-sourdough"
-},
-{
-"url": "https://fieldsofthe.world/",
+"url": "https://appliedai-institute.de/en",
 "parentScore": 80,
-"from": "https://9eo.org/"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://geonovum.nl/agenda/open-geodag-2026",
+"url": "https://arxiv.org/abs/2507.05387v6",
 "parentScore": 80,
-"from": "https://9eo.org/"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://planet.com/",
+"url": "https://arxiv.org/abs/2510.13879v2",
 "parentScore": 80,
-"from": "https://9eo.org/"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://blind-magazine.com/en/stories/tomas-van-houtryve-photographing-notre-dame-became-an-obsession",
+"url": "https://arxiv.org/abs/2604.00716",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://designartmagazine.com/2024/12/paris-notre-dame-restoration.html",
+"url": "https://arxiv.org/abs/2604.03428",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts",
+"url": "https://arxiv.org/abs/2604.17121",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://lacmaonfire.blogspot.com/2024/11/annibale-carracci-greatest-old-master.html",
+"url": "https://arxiv.org/abs/2605.11011",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas",
+"url": "https://arxiv.org/abs/2608.05872",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://observer.co.uk/culture/photography/article/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting",
+"url": "https://arxiv.org/abs/2608.17981",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html",
+"url": "https://arxiv.org/abs/2609.31360",
 "parentScore": 80,
-"from": "https://the-easel.com/link/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://hyperallergic.com/at-moma-brancusi-is-lost-in-space",
+"url": "https://base64encode.org/",
 "parentScore": 80,
-"from": "https://the-easel.com/link/at-moma-brancusi-is-lost-in-space"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://henryhmko.github.io/about/about.html",
+"url": "https://eqbench.com/",
 "parentScore": 80,
-"from": "https://tinytpu.com/"
+"from": "https://dnhkng.github.io/posts/rys"
 },
 {
-"url": "https://jax-ml.github.io/scaling-book",
+"url": "http://amzn.to/2DmO97u",
 "parentScore": 80,
-"from": "https://tinytpu.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "https://siboehm.com/articles/22/CUDA-MMM",
+"url": "http://amzn.to/2Drf8Dh",
 "parentScore": 80,
-"from": "https://tinytpu.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "https://telesens.co/2018/07/30/systolic-architectures",
+"url": "http://amzn.to/2q2Tdq8",
 "parentScore": 80,
-"from": "https://tinytpu.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "https://udlbook.github.io/udlbook",
+"url": "http://amzn.to/2rye7jg",
 "parentScore": 80,
-"from": "https://tinytpu.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "http://acurax.com/digital-marketing",
+"url": "http://leighbureaultd.com/speakers/tharford",
 "parentScore": 80,
-"from": "https://capitaldistrictfun.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "http://acurax.com/products/floating-social-media-icon-wordpress-plugin",
+"url": "http://printfriendly.com/print?title=The+case+for+ending+Amazon%E2%80%99s+dominance&url=https%3A%2F%2Ftimharford.com%2F2018%2F02%2Fthe-case-for-ending-amazons-dominance%2F",
 "parentScore": 80,
-"from": "https://capitaldistrictfun.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "https://themehall.com/hotel-wordpress-theme",
+"url": "http://stumbleupon.com/badge?title=The+case+for+ending+Amazon%E2%80%99s+dominance&url=https%3A%2F%2Ftimharford.com%2F2018%2F02%2Fthe-case-for-ending-amazons-dominance%2F",
 "parentScore": 80,
-"from": "https://capitaldistrictfun.com/"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "http://anbasile.github.io/writing/2017/04/10/manifesto-manuali.html",
+"url": "https://econtwitter.net/@TimHarford",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "https://allendowney.com/blog",
+"url": "https://felicitybryan.com/fba-agent/sally-holloway",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://timharford.com/2018/02/the-case-for-ending-amazons-dominance"
 },
 {
-"url": "https://allendowney.com/ywcn?from=gtp-sidebar",
+"url": "https://cbc.ca/",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/2Bg9iVi",
+"url": "https://ici.tou.tv/angles-morts",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/2ZfjxkH",
+"url": "https://ici.tou.tv/antigang/s02",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/3Kp629E",
+"url": "https://ici.tou.tv/faire-bombance",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/3W6RwdM",
+"url": "https://ici.tou.tv/francois-e",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/3aVrNge",
+"url": "https://ici.tou.tv/horizon-eurovision",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/3dONEEX",
+"url": "https://ici.tou.tv/sur-le-fil",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/3g2JACs",
+"url": "https://solutionsmedia.cbcrc.ca/fr",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/42lmxwu",
+"url": "https://tou.tv/",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
-"url": "https://amzn.to/45ZfomT",
+"url": "https://youradchoices.ca/fr/en-savoir-plus",
 "parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
-},
-{
-"url": "https://bookshop.org/a/98697/9780226822587",
-"parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
-},
-{
-"url": "https://bookshop.org/a/98697/9781098190255",
-"parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
-},
-{
-"url": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto",
-"parentScore": 80,
-"from": "https://greenteapress.com/wp/textbook-manifesto"
-},
-{
-"url": "https://magnumphotos.com/arts-culture/a-lasting-moment-marc-riboud-in-england",
-"parentScore": 80,
-"from": "https://the-easel.com/link/a-lasting-moment-marc-riboud-in-england"
-},
-{
-"url": "https://elliott.computer/",
-"parentScore": 79,
-"from": "https://internetphonebook.net/"
-},
-{
-"url": "https://elderscrolls.fandom.com/wiki/Slow_Time",
-"parentScore": 79,
-"from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
-},
-{
-"url": "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy",
-"parentScore": 79,
-"from": "https://blog.alexbeals.com/posts/explaining-the-magelight-xp-glitch-in-skyrim"
+"from": "https://ici.radio-canada.ca/article/info/2299376/cyberattaque-refrigerateurs-france-accuse-iran"
 },
 {
 "url": "https://nexusmods.com/skyrim/mods/25859",
@@ -868,6 +668,11 @@
 "url": "https://thompsonblog.co.uk/",
 "parentScore": 79,
 "from": "https://quotulatiousness.ca/blog/i-felt-like-howard-carter-entering-tutankhamuns-tomb"
+},
+{
+"url": "https://observershop.co.uk/",
+"parentScore": 79,
+"from": "https://observer.co.uk/culture/photography/article/light-and-magic-at-tate-modern-why-turn-a-photograph-into-a-painting"
 },
 {
 "url": "https://tr.ee/FYNsVb",
@@ -1228,6 +1033,26 @@
 "url": "https://masslive.com/boston/2026/10/mit-pioneer-who-helped-make-apollo-moon-landing-possible-dies-at-90.html",
 "parentScore": 78,
 "from": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007"
+},
+{
+"url": "https://buhtz.codeberg.page/",
+"parentScore": 78,
+"from": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl"
+},
+{
+"url": "https://easytutoriel.com/",
+"parentScore": 78,
+"from": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl"
+},
+{
+"url": "https://kinomig.tv/",
+"parentScore": 78,
+"from": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl"
+},
+{
+"url": "https://peeklaunch.com/",
+"parentScore": 78,
+"from": "https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl"
 },
 {
 "url": "http://freepascal.org/",
@@ -1785,6 +1610,56 @@
 "from": "https://zoneless.com/"
 },
 {
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fmidnightstarpress.com",
+"parentScore": 76,
+"from": "https://midnightstarpress.com/"
+},
+{
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fmidnightstarpress.com%252F2024%252F01%252F22%252Funder-the-catalpa-tree%252F",
+"parentScore": 76,
+"from": "https://midnightstarpress.com/"
+},
+{
+"url": "https://wordpress.com/reader/feeds/158676239",
+"parentScore": 76,
+"from": "https://midnightstarpress.com/"
+},
+{
+"url": "https://editionsphebus.fr/catalogue/paris-km-00",
+"parentScore": 76,
+"from": "https://blind-magazine.com/en/stories/tomas-van-houtryve-photographing-notre-dame-became-an-obsession"
+},
+{
+"url": "https://galeriemiranda.com/fr/ellen-carey-tomas-van-houtryve",
+"parentScore": 76,
+"from": "https://blind-magazine.com/en/stories/tomas-van-houtryve-photographing-notre-dame-became-an-obsession"
+},
+{
+"url": "https://rebatirnotredamedeparis.fr/",
+"parentScore": 76,
+"from": "https://blind-magazine.com/en/stories/tomas-van-houtryve-photographing-notre-dame-became-an-obsession"
+},
+{
+"url": "https://tomasvh.com/",
+"parentScore": 76,
+"from": "https://blind-magazine.com/en/stories/tomas-van-houtryve-photographing-notre-dame-became-an-obsession"
+},
+{
+"url": "https://tomasvh.com/works/notre-dame-after-the-fire",
+"parentScore": 76,
+"from": "https://blind-magazine.com/en/stories/tomas-van-houtryve-photographing-notre-dame-became-an-obsession"
+},
+{
+"url": "https://randomdailyurls.com/",
+"parentScore": 76,
+"from": "https://pulsefeedback.io/"
+},
+{
+"url": "https://randomdailyurls.com/contact",
+"parentScore": 76,
+"from": "https://pulsefeedback.io/"
+},
+{
 "url": "https://w3.org/TR/webmidi",
 "parentScore": 75,
 "from": "https://musiclab.chromeexperiments.com/"
@@ -2008,6 +1883,171 @@
 "url": "https://launchnest.io/p/slcr-sliceable-linked-checkable-requirements",
 "parentScore": 75,
 "from": "https://slcr.dev/announcements"
+},
+{
+"url": "https://wordpress.org/themes/download/hotel.0.3.1.zip",
+"parentScore": 75,
+"from": "https://themehall.com/hotel-wordpress-theme"
+},
+{
+"url": "https://cssigniter.com/",
+"parentScore": 75,
+"from": "https://hoxsie.org/"
+},
+{
+"url": "https://cssigniter.com/themes/tinos",
+"parentScore": 75,
+"from": "https://hoxsie.org/"
+},
+{
+"url": "https://html5up.net/",
+"parentScore": 75,
+"from": "https://hugoam.github.io/toy-io"
+},
+{
+"url": "https://amsterdamtulipmuseum.com/pages/the-tulip-in-turkey",
+"parentScore": 75,
+"from": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts"
+},
+{
+"url": "https://brill.com/view/journals/mcmw/1/1-2/article-p120_6.xml?language=en",
+"parentScore": 75,
+"from": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts"
+},
+{
+"url": "https://collections.vam.ac.uk/item/O98834/carpet-unknown",
+"parentScore": 75,
+"from": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts"
+},
+{
+"url": "https://marxists.org/archive/morris/works/1879/pattern.htm",
+"parentScore": 75,
+"from": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts"
+},
+{
+"url": "https://oxfordre.com/literature/display/10.1093/acrefore/9780190201098.001.0001/acrefore-9780190201098-e-226?d=%2F10.1093%2Facrefore%2F9780190201098.001.0001%2Facrefore-9780190201098-e-226&p=emailA8EEQaEjvasPU",
+"parentScore": 75,
+"from": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts"
+},
+{
+"url": "https://somethingcurated.com/2024/09/02/exploring-the-islamic-worlds-influence-on-britains-arts-and-crafts-movement",
+"parentScore": 75,
+"from": "https://hyphenonline.com/2024/11/11/william-morris-gallery-exhibition-islamic-art-textiles-ceramics-metalwork-manuscripts"
+},
+{
+"url": "http://git-scm.com/",
+"parentScore": 75,
+"from": "https://memcached.org/blog/nvm-caching"
+},
+{
+"url": "https://acceleratewithoptane.com/",
+"parentScore": 75,
+"from": "https://memcached.org/blog/nvm-caching"
+},
+{
+"url": "http://elsotano.com/libro-de-salinas-a-fox-10156307",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "http://greenteapress.com/manifesto.html",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "http://utopia451.blogspot.com/",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "http://versvs.net/anotacion/estar-altura",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Flibertas87.wordpress.com%2F2012%2F10%2F27%2Fmanifiesto-de-los-libros-de-texto%2F",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://wordpress.com/es",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Flibertas87.wordpress.com%2F2012%2F10%2F27%2Fmanifiesto-de-los-libros-de-texto%2F&signup_flow=account",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://wordpress.com/reader/blogs/14743005/posts/284",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://wordpress.com/start/es",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://wp.me/pZRkp-4A",
+"parentScore": 75,
+"from": "https://libertas87.wordpress.com/2012/10/27/manifiesto-de-los-libros-de-texto"
+},
+{
+"url": "https://breathe.readthedocs.io/en/latest",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://developer.mozilla.org/en-US/docs/Glossary/Breadcrumb",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/important",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://doc.rust-lang.org/rustdoc",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://docutils.sourceforge.io/docs/ref/rst/directives.html",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://doxygen.nl/",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://en.wiktionary.org/wiki/Chesterton%27s_fence",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://merriam-webster.com/dictionary/polyglot",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://pagefind.app/",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
+},
+{
+"url": "https://pigweed.dev/",
+"parentScore": 75,
+"from": "https://technicalwriting.dev/blog/2026/10/polyglot"
 },
 {
 "url": "https://disney.go.com/disneyvideos/fastplay/easyfind.html",
@@ -2510,6 +2550,261 @@
 "from": "https://theconsensus.dev/p/2026/10/08/deepthi-sigireddi-from-supabase.html"
 },
 {
+"url": "https://arxiv.org/abs/2608.18039",
+"parentScore": 74,
+"from": "https://emptysqua.re/blog/polyglots-dilemma"
+},
+{
+"url": "https://specifications.readthedocs.io/en/latest/server-selection/server-selection",
+"parentScore": 74,
+"from": "https://emptysqua.re/blog/polyglots-dilemma"
+},
+{
+"url": "http://dodcio.defense.gov/DoD-Web-Policy",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "http://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "http://dodig.mil/",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "http://esd.whs.mil/DD/plainlanguage",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "http://open.defense.gov/",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://business.defense.gov/",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://defense.gov/",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://defense.gov/Legal-Administrative/Links-Disclaimer",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://defense.gov/Legal-Administrative/Privacy-Security",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://dma.mil/Services/Visual-Information/References/Limitations",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://dni.gov/",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://esd.whs.mil/FOID",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://intelligence.gov/",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://intelligence.gov/ic-on-the-record-database",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "https://media.defense.gov/2023/Dec/06/2003352582/-1/-1/0/231206-D-IM742-2023.PNG",
+"parentScore": 74,
+"from": "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products"
+},
+{
+"url": "http://37signals.com/talks/soundslice",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://about.me/irae",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://bladepolska.com/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://chicagoboss.org/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://evanmiller.org/hackers-and-canvas.html",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://evanmiller.org/why-i-develop-for-the-mac.html",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://greweb.fr/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://html5rocks.com/en/tutorials/canvas/performance",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://namuol.github.com.io/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://nba.com/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://obeattie.com/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://paulirish.com/2011/requestanimationframe-for-smart-animating",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://schmantics.blogspot.com/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://scottmcmillin.com/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://silenistudios.com/",
+"parentScore": 74,
+"from": "https://holovaty.com/writing/in-defense-of-canvas"
+},
+{
+"url": "http://service.govdelivery.com/service/subscribe.html?code=USTREAS_61",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "http://treasurydirect.gov/",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://data.gov/",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://mymoney.gov/",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://opm.gov/",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://sanctionslist.ofac.treas.gov/Home/ConsolidatedList",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://sanctionssearch.ofac.treas.gov/",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://service.govdelivery.com/accounts/USTREAS/subscriber/new?topic_id=USTREAS_89",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://usajobs.gov/",
+"parentScore": 74,
+"from": "https://ofac.treasury.gov/recent-actions/20240202"
+},
+{
+"url": "https://hpmor.com/",
+"parentScore": 74,
+"from": "https://shwin.co/blog/why-i-dont-discuss-politics-with-friends"
+},
+{
+"url": "https://paulgraham.com/mod.html",
+"parentScore": 74,
+"from": "https://shwin.co/blog/why-i-dont-discuss-politics-with-friends"
+},
+{
+"url": "https://readthesequences.com/",
+"parentScore": 74,
+"from": "https://shwin.co/blog/why-i-dont-discuss-politics-with-friends"
+},
+{
+"url": "https://chrisdown.photo/",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
+"url": "https://farseerfc.me/in-defence-of-swap.html",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
+"url": "https://fosstodon.org/@cdown",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
+"url": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/patch?id=fe35004fbf9eaf67482b074a2e032abb9c89b1dd",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
+"url": "https://keyoxide.org/084929ACFBC23B0B1A26A841DF8D21B616118070",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
+"url": "https://linuxatemyram.com/",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
+"url": "https://spamty.eu/show/v6/289/f3054a0d5abbed5f645aaf3d",
+"parentScore": 74,
+"from": "https://chrisdown.name/2018/01/02/in-defence-of-swap.html"
+},
+{
 "url": "https://gpu.userbenchmark.com/Compare/Nvidia-GeForce-GT-650M-vs-AMD-RX-Vega-8-Ryzen-iGPU/m7754vsm441833",
 "parentScore": 73,
 "from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
@@ -2863,6 +3158,116 @@
 "url": "http://maggiemcneill.wordpress.com/2010/08/16/aversions",
 "parentScore": 73,
 "from": "https://maggiemcneill.com/2010/08/21/advice-for-clients"
+},
+{
+"url": "http://logback.qos.ch/",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "http://martiancraft.com/blog/2015/06/android-support-library",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-localbroadcastmanager-release/localbroadcastmanager",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-main/cardview",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-main/customview",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-main/emoji2",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-main/fragment",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-main/health",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/issues",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://codeberg.org/IzzyOnDroid/repodata/src/branch/main/metadata/nodomain.freeyourgadget.gadgetbridge.yml",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://commons.apache.org/",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://developer.android.com/jetpack/androidx",
+"parentScore": 73,
+"from": "https://apt.izzysoft.de/fdroid/index/apk/nodomain.freeyourgadget.gadgetbridge"
+},
+{
+"url": "https://about.bostonpython.com/slack",
+"parentScore": 73,
+"from": "https://nedbatchelder.com/blog/202609/expert_asterisks"
+},
+{
+"url": "https://blogtrottr.com/?subscribe=https%3A%2F%2Fnedbatchelder.com%2Fblog%2Frss.xml",
+"parentScore": 73,
+"from": "https://nedbatchelder.com/blog/202609/expert_asterisks"
+},
+{
+"url": "https://hachyderm.io/@nedbat",
+"parentScore": 73,
+"from": "https://nedbatchelder.com/blog/202609/expert_asterisks"
+},
+{
+"url": "https://pythondiscord.com/",
+"parentScore": 73,
+"from": "https://nedbatchelder.com/blog/202609/expert_asterisks"
+},
+{
+"url": "https://stand-with-ukraine.pp.ua/",
+"parentScore": 73,
+"from": "https://nedbatchelder.com/blog/202609/expert_asterisks"
+},
+{
+"url": "https://tidelift.com/subscription/pkg/pypi-coverage",
+"parentScore": 73,
+"from": "https://nedbatchelder.com/blog/202609/expert_asterisks"
+},
+{
+"url": "https://dol.gov/",
+"parentScore": 73,
+"from": "https://bls.gov/"
+},
+{
+"url": "https://dol.gov/grants",
+"parentScore": 73,
+"from": "https://bls.gov/"
+},
+{
+"url": "https://oig.dol.gov/",
+"parentScore": 73,
+"from": "https://bls.gov/"
+},
+{
+"url": "https://usa.gov/",
+"parentScore": 73,
+"from": "https://bls.gov/"
 },
 {
 "url": "https://aatishb.com/myriad",
@@ -3263,6 +3668,201 @@
 "url": "https://kagifeedback.org/d/5305-kagi-translate-feedback",
 "parentScore": 72,
 "from": "https://translate.kagi.com/?from=en&to=LinkedIn+speak"
+},
+{
+"url": "http://codeyourwayup.com/",
+"parentScore": 72,
+"from": "https://rambli.com/2026/11/the-correlation-in-stress-to-work"
+},
+{
+"url": "https://amazon.ca/dp/1777076501",
+"parentScore": 72,
+"from": "https://rambli.com/2026/11/the-correlation-in-stress-to-work"
+},
+{
+"url": "https://upsidedownoffice.com/podcast",
+"parentScore": 72,
+"from": "https://rambli.com/2026/11/the-correlation-in-stress-to-work"
+},
+{
+"url": "https://service-public.fr/",
+"parentScore": 72,
+"from": "https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009"
+},
+{
+"url": "https://welcometothejungle.com/fr/companies/anssi",
+"parentScore": 72,
+"from": "https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009"
+},
+{
+"url": "https://cisa.gov/news-events/ics-advisories/icsa-26-057-10",
+"parentScore": 72,
+"from": "https://helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet"
+},
+{
+"url": "https://helpnet.short.gy/LSKDvf",
+"parentScore": 72,
+"from": "https://helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet"
+},
+{
+"url": "https://ransom-isac.org/blog/the-copeland-incident",
+"parentScore": 72,
+"from": "https://helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet"
+},
+{
+"url": "https://securityscorecard.com/blog/a-dish-served-lukewarm-the-refrigerator-botnet",
+"parentScore": 72,
+"from": "https://helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet"
+},
+{
+"url": "https://assets.danfoss.com/documents/205743/AU423263813698en-010102.pdf",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_9n4TtB8uttUPaM6?product=https%3A%2F%2Fwww.cisa.gov%2Fnews-events%2Fics-advisories%2Ficsa-25-140-03",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cve.org/CVERecord?id=CVE-2025-41450",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cve.org/CVERecord?id=CVE-2025-41451",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cve.org/CVERecord?id=CVE-2025-41452",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cwe.mitre.org/data/definitions/15.html",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cwe.mitre.org/data/definitions/287.html",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://cwe.mitre.org/data/definitions/77.html",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://dhs.gov/",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://dhs.gov/foia",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://dhs.gov/performance-financial-reports",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "https://first.org/cvss/calculator/3.1",
+"parentScore": 72,
+"from": "https://cisa.gov/news-events/ics-advisories/icsa-25-140-03"
+},
+{
+"url": "http://the-witness.net/",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://aeon.co/essays/stagnant-and-dull-can-digital-books-ever-replace-print",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://bookshop.org/p/books/mindstorms-children-computers-and-powerful-ideas-seymour-a-papert/14349506?ean=9781541675124",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://bookshop.org/p/books/technopoly-the-surrender-of-culture-to-technology-neil-postman/6718677?ean=9780679745402",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://davidhestenes.net/",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/2014/CDG_Research_Agenda.pdf",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/2014/CDG_Research_Agenda_poster.pdf",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/2014/CDG_research_agendas",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/2016/Hypercard_in_the_World",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/2017/Zine",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://dynamicland.org/2018/Dynamicland",
+"parentScore": 72,
+"from": "https://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "http://jekyllrb.com/",
+"parentScore": 72,
+"from": "https://duetosymmetry.com/tool/polynomial-roots-toy"
+},
+{
+"url": "http://jsxgraph.uni-bayreuth.de/wp",
+"parentScore": 72,
+"from": "https://duetosymmetry.com/tool/polynomial-roots-toy"
+},
+{
+"url": "http://netlib.org/numeralgo/na10",
+"parentScore": 72,
+"from": "https://duetosymmetry.com/tool/polynomial-roots-toy"
+},
+{
+"url": "http://twocubes.tumblr.com/post/140680223428/same-polynomials-but-this-time-im-letting-t-vary",
+"parentScore": 72,
+"from": "https://duetosymmetry.com/tool/polynomial-roots-toy"
+},
+{
+"url": "https://arxiv.org/a/stein_l_1",
+"parentScore": 72,
+"from": "https://duetosymmetry.com/tool/polynomial-roots-toy"
+},
+{
+"url": "https://doi.org/10.1007/BF02207694",
+"parentScore": 72,
+"from": "https://duetosymmetry.com/tool/polynomial-roots-toy"
 },
 {
 "url": "https://chowdsp.com/products.html",
@@ -4078,6 +4678,221 @@
 "url": "https://badbotdesign.com/",
 "parentScore": 70,
 "from": "https://ghostlystock.com/"
+},
+{
+"url": "https://nexusconnect.io/",
+"parentScore": 70,
+"from": "https://claroty.com/team82/research/chilling-discoveries-unpacking-vulnerabilities-in-copeland-xweb-pro-controllers"
+},
+{
+"url": "https://webapps.copeland.com/Dixell/Content/Pages/Manuals/XWEBPRO/XWEB300D500DV.1.0INSTALLATION/XWEB300D-500D-PRO-STP-GB.pdf",
+"parentScore": 70,
+"from": "https://claroty.com/team82/research/chilling-discoveries-unpacking-vulnerabilities-in-copeland-xweb-pro-controllers"
+},
+{
+"url": "https://webapps.copeland.com/Dixell/Pages/SystemSoftwareUpdate",
+"parentScore": 70,
+"from": "https://claroty.com/team82/research/chilling-discoveries-unpacking-vulnerabilities-in-copeland-xweb-pro-controllers"
+},
+{
+"url": "https://adryd.co/wits.mp4",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://alula.me/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://ave.zone/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://bree.dev/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://c7.pm/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://cbax.dev/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://coolmathgames.tech/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://emma.cafe/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://enfys.wales/",
+"parentScore": 70,
+"from": "https://adryd.com/"
+},
+{
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fhowaboutnot.com",
+"parentScore": 70,
+"from": "https://howaboutnot.com/"
+},
+{
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fhowaboutnot.com%252F2026%252F06%252F28%252Fvod-wicked-2024%252F",
+"parentScore": 70,
+"from": "https://howaboutnot.com/"
+},
+{
+"url": "https://wordpress.com/reader/feeds/101886231",
+"parentScore": 70,
+"from": "https://howaboutnot.com/"
+},
+{
+"url": "https://chaos.social/@Foxboron",
+"parentScore": 70,
+"from": "https://linderud.dev/blog/resigning-from-arch-linux"
+},
+{
+"url": "https://lists.archlinux.org/archives/list/arch-dev-public@lists.archlinux.org/thread/2AX2BCJ3EQX7G3YXSDX73BR4NCAWXXBZ",
+"parentScore": 70,
+"from": "https://linderud.dev/blog/resigning-from-arch-linux"
+},
+{
+"url": "https://lists.archlinux.org/archives/list/aur-general@lists.archlinux.org/thread/JQWKMMRV74EWK77YHOM4QAM2SVNV7GDZ",
+"parentScore": 70,
+"from": "https://linderud.dev/blog/resigning-from-arch-linux"
+},
+{
+"url": "https://media.ccc.de/c/arch-conf-2020",
+"parentScore": 70,
+"from": "https://linderud.dev/blog/resigning-from-arch-linux"
+},
+{
+"url": "http://blog.ezyang.com/2019/05/pytorch-internals",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://arxiv.org/abs/1804.06826",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://blog.nelhage.com/post/computers-can-be-understood",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://developer.nvidia.com/blog/cuda-pro-tip-increase-performance-with-vectorized-memory-access",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://developer.nvidia.com/blog/cuda-refresher-cuda-programming-model",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://developer.nvidia.com/blog/cutlass-linear-algebra-cuda",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://developer.nvidia.com/blog/optimizing-compute-shaders-for-l2-locality-using-thread-group-id-swizzling",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://developer.nvidia.com/blog/using-cuda-warp-level-primitives",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://developer.nvidia.com/nsight-systems",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://docs.nvidia.com/cuda/cuda-binary-utilities",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://docs.nvidia.com/nsight-compute/ProfilingGuide",
+"parentScore": 70,
+"from": "https://siboehm.com/articles/22/CUDA-MMM"
+},
+{
+"url": "https://finance.yahoo.com/technology/ai/articles/computer-science-enrollment-fell-first-130917911.html",
+"parentScore": 70,
+"from": "https://baldurbjarnason.com/2026/05-software-developers-are-not-okay"
+},
+{
+"url": "https://ruv.is/frettir/innlent/2026-09-16-nynemum-i-tolvunarfraedi-og-tengdum-greinum-faekkadi-um-thridjung-milli-ara-487214",
+"parentScore": 70,
+"from": "https://baldurbjarnason.com/2026/05-software-developers-are-not-okay"
+},
+{
+"url": "https://softwarecrisis.dev/",
+"parentScore": 70,
+"from": "https://baldurbjarnason.com/2026/05-software-developers-are-not-okay"
+},
+{
+"url": "https://toot.cafe/@baldur",
+"parentScore": 70,
+"from": "https://baldurbjarnason.com/2026/05-software-developers-are-not-okay"
+},
+{
+"url": "https://d12n.leiden.edu/",
+"parentScore": 70,
+"from": "https://infrastructureinsights.fund/projects/what-comes-after-foss"
+},
+{
+"url": "https://digital-infrastructure-insights-fund-missive.ghost.io/",
+"parentScore": 70,
+"from": "https://infrastructureinsights.fund/projects/what-comes-after-foss"
+},
+{
+"url": "https://digital-infrastructure-insights-fund-podcast.simplecast.com/",
+"parentScore": 70,
+"from": "https://infrastructureinsights.fund/projects/what-comes-after-foss"
+},
+{
+"url": "https://mastodon.world/@DigInfFund",
+"parentScore": 70,
+"from": "https://infrastructureinsights.fund/projects/what-comes-after-foss"
+},
+{
+"url": "https://opencollective.com/privacypolicy",
+"parentScore": 70,
+"from": "https://infrastructureinsights.fund/projects/what-comes-after-foss"
+},
+{
+"url": "https://opencollective.com/tos",
+"parentScore": 70,
+"from": "https://infrastructureinsights.fund/projects/what-comes-after-foss"
 },
 {
 "url": "https://cssgradient.io/",
@@ -4930,6 +5745,181 @@
 "from": "https://dbushell.com/2026/10/11/d-bus-hell"
 },
 {
+"url": "https://blog.google/innovation-and-ai/products/tensorflow-smarter-machine-learning-for",
+"parentScore": 68,
+"from": "https://minitap.ai/blog/i-expected-better-from-google"
+},
+{
+"url": "https://cal.com/team/minitap/minitap-get-access?overlayCalendar=true",
+"parentScore": 68,
+"from": "https://minitap.ai/blog/i-expected-better-from-google"
+},
+{
+"url": "https://cdn.sanity.io/images/5b5hto6c/production/4fa1126fcee7ceacdca0fa09a4f800518b9d5409-1360x980.png",
+"parentScore": 68,
+"from": "https://minitap.ai/blog/i-expected-better-from-google"
+},
+{
+"url": "https://cdn.sanity.io/images/5b5hto6c/production/8a4a9cd2ceb3a1679ca5033e6209fc7d558e81a0-1360x980.png",
+"parentScore": 68,
+"from": "https://minitap.ai/blog/i-expected-better-from-google"
+},
+{
+"url": "https://cdn.sanity.io/images/5b5hto6c/production/a6cbba90bfc6899f37b1bde27cb525fc92a322c4-2640x1380.png",
+"parentScore": 68,
+"from": "https://minitap.ai/blog/i-expected-better-from-google"
+},
+{
+"url": "http://archive.is/",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://dilbert.com/",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://freetetris.org/game.php",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://freewillastrology.com/horoscopes/allsigns.html",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://gendercastle.home.blog/",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://georgianicols.com/",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://hackerfactor.com/GenderGuesser.php",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://knowyourmeme.com/memes/ceiling-cat",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "http://virelai.dk/musik.htm",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "https://arnoldzwicky.org/2019/01/28/98046",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "https://averypluslibraries.wordpress.com/wp-admin/edit.php",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "https://cafeastrology.com/sundailyhoroscopes.html",
+"parentScore": 68,
+"from": "https://genderdesk.wordpress.com/2026/11/10/is-verified-handles-a-rs"
+},
+{
+"url": "https://img.itch.zone/aW1hZ2UvMTAyNzA4OC81ODU4NjA1LnBuZw==/original/tBGanr.png",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://img.itch.zone/aW1hZ2UvMTAyNzA4OC81ODU4NjA4LnBuZw==/original/DlJ0Yu.png",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games-like/1027088/all-hands",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/free",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/genre-action",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/genre-adventure",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/platform-osx",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/platform-windows",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/released",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/tag-2d",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/tag-hand-drawn",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/tag-short",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "https://itch.io/games/tag-walking-simulator",
+"parentScore": 68,
+"from": "https://rafsters.itch.io/all-hands"
+},
+{
+"url": "http://alab.t.u-tokyo.ac.jp/~siggraph/09/TouchableHolography/SIGGRAPH09-TH.html",
+"parentScore": 68,
+"from": "https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://32al.io/projects/bubblewrap",
+"parentScore": 68,
+"from": "https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
+"url": "https://chrisharrison.net/index.php/Research/PneumaticDisplays",
+"parentScore": 68,
+"from": "https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign"
+},
+{
 "url": "https://indieweb.printful.me/",
 "parentScore": 67,
 "from": "https://indieweb.org/"
@@ -5540,6 +6530,151 @@
 "from": "https://brow.sh/"
 },
 {
+"url": "https://dles.gg/game/rotaboxes",
+"parentScore": 67,
+"from": "https://rotaboxes.com/"
+},
+{
+"url": "https://forms.gle/CGtWpghEbWcXjNEc8",
+"parentScore": 67,
+"from": "https://rotaboxes.com/"
+},
+{
+"url": "https://unsplash.com/photos/sEn3zkyD8OI",
+"parentScore": 67,
+"from": "https://rotaboxes.com/"
+},
+{
+"url": "https://unsplash.com/wolfgang_hasselmann",
+"parentScore": 67,
+"from": "https://rotaboxes.com/"
+},
+{
+"url": "https://0h3wgygmjl.flowdrivecdn.com/ZeBWOlmosQRHYthoDfdSD",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://cert.cyber.gouv.fr/uploads/CERTFR-2026-CTI-009.pdf",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://chatgpt.com/",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://cisa.gov/news-events/cybersecurity-advisories/aa23-335a",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://claude.ai/new",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://danfoss.com/en/service-and-support/articles/dcs/tech-insider-october-2025",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://infosec.exchange/@sekoia_io",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://lemonde.fr/en/international/article/2026/09/26/france-sending-military-resources-to-saudi-arabia-brings-discreet-defense-ties-into-spotlight_6757983_4.html",
+"parentScore": 67,
+"from": "https://sekoia.com/blog/the-cold-chain-on-fire-unpatched-danfoss-controllers-exploited"
+},
+{
+"url": "https://flickr.com/photos/europeanspaceagency",
+"parentScore": 67,
+"from": "https://essr.esa.int/esa-open-source-policy"
+},
+{
+"url": "https://livestream.com/eurospaceagency",
+"parentScore": 67,
+"from": "https://essr.esa.int/esa-open-source-policy"
+},
+{
+"url": "https://draft.blogger.com/",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/166051715852836134",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/268705030851534469",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/309939243567226163",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/4143848022506816759",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/6988541167386291932",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/7265646379816274575",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/comment/fullpage/post/365564334433777661/7497438069779960308",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=166051715852836134",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=268705030851534469",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=309939243567226163",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=4143848022506816759",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=6988541167386291932",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=7265646379816274575",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
+"url": "https://draft.blogger.com/post-edit.g?blogID=365564334433777661&from=pencil&postID=7497438069779960308",
+"parentScore": 67,
+"from": "https://saturdaymorningarchives.blogspot.com/"
+},
+{
 "url": "https://api.whatsapp.com/send?text=Haskell+diagrams%3A+Tessellations%3A+https%3A%2F%2Fmgarletmilani.com%2Fblog%2F2026-06-03-tessellations%2F",
 "parentScore": 66,
 "from": "https://mgarletmilani.com/blog/2026-06-03-tessellations"
@@ -5863,6 +6998,36 @@
 "url": "https://opensource.googleblog.com/2026/08/securing-the-agentic-era-introducing-formal-verification-for-cel.html",
 "parentScore": 66,
 "from": "https://cel.dev/"
+},
+{
+"url": "https://hillelwayne.com/post/are-we-really-engineers",
+"parentScore": 66,
+"from": "https://purplesyringa.moe/blog/dont-call-yourself-an-artisanal-programmer"
+},
+{
+"url": "https://newschoolrevolution.com/",
+"parentScore": 66,
+"from": "https://perfectworldrpg.com/"
+},
+{
+"url": "https://farnamstreetblog.com/2016/09/robert-moses-pure-competence",
+"parentScore": 66,
+"from": "https://fs.blog/the-dictators-handbook"
+},
+{
+"url": "https://farnamstreetblog.com/2016/11/frozen-accidents",
+"parentScore": 66,
+"from": "https://fs.blog/the-dictators-handbook"
+},
+{
+"url": "https://pressable.com/",
+"parentScore": 66,
+"from": "https://fs.blog/the-dictators-handbook"
+},
+{
+"url": "https://syruspartners.com/",
+"parentScore": 66,
+"from": "https://fs.blog/the-dictators-handbook"
 },
 {
 "url": "http://zzounds.com/a--303730/cat--Keyboards-and-MIDI--2666",
@@ -6590,6 +7755,316 @@
 "from": "https://computerhistory.org/collections/catalog"
 },
 {
+"url": "https://adelfaure.itch.io/",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://fungi.neocities.org/",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://gamejolt.com/@adelfaure",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://mastodon.art/@adelfaure",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://mistigris.org/",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://nuel.pw/",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://polyducks.co.uk/",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://remigeorges.fr/",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://webri.ng/webring/creative_retrocomputing/random",
+"parentScore": 65,
+"from": "https://adelfaure.net/"
+},
+{
+"url": "https://bellkiosk.website/",
+"parentScore": 65,
+"from": "https://elliott.computer/"
+},
+{
+"url": "https://html.energy/",
+"parentScore": 65,
+"from": "https://elliott.computer/"
+},
+{
+"url": "https://special.fish/",
+"parentScore": 65,
+"from": "https://elliott.computer/"
+},
+{
+"url": "https://aaas.org/news/winners-2007-aaas-science-journalism-awards",
+"parentScore": 65,
+"from": "https://scientificamerican.com/blog/artful-amoeba/the-case-for-transmissible-alzheimers-grows"
+},
+{
+"url": "https://nature.com/articles/nature15369",
+"parentScore": 65,
+"from": "https://scientificamerican.com/blog/artful-amoeba/the-case-for-transmissible-alzheimers-grows"
+},
+{
+"url": "https://nature.com/articles/s41586-018-0790-y",
+"parentScore": 65,
+"from": "https://scientificamerican.com/blog/artful-amoeba/the-case-for-transmissible-alzheimers-grows"
+},
+{
+"url": "https://s100.copyright.com/AppDispatchServlet?author=Jennifer+Frazer&contentID=3D458BDA-E5C6-42AB-A71E53DC18EA5702&copyright=Copyright+2019+Scientific+American%2C+Inc.&orderBeanReset=true&publication=sciam&publicationDate=2019-02-07&publisherName=sciam&title=The+Case+for+Transmissible+Alzheimer%27s+Grows",
+"parentScore": 65,
+"from": "https://scientificamerican.com/blog/artful-amoeba/the-case-for-transmissible-alzheimers-grows"
+},
+{
+"url": "http://sam.cat-v.org/",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://cadence.moe/blog/2024-10-05-created-by-a-human-badges",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://discuss.systems/@ricci/115504720054699983",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://dl.acm.org/doi/abs/10.1145/800025.1198392",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://freelists.org/post/luajit/Ramblings-on-languages-and-architectures-was-Re-any-benefit-to-throwing-off-lua51-constraints",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://man.cat-v.org/unix_8th/3/galloc",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://man.cat-v.org/unix_8th/8/asd",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://man.cat-v.org/unix_8th/8/finddev",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://mn.uio.no/english/services/it/simula/versions/simula-i/simula-i-v5.pdf",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://rand.org/content/dam/rand/pubs/research_memoranda/2009/RM3310.pdf",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://stroustrup.com/hopl2.pdf",
+"parentScore": 65,
+"from": "https://napcakes.nekoweb.org/posts/malloc"
+},
+{
+"url": "https://andymatuschak.org/",
+"parentScore": 65,
+"from": "https://borretti.me/article/no-man-is-an-island"
+},
+{
+"url": "https://buttondown.com/fernandoborretti",
+"parentScore": 65,
+"from": "https://borretti.me/article/no-man-is-an-island"
+},
+{
+"url": "https://lukedrago.com/",
+"parentScore": 65,
+"from": "https://borretti.me/article/no-man-is-an-island"
+},
+{
+"url": "https://meaningness.substack.com/p/nobility-table-of-contents",
+"parentScore": 65,
+"from": "https://borretti.me/article/no-man-is-an-island"
+},
+{
+"url": "https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions",
+"parentScore": 65,
+"from": "https://borretti.me/article/no-man-is-an-island"
+},
+{
+"url": "http://giscus.app/",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://anselmlevskaya.com/",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://arxiv.org/abs/1706.03762",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://arxiv.org/abs/1911.02150",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://arxiv.org/abs/2007.00072",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://arxiv.org/abs/2205.14135",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://cs.stanford.edu/~rfrostig",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://fedelebron.com/",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://jacobaustin.org/",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://jalammar.github.io/illustrated-transformer",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://representation.ai/",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "https://sharadvikram.com/",
+"parentScore": 65,
+"from": "https://jax-ml.github.io/scaling-book"
+},
+{
+"url": "http://blogs.valvesoftware.com/abrash/valve-how-i-got-here-what-its-like-and-what-im-doing-2",
+"parentScore": 65,
+"from": "https://pcgamer.com/ex-valve-employee-describes-ruthless-industry-politics"
+},
+{
+"url": "https://flipboard.com/@PC_Gamer_",
+"parentScore": 65,
+"from": "https://pcgamer.com/ex-valve-employee-describes-ruthless-industry-politics"
+},
+{
+"url": "https://gamasutra.com/view/news/187296/How_Valve_hires_how_it_fires_and_how_much_it_pays.php",
+"parentScore": 65,
+"from": "https://pcgamer.com/ex-valve-employee-describes-ruthless-industry-politics"
+},
+{
+"url": "https://glassdoor.com/Reviews/Valve-Corporation-Reviews-E24849_P2.htm",
+"parentScore": 65,
+"from": "https://pcgamer.com/ex-valve-employee-describes-ruthless-industry-politics"
+},
+{
+"url": "https://go.future-advertising.com/PC-Gamer-Media-Kit.html",
+"parentScore": 65,
+"from": "https://pcgamer.com/ex-valve-employee-describes-ruthless-industry-politics"
+},
+{
+"url": "https://threads.com/@themacobserver",
+"parentScore": 65,
+"from": "https://macobserver.com/news/tim-cook-rejects-ncppr-politics"
+},
+{
+"url": "http://code.ulb.ac.be/dbfiles/Ser2005mastersthesis.pdf",
+"parentScore": 65,
+"from": "https://michaelfogleman.com/rush"
+},
+{
+"url": "https://godbolt.org/",
+"parentScore": 65,
+"from": "https://michaelfogleman.com/rush"
+},
+{
+"url": "http://discuss.fogcreek.com/joelonsoftware/default.asp?cmd=show&ixPost=112",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "http://fogcreek.com/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "http://fogcreek.com/fogbugz",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "http://stackexchange.com/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "http://trello.com/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "https://glitch.com/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "https://gomix.com/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "https://hash.ai/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "https://newsblur.com/",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
+"url": "https://stackoverflowbusiness.com/talent",
+"parentScore": 65,
+"from": "https://joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome"
+},
+{
 "url": "http://creativecommons.org/licenses/by/4.0",
 "parentScore": 64,
 "from": "https://ifcomp.org/"
@@ -7265,6 +8740,141 @@
 "from": "https://vintage-technics.ru/"
 },
 {
+"url": "http://disflux.net/panesian",
+"parentScore": 64,
+"from": "https://lamenes.myrmid.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/115504007940111513",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/1360796053982177781",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/5321295892335544142",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/5388572985177314430",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/7411963868814501214",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/7868171834803704206",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/comment/fullpage/post/6319982385052710495/8698410366780506536",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=115504007940111513",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=1360796053982177781",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=5321295892335544142",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=5388572985177314430",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=7411963868814501214",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=7868171834803704206",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://blogger.com/post-edit.g?blogID=6319982385052710495&from=pencil&postID=8698410366780506536",
+"parentScore": 64,
+"from": "https://thelandofwhatever.blogspot.com/"
+},
+{
+"url": "https://bugzilla.gnome.org/show_bug.cgi?id=335743",
+"parentScore": 64,
+"from": "https://randthoughts.github.io/little-rant-about-gnomes-file-manager-aka-nautilus"
+},
+{
+"url": "https://gitlab.gnome.org/BrainBlasted/loupe",
+"parentScore": 64,
+"from": "https://randthoughts.github.io/little-rant-about-gnomes-file-manager-aka-nautilus"
+},
+{
+"url": "https://gitlab.gnome.org/GNOME/nautilus/-/issues/1157",
+"parentScore": 64,
+"from": "https://randthoughts.github.io/little-rant-about-gnomes-file-manager-aka-nautilus"
+},
+{
+"url": "https://gitlab.gnome.org/GNOME/nautilus/-/issues/246",
+"parentScore": 64,
+"from": "https://randthoughts.github.io/little-rant-about-gnomes-file-manager-aka-nautilus"
+},
+{
+"url": "https://gitlab.gnome.org/GNOME/nautilus/-/issues/856",
+"parentScore": 64,
+"from": "https://randthoughts.github.io/little-rant-about-gnomes-file-manager-aka-nautilus"
+},
+{
+"url": "https://wiki.installgentoo.com/wiki/File_Picker_meme",
+"parentScore": 64,
+"from": "https://randthoughts.github.io/little-rant-about-gnomes-file-manager-aka-nautilus"
+},
+{
+"url": "https://github.blog/2016-09-14-the-github-graphql-api",
+"parentScore": 64,
+"from": "https://brandur.org/graphql"
+},
+{
+"url": "https://graphql.github.io/graphql-spec",
+"parentScore": 64,
+"from": "https://brandur.org/graphql"
+},
+{
+"url": "https://graphql.org/learn",
+"parentScore": 64,
+"from": "https://brandur.org/graphql"
+},
+{
+"url": "https://help.shopify.com/en/api/custom-storefronts/storefront-api/graphql-explorer",
+"parentScore": 64,
+"from": "https://brandur.org/graphql"
+},
+{
+"url": "https://stripe.com/blog/api-versioning",
+"parentScore": 64,
+"from": "https://brandur.org/graphql"
+},
+{
+"url": "https://stripe.com/docs/api/expanding_objects",
+"parentScore": 64,
+"from": "https://brandur.org/graphql"
+},
+{
 "url": "https://enronarchive.org/",
 "parentScore": 63,
 "from": "https://enroncorp.com/corp"
@@ -7745,6 +9355,116 @@
 "from": "https://faculty.washington.edu/chudler/pokemon.html"
 },
 {
+"url": "https://fosstodon.org/@Gina/117475382777594238",
+"parentScore": 63,
+"from": "https://writing.jan.io/2026/10/22/the-fosdem-pledge.html"
+},
+{
+"url": "https://fosstodon.org/@Gina/117477912226740310",
+"parentScore": 63,
+"from": "https://writing.jan.io/2026/10/22/the-fosdem-pledge.html"
+},
+{
+"url": "https://narrativ.es/@janl",
+"parentScore": 63,
+"from": "https://writing.jan.io/2026/10/22/the-fosdem-pledge.html"
+},
+{
+"url": "https://consilium.europa.eu/en/press/press-releases/2026/07/13/russian-cyber-attacks-and-destabilising-activities-council-sanctions-nine-individuals-and-four-entities",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://dr.dk/verificerer/pro-russiske-hackergrupper-tager-ansvaret-omfattende-hacking-af-koeleskabe-og-koelediske",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://holabagai.it/",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://i0.wp.com/www.nordiskpost.com/wp-content/uploads/2026/11/SuperValu-supermarket-scaled.jpg?fit=2560%2C1440&ssl=1",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://nordiskbil.com/category/tech",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://nordiskbil.com/news",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://nordisktek.com/",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://nyheder.tv2.dk/live/samfund/2026-11-02-frysere-og-koeleskabe-hacket-i-flere-europaeiske-supermarkeder",
+"parentScore": 63,
+"from": "https://nordiskpost.com/2026/11/05/pro-russian-hackers-claim-supermarket-fridge-attacks"
+},
+{
+"url": "https://acpc.org.nz/",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://aiandeducation.mit.edu/report",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://biblegateway.com/passage?search=Matthew+24%3A45-46&version=NIV",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://christianitytoday.com/2026/09/ai-tech-bros-might-be-telling-truth",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/wangapeka-track",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://highrise.nz/",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://ifanyonebuildsit.com/",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://pernos.co/",
+"parentScore": 63,
+"from": "https://robert.ocallahan.org/2026/09/goodbye-google.html"
+},
+{
+"url": "https://fasterthanli.me/articles/i-want-off-mr-golangs-wild-ride",
+"parentScore": 63,
+"from": "https://viralinstruction.com/posts/defense"
+},
+{
+"url": "https://julialang.org/",
+"parentScore": 63,
+"from": "https://viralinstruction.com/posts/defense"
+},
+{
 "url": "http://imdkim.blogspot.com/",
 "parentScore": 62,
 "from": "https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html"
@@ -8175,6 +9895,276 @@
 "from": "https://lumi.codeberg.page/blog/software-community.html"
 },
 {
+"url": "https://nber.org/papers/w28977",
+"parentScore": 62,
+"from": "https://slowboring.com/p/the-case-for-banning-non-competes"
+},
+{
+"url": "https://oecdecoscope.blog/2017/01/25/the-best-vs-the-rest-the-global-productivity-slowdown-hides-an-increasing-performance-gap-across-firms",
+"parentScore": 62,
+"from": "https://slowboring.com/p/the-case-for-banning-non-competes"
+},
+{
+"url": "https://pewtrusts.org/en/research-and-analysis/blogs/stateline/2017/05/17/why-janitors-get-noncompete-agreements-too",
+"parentScore": 62,
+"from": "https://slowboring.com/p/the-case-for-banning-non-competes"
+},
+{
+"url": "https://aka.ms/ftw-global-paper",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://app.earthmover.io/marketplace/69e935646f290ce55a5b5c7a",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://app.earthmover.io/marketplace/69e9378f67bd894513461947",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://arxiv.org/abs/2409.16252",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://arxiv.org/abs/2602.08131",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://arxiv.org/abs/2603.27101",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://clarku.edu/",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://climatechange.ai/events/neurips2025",
+"parentScore": 62,
+"from": "https://fieldsofthe.world/"
+},
+{
+"url": "https://doi.org/10.1016/j.softx.2025.102056",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1093/comjnl/16.3.216",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1093/comjnl/16.3.219",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1093/comjnl/19.1.91",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1109/CASCON62161.2024.10838016",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1109/TELFOR63250.2024.10819162",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1145/857076.857077",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.21105/jcon.00134",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.52396/JUSTC-2023-0134",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://marketplace.copyright.com/rs-ui-web/mp/search/all/10.1145%2F857076.857077",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://mc.manuscriptcentral.com/csur",
+"parentScore": 62,
+"from": "https://dl.acm.org/doi/10.1145/857076.857077"
+},
+{
+"url": "https://doi.org/10.1145/353485.353487",
+"parentScore": 62,
+"from": "https://nappingtoheavymetal.com/post/2026-10-10-anchoring-our-mental-model"
+},
+{
+"url": "https://hci.ucsd.edu/hollan/Pubs/tochi-revised.pdf",
+"parentScore": 62,
+"from": "https://nappingtoheavymetal.com/post/2026-10-10-anchoring-our-mental-model"
+},
+{
+"url": "https://smallcultfollowing.com/babysteps",
+"parentScore": 62,
+"from": "https://nappingtoheavymetal.com/post/2026-10-10-anchoring-our-mental-model"
+},
+{
+"url": "http://n2t.net/ark:/65665/kq4b6988e3f-c6db-48ce-b993-fa28a6705518",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://cen.acs.org/pharmaceuticals/drug-discovery/AI-Chemist-trustworthy-LLMs-need/104/web/2026/06?sc=260617_sc_eng_bs_cen",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://doi.org/10.5281/zenodo.17786243",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://doi.org/10.5281/zenodo.20639860",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://engadget.com/2225849/google-shuts-down-alphafold",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://equator.org/articles/moral-stupidity-gaza-palestine-abdaljawad-omar",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://flaticon.com/authors/pixel/outline?author_id=1",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://hermit-tech.com/blog/ai-mania-is-eviscerating-global-decisionmaking",
+"parentScore": 62,
+"from": "https://olivia.science/anxiety"
+},
+{
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fvidjamagmaes.wordpress.com",
+"parentScore": 62,
+"from": "https://vidjamagmaes.wordpress.com/"
+},
+{
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fvidjamagmaes.wordpress.com%2F2026%2F10%2F13%2F1md-steal-sell-simulator%2F&signup_flow=account",
+"parentScore": 62,
+"from": "https://vidjamagmaes.wordpress.com/"
+},
+{
+"url": "https://wordpress.com/reader/feeds/179824625",
+"parentScore": 62,
+"from": "https://vidjamagmaes.wordpress.com/"
+},
+{
+"url": "http://magnolia-made.com/",
+"parentScore": 62,
+"from": "https://chrbutler.com/in-defense-of-text-labels"
+},
+{
+"url": "https://magnolia-made.com/",
+"parentScore": 62,
+"from": "https://chrbutler.com/in-defense-of-text-labels"
+},
+{
+"url": "https://metaform.is/",
+"parentScore": 62,
+"from": "https://chrbutler.com/in-defense-of-text-labels"
+},
+{
+"url": "https://newfangled.com/",
+"parentScore": 62,
+"from": "https://chrbutler.com/in-defense-of-text-labels"
+},
+{
+"url": "https://adhd.irenes.space/@ireneista",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://clubic.com/dossier-609418-securix-et-bureautix-voici-a-quoi-ressemble-vraiment-le-linux-qui-va-remplacer-windows-en-france.html",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://code.irenes.space/evocation",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://code.overheid.nl/",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://codeberg.org/forgejo/discussions/issues/412",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://codeberg.org/forgejo/sustainability/media/commit/0e0a8ccd0d077633592f11a775dd38f39d1e54e0/2025/dutch-ospo/2025-11-11-initial-call.pdf",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://codeberg.org/polyphony",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://dbushell.com/",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://dbushell.com/2026/10/07/sustainable-web-career",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://emma.coop/",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://fluxer.app/blog/roadmap-2026",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://fuckart.io/why.html",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://lasuite.numerique.gouv.fr/en",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
+"url": "https://mae.wtf/music/release/nightlight",
+"parentScore": 62,
+"from": "https://mei.puppycat.house/w/seeing-261010"
+},
+{
 "url": "https://creative-commons-shop.fourthwall.com/",
 "parentScore": 61,
 "from": "https://creativecommons.org/publicdomain/zero/1.0"
@@ -8438,6 +10428,276 @@
 "url": "https://yourallyinmontgomery.org/",
 "parentScore": 61,
 "from": "https://altrac.works/?src=88x31"
+},
+{
+"url": "http://lab.andre-michelle.com/karplus-strong-guitar",
+"parentScore": 61,
+"from": "https://amid.fish/javascript-karplus-strong"
+},
+{
+"url": "https://claude.dev/blog/solving-code-review-at-anthropic",
+"parentScore": 61,
+"from": "https://lethain.com/small-changes"
+},
+{
+"url": "https://craftingengstrategy.com/",
+"parentScore": 61,
+"from": "https://lethain.com/small-changes"
+},
+{
+"url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy",
+"parentScore": 61,
+"from": "https://lethain.com/small-changes"
+},
+{
+"url": "https://staffeng.com/book",
+"parentScore": 61,
+"from": "https://lethain.com/small-changes"
+},
+{
+"url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+"parentScore": 61,
+"from": "https://lethain.com/small-changes"
+},
+{
+"url": "http://blog.regehr.org/archives/1307",
+"parentScore": 61,
+"from": "https://eklitzke.org/in-defense-of-c++"
+},
+{
+"url": "http://en.cppreference.com/w/cpp/concept/PODType",
+"parentScore": 61,
+"from": "https://eklitzke.org/in-defense-of-c++"
+},
+{
+"url": "http://en.cppreference.com/w/cpp/container/vector/emplace_back",
+"parentScore": 61,
+"from": "https://eklitzke.org/in-defense-of-c++"
+},
+{
+"url": "http://en.cppreference.com/w/cpp/language/copy_elision",
+"parentScore": 61,
+"from": "https://eklitzke.org/in-defense-of-c++"
+},
+{
+"url": "http://en.cppreference.com/w/cpp/language/move_constructor",
+"parentScore": 61,
+"from": "https://eklitzke.org/in-defense-of-c++"
+},
+{
+"url": "https://wiki.creativecommons.org/wiki/Best_practices_for_attribution",
+"parentScore": 61,
+"from": "https://tones.fm/"
+},
+{
+"url": "https://alyxia.dev/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://cirnosystems.xyz/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://deepy.me/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://e2.pm/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://fleepy.tv/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://maia.crimew.gay/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://megu.dev/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://nyam.my/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://onz.ee/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://resolv.moe/",
+"parentScore": 61,
+"from": "https://espi.me/"
+},
+{
+"url": "https://dangermouse.net/",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://dangermouse.net/blog",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://feartheboot.com/comic/default.aspx?c=14",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://irregularwebcomic.net/draakslair",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://lucasfilm.com/",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://mezzacotta.net/",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://mezzacotta.net/dinosaur",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://mezzacotta.net/eavesdropper",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://mezzacotta.net/fumbles",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://mezzacotta.net/itoons",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://mezzacotta.net/owls",
+"parentScore": 61,
+"from": "https://darthsanddroids.net/"
+},
+{
+"url": "https://asahilinux.org/2026/11/progress-report-7-3",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://debian.org/social_contract.en.html",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://infosec.exchange/@jvoisin",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://reticulum.network/",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://reticulum.network/manual/license.html",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://whirling.top/fhh",
+"parentScore": 61,
+"from": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+},
+{
+"url": "https://appit.mylnk.click/extrabar-hero-appitstudio",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://appitstudio.com/",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://appitstudio.com/bundle",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://cooldock.app/",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://dockflowapp.io/",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://extradock.app/",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://keyper.appitstudio.com/device-management/request",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://keyper.appitstudio.com/product/extrabar/retrieve-key",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://lnk.appitstudio.com/backdrop-ebw",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://lnk.appitstudio.com/extrabar-instagram",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://lnk.appitstudio.com/extrabar-linkedin",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://lnk.appitstudio.com/extrabar-tiktok",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://lnk.appitstudio.com/extrabar-youtube",
+"parentScore": 61,
+"from": "https://extrabar.app/"
+},
+{
+"url": "https://lnk.appitstudio.com/lnkflow-ebw",
+"parentScore": 61,
+"from": "https://extrabar.app/"
 },
 {
 "url": "https://buttondown.email/ho",
@@ -8838,6 +11098,76 @@
 "url": "https://museovillabassiabano.it/andrea-previtali",
 "parentScore": 60,
 "from": "https://finestresullarte.info/en/exhibition-reviews/marisa-merz-was-not-just-the-only-woman-in-arte-povera-what-are-the-exhibitions-in-turin-like"
+},
+{
+"url": "https://galaxystore.samsung.com/detail/com.hypebeast.editorial",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/archives",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/change-language?locale=en_US",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/golf",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/life",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/men",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/pro",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/sale",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/sso/silent-login?_sso_callback_url=https%3A%2F%2Fhypebae.com%2Fsso&_target_path=https%3A%2F%2Fhypebae.com%3Futm_source%3Dhypebeast.com%26utm_medium%3Dreferral%26utm_campaign%3Dmaster_nav",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/sso/silent-login?_sso_callback_url=https%3A%2F%2Fhypebeast.com%2Fsso&_target_path=https%3A%2F%2Fhypebeast.com",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "https://hbx.com/sso/silent-login?_sso_callback_url=https%3A%2F%2Fhypebeast.com%2Fsso&_target_path=https%3A%2F%2Fhypebeast.com%2Faccount-dashboard",
+"parentScore": 60,
+"from": "https://hypebeast.com/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info"
+},
+{
+"url": "http://ruboss.com/",
+"parentScore": 60,
+"from": "https://leanpub.com/ywcn?from=gtp-sidebar"
+},
+{
+"url": "https://stats.uptimerobot.com/538rWr3XdZ",
+"parentScore": 60,
+"from": "https://artemis.jamesg.blog/"
 },
 {
 "url": "http://a1.mzstatic.com/us/r1000/013/Music/90/2a/b7/mzm.ojhmmnlb.aac.p.m4a",
@@ -9320,6 +11650,96 @@
 "from": "https://amazingstories.com/"
 },
 {
+"url": "https://pimosa.lemonsqueezy.com/affiliates",
+"parentScore": 59,
+"from": "https://pimosa.app/"
+},
+{
+"url": "https://pimosa.lemonsqueezy.com/buy/36827faf-e113-45ad-999c-7edc9cd17a24?checkout%5Bdiscount_code%5D=BLACKFRIDAY40",
+"parentScore": 59,
+"from": "https://pimosa.app/"
+},
+{
+"url": "https://pimosa.lemonsqueezy.com/buy/c5cc3220-3650-4b88-80c4-d8f46fd14a31?checkout%5Bdiscount_code%5D=BLACKFRIDAY40",
+"parentScore": 59,
+"from": "https://pimosa.app/"
+},
+{
+"url": "https://uneed.best/tool/pimosa",
+"parentScore": 59,
+"from": "https://pimosa.app/"
+},
+{
+"url": "https://cryptpad.fr/form#/2/form/view/2zj2ZI5uv9BYrDp3C6zGGRckUdkQ-OszrKcxz0V2Nco/embed/",
+"parentScore": 59,
+"from": "https://dynomight.net/arguments"
+},
+{
+"url": "https://cryptpad.fr/form#/2/form/view/dOcEnIT853syGD9D9K94eE1+SA6xyabixeVwSQkxW1k/embed/",
+"parentScore": 59,
+"from": "https://dynomight.net/arguments"
+},
+{
+"url": "https://dynomight.substack.com/",
+"parentScore": 59,
+"from": "https://dynomight.net/arguments"
+},
+{
+"url": "https://dynomight.substack.com/p/arguments",
+"parentScore": 59,
+"from": "https://dynomight.net/arguments"
+},
+{
+"url": "https://gettyimages.com/detail/news-photo/u201cfun-guy-u201d-with-harvested-mazatec-psilocybin-news-photo/1151267673?adppopup=true",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://hopkinsmedicine.org/press_releases/2006/griffithspsilocybin.pdf",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/210962",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0214377",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://journals.sagepub.com/doi/10.1177/0269881110382466",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://journals.sagepub.com/doi/full/10.1177/0269881117748902",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://ncbi.nlm.nih.gov/pmc/articles/PMC3308357",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://ncbi.nlm.nih.gov/pmc/articles/PMC3537171",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://ncbi.nlm.nih.gov/pmc/articles/PMC5367557",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
+"url": "https://psych.ox.ac.uk/",
+"parentScore": 59,
+"from": "https://scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs"
+},
+{
 "url": "http://benryves.com/",
 "parentScore": 58,
 "from": "https://internalregister.github.io/2019/03/14/Homebrew-Console.html"
@@ -9583,6 +12003,156 @@
 "url": "https://blogger.com/comment/fullpage/post/6264947694886887540/7533579802505281921",
 "parentScore": 58,
 "from": "https://righto.com/2026/11/signetics-st680a-dtl-nand.html"
+},
+{
+"url": "http://garethcook.net/",
+"parentScore": 58,
+"from": "https://scientificamerican.com/article/the-case-for-the-ldquo-self-driven-child-rdquo"
+},
+{
+"url": "https://labxmediagroup.com/",
+"parentScore": 58,
+"from": "https://scientificamerican.com/article/the-case-for-the-ldquo-self-driven-child-rdquo"
+},
+{
+"url": "https://penguinrandomhouse.com/books/549564/the-self-driven-child-by-william-stixrud-phd-and-ned-johnson/9780735222519",
+"parentScore": 58,
+"from": "https://scientificamerican.com/article/the-case-for-the-ldquo-self-driven-child-rdquo"
+},
+{
+"url": "http://cae.wisc.edu/~dwilson/boxes",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "http://drking.worldonline.co.uk/hexagons/dots",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "http://wolframalpha.com/input?i=%28n%2Ck%29-Turan+graph+edge+count",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "https://wolframalpha.com/",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "https://wolframalpha.com/input?i=Does+the+set+of+perfect+numbers+contain+18%3F",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "https://wolframalpha.com/input?i=apply+image+dilation+to+The+Office+image",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "https://wolframalpha.com/input?i=dotsand+boxes",
+"parentScore": 58,
+"from": "https://mathworld.wolfram.com/DotsandBoxes.html"
+},
+{
+"url": "http://ee.surrey.ac.uk/Contrib/Xena",
+"parentScore": 58,
+"from": "https://vidiot.com/Contrib/Xena/welcome.html"
+},
+{
+"url": "https://abc.net.au/news/2026-10-13/french-supermarkets-hacked-causing-fires-and-food-loss/107258724",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://assets.danfoss.com/documents/latest/258303/AO453240723802en-010101.pdf",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://capterra.com/reviews/227725/IPinfo",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://censys.com/blog/frostbitten-in-france-a-danfoss-storeview-internet-exposure-report",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://danfoss.com/en/service-and-support/coordinated-vulnerability-disclosure/danfoss-security-advisories",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://franceinfo.fr/internet/securite-sur-internet/cyberattaques/un-piratage-pas-si-sophistique-que-ca-ce-que-l-on-sait-de-la-cyberattaque-qui-a-fait-monter-en-temperature-les-frigos-de-supermarches_8235061.html",
+"parentScore": 58,
+"from": "https://ipinfo.io/blog/france-fridges-hack"
+},
+{
+"url": "https://apply.workable.com/hyperallergic?lng=en",
+"parentScore": 58,
+"from": "https://hyperallergic.com/at-moma-brancusi-is-lost-in-space"
+},
+{
+"url": "http://midgard-project.org/",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://flickr.com/photos/bergie",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://interoperable-europe.ec.europa.eu/collection/eupl",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://interoperable-europe.ec.europa.eu/collection/eupl/eupl-text-eupl-12",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://noflojs.org/",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://pixelfed.de/bergie",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://reticulum.js.org/",
+"parentScore": 58,
+"from": "https://bergie.iki.fi/blog/eupl"
+},
+{
+"url": "https://changemap.co/projectifi/projectifi",
+"parentScore": 58,
+"from": "https://projectionlab.com/"
+},
+{
+"url": "https://madfientist.com/projection-lab",
+"parentScore": 58,
+"from": "https://projectionlab.com/"
+},
+{
+"url": "https://robberger.com/projectionlab-review",
+"parentScore": 58,
+"from": "https://projectionlab.com/"
+},
+{
+"url": "https://thefishow.com/mapping-retirement-with-projection-lab-kyle-nolan",
+"parentScore": 58,
+"from": "https://projectionlab.com/"
 },
 {
 "url": "http://silicium.org/",
@@ -9935,6 +12505,241 @@
 "from": "https://radimentary.wordpress.com/2022/11/07/aggro-is-the-foundation"
 },
 {
+"url": "https://fossa.com/product/open-source-license-compliance",
+"parentScore": 57,
+"from": "https://tldrlegal.com/license/bsd-2-clause-license-freebsd"
+},
+{
+"url": "https://apnews.com/article/france-cyberattack-supermarkets-refrigeration-systems-78a813a8efd466b360655339f96083dc",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://assets.danfoss.com/documents/latest/535265/AO540953778522en-010101.pdf",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://assets.danfoss.com/documents/latest/590332/BC337629891709en-001101.pdf",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://beijerref.no/media/cd/62/ae/1727109585/danfoss-ak-sm-850-manual-309509.pdf",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://danfoss.com/en/service-and-support/coordinated-vulnerability-disclosure/danfoss-security-advisories/dsa-2025-08-01",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://forescout.de/",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://forescout.jp/",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://forescout.lat/",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://forescout.my.site.com/support/cp_communitylogin",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://forescout.vederelabs.com/register",
+"parentScore": 57,
+"from": "https://forescout.com/blog/cold-chain-open-control-exposed-refrigeration-systems-reveal-global-risk"
+},
+{
+"url": "https://academichelp.net/",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/about-us",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/abstract-generator",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/acronym-generator",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/active-passive-voice-converter",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/affiliate",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/affiliate-policy",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ahelp-academic-integrity-statement",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ahelp-updates",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ai-answer-generator",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ai-detector",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ai-detector/spanish",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ai-essay-writer",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://ahelp.com/ai-essay-writer/narrative",
+"parentScore": 57,
+"from": "https://tldr.hackeryogi.com/"
+},
+{
+"url": "https://annahope.me/",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://cuteandfuzzylogic.com/",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://gal.gay/",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://hannahilea.com/blog/driven-developments",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://hurl.wtf/",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://internals.rust-lang.org/t/rationale-of-apache-dual-licensing/8952/3",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://json.org/license.html",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://recurse.com/hire",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://recurse.com/scout/click?t=c9a1a9e2e7a2ffefd4af20020b4af1e6",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://sigbovik.org/2024",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "https://veryth.ink/",
+"parentScore": 57,
+"from": "https://ntietz.com/blog/licensing-joy-gal"
+},
+{
+"url": "http://tara.tcd.ie/bitstream/handle/2262/86169/Final%20Dissertation%20.pdf?isAllowed=y&sequence=1",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://archplanbaltimore.blogspot.com/2015/03/how-one-plus-five-is-shaping-american_27.html",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://aspe.org/pipeline/an-optimized-sanitary-stack-configuration-for-mid-rise-multifamily-building-construction",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://awc.org/wp-content/uploads/2022/01/tmt_toolkit.pdf",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://centerforbuilding.org/singlestair-tracker",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://ctif.org/sites/default/files/2022-08/CTIF_Report27_ESG_0.pdf",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://donorbox.org/center-for-building",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://flickr.com/photos/oh-barcelona/7393006780",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://insideclimatenews.org/news/22052022/climate-refrigerants-air-conditioning-heat-pumps",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
+"url": "https://larchlab.com/city-of-vancouver-report-on-point-access-blocks",
+"parentScore": 57,
+"from": "https://thesisdriven.com/letters/the-case-for-single-stair-multifamily"
+},
+{
 "url": "http://bladey.weebly.com/",
 "parentScore": 56,
 "from": "http://cbladey.com/"
@@ -10135,6 +12940,56 @@
 "from": "https://maggiemcneill.com/resources/frequently-told-lies"
 },
 {
+"url": "http://dreamhost.com/rewards.cgi",
+"parentScore": 56,
+"from": "https://republicofnewhome.org/lair"
+},
+{
+"url": "https://archiveofourown.org/users/DragonessEclectic",
+"parentScore": 56,
+"from": "https://republicofnewhome.org/lair"
+},
+{
+"url": "https://dragoness-e.dreamwidth.org/",
+"parentScore": 56,
+"from": "https://republicofnewhome.org/lair"
+},
+{
+"url": "https://api.whatsapp.com/send?text=10+artworks+that+stole+the+show+at+L.A.+museums+in+2024+https%3A%2F%2Fwww.latimes.com%2Fentertainment-arts%2Fstory%2F2024-12-09%2Fbest-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
+"url": "https://artic.edu/artworks/117188/the-earth-is-a-man",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
+"url": "https://collections.louvre.fr/ark:/53355/cl010250473",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
+"url": "https://getty.edu/art/collection/object/103QS2",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
+"url": "https://getty.edu/exhibitions/lumen-the-art-and-science-of-light",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
+"url": "https://lacma.org/art/exhibition/we-live-painting-nature-color-mesoamerican-art",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
+"url": "https://moca.org/collection/work/betrothal-i-2",
+"parentScore": 56,
+"from": "https://latimes.com/entertainment-arts/story/2024-12-09/best-art-2024-museums-adam-and-eve-ed-ruscha-mickalene-thomas"
+},
+{
 "url": "https://origami-shop.com/?affiliate_banner_id=4",
 "parentScore": 55,
 "from": "https://oriwiki.com/"
@@ -10228,6 +13083,41 @@
 "url": "https://philanthropy.cam.ac.uk/impact-of-giving/testimonials/interview-dr-ewan-kirk-on-research-philanthropy",
 "parentScore": 55,
 "from": "https://turner-kirk.org/about/dr-ewan-kirk"
+},
+{
+"url": "https://buttondown.com/weirdwidewebhole",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
+},
+{
+"url": "https://chromasetica.com/",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
+},
+{
+"url": "https://drumsauce.net/",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
+},
+{
+"url": "https://maggieappleton.com/ai-dark-forest",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
+},
+{
+"url": "https://openpath.quest/2026/i-am-retiring-from-tech-to-live-offline",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
+},
+{
+"url": "https://tante.cc/2026/05/20/on-google-declaring-war-on-the-web",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
+},
+{
+"url": "https://whimsy.joshwcomeau.com/",
+"parentScore": 55,
+"from": "https://whitep4nth3r.com/blog/goodbye-forever-probably"
 },
 {
 "url": "http://worrydream.com/",
@@ -10428,6 +13318,81 @@
 "url": "https://xkcd.com/1179",
 "parentScore": 54,
 "from": "https://place.reeseric.ci/writings/2026-10-04"
+},
+{
+"url": "http://ndish.com/",
+"parentScore": 54,
+"from": "https://tabisite.com/en"
+},
+{
+"url": "https://britishmuseum.org/exhibitions/picasso-printmaker",
+"parentScore": 54,
+"from": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html"
+},
+{
+"url": "https://independent.co.uk/",
+"parentScore": 54,
+"from": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html"
+},
+{
+"url": "https://indy100.com/",
+"parentScore": 54,
+"from": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html"
+},
+{
+"url": "https://nextdoor.co.uk/sharekit?body=Picasso%3A+printmaker+at+the+British+Museum+%E2%80%93+an+eye+opener+of+a+show+-+The+Standard%3A+https%3A%2F%2Fwww.standard.co.uk%2Fculture%2Fexhibitions%2Fpicasso-printmaker-at-the-british-museum-review-b1191727.html&source=https%3A%2F%2Fwww.standard.co.uk%2Fculture%2Fexhibitions%2Fpicasso-printmaker-at-the-british-museum-review-b1191727.html",
+"parentScore": 54,
+"from": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html"
+},
+{
+"url": "https://the-independent.com/",
+"parentScore": 54,
+"from": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html"
+},
+{
+"url": "https://thelondonstandard.pressreader.com/the-london-standard",
+"parentScore": 54,
+"from": "https://standard.co.uk/culture/exhibitions/picasso-printmaker-at-the-british-museum-review-b1191727.html"
+},
+{
+"url": "http://ew.com/ew/article/0,,20057754_5,00.html",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "http://melindasnodgrass.com/star-trek-discovery",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "https://fanatical.com/",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "https://fandom.zendesk.com/",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "https://gamespot.com/",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "https://imdb.com/",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "https://imdb.com/title/tt0708807",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
+},
+{
+"url": "https://metacritic.com/",
+"parentScore": 54,
+"from": "https://memory-alpha.fandom.com/wiki/The_Measure_Of_A_Man_(episode)"
 },
 {
 "url": "http://eol.org/",
@@ -10705,6 +13670,56 @@
 "from": "https://marcbeebe.wordpress.com/"
 },
 {
+"url": "https://capnproto.org/",
+"parentScore": 53,
+"from": "https://blog.cloudflare.com/capnweb-javascript-rpc-library"
+},
+{
+"url": "https://cloudflare.net/",
+"parentScore": 53,
+"from": "https://blog.cloudflare.com/capnweb-javascript-rpc-library"
+},
+{
+"url": "https://cloudflarestatus.com/",
+"parentScore": 53,
+"from": "https://blog.cloudflare.com/capnweb-javascript-rpc-library"
+},
+{
+"url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm",
+"parentScore": 53,
+"from": "https://blog.cloudflare.com/capnweb-javascript-rpc-library"
+},
+{
+"url": "https://mastodonshare.com/?text=Cap%27n+Web%3A+a+new+RPC+system+for+browsers+and+web+servers&url=https%3A%2F%2Fblog.cloudflare.com%2Fcapnweb-javascript-rpc-library%2F",
+"parentScore": 53,
+"from": "https://blog.cloudflare.com/capnweb-javascript-rpc-library"
+},
+{
+"url": "https://mstdn.ca/@uesp",
+"parentScore": 53,
+"from": "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"
+},
+{
+"url": "https://starfieldwiki.net/",
+"parentScore": 53,
+"from": "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"
+},
+{
+"url": "https://twelveworlds.net/",
+"parentScore": 53,
+"from": "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"
+},
+{
+"url": "https://uesp.app/",
+"parentScore": 53,
+"from": "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"
+},
+{
+"url": "https://uesp.tumblr.com/",
+"parentScore": 53,
+"from": "https://en.uesp.net/wiki/Skyrim:Thalmor_Embassy"
+},
+{
 "url": "http://candybox2.gamepedia.com/",
 "parentScore": 52,
 "from": "https://candybox2.github.io/"
@@ -10763,6 +13778,141 @@
 "url": "https://goodreads.com/quotes/40705-but-the-plans-were-on-display-on-display-i-eventually",
 "parentScore": 52,
 "from": "https://blog.unitedheroes.net/5751"
+},
+{
+"url": "https://capital.it/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://deejay.it/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://elpais.com/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://gedi.it/en",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://lefigaro.fr/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://lesoir.be/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://m2o.it/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://manzoniadvertising.com/en",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://mymovies.it/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://onepodcast.it/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://tagesanzeiger.ch/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://tdg.ch/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://welt.de/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "https://wyborcza.pl/",
+"parentScore": 52,
+"from": "https://repubblica.it/en/europe/culture/2026/10/30/news/marisa_merz_exhibitions_turin_arte_povera-425684583"
+},
+{
+"url": "http://observermedia.com/contact",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "http://observermedia.com/privacy-policy",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "http://observermedia.com/terms",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://observermedia.com/privacy-policy",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://observermedia.com/terms",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://parsintl.com/publications/commercial-observer",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://parsintl.com/publications/observer",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://privacyportal.onetrust.com/webform/8bf444f2-ddd6-41ff-8e24-b69ac0176e05/19c22396-023a-465c-a9c0-d9f831d1d9cd",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://wpvip.com/",
+"parentScore": 52,
+"from": "https://observer.com/business"
+},
+{
+"url": "https://bookshop.org/a/78/9780195384314",
+"parentScore": 52,
+"from": "https://plough.com/articles/the-case-for-not-sanitizing-fairy-tales"
+},
+{
+"url": "https://plough.foxycart.com/cart?cart=view",
+"parentScore": 52,
+"from": "https://plough.com/articles/the-case-for-not-sanitizing-fairy-tales"
+},
+{
+"url": "https://plough.foxycart.com/checkout",
+"parentScore": 52,
+"from": "https://plough.com/articles/the-case-for-not-sanitizing-fairy-tales"
+},
+{
+"url": "https://ssl.drgnetwork.com/pph/cs/login",
+"parentScore": 52,
+"from": "https://plough.com/articles/the-case-for-not-sanitizing-fairy-tales"
 },
 {
 "url": "http://main.wgbh.org/",
@@ -10883,6 +14033,21 @@
 "url": "https://ohadron.com/",
 "parentScore": 51,
 "from": "https://inverted3.gitlab.io/drum-machine"
+},
+{
+"url": "http://latimesblogs.latimes.com/technology/2011/08/mark-cuban-wants-to-end-patents-on-software-and-business-methods.html",
+"parentScore": 51,
+"from": "https://theatlantic.com/business/archive/2012/09/the-case-for-abolishing-patents-yes-all-of-them/262913"
+},
+{
+"url": "http://research.stlouisfed.org/wp/2012/2012-035.pdf",
+"parentScore": 51,
+"from": "https://theatlantic.com/business/archive/2012/09/the-case-for-abolishing-patents-yes-all-of-them/262913"
+},
+{
+"url": "https://flipboard.com/@theatlantic",
+"parentScore": 51,
+"from": "https://theatlantic.com/business/archive/2012/09/the-case-for-abolishing-patents-yes-all-of-them/262913"
 },
 {
 "url": "https://terk.com/indoor-antennas?sku=LOGTVAZ",
@@ -11028,6 +14193,91 @@
 "url": "https://solo.io/resources/lab/llm-consumption-cost-management-with-agentgateway",
 "parentScore": 50,
 "from": "https://agentgateway.dev/"
+},
+{
+"url": "https://archives.gov/research/african-americans/migrations/great-migration",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "https://chicagomag.com/city-life/youse-hear-about-inclusive-language",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "https://cottonbureau.com/stores/texas-monthly#/shop",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "https://dictionary.com/e/you-guys",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "https://ohr.dc.gov/sites/default/files/dc/sites/ohr/publication/attachments/OHR__ORE_ILG_Raceand%20EthnicityRacialEquityGuide_FINAL.pdf",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "https://phillymag.com/news/2019/11/09/youse-guys-yall-philadelphia",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "https://thephiladelphiacitizen.org/the-contrarian",
+"parentScore": 50,
+"from": "https://texasmonthly.com/being-texan/in-defense-of-yall-nyt-columnist"
+},
+{
+"url": "http://mrboonstra.com/",
+"parentScore": 50,
+"from": "https://rrrgggbbb.com/"
+},
+{
+"url": "http://nextempire.net/",
+"parentScore": 50,
+"from": "https://rrrgggbbb.com/"
+},
+{
+"url": "http://blog.pmarca.com/",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://creativecommons.org/",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://creativecommons.org/about/downloads",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://httpd.apache.org/ABOUT_APACHE.html",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://iab.net/",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://iab.net/guidelines/508676/508767/displayguidelines",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://validator.w3.org/",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
+},
+{
+"url": "http://w3.org/",
+"parentScore": 50,
+"from": "https://tekeye.uk/computer_history/powered-by"
 },
 {
 "url": "https://docstrike.com/",
@@ -11270,6 +14520,31 @@
 "from": "https://wordpress.com/"
 },
 {
+"url": "https://creativecommons.org/licenses/by-nc/4.0",
+"parentScore": 47,
+"from": "https://spinellis.gr/blog/20261008"
+},
+{
+"url": "https://mastodon.acm.org/",
+"parentScore": 47,
+"from": "https://spinellis.gr/blog/20261008"
+},
+{
+"url": "https://oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html",
+"parentScore": 47,
+"from": "https://spinellis.gr/blog/20261008"
+},
+{
+"url": "https://oecd.org/en/publications/2025/09/education-at-a-glance-2025_c58fc9ae/full-report/piaac-proficiency-in-key-information-processing-skills-among-adults_3ccb98d6.html",
+"parentScore": 47,
+"from": "https://spinellis.gr/blog/20261008"
+},
+{
+"url": "https://toot.kytta.dev/?text=Thinking+will+become+a+hobby+https%3A%2F%2Fwww.spinellis.gr%2Fblog%2F20261008+via+%40CoolSWEng%40mastodon.acm.org",
+"parentScore": 47,
+"from": "https://spinellis.gr/blog/20261008"
+},
+{
 "url": "http://core-econ.org/",
 "parentScore": 46,
 "from": "https://global-change-data-lab.org/"
@@ -11333,6 +14608,46 @@
 "url": "https://warwick.ac.uk/fac/soc/economics",
 "parentScore": 46,
 "from": "https://global-change-data-lab.org/"
+},
+{
+"url": "https://apnews.com/article/google-deletes-inactive-accounts-save-data-edfc98aa9db0607e78c826f4e3918637",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://audible.de/legal/conditions-of-use",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://blog.google/products-and-platforms/products/photos/4-things-know-about-google-photos-storage-policy-change",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://blog.google/products-and-platforms/products/stadia/message-on-stadia-streaming-strategy",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://blog.livingstone-tech.com/en/knowledge/adobes-creative-cloud-price-hike-what-you-need-to-know",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://blog.playstation.com/2026/07/01/an-update-on-playstation-store-for-ps3-and-ps-vita",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
+},
+{
+"url": "https://blu-ray.com/faq",
+"parentScore": 46,
+"from": "https://dervis.de/physical"
 },
 {
 "url": "https://caehdus.atabook.org/",
@@ -11525,6 +14840,46 @@
 "from": "https://earth.org.uk/note-on-site-technicals-114.html"
 },
 {
+"url": "http://na/",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "http://thiscrowc.com/",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=422.",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "https://mission-local.donorsupport.co/-/XDMXDHVN",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "https://mission-local.donorsupport.co/-/XKAAUBHM",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "https://mission-local.donorsupport.co/-/XSHAPATJ",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "https://mission-local.donorsupport.co/-/XUEGJEVL",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
+"url": "https://newspack.com/",
+"parentScore": 44,
+"from": "https://missionlocal.org/2024/01/y-combinator-ceo-garry-tans-online-rant-spurs-threat-to-supe-police-reports"
+},
+{
 "url": "https://perstenius.com/",
 "parentScore": 43,
 "from": "https://eelslap.com/"
@@ -11641,11 +14996,6 @@
 },
 {
 "url": "https://gumtreegreys.com.au/donate",
-"parentScore": 40,
-"from": "https://omfgdogs.com/"
-},
-{
-"url": "https://lortsmith.com/support-our-work/donations",
 "parentScore": 40,
 "from": "https://omfgdogs.com/"
 }
