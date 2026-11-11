@@ -47,6 +47,20 @@
         <button data-status="backlog" title="Good sites held back to keep categories balanced">Backlog</button>
       </nav>
 
+      <details class="tag-filter" id="filter-box">
+        <summary><strong class="small">Filter by tag</strong><span class="small" id="filter-summary"></span>
+          <span class="muted small" id="filter-count"></span></summary>
+        <div class="row">
+          <div class="seg" role="group" aria-label="How to combine tags" id="filter-match" hidden>
+            <button type="button" data-match="any" aria-pressed="true" title="Sites with at least one of the chosen tags">Any of these (OR)</button>
+            <button type="button" data-match="all" aria-pressed="false" title="Sites with every chosen tag">All of these (AND)</button>
+          </div>
+          <div class="spacer"></div>
+          <button type="button" class="linkish small" id="filter-tags-clear" hidden>Clear</button>
+        </div>
+        <div class="chips" id="filter-tags"></div>
+      </details>
+
       <div class="toolbar" id="toolbar">
         <label class="check"><input type="checkbox" id="select-all"> select all</label>
         <span class="muted small" id="selected-count"></span>

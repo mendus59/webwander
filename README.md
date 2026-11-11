@@ -59,6 +59,9 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
   then searches for those topics and only proposes or backlogs sites with matching tags;
   other good finds aren't marked as seen, so a later run can still pick them up
   (`python -m wander crawl --tags music,art --match all`). The daily crawl is unchanged.
+- **Filter by tag** (above the list, on every tab) uses the same chips and Any (OR) / All
+  (AND) switch, plus "No tags" for unscanned sites. "Approve all scoring ≥" and the backlog's
+  "Propose a batch" only act on the sites the filter matches.
 - **Crawler** (`crawler/`): Python, run by `.github/workflows/crawl.yml` every day. It
   always proposes at least 10 never-before-suggested sites (`--min-new`). If too few clear
   the score threshold it fills up with the best of the rest and marks them "below threshold".

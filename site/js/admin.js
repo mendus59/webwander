@@ -9,7 +9,7 @@ import { repoUrl } from "./firebase-config.js";
 
 const $ = (id) => document.getElementById(id);
 const PAGE = 50;
-const state = { user: null, status: "proposed", cursor: null, cats: [], catById: {}, rows: new Map() };
+const state = { user: null, status: "proposed", cursor: null, scanned: 0, cats: [], catById: {}, rows: new Map() };
 
 $("crawl-link").href = `${repoUrl}/actions/workflows/crawl.yml`;
 
@@ -37,30 +37,77 @@ async function gh(url, opts = {}, token = getToken()) {
   return r.status === 204 ? null : r.json();
 }
 
+// ---- tag picker: chips plus an Any (OR) / All (AND) switch, shared by the Run crawler
+// dialog and the list filter. `model` is { tags: Set, match: "any" | "all" }.
+
+const NO_TAGS = "_none";  // list filter only: sites with no tags (e.g. not scanned)
+
+function renderTagPicker(prefix, model, onChange, extra = []) {
+  const { tags, match } = model;
+  const options = [...state.cats, ...extra];
+  $(`${prefix}-tags`).replaceChildren(...options.map((c) => el("button", {
+    type: "button", class: `chip small ${tags.has(c.id) ? "on" : ""} ${c.id === "mature" ? "mature" : ""}`,
+    "aria-pressed": String(tags.has(c.id)),
+    onclick: () => { tags.has(c.id) ? tags.delete(c.id) : tags.add(c.id); onChange(); },
+  }, `${c.emoji} ${c.label}`)));
+  for (const b of $(`${prefix}-match`).querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset.match === match));
+  $(`${prefix}-match`).hidden = tags.size < 2;
+  $(`${prefix}-tags-clear`).hidden = !tags.size;
+}
+
+function wireTagPicker(prefix, model, onChange) {
+  for (const b of $(`${prefix}-match`).querySelectorAll("button")) {
+    b.onclick = () => { if (model.match !== b.dataset.match) { model.match = b.dataset.match; onChange(); } };
+  }
+  $(`${prefix}-tags-clear`).onclick = () => { model.tags.clear(); onChange(); };
+}
+
+const tagLabel = (id) => (id === NO_TAGS ? "no tags" : state.catById[id]?.label || id);
+
 // Which kinds of content a manual crawl should look for. Empty = any kind, balanced.
 const crawlKind = { tags: new Set(), match: "any" };
 
 function renderCrawlKind() {
   const { tags, match } = crawlKind;
-  $("crawl-tags").replaceChildren(...state.cats.map((c) => el("button", {
-    type: "button", class: `chip small ${tags.has(c.id) ? "on" : ""} ${c.id === "mature" ? "mature" : ""}`,
-    "aria-pressed": String(tags.has(c.id)),
-    onclick: () => { tags.has(c.id) ? tags.delete(c.id) : tags.add(c.id); renderCrawlKind(); },
-  }, `${c.emoji} ${c.label}`)));
-  for (const b of $("crawl-match").querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset.match === match));
-  $("crawl-match").hidden = tags.size < 2;
-  $("crawl-tags-clear").hidden = !tags.size;
-  const names = [...tags].map((id) => state.catById[id]?.label || id);
+  renderTagPicker("crawl", crawlKind, renderCrawlKind);
+  const names = [...tags].map(tagLabel);
   $("crawl-kind-note").textContent = !tags.size
     ? "Unspecified: any kind of site, balanced across categories (like the daily crawl). Pick tags to look for specific content."
     : tags.size === 1 ? `Only sites tagged ${names[0]}. Searches are steered toward it; other good finds are left for a later run.`
       : `Only sites tagged ${names.join(match === "all" ? " AND " : " OR ")}. Searches are steered toward them; other good finds are left for a later run.`;
 }
 
-for (const b of document.querySelectorAll("#crawl-match button")) {
-  b.onclick = () => { crawlKind.match = b.dataset.match; renderCrawlKind(); };
+wireTagPicker("crawl", crawlKind, renderCrawlKind);
+
+// The list filter: the same picker, applied to whichever tab is open.
+const listFilter = { tags: new Set(), match: "any" };
+
+function filterOn() { return listFilter.tags.size > 0; }
+
+function matchesFilter(d) {
+  if (!filterOn()) return true;
+  const have = new Set(d.categories || []);
+  if (!have.size) have.add(NO_TAGS);
+  const want = [...listFilter.tags];
+  return listFilter.match === "all" ? want.every((t) => have.has(t)) : want.some((t) => have.has(t));
 }
-document.getElementById("crawl-tags-clear").onclick = () => { crawlKind.tags.clear(); renderCrawlKind(); };
+
+function filterText() {
+  return [...listFilter.tags].map(tagLabel).join(listFilter.match === "all" ? " AND " : " OR ");
+}
+
+function renderListFilter() {
+  renderTagPicker("filter", listFilter, onFilterChange, [{ id: NO_TAGS, emoji: "🏷️", label: "No tags" }]);
+  $("filter-summary").textContent = filterOn() ? filterText() : "";
+  $("filter-box").classList.toggle("active", filterOn());
+}
+
+function onFilterChange() {
+  renderListFilter();
+  if (state.user) reload();
+}
+
+wireTagPicker("filter", listFilter, onFilterChange);
 
 function openCrawlDialog() {
   renderCrawlKind();
@@ -127,6 +174,7 @@ async function watchCrawl(justStarted = false) {
 async function init() {
   state.cats = await loadCategories();
   state.catById = Object.fromEntries(state.cats.map((c) => [c.id, c]));
+  renderListFilter();
   if (!configured) {
     $("gate-msg").textContent = "Firebase isn't configured yet. Fill in site/js/firebase-config.js (see SETUP.md).";
     $("auth-btn").hidden = true;
@@ -187,6 +235,7 @@ const stat = (label, value, href = null) => el("div", { class: "stat" },
 
 async function reload() {
   state.cursor = null;
+  state.scanned = 0;
   state.rows.clear();
   $("list").replaceChildren();
   $("select-all").checked = false;
@@ -213,17 +262,32 @@ async function loadMore() {
 }
 
 async function loadSites() {
-  const parts = [where("status", "==", state.status), orderBy("score", "desc"), limit(PAGE)];
-  if (state.cursor) parts.push(startAfter(state.cursor));
-  const snap = await getDocs(query(collection(db, "sites"), ...parts));
-  state.cursor = snap.docs.at(-1) || state.cursor;
-  for (const d of snap.docs) {
-    const row = renderRow(d.id, d.data());
-    state.rows.set(d.id, { data: d.data(), node: row });
-    $("list").append(row);
+  // With a tag filter, pages are read in score order and filtered here (Firestore can't
+  // do "all of these tags"), reading on until a page's worth match or the list ends.
+  const batch = filterOn() ? 200 : PAGE;
+  let shown = 0, done = false;
+  while (shown < PAGE && !done) {
+    const parts = [where("status", "==", state.status), orderBy("score", "desc"), limit(batch)];
+    if (state.cursor) parts.push(startAfter(state.cursor));
+    const snap = await getDocs(query(collection(db, "sites"), ...parts));
+    state.cursor = snap.docs.at(-1) || state.cursor;
+    state.scanned += snap.docs.length;
+    done = snap.docs.length < batch;
+    for (const d of snap.docs) {
+      if (!matchesFilter(d.data())) continue;
+      const row = renderRow(d.id, d.data());
+      state.rows.set(d.id, { data: d.data(), node: row });
+      $("list").append(row);
+      shown++;
+    }
   }
-  if (!state.rows.size && !$("list").querySelector(".review")) $("list").append(el("p", { class: "muted center" }, "Nothing here. 🎉"));
-  $("more").hidden = snap.docs.length < PAGE;
+  $("filter-count").textContent = filterOn()
+    ? `${state.rows.size} match${state.rows.size === 1 ? "" : "es"}${done ? "" : " so far"} (of ${state.scanned} checked)` : "";
+  if (!state.rows.size && !$("list").querySelector(".review")) {
+    $("list").append(el("p", { class: "muted center" }, filterOn()
+      ? `No ${state.status} sites tagged ${filterText()}.` : "Nothing here. 🎉"));
+  }
+  $("more").hidden = done;
   updateSelection();
 }
 
@@ -304,7 +368,7 @@ async function backlogHeader() {
   const count = el("input", { type: "number", value: "10", min: "1", max: "100", class: "num", "aria-label": "how many" });
   $("list").append(el("div", { class: "row backlog-batch" },
     el("button", { class: "wander-btn", onclick: (e) => proposeFromBacklog(Number(count.value) || 10, e.currentTarget) },
-      "Propose a balanced batch"),
+      filterOn() ? `Propose a batch tagged ${filterText()}` : "Propose a balanced batch"),
     count,
     el("span", { class: "muted small" }, "sites move to Proposed, already scored. No crawl needed.")));
 }
@@ -352,9 +416,9 @@ async function proposeFromBacklog(k, btn) {
   try {
     const meta = (await getDoc(doc(db, "meta", "stats"))).data() || {};
     const snap = await getDocs(query(collection(db, "sites"), where("status", "==", "backlog")));
-    const pool = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    const pool = snap.docs.map((d) => ({ id: d.id, ...d.data() })).filter(matchesFilter);
     const batch = pickBalanced(pool, k, meta.categories || {});
-    if (!batch.length) return toast("The backlog is empty.");
+    if (!batch.length) return toast(filterOn() ? `No backlog sites tagged ${filterText()}.` : "The backlog is empty.");
     for (const d of batch) if (!state.rows.has(d.id)) state.rows.set(d.id, { data: d, node: { remove() {} } });
     await setStatus(batch.map((d) => d.id), "proposed", `${batch.length} site${batch.length === 1 ? "" : "s"} moved from the backlog to Proposed.`);
     document.querySelector('#tabs button[data-status="proposed"]').click();
@@ -501,9 +565,10 @@ $("bulk-reject").onclick = () => setStatus(selectedIds(), "rejected");
 $("bulk-score").onclick = async () => {
   const min = Number($("bulk-min").value);
   const snap = await getDocs(query(collection(db, "sites"), where("status", "==", "proposed"), orderBy("score", "desc")));
-  const ids = snap.docs.filter((d) => (d.data().score || 0) >= min).map((d) => d.id);
-  if (!ids.length) return toast(`No proposed sites score ${min} or more.`);
-  if (!confirm(`Approve ${ids.length} proposed site(s) scoring ${min}+ with their auto-detected categories?`)) return;
+  const ids = snap.docs.filter((d) => (d.data().score || 0) >= min && matchesFilter(d.data())).map((d) => d.id);
+  const tagged = filterOn() ? ` tagged ${filterText()}` : "";
+  if (!ids.length) return toast(`No proposed sites${tagged} score ${min} or more.`);
+  if (!confirm(`Approve ${ids.length} proposed site(s)${tagged} scoring ${min}+ with their auto-detected categories?`)) return;
   for (const d of snap.docs) if (!state.rows.has(d.id)) state.rows.set(d.id, { data: d.data(), node: { remove() {} } });
   await setStatus(ids, "approved");
 };
