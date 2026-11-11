@@ -66,9 +66,15 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
 
 **Crawler version:** `crawler/wander/__init__.py` holds `__version__` (bump it whenever the
 crawler's behaviour changes). Every run prints it with the commit id, shows it in the Actions
-run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.12.0, 325a51d)`),
+run summary and the bot's commit message (`crawl: 2026-11-10 (crawler v1.13.0, 325a51d)`),
 saves it in `data/crawl-log.json` and `meta/stats`, and stamps it on each site it scores. The
 admin panel shows the last run's version and each site's. `python -m wander --version` prints it.
+
+**One site per domain, everywhere.** A domain (e.g. `neal.fun`, or `ann.neocities.org` on
+shared hosts) is only ever in the database once, in exactly one status. The crawl skips any
+page whose domain is already there (and takes only one page per new domain), submissions
+and seeds of a known domain don't add a copy, and every run removes leftover duplicates from
+older versions, keeping approved > proposed > backlog > rejected, then the best score.
 
 ## Scoring without AI
 

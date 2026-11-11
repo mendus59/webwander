@@ -87,20 +87,20 @@ def test_failed_and_resubmitted_submissions_stay_visible(tmp_path, monkeypatch):
     monkeypatch.setattr(cli, "SEEDS_PATH", tmp_path / "none.txt")
     db = tmp_path / "db.json"
     db.write_text(json.dumps({"submissions": {
-        "a": {"url": "https://dead.example.org", "uid": "admin", "autoApprove": True},
-        "b": {"url": "https://toy.example.org", "uid": "admin", "autoApprove": False}}}))
+        "a": {"url": "https://dead-site.example", "uid": "admin", "autoApprove": True},
+        "b": {"url": "https://toy-site.example", "uid": "admin", "autoApprove": False}}}))
     args = ["crawl", "--offline", "--local", str(db), "--delay", "0", "--min-new", "0"]
     assert cli.main(args) == 0
     data = json.loads(db.read_text())
     by_url = {s["url"]: s for s in data["sites"].values()}
-    dead = by_url["https://dead.example.org/"]
+    dead = by_url["https://dead-site.example/"]
     assert dead["status"] == "rejected" and dead["autoReject"] == "couldn't fetch: ConnectTimeout"
     assert data["submissions"] == {}
 
     toy_id = next(k for k, s in data["sites"].items() if "toy" in s["url"])
     data["sites"][toy_id]["status"] = "rejected"
-    data["submissions"] = {"c": {"url": "https://toy.example.org", "uid": "admin", "autoApprove": False},
-                           "d": {"url": "https://dead.example.org", "uid": "admin", "autoApprove": False}}
+    data["submissions"] = {"c": {"url": "https://toy-site.example", "uid": "admin", "autoApprove": False},
+                           "d": {"url": "https://dead-site.example", "uid": "admin", "autoApprove": False}}
     db.write_text(json.dumps(data))
     assert cli.main(args) == 0
     data = json.loads(db.read_text())
@@ -139,12 +139,55 @@ def test_submissions_command_scores_queue_now(tmp_path, monkeypatch):
     db.write_text(json.dumps({
         "sites": {site_id(held): {"url": held, "status": "backlog", "categories": ["toys"], "score": 70,
                                  "backlogAt": __import__("time").time()}},
-        "submissions": {"a": {"url": "https://fresh.example.org", "uid": "u1"},
+        "submissions": {"a": {"url": "https://fresh-site.example", "uid": "u1"},
                         "b": {"url": held, "uid": "admin", "autoApprove": False}}}))
     assert cli.main(["submissions", "--local", str(db), "--delay", "0"]) == 0
     data = json.loads(db.read_text())
     assert data["submissions"] == {}
     by_url = {s["url"]: s for s in data["sites"].values()}
-    assert by_url["https://fresh.example.org/"]["status"] == "proposed"
+    assert by_url["https://fresh-site.example/"]["status"] == "proposed"
     assert by_url[held]["status"] == "proposed"
     assert len(data["sites"]) == 2
+
+
+def test_one_site_per_domain_everywhere(tmp_path, monkeypatch):
+    """A domain is never suggested twice: existing duplicates are cleaned up, other pages
+    of a known domain are skipped by the crawl, and submissions don't add a second copy."""
+    import time
+    monkeypatch.setattr(cli.Fetcher, "fetch", fake_fetch)
+    for name in ("SEEN_PATH", "FRONTIER_PATH", "LOG_PATH", "BACKLOG_PATH"):
+        monkeypatch.setattr(st, name, tmp_path / name)
+    seeds = tmp_path / "seeds.txt"
+    pages = [f"https://dup{i}.example{i}.org/page{j}" for i in range(12) for j in range(3)]
+    seeds.write_text("\n".join(pages + ["https://www.known.example/other-page"]))
+    monkeypatch.setattr(cli, "SEEDS_PATH", seeds)
+    now = time.time()
+    db = tmp_path / "db.json"
+    db.write_text(json.dumps({
+        "sites": {
+            # Older runs left three docs for one domain; the approved one must survive.
+            "a": {"url": "https://known.example/", "registrableDomain": "known.example", "status": "approved", "score": 50},
+            "b": {"url": "https://known.example/b", "registrableDomain": "known.example", "status": "proposed", "score": 90},
+            "c": {"url": "https://known.example/c", "registrableDomain": "known.example", "status": "backlog",
+                  "score": 80, "categories": ["toys"], "backlogAt": now},
+            "d": {"url": "https://twice.example/", "registrableDomain": "twice.example", "status": "backlog",
+                  "score": 60, "categories": ["toys"], "backlogAt": now},
+            "e": {"url": "https://twice.example/x", "registrableDomain": "twice.example", "status": "rejected", "score": 70},
+        },
+        "submissions": {"s": {"url": "https://known.example/yet-another", "uid": "u1"}}}))
+    assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0", "--min-new", "10",
+                     "--min-score", "0", "--pool-factor", "10"]) == 0
+    sites = json.loads(db.read_text())["sites"]
+    domains = [cli.site_domain(s) for s in sites.values()]
+    assert len(domains) == len(set(domains)), sorted(domains)
+    assert sites["a"]["status"] == "approved" and "b" not in sites and "c" not in sites
+    assert "d" in sites and "e" not in sites  # backlog beats rejected
+    assert 5 <= sum(1 for d in domains if d.startswith("example")) <= 12  # at most one page per domain
+
+    # A second run (and the admin's backlog batch) still never duplicates a domain.
+    seeds.write_text("\n".join(f"https://dup{i}.example{i}.org/more{j}" for i in range(12) for j in range(3)))
+    assert cli.main(["crawl", "--offline", "--local", str(db), "--delay", "0", "--min-new", "5"]) == 0
+    assert cli.main(["backlog", "--local", str(db), "--count", "5"]) == 0
+    sites = json.loads(db.read_text())["sites"]
+    domains = [cli.site_domain(s) for s in sites.values()]
+    assert len(domains) == len(set(domains))
