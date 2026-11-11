@@ -552,5 +552,23 @@
    "mature"
   ],
   "match": "any"
+ },
+ {
+  "at": "2026-11-11T09:50:35+00:00",
+  "version": "1.16.0",
+  "build": "f3d20cf",
+  "fetched": 300,
+  "new": 1,
+  "minutes": 13.7,
+  "categories": {
+   "provocative": 1
+  },
+  "sites": [
+   "https://politico.eu/article/france-to-introduce-controversial-age-verification-system-for-adult-pornography-websites"
+  ],
+  "tags": [
+   "mature"
+  ],
+  "match": "any"
  }
 ]
