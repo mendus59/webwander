@@ -132,6 +132,47 @@ def spam_score(words: list[str], spam_term_hits: int, n_external_links: int) -> 
     return score
 
 
+VIDEO_EMBED_RE = re.compile(r"(youtube(-nocookie)?\.com/embed|player\.vimeo\.com|dailymotion\.com/embed|"
+                            r"player\.twitch\.tv|streamable\.com|archive\.org/embed|/videos/embed/)")
+AUDIO_EMBED_RE = re.compile(r"(bandcamp\.com/EmbeddedPlayer|w\.soundcloud\.com/player|mixcloud\.com/widget|"
+                            r"open\.spotify\.com/embed|embed\.music\.apple\.com)", re.I)
+LAZY_SRC_ATTRS = ("src", "data-src", "data-lazy-src", "data-original", "srcset", "data-srcset")
+BG_IMAGE_RE = re.compile(r"background(-image)?\s*:[^;\"']*url\(", re.I)
+
+
+def _px(v) -> int | None:
+    m = re.match(r"\s*(\d+)", str(v or ""))
+    return int(m.group(1)) if m else None
+
+
+def media_counts(soup) -> dict:
+    """Pictures, films and music on the page, so galleries and reels count as content.
+
+    Lazy-loaded images (data-src / srcset), <picture> sources and inline background
+    images all count; tracking pixels and icons (width or height under 48px) don't.
+    """
+    images, alts = 0, []
+    for img in soup.find_all("img"):
+        if not any(img.get(a) for a in LAZY_SRC_ATTRS):
+            continue
+        w, h = _px(img.get("width")), _px(img.get("height"))
+        if (w is not None and w < 48) or (h is not None and h < 48):
+            continue
+        images += 1
+        alt = (img.get("alt") or img.get("title") or "").strip()
+        if alt:
+            alts.append(alt)
+    images += sum(1 for pic in soup.find_all("picture") if not pic.find("img"))
+    images += sum(1 for t in soup.find_all(style=True) if BG_IMAGE_RE.search(t["style"]))
+    frames = [(f.get("src") or f.get("data-src") or "") for f in soup.find_all("iframe")]
+    return {
+        "n_media_images": images,
+        "n_video_embeds": sum(1 for u in frames if VIDEO_EMBED_RE.search(u.lower())),
+        "n_audio_embeds": sum(1 for u in frames if AUDIO_EMBED_RE.search(u)),
+        "alt_text": " ".join(alts)[:4000],
+    }
+
+
 def mixed_content(soup, page_url: str) -> int:
     """Insecure http:// subresources on an https page."""
     if not page_url.startswith("https://"):
@@ -217,6 +258,10 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
         "n_video": count("video"),
         "n_audio": count("audio"),
         "n_iframe": count("iframe"),
+        **(media := media_counts(full)),
+        # Media items: each picture counts once, each film or track three times.
+        "media_items": media["n_media_images"] + 3 * (count("video") + count("audio")
+                                                      + media["n_video_embeds"] + media["n_audio_embeds"]),
         "n_forms": count("form"),
         "n_inputs": count("input") + count("textarea") + count("select") + count("button"),
         "n_tables": count("table"),

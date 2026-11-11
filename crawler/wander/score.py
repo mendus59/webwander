@@ -1,8 +1,9 @@
 """Uniqueness / fun scoring. Deterministic heuristics only.
 
-The score (0-100) is the sum of five parts:
+The score (0-100) is the sum of six parts:
 
   interactivity  0-30  canvas, WebGL, WebAudio, pointer/keyboard handlers, inputs
+  media          0-10  galleries, photos, films and music (incl. lazy images and embeds)
   independence   0-20  no ads, few trackers, no cookie walls, personal hosting
   craft          0-15  has a title/description/icon, https, playful wording, long-form writing
   novelty        0-35  text fingerprint far from everything in the DB, new domain
@@ -62,6 +63,11 @@ class Result:
     nearest_similarity: float = 0.0
 
 
+def media_rich_page(f: dict) -> bool:
+    """A page whose content is mostly pictures, films or music."""
+    return f["n_media_images"] >= 6 or (f["n_video"] + f["n_video_embeds"] + f["n_audio"] + f["n_audio_embeds"]) >= 1
+
+
 def reject_reason(f: dict) -> str | None:
     dom = f["registrable_domain"]
     if dom in BLOCKED_DOMAINS or f["domain"] in BLOCKED_DOMAINS:
@@ -72,7 +78,7 @@ def reject_reason(f: dict) -> str | None:
         return "error page"
     if f["login_wall"]:
         return "login wall"
-    if f["word_count"] < 3 and f["n_canvas"] == 0 and f["n_scripts_external"] == 0:
+    if f["word_count"] < 3 and f["n_canvas"] == 0 and f["n_scripts_external"] == 0 and not f["media_items"]:
         return "empty page"
     if f["spam_score"] >= 2:
         return "spam"
@@ -110,6 +116,21 @@ def score(f: dict, simhash: int, corpus: Corpus, categories: list[str] | None = 
     if f["map_library"] or f["chart_library"]:
         inter += 3; reasons.append("maps/charts")
     inter = min(30, inter)
+
+    # --- media: galleries, portfolios, reels and music pages say little but show a lot
+    media = min(6, f["n_media_images"] // 4)
+    films = f["n_video"] + f["n_video_embeds"]
+    tracks = f["n_audio"] + f["n_audio_embeds"]
+    media += 3 if films else 0
+    media += 3 if tracks else 0
+    media = min(10, media)
+    if f["n_media_images"] >= 8:
+        reasons.append(f"{f['n_media_images']} images")
+    if films:
+        reasons.append(f"{films} video(s)")
+    if tracks:
+        reasons.append(f"{tracks} audio track(s)")
+    media_rich = media_rich_page(f)
 
     # --- independence
     indep = 18
@@ -175,7 +196,7 @@ def score(f: dict, simhash: int, corpus: Corpus, categories: list[str] | None = 
     pen = 0
     if f["commerce_hits"]:
         pen -= min(30, 5 * f["commerce_hits"]); reasons.append(f"commercial language x{f['commerce_hits']}")
-    if f["word_count"] < 20 and not (f["n_canvas"] or f["webgl"]):
+    if f["word_count"] < 20 and not (f["n_canvas"] or f["webgl"] or media_rich):
         pen -= 15; reasons.append("very little content")
     if f["spam_hits"]:
         pen -= 10; reasons.append("a spam/gambling term")
@@ -188,7 +209,7 @@ def score(f: dict, simhash: int, corpus: Corpus, categories: list[str] | None = 
     if categories is not None and not [c for c in categories if c != "mature"]:
         pen -= 5; reasons.append("no clear theme")
 
-    total = max(0, min(100, inter + indep + craft + novelty + sec + pen))
-    breakdown = {"interactivity": inter, "independence": indep, "craft": craft,
+    total = max(0, min(100, inter + media + indep + craft + novelty + sec + pen))
+    breakdown = {"interactivity": inter, "media": media, "independence": indep, "craft": craft,
                  "novelty": novelty, "security": sec, "penalties": pen}
     return Result(int(total), breakdown, reasons, rej, round(nearest, 3))

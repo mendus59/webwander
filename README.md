@@ -83,6 +83,7 @@ older versions, keeping approved > proposed > backlog > rejected, then the best 
 | Part | Points | What it looks at |
 |---|---|---|
 | Interactivity | 0-30 | `<canvas>`, WebGL, Web Audio, mouse/touch/keyboard handlers, inputs, maps, charts (also inside same-origin JS bundles) |
+| Media | 0-10 | photo galleries, artwork, films and music: images (incl. lazy-loaded and `<picture>`), `<video>`/`<audio>`, and Vimeo/YouTube/Bandcamp/SoundCloud embeds. Media-rich pages never count as "empty" or "very little content", and image alt text feeds the tagger |
 | Independence | 0-20 | ad networks, trackers, cookie banners, third-party script count, personal hosts (neocities, github.io, tilde) |
 | Craft | 0-15 | title, description, icon, https, playful wording, healthy vocabulary |
 | Novelty | -10 to 35 | 64-bit SimHash of the page text vs. every site already in the DB, and how many sites share the domain |
