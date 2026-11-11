@@ -279,3 +279,9 @@ dialog.preview iframe { flex: 1; border: 1px solid var(--line); border-radius: 1
 .crawl-kind { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 10px; }
 .crawl-kind .chips { max-height: 200px; overflow-y: auto; }
 #crawl-dlg { max-width: 640px; }
+
+.tag-filter { margin: 10px 0 4px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.tag-filter summary { cursor: pointer; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.tag-filter.active { border-color: var(--accent); }
+.tag-filter .row { margin-top: 8px; }
+.tag-filter .chips { margin-top: 6px; }
