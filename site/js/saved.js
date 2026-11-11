@@ -280,6 +280,10 @@ export function createSavedPanel(ctx) {
           image: s.image,  // undefined for saves made before images were stored
         };
       });
+      // One entry per domain (older saves could hold two pages of the same site); the
+      // list is newest first, so the most recent save is the one kept.
+      const seenDomains = new Set();
+      items = items.filter((s) => !seenDomains.has(domainOf(s.url)) && seenDomains.add(domainOf(s.url)));
       render();
     },
   };

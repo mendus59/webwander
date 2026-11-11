@@ -66,11 +66,45 @@ def merge_sites(sites: list[dict], changed: list[dict], removed: set[str] = froz
     return [s for i, s in merged.items() if i not in removed]
 
 
+STATUS_RANK = {"approved": 0, "proposed": 1, "backlog": 2, "rejected": 3}
+
+
+def site_domain(s: dict) -> str:
+    return s.get("registrableDomain") or registrable_domain(s.get("url", ""))
+
+
+def dedupe_by_domain(store, sites: list[dict]) -> set[str]:
+    """One site per domain, everywhere. If a domain has several site docs (from older
+    crawler versions), keep the most useful one (approved > proposed > backlog > rejected,
+    then the best score) and delete the rest. Returns the deleted ids; `sites` is updated."""
+    by_dom: dict[str, list[dict]] = {}
+    for s in sites:
+        if s.get("status") in STATUS_RANK:
+            by_dom.setdefault(site_domain(s), []).append(s)
+    removed: set[str] = set()
+    for dom, group in by_dom.items():
+        if len(group) < 2:
+            continue
+        group.sort(key=lambda s: (STATUS_RANK[s["status"]], -(s.get("score") or 0)))
+        for extra in group[1:]:
+            store.delete_site(extra["id"])
+            removed.add(extra["id"])
+            log(f"  [dedupe] {dom}: removed {extra['status']} {extra.get('url')} (kept {group[0].get('url')})")
+    sites[:] = [s for s in sites if s["id"] not in removed]
+    return removed
+
+
+def known_domains_of(sites: list[dict]) -> dict[str, dict]:
+    return {site_domain(s): s for s in sites if s.get("status") in STATUS_RANK}
+
+
 def load_backlog(store, sites: list[dict], known_ids: set[str]) -> list[dict]:
     """Backlog sites (status "backlog"), minus expired ones, which are deleted. Moves the
     old data/backlog.json into the database the first time it runs."""
+    domains = set(known_domains_of(sites))
     for d in st.take_legacy_backlog():
-        if d["id"] not in known_ids:
+        if d["id"] not in known_ids and site_domain(d) not in domains:
+            domains.add(site_domain(d))
             store.upsert_site(dict(d, status="backlog"))
             sites.append(dict(d, status="backlog"))
             known_ids.add(d["id"])
@@ -95,14 +129,18 @@ def trim_backlog(store, backlog: list[dict]) -> set[str]:
     return {d["id"] for d in extra}
 
 
-def process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember_links=None) -> list[dict]:
+def process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember_links=None,
+                        domains: dict[str, dict] | None = None) -> list[dict]:
     """Score every pending submission and put it in Proposed (or Approved when the admin
-    asked). Every submission is removed afterwards, so nothing waits in a queue."""
+    asked). Every submission is removed afterwards, so nothing waits in a queue. A domain
+    that is already in the database is never added a second time."""
+    domains = known_domains_of(list(by_id.values())) if domains is None else domains
     new_docs = []
     for sub in store.load_submissions():
         ev = evaluate(sub["url"], fetcher, corpus, source="submission")
         approve = bool(sub.get("autoApprove"))
-        if ev.doc and ev.doc["id"] not in known_ids:
+        prev = (by_id.get(ev.doc["id"]) or domains.get(ev.doc["registrableDomain"])) if ev.doc else None
+        if ev.doc and not prev:
             doc = dict(ev.doc, status="approved" if approve else "proposed",
                        submittedBy=sub.get("uid", ""), autoReject=ev.result.reject)
             if approve:
@@ -111,26 +149,34 @@ def process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember
             new_docs.append(doc)
             known_ids.add(doc["id"])
             by_id[doc["id"]] = doc
+            domains[doc["registrableDomain"]] = doc
             corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
             log(f"  submission {ev.norm} -> {ev.result.score}")
         elif ev.doc:
-            # Already known. A backlog site goes to the queue (or straight to approved);
-            # an admin re-adding a rejected site wants another look.
-            prev = by_id.get(ev.doc["id"], {})
+            # The site (or another page of its domain) is already in the database, so it
+            # isn't added again. A backlog site moves to the queue (or straight to
+            # approved); an admin re-adding a rejected site wants another look.
             if prev.get("status") == "backlog" or ("autoApprove" in sub and prev.get("status") == "rejected"):
                 status = "approved" if approve else "proposed"
-                store.upsert_site(dict(ev.doc, status=status, resubmitted=prev.get("status") == "rejected",
-                                       autoReject=ev.result.reject, submittedBy=sub.get("uid", "")))
-                log(f"  submission {ev.norm}: was {prev.get('status')}, now {status}")
+                update = dict(ev.doc) if prev["id"] == ev.doc["id"] else {"id": prev["id"]}
+                update.update(status=status, resubmitted=prev.get("status") == "rejected",
+                              submittedBy=sub.get("uid", ""))
+                if prev["id"] == ev.doc["id"]:
+                    update["autoReject"] = ev.result.reject
+                store.upsert_site(update)
+                log(f"  submission {ev.norm}: {prev.get('url')} was {prev.get('status')}, now {status}")
                 prev["status"] = status
+            else:
+                log(f"  submission {ev.norm}: domain already listed ({prev.get('status')}: {prev.get('url')})")
         else:
             # Couldn't be fetched (insecure, unreachable, bad URL). Keep a record in
             # "rejected" so whoever added it can see why, instead of it vanishing.
             log(f"  submission {sub['url']} failed: {ev.error}")
             failed = failed_submission_doc(sub, ev)
-            if failed and failed["id"] not in known_ids:
+            if failed and failed["id"] not in known_ids and failed["registrableDomain"] not in domains:
                 store.upsert_site(failed)
                 known_ids.add(failed["id"])
+                domains[failed["registrableDomain"]] = failed
         store.delete_submission(sub["id"])
         seen.add(url_key(ev.norm))
         if remember_links:
@@ -167,6 +213,11 @@ def cmd_crawl(args) -> int:
     fetcher = Fetcher(delay=args.delay)
     sites = store.load_sites()
     known_ids = {s["id"] for s in sites}
+    # Start from the backlog: good sites found earlier that didn't fit that run's balance.
+    backlog = load_backlog(store, sites, known_ids)
+    deduped = dedupe_by_domain(store, sites)
+    backlog = [d for d in backlog if d["id"] not in deduped]
+    domains = known_domains_of(sites)  # every domain already in the database, any status
     by_id = {s["id"]: s for s in sites}
     corpus = build_corpus(sites)
     seen = st.load_seen()
@@ -188,7 +239,7 @@ def cmd_crawl(args) -> int:
             frontier_urls.add(link)
 
     # 1. User/admin submissions always get scored and put in the review queue.
-    new_docs += process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember_links)
+    new_docs += process_submissions(store, fetcher, corpus, known_ids, by_id, seen, remember_links, domains)
 
     # 2. Discovery: build a pool of good candidates (bigger than we need), steering
     #    searches toward the categories the database has fewest of.
@@ -201,8 +252,6 @@ def cmd_crawl(args) -> int:
     log(f"{len(candidates)} candidates gathered")
     used_frontier = set()
     fetched = 0
-    # Start from the backlog: good sites found earlier that didn't fit that run's balance.
-    backlog = load_backlog(store, sites, known_ids)
     pool: list[dict] = list(backlog)  # >= min_score, not rejected
     log(f"{len(backlog)} sites waiting in the backlog")
     runners_up: list[dict] = []  # scored but under threshold, used to guarantee --min-new
@@ -220,8 +269,8 @@ def cmd_crawl(args) -> int:
             used_frontier.add(url)
         key = url_key(norm)
         dom = registrable_domain(norm)
-        if key in seen or site_id(norm) in known_ids or dom in BLOCKED_DOMAINS:
-            continue
+        if key in seen or site_id(norm) in known_ids or dom in BLOCKED_DOMAINS or dom in domains:
+            continue  # seen before, or its domain is already in the database
         seen.add(key)
         fetched += 1
         ev = evaluate(norm, fetcher, corpus, source=source)
@@ -229,9 +278,10 @@ def cmd_crawl(args) -> int:
         if not ev.doc:
             log(f"  [skip] {norm}: {ev.error}")
             continue
-        if ev.doc["id"] in known_ids:
-            continue
+        if ev.doc["id"] in known_ids or ev.doc["registrableDomain"] in domains:
+            continue  # redirected to a site/domain we already have
         remember_links(ev)
+        domains[ev.doc["registrableDomain"]] = ev.doc  # one page per domain, even within a run
         if ev.result.reject:
             log(f"  [reject] {ev.norm}: {ev.result.reject}")
             continue
@@ -257,7 +307,7 @@ def cmd_crawl(args) -> int:
         doc["status"] = "proposed"
         store.upsert_site(doc)
         new_docs.append(doc)
-        corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
+        corpus.add(from_hex(doc.get("simhash", "")), doc["registrableDomain"])
         log(f"  [NEW {doc['score']:3d}{' fill' if doc.get('belowThreshold') else ''}] {doc['url']}  {doc['categories']}")
     frontier = [f for f in frontier if f["url"] not in used_frontier]
     frontier_urls = {f["url"] for f in frontier}
@@ -274,7 +324,7 @@ def cmd_crawl(args) -> int:
     run_categories = category_counts([d for d in new_docs])
     log(f"Categories this run: {run_categories}")
 
-    stats = compute_stats(merge_sites(sites, new_docs + added_backlog, trimmed))
+    stats = compute_stats(merge_sites(sites, new_docs + added_backlog, trimmed | deduped))
     stats.update(lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs),
                  lastRunCategories=run_categories, crawlerVersion=__version__, crawlerBuild=build())
     store.write_stats(stats)
@@ -301,6 +351,8 @@ def cmd_backlog(args) -> int:
     store = open_store(args)
     sites = store.load_sites()
     backlog = load_backlog(store, sites, {s["id"] for s in sites})
+    deduped = dedupe_by_domain(store, sites)
+    backlog = [d for d in backlog if d["id"] not in deduped]
     db_counts = Counter(c for s in sites if s.get("status") in ("approved", "proposed")
                         for c in topics(s))
     chosen = select_balanced(backlog, args.count, db_counts)
@@ -324,6 +376,7 @@ def cmd_submissions(args) -> int:
     sites = store.load_sites()
     known_ids = {s["id"] for s in sites}
     load_backlog(store, sites, known_ids)  # moves an old data/backlog.json into the database
+    dedupe_by_domain(store, sites)
     by_id = {s["id"]: s for s in sites}
     seen = st.load_seen()
     new_docs = process_submissions(store, fetcher, build_corpus(sites), known_ids, by_id, seen)
@@ -339,7 +392,9 @@ def cmd_seed(args) -> int:
     store = open_store(args)
     fetcher = Fetcher(delay=args.delay)
     sites = store.load_sites()
+    dedupe_by_domain(store, sites)
     known_ids = {s["id"] for s in sites}
+    domains = known_domains_of(sites)
     corpus = build_corpus(sites)
     seen = st.load_seen()
     path = Path(args.file) if args.file else SEEDS_PATH
@@ -351,8 +406,8 @@ def cmd_seed(args) -> int:
         if not ev.doc:
             log(f"  [skip] {url}: {ev.error}")
             continue
-        if ev.doc["id"] in known_ids:
-            continue
+        if ev.doc["id"] in known_ids or ev.doc["registrableDomain"] in domains:
+            continue  # this site or its domain is already in the database
         if ev.result.reject and not args.force:
             log(f"  [reject] {ev.norm}: {ev.result.reject}")
             continue
@@ -362,6 +417,7 @@ def cmd_seed(args) -> int:
             doc["approvedBy"] = "seed"
         store.upsert_site(doc)
         known_ids.add(doc["id"])
+        domains[doc["registrableDomain"]] = doc
         added.append(doc)
         corpus.add(from_hex(doc["simhash"]), doc["registrableDomain"])
         log(f"  [{status} {ev.result.score:3d}] {ev.norm}  {doc['categories']}")
