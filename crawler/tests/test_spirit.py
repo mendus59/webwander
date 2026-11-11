@@ -66,10 +66,17 @@ SPIRIT = {
     "political": ("manifesto.html", "https://library-manifesto.example.net/"),
     "provocative/edgy": ("provocative.html", "https://unpopular.example.zone/"),
     "non-English": ("french.html", "https://cartes.example.fr/"),
+    # Media-first pages say little but show a lot: photography, art, film and music.
+    "photography (lazy images)": ("gallery.html", "https://maralind.example.photo/"),
+    "art portfolio, no text": ("artwork.html", "https://inkandmoss.example.art/"),
+    "film reel (embeds)": ("reel.html", "https://okonkwo.example.studio/"),
+    "music (embeds)": ("tracks.html", "https://lowtide.example.band/"),
 }
 
 EXPECTED_TAG = {"philosophical": "philosophy", "political": "politics",
-                "provocative/edgy": "provocative", "non-English": "world"}
+                "provocative/edgy": "provocative", "non-English": "world",
+                "photography (lazy images)": "photo", "art portfolio, no text": ("art", "photo"),  # nothing but pictures: either is fair
+                "film reel (embeds)": "photo", "music (embeds)": "music"}
 
 
 def evaluate(name, url, corpus):
@@ -101,7 +108,8 @@ def test_spirit_sites_are_proposed(kind):
     assert res.score >= MIN_SCORE, (kind, res.score, res.breakdown, res.reasons)
     assert cats, kind
     if kind in EXPECTED_TAG:
-        assert EXPECTED_TAG[kind] in cats, (kind, cats)
+        want = EXPECTED_TAG[kind]
+        assert set(cats) & set(want if isinstance(want, tuple) else (want,)), (kind, cats)
 
 
 def test_long_essays_and_deep_paths_not_penalised():
@@ -119,3 +127,33 @@ def test_spirit_beats_commercial_by_a_wide_margin():
     worst_spirit = min(evaluate(n, u, Corpus())[3].score for n, u in SPIRIT.values())
     commercial = evaluate("news.html", "https://best-apps.example.com/", Corpus())[3].score
     assert worst_spirit - commercial >= 30
+
+
+def test_media_counts_lazy_images_and_embeds_but_not_pixels():
+    f, _, _, res = evaluate("gallery.html", SPIRIT["photography (lazy images)"][1], Corpus())
+    assert f["n_media_images"] == 36  # data-src images count; the 1x1 pixel doesn't
+    assert "fog over lofoten" in f["alt_text"].lower()
+    assert res.breakdown["media"] > 0 and res.breakdown["penalties"] == 0
+    f, _, _, _ = evaluate("reel.html", SPIRIT["film reel (embeds)"][1], Corpus())
+    assert f["n_video_embeds"] == 3
+    f, _, _, _ = evaluate("tracks.html", SPIRIT["music (embeds)"][1], Corpus())
+    assert f["n_audio_embeds"] == 2
+
+
+def test_hosted_portfolio_with_trackers_still_proposed():
+    """Squarespace/Wix-style portfolios carry trackers, third-party scripts and a cookie banner."""
+    name, url = SPIRIT["photography (lazy images)"]
+    html = (FIX / name).read_text().replace("</body>", "".join(
+        f'<script src="https://static{i}.hostcdn.example/s.js"></script>' for i in range(9))
+        + '<script src="https://www.googletagmanager.com/gtag/js"></script><script>gtag("config");'
+        'fbq("init"); window.cookieconsent = 1;</script></body>')
+    f = extract(url, html, {})
+    fp = simhash(" ".join([f["title"], f["description"], f["headings"], f["text"]]))
+    cats, _ = tag(f)
+    res = score(f, fp, full_corpus("photography (lazy images)"), cats)
+    assert res.reject is None and res.score >= MIN_SCORE, (res.score, res.breakdown, res.reasons)
+
+
+def test_truly_empty_page_still_rejected():
+    f = extract("https://nothing.example/", "<html><body><img src='/p.gif' width='1' height='1'></body></html>", {})
+    assert score(f, 0, Corpus()).reject == "empty page"

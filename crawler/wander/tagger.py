@@ -38,8 +38,8 @@ def signal_values(f: dict) -> dict[str, bool]:
         "canvas": f["n_canvas"] > 0,
         "webgl": f["webgl"],
         "web_audio": f["web_audio"],
-        "audio_tag": f["n_audio"] > 0,
-        "video_tag": f["n_video"] > 0,
+        "audio_tag": f["n_audio"] + f["n_audio_embeds"] > 0,
+        "video_tag": f["n_video"] + f["n_video_embeds"] > 0,
         "keyboard_controls": f["keyboard_events"] >= 2,
         "pointer_handlers": f["pointer_events"] >= 2,
         "map_library": f["map_library"],
@@ -49,7 +49,7 @@ def signal_values(f: dict) -> dict[str, bool]:
         "marquee_or_blink": f["marquee_or_blink"],
         "table_layout": f["n_tables"] >= 3,
         "long_text": f["word_count"] >= 1500,
-        "many_images": f["n_img"] >= 20,
+        "many_images": f["n_media_images"] >= 12,
         "personal_host": f["personal_host"],
         "code_blocks": f["n_code_blocks"] >= 3,
         "code_highlighter": f["code_highlighter"],
@@ -63,7 +63,8 @@ def category_scores(f: dict) -> dict[str, float]:
         "title": f["title"].lower(),
         "description": f["description"].lower(),
         "headings": f["headings"].lower(),
-        "body": f["text"][:20000].lower(),
+        # Image alt text and captions describe galleries that have little other text.
+        "body": (f["text"][:20000] + " " + f.get("alt_text", "")).lower(),
     }
     signals = signal_values(f)
     # Normalise body hits by length so a 10k-word page doesn't win on volume alone.

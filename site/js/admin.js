@@ -380,7 +380,7 @@ function renderRow(id, s, actions = null) {
         s.frameable === false ? el("span", { class: "tag" }, "opens in new tab") : null,
         s.crawlerVersion ? el("span", { class: "tag", title: "crawler version that scored this site" }, `v${s.crawlerVersion}`) : null),
       s.description ? el("p", { class: "desc" }, s.description) : null,
-      el("div", { class: "bars" }, ...["interactivity", "independence", "craft", "novelty", "security", "penalties"].map((k) =>
+      el("div", { class: "bars" }, ...["interactivity", "media", "independence", "craft", "novelty", "security", "penalties"].filter((k) => k !== "media" || k in b).map((k) =>
         el("span", { class: `sbar ${k}`, title: k }, `${k} ${b[k] ?? 0}`))),
       (s.reasons || []).length ? el("p", { class: "muted small" }, s.reasons.join(" · ")) : null,
       warnings.length ? el("p", { class: "warn small" }, "⚠ " + warnings.join(" · ")) : null,

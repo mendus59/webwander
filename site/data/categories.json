@@ -19,8 +19,8 @@
       "id": "art",
       "label": "Art & Design",
       "emoji": "🎨",
-      "keywords": ["art", "artist", "artwork", "design", "illustration", "painting", "gallery", "typography", "color", "colour", "palette", "pixel art", "generative", "creative coding", "exhibition", "sketch"],
-      "signals": {"svg_heavy": 1}
+      "keywords": ["art", "artist", "artwork", "design", "illustration", "painting", "gallery", "typography", "color", "colour", "palette", "pixel art", "generative", "creative coding", "exhibition", "sketch", "portfolio", "drawing", "drawings", "sculpture", "ceramics", "printmaking", "prints", "watercolor", "watercolour", "comics", "animation", "motion design"],
+      "signals": {"svg_heavy": 1, "many_images": 1}
     },
     {
       "id": "music",
@@ -124,7 +124,7 @@
       "id": "photo",
       "label": "Photo & Video",
       "emoji": "📷",
-      "keywords": ["photo", "photos", "photography", "photograph", "camera", "film", "video", "videos", "webcam", "live cam", "timelapse", "footage"],
+      "keywords": ["photo", "photos", "photography", "photograph", "camera", "film", "video", "videos", "webcam", "live cam", "timelapse", "footage", "photographer", "photographs", "film photography", "35mm", "short film", "documentary", "reel"],
       "signals": {"many_images": 2, "video_tag": 2}
     },
     {
