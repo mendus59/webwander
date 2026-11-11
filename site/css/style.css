@@ -239,6 +239,7 @@ button.tag.on { background: var(--accent-soft); border-color: var(--accent); col
 .score.good { background: var(--good); }
 .score.ok { background: var(--ok); }
 .score.low { background: var(--low); }
+.score.unscanned { background: var(--muted, #888); }
 .review .body { min-width: 0; }
 .title-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .title-row .title { font-weight: 600; font-size: 16px; }

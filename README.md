@@ -103,6 +103,14 @@ obviously explicit pages get the 🔞 **Mature** tag instead (unambiguous terms,
 hidden on the site unless a viewer turns on "Show mature content" in Settings, which is off by
 default and asks them to confirm they're 18 or older. Gambling/spam terms lower the score.
 
+**Sites behind bot checks** (Cloudflare, Vercel, DDoS-Guard, Sucuri, Imperva, DataDome,
+PerimeterX, AWS WAF, Akamai) are never worked around: the crawler doesn't solve challenges
+or disguise itself. Instead it scores the page from its latest Wayback Machine copy (within
+3 years), keeping the live https/certificate checks, and marks it "🛡 Cloudflare · archived
+copy" in the admin panel. With no archived copy, up to `--max-unscanned` (default 5) such
+sites per run go to Proposed with a "?" score and no tags, for review by hand; the rest are
+tried again on later runs. A plain 403 or an ordinary error page is still skipped.
+
 **Categories** come from `site/data/categories.json`: each category has keywords (weighted
 by where they appear: title > description > headings > body) plus structural signals
 (e.g. Web Audio → Music, a map library → Maps, `<marquee>` → Retro). Edit that file to add
