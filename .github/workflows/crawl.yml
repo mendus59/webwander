@@ -13,6 +13,14 @@ on:
       max_fetch:
         description: "Maximum pages to fetch"
         default: "300"
+      tags:
+        description: "Only keep sites with these tags, comma-separated category ids (empty = any kind, balanced)"
+        default: ""
+      match:
+        description: "With tags: any = OR, all = AND"
+        type: choice
+        options: [any, all]
+        default: any
 
 permissions:
   contents: write   # commits crawl bookkeeping in data/
@@ -45,17 +53,27 @@ jobs:
         working-directory: crawler
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          MIN_NEW: ${{ inputs.min_new || '10' }}
+          MAX_FETCH: ${{ inputs.max_fetch || '300' }}
+          TAGS: ${{ inputs.tags || '' }}
+          MATCH: ${{ inputs.match || 'any' }}
         run: >
           python -m wander crawl
-          --min-new "${{ inputs.min_new || '10' }}"
-          --max-fetch "${{ inputs.max_fetch || '300' }}"
+          --min-new "$MIN_NEW"
+          --max-fetch "$MAX_FETCH"
+          --tags "$TAGS"
+          --match "$MATCH"
           --max-minutes 45
       - name: Commit crawl bookkeeping
+        env:
+          TAGS: ${{ inputs.tags || '' }}
+          MATCH: ${{ inputs.match || 'any' }}
         run: |
           git config user.name "webwander-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           git diff --cached --quiet && exit 0
           VERSION=$(cd crawler && python -c "from wander import __version__; print(__version__)")
-          git commit -m "crawl: $(date -u +%F) (crawler v$VERSION, ${GITHUB_SHA::7})"
+          WHAT=""; [ -n "$TAGS" ] && WHAT=" [tags: $TAGS, match $MATCH]"
+          git commit -m "crawl: $(date -u +%F) (crawler v$VERSION, ${GITHUB_SHA::7})$WHAT"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

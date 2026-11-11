@@ -37,7 +37,33 @@ async function gh(url, opts = {}, token = getToken()) {
   return r.status === 204 ? null : r.json();
 }
 
+// Which kinds of content a manual crawl should look for. Empty = any kind, balanced.
+const crawlKind = { tags: new Set(), match: "any" };
+
+function renderCrawlKind() {
+  const { tags, match } = crawlKind;
+  $("crawl-tags").replaceChildren(...state.cats.map((c) => el("button", {
+    type: "button", class: `chip small ${tags.has(c.id) ? "on" : ""} ${c.id === "mature" ? "mature" : ""}`,
+    "aria-pressed": String(tags.has(c.id)),
+    onclick: () => { tags.has(c.id) ? tags.delete(c.id) : tags.add(c.id); renderCrawlKind(); },
+  }, `${c.emoji} ${c.label}`)));
+  for (const b of $("crawl-match").querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset.match === match));
+  $("crawl-match").hidden = tags.size < 2;
+  $("crawl-tags-clear").hidden = !tags.size;
+  const names = [...tags].map((id) => state.catById[id]?.label || id);
+  $("crawl-kind-note").textContent = !tags.size
+    ? "Unspecified: any kind of site, balanced across categories (like the daily crawl). Pick tags to look for specific content."
+    : tags.size === 1 ? `Only sites tagged ${names[0]}. Searches are steered toward it; other good finds are left for a later run.`
+      : `Only sites tagged ${names.join(match === "all" ? " AND " : " OR ")}. Searches are steered toward them; other good finds are left for a later run.`;
+}
+
+for (const b of document.querySelectorAll("#crawl-match button")) {
+  b.onclick = () => { crawlKind.match = b.dataset.match; renderCrawlKind(); };
+}
+document.getElementById("crawl-tags-clear").onclick = () => { crawlKind.tags.clear(); renderCrawlKind(); };
+
 function openCrawlDialog() {
+  renderCrawlKind();
   const has = !!getToken();
   $("token-setup").hidden = has;
   $("token-forget").hidden = !has;
@@ -54,12 +80,15 @@ async function startCrawl(e) {
   $("crawl-go").disabled = true;
   try {
     await gh(`${API}/dispatches`, { method: "POST", body: JSON.stringify({
-      ref: "main", inputs: { min_new: String($("crawl-min").value || 10), max_fetch: String($("crawl-max").value || 300) },
+      ref: "main", inputs: {
+        min_new: String($("crawl-min").value || 10), max_fetch: String($("crawl-max").value || 300),
+        tags: [...crawlKind.tags].join(","), match: crawlKind.match,
+      },
     }) }, token);
     setToken(token);
     $("crawl-token").value = "";
     $("crawl-dlg").close();
-    toast("Crawl started. New sites appear in Proposed when it finishes (usually 10-40 minutes).");
+    toast(`Crawl started${crawlKind.tags.size ? " for the chosen tags" : ""}. New sites appear in Proposed when it finishes (usually 10-40 minutes).`);
     watchCrawl(true);
   } catch (err) {
     const hint = err.status === 401 ? " The token is invalid or expired; paste a new one."

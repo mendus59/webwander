@@ -54,6 +54,11 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
   shows its live status. It needs a one-time GitHub fine-grained token (this repo only,
   Actions: read and write), which is kept in that browser's localStorage and only sent to
   api.github.com. The ↗ button next to it still opens the workflow on GitHub.
+  Its **Kind of content** picker targets that one run: leave it unspecified for the usual
+  balanced crawl, or pick tags and combine them with **Any (OR)** or **All (AND)**. The run
+  then searches for those topics and only proposes or backlogs sites with matching tags;
+  other good finds aren't marked as seen, so a later run can still pick them up
+  (`python -m wander crawl --tags music,art --match all`). The daily crawl is unchanged.
 - **Crawler** (`crawler/`): Python, run by `.github/workflows/crawl.yml` every day. It
   always proposes at least 10 never-before-suggested sites (`--min-new`). If too few clear
   the score threshold it fills up with the best of the rest and marks them "below threshold".

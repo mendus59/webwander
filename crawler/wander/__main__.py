@@ -207,6 +207,28 @@ def failed_submission_doc(sub: dict, ev) -> dict | None:
 
 # ---------------------------------------------------------------- crawl
 
+def parse_tags(raw: str | None) -> list[str]:
+    """Category ids from "art, music" (unknown ids are an error, so typos don't silently
+    turn a targeted run into an empty one)."""
+    from .tagger import load_categories
+    wanted = [t.strip().lower() for t in (raw or "").replace(";", ",").split(",") if t.strip()]
+    known = {c["id"] for c in load_categories()}
+    unknown = [t for t in wanted if t not in known]
+    if unknown:
+        raise SystemExit(f"unknown tag(s): {', '.join(unknown)} (known: {', '.join(sorted(known))})")
+    return list(dict.fromkeys(wanted))
+
+
+def tag_filter(wanted: list[str], match: str):
+    """A predicate for "has any of these tags" (OR) or "has all of them" (AND)."""
+    if not wanted:
+        return lambda doc: True
+    want = set(wanted)
+    if match == "all":
+        return lambda doc: want <= set(doc.get("categories") or [])
+    return lambda doc: bool(want & set(doc.get("categories") or []))
+
+
 def cmd_crawl(args) -> int:
     started = time.time()
     store = open_store(args)
@@ -245,18 +267,29 @@ def cmd_crawl(args) -> int:
     #    searches toward the categories the database has fewest of.
     db_counts = Counter(c for s in sites if s.get("status") in ("approved", "proposed")
                         for c in topics(s))
-    rare = rarest_categories(db_counts, 4)
-    log(f"Rarest categories, searched for first: {', '.join(rare)}")
-    candidates = gather(SEEDS_PATH, frontier, use_network=not args.offline,
-                        extra_queries=search_terms_for(rare))
+    wanted = parse_tags(args.tags)
+    wants = tag_filter(wanted, args.match)
+    if wanted:
+        # A targeted run: search for the chosen kinds of content and keep only sites that
+        # carry those tags (any of them, or all of them). Mature has no search terms.
+        joiner = " AND " if args.match == "all" else " OR "
+        log(f"Targeted run: only sites tagged {joiner.join(wanted)}")
+        steer = [c for c in wanted if c != "mature"] or rarest_categories(db_counts, 4)
+        queries = search_terms_for(steer, per_category=4 if len(steer) < 3 else 2)
+    else:
+        rare = rarest_categories(db_counts, 4)
+        log(f"Rarest categories, searched for first: {', '.join(rare)}")
+        queries = search_terms_for(rare)
+    candidates = gather(SEEDS_PATH, frontier, use_network=not args.offline, extra_queries=queries)
     log(f"{len(candidates)} candidates gathered")
     used_frontier = set()
     fetched = 0
-    pool: list[dict] = list(backlog)  # >= min_score, not rejected
-    log(f"{len(backlog)} sites waiting in the backlog")
+    pool: list[dict] = [d for d in backlog if wants(d)]  # >= min_score, not rejected
+    log(f"{len(backlog)} sites waiting in the backlog" + (f", {len(pool)} with the chosen tags" if wanted else ""))
     runners_up: list[dict] = []  # scored but under threshold, used to guarantee --min-new
     unscanned: list[dict] = []  # behind a bot check and never archived: for review by hand
-    pool_target = len(backlog) + args.max_new * args.pool_factor
+    off_topic = 0  # good pages skipped because a targeted run wanted other tags
+    pool_target = len(pool) + args.max_new * args.pool_factor
     for url, source in candidates:
         if len(pool) >= pool_target or fetched >= args.max_fetch:
             break
@@ -285,6 +318,13 @@ def cmd_crawl(args) -> int:
         domains[ev.doc["registrableDomain"]] = ev.doc  # one page per domain, even within a run
         if ev.result.reject:
             log(f"  [reject] {ev.norm}: {ev.result.reject}")
+            continue
+        if wanted and (ev.doc.get("unscanned") or not wants(ev.doc)):
+            # Not what this run is for. Forget it so a later run can still pick it up.
+            domains.pop(ev.doc["registrableDomain"], None)
+            seen.discard(key)
+            seen.discard(url_key(ev.norm))
+            off_topic += 1
             continue
         if ev.doc.get("unscanned"):
             # Behind a bot check with no archived copy: list it for review by hand, a few
@@ -343,7 +383,7 @@ def cmd_crawl(args) -> int:
     log(f"Categories this run: {run_categories}")
 
     stats = compute_stats(merge_sites(sites, new_docs + added_backlog, trimmed | deduped))
-    stats.update(lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs),
+    stats.update(lastRunTags=wanted, lastRunMatch=args.match if wanted else "", lastRun=datetime.now(timezone.utc).isoformat(timespec="seconds"), lastRunNew=len(new_docs),
                  lastRunCategories=run_categories, crawlerVersion=__version__, crawlerBuild=build())
     store.write_stats(stats)
     store.save()
@@ -351,9 +391,13 @@ def cmd_crawl(args) -> int:
     st.save_frontier(frontier)
     st.append_log({"at": stats["lastRun"], "version": __version__, "build": build(), "fetched": fetched, "new": len(new_docs),
                    "minutes": round((time.time() - started) / 60, 1), "categories": run_categories,
-                   "sites": [d["url"] for d in new_docs]})
-    log(f"Done: fetched {fetched}, proposed {len(new_docs)} new sites, frontier {len(frontier)}")
-    write_summary(f"## Daily crawl {version_string()}\n\n"
+                   "sites": [d["url"] for d in new_docs],
+                   **({"tags": wanted, "match": args.match} if wanted else {})})
+    log(f"Done: fetched {fetched}, proposed {len(new_docs)} new sites, frontier {len(frontier)}"
+        + (f", skipped {off_topic} without the chosen tags" if wanted else ""))
+    target = (f"Only sites tagged **{(' AND ' if args.match == 'all' else ' OR ').join(wanted)}** "
+              f"({off_topic} others skipped for a later run).\n\n") if wanted else ""
+    write_summary(f"## {'Targeted' if wanted else 'Daily'} crawl {version_string()}\n\n" + target +
                   f"Proposed **{len(new_docs)}** new sites (fetched {fetched}).\n\n"
                   + "".join(f"- {c}: {n}\n" for c, n in sorted(run_categories.items())))
     if len(new_docs) < args.min_new:
@@ -521,6 +565,10 @@ def main(argv=None) -> int:
     c.add_argument("--max-fetch", type=int, default=300)
     c.add_argument("--max-minutes", type=float, default=45)
     c.add_argument("--min-score", type=int, default=MIN_SCORE)
+    c.add_argument("--tags", default="",
+                   help="comma-separated category ids: this run only keeps sites with these tags")
+    c.add_argument("--match", choices=["any", "all"], default="any",
+                   help="with --tags: any = OR (default), all = AND")
     c.add_argument("--max-unscanned", type=int, default=5,
                    help="sites behind a bot check (no archived copy) to list for review per run")
     c.add_argument("--pool-factor", type=int, default=4,

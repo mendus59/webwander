@@ -275,3 +275,7 @@ dialog.preview iframe { flex: 1; border: 1px solid var(--line); border-radius: 1
 @media (max-width: 640px) { #crawl-status { display: none; } }
 .pending-head { align-items: center; gap: 10px; margin: 4px 0 8px; flex-wrap: wrap; }
 .review.queued { opacity: .75; }
+
+.crawl-kind { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 10px; }
+.crawl-kind .chips { max-height: 200px; overflow-y: auto; }
+#crawl-dlg { max-width: 640px; }
