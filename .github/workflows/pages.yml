@@ -3,7 +3,7 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ["site/**", ".github/workflows/pages.yml"]
+    paths: ["site/**", ".github/workflows/pages.yml", ".github/scripts/stamp-build.sh"]
   workflow_dispatch:
 
 permissions:
@@ -32,6 +32,9 @@ jobs:
             mkdir -p site/shots
             git archive FETCH_HEAD | tar -x -C site/shots
           fi
+      - name: Stamp build into file URLs
+        # New HTML must never run with old cached JS after a deploy.
+        run: .github/scripts/stamp-build.sh site "${GITHUB_SHA::7}"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
