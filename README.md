@@ -18,7 +18,7 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
 
 ```
  discovery sources ──► crawler (GitHub Actions, daily) ──► Firestore "proposed"
- (HN, 10 subreddits,         fetch → extract → tag → score        │
+ (HN, Marginalia,           fetch → extract → tag → score        │
   Lobsters, wiby, Kagi                                     admin.html review
   small web, links, seeds)                                       │
                                                        Firestore "approved"

@@ -80,7 +80,7 @@ def test_targeted_discovery_puts_topic_pages_first(monkeypatch):
     monkeypatch.setattr(sources, "hn_topic", lambda q: calls.append(("hn", q)) or [("https://hn-hit.example/", "hn-topic")])
     monkeypatch.setattr(sources, "marginalia", lambda q: [("https://small-web.example/", "marginalia")])
     monkeypatch.setattr(sources, "wiby_search", lambda q: [("https://old-page.example/", "wiby")])
-    for name in ("hacker_news", "reddit", "lobsters", "wiby", "kagi_small_web"):
+    for name in ("hacker_news", "lobsters", "wiby", "kagi_small_web"):
         monkeypatch.setattr(sources, name, lambda *a, **k: [("https://general.example/", "general")])
     frontier = [{"url": "https://from-music-page.example/", "parentCats": ["music"]},
                 {"url": "https://unrelated.example/", "parentCats": ["games"]},

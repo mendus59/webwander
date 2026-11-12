@@ -26,7 +26,7 @@ from .simhash import similarity
 
 BLOCKED_DOMAINS = {
     "google.com", "youtube.com", "youtu.be", "facebook.com", "instagram.com", "twitter.com", "x.com",
-    "tiktok.com", "reddit.com", "linkedin.com", "pinterest.com", "amazon.com", "ebay.com",
+    "tiktok.com", "reddit.com", "redd.it", "linkedin.com", "pinterest.com", "amazon.com", "ebay.com",
     "wikipedia.org", "wikimedia.org", "medium.com", "substack.com", "github.com", "gitlab.com",
     "apple.com", "microsoft.com", "news.ycombinator.com", "ycombinator.com", "lobste.rs",
     "nytimes.com", "theguardian.com", "bbc.co.uk", "bbc.com", "cnn.com", "washingtonpost.com",

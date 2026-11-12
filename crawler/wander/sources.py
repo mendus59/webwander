@@ -25,8 +25,6 @@ HN_QUERIES = ["interactive", "toy", "game", "generator", "simulation", "visualiz
 HN_STORY_QUERIES = ["essay", "philosophy", "manifesto", "politics", "ethics", "society", "rant",
                     "controversial", "thought experiment", "personal website", "history of",
                     "why i", "in defense of", "against", "the case for", "language", "culture"]
-REDDIT_SUBS = ["InternetIsBeautiful", "Foodforthought", "TrueReddit", "philosophy", "DepthHub",
-               "WebGames", "ObscureMedia", "Damnthatsinteresting", "indieweb", "PoliticalPhilosophy"]
 LOBSTERS_TAGS = ["show", "art", "games", "visualization", "graphics", "philosophy", "culture",
                  "law", "person", "science", "historical", "practices"]
 
@@ -164,30 +162,6 @@ def _interleave(groups: list[list]) -> list:
     return out
 
 
-def reddit(subs: list[str] | None = None, n_subs: int = 4) -> list[tuple[str, str]]:
-    """Link posts from a rotating handful of subreddits (always InternetIsBeautiful)."""
-    subs = subs or ["InternetIsBeautiful"] + random.sample(REDDIT_SUBS[1:], k=min(n_subs - 1, len(REDDIT_SUBS) - 1))
-    out = []
-    for sub in subs:
-        out += _reddit_sub(sub)
-    return out
-
-
-def _reddit_sub(sub: str) -> list[tuple[str, str]]:
-    out = []
-    for listing in ("top.json?t=month&limit=100", "new.json?limit=100"):
-        try:
-            r = requests.get(f"https://www.reddit.com/r/{sub}/{listing}", headers=HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            for child in r.json()["data"]["children"]:
-                d = child["data"]
-                if not d.get("is_self") and d.get("url") and d.get("score", 0) >= 10:
-                    out.append((d["url"], f"reddit:{sub}"))
-        except Exception as e:  # noqa: BLE001
-            _log(f"reddit {sub} {listing} failed: {e}")
-    return out
-
-
 def lobsters() -> list[tuple[str, str]]:
     out = []
     for tag in LOBSTERS_TAGS:
@@ -259,7 +233,7 @@ def gather(seed_path: Path, frontier_items: list[dict], use_network: bool = True
         return lead + [c for c in rest if c[0] not in lead_urls]
     groups = [seeds(seed_path), frontier(frontier_items)]
     if use_network:
-        groups += [hacker_news(extra_queries=extra_queries), reddit(), lobsters(), wiby(), kagi_small_web()]
+        groups += [hacker_news(extra_queries=extra_queries), lobsters(), wiby(), kagi_small_web()]
     for g in groups:
         random.shuffle(g)
     # Interleave so no single source dominates a run.
