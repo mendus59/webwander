@@ -219,6 +219,12 @@ def parse_tags(raw: str | None) -> list[str]:
     return list(dict.fromkeys(wanted))
 
 
+def topic_keywords(wanted: list[str]) -> list[str]:
+    from .tagger import load_categories
+    by_id = {c["id"]: c for c in load_categories()}
+    return [k for cid in wanted for k in (by_id[cid].get("search") or []) + by_id[cid]["keywords"]]
+
+
 def tag_filter(wanted: list[str], match: str):
     """A predicate for "has any of these tags" (OR) or "has all of them" (AND)."""
     if not wanted:
@@ -257,7 +263,8 @@ def cmd_crawl(args) -> int:
                 continue
             if registrable_domain(link) in BLOCKED_DOMAINS:
                 continue
-            frontier.append({"url": link, "parentScore": ev.result.score, "from": ev.norm})
+            frontier.append({"url": link, "parentScore": ev.result.score, "from": ev.norm,
+                             "parentCats": list(ev.doc.get("categories") or [])})
             frontier_urls.add(link)
 
     # 1. User/admin submissions always get scored and put in the review queue.
@@ -274,13 +281,16 @@ def cmd_crawl(args) -> int:
         # carry those tags (any of them, or all of them). Mature has no search terms.
         joiner = " AND " if args.match == "all" else " OR "
         log(f"Targeted run: only sites tagged {joiner.join(wanted)}")
-        steer = [c for c in wanted if c != "mature"] or rarest_categories(db_counts, 4)
-        queries = search_terms_for(steer, per_category=4 if len(steer) < 3 else 2)
+        # Up to ~24 topic searches, spread over the chosen tags.
+        queries = search_terms_for(wanted, per_category=max(3, 24 // len(wanted)))
+        keywords = topic_keywords(wanted)
+        log(f"Topic searches: {', '.join(queries)}")
     else:
         rare = rarest_categories(db_counts, 4)
         log(f"Rarest categories, searched for first: {', '.join(rare)}")
-        queries = search_terms_for(rare)
-    candidates = gather(SEEDS_PATH, frontier, use_network=not args.offline, extra_queries=queries)
+        queries, keywords = search_terms_for(rare), None
+    candidates = gather(SEEDS_PATH, frontier, use_network=not args.offline, extra_queries=queries,
+                        wanted=wanted or None, keywords=keywords)
     log(f"{len(candidates)} candidates gathered")
     used_frontier = set()
     fetched = 0

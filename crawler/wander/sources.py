@@ -50,12 +50,13 @@ def rarest_categories(counts, n: int = 4) -> list[str]:
 
 
 def search_terms_for(category_ids: list[str], per_category: int = 2) -> list[str]:
-    """A few keywords per category, used as extra discovery searches."""
+    """A few keywords per category, used as extra discovery searches. A category can list
+    its own "search" terms (Mature has no tagging keywords, but can still be searched for)."""
     from .tagger import load_categories
     by_id = {c["id"]: c for c in load_categories()}
     terms = []
     for cid in category_ids:
-        kws = by_id[cid]["keywords"]
+        kws = by_id[cid].get("search") or by_id[cid]["keywords"]
         if kws:
             terms += [kws[0]] + random.sample(kws[1:], k=min(per_category - 1, len(kws) - 1))
     return terms
@@ -89,6 +90,77 @@ def hacker_news(limit_per_query: int = 30, extra_queries: list[str] | None = Non
             out += [(h["url"], "hn") for h in r.json().get("hits", []) if h.get("url")]
         except Exception as e:  # noqa: BLE001
             _log(f"hn story '{q}' failed: {e}")
+    return out
+
+
+# ---- topic searches, used by tag-targeted runs to find many pages about the chosen tags
+
+def hn_topic(queries: list[str], per_query: int = 30) -> list[tuple[str, str]]:
+    """Hacker News stories and Show HNs about each topic (lower bar than the general feed)."""
+    out = []
+    for q in queries:
+        for tags, points in (("show_hn", 5), ("story", 20)):
+            try:
+                r = requests.get("https://hn.algolia.com/api/v1/search",
+                                 params={"query": q, "tags": tags, "numericFilters": f"points>{points}",
+                                         "hitsPerPage": per_query}, headers=HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                out += [(h["url"], "hn-topic") for h in r.json().get("hits", []) if h.get("url")]
+            except Exception as e:  # noqa: BLE001
+                _log(f"hn topic '{q}' failed: {e}")
+    return out
+
+
+def marginalia(queries: list[str], per_query: int = 40) -> list[tuple[str, str]]:
+    """Marginalia Search: a search engine for the small, non-commercial web (public API key)."""
+    out = []
+    for q in queries:
+        try:
+            r = requests.get(f"https://api.marginalia.nu/public/search/{requests.utils.quote(q)}",
+                             params={"count": per_query}, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            out += [(h["url"], "marginalia") for h in r.json().get("results", []) if h.get("url")]
+        except Exception as e:  # noqa: BLE001
+            _log(f"marginalia '{q}' failed: {e}")
+    return out
+
+
+def wiby_search(queries: list[str]) -> list[tuple[str, str]]:
+    """Wiby's search over its hand-curated index of simple, old-school personal pages."""
+    out = []
+    for q in queries:
+        try:
+            r = requests.get("https://wiby.me/json/", params={"q": q}, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            out += [(h["URL"], "wiby") for h in r.json() if isinstance(h, dict) and h.get("URL")]
+        except Exception as e:  # noqa: BLE001
+            _log(f"wiby search '{q}' failed: {e}")
+    return out
+
+
+def topic_search(queries: list[str]) -> list[tuple[str, str]]:
+    """Pages about the given topics from every search source, interleaved."""
+    return _interleave([hn_topic(queries), marginalia(queries), wiby_search(queries)])
+
+
+def keyword_rank(items: list[tuple[str, str]], keywords: list[str]) -> list[tuple[str, str]]:
+    """Put links whose URL mentions one of the keywords first (keeps order otherwise)."""
+    words = [re.sub(r"[^a-z0-9]+", "", k.lower()) for k in keywords]
+    words = [w for w in words if len(w) >= 3]
+
+    def hits(url: str) -> int:
+        u = re.sub(r"[^a-z0-9]+", "", url.lower())
+        return sum(w in u for w in words)
+    return sorted(items, key=lambda it: -hits(it[0]))
+
+
+def _interleave(groups: list[list]) -> list:
+    out, i = [], 0
+    while any(i < len(g) for g in groups):
+        for g in groups:
+            if i < len(g):
+                out.append(g[i])
+        i += 1
     return out
 
 
@@ -161,8 +233,30 @@ def frontier(items: list[dict], n: int = 150) -> list[tuple[str, str]]:
     return [(i["url"], "link") for i in items[:n]]
 
 
+def frontier_for(items: list[dict], wanted: list[str], keywords: list[str], n: int = 600) -> list[tuple[str, str]]:
+    """Frontier links for a targeted run: links found on pages that had the chosen tags
+    first, then links whose URL mentions a topic keyword, then the rest."""
+    def rank(i: dict) -> tuple:
+        return (-len(set(i.get("parentCats") or []) & set(wanted)),)
+    ordered = sorted(items, key=rank)
+    tagged = [(i["url"], "link") for i in ordered if set(i.get("parentCats") or []) & set(wanted)]
+    rest = keyword_rank([(i["url"], "link") for i in ordered if not set(i.get("parentCats") or []) & set(wanted)], keywords)
+    return (tagged + rest)[:n]
+
+
 def gather(seed_path: Path, frontier_items: list[dict], use_network: bool = True,
-           extra_queries: list[str] | None = None) -> list[tuple[str, str]]:
+           extra_queries: list[str] | None = None, wanted: list[str] | None = None,
+           keywords: list[str] | None = None) -> list[tuple[str, str]]:
+    if wanted:
+        # Targeted run: topic searches and on-topic frontier links come first, then the
+        # usual sources (whose pages are kept only if they turn out to match).
+        first = [frontier_for(frontier_items, wanted, keywords or extra_queries or [])]
+        if use_network:
+            first.insert(0, topic_search(extra_queries or []))
+        lead = _interleave(first)
+        lead_urls = {u for u, _ in lead}
+        rest = gather(seed_path, [], use_network, extra_queries=None)
+        return lead + [c for c in rest if c[0] not in lead_urls]
     groups = [seeds(seed_path), frontier(frontier_items)]
     if use_network:
         groups += [hacker_news(extra_queries=extra_queries), reddit(), lobsters(), wiby(), kagi_small_web()]

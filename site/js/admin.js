@@ -70,6 +70,8 @@ const crawlKind = { tags: new Set(), match: "any" };
 function renderCrawlKind() {
   const { tags, match } = crawlKind;
   renderTagPicker("crawl", crawlKind, renderCrawlKind);
+  // Targeted runs keep only matching pages, so they need to look at more of them.
+  if (!$("crawl-max").dataset.touched) $("crawl-max").value = tags.size ? TARGETED_FETCH : DEFAULT_FETCH;
   const names = [...tags].map(tagLabel);
   $("crawl-kind-note").textContent = !tags.size
     ? "Unspecified: any kind of site, balanced across categories (like the daily crawl). Pick tags to look for specific content."
@@ -78,6 +80,8 @@ function renderCrawlKind() {
 }
 
 wireTagPicker("crawl", crawlKind, renderCrawlKind);
+const DEFAULT_FETCH = 300, TARGETED_FETCH = 900;
+$("crawl-max").addEventListener("input", (e) => { e.currentTarget.dataset.touched = "1"; });
 
 // The list filter: the same picker, applied to whichever tab is open.
 const listFilter = { tags: new Set(), match: "any" };

@@ -59,6 +59,9 @@ must all clear the proposal threshold, and an ad-heavy listicle must not.
   then searches for those topics and only proposes or backlogs sites with matching tags;
   other good finds aren't marked as seen, so a later run can still pick them up
   (`python -m wander crawl --tags music,art --match all`). The daily crawl is unchanged.
+  Targeted runs search wider: up to ~24 topic searches across Hacker News, Marginalia
+  (small-web search) and Wiby, then frontier links found on pages that had the chosen
+  tags, before the usual sources; the dialog raises "fetch up to" to 900 pages for them.
 - **Filter by tag** (above the list, on every tab) uses the same chips and Any (OR) / All
   (AND) switch, plus "No tags" for unscanned sites. "Approve all scoring ≥" and the backlog's
   "Propose a batch" only act on the sites the filter matches.
