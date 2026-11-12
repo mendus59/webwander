@@ -5,77 +5,82 @@
       "id": "games",
       "label": "Games",
       "emoji": "🎮",
-      "keywords": ["game", "games", "play", "player", "level", "levels", "score", "high score", "highscore", "arcade", "puzzle game", "platformer", "multiplayer", "lives", "game over", "itch.io"],
-      "signals": {"canvas": 1, "keyboard_controls": 2}
+      "keywords": ["game", "games", "high score", "highscore", "arcade", "puzzle game", "platformer", "multiplayer", "game over", "itch.io"],
+      "signals": {"canvas": 1, "keyboard_controls": 2},
+      "strict": true
     },
     {
       "id": "toys",
       "label": "Interactive Toys",
       "emoji": "🪀",
-      "keywords": ["toy", "click", "drag", "draw", "interactive", "move your mouse", "tap", "fidget", "satisfying", "playground", "sandbox", "try it"],
-      "signals": {"canvas": 2, "webgl": 1, "pointer_handlers": 2}
+      "keywords": ["toy", "interactive", "move your mouse", "fidget", "satisfying", "playground", "sandbox"],
+      "signals": {"canvas": 2, "webgl": 1, "pointer_handlers": 2},
+      "strict": true
     },
     {
       "id": "art",
       "label": "Art & Design",
       "emoji": "🎨",
-      "keywords": ["art", "artist", "artwork", "design", "illustration", "painting", "gallery", "typography", "color", "colour", "palette", "pixel art", "generative", "creative coding", "exhibition", "sketch", "portfolio", "drawing", "drawings", "sculpture", "ceramics", "printmaking", "prints", "watercolor", "watercolour", "comics", "animation", "motion design"],
+      "keywords": ["art", "artist", "artwork", "illustration", "painting", "gallery", "typography", "palette", "pixel art", "generative", "creative coding", "exhibition", "sketch", "portfolio", "drawing", "drawings", "sculpture", "ceramics", "printmaking", "watercolor", "watercolour", "comics", "animation", "motion design"],
       "signals": {"svg_heavy": 1, "many_images": 1}
     },
     {
       "id": "music",
       "label": "Music & Sound",
       "emoji": "🎵",
-      "keywords": ["music", "sound", "audio", "synth", "synthesizer", "beat", "drum", "song", "songs", "piano", "melody", "sequencer", "noise", "ambient", "radio", "chord", "instrument"],
+      "keywords": ["music", "audio", "synth", "synthesizer", "drum", "song", "songs", "piano", "melody", "sequencer", "ambient", "chord", "instrument"],
       "signals": {"web_audio": 3, "audio_tag": 2}
     },
     {
       "id": "science",
       "label": "Science & Space",
       "emoji": "🔭",
-      "keywords": ["science", "physics", "chemistry", "biology", "space", "planet", "planets", "universe", "galaxy", "star", "stars", "nasa", "atom", "molecule", "experiment", "orbit", "telescope", "solar system", "quantum", "cell"],
+      "keywords": ["science", "physics", "chemistry", "biology", "planet", "planets", "universe", "galaxy", "nasa", "atom", "molecule", "orbit", "telescope", "solar system", "quantum"],
       "signals": {}
     },
     {
       "id": "maps",
       "label": "Maps & Places",
       "emoji": "🗺️",
-      "keywords": ["map", "maps", "geography", "country", "countries", "city", "cities", "world", "globe", "travel", "explore", "street", "atlas", "satellite", "coordinates", "earth"],
-      "signals": {"map_library": 3}
+      "keywords": ["map", "maps", "geography", "globe", "atlas", "satellite", "coordinates"],
+      "signals": {"map_library": 3},
+      "strict": true
     },
     {
       "id": "history",
       "label": "History & Archives",
       "emoji": "🏛️",
-      "keywords": ["history", "historical", "archive", "archives", "ancient", "museum", "century", "timeline", "vintage", "old", "war", "empire", "artifact", "collection"],
+      "keywords": ["history", "historical", "archive", "archives", "ancient", "museum", "timeline", "vintage", "empire", "artifact"],
       "signals": {}
     },
     {
       "id": "dataviz",
       "label": "Data & Visualization",
       "emoji": "📊",
-      "keywords": ["data", "visualization", "visualisation", "chart", "charts", "graph", "statistics", "infographic", "dataset", "scale", "compare", "population", "visualize"],
-      "signals": {"chart_library": 3, "svg_heavy": 1}
+      "keywords": ["visualization", "visualisation", "chart", "charts", "statistics", "infographic", "dataset", "visualize"],
+      "signals": {"chart_library": 3, "svg_heavy": 1},
+      "strict": true
     },
     {
       "id": "generators",
       "label": "Generators & Tools",
       "emoji": "🛠️",
-      "keywords": ["generator", "generate", "random", "tool", "maker", "create your own", "converter", "calculator", "make your own", "randomizer", "builder", "editor"],
-      "signals": {"forms": 1}
+      "keywords": ["generator", "create your own", "converter", "calculator", "make your own", "randomizer"],
+      "signals": {"forms": 1},
+      "strict": true
     },
     {
       "id": "weird",
       "label": "Weird & Absurd",
       "emoji": "🤪",
-      "keywords": ["weird", "strange", "absurd", "pointless", "useless", "bizarre", "silly", "nonsense", "odd", "surreal", "mystery", "infinite", "endless", "why", "cursed"],
+      "keywords": ["weird", "strange", "absurd", "pointless", "useless", "bizarre", "silly", "nonsense", "surreal", "cursed"],
       "signals": {}
     },
     {
       "id": "learning",
       "label": "Learn Something",
       "emoji": "📚",
-      "keywords": ["learn", "learning", "explained", "explainer", "how", "tutorial", "guide", "understand", "lesson", "course", "introduction", "explorable", "interactive essay", "why does"],
+      "keywords": ["learn", "explained", "explainer", "tutorial", "lesson", "course", "introduction", "explorable", "interactive essay", "why does"],
       "signals": {}
     },
     {
@@ -89,77 +94,78 @@
       "id": "stories",
       "label": "Writing & Stories",
       "emoji": "✍️",
-      "keywords": ["story", "stories", "fiction", "poem", "poems", "poetry", "writing", "essay", "essays", "novel", "tale", "zine", "comic", "comics", "chapter", "words"],
+      "keywords": ["stories", "fiction", "poem", "poems", "poetry", "essay", "essays", "novel", "tale", "zine", "comic", "comics"],
       "signals": {"long_text": 2}
     },
     {
       "id": "nature",
       "label": "Nature & Animals",
       "emoji": "🌿",
-      "keywords": ["nature", "animal", "animals", "bird", "birds", "plant", "plants", "tree", "trees", "ocean", "sea", "forest", "wildlife", "fish", "insect", "bug", "bugs", "cat", "cats", "dog", "dogs", "weather"],
+      "keywords": ["nature", "animal", "animals", "bird", "birds", "plant", "plants", "tree", "trees", "ocean", "sea", "forest", "wildlife", "fish", "insect"],
       "signals": {}
     },
     {
       "id": "food",
       "label": "Food & Drink",
       "emoji": "🍜",
-      "keywords": ["food", "recipe", "recipes", "cooking", "cook", "kitchen", "coffee", "tea", "beer", "wine", "bake", "baking", "flavor", "flavour", "cuisine", "eat"],
+      "keywords": ["food", "recipe", "recipes", "cooking", "cook", "kitchen", "coffee", "beer", "wine", "bake", "baking", "flavor", "flavour", "cuisine"],
       "signals": {}
     },
     {
       "id": "math",
       "label": "Math & Puzzles",
       "emoji": "🧩",
-      "keywords": ["math", "maths", "mathematics", "puzzle", "puzzles", "riddle", "logic", "geometry", "fractal", "fractals", "number", "numbers", "prime", "equation", "algorithm", "sudoku", "crossword"],
+      "keywords": ["math", "maths", "mathematics", "puzzle", "puzzles", "riddle", "geometry", "fractal", "fractals", "prime", "equation", "algorithm", "sudoku", "crossword"],
       "signals": {}
     },
     {
       "id": "simulation",
       "label": "Simulations",
       "emoji": "🧪",
-      "keywords": ["simulation", "simulator", "simulate", "model", "emergent", "cellular automata", "particles", "evolution", "ecosystem", "life", "physics engine", "sandbox"],
-      "signals": {"canvas": 1, "webgl": 2}
+      "keywords": ["simulation", "simulator", "simulate", "emergent", "cellular automata", "particles", "ecosystem", "physics engine"],
+      "signals": {"canvas": 1, "webgl": 2},
+      "strict": true
     },
     {
       "id": "photo",
       "label": "Photo & Video",
       "emoji": "📷",
-      "keywords": ["photo", "photos", "photography", "photograph", "camera", "film", "video", "videos", "webcam", "live cam", "timelapse", "footage", "photographer", "photographs", "film photography", "35mm", "short film", "documentary", "reel"],
+      "keywords": ["photo", "photos", "photography", "photograph", "camera", "webcam", "live cam", "timelapse", "footage", "photographer", "photographs", "film photography", "35mm", "short film", "documentary"],
       "signals": {"many_images": 2, "video_tag": 2}
     },
     {
       "id": "programming",
       "label": "Programming",
       "emoji": "💻",
-      "keywords": ["programming", "code", "coding", "coder", "developer", "developers", "javascript", "typescript", "python", "rust", "golang", "haskell", "lisp", "c++", "compiler", "interpreter", "algorithm", "algorithms", "api", "open source", "github", "source code", "syntax", "debugger", "terminal", "command line", "shell", "regex", "css", "html", "webassembly", "wasm", "sql", "git", "repl", "esolang", "demoscene", "shader", "shaders", "assembly", "emulator", "hacking", "software", "bash"],
+      "keywords": ["programming", "coding", "coder", "developer", "developers", "javascript", "typescript", "python", "rust", "golang", "haskell", "lisp", "c++", "compiler", "interpreter", "algorithm", "algorithms", "open source", "github", "source code", "syntax", "debugger", "terminal", "command line", "regex", "webassembly", "wasm", "sql", "repl", "esolang", "demoscene", "shader", "shaders", "emulator", "hacking", "software", "bash"],
       "signals": {"code_blocks": 3, "code_highlighter": 2, "code_editor": 3}
     },
     {
       "id": "philosophy",
       "label": "Philosophy & Ideas",
       "emoji": "🤔",
-      "keywords": ["philosophy", "philosopher", "philosophers", "philosophical", "ethics", "ethical", "metaphysics", "existential", "existentialism", "consciousness", "free will", "meaning of life", "stoic", "stoicism", "epistemology", "morality", "moral", "thought experiment", "essay", "essays", "ideas", "nietzsche", "socrates", "plato", "kant", "camus", "zen", "buddhism", "taoism", "absurdism", "nihilism", "utopia", "dystopia", "the human condition", "big questions"],
+      "keywords": ["philosophy", "philosopher", "philosophers", "philosophical", "ethics", "ethical", "metaphysics", "existential", "existentialism", "consciousness", "free will", "meaning of life", "stoic", "stoicism", "epistemology", "morality", "thought experiment", "nietzsche", "socrates", "plato", "kant", "camus", "zen", "buddhism", "taoism", "absurdism", "nihilism", "utopia", "dystopia", "the human condition", "big questions"],
       "signals": {"long_text": 1}
     },
     {
       "id": "politics",
       "label": "Politics & Society",
       "emoji": "🏛️",
-      "keywords": ["politics", "political", "democracy", "government", "election", "elections", "policy", "society", "social justice", "activism", "activist", "protest", "human rights", "civil rights", "capitalism", "socialism", "communism", "anarchism", "anarchist", "libertarian", "ideology", "propaganda", "censorship", "surveillance", "privacy", "labor", "labour", "inequality", "economics", "revolution", "class struggle", "colonialism", "freedom of speech", "power structures"],
+      "keywords": ["politics", "political", "democracy", "government", "election", "elections", "social justice", "activism", "activist", "protest", "human rights", "civil rights", "capitalism", "socialism", "communism", "anarchism", "anarchist", "libertarian", "ideology", "propaganda", "censorship", "surveillance", "inequality", "revolution", "class struggle", "colonialism", "freedom of speech", "power structures"],
       "signals": {}
     },
     {
       "id": "provocative",
       "label": "Provocative & Edgy",
       "emoji": "🌶️",
-      "keywords": ["provocative", "controversial", "taboo", "forbidden", "radical", "manifesto", "heresy", "heretic", "heretical", "contrarian", "unpopular opinion", "rant", "uncomfortable", "subversive", "transgressive", "banned", "dangerous ideas", "conspiracy", "counterculture", "underground", "shocking", "edgy", "challenging", "seductive", "sensual", "temptation", "desire", "confession", "confessions", "obsession", "outrageous", "irreverent", "dark humor", "dark humour", "polemic"],
+      "keywords": ["provocative", "controversial", "taboo", "forbidden", "radical", "manifesto", "heresy", "heretic", "heretical", "contrarian", "unpopular opinion", "rant", "uncomfortable", "subversive", "transgressive", "banned", "conspiracy", "counterculture", "shocking", "edgy", "seductive", "sensual", "obsession", "outrageous", "irreverent", "dark humor", "dark humour", "polemic"],
       "signals": {}
     },
     {
       "id": "world",
       "label": "Around the World",
       "emoji": "🌍",
-      "keywords": ["around the world", "global", "international", "translation", "translated", "language", "languages", "culture", "cultures", "folklore", "travel", "abroad", "diaspora", "dialect", "dialects", "local customs"],
+      "keywords": ["around the world", "translation", "translated", "languages", "cultures", "folklore", "abroad", "diaspora", "dialect", "dialects", "local customs"],
       "signals": {"non_english": 5}
     },
     {
@@ -175,7 +181,7 @@
       "id": "indieweb",
       "label": "Personal Web",
       "emoji": "🏡",
-      "keywords": ["homepage", "my site", "personal", "blog", "webring", "about me", "garden", "digital garden", "now page", "hobby", "handmade", "small web", "indie web", "indieweb"],
+      "keywords": ["homepage", "my site", "webring", "about me", "digital garden", "now page", "handmade", "small web", "indie web", "indieweb"],
       "signals": {"personal_host": 3}
     }
   ]

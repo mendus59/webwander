@@ -36,6 +36,10 @@ BLOCKED_DOMAINS = {
     "producthunt.com", "apps.apple.com", "play.google.com", "chrome.google.com", "docs.google.com",
     "drive.google.com", "dropbox.com", "notion.so", "notion.site", "archive.org", "web.archive.org",
     "imgur.com", "giphy.com", "spotify.com", "soundcloud.com", "twitch.tv", "vimeo.com",
+    "newyorker.com", "spectator.com", "spectator.co.uk", "nature.com", "sciencedaily.com",
+    "politico.com", "politico.eu", "observer.co.uk", "psypost.org", "news.mit.edu", "zenodo.org",
+    "doi.org", "dl.acm.org", "arxiv.org", "tildes.net", "lemmy.world", "programming.dev",
+    "slashdot.org", "kbin.social", "quora.com", "fandom.com", "scientificamerican.com",
     "bit.ly", "goo.gl", "tinyurl.com", "mastodon.social", "bsky.app", "threads.net", "wiby.me",
 }
 
@@ -66,6 +70,14 @@ class Result:
 def media_rich_page(f: dict) -> bool:
     """A page whose content is mostly pictures, films or music."""
     return f["n_media_images"] >= 6 or (f["n_video"] + f["n_video_embeds"] + f["n_audio"] + f["n_audio_embeds"]) >= 1
+
+
+def stands_out(f: dict, inter: int, media: int) -> bool:
+    return bool(
+        inter >= 5 or media >= 3 or f["word_count"] >= 800 or f["delight_hits"] >= 2
+        or f.get("n_code_blocks", 0) >= 3 or f["personal_host"]
+        or (f.get("is_root") and f["n_internal_links"] >= 8)
+    )
 
 
 def reject_reason(f: dict) -> str | None:
@@ -150,6 +162,8 @@ def score(f: dict, simhash: int, corpus: Corpus, categories: list[str] | None = 
 
     # --- craft
     craft = 0
+    if f.get("is_root"):
+        craft += 3; reasons.append("a whole site to explore")
     craft += 2 if f["title"] else 0
     craft += 2 if f["description"] else 0
     craft += 1 if f["has_icon"] else 0
@@ -205,6 +219,24 @@ def score(f: dict, simhash: int, corpus: Corpus, categories: list[str] | None = 
     # penalised: long-form explainers and essays are exactly what we want.
     if f["path_depth"] > 6:
         pen -= f["path_depth"] - 6
+    # WebWander suggests places to wander into. A single forum thread, news story or
+    # database record is one item inside a bigger site, so it ranks well below a site.
+    if f.get("forum_thread"):
+        pen -= 30; reasons.append("a forum/discussion thread, not a site")
+    elif f.get("news_article"):
+        pen -= 30; reasons.append("a news article")
+    elif f.get("record_page"):
+        pen -= 25; reasons.append("a database/paper record page")
+    elif f.get("dated_post"):
+        pen -= 12; reasons.append("a single dated post")
+    elif f.get("wiki_page"):
+        pen -= 10; reasons.append("a single wiki page")
+    elif f.get("article_meta") and f["word_count"] < 800:
+        pen -= 4
+    # Every suggestion should have *something* worth discovering: it does something,
+    # shows something, says a lot, is playful, or is a whole site to explore.
+    if not stands_out(f, inter, media):
+        pen -= 12; reasons.append("nothing in particular stands out")
 
     if categories is not None and not [c for c in categories if c != "mature"]:
         pen -= 5; reasons.append("no clear theme")

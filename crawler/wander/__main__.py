@@ -16,6 +16,7 @@ import sys
 import time
 from collections import Counter
 from datetime import datetime, timezone
+from urllib.parse import urlsplit
 from pathlib import Path
 
 from . import ROOT, __version__, build, version_string
@@ -313,7 +314,8 @@ def cmd_crawl(args) -> int:
             used_frontier.add(url)
         key = url_key(norm)
         dom = registrable_domain(norm)
-        if key in seen or site_id(norm) in known_ids or dom in BLOCKED_DOMAINS or dom in domains:
+        host = norm.split("/")[2].removeprefix("www.")
+        if key in seen or site_id(norm) in known_ids or dom in BLOCKED_DOMAINS or host in BLOCKED_DOMAINS or dom in domains:
             continue  # seen before, or its domain is already in the database
         seen.add(key)
         fetched += 1
@@ -338,7 +340,11 @@ def cmd_crawl(args) -> int:
             continue
         if ev.doc.get("unscanned"):
             # Behind a bot check with no archived copy: list it for review by hand, a few
-            # per run. The rest are tried again on a later run.
+            # per run (only front pages: an unscanned article or thread isn't worth a look).
+            # The rest are tried again on a later run.
+            if urlsplit(ev.norm).path.strip("/") or urlsplit(ev.norm).query:
+                log(f"  [unscanned, skipped] {ev.norm}: not a front page")
+                continue
             if len(unscanned) < args.max_unscanned:
                 unscanned.append(dict(ev.doc))
                 known_ids.add(ev.doc["id"])

@@ -49,7 +49,10 @@ EXPLICIT_WEAK = ["nude", "nudes", "nudity", "naked", "erotic", "explicit", "sexy
 SPAM_WORDS = ["casino", "betting", "gambling", "slots", "viagra", "cialis", "cbd oil", "payday loan",
               "crypto presale", "airdrop", "forex signals", "binary options", "essay writing service",
               "buy followers", "seo services", "backlinks", "replica watches", "weight loss pills",
-              "make money online", "get rich quick", "work from home", "loan approval", "bonus code"]
+              "make money online", "get rich quick", "work from home", "loan approval", "bonus code",
+              # SEO pages for AI image/chat apps, mostly made to rank for adult searches
+              "ai image generator", "ai art generator", "ai porn", "nsfw ai", "ai girlfriend",
+              "undress ai", "porn generator", "ai sexting", "deepnude", "ai nude"]
 MINER_RE = re.compile(r"coinhive|coin-hive|cryptonight|crypto-loot|cryptoloot|webminer|jsecoin|coinimp|minero\.cc|webmine\.pro")
 OBFUSCATED_JS_RE = re.compile(r"eval\(\s*(unescape|atob|function\(p,a,c,k,e)|document\.write\(\s*unescape")
 STOPWORDS = set("""the a an and or of to in is it for on with as at by be this that are was from you your we our
@@ -170,6 +173,36 @@ def media_counts(soup) -> dict:
         "n_video_embeds": sum(1 for u in frames if VIDEO_EMBED_RE.search(u.lower())),
         "n_audio_embeds": sum(1 for u in frames if AUDIO_EMBED_RE.search(u)),
         "alt_text": " ".join(alts)[:4000],
+    }
+
+
+# Kinds of page that are one item inside a bigger site rather than a site to wander into.
+FORUM_URL_RE = re.compile(r"viewtopic|showthread|/threads?/|/topic/\d|/topic/[^/]+-\d+|/t/[^/]+/\d+|"
+                          r"/post/\d|/posts/\d|/comments/|[?&](t|topic|thread)=\d", re.I)
+FORUM_ENGINE_RE = re.compile(r"phpbb|xenforo|vbulletin|content=\"discourse|discourse-cdn|ipsconnect|invisioncommunity|"
+                             r"mybb|smf_scripturl|lemmy-ui|kbin", re.I)
+DATED_URL_RE = re.compile(r"/(19|20)\d\d/(0?[1-9]|1[0-2])(/|-)")
+RECORD_URL_RE = re.compile(r"/doi/|/records/\d|/abs/\d|/article/pii/|/handle/\d", re.I)
+WIKI_URL_RE = re.compile(r"/wiki/[^/]+", re.I)
+
+
+def page_kind(url: str, soup, raw_lower: str) -> dict:
+    """What sort of page this is: a site's front page, an article, a forum thread..."""
+    parts = urlsplit(url)
+    path = parts.path.strip("/")
+    og_type = soup.find("meta", property="og:type")
+    og_type = (og_type.get("content", "") if og_type else "").lower()
+    published = bool(soup.find("meta", property="article:published_time"))
+    news_ld = bool(re.search(r'"@type"\s*:\s*"(newsarticle|reportagenewsarticle|analysisnewsarticle)"', raw_lower))
+    return {
+        "is_root": not path and not parts.query,
+        "forum_thread": bool(path and (FORUM_URL_RE.search(url) or
+                                       (FORUM_ENGINE_RE.search(raw_lower[:30000]) and re.search(r"\d{3,}", path)))),
+        "news_article": news_ld or (og_type == "article" and published and bool(DATED_URL_RE.search(url) or "/news/" in url or "/article" in url)),
+        "dated_post": bool(DATED_URL_RE.search(url)),
+        "article_meta": og_type == "article" or published,
+        "record_page": bool(RECORD_URL_RE.search(url)),
+        "wiki_page": bool(WIKI_URL_RE.search(parts.path)),
     }
 
 
@@ -307,5 +340,6 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
         "frameable": frameable(headers, url),
         "https": url.startswith("https://"),
         "path_depth": len([p for p in urlsplit(url).path.split("/") if p]),
+        **page_kind(url, full, raw_lower),
     }
     return features

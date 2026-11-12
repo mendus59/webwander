@@ -74,6 +74,7 @@ def category_scores(f: dict) -> dict[str, float]:
         if cat["id"] == MATURE_ID:
             continue  # decided by is_mature(), not keywords
         s = 0.0
+        prominent = False  # a keyword in the title, description or headings
         for pat in cat["_patterns"]:
             for field, text in fields.items():
                 if not text:
@@ -83,9 +84,16 @@ def category_scores(f: dict) -> dict[str, float]:
                     s += n * WEIGHTS["body"] * body_norm
                 elif pat.search(text):
                     s += WEIGHTS[field]
+                    prominent = True
+        has_signal = False
         for sig, w in cat.get("signals", {}).items():
             if signals.get(sig):
                 s += w
+                has_signal = True
+        # "Strict" categories (games, toys, tools...) describe what a page *does*, so
+        # passing mentions in an article's text aren't enough.
+        if cat.get("strict") and not (has_signal or prominent):
+            s = min(s, THRESHOLD - 0.5)
         scores[cat["id"]] = round(s, 2)
     return scores
 
@@ -98,7 +106,7 @@ def tag(f: dict) -> tuple[list[str], dict[str, float]]:
     scores = category_scores(f)
     ranked = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
     tags = [cid for cid, s in ranked if s >= THRESHOLD][:MAX_TAGS]
-    if not tags and ranked and ranked[0][1] > 0:
+    if not tags and ranked and ranked[0][1] >= THRESHOLD / 2:
         tags = [ranked[0][0]]
     if is_mature(f):
         tags.append(MATURE_ID)  # on top of the normal tags, never instead of them
