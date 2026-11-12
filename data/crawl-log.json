@@ -636,5 +636,61 @@
    "https://sublimeinternet.substack.com/",
    "https://dl.acm.org/doi/10.1145/857076.857077"
   ]
+ },
+ {
+  "at": "2026-11-12T03:31:02+00:00",
+  "version": "1.17.1",
+  "build": "8f2bcb8",
+  "fetched": 900,
+  "new": 25,
+  "minutes": 33.6,
+  "categories": {
+   "stories": 6,
+   "history": 2,
+   "philosophy": 1,
+   "art": 11,
+   "programming": 2,
+   "politics": 1,
+   "weird": 1,
+   "nature": 1,
+   "photo": 3,
+   "simulation": 1,
+   "generators": 4,
+   "retro": 5,
+   "maps": 1,
+   "indieweb": 1,
+   "toys": 2
+  },
+  "sites": [
+   "https://aeon.co/essays/how-ancient-poetry-can-revitalise-our-erotic-imaginations",
+   "https://programming.dev/post/1984251/2233783",
+   "https://mary.codes/blog/art/how_i_3d_printed_george",
+   "https://rigorousintuition.ca/board2/viewtopic.php?start=975&t=19015",
+   "https://fanlore.org/wiki/NSFW",
+   "https://couple.me/nsfw-ai-image-generator",
+   "https://captainpackrat.com/plush/afp-faq.html",
+   "https://adultworldmedia.com/oursites.html",
+   "https://oldguyrpg.blogspot.com/2011/06/post-vacation-nsfw-art.html",
+   "https://forums.homecomingservers.com/topic/63428-question-about-nsfw-art",
+   "https://inpieces.rip/writing/stop",
+   "https://adult-collections.com/nsfw-art-generator-ai",
+   "https://clitoridesawards.org/",
+   "https://observer.co.uk/news/national/article/chatgpts-erotica-rollout-raises-concerns-over-safety-and-ethics",
+   "https://dankalia.com/literature/rme147.htm",
+   "https://callyourgirlfriend.com/nsfw-ai-art-generators",
+   "https://bravenmanor.com/resources%5C128%20Basic%20slave%20Rules.htm",
+   "https://psypost.org/ai-generates-nude-images-that-outrank-real-photographs-in-sexual-appeal-study-finds",
+   "https://aria.garden/monologue/1",
+   "https://jav.vip/site/5846",
+   "https://hedweb.com/heaven/heaven10.htm",
+   "https://forum.prostasia.org/t/is-it-illegal-for-a-minor-to-be-an-nsfw-artist/4229",
+   "https://paradise-engineering.com/heav10.htm",
+   "https://bible.ca/ef/topical-what-is-pornography.htm",
+   "https://inkbunny.net/s/2763384"
+  ],
+  "tags": [
+   "mature"
+  ],
+  "match": "any"
  }
 ]
