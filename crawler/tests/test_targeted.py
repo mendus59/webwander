@@ -9,7 +9,7 @@ import wander.__main__ as cli
 import wander.store as st
 from wander.urls import normalize
 from test_crawl import FIX, PAGES, fake_fetch
-from wander.fetch import Page  # toy -> toys+science, synth -> music+games, retro -> retro+indieweb
+from wander.fetch import Page  # toy -> toys+science, synth -> music, retro -> retro+indieweb
 
 
 def run(tmp_path, monkeypatch, *extra, backlog=None):
@@ -40,9 +40,9 @@ def test_or_keeps_sites_with_any_chosen_tag(tmp_path, monkeypatch):
 
 
 def test_and_needs_every_chosen_tag(tmp_path, monkeypatch):
-    data, _ = run(tmp_path, monkeypatch, "--tags", "music,games", "--match", "all")
+    data, _ = run(tmp_path, monkeypatch, "--tags", "toys,science", "--match", "all")
     got = proposed(data)
-    assert got and all({"music", "games"} <= set(s["categories"]) for s in got)
+    assert got and all({"toys", "science"} <= set(s["categories"]) for s in got)
     other = tmp_path / "other"
     other.mkdir()
     data, _ = run(other, monkeypatch, "--tags", "music,retro", "--match", "all")

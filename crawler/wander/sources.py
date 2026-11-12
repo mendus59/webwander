@@ -196,7 +196,10 @@ def kagi_small_web(n: int = 60) -> list[tuple[str, str]]:
         r.raise_for_status()
         urls = re.findall(r"<link[^>]+href=[\"']([^\"']+)[\"']", r.text)
         urls = [u for u in urls if u.startswith("http") and "kagi.com" not in u]
-        return [(u, "smallweb") for u in random.sample(urls, k=min(n, len(urls)))]
+        # The feed lists individual (often everyday) posts; the site's front page is the
+        # better thing to suggest, so that's what gets evaluated.
+        roots = list(dict.fromkeys(re.sub(r"^(https?://[^/]+).*$", r"\1/", u) for u in urls))
+        return [(u, "smallweb") for u in random.sample(roots, k=min(n, len(roots)))]
     except Exception as e:  # noqa: BLE001
         _log(f"kagi small web failed: {e}")
         return []

@@ -99,7 +99,16 @@ older versions, keeping approved > proposed > backlog > rejected, then the best 
 | Craft | 0-15 | title, description, icon, https, playful wording, healthy vocabulary |
 | Novelty | -10 to 35 | 64-bit SimHash of the page text vs. every site already in the DB, and how many sites share the domain |
 | Security | -21 to 5 | HSTS and CSP headers; mixed http content, password forms and obfuscated scripts count against |
-| Penalties | ≤ 0 | commercial language ("free trial", "pricing"...), empty pages, deep article paths |
+| Penalties | ≤ 0 | commercial language ("free trial", "pricing"...), empty pages, deep article paths, and the page kinds below |
+
+**Whole sites, not single pages.** Front pages get +3 craft ("a whole site to explore"). Pages
+that are one item inside a bigger site score much lower: forum/discussion threads -30, news
+articles -30, paper/database record pages (DOI, arXiv abs...) -25, single dated posts -12,
+single wiki pages -10. A page also loses 12 points if nothing about it stands out (no real
+interactivity, media, long-form writing, playful wording, code, personal host or a site
+worth exploring), so a plain, tidy page no longer passes on a clean baseline alone. AI
+"image/porn generator" SEO pages count as spam, Kagi Small Web posts are crawled at their
+site's front page, and unscanned (bot-walled) suggestions must be front pages.
 
 Only five kinds of page are rejected outright: social media and big platforms (YouTube,
 Reddit, news sites...), pages without content (parked domains, error pages, login walls,
@@ -122,7 +131,9 @@ copy" in the admin panel. With no archived copy, up to `--max-unscanned` (defaul
 sites per run go to Proposed with a "?" score and no tags, for review by hand; the rest are
 tried again on later runs. A plain 403 or an ordinary error page is still skipped.
 
-**Categories** come from `site/data/categories.json`: each category has keywords (weighted
+**Categories** come from `site/data/categories.json`. Categories marked `strict` (games, toys,
+simulation, generators, maps, dataviz) need a structural signal or a keyword in the title,
+description or headings, so a passing mention never tags a page. Each category has keywords (weighted
 by where they appear: title > description > headings > body) plus structural signals
 (e.g. Web Audio → Music, a map library → Maps, `<marquee>` → Retro). Edit that file to add
 or tune categories; the site and crawler both read it.
