@@ -168,6 +168,7 @@
       "emoji": "🔞",
       "_comment": "Not keyword-based: added by the crawler when a page is obviously explicit (see crawler/wander/extract.py explicit_score). Hidden on the site unless the viewer turns on mature content.",
       "keywords": [],
+      "search": ["erotica", "erotic art", "nsfw art", "adult comics", "pin-up art", "burlesque", "nude photography", "boudoir photography", "erotic fiction", "sex positive", "life drawing nude", "adult webcomic"],
       "signals": {}
     },
     {
