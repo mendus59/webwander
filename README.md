@@ -1,5 +1,17 @@
 # 🧭 WebWander
 
+<!-- site-summary:start -->
+<!-- This section is this project's card on https://mendus59.github.io and is copied there daily.
+     Keep it true of what's on main: one plain-text summary line (max 160 characters), then 1-6 short bullets.
+     See CLAUDE.md ("Site summary"). -->
+Wander the fun, weird and creative corners of the web, one click at a time.
+
+- A daily crawler finds creative, obscure and weird sites from Hacker News, Marginalia, Lobsters and more, and scores them with plain heuristics, not AI.
+- Sign in with Google to remember what you've seen, like or dislike sites to steer what comes next, and save favorites as a list or picture cards.
+- Suggest a site for review; an admin panel approves finds from a category-balanced queue.
+- Only secure https sites are shown, and mature sites stay hidden unless you opt in.
+<!-- site-summary:end -->
+
 Wander the fun, weird and creative corners of the web, one click at a time. A small,
 personal take on the old StumbleUpon idea, with no social features: no feeds, no
 followers, no comments.
