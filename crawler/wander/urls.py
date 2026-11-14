@@ -28,8 +28,12 @@ def normalize(url: str) -> str | None:
     host = parts.hostname.lower()
     if host.startswith("www."):
         host = host[4:]
-    if parts.port and parts.port not in (80, 443):
-        host = f"{host}:{parts.port}"
+    try:
+        port = parts.port  # raises on junk like "https://a.com:%20b.com" found in page links
+    except ValueError:
+        return None
+    if port and port not in (80, 443):
+        host = f"{host}:{port}"
     path = parts.path or "/"
     for suffix in ("/index.html", "/index.htm", "/index.php"):
         if path.endswith(suffix):

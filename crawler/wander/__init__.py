@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Bump this whenever the crawler's behaviour changes (scoring, rejects, categories,
 # sources...). Every run records it, so you can tell which version proposed a site.
-__version__ = "1.18.0"
+__version__ = "1.18.1"
 
 ROOT = Path(__file__).resolve().parents[2]
 CATEGORIES_PATH = ROOT / "site" / "data" / "categories.json"

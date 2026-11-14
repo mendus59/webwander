@@ -319,7 +319,11 @@ def cmd_crawl(args) -> int:
             continue  # seen before, or its domain is already in the database
         seen.add(key)
         fetched += 1
-        ev = evaluate(norm, fetcher, corpus, source=source)
+        try:
+            ev = evaluate(norm, fetcher, corpus, source=source)
+        except Exception as e:  # one odd page must never stop the whole daily crawl
+            log(f"  [skip] {norm}: crashed ({type(e).__name__}: {e})")
+            continue
         seen.add(url_key(ev.norm))
         if not ev.doc:
             log(f"  [skip] {norm}: {ev.error}")

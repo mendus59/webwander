@@ -82,6 +82,8 @@ def test_simhash_similarity():
     ("https://example.com/path/#section", "https://example.com/path"),
     ("https://example.com/#/app-route", "https://example.com/#/app-route"),
     ("mailto:hi@example.com", None),
+    ("https://example.com:%20imgmax.com/pic.jpg", None),  # malformed port crashed the 2026-11-12 crawl
+    ("https://example.com:8080/x", "https://example.com:8080/x"),
 ])
 def test_normalize(raw, expected):
     assert normalize(raw) == expected
@@ -184,3 +186,12 @@ def test_security_signals():
     assert mixed.breakdown["security"] < 0 and "mixed content x1" in mixed.reasons
     assert "asks for a password" in pw.reasons
     assert good.score > mixed.score
+
+
+def test_extract_survives_malformed_links():
+    from wander.extract import extract
+    html = ('<html><head><title>Odd links</title></head><body><p>hello world</p>'
+            '<a href="https://imgmax.com:%20imgmax.com/a.jpg">a</a>'
+            '<a href="http://[broken/x">b</a><a href="https://other.org/">c</a></body></html>')
+    f = extract("https://example.com/", html, {}, [])
+    assert f is not None
