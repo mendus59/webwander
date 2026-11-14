@@ -190,8 +190,11 @@ class Fetcher:
         origin = urlsplit(page.url).netloc
         bodies = []
         for tag in soup.find_all("script", src=True)[:12]:
-            src = urljoin(page.url, tag["src"])
-            if urlsplit(src).netloc != origin:
+            try:
+                src = urljoin(page.url, tag["src"])
+                if urlsplit(src).netloc != origin:
+                    continue
+            except ValueError:  # malformed script URL
                 continue
             try:
                 r = self._get_limited(src, MAX_SCRIPT_BYTES)

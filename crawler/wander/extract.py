@@ -255,7 +255,10 @@ def extract(url: str, html: str, headers: dict | None = None, scripts: list[str]
     own = registrable_domain(url)
     external_links, internal_links = set(), 0
     for a in full.find_all("a", href=True):
-        href = urljoin(url, a["href"])
+        try:
+            href = urljoin(url, a["href"])
+        except ValueError:  # e.g. "http://[broken" (bad IPv6 brackets)
+            continue
         if not href.startswith("http"):
             continue
         n = normalize(href)
