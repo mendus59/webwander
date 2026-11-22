@@ -1,123 +1,6 @@
 [
 {
-"url": "http://chairliftnerd.wordpress.com/",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "http://deasonbuilt.com/",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "http://leitner-poma.com/",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "http://teamaxess.com/",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://alterramtn.co/en/news/deer-valley-now-3-days-on-ikon-base-pass-for-winter-2627",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://automattic.com/cookies",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://bidnetdirect.com/iowa/solicitations/open-bids/Sleepy-Hollow-Sports-Park-Ski-Hill-Chairlift/0000439307?origin=2&purchasingGroupId=700141301",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://blog.palisadestahoe.com/operations/aerial-tram-maintenance-2026",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://blogue.tremblant.ca/lift-investments",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://bogusbasin.org/about-bogus/culture/new-runs-coming-to-bogus-basin",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://brandonsun.com/local/2026/10/23/ski-resort-counting-on-disaster-relief",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
 "url": "https://cbsnews.com/colorado/news/safety-challenge-gondola-operations-breckenridge-colorado",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://cdn.prod.website-files.com/6ac3cf1422dc63c549422ea4/6afe5b4bc58fd565cdd94170_Vail%20Resorts%20Investor%20Presentation.pdf",
-"parentScore": 95,
-"from": "https://liftblog.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://centraloregondaily.com/news/local/mt-bachelor-lift-mechanics-file-union-petition/article_a99cb746-35b4-4eb7-9d7c-e1ab358e30f4.html",
 "parentScore": 95,
 "from": "https://liftblog.com/",
 "parentCats": [
@@ -144,153 +27,11 @@
 ]
 },
 {
-"url": "http://skylineonline.com/index/roster/tom-rush",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://bombyx.live/events/an-evening-with-tom-rush-2",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://flyinggoose.com/events/tom-rush-with-tba",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://flyinggoose.com/events/tom-rush-with-tba-12-13-2pm",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://kentstage.org/event/tom-rush/the-kent-stage/kent-ohio",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://ludlowgaragecincinnati.com/tom-rush",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://monicarizzio.com/",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://onelongfellowsquare.com/event/tom-rush",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "https://sixstring.org/an-evening-with-tom-rush",
-"parentScore": 93,
-"from": "https://tomrush.com/",
-"parentCats": [
-"toys",
-"music"
-]
-},
-{
-"url": "http://bookmust.wordpress.com/",
-"parentScore": 91,
-"from": "https://librofulltime.wordpress.com/",
-"parentCats": [
-"stories",
-"toys"
-]
-},
-{
 "url": "https://retiredmartin.wordpress.com/",
 "parentScore": 91,
 "from": "https://retiredmartin.com/",
 "parentCats": [
 "music",
-"toys"
-]
-},
-{
-"url": "https://retiredmartin.wordpress.com/wp-login.php",
-"parentScore": 91,
-"from": "https://retiredmartin.com/",
-"parentCats": [
-"music",
-"toys"
-]
-},
-{
-"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fretiredmartin.com",
-"parentScore": 91,
-"from": "https://retiredmartin.com/",
-"parentCats": [
-"music",
-"toys"
-]
-},
-{
-"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fretiredmartin.com%252F2026%252F11%252F21%252Ftourist-beeston%252F",
-"parentScore": 91,
-"from": "https://retiredmartin.com/",
-"parentCats": [
-"music",
-"toys"
-]
-},
-{
-"url": "https://wordpress.com/reader/feeds/45038032",
-"parentScore": 91,
-"from": "https://retiredmartin.com/",
-"parentCats": [
-"music",
-"toys"
-]
-},
-{
-"url": "https://acoarecovery.wordpress.com/2011/11/17/41-acoa-toxic-family-rules",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://baby-chick.com/how-to-help-your-children-avoid-math-anxiety",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
 "toys"
 ]
 },
@@ -303,31 +44,7 @@
 ]
 },
 {
-"url": "https://baby-chick.com/important-life-skills-to-teach-your-children",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
 "url": "https://baby-chick.com/summer-playdate-ideas-your-kids-will-love",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://baby-chick.com/teaching-our-kids-why-and-how-to-apologize",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://baby-chick.com/why-positive-reinforcement-in-parenting-goes-a-long-way",
 "parentScore": 91,
 "from": "https://acoarecovery.blog/",
 "parentCats": [
@@ -359,38 +76,6 @@
 ]
 },
 {
-"url": "https://calmerry.com/blog/emotions/put-yourself-in-someones-shoes-what-is-empathy",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://calmerry.com/blog/relationships/assertive-communication",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://calmerry.com/blog/relationships/my-husband-yells-at-me",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://confidentcommunicator.com/blog/3-ways-to-remind-yourself-to-pause",
-"parentScore": 91,
-"from": "https://acoarecovery.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
 "url": "https://epicreplies.com/author/epicreplies",
 "parentScore": 91,
 "from": "https://acoarecovery.blog/",
@@ -399,155 +84,149 @@
 ]
 },
 {
-"url": "https://andrewgough.co.uk/goddess",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
+"url": "http://accrispin.blogspot.com/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
 "parentCats": [
-"toys"
+"philosophy",
+"toys",
+"photo"
 ]
 },
 {
-"url": "https://en.wikisource.org/wiki/Littell's_Living_Age/Volume_97/Issue_1256/Lucretius",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
+"url": "http://aclu.org/blog",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
 "parentCats": [
-"toys"
+"philosophy",
+"toys",
+"photo"
 ]
 },
 {
-"url": "https://ezgif.com/",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
+"url": "http://advicegoddess.com/goddessblog.html",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
 "parentCats": [
-"toys"
+"philosophy",
+"toys",
+"photo"
 ]
 },
 {
-"url": "https://giobiagiobia.bandcamp.com/album/x-on",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
+"url": "http://aebrain.blogspot.com/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
 "parentCats": [
-"toys"
+"philosophy",
+"toys",
+"photo"
 ]
 },
 {
-"url": "https://imdb.com/title/tt7696160",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
+"url": "http://americanrhetoric.com/speeches/rynesandbergbaseballhalloffame.htm",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
 "parentCats": [
-"toys"
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://artofmanliness.com/2008/08/28/8-inspirational-football-locker-room-speeches",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://bigthink.com/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://blog.practicalethics.ox.ac.uk/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://businessethicsblog.com/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://businessinsider.com/lawreview",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://campusreform.org/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://citizensforethics.org/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://cityethics.org/",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
+]
+},
+{
+"url": "http://conflictofinterestblog.com/2011/11/welcome-to-the-conflict-of-interest-blog.html",
+"parentScore": 91,
+"from": "https://ethicsalarms.com/",
+"parentCats": [
+"philosophy",
+"toys",
+"photo"
 ]
 },
 {
 "url": "https://lulu.com/shop/simon-whitechapel/gweel/paperback/product-82w9g9.html",
 "parentScore": 90,
 "from": "https://overlordoftheuberferal.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://lulu.com/shop/simon-whitechapel/tales-of-silence-and-sortilege/paperback/product-v6qyg5.html",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://oeis.org/A167489",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://overlordoftheuberferal.wordpress.com/",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://overlordoftheuberferal.wordpress.com/2016/05/13/i-have-a-threem",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://overlordoftheuberferal.wordpress.com/wp-login.php",
-"parentScore": 90,
-"from": "https://overlordoftheuberferal.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://astroambassadors.com/",
-"parentScore": 90,
-"from": "https://noirlab.edu/public",
-"parentCats": [
-"science",
-"photo",
-"toys"
-]
-},
-{
-"url": "https://globeatnight.org/",
-"parentScore": 90,
-"from": "https://noirlab.edu/public",
-"parentCats": [
-"science",
-"photo",
-"toys"
-]
-},
-{
-"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fchasingmailboxes.com",
-"parentScore": 90,
-"from": "https://chasingmailboxes.com/",
-"parentCats": [
-"photo",
-"toys",
-"stories"
-]
-},
-{
-"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fchasingmailboxes.com%252F2026%252F10%252F03%252Fcoffeeneuring-challenge-2026-and-were-16-basic-in-the-best-way%252F",
-"parentScore": 90,
-"from": "https://chasingmailboxes.com/",
-"parentCats": [
-"photo",
-"toys",
-"stories"
-]
-},
-{
-"url": "https://wordpress.com/reader/feeds/4115613",
-"parentScore": 90,
-"from": "https://chasingmailboxes.com/",
-"parentCats": [
-"photo",
-"toys",
-"stories"
-]
-},
-{
-"url": "http://piningforthewest.co.uk/",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://bookjotter.com/",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
 "parentCats": [
 "toys"
 ]
@@ -561,103 +240,7 @@
 ]
 },
 {
-"url": "https://booksaremyfavouriteandbest.com/2021/07/03/six-degrees-of-separation-from-eats-shoots-leaves-to-the-incendiaries",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://booksaremyfavouriteandbest.com/2021/10/02/six-degrees-of-separation-from-the-lottery-to-the-other-typist",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://booksaremyfavouriteandbest.com/2021/11/06/six-degrees-of-separation-from-what-are-you-going-through-to-crossroads",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://booksaremyfavouriteandbest.com/6-degrees-of-separation-meme",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://canonofonesown.com/",
-"parentScore": 90,
-"from": "https://acornerofcornwall.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://specialprojects.automattic.com/",
-"parentScore": 90,
-"from": "https://andersnoren.se/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "http://amazon.co.uk/gp/feature.html?docId=1000425503&ie=UTF8",
-"parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "http://csreyes.wordpress.com/",
-"parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "http://eepurl.com/gzlED",
-"parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "http://libroediting.com/",
-"parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "http://libroediting.wordpress.com/",
-"parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
-"parentCats": [
-"toys"
-]
-},
-{
 "url": "http://librofulltime.files.wordpress.com/2014/03/cholesterol-cover.jpg?w=100",
-"parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "http://librofulltime.files.wordpress.com/2014/03/new-how_i_survived_front.jpg?w=199",
 "parentScore": 90,
 "from": "https://lizbroomfieldbooks.com/",
 "parentCats": [
@@ -681,218 +264,391 @@
 ]
 },
 {
-"url": "http://librofulltime.files.wordpress.com/2014/03/your_guide.jpg?w=200",
+"url": "http://cbc.ca/news/canada/toronto/bedtime-story-to-comfort-a-girl-bullied-for-owning-a-black-doll-inspires-new-children-s-book-1.4389935",
 "parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
+"from": "https://cynthiasreyes.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "http://notaristotle.com/",
+"url": "http://cbc.ca/radio_template_2012/audiopop.html?autoPlay=true&clipIds=2547372567",
 "parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
+"from": "https://cynthiasreyes.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "http://smashwords.com/profile/view/LyzzyBee",
+"url": "https://amazon.ca/Good-Home-Memoir-Cynthia-Reyes-ebook/dp/B00TKTD83I/ref=sr_1_2?ie=UTF8&qid=1475099655&sr=1-2",
 "parentScore": 90,
-"from": "https://lizbroomfieldbooks.com/",
+"from": "https://cynthiasreyes.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "http://buriedinprint.com/margaret-atwood-reading-month-2026-marm2026",
+"url": "https://amazon.ca/Honest-House-Memoir-Continued-ebook/dp/B01FH9B5GG/ref=sr_1_1?ie=UTF8&qid=1475099771&sr=1-1",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://amazon.ca/dp/B07L1W7NQJ",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://goodreads.com/author/show/7072186.Cynthia_Reyes",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://i0.wp.com/cynthiasreyes.com/wp-content/uploads/2014/01/blog-photo-crocuses.jpg",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://i0.wp.com/cynthiasreyes.com/wp-content/uploads/2014/01/blog-photo-icy-winter-evening.jpg?ssl=1",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://i0.wp.com/cynthiasreyes.com/wp-content/uploads/2014/01/blog-photo-lilacs-and-forget-me-nots.jpg?ssl=1",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://i0.wp.com/cynthiasreyes.com/wp-content/uploads/2014/04/blog-photo-cardinal-in-winter.jpg?ssl=1",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://i0.wp.com/cynthiasreyes.com/wp-content/uploads/2014/04/blog-photo-crocus-patch.jpg",
+"parentScore": 90,
+"from": "https://cynthiasreyes.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://web.fermi.poker/",
 "parentScore": 89,
-"from": "https://madamebibilophilerecommends.co.uk/",
+"from": "https://fermiquestions.org/",
 "parentCats": [
-"toys",
+"games",
+"dataviz",
+"toys"
+]
+},
+{
+"url": "https://lenslabhq.com/image-averaging-vs-nd-filter-long-exposure",
+"parentScore": 88,
+"from": "https://backyardastronomy.net/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://misbahwp.com/products/free-photography-WordPress-theme",
+"parentScore": 88,
+"from": "https://backyardastronomy.net/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://annabookbel.net/?action=user_content_redirect&blog_id=96339042&email_id=f5a51d790cd6a4ec14f52dbe2c58fa29&email_name=new-post&encoded_url=aHR0cHM6Ly9jYWxtZ3JvdmVib29rcy53b3JkcHJlc3MuY29tLzIwMjYvMDYvMjEvNmluNjI2Lw%3D&post_id=32113&signature=ddaf01903e5a491cf7edf5433edc4831&subs_id=111270631&user_email=beverleyabaird%40gmail.com&user_id=61359399&uuid=f7fe666522c97dd6e27265909768dba79b922dba4fd9df02026f77575b2cac8e",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "http://literacymatterssite.wordpress.com/",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://annabookbel.net/six-in-six-sixinsix",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://astorybookworld.com/",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://awonderfulworldofwordsa.blogspot.com/",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://barnesandnoble.com/w/the-birth-of-a-widow-kathie-",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://bookshop.org/p/books/the-birth-of-a-widow-collected-poems-",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://bootsshoesandfashion.com/",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://cozyhomedelight.com/reviews",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://dickenslibrary.blogspot.com/2026/09/first-friday-poetry-september-2026.html",
+"parentScore": 88,
+"from": "https://beverleyabaird.wordpress.com/",
+"parentCats": [
+"stories",
+"toys"
+]
+},
+{
+"url": "https://asymco.com/2026/11/13/letat-cest-moi",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://chatgpt.com/features/dots",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://data.gov.sg/",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://datadeck.app/",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://fujifilm-x.com/global/support/download/firmware/cameras/x-hf1",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://hark.com/",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://orchidsonce.xyz/",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://shopusa.fujifilm-x.com/x-half-x-half",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "https://support.msecure.com/en/support/discussions/topics/36000038998/page/1?url_locale=en",
+"parentScore": 88,
+"from": "https://sangsara.net/",
+"parentCats": [
+"photo",
+"toys"
+]
+},
+{
+"url": "http://tomwoodward.us/",
+"parentScore": 88,
+"from": "https://bionicteaching.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://understrap.com/",
+"parentScore": 88,
+"from": "https://bionicteaching.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://cyreal.org/license",
+"parentScore": 87,
+"from": "https://huewords.snellman.net/",
+"parentCats": [
+"math",
+"games"
+]
+},
+{
+"url": "http://bamradionetwork.com/classroom-q-and-a",
+"parentScore": 86,
+"from": "https://larryferlazzo.edublogs.org/",
+"parentCats": [
 "photo"
 ]
 },
 {
-"url": "https://goodreads.com/book/show/260185369-bram-stoker-s-dracula",
-"parentScore": 89,
-"from": "https://bookishlyjessie.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://goodreads.com/book/show/52178179-cilka-s-journey",
-"parentScore": 89,
-"from": "https://bookishlyjessie.blog/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://wordpress.com/reader/feeds/84610103",
-"parentScore": 89,
-"from": "https://brazannemuse.com/",
-"parentCats": [
-"stories",
-"games",
-"toys"
-]
-},
-{
-"url": "https://mattcarmichaelmusic.bandcamp.com/album/held-in-the-dark",
-"parentScore": 87,
-"from": "https://thebluemoment.com/",
-"parentCats": [
-"music",
-"art",
-"toys"
-]
-},
-{
-"url": "https://smashwords.com/books/view/1651224",
+"url": "http://blogs.edweek.org/teachers/classroom_qa_with_larry_ferlazzo",
 "parentScore": 86,
-"from": "https://sodakartistway.com/",
+"from": "https://larryferlazzo.edublogs.org/",
 "parentCats": [
-"art",
-"toys"
+"photo"
 ]
 },
 {
-"url": "https://pacific.kwakk.info/",
+"url": "http://elegantthemes.com/",
 "parentScore": 86,
-"from": "https://lars.ingebrigtsen.no/",
+"from": "https://larryferlazzo.edublogs.org/",
 "parentCats": [
-"art",
-"stories",
-"toys"
+"photo"
 ]
 },
 {
-"url": "https://cilip.de/2026/08/02/eu-plan-gegen-aermelkanal-route",
+"url": "https://learn.wordpress.org/",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
+"from": "https://larryferlazzo.edublogs.org/",
 "parentCats": [
-"toys"
+"photo"
 ]
 },
 {
-"url": "https://cilip.de/2026/08/02/unbekannte-europol-plattformen-mit-sensiblen-daten",
+"url": "https://tools.applemediaservices.com/podcast/793983989?country=us",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
+"from": "https://larryferlazzo.edublogs.org/",
 "parentCats": [
-"toys"
+"photo"
 ]
 },
 {
-"url": "https://cilip.de/2026/09/24/tech-faschismus-in-den-vereinigten-staaten-palantir-wartete-auf-diesen-moment",
+"url": "https://culture.pl/en/article/small-town-big-story-polish-settlements-through-time",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
+"from": "https://faroutliers.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "https://cilip.de/author/matthias",
+"url": "https://culture.pl/en/artist/czeslaw-milosz",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
+"from": "https://faroutliers.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "https://cilip.de/polizeiproblem",
+"url": "https://culture.pl/en/artist/zygmunt-miloszewski",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
+"from": "https://faroutliers.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "https://nd-aktuell.de/artikel/1203952.naher-osten-und-medien-medienkritiker-goldmann-es-gibt-eine-springerisierung-der-berichterstattung.html",
+"url": "https://culture.pl/en/work/nikiszowiec",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
+"from": "https://faroutliers.com/",
 "parentCats": [
 "toys"
 ]
 },
 {
-"url": "https://nd-aktuell.de/artikel/1203967.rechte-desinformation-schon-wieder-geheime-eu-vertraege-mit-ngos.html",
+"url": "https://artifice-design.co.uk/",
 "parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://nd-aktuell.de/artikel/1203974.angriff-auf-zivilbevoelkerung-ecchr-stellt-strafanzeige-gegen-ex-mossad-direktor-barnea.html",
-"parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://nd-aktuell.de/artikel/1204014.repression-gegen-linke-deutschland-und-usa-haben-anti-antifa-workshop-abgehalten.html",
-"parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://nd-aktuell.de/artikel/1204042.neuartiger-waffentraeger-fahrerloser-us-panzer-verschiesst-bewaffneten-drohnenschwarm.html",
-"parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://nd-aktuell.de/artikel/1204045.neues-nachrichtendienstrecht-deutsche-geheimdienste-haben-jetzt-zugriff-auf-sensoren-in-autos.html",
-"parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://nd-aktuell.de/redaktion/autor/191",
-"parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
-"parentScore": 86,
-"from": "https://digit.site36.net/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://orachttps//booksaremyfavouriteandbest.com/wp-admin/index.phpleofbacon.org",
-"parentScore": 85,
-"from": "https://booksaremyfavouriteandbest.com/6-degrees-of-separation-meme",
-"parentCats": [
-"stories",
-"toys"
-]
-},
-{
-"url": "http://preserve.mactech.com/articles/mactech/Vol.15/15.06/FastBlitStrategies",
-"parentScore": 85,
-"from": "https://monkeyisland.pages.dev/",
-"parentCats": [
-"toys"
-]
-},
-{
-"url": "https://dosbox-staging.org/",
-"parentScore": 85,
-"from": "https://monkeyisland.pages.dev/",
+"from": "https://andrewgough.co.uk/goddess",
 "parentCats": [
 "toys"
 ]
@@ -906,105 +662,51 @@
 ]
 },
 {
-"url": "http://https//www.netgalley.co.uk/member/profile/badges",
+"url": "https://profiles.wordpress.org/wpspecialprojects",
 "parentScore": 85,
-"from": "https://secretlibrarybookblog.com/",
+"from": "https://specialprojects.automattic.com/",
 "parentCats": [
-"toys"
+"programming"
 ]
 },
 {
-"url": "http://graphitebunny.wordpress.com/",
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fspecialprojects.automattic.com%2F",
 "parentScore": 85,
-"from": "https://sarahpotterwrites.com/guest-storytellers-2",
+"from": "https://specialprojects.automattic.com/",
 "parentCats": [
-"stories",
-"toys"
+"programming"
 ]
 },
 {
-"url": "https://watchmojo.com/",
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fspecialprojects.automattic.com%252F",
 "parentScore": 85,
-"from": "https://contextisking.com/",
+"from": "https://specialprojects.automattic.com/",
 "parentCats": [
-"toys"
+"programming"
 ]
 },
 {
-"url": "http://gurteen.wordpress.com/",
+"url": "https://wordpress.com/reader/blogs/236976534/posts/180",
 "parentScore": 85,
-"from": "https://stepsandleaps.wordpress.com/",
+"from": "https://specialprojects.automattic.com/",
 "parentCats": [
-"games"
+"programming"
 ]
 },
 {
-"url": "https://a.wholelottanothing.org/",
+"url": "https://wordpress.com/wp?partner_domain=a8cspcooltools.wordpress.com",
 "parentScore": 85,
-"from": "https://web-goddess.org/",
+"from": "https://specialprojects.automattic.com/",
 "parentCats": [
-"photo",
-"toys"
+"programming"
 ]
 },
 {
-"url": "https://aus.social/@web_goddess",
+"url": "https://wp.me/Pg2kqa-2U",
 "parentScore": 85,
-"from": "https://web-goddess.org/",
+"from": "https://specialprojects.automattic.com/",
 "parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://9news.com/article/news/local/storytellers/people-around-the-world-are-watching-this-colorado-dad-mow-his-lawn/73-450066599",
-"parentScore": 85,
-"from": "https://watching-grass-grow.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://jigsaw.w3.org/css-validator/validator?uri=www.watching-grass-grow.com%2Fcgi-bin%2Fgrass-weather",
-"parentScore": 85,
-"from": "https://watching-grass-grow.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://validator.w3.org/nu?doc=http%3A%2F%2Fwww.watching-grass-grow.com%2F",
-"parentScore": 85,
-"from": "https://watching-grass-grow.com/",
-"parentCats": [
-"photo",
-"toys"
-]
-},
-{
-"url": "https://beverleyabaird.wordpress.com/",
-"parentScore": 84,
-"from": "https://breathesbooks.com/2026/11/08/my-year-in-non-fiction-2",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "https://beverleyabaird.wordpress.com/2026/11/03/non-fiction-november-2026-week-one",
-"parentScore": 84,
-"from": "https://breathesbooks.com/2026/11/08/my-year-in-non-fiction-2",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "https://cherylscozycorner.com/2026/11/2026-nonfiction-reading",
-"parentScore": 84,
-"from": "https://breathesbooks.com/2026/11/08/my-year-in-non-fiction-2",
-"parentCats": [
-"stories"
+"programming"
 ]
 },
 {
@@ -1024,119 +726,7 @@
 ]
 },
 {
-"url": "http://creativecommons.org/licenses/by-sa/4.0",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://eupolicy.social/@edri",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://euronews.com/2023/03/28/the-eus-home-affairs-chief-wants-to-read-your-private-messages",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://platformpower.eu/",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://politico.eu/article/eu-privacy-watchdog-sues-over-new-europol-mandate",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://reasondigital.com/",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://reclaimyourface.eu/",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://stopscanningme.eu/en",
-"parentScore": 84,
-"from": "https://edri.org/",
-"parentCats": [
-"politics",
-"learning"
-]
-},
-{
-"url": "https://corru.store/",
-"parentScore": 84,
-"from": "https://corru.observer/",
-"parentCats": [
-"games"
-]
-},
-{
-"url": "https://corru.works/",
-"parentScore": 84,
-"from": "https://corru.observer/",
-"parentCats": [
-"games"
-]
-},
-{
-"url": "https://corruworks.bandcamp.com/",
-"parentScore": 84,
-"from": "https://corru.observer/",
-"parentCats": [
-"games"
-]
-},
-{
 "url": "https://jacktenbusch.com/",
-"parentScore": 84,
-"from": "https://corru.observer/",
-"parentCats": [
-"games"
-]
-},
-{
-"url": "https://neocities.org/site/corru",
-"parentScore": 84,
-"from": "https://corru.observer/",
-"parentCats": [
-"games"
-]
-},
-{
-"url": "https://pocl.vip/",
 "parentScore": 84,
 "from": "https://corru.observer/",
 "parentCats": [
@@ -1160,79 +750,6 @@
 ]
 },
 {
-"url": "https://siteorigin.com/",
-"parentScore": 84,
-"from": "https://galeriemiranda.com/ellen-carey-tomas-van-houtryve",
-"parentCats": [
-"world",
-"toys"
-]
-},
-{
-"url": "https://ghost.org/",
-"parentScore": 84,
-"from": "https://theapiarist.org/",
-"parentCats": [
-"art"
-]
-},
-{
-"url": "http://at-scene-of-crime.blogspot.com/2015/07/clash-of-clans.html",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "http://crimesegments.com/2019/07/murder-in-crooked-house-by-soji-shimada.html",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "http://crimesegments.com/2020/01/the-inugami-clan-by-seishi-yokomizo.html",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "http://gadetection.pbworks.com/w/page/7930179/Carr%2C%20John%20Dickson",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "http://ho-lingnojikenbo.blogspot.jp/search/label/Student%20Alice%20%7C%20%E5%AD%A6%E7%94%9F%E3%82%A2%E3%83%AA%E3%82%B9",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "http://math.chalmers.se/~mipat/carr_novels.html",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "http://mikegrost.com/carr.htm",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
 "url": "http://moonlight-detective.blogspot.com/2018/05/the-inugami-clan-1951-by-seishi-yokomizo.html",
 "parentScore": 84,
 "from": "https://jiescribano.wordpress.com/",
@@ -1242,22 +759,6 @@
 },
 {
 "url": "http://mylri.com/books/the-moai-island-puzzle-by-alice-arisugawa",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "https://alackofconsensus.wordpress.com/2017/11/02/review-the-moai-island-puzzle-by-alice-arisugawa",
-"parentScore": 84,
-"from": "https://jiescribano.wordpress.com/",
-"parentCats": [
-"stories"
-]
-},
-{
-"url": "https://ansible.uk/writing/dr_fell.html",
 "parentScore": 84,
 "from": "https://jiescribano.wordpress.com/",
 "parentCats": [
@@ -2046,6 +1547,276 @@
 "from": "https://bobonbooks.com/",
 "parentCats": [
 "stories",
+"toys"
+]
+},
+{
+"url": "http://autumn-gem.com/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "http://msgfiler.com/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://actionphrase.com/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://autumn-gem.com/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://c1b.app/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://mixeffect.app/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://msgfiler.com/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://routeeffect.com/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://switcheffect.app/",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://tow.gumroad.com/subscribe",
+"parentScore": 84,
+"from": "https://tow.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://canadianauthors.org/national",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "https://goodreads.com/CaitGAuthor",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fcaitgordon.com%2F",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fcaitgordon.com%252F",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "https://wordpress.com/reader/blogs/84617088/posts/12350",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "https://wp.me/P5J2LK-3dc",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "https://writersunion.ca/",
+"parentScore": 84,
+"from": "https://caitgordon.com/",
+"parentCats": [
+"stories",
+"indieweb",
+"toys"
+]
+},
+{
+"url": "http://alertca.live/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurcalifornia.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurcert.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurfire.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurfoodandwine.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurgazette.com/issues/005_December_1978.pdf",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurgrange.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurhealthcenter.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurjadefestival.com/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurkate.wordpress.com/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurphoto.com/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bigsurvisitorguide.com/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://bsim.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://cabigsur.org/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "http://cad.chp.ca.gov/",
+"parentScore": 84,
+"from": "https://bigsurkate.blog/",
+"parentCats": [
 "toys"
 ]
 },
@@ -2881,6 +2652,178 @@
 "url": "https://substackcdn.com/image/fetch/$s_!zQAl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb51128ea-8168-4cd1-8515-2aa9551cc113_2700x1500.png",
 "parentScore": 83,
 "from": "https://alearningaday.blog/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://en-gb.wordpress.org/",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qP62oq",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qPavwL",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qPawdR",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qPcADK",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUkvVc",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUq2qf",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUrYsB",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUrbxU",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUrdpQ",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUrjNr",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUrmtk",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://flic.kr/p/2qUs69H",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://gravatar.com/piningforthewest",
+"parentScore": 83,
+"from": "https://piningforthewest.co.uk/",
+"parentCats": [
+"food",
+"history",
+"photo"
+]
+},
+{
+"url": "https://corteximplant.com/@DOSBox_Staging",
+"parentScore": 83,
+"from": "https://dosbox-staging.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://demozoo.org/graphics/298055",
+"parentScore": 83,
+"from": "https://dosbox-staging.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://opencollective.com/dosbox-staging",
+"parentScore": 83,
+"from": "https://dosbox-staging.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://livethemountains.com/",
+"parentScore": 83,
+"from": "https://deasonbuilt.com/",
 "parentCats": [
 "toys"
 ]
@@ -4692,6 +4635,145 @@
 ]
 },
 {
+"url": "https://baccyflap.com/noai",
+"parentScore": 82,
+"from": "https://dariuszwinkler.com/",
+"parentCats": [
+"photo",
+"nature"
+]
+},
+{
+"url": "https://fediring.net/next?host=dariuszwinkler.com",
+"parentScore": 82,
+"from": "https://dariuszwinkler.com/",
+"parentCats": [
+"photo",
+"nature"
+]
+},
+{
+"url": "https://fediring.net/previous?host=dariuszwinkler.com",
+"parentScore": 82,
+"from": "https://dariuszwinkler.com/",
+"parentCats": [
+"photo",
+"nature"
+]
+},
+{
+"url": "https://fosstodon.org/@darekkay",
+"parentScore": 82,
+"from": "https://dariuszwinkler.com/",
+"parentCats": [
+"photo",
+"nature"
+]
+},
+{
+"url": "https://glass.photo/darekkay",
+"parentScore": 82,
+"from": "https://dariuszwinkler.com/",
+"parentCats": [
+"photo",
+"nature"
+]
+},
+{
+"url": "https://last.fm/user/darekkay",
+"parentScore": 82,
+"from": "https://dariuszwinkler.com/",
+"parentCats": [
+"photo",
+"nature"
+]
+},
+{
+"url": "https://de.wordpress.org/",
+"parentScore": 82,
+"from": "https://cilip.de/author/matthias",
+"parentCats": [
+"world",
+"toys"
+]
+},
+{
+"url": "https://gofilmthepolice.de/",
+"parentScore": 82,
+"from": "https://cilip.de/author/matthias",
+"parentCats": [
+"world",
+"toys"
+]
+},
+{
+"url": "https://so36.net/",
+"parentScore": 82,
+"from": "https://cilip.de/author/matthias",
+"parentCats": [
+"world",
+"toys"
+]
+},
+{
+"url": "https://social.tchncs.de/@cilip",
+"parentScore": 82,
+"from": "https://cilip.de/author/matthias",
+"parentCats": [
+"world",
+"toys"
+]
+},
+{
+"url": "https://uberspace.de/",
+"parentScore": 82,
+"from": "https://cilip.de/author/matthias",
+"parentCats": [
+"world",
+"toys"
+]
+},
+{
+"url": "https://blackwells.pxf.io/4aqQyn",
+"parentScore": 82,
+"from": "https://bookjotter.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://bookjotter.wordpress.com/",
+"parentScore": 82,
+"from": "https://bookjotter.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://bookjotter6865.tumblr.com/",
+"parentScore": 82,
+"from": "https://bookjotter.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://goodreads.com/user/show/53441266-paula-bardell-hedley",
+"parentScore": 82,
+"from": "https://bookjotter.com/",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://uk.bookshop.org/shop/bookjotter",
+"parentScore": 82,
+"from": "https://bookjotter.com/",
+"parentCats": [
+"toys"
+]
+},
+{
 "url": "https://tripbytrip.org/2023/12/15/brussels-airlines-first-airbus-a320neo-performs-its-maiden-flight-to-vienna",
 "parentScore": 81,
 "from": "https://sidetrack.blog/2026/04/10/brussels-airlines-takes-ice-cream-brand-ralph-roxys-from-leuven-around-the-world-small-scale-ice-cream-maker-finds-its-way-to-hundreds-of-thousands-of-travellers-thanks-to-this-cooperation",
@@ -5954,6 +6036,26 @@
 ]
 },
 {
+"url": "http://incompleteideas.net/book/the-book-2nd.html",
+"parentScore": 81,
+"from": "https://araffin.github.io/",
+"parentCats": [
+"indieweb",
+"programming",
+"learning"
+]
+},
+{
+"url": "https://dlr.de/en/rm",
+"parentScore": 81,
+"from": "https://araffin.github.io/",
+"parentCats": [
+"indieweb",
+"programming",
+"learning"
+]
+},
+{
 "url": "https://amzn.to/4462vYf",
 "parentScore": 80,
 "from": "https://thetopdeal.com/",
@@ -6769,6 +6871,120 @@
 "parentCats": [
 "toys",
 "dataviz"
+]
+},
+{
+"url": "https://addtoany.com/add_to/email?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/add_to/facebook?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/add_to/linkedin?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/add_to/reddit?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/add_to/telegram?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/add_to/twitter?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/add_to/whatsapp?linkname=Home&linkurl=https%3A%2F%2Fdeepbluembedded.com%2F",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://addtoany.com/share",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://paypal.com/paypalme/KhaledMagdy",
+"parentScore": 80,
+"from": "https://deepbluembedded.com/",
+"parentCats": [
+"learning",
+"photo",
+"toys"
+]
+},
+{
+"url": "https://wordpress.com/abuse?report_url=https%3A%2F%2Fmygranddadiskeepingbusy.com",
+"parentScore": 80,
+"from": "https://mygranddadiskeepingbusy.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fmygranddadiskeepingbusy.com%252F2026%252F11%252F22%252Fmonday-22nd-november-1965%252F",
+"parentScore": 80,
+"from": "https://mygranddadiskeepingbusy.com/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://wordpress.com/reader/feeds/137587772",
+"parentScore": 80,
+"from": "https://mygranddadiskeepingbusy.com/",
+"parentCats": [
+"games"
 ]
 },
 {
@@ -7818,6 +8034,118 @@
 "from": "https://apbspeakers.com/speaker/leonard-maltin",
 "parentCats": [
 "toys"
+]
+},
+{
+"url": "https://amazon.co.uk/Humans-Not-Robots-groundbreaking-football/dp/0008797234/ref=sr_1_1?crid=1AK1SEATPXAV1&dib=eyJ2IjoiMSJ9.5rpLoR8uCTmjiO2OuNnzAZotfrKXwSLuqBd_Ki2Uxx8JzTmq5cqJjpTFbkW-Wc3RTOeqeTsjoUUwpyvFQxCpUG_xFG3p8OkvaJIJTzcuBeUsOXIgLVnfxoLkTy0dT2sUitj_rxrwSwtmt3_SlKjolDAra6xd4uPU8kOsy6IJ6DN7ygIxK0QqmuArw3K6vzsdpd8UVPsxZLGjBbfZIofgnbF1tIWeoyGgFvN91yJkJ-M.NgcfBlHyCy_3v25MTSYFijbnOD3LQHTUSE3N35fE-MU&dib_tag=se&keywords=michael+antonio&qid=1782243943&sprefix=michael+antonio%2Caps%2C130&sr=1-1",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://amazon.co.uk/gp/product/B014GD8NWI/ref=dbs_a_def_rwt_hsch_vapi_taft_p3_i7",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://app.scotsman.com/2023/05/08/broadcaster-condemns-fringe-cancellation-as-events-with-humza-yousaf-alex-salmond-and-kate-forbes-are-confirmed/content.html",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://attitude.co.uk/life/iain-dale-on-being-sauna-whore-coming-out-40-537182",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://express.co.uk/entertainment/films/2136174/Iain-Dale-favourite-movies",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://express.co.uk/news/politics/2063912/margaret-thatcher-reappraisal-iain-dale",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/032c21cad53c1b90af434a8849a329e8.jpg",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/0573427df9616215ada1ceaba9a2d8fc.png",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/0f6819243425448334bf019eebef8d92.jpg",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/16c1fe429515967474dd77ed6df12261.jpg",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/187cee0b3e2a3a850c30844904e22ea1.png",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/2b03ea896787e74d52f34080460754e7.png",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/2ecfeb7050c39039a94e9082919c691a.jpg",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://iaindale.s3.eu-west-1.amazonaws.com/store/2eff05ee35e56b3d9db1505bddd6189c.png",
+"parentScore": 79,
+"from": "https://iaindale.com/",
+"parentCats": [
+"politics"
 ]
 },
 {
@@ -9084,6 +9412,294 @@
 "philosophy",
 "programming",
 "science"
+]
+},
+{
+"url": "https://alterramtn.co/en/photo-upload-terms-of-use",
+"parentScore": 78,
+"from": "https://blogue.tremblant.ca/lift-investments",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://alterramtn.co/en/privacy-policy",
+"parentScore": 78,
+"from": "https://blogue.tremblant.ca/lift-investments",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://alterramtn.co/en/terms-of-use",
+"parentScore": 78,
+"from": "https://blogue.tremblant.ca/lift-investments",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://alterramtnco.com/accessibility",
+"parentScore": 78,
+"from": "https://blogue.tremblant.ca/lift-investments",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://ccad.edu/map",
+"parentScore": 78,
+"from": "https://sixstring.org/an-evening-with-tom-rush",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://flickr.com/photos/28593616@N08/albums",
+"parentScore": 78,
+"from": "https://sixstring.org/an-evening-with-tom-rush",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://paypal.com/donate?cmd=_s-xclick&hosted_button_id=CQJ7NW4RPCLBC&source=url",
+"parentScore": 78,
+"from": "https://sixstring.org/an-evening-with-tom-rush",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://algolia.com/developers",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://forem.com/",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://gatsbyjs.org/",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://hashicorp.com/tao-of-hashicorp",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://macwright.org/2020/05/10/spa-fatigue.html",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://martinfowler.com/bliki/SacrificialArchitecture.html",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://mlh.io/",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://nextjs.org/",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://react-spring.io/",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://res.cloudinary.com/practicaldev/image/fetch/s--KIKmJfBA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/5ehz4jt3d7skefmuwg6d.gif",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://s2f.kytta.dev/?text=https%3A%2F%2Fdev.to%2Frichharris%2Fin-defense-of-the-modern-web-2nia",
+"parentScore": 78,
+"from": "https://dev.to/richharris/in-defense-of-the-modern-web-2nia",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://bombyx.ludus.com/giftcards.php",
+"parentScore": 78,
+"from": "https://bombyx.live/events/an-evening-with-tom-rush-2",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://bombyx.ludus.com/subscribe.php",
+"parentScore": 78,
+"from": "https://bombyx.live/events/an-evening-with-tom-rush-2",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://dspshows.com/",
+"parentScore": 78,
+"from": "https://bombyx.live/events/an-evening-with-tom-rush-2",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://tixr.com/e/202570",
+"parentScore": 78,
+"from": "https://bombyx.live/events/an-evening-with-tom-rush-2",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "http://fanseurope.org/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "http://justiciaalgoritmica.org/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://accessnow.org/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://activism.openworlds.info/@reclaimyourface",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://algorithmwatch.ch/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://algorithmwatch.org/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://allout.org/en",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://amnesty.org/en",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://annaelbe.net/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://aquilenet.fr/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://article19.org/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://associazionelucacoscioni.it/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://ban-facial-recognition.eu/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
+]
+},
+{
+"url": "https://bigbrotherwatch.org.uk/",
+"parentScore": 78,
+"from": "https://reclaimyourface.eu/",
+"parentCats": [
+"politics"
 ]
 },
 {
@@ -11443,6 +12059,54 @@
 ]
 },
 {
+"url": "https://darksky.org/what-we-do/events/dark-sky-week",
+"parentScore": 76,
+"from": "https://globeatnight.org/",
+"parentCats": [
+"maps"
+]
+},
+{
+"url": "http://creativecommons.org/licenses/by-nc-sa/4.0",
+"parentScore": 76,
+"from": "https://lowlvl.org/tcp-ip-fundamentals/exchanging-messages",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://doc.rust-lang.org/stable/std/net",
+"parentScore": 76,
+"from": "https://lowlvl.org/tcp-ip-fundamentals/exchanging-messages",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://doc.rust-lang.org/stable/std/net/struct.UdpSocket.html",
+"parentScore": 76,
+"from": "https://lowlvl.org/tcp-ip-fundamentals/exchanging-messages",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://duckduckgo.com/?ia=answer&q=0xFF+in+decimal&t=hk",
+"parentScore": 76,
+"from": "https://lowlvl.org/tcp-ip-fundamentals/exchanging-messages",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://eepurl.com/haHQUn",
+"parentScore": 76,
+"from": "https://lowlvl.org/tcp-ip-fundamentals/exchanging-messages",
+"parentCats": [
+"programming"
+]
+},
+{
 "url": "https://observershop.co.uk/",
 "parentScore": 75,
 "from": "https://observer.co.uk/news/national/article/chatgpts-erotica-rollout-raises-concerns-over-safety-and-ethics",
@@ -12641,6 +13305,362 @@
 "parentScore": 75,
 "from": "https://samim.io/",
 "parentCats": [
+"photo"
+]
+},
+{
+"url": "https://amazon.ca/o/ASIN/0226855015/maproomca-20",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://amazon.ca/o/ASIN/9083222357/maproomca-20",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://amazon.co.uk/o/ASIN/0226855015/thmaro-21",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://amazon.co.uk/o/ASIN/9083222357/thmaro-21",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://archives-nationales.culture.gouv.fr/evenements/la-carte-de-france-de-cassini-une-encyclopedie-du-territoire",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://bellingcat.com/news/2026/11/05/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://blogs.loc.gov/maps/2015/11/james-wilson",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://blogs.loc.gov/maps/2026/10/the-american-globe",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://blogs.loc.gov/maps/2026/11/same-streets-different-empires",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://bookshop.org/a/2925/9780226855011",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "https://bookshop.org/shop/maproom",
+"parentScore": 75,
+"from": "https://maproomblog.com/",
+"parentCats": [
+"maps",
+"history",
+"toys"
+]
+},
+{
+"url": "http://magnusmanske.de/wordpress/archives/828",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://antirez.com/news/171",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://blog.vanessagiese.de/2026/04/25/tourblog-4-luebeck-kopenhagen-die-daenische-entscheidung-konsequent-fuer-wohlbefinden-zu-sorgen?pk_kwd=tourblog-4-luebeck-kopenhagen-die-daenische-entscheidung-konsequent-fuer-wohlbefinden-zu-sorgen",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://cari.institute/aesthetics",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://chrismorgan.info/font-family",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://cosmocode.de/en/blog/agoh/20260609-vibe-engineering",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://cosmocode.de/en/blog/agoh/20260930-james-backend-butler",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://cosmocode.de/en/blog/agoh/20261022-busy_day_php",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://cosmocode.de/en/blog/agoh/20261112-pixels_to_svg_with_ai",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://dbushell.com/2026/11/09/dark-mode",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://delphi.tools/",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://dpc.pw/posts/i-dont-want-your-prs-anymore",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://dustycloud.org/blog/faulty-towers-vibe-sickness-and-the-vibe-bobsled",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://emrahdiril.com/claude-export",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "https://ethanlowman.com/posts/jj-primer",
+"parentScore": 75,
+"from": "https://splitbrain.org/",
+"parentCats": [
+"programming"
+]
+},
+{
+"url": "http://undocs.org/en/A/HRC/51/17",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://ansol.org/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://ap2si.org/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://apti.ro/apti-english",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://aspirationtech.org/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://asso-sherpa.org/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://associazioneswipe.it/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://berliner-wassertisch.net/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://bitsoffreedom.nl/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://cdt.org/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://chaos.social/@StopScanningMe",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://chat-kontrolle.eu/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://chatcontrol.dk/en",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
+"photo"
+]
+},
+{
+"url": "https://chatcontrol.pt/",
+"parentScore": 75,
+"from": "https://stopscanningme.eu/en",
+"parentCats": [
+"politics",
 "photo"
 ]
 },
@@ -14685,6 +15705,102 @@
 ]
 },
 {
+"url": "https://billdugan.com/scout/2018/05/21/phantom",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://billdugan.com/scout/2026/11/22/2026-maryland-fall-meetup",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://consequence.net/list/best-albums-of-1996-90s-music/dj-shadow-endtroducing",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://i0.wp.com/idiotking.org/wp-content/uploads/2026/11/IMG_4821-sm.jpg?ssl=1",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://i0.wp.com/idiotking.org/wp-content/uploads/2026/11/Sanborn_Map-lg2.jpg?ssl=1",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://i0.wp.com/idiotking.org/wp-content/uploads/2026/11/Sanborn_Map-sm.jpg?ssl=1",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://i0.wp.com/idiotking.org/wp-content/uploads/2026/11/alchemy.jpg?ssl=1",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://i0.wp.com/idiotking.org/wp-content/uploads/2026/11/phantom1.jpg?ssl=1",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://loc.gov/collections/sanborn-maps",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://loc.gov/resource/g3844cm.g3844cm_g035841919?sp=10&st=image",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://loc.gov/resource/g3844cm.g3844cm_g035841925?r=0.174%2C-0.095%2C0.596%2C0.378%2C0&sp=11",
+"parentScore": 74,
+"from": "https://idiotking.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://carnevaledesign.com/",
+"parentScore": 74,
+"from": "https://flyinggoose.com/events/tom-rush-with-tba",
+"parentCats": [
+"programming"
+]
+},
+{
 "url": "https://gpu.userbenchmark.com/Compare/Nvidia-GeForce-GT-650M-vs-AMD-RX-Vega-8-Ryzen-iGPU/m7754vsm441833",
 "parentScore": 73,
 "from": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game"
@@ -16461,6 +17577,38 @@
 "from": "https://laurasusanputman.wordpress.com/",
 "parentCats": [
 "food",
+"toys"
+]
+},
+{
+"url": "https://cincinnatiwebtec.com/",
+"parentScore": 73,
+"from": "https://ludlowgaragecincinnati.com/tom-rush",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://engage.ticketmaster.net/LudlowGarageCincinnati/SignUp",
+"parentScore": 73,
+"from": "https://ludlowgaragecincinnati.com/tom-rush",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://ludlowgarage.myshopify.com/",
+"parentScore": 73,
+"from": "https://ludlowgaragecincinnati.com/tom-rush",
+"parentCats": [
+"toys"
+]
+},
+{
+"url": "https://ticketmaster.com/event/160064B28CE95116",
+"parentScore": 73,
+"from": "https://ludlowgaragecincinnati.com/tom-rush",
+"parentCats": [
 "toys"
 ]
 },
@@ -20248,6 +21396,110 @@
 ]
 },
 {
+"url": "https://elk.zone/xoxo.zone/@mathowie",
+"parentScore": 71,
+"from": "https://a.wholelottanothing.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "https://xoxo.zone/@mathowie",
+"parentScore": 71,
+"from": "https://a.wholelottanothing.org/",
+"parentCats": [
+"games"
+]
+},
+{
+"url": "http://cilip.de/",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "http://isoc.it/sites/default/files/2026-09/20260906-isoc-italy-pir-autistici-posizione.pdf",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "http://whitehouse.gov/presidential-actions/2025/09/countering-domestic-terrorism-and-organized-political-violence",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "http://whitehouse.gov/presidential-actions/2025/09/designating-antifa-as-a-domestic-terrorist-organization",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://berthub.eu/tkconv/document.html?nummer=2026D53153",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://campact.de/blog/die-anti-antifa-konferenz-workshop-gegen-linksextremismus",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://chaos.social/@netzpolitik_feed",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://ddosecrets.org/article/icepick",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://fragdenstaat.de/artikel/exklusiv/2026/09/Trumps-Anti-Antifa-Konferenz",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://icepicx.is/",
+"parentScore": 71,
+"from": "https://netzpolitik.org/2026/datentausch-und-strafverfolgung-trump-findet-ersten-eu-partner-zur-jagd-auf-antifa-gruppen",
+"parentCats": [
+"world"
+]
+},
+{
+"url": "https://archive.goat.photo/",
+"parentScore": 71,
+"from": "https://randomgoat.co/",
+"parentCats": [
+"photo"
+]
+},
+{
 "url": "http://41j.com/blog",
 "parentScore": 70,
 "from": "https://kickscondor.com/"
@@ -22404,737 +23656,5 @@
 "parentCats": [
 "politics"
 ]
-},
-{
-"url": "https://angadhn.com/",
-"parentScore": 70,
-"from": "https://marginalrevolution.com/",
-"parentCats": [
-"politics"
-]
-},
-{
-"url": "https://chronicle.com/article/everybody-is-going-to-be-made-obsolete?sra=true",
-"parentScore": 70,
-"from": "https://marginalrevolution.com/",
-"parentCats": [
-"politics"
-]
-},
-{
-"url": "https://claude.ai/share/6c1834c7-b40c-44c4-b952-661626860d7d",
-"parentScore": 70,
-"from": "https://marginalrevolution.com/",
-"parentCats": [
-"politics"
-]
-},
-{
-"url": "https://claudeblattman.com/",
-"parentScore": 70,
-"from": "https://marginalrevolution.com/",
-"parentCats": [
-"politics"
-]
-},
-{
-"url": "https://cssgradient.io/",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://dixonandmoe.com/rellax",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://htmlcolorcodes.com/tutorials/html-text-color",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://marcbruederlin.github.io/particles.js",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://namemesh.com/",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://trianglify.io/",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://tympanus.net/Development/GradientTopographyAnimation",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://unsplash.com/",
-"parentScore": 69,
-"from": "https://coolbackgrounds.io/"
-},
-{
-"url": "https://blender.stackexchange.com/questions/7910/what-is-non-manifold-geometry",
-"parentScore": 69,
-"from": "https://calbryant.uk/blog/3d-printing-giant-things-with-a-python-jigsaw-generator"
-},
-{
-"url": "https://cgal.org/",
-"parentScore": 69,
-"from": "https://calbryant.uk/blog/3d-printing-giant-things-with-a-python-jigsaw-generator"
-},
-{
-"url": "https://hackaday.com/2025/01/24/small-print-bed-no-problem",
-"parentScore": 69,
-"from": "https://calbryant.uk/blog/3d-printing-giant-things-with-a-python-jigsaw-generator"
-},
-{
-"url": "https://hackaday.com/submit-a-tip",
-"parentScore": 69,
-"from": "https://calbryant.uk/blog/3d-printing-giant-things-with-a-python-jigsaw-generator"
-},
-{
-"url": "https://ochafik.com/",
-"parentScore": 69,
-"from": "https://calbryant.uk/blog/3d-printing-giant-things-with-a-python-jigsaw-generator"
-},
-{
-"url": "https://flibitijibibo.com/",
-"parentScore": 69,
-"from": "https://fna-xna.github.io/"
-},
-{
-"url": "https://flibitijibibo.com/?page=Portfolio%2FTools",
-"parentScore": 69,
-"from": "https://fna-xna.github.io/"
-},
-{
-"url": "https://pcgamingwiki.com/wiki/Engine:FNA",
-"parentScore": 69,
-"from": "https://fna-xna.github.io/"
-},
-{
-"url": "https://thommeret.com/",
-"parentScore": 69,
-"from": "https://mathtocode.com/"
-},
-{
-"url": "http://erights.org/",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://achewood.com/2002/11/08/title.html",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://ailawsuittracker.com/ai-copyright-lawsuits",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://businessinsider.com/developers-are-burned-out-as-ai-coding-reshapes-work-survey-2026-10",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://goodreads.com/quotes/9168-programs-must-be-written-for-people-to-read-and-only",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://macstories.net/author/viticci",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://peps.python.org/pep-0020",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://perl.com/pub/2003/06/25/perl6essentials.html",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "https://thatericalper.com/2026/08/13/what-the-beatles-can-teach-you-about-10000-hours-in-hamburg",
-"parentScore": 69,
-"from": "https://blog.glyph.im/2026/10/programming-isnt-special.html"
-},
-{
-"url": "http://achewood.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://asofterworld.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://boltcity.com/copper",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://buttercupfestival.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://catandgirl.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://dieselsweeties.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://dresdencodak.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://dumbingofage.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://falseknees.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://gunnerkrigg.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://gunshowcomic.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://harkavagrant.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://mspaintadventures.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://nedroid.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://nonadventures.com/",
-"parentScore": 69,
-"from": "https://qwantz.com/"
-},
-{
-"url": "http://sourceforge.net/projects/lazarus",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "http://tinyportal.net/",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "http://validator.w3.org/check?uri=referer",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://blaisepascalmagazine.eu/online-preview-book-computer-graphics-math-games",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://blaisepascalmagazine.eu/product-category/books",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://blaisepascalmagazine.eu/product/books",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://delphisorcery.blogspot.com/2015/06/anonymous-method-overloading.html",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://lazarus-ccr.sourceforge.io/docs",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://lazarus-ide.org/",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://lists.lazarus-ide.org/listinfo",
-"parentScore": 69,
-"from": "https://forum.lazarus.freepascal.org/index.php/topic,59468.0.html"
-},
-{
-"url": "https://ronanberder.com/",
-"parentScore": 69,
-"from": "https://pagescms.org/"
-},
-{
-"url": "https://vercel.com/",
-"parentScore": 69,
-"from": "https://pagescms.org/"
-},
-{
-"url": "https://highlightjs.readthedocs.io/",
-"parentScore": 69,
-"from": "https://highlightjs.org/"
-},
-{
-"url": "https://netlify.com/",
-"parentScore": 69,
-"from": "https://highlightjs.org/"
-},
-{
-"url": "https://arxiv.org/abs/2602.12413",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://calcifercomputing.com/reports/tlm",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://estragon.news/mr-chatterbox-or-the-modern-prometheus",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/common-pile",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/datasets/institutional/institutional-books-1.0",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/datasets/openai/openai_humaneval/viewer/openai_humaneval/test?row=50",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/talkie-lm",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/talkie-lm/talkie-1930-13b-base",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/talkie-lm/talkie-1930-13b-it",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://huggingface.co/talkie-lm/talkie-web-13b-base",
-"parentScore": 69,
-"from": "https://talkie-lm.com/introducing-talkie"
-},
-{
-"url": "https://ableton.com/en/live",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://addons.mozilla.org/en-US/firefox/addon/hacker-news-tags",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://blender.org/download/releases/5-3",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://blog.val.town/winding-down",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://connect.queenslibrary.org/",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://deepmind.google/blog/introducing-alphaproof-code",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://docodethatmatters.com/home-automation-overnight-success",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://docs.modelplane.ai/guides/inference-guide",
-"parentScore": 69,
-"from": "https://histre.com/hn"
-},
-{
-"url": "https://altrac.works/",
-"parentScore": 69,
-"from": "https://tris.fyi/"
-},
-{
-"url": "https://cursor.town/",
-"parentScore": 69,
-"from": "https://tris.fyi/"
-},
-{
-"url": "https://glass.photo/tris",
-"parentScore": 69,
-"from": "https://tris.fyi/"
-},
-{
-"url": "https://npeu.org/",
-"parentScore": 69,
-"from": "https://tris.fyi/"
-},
-{
-"url": "https://tacobelllabs.net/@tris",
-"parentScore": 69,
-"from": "https://tris.fyi/"
-},
-{
-"url": "https://bfnightly.bracketproductions.com/rustbook/chapter_0.html",
-"parentScore": 69,
-"from": "https://griffinberlste.in/blog/do-the-thing"
-},
-{
-"url": "https://doc.rust-lang.org/book",
-"parentScore": 69,
-"from": "https://griffinberlste.in/blog/do-the-thing"
-},
-{
-"url": "https://mellow.zone/@griffin",
-"parentScore": 69,
-"from": "https://griffinberlste.in/blog/do-the-thing"
-},
-{
-"url": "https://rust-unofficial.github.io/too-many-lists",
-"parentScore": 69,
-"from": "https://griffinberlste.in/blog/do-the-thing"
-},
-{
-"url": "https://stevedonovan.github.io/rust-gentle-intro",
-"parentScore": 69,
-"from": "https://griffinberlste.in/blog/do-the-thing"
-},
-{
-"url": "https://sidekickstrategies.com/",
-"parentScore": 69,
-"from": "https://spiritualsideofleadership.com/resources/articles/when-love-leads-under-pressure"
-},
-{
-"url": "https://ente.com/blog/locker-document-scanner",
-"parentScore": 69,
-"from": "https://fairscan.org/blog/did-ente-locker-copy-my-code-without-attribution"
-},
-{
-"url": "https://ente.com/contact",
-"parentScore": 69,
-"from": "https://fairscan.org/blog/did-ente-locker-copy-my-code-without-attribution"
-},
-{
-"url": "https://f-droid.org/docs/Anti-Features",
-"parentScore": 69,
-"from": "https://fairscan.org/blog/did-ente-locker-copy-my-code-without-attribution"
-},
-{
-"url": "https://lnkd.in/p/eTpnkpNu",
-"parentScore": 69,
-"from": "https://fairscan.org/blog/did-ente-locker-copy-my-code-without-attribution"
-},
-{
-"url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/1182",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/pulls/6350",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://codeberg.org/Freeyourgadget/website",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://codeberg.org/Freeyourgadget/website/issues/new?body=URL%3A+https%3A%2F%2Fgadgetbridge.org%2Finternals%2Fdevelopment%2Fnew-gadget%2F%0APath%3A+internals%2Fdevelopment%2Fnew-gadget.md&title=Report+for+page+%22New+gadget+tutorial%22",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://codeberg.org/Freeyourgadget/website/src/branch/main/docs/internals/development/new-gadget.md",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://hosted.weblate.org/projects/freeyourgadget/gadgetbridge",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://liberapay.com/Gadgetbridge/donate",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://matrix.to/#/%23gadgetbridge:matrix.org",
-"parentScore": 69,
-"from": "https://gadgetbridge.org/internals/development/new-gadget"
-},
-{
-"url": "https://gss.norc.org/",
-"parentScore": 69,
-"from": "https://allendowney.github.io/OvertonParadox/appendix"
-},
-{
-"url": "https://mystmd.org/guide/deployment",
-"parentScore": 69,
-"from": "https://allendowney.github.io/OvertonParadox/appendix"
-},
-{
-"url": "https://mystmd.org/made-with-myst",
-"parentScore": 69,
-"from": "https://allendowney.github.io/OvertonParadox/appendix"
-},
-{
-"url": "https://aeroswag.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://aircraftforsale.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://aircraftforsale.com/item/new?item_document_counter=1&item_gallery_counter=1",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://airlinegeeks.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://avbuyer.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://aviationconsumer.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://aviationsafetymagazine.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://findapilot.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://firecrown.com/brands/aviation",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://firecrown.com/privacy-policy",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://firecrown.com/terms-of-use",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://flightoutfitters.com/flying",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://flyingfinance.com/",
-"parentScore": 69,
-"from": "https://avweb.com/aviation-news/plane-crash-video-sparks-online-backlash"
-},
-{
-"url": "https://ablf.io/",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://ablf.io/amaz/1789957648/ccjs/jp",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://abooklike.foo/escape",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://amazon.co.uk/Clean-Code-JavaScript-reliable-maintainable/dp/1789957648",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://cip.org/",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://declaude.org/",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://flickr.com/photos/padolsey",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://goodindex.org/",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://loveyourshelf.net/",
-"parentScore": 69,
-"from": "https://j11y.io/"
-},
-{
-"url": "https://7-zip.org/",
-"parentScore": 69,
-"from": "https://nexusmods.com/skyrim/mods/25859"
-},
-{
-"url": "https://cognitoforms.com/NexusMods/NexusModsDMCAForm",
-"parentScore": 69,
-"from": "https://nexusmods.com/skyrim/mods/25859"
-},
-{
-"url": "https://modding.wiki/en/nexusmods/collections",
-"parentScore": 69,
-"from": "https://nexusmods.com/skyrim/mods/25859"
-},
-{
-"url": "https://modding.wiki/en/nexusmods/collections/about",
-"parentScore": 69,
-"from": "https://nexusmods.com/skyrim/mods/25859"
-},
-{
-"url": "https://tes5edit.github.io/",
-"parentScore": 69,
-"from": "https://nexusmods.com/skyrim/mods/25859"
-},
-{
-"url": "https://tes5edit.github.io/docs",
-"parentScore": 69,
-"from": "https://nexusmods.com/skyrim/mods/25859"
-},
-{
-"url": "https://yourabbit.beehiiv.com/subscribe",
-"parentScore": 69,
-"from": "https://yourabbit.com/"
-},
-{
-"url": "http://ourworld.compuserve.com/homepages/kristiaan",
-"parentScore": 69,
-"from": "https://dinocamp.neocities.org/"
-},
-{
-"url": "https://dinofan.com/",
-"parentScore": 69,
-"from": "https://dinocamp.neocities.org/"
-},
-{
-"url": "https://abcnews.go.com/Politics/president-obama-cast-hillary-clinton-trusted-heir-legacy/story?id=40933410",
-"parentScore": 69,
-"from": "https://on.substack.com/p/society-has-a-trust-problem-more"
-},
-{
-"url": "https://axios.com/media-trust-crisis-2bf0ec1c-00c0-4901-9069-e26b21c283a9.html",
-"parentScore": 69,
-"from": "https://on.substack.com/p/society-has-a-trust-problem-more"
-},
-{
-"url": "https://news.gallup.com/poll/352316/americans-confidence-major-institutions-dips.aspx",
-"parentScore": 69,
-"from": "https://on.substack.com/p/society-has-a-trust-problem-more"
 }
 ]
