@@ -12,6 +12,9 @@ Wander the fun, weird and creative corners of the web, one click at a time.
 - Only secure https sites are shown, and mature sites stay hidden unless you opt in.
 <!-- site-summary:end -->
 
+<!-- site-screenshot: docs/screenshot.jpg -->
+![Screenshot of WebWander](docs/screenshot.jpg)
+
 Wander the fun, weird and creative corners of the web, one click at a time. A small,
 personal take on the old StumbleUpon idea, with no social features: no feeds, no
 followers, no comments.
